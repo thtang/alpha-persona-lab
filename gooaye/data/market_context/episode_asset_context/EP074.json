@@ -1,0 +1,359 @@
+{
+  "episode": 74,
+  "episode_date": "2020-09-26",
+  "title": "DR股和高收益債代操",
+  "baseline_market_context": {
+    "^TWII": {
+      "market_date": "2020-09-25",
+      "close": 12232.9102,
+      "ret_1d_pct": -0.26,
+      "ret_5d_pct": -4.99,
+      "ret_20d_pct": -3.9,
+      "ret_60d_pct": 2.72
+    },
+    "^GSPC": {
+      "market_date": "2020-09-25",
+      "close": 3298.46,
+      "ret_1d_pct": 1.6,
+      "ret_5d_pct": -0.63,
+      "ret_20d_pct": -5.34,
+      "ret_60d_pct": 5.86
+    },
+    "^IXIC": {
+      "market_date": "2020-09-25",
+      "close": 10913.5596,
+      "ret_1d_pct": 2.26,
+      "ret_5d_pct": 1.11,
+      "ret_20d_pct": -6.12,
+      "ret_60d_pct": 7.47
+    },
+    "^VIX": {
+      "market_date": "2020-09-25",
+      "close": 26.38,
+      "ret_1d_pct": -7.47,
+      "ret_5d_pct": 2.13,
+      "ret_20d_pct": 7.81,
+      "ret_60d_pct": -7.83
+    },
+    "^TNX": {
+      "market_date": "2020-09-25",
+      "close": 0.659,
+      "ret_1d_pct": -1.05,
+      "ret_5d_pct": -5.04,
+      "ret_20d_pct": -11.66,
+      "ret_60d_pct": -3.37
+    },
+    "TWD=X": {
+      "market_date": "2020-09-24",
+      "close": 29.2641,
+      "ret_1d_pct": 0.25,
+      "ret_5d_pct": 0.49,
+      "ret_20d_pct": -0.2,
+      "ret_60d_pct": -0.57
+    },
+    "2330.TW": {
+      "market_date": "2020-09-25",
+      "close": 383.1898,
+      "ret_1d_pct": 0.24,
+      "ret_5d_pct": -4.5,
+      "ret_20d_pct": -1.99,
+      "ret_60d_pct": 29.39
+    },
+    "QQQ": {
+      "market_date": "2020-09-25",
+      "close": 262.7214,
+      "ret_1d_pct": 2.32,
+      "ret_5d_pct": 1.76,
+      "ret_20d_pct": -6.7,
+      "ret_60d_pct": 8.41
+    },
+    "SOXX": {
+      "market_date": "2020-09-25",
+      "close": 94.1426,
+      "ret_1d_pct": 1.37,
+      "ret_5d_pct": 0.72,
+      "ret_20d_pct": -1.99,
+      "ret_60d_pct": 10.81
+    },
+    "TSM": {
+      "market_date": "2020-09-25",
+      "close": 72.0269,
+      "ret_1d_pct": 0.64,
+      "ret_5d_pct": -1.68,
+      "ret_20d_pct": -1.63,
+      "ret_60d_pct": 39.54
+    },
+    "NVDA": {
+      "market_date": "2020-09-25",
+      "close": 12.8332,
+      "ret_1d_pct": 4.26,
+      "ret_5d_pct": 5.62,
+      "ret_20d_pct": 1.97,
+      "ret_60d_pct": 35.13
+    },
+    "TSLA": {
+      "market_date": "2020-09-25",
+      "close": 135.78,
+      "ret_1d_pct": 5.04,
+      "ret_5d_pct": -7.87,
+      "ret_20d_pct": -9.03,
+      "ret_60d_pct": 81.91
+    },
+    "BTC-USD": {
+      "market_date": "2020-09-26",
+      "close": 10750.7236,
+      "ret_1d_pct": 0.54,
+      "ret_5d_pct": 2.76,
+      "ret_20d_pct": 4.58,
+      "ret_60d_pct": -1.49
+    }
+  },
+  "mentioned_assets": [
+    {
+      "asset_name": "台積電",
+      "symbol": "2330.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "台積電"
+      ],
+      "sources": [
+        "trade_observations.asset_symbol",
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2020-09-25",
+        "close": 383.1898,
+        "ret_1d_pct": 0.24,
+        "ret_5d_pct": -4.5,
+        "ret_20d_pct": -1.99,
+        "ret_60d_pct": 29.39
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "Apple",
+      "symbol": "AAPL",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "Apple"
+      ],
+      "sources": [
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2020-09-25",
+        "close": 109.009,
+        "ret_1d_pct": 3.75,
+        "ret_5d_pct": 5.09,
+        "ret_20d_pct": -10.18,
+        "ret_60d_pct": 23.57
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "Amazon",
+      "symbol": "AMZN",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "Amazon"
+      ],
+      "sources": [
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2020-09-25",
+        "close": 154.7565,
+        "ret_1d_pct": 2.49,
+        "ret_5d_pct": 4.75,
+        "ret_20d_pct": -8.97,
+        "ret_60d_pct": 7.52
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "Alphabet",
+      "symbol": "GOOGL",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "Google"
+      ],
+      "sources": [
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2020-09-25",
+        "close": 71.3632,
+        "ret_1d_pct": 1.14,
+        "ret_5d_pct": -0.83,
+        "ret_20d_pct": -11.63,
+        "ret_60d_pct": -0.2
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "Meta",
+      "symbol": "META",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "臉書"
+      ],
+      "sources": [
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2020-09-25",
+        "close": 252.8359,
+        "ret_1d_pct": 2.12,
+        "ret_5d_pct": 0.91,
+        "ret_20d_pct": -13.1,
+        "ret_60d_pct": 7.27
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "Microsoft",
+      "symbol": "MSFT",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "Microsoft"
+      ],
+      "sources": [
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2020-09-25",
+        "close": 198.4379,
+        "ret_1d_pct": 2.28,
+        "ret_5d_pct": 3.71,
+        "ret_20d_pct": -8.28,
+        "ret_60d_pct": 1.77
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "NVIDIA",
+      "symbol": "NVDA",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "NVIDIA"
+      ],
+      "sources": [
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2020-09-25",
+        "close": 12.8332,
+        "ret_1d_pct": 4.26,
+        "ret_5d_pct": 5.62,
+        "ret_20d_pct": 1.97,
+        "ret_60d_pct": 35.13
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "Invesco QQQ",
+      "symbol": "QQQ",
+      "asset_type": "index",
+      "matched_aliases": [
+        "QQQ"
+      ],
+      "sources": [
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2020-09-25",
+        "close": 262.7214,
+        "ret_1d_pct": 2.32,
+        "ret_5d_pct": 1.76,
+        "ret_20d_pct": -6.7,
+        "ret_60d_pct": 8.41
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "Tesla",
+      "symbol": "TSLA",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "Tesla",
+        "特斯拉"
+      ],
+      "sources": [
+        "trade_observations.asset_symbol",
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2020-09-25",
+        "close": 135.78,
+        "ret_1d_pct": 5.04,
+        "ret_5d_pct": -7.87,
+        "ret_20d_pct": -9.03,
+        "ret_60d_pct": 81.91
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "台積電 ADR",
+      "symbol": "TSM",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "TSM"
+      ],
+      "sources": [
+        "trade_observations.asset_symbol",
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2020-09-25",
+        "close": 72.0269,
+        "ret_1d_pct": 0.64,
+        "ret_5d_pct": -1.68,
+        "ret_20d_pct": -1.63,
+        "ret_60d_pct": 39.54
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "Block",
+      "symbol": "XYZ",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "Square"
+      ],
+      "sources": [
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2020-09-25",
+        "close": 157.72,
+        "ret_1d_pct": 3.55,
+        "ret_5d_pct": 8.76,
+        "ret_20d_pct": 1.36,
+        "ret_60d_pct": 36.08
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "台股加權指數",
+      "symbol": "^TWII",
+      "asset_type": "index",
+      "matched_aliases": [
+        "台股"
+      ],
+      "sources": [
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2020-09-25",
+        "close": 12232.9102,
+        "ret_1d_pct": -0.26,
+        "ret_5d_pct": -4.99,
+        "ret_20d_pct": -3.9,
+        "ret_60d_pct": 2.72
+      },
+      "pricing_status": "ok"
+    }
+  ],
+  "sector_basket_matches": [],
+  "unresolved_mentions": []
+}

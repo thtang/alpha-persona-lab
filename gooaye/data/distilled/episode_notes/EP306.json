@@ -1,0 +1,216 @@
+{
+  "schema_version": "v2",
+  "episode": 306,
+  "date": "2022-12-17",
+  "episode_archetype": {
+    "primary": "single_stock_deep_dive",
+    "secondary": [
+      "qa_heavy",
+      "market_commentary"
+    ]
+  },
+  "segment_breakdown": {
+    "market_pct": 32,
+    "qa_pct": 45,
+    "life_or_aside_pct": 12,
+    "ads_pct": 6,
+    "principles_pct": 5
+  },
+  "market_regime": {
+    "phase_label": "震盪整理",
+    "narrative": "^TWII 收 14528.5498、1日 -1.40%、20日 +0.16%、60日 +1.71%；QQQ 收 268.4109、1日 -0.95%、20日 -3.71%、60日 -2.08%；SOXX 收 117.8567、1日 -0.76%、20日 -2.40%、60日 +7.87%。",
+    "geopolitical_factors": [
+      "中國政策",
+      "疫情政策"
+    ],
+    "regime_tags": [
+      "升息週期",
+      "熊市修正"
+    ]
+  },
+  "topics": [
+    "馬斯克狂賣特斯拉",
+    "二手車金融危機",
+    "中國救房地產",
+    "利率",
+    "特斯拉",
+    "AI",
+    "槓桿",
+    "融資"
+  ],
+  "host_state": {
+    "leverage_state": "槓桿，所以它本身是一個去槓桿的動作，你先把槓桿降",
+    "disclosed_positions": [],
+    "self_critique": [
+      {
+        "target": "近期操作或績效",
+        "assessment": "他在本集提到操作壓力或檢討，但細節需回逐字稿核對。",
+        "tone": "self_deprecating"
+      }
+    ],
+    "personal_arc_markers": [
+      {
+        "event": "家庭與育兒近況",
+        "impact_on_trades": "本集主要作為生活脈絡，未明確連結到交易調整。",
+        "domain": "family"
+      }
+    ]
+  },
+  "investment_logic": [
+    {
+      "claim": "他強調槓桿工具會放大心理與流動性壓力，應先確認自己能承受回撤。",
+      "trigger": "使用融資、期貨或借貸投入市場時",
+      "is_conditional": false,
+      "condition": null,
+      "action_bias": "size-down",
+      "risk_control": "控制槓桿與保留現金，避免被迫停損或斷頭。",
+      "risk_control_type": "position-size",
+      "evidence": "EP306 2022-12-17 摘述：廣告。廣告我們之前跟大家聊過，在我的認知，它是一個企業的槓桿，所以它本身是一個去槓桿的動作，你先把槓桿降掉之後，然後可能再考慮裁員。類似的道理，所以現在Twitter的經營就是非常有賴他自己的錢去讓他續命，因為他已經沒有辦法在公",
+      "source_type": "host_framework",
+      "confidence": "high"
+    },
+    {
+      "claim": "他傾向把不確定行情拆成數批處理，而不是一次押滿方向。",
+      "trigger": "想抄底、加碼或重新進場但行情仍震盪時",
+      "is_conditional": false,
+      "condition": null,
+      "action_bias": "scale-in",
+      "risk_control": "用分批與現金水位降低買在半山腰的風險。",
+      "risk_control_type": "position-size",
+      "evidence": "EP306 2022-12-17 摘述：有辦法在公開市場直接發行募資，但是他還是可以引一些投資人進場，就是在檯面下還是有很多的東西可以做。目前看起來就是他自己要把這個東西扛下來，所以他還是有可能在之後繼續賣股。那最近有一個新聞出來，就講說他賣掉兩千多萬股，他籌了3bi",
+      "source_type": "host_framework",
+      "confidence": "medium"
+    },
+    {
+      "claim": "估值要同時看歷史區間、同業比較與未來成長，不宜只看單一倍數。",
+      "trigger": "評估個股是否便宜或是否該加碼時",
+      "is_conditional": false,
+      "condition": null,
+      "action_bias": "wait",
+      "risk_control": "先確認成長與風險報酬，再決定部位大小。",
+      "risk_control_type": "none",
+      "evidence": "EP306 2022-12-17 摘述：你又很喜歡特斯拉，那當然你可以選擇先減碼，然後看有沒有更便宜的機會再撿回來，就你去試著操作看看也是可以。但在我看來我就選擇不要去動它，就放著。所以之前有人問我，就是說你會不會再持續加大你的部位？我說其實2022年對我最大的一個體",
+      "source_type": "host_framework",
+      "confidence": "medium"
+    }
+  ],
+  "trade_observations": [
+    {
+      "asset_or_sector": "美股大盤",
+      "asset_symbol": "^GSPC",
+      "asset_type": "index",
+      "view": {
+        "short_term": "conditional",
+        "medium_term": "unstated",
+        "long_term": "unstated"
+      },
+      "primary_horizon": "medium-term",
+      "reasoning": "他在本集討論美股大盤，重點放在題材、估值或景氣循環的不確定性。",
+      "industry_nodes": [
+        "AI"
+      ],
+      "catalyst_anchor": null,
+      "consensus_level": "unclear",
+      "market_alignment": "^TWII 收 14528.5498、1日 -1.40%、20日 +0.16%、60日 +1.71%",
+      "tone": "serious"
+    },
+    {
+      "asset_or_sector": "半導體族群",
+      "asset_symbol": "SOXX",
+      "asset_type": "sector",
+      "view": {
+        "short_term": "conditional",
+        "medium_term": "bullish",
+        "long_term": "bullish"
+      },
+      "primary_horizon": "medium-term",
+      "reasoning": "他在本集討論半導體族群，重點放在題材、估值或景氣循環的不確定性。",
+      "industry_nodes": [
+        "AI"
+      ],
+      "catalyst_anchor": null,
+      "consensus_level": "unclear",
+      "market_alignment": "SOXX 收 117.8567、1日 -0.76%、20日 -2.40%、60日 +7.87%",
+      "tone": "serious"
+    },
+    {
+      "asset_or_sector": "Tesla",
+      "asset_symbol": "TSLA",
+      "asset_type": "stock",
+      "view": {
+        "short_term": "conditional",
+        "medium_term": "bullish",
+        "long_term": "bullish"
+      },
+      "primary_horizon": "medium-term",
+      "reasoning": "他在本集討論Tesla，重點放在題材、估值或景氣循環的不確定性。",
+      "industry_nodes": [
+        "AI"
+      ],
+      "catalyst_anchor": null,
+      "consensus_level": "unclear",
+      "market_alignment": "^TWII 收 14528.5498、1日 -1.40%、20日 +0.16%、60日 +1.71%",
+      "tone": "serious"
+    }
+  ],
+  "qa_views": [
+    {
+      "category": "investment_operation",
+      "question_theme": "聽眾 Q&A 綜合回覆",
+      "viewpoint": "他依提問者情境回覆，通常會要求先釐清風險承受度、現金流與具體目標。",
+      "principle": "聽眾問題不能只套通則，需回到個人條件與可承受的最壞情境。",
+      "tone": "實用",
+      "evidence": "EP306 2022-12-17 摘述：Q&A有朋友問到，可不可以叫我模仿一下樹懶教的聲音，那我就依我自己的所學，去模仿一下樹懶教的聲音。但是有時候人的學習跟AI有點像，就是所謂的\"Garbagein,gar",
+      "asker_persona": null
+    }
+  ],
+  "catalysts": [],
+  "narrative_threads": [],
+  "view_changes": [],
+  "principles": [
+    {
+      "principle": "先確認槓桿壓力再放大部位",
+      "explanation": "借來的資金會改變心理承受度與出場條件。",
+      "category": "position_sizing",
+      "evidence": "EP306 2022-12-17 摘述：廣告。廣告我們之前跟大家聊過，在我的認知，它是一個企業的槓桿，所以它本身是一個去槓桿的動作，你先把槓桿降掉之後，然後可能再考慮裁員。類似的道理，所以現在Twitter的經營就是非常有賴他自己的錢去讓他續命，因為他已經沒有辦法在公"
+    },
+    {
+      "principle": "投資應服從生活狀態",
+      "explanation": "身心與家庭狀態會影響決策品質，不能只看報酬。",
+      "category": "lifestyle_balance",
+      "evidence": "EP306 2022-12-17 摘述：*****第一位，18歲小社畜**他說：「懷疑人生求姐惑，愛主委、愛大。妮老師，今年高中剛畢業的學生，由於從小就非常嚮往公務員，於是高中開始，目標就不是上大學，而是很明確地了解自己需要做什麼樣的準備。高中三年就是邊打工、邊上公"
+    }
+  ],
+  "mantras_or_catchphrases": [],
+  "warnings": [
+    {
+      "type": "anti_pattern",
+      "target": "過度槓桿與被迫交易",
+      "warning": "槓桿會把正常波動變成生存問題，應避免讓自己被市場逼出場。",
+      "evidence": "EP306 2022-12-17 摘述：Twitter的錢，那個13billion他是融資融來的，而且利率非常高。其實我嚇到，就是為什麼美國首富他的利率是5%以上，他那個利率大概落在5%到10%之間，就是每個地區可能談出來不太一樣，但是其實是蠻高的一個利"
+    }
+  ],
+  "references": [
+    {
+      "type": "podcast_or_video",
+      "title": "ChatGPT",
+      "author": "OpenAI",
+      "context": "本集用作投資、科技或生活話題的參照。"
+    }
+  ],
+  "non_tradeable_insights": [
+    {
+      "insight": "本集把科技產品或供應鏈變化視為理解產業循環的背景。",
+      "domain": "tech_industry"
+    },
+    {
+      "insight": "本集以個人生活經驗延伸到消費、家庭或身心狀態的觀察。",
+      "domain": "lifestyle"
+    },
+    {
+      "insight": "本集把個人財務決策放在風險承受與生活目標下討論。",
+      "domain": "personal_finance"
+    }
+  ],
+  "open_questions": []
+}

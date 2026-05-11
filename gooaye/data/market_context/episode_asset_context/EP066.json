@@ -1,0 +1,519 @@
+{
+  "episode": 66,
+  "episode_date": "2020-08-29",
+  "title": "好想安裝 Neuralink 腦機介面",
+  "baseline_market_context": {
+    "^TWII": {
+      "market_date": "2020-08-28",
+      "close": 12728.8496,
+      "ret_1d_pct": -0.53,
+      "ret_5d_pct": 0.96,
+      "ret_20d_pct": 0.51,
+      "ret_60d_pct": 12.44
+    },
+    "^GSPC": {
+      "market_date": "2020-08-28",
+      "close": 3508.01,
+      "ret_1d_pct": 0.67,
+      "ret_5d_pct": 3.26,
+      "ret_20d_pct": 7.24,
+      "ret_60d_pct": 12.71
+    },
+    "^IXIC": {
+      "market_date": "2020-08-28",
+      "close": 11695.6299,
+      "ret_1d_pct": 0.6,
+      "ret_5d_pct": 3.39,
+      "ret_20d_pct": 8.84,
+      "ret_60d_pct": 21.63
+    },
+    "^VIX": {
+      "market_date": "2020-08-28",
+      "close": 22.96,
+      "ret_1d_pct": -6.17,
+      "ret_5d_pct": 1.86,
+      "ret_20d_pct": -6.13,
+      "ret_60d_pct": -11.04
+    },
+    "^TNX": {
+      "market_date": "2020-08-28",
+      "close": 0.729,
+      "ret_1d_pct": -2.28,
+      "ret_5d_pct": 13.91,
+      "ret_20d_pct": 36.01,
+      "ret_60d_pct": -11.1
+    },
+    "TWD=X": {
+      "market_date": "2020-08-27",
+      "close": 29.3232,
+      "ret_1d_pct": 0.14,
+      "ret_5d_pct": 0.01,
+      "ret_20d_pct": 0.56,
+      "ret_60d_pct": -1.75
+    },
+    "2330.TW": {
+      "market_date": "2020-08-28",
+      "close": 390.9852,
+      "ret_1d_pct": -2.03,
+      "ret_5d_pct": 2.47,
+      "ret_20d_pct": 2.23,
+      "ret_60d_pct": 45.67
+    },
+    "QQQ": {
+      "market_date": "2020-08-28",
+      "close": 283.0089,
+      "ret_1d_pct": 0.51,
+      "ret_5d_pct": 3.78,
+      "ret_20d_pct": 10.06,
+      "ret_60d_pct": 24.68
+    },
+    "SOXX": {
+      "market_date": "2020-08-28",
+      "close": 97.8256,
+      "ret_1d_pct": 1.85,
+      "ret_5d_pct": 3.05,
+      "ret_20d_pct": 6.03,
+      "ret_60d_pct": 16.14
+    },
+    "TSM": {
+      "market_date": "2020-08-28",
+      "close": 73.0741,
+      "ret_1d_pct": -0.2,
+      "ret_5d_pct": 2.68,
+      "ret_20d_pct": 1.96,
+      "ret_60d_pct": 49.3
+    },
+    "NVDA": {
+      "market_date": "2020-08-28",
+      "close": 13.1024,
+      "ret_1d_pct": 4.11,
+      "ret_5d_pct": 3.66,
+      "ret_20d_pct": 23.86,
+      "ret_60d_pct": 49.98
+    },
+    "TSLA": {
+      "market_date": "2020-08-28",
+      "close": 147.56,
+      "ret_1d_pct": -1.13,
+      "ret_5d_pct": 7.97,
+      "ret_20d_pct": 54.7,
+      "ret_60d_pct": 156.07
+    },
+    "BTC-USD": {
+      "market_date": "2020-08-29",
+      "close": 11506.8652,
+      "ret_1d_pct": -0.31,
+      "ret_5d_pct": -2.27,
+      "ret_20d_pct": -1.45,
+      "ret_60d_pct": 25.92
+    }
+  },
+  "mentioned_assets": [
+    {
+      "asset_name": "和大",
+      "symbol": "1536.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "和大"
+      ],
+      "sources": [
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2020-08-28",
+        "close": 94.1344,
+        "ret_1d_pct": 1.95,
+        "ret_5d_pct": 5.88,
+        "ret_20d_pct": 9.54,
+        "ret_60d_pct": 8.69
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "台達電",
+      "symbol": "2308.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "AI"
+      ],
+      "sources": [
+        "sector_basket:AI 伺服器供應鏈"
+      ],
+      "market": {
+        "market_date": "2020-08-28",
+        "close": 174.4489,
+        "ret_1d_pct": 0.26,
+        "ret_5d_pct": 1.57,
+        "ret_20d_pct": -3.0,
+        "ret_60d_pct": 31.94
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "台積電",
+      "symbol": "2330.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "AI"
+      ],
+      "sources": [
+        "sector_basket:AI 伺服器供應鏈"
+      ],
+      "market": {
+        "market_date": "2020-08-28",
+        "close": 390.9852,
+        "ret_1d_pct": -2.03,
+        "ret_5d_pct": 2.47,
+        "ret_20d_pct": 2.23,
+        "ret_60d_pct": 45.67
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "智邦",
+      "symbol": "2345.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "智邦"
+      ],
+      "sources": [
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2020-08-28",
+        "close": 219.0039,
+        "ret_1d_pct": 2.12,
+        "ret_5d_pct": 5.7,
+        "ret_20d_pct": 5.01,
+        "ret_60d_pct": 10.6
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "廣達",
+      "symbol": "2382.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "AI"
+      ],
+      "sources": [
+        "sector_basket:AI 伺服器供應鏈"
+      ],
+      "market": {
+        "market_date": "2020-08-28",
+        "close": 57.7975,
+        "ret_1d_pct": -1.66,
+        "ret_5d_pct": -0.9,
+        "ret_20d_pct": -1.15,
+        "ret_60d_pct": 15.35
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "聯發科",
+      "symbol": "2454.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "AI",
+        "聯發科"
+      ],
+      "sources": [
+        "sector_basket:AI 伺服器供應鏈",
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2020-08-28",
+        "close": 407.1226,
+        "ret_1d_pct": 2.87,
+        "ret_5d_pct": -4.97,
+        "ret_20d_pct": -18.12,
+        "ret_60d_pct": 19.28
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "奇鋐",
+      "symbol": "3017.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "AI"
+      ],
+      "sources": [
+        "sector_basket:AI 伺服器供應鏈"
+      ],
+      "market": {
+        "market_date": "2020-08-28",
+        "close": 56.1074,
+        "ret_1d_pct": -4.15,
+        "ret_5d_pct": 1.25,
+        "ret_20d_pct": 36.86,
+        "ret_60d_pct": 53.44
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "緯創",
+      "symbol": "3231.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "AI"
+      ],
+      "sources": [
+        "sector_basket:AI 伺服器供應鏈"
+      ],
+      "market": {
+        "market_date": "2020-08-28",
+        "close": 25.5615,
+        "ret_1d_pct": -1.66,
+        "ret_5d_pct": 4.15,
+        "ret_20d_pct": -5.51,
+        "ret_60d_pct": 16.48
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "雙鴻",
+      "symbol": "3324.TWO",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "AI"
+      ],
+      "sources": [
+        "sector_basket:AI 伺服器供應鏈"
+      ],
+      "market": {
+        "market_date": "2020-08-28",
+        "close": 196.0256,
+        "ret_1d_pct": -2.64,
+        "ret_5d_pct": 1.14,
+        "ret_20d_pct": -3.28,
+        "ret_60d_pct": 29.94
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "緯穎",
+      "symbol": "6669.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "AI"
+      ],
+      "sources": [
+        "sector_basket:AI 伺服器供應鏈"
+      ],
+      "market": {
+        "market_date": "2020-08-28",
+        "close": 692.6291,
+        "ret_1d_pct": 0.37,
+        "ret_5d_pct": 4.94,
+        "ret_20d_pct": 3.06,
+        "ret_60d_pct": 9.44
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "Apple",
+      "symbol": "AAPL",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "蘋果"
+      ],
+      "sources": [
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2020-08-28",
+        "close": 121.1715,
+        "ret_1d_pct": -0.16,
+        "ret_5d_pct": 0.35,
+        "ret_20d_pct": 17.67,
+        "ret_60d_pct": 55.17
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "AMD",
+      "symbol": "AMD",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "AI"
+      ],
+      "sources": [
+        "sector_basket:AI 伺服器供應鏈"
+      ],
+      "market": {
+        "market_date": "2020-08-28",
+        "close": 85.55,
+        "ret_1d_pct": 2.09,
+        "ret_5d_pct": 2.08,
+        "ret_20d_pct": 10.49,
+        "ret_60d_pct": 62.55
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "Amazon",
+      "symbol": "AMZN",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "亞馬遜"
+      ],
+      "sources": [
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2020-08-28",
+        "close": 170.09,
+        "ret_1d_pct": 0.05,
+        "ret_5d_pct": 3.56,
+        "ret_20d_pct": 7.49,
+        "ret_60d_pct": 38.25
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "Broadcom",
+      "symbol": "AVGO",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "AI"
+      ],
+      "sources": [
+        "sector_basket:AI 伺服器供應鏈"
+      ],
+      "market": {
+        "market_date": "2020-08-28",
+        "close": 30.4165,
+        "ret_1d_pct": 1.67,
+        "ret_5d_pct": 4.48,
+        "ret_20d_pct": 8.86,
+        "ret_60d_pct": 12.78
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "Alphabet",
+      "symbol": "GOOGL",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "Google"
+      ],
+      "sources": [
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2020-08-28",
+        "close": 81.2996,
+        "ret_1d_pct": 0.67,
+        "ret_5d_pct": 4.05,
+        "ret_20d_pct": 10.18,
+        "ret_60d_pct": 15.92
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "Microsoft",
+      "symbol": "MSFT",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "Microsoft"
+      ],
+      "sources": [
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2020-08-28",
+        "close": 218.5758,
+        "ret_1d_pct": 1.03,
+        "ret_5d_pct": 7.46,
+        "ret_20d_pct": 11.93,
+        "ret_60d_pct": 25.44
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "NVIDIA",
+      "symbol": "NVDA",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "AI",
+        "NVIDIA"
+      ],
+      "sources": [
+        "sector_basket:AI 伺服器供應鏈",
+        "trade_observations.asset_symbol",
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2020-08-28",
+        "close": 13.1024,
+        "ret_1d_pct": 4.11,
+        "ret_5d_pct": 3.66,
+        "ret_20d_pct": 23.86,
+        "ret_60d_pct": 49.98
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "Palantir",
+      "symbol": "PLTR",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "Palantir"
+      ],
+      "sources": [
+        "transcript"
+      ],
+      "market": null,
+      "pricing_status": "no_prior_price"
+    },
+    {
+      "asset_name": "Tesla",
+      "symbol": "TSLA",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "Tesla",
+        "特斯拉"
+      ],
+      "sources": [
+        "trade_observations.asset_symbol",
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2020-08-28",
+        "close": 147.56,
+        "ret_1d_pct": -1.13,
+        "ret_5d_pct": 7.97,
+        "ret_20d_pct": 54.7,
+        "ret_60d_pct": 156.07
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "台股加權指數",
+      "symbol": "^TWII",
+      "asset_type": "index",
+      "matched_aliases": [
+        "台股",
+        "大盤"
+      ],
+      "sources": [
+        "trade_observations.asset_symbol",
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2020-08-28",
+        "close": 12728.8496,
+        "ret_1d_pct": -0.53,
+        "ret_5d_pct": 0.96,
+        "ret_20d_pct": 0.51,
+        "ret_60d_pct": 12.44
+      },
+      "pricing_status": "ok"
+    }
+  ],
+  "sector_basket_matches": [
+    "AI 伺服器供應鏈"
+  ],
+  "unresolved_mentions": []
+}

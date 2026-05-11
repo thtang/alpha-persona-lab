@@ -1,0 +1,433 @@
+{
+  "episode": 21,
+  "episode_date": "2020-04-03",
+  "title": "上節目心得 RSI_KD 中國浮動利率 套利",
+  "baseline_market_context": {
+    "^TWII": {
+      "market_date": "2020-04-01",
+      "close": 9663.6299,
+      "ret_1d_pct": -0.46,
+      "ret_5d_pct": 0.2,
+      "ret_20d_pct": -15.17,
+      "ret_60d_pct": -19.48
+    },
+    "^GSPC": {
+      "market_date": "2020-04-03",
+      "close": 2488.6499,
+      "ret_1d_pct": -1.51,
+      "ret_5d_pct": -2.08,
+      "ret_20d_pct": -16.27,
+      "ret_60d_pct": -23.5
+    },
+    "^IXIC": {
+      "market_date": "2020-04-03",
+      "close": 7373.0801,
+      "ret_1d_pct": -1.53,
+      "ret_5d_pct": -1.72,
+      "ret_20d_pct": -14.02,
+      "ret_60d_pct": -19.24
+    },
+    "^VIX": {
+      "market_date": "2020-04-03",
+      "close": 46.8,
+      "ret_1d_pct": -8.07,
+      "ret_5d_pct": -28.59,
+      "ret_20d_pct": 11.59,
+      "ret_60d_pct": 247.96
+    },
+    "^TNX": {
+      "market_date": "2020-04-03",
+      "close": 0.587,
+      "ret_1d_pct": -6.38,
+      "ret_5d_pct": -21.63,
+      "ret_20d_pct": -16.86,
+      "ret_60d_pct": -68.68
+    },
+    "TWD=X": {
+      "market_date": "2020-04-02",
+      "close": 30.081,
+      "ret_1d_pct": -0.45,
+      "ret_5d_pct": -0.17,
+      "ret_20d_pct": 0.66,
+      "ret_60d_pct": 0.46
+    },
+    "2330.TW": {
+      "market_date": "2020-04-01",
+      "close": 242.092,
+      "ret_1d_pct": -0.91,
+      "ret_5d_pct": -1.99,
+      "ret_20d_pct": -14.47,
+      "ret_60d_pct": -17.68
+    },
+    "QQQ": {
+      "market_date": "2020-04-03",
+      "close": 177.0938,
+      "ret_1d_pct": -1.42,
+      "ret_5d_pct": -1.04,
+      "ret_20d_pct": -11.66,
+      "ret_60d_pct": -15.38
+    },
+    "SOXX": {
+      "market_date": "2020-04-03",
+      "close": 62.1292,
+      "ret_1d_pct": -1.89,
+      "ret_5d_pct": -3.11,
+      "ret_20d_pct": -14.83,
+      "ret_60d_pct": -22.34
+    },
+    "TSM": {
+      "market_date": "2020-04-03",
+      "close": 42.4335,
+      "ret_1d_pct": -2.22,
+      "ret_5d_pct": 0.32,
+      "ret_20d_pct": -13.73,
+      "ret_60d_pct": -19.14
+    },
+    "NVDA": {
+      "market_date": "2020-04-03",
+      "close": 6.0739,
+      "ret_1d_pct": -4.53,
+      "ret_5d_pct": -3.49,
+      "ret_20d_pct": -8.32,
+      "ret_60d_pct": 1.53
+    },
+    "TSLA": {
+      "market_date": "2020-04-03",
+      "close": 32.0007,
+      "ret_1d_pct": 5.62,
+      "ret_5d_pct": -6.68,
+      "ret_20d_pct": -31.77,
+      "ret_60d_pct": -2.46
+    },
+    "BTC-USD": {
+      "market_date": "2020-04-03",
+      "close": 6733.3872,
+      "ret_1d_pct": -0.89,
+      "ret_5d_pct": 13.7,
+      "ret_20d_pct": 29.48,
+      "ret_60d_pct": -27.55
+    }
+  },
+  "mentioned_assets": [
+    {
+      "asset_name": "聯電",
+      "symbol": "2303.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "半導體",
+        "半導體族群"
+      ],
+      "sources": [
+        "sector_basket:半導體供應鏈",
+        "trade_observations.asset_or_sector"
+      ],
+      "market": {
+        "market_date": "2020-04-01",
+        "close": 9.9163,
+        "ret_1d_pct": 1.1,
+        "ret_5d_pct": -2.13,
+        "ret_20d_pct": -12.66,
+        "ret_60d_pct": -16.62
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "台積電",
+      "symbol": "2330.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "半導體",
+        "半導體族群"
+      ],
+      "sources": [
+        "sector_basket:半導體供應鏈",
+        "trade_observations.asset_or_sector"
+      ],
+      "market": {
+        "market_date": "2020-04-01",
+        "close": 242.092,
+        "ret_1d_pct": -0.91,
+        "ret_5d_pct": -1.99,
+        "ret_20d_pct": -14.47,
+        "ret_60d_pct": -17.68
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "瑞昱",
+      "symbol": "2379.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "半導體",
+        "半導體族群"
+      ],
+      "sources": [
+        "sector_basket:半導體供應鏈",
+        "trade_observations.asset_or_sector"
+      ],
+      "market": {
+        "market_date": "2020-04-01",
+        "close": 160.6688,
+        "ret_1d_pct": -2.52,
+        "ret_5d_pct": 11.52,
+        "ret_20d_pct": -6.99,
+        "ret_60d_pct": -9.55
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "聯發科",
+      "symbol": "2454.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "半導體",
+        "半導體族群"
+      ],
+      "sources": [
+        "sector_basket:半導體供應鏈",
+        "trade_observations.asset_or_sector"
+      ],
+      "market": {
+        "market_date": "2020-04-01",
+        "close": 232.6448,
+        "ret_1d_pct": 1.98,
+        "ret_5d_pct": -0.15,
+        "ret_20d_pct": -9.85,
+        "ret_60d_pct": -25.61
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "富邦金",
+      "symbol": "2881.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "金融股"
+      ],
+      "sources": [
+        "sector_basket:金融股"
+      ],
+      "market": {
+        "market_date": "2020-04-01",
+        "close": 22.427,
+        "ret_1d_pct": -0.4,
+        "ret_5d_pct": 0.81,
+        "ret_20d_pct": -15.86,
+        "ret_60d_pct": -19.57
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "國泰金",
+      "symbol": "2882.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "金融股"
+      ],
+      "sources": [
+        "sector_basket:金融股"
+      ],
+      "market": {
+        "market_date": "2020-04-01",
+        "close": 26.4318,
+        "ret_1d_pct": -0.14,
+        "ret_5d_pct": -0.14,
+        "ret_20d_pct": -11.32,
+        "ret_60d_pct": -17.35
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "兆豐金",
+      "symbol": "2886.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "金融股"
+      ],
+      "sources": [
+        "sector_basket:金融股"
+      ],
+      "market": {
+        "market_date": "2020-04-01",
+        "close": 20.4651,
+        "ret_1d_pct": -1.41,
+        "ret_5d_pct": 0.36,
+        "ret_20d_pct": -13.29,
+        "ret_60d_pct": -8.93
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "中信金",
+      "symbol": "2891.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "金融股"
+      ],
+      "sources": [
+        "sector_basket:金融股"
+      ],
+      "market": {
+        "market_date": "2020-04-01",
+        "close": 13.2864,
+        "ret_1d_pct": -0.84,
+        "ret_5d_pct": 1.43,
+        "ret_20d_pct": -21.29,
+        "ret_60d_pct": -20.94
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "聯詠",
+      "symbol": "3034.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "半導體",
+        "半導體族群"
+      ],
+      "sources": [
+        "sector_basket:半導體供應鏈",
+        "trade_observations.asset_or_sector"
+      ],
+      "market": {
+        "market_date": "2020-04-01",
+        "close": 111.0349,
+        "ret_1d_pct": 1.74,
+        "ret_5d_pct": 3.55,
+        "ret_20d_pct": -14.0,
+        "ret_60d_pct": -20.81
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "日月光投控",
+      "symbol": "3711.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "半導體",
+        "半導體族群"
+      ],
+      "sources": [
+        "sector_basket:半導體供應鏈",
+        "trade_observations.asset_or_sector"
+      ],
+      "market": {
+        "market_date": "2020-04-01",
+        "close": 43.0116,
+        "ret_1d_pct": -2.39,
+        "ret_5d_pct": -2.89,
+        "ret_20d_pct": -21.1,
+        "ret_60d_pct": -31.5
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "Apple",
+      "symbol": "AAPL",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "蘋果"
+      ],
+      "sources": [
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2020-04-03",
+        "close": 58.3309,
+        "ret_1d_pct": -1.44,
+        "ret_5d_pct": -2.56,
+        "ret_20d_pct": -16.48,
+        "ret_60d_pct": -20.19
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "Alphabet",
+      "symbol": "GOOGL",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "Google"
+      ],
+      "sources": [
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2020-04-03",
+        "close": 54.1871,
+        "ret_1d_pct": -2.18,
+        "ret_5d_pct": -1.58,
+        "ret_20d_pct": -15.67,
+        "ret_60d_pct": -22.23
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "iShares Semiconductor ETF",
+      "symbol": "SOXX",
+      "asset_type": "sector",
+      "matched_aliases": [
+        "半導體",
+        "半導體族群"
+      ],
+      "sources": [
+        "sector_basket:半導體供應鏈",
+        "trade_observations.asset_or_sector",
+        "trade_observations.asset_symbol"
+      ],
+      "market": {
+        "market_date": "2020-04-03",
+        "close": 62.1292,
+        "ret_1d_pct": -1.89,
+        "ret_5d_pct": -3.11,
+        "ret_20d_pct": -14.83,
+        "ret_60d_pct": -22.34
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "台積電 ADR",
+      "symbol": "TSM",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "半導體",
+        "半導體族群"
+      ],
+      "sources": [
+        "sector_basket:半導體供應鏈",
+        "trade_observations.asset_or_sector"
+      ],
+      "market": {
+        "market_date": "2020-04-03",
+        "close": 42.4335,
+        "ret_1d_pct": -2.22,
+        "ret_5d_pct": 0.32,
+        "ret_20d_pct": -13.73,
+        "ret_60d_pct": -19.14
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "標普 500",
+      "symbol": "^GSPC",
+      "asset_type": "index",
+      "matched_aliases": [],
+      "sources": [
+        "trade_observations.asset_symbol"
+      ],
+      "market": {
+        "market_date": "2020-04-03",
+        "close": 2488.6499,
+        "ret_1d_pct": -1.51,
+        "ret_5d_pct": -2.08,
+        "ret_20d_pct": -16.27,
+        "ret_60d_pct": -23.5
+      },
+      "pricing_status": "ok"
+    }
+  ],
+  "sector_basket_matches": [
+    "半導體供應鏈",
+    "金融股"
+  ],
+  "unresolved_mentions": []
+}

@@ -1,0 +1,692 @@
+{
+  "episode": 560,
+  "episode_date": "2025-05-24",
+  "title": "🪹 海運貨櫃與景氣循環陷阱",
+  "baseline_market_context": {
+    "^TWII": {
+      "market_date": "2025-05-23",
+      "close": 21652.2402,
+      "ret_1d_pct": -0.09,
+      "ret_5d_pct": -0.88,
+      "ret_20d_pct": 11.16,
+      "ret_60d_pct": -8.12
+    },
+    "^GSPC": {
+      "market_date": "2025-05-23",
+      "close": 5802.8198,
+      "ret_1d_pct": -0.67,
+      "ret_5d_pct": -2.61,
+      "ret_20d_pct": 5.02,
+      "ret_60d_pct": -1.0
+    },
+    "^IXIC": {
+      "market_date": "2025-05-23",
+      "close": 18737.2109,
+      "ret_1d_pct": -1.0,
+      "ret_5d_pct": -2.47,
+      "ret_20d_pct": 7.79,
+      "ret_60d_pct": 1.04
+    },
+    "^VIX": {
+      "market_date": "2025-05-23",
+      "close": 22.29,
+      "ret_1d_pct": 9.91,
+      "ret_5d_pct": 29.29,
+      "ret_20d_pct": -10.27,
+      "ret_60d_pct": 5.49
+    },
+    "^TNX": {
+      "market_date": "2025-05-23",
+      "close": 4.509,
+      "ret_1d_pct": -0.97,
+      "ret_5d_pct": 1.53,
+      "ret_20d_pct": 5.7,
+      "ret_60d_pct": 5.23
+    },
+    "TWD=X": {
+      "market_date": "2025-05-22",
+      "close": 30.0469,
+      "ret_1d_pct": 0.08,
+      "ret_5d_pct": -0.4,
+      "ret_20d_pct": -7.36,
+      "ret_60d_pct": -8.33
+    },
+    "2330.TW": {
+      "market_date": "2025-05-23",
+      "close": 969.5329,
+      "ret_1d_pct": 0.2,
+      "ret_5d_pct": -1.4,
+      "ret_20d_pct": 13.89,
+      "ret_60d_pct": -8.04
+    },
+    "QQQ": {
+      "market_date": "2025-05-23",
+      "close": 506.7869,
+      "ret_1d_pct": -0.93,
+      "ret_5d_pct": -2.35,
+      "ret_20d_pct": 7.76,
+      "ret_60d_pct": 1.94
+    },
+    "SOXX": {
+      "market_date": "2025-05-23",
+      "close": 201.274,
+      "ret_1d_pct": -1.55,
+      "ret_5d_pct": -4.96,
+      "ret_20d_pct": 9.6,
+      "ret_60d_pct": -1.18
+    },
+    "TSM": {
+      "market_date": "2025-05-23",
+      "close": 189.6313,
+      "ret_1d_pct": -2.15,
+      "ret_5d_pct": -1.15,
+      "ret_20d_pct": 16.28,
+      "ret_60d_pct": 6.43
+    },
+    "NVDA": {
+      "market_date": "2025-05-23",
+      "close": 131.2591,
+      "ret_1d_pct": -1.16,
+      "ret_5d_pct": -3.04,
+      "ret_20d_pct": 18.27,
+      "ret_60d_pct": 9.28
+    },
+    "TSLA": {
+      "market_date": "2025-05-23",
+      "close": 339.34,
+      "ret_1d_pct": -0.5,
+      "ret_5d_pct": -3.04,
+      "ret_20d_pct": 19.09,
+      "ret_60d_pct": 20.35
+    },
+    "BTC-USD": {
+      "market_date": "2025-05-24",
+      "close": 107791.1562,
+      "ret_1d_pct": 0.47,
+      "ret_5d_pct": 2.07,
+      "ret_20d_pct": 14.29,
+      "ret_60d_pct": 23.23
+    }
+  },
+  "mentioned_assets": [
+    {
+      "asset_name": "和大",
+      "symbol": "1536.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "車用"
+      ],
+      "sources": [
+        "sector_basket:電動車供應鏈"
+      ],
+      "market": {
+        "market_date": "2025-05-23",
+        "close": 61.6,
+        "ret_1d_pct": -0.48,
+        "ret_5d_pct": -5.95,
+        "ret_20d_pct": 6.76,
+        "ret_60d_pct": -29.36
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "聯電",
+      "symbol": "2303.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "IC 設計",
+        "晶圓代工"
+      ],
+      "sources": [
+        "sector_basket:半導體供應鏈"
+      ],
+      "market": {
+        "market_date": "2025-05-23",
+        "close": 45.1362,
+        "ret_1d_pct": -2.83,
+        "ret_5d_pct": 0.52,
+        "ret_20d_pct": 10.71,
+        "ret_60d_pct": 10.33
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "台達電",
+      "symbol": "2308.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "車用"
+      ],
+      "sources": [
+        "sector_basket:電動車供應鏈"
+      ],
+      "market": {
+        "market_date": "2025-05-23",
+        "close": 366.9719,
+        "ret_1d_pct": -1.19,
+        "ret_5d_pct": 0.67,
+        "ret_20d_pct": 14.4,
+        "ret_60d_pct": -5.56
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "鴻海",
+      "symbol": "2317.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "車用"
+      ],
+      "sources": [
+        "sector_basket:電動車供應鏈"
+      ],
+      "market": {
+        "market_date": "2025-05-23",
+        "close": 148.603,
+        "ret_1d_pct": 0.65,
+        "ret_5d_pct": -2.53,
+        "ret_20d_pct": 12.82,
+        "ret_60d_pct": -16.3
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "國巨",
+      "symbol": "2327.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "MLCC",
+        "國巨",
+        "被動元件"
+      ],
+      "sources": [
+        "sector_basket:被動元件",
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2025-05-23",
+        "close": 115.3128,
+        "ret_1d_pct": -1.43,
+        "ret_5d_pct": -3.41,
+        "ret_20d_pct": 7.97,
+        "ret_60d_pct": -19.02
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "台積電",
+      "symbol": "2330.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "IC 設計",
+        "台積電",
+        "晶圓代工"
+      ],
+      "sources": [
+        "sector_basket:半導體供應鏈",
+        "trade_observations.asset_symbol",
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2025-05-23",
+        "close": 969.5329,
+        "ret_1d_pct": 0.2,
+        "ret_5d_pct": -1.4,
+        "ret_20d_pct": 13.89,
+        "ret_60d_pct": -8.04
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "凱美",
+      "symbol": "2375.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "MLCC",
+        "被動元件"
+      ],
+      "sources": [
+        "sector_basket:被動元件"
+      ],
+      "market": {
+        "market_date": "2025-05-23",
+        "close": 58.89,
+        "ret_1d_pct": -0.49,
+        "ret_5d_pct": -2.58,
+        "ret_20d_pct": 16.15,
+        "ret_60d_pct": -12.84
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "瑞昱",
+      "symbol": "2379.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "IC 設計",
+        "晶圓代工"
+      ],
+      "sources": [
+        "sector_basket:半導體供應鏈"
+      ],
+      "market": {
+        "market_date": "2025-05-23",
+        "close": 493.5389,
+        "ret_1d_pct": -1.89,
+        "ret_5d_pct": 0.0,
+        "ret_20d_pct": 2.37,
+        "ret_60d_pct": -8.8
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "聯發科",
+      "symbol": "2454.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "IC 設計",
+        "晶圓代工"
+      ],
+      "sources": [
+        "sector_basket:半導體供應鏈"
+      ],
+      "market": {
+        "market_date": "2025-05-23",
+        "close": 1265.0898,
+        "ret_1d_pct": -0.75,
+        "ret_5d_pct": -3.66,
+        "ret_20d_pct": -1.13,
+        "ret_60d_pct": -14.89
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "大毅",
+      "symbol": "2478.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "MLCC",
+        "被動元件"
+      ],
+      "sources": [
+        "sector_basket:被動元件"
+      ],
+      "market": {
+        "market_date": "2025-05-23",
+        "close": 45.4986,
+        "ret_1d_pct": 0.0,
+        "ret_5d_pct": -3.06,
+        "ret_20d_pct": 8.45,
+        "ret_60d_pct": 4.17
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "華新科",
+      "symbol": "2492.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "MLCC",
+        "華新科",
+        "被動元件"
+      ],
+      "sources": [
+        "sector_basket:被動元件",
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2025-05-23",
+        "close": 79.4471,
+        "ret_1d_pct": -0.85,
+        "ret_5d_pct": -2.85,
+        "ret_20d_pct": 7.48,
+        "ret_60d_pct": -16.68
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "長榮",
+      "symbol": "2603.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "海運",
+        "航運",
+        "航運股",
+        "長榮"
+      ],
+      "sources": [
+        "sector_basket:航運/物流",
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2025-05-23",
+        "close": 222.2475,
+        "ret_1d_pct": -1.54,
+        "ret_5d_pct": -1.73,
+        "ret_20d_pct": 24.88,
+        "ret_60d_pct": 15.58
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "陽明",
+      "symbol": "2609.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "海運",
+        "航運",
+        "航運股"
+      ],
+      "sources": [
+        "sector_basket:航運/物流"
+      ],
+      "market": {
+        "market_date": "2025-05-23",
+        "close": 74.9933,
+        "ret_1d_pct": -3.68,
+        "ret_5d_pct": -0.36,
+        "ret_20d_pct": 18.05,
+        "ret_60d_pct": 15.61
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "萬海",
+      "symbol": "2615.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "海運",
+        "航運",
+        "航運股"
+      ],
+      "sources": [
+        "sector_basket:航運/物流"
+      ],
+      "market": {
+        "market_date": "2025-05-23",
+        "close": 121.9496,
+        "ret_1d_pct": 0.0,
+        "ret_5d_pct": 13.96,
+        "ret_20d_pct": 54.65,
+        "ret_60d_pct": 47.78
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "奇鋐",
+      "symbol": "3017.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "奇鋐"
+      ],
+      "sources": [
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2025-05-23",
+        "close": 597.7703,
+        "ret_1d_pct": -1.95,
+        "ret_5d_pct": 0.33,
+        "ret_20d_pct": 36.73,
+        "ret_60d_pct": 11.25
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "禾伸堂",
+      "symbol": "3026.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "MLCC",
+        "禾伸堂",
+        "被動元件"
+      ],
+      "sources": [
+        "sector_basket:被動元件",
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2025-05-23",
+        "close": 79.4146,
+        "ret_1d_pct": -0.7,
+        "ret_5d_pct": -0.93,
+        "ret_20d_pct": 4.17,
+        "ret_60d_pct": -3.3
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "聯詠",
+      "symbol": "3034.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "IC 設計",
+        "晶圓代工"
+      ],
+      "sources": [
+        "sector_basket:半導體供應鏈"
+      ],
+      "market": {
+        "market_date": "2025-05-23",
+        "close": 487.9962,
+        "ret_1d_pct": -0.77,
+        "ret_5d_pct": -1.34,
+        "ret_20d_pct": 6.85,
+        "ret_60d_pct": -6.7
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "日月光投控",
+      "symbol": "3711.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "IC 設計",
+        "晶圓代工"
+      ],
+      "sources": [
+        "sector_basket:半導體供應鏈"
+      ],
+      "market": {
+        "market_date": "2025-05-23",
+        "close": 137.3131,
+        "ret_1d_pct": -1.72,
+        "ret_5d_pct": -3.06,
+        "ret_20d_pct": 7.55,
+        "ret_60d_pct": -19.03
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "比特幣",
+      "symbol": "BTC-USD",
+      "asset_type": "crypto",
+      "matched_aliases": [
+        "比特幣"
+      ],
+      "sources": [
+        "trade_observations.asset_symbol",
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2025-05-24",
+        "close": 107791.1562,
+        "ret_1d_pct": 0.47,
+        "ret_5d_pct": 2.07,
+        "ret_20d_pct": 14.29,
+        "ret_60d_pct": 23.23
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "Alphabet",
+      "symbol": "GOOGL",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "Google"
+      ],
+      "sources": [
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2025-05-23",
+        "close": 167.8879,
+        "ret_1d_pct": -1.4,
+        "ret_5d_pct": 1.37,
+        "ret_20d_pct": 4.02,
+        "ret_60d_pct": 0.1
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "Meta",
+      "symbol": "META",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "Facebook",
+        "臉書"
+      ],
+      "sources": [
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2025-05-23",
+        "close": 625.1098,
+        "ret_1d_pct": -1.49,
+        "ret_5d_pct": -2.07,
+        "ret_20d_pct": 14.58,
+        "ret_60d_pct": -4.65
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "Netflix",
+      "symbol": "NFLX",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "Netflix"
+      ],
+      "sources": [
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2025-05-23",
+        "close": 118.539,
+        "ret_1d_pct": -0.22,
+        "ret_5d_pct": -0.52,
+        "ret_20d_pct": 7.61,
+        "ret_60d_pct": 23.08
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "iShares Semiconductor ETF",
+      "symbol": "SOXX",
+      "asset_type": "sector",
+      "matched_aliases": [
+        "IC 設計",
+        "晶圓代工"
+      ],
+      "sources": [
+        "sector_basket:半導體供應鏈"
+      ],
+      "market": {
+        "market_date": "2025-05-23",
+        "close": 201.274,
+        "ret_1d_pct": -1.55,
+        "ret_5d_pct": -4.96,
+        "ret_20d_pct": 9.6,
+        "ret_60d_pct": -1.18
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "Tesla",
+      "symbol": "TSLA",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "車用"
+      ],
+      "sources": [
+        "sector_basket:電動車供應鏈"
+      ],
+      "market": {
+        "market_date": "2025-05-23",
+        "close": 339.34,
+        "ret_1d_pct": -0.5,
+        "ret_5d_pct": -3.04,
+        "ret_20d_pct": 19.09,
+        "ret_60d_pct": 20.35
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "台積電 ADR",
+      "symbol": "TSM",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "IC 設計",
+        "晶圓代工"
+      ],
+      "sources": [
+        "sector_basket:半導體供應鏈"
+      ],
+      "market": {
+        "market_date": "2025-05-23",
+        "close": 189.6313,
+        "ret_1d_pct": -2.15,
+        "ret_5d_pct": -1.15,
+        "ret_20d_pct": 16.28,
+        "ret_60d_pct": 6.43
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "標普 500",
+      "symbol": "^GSPC",
+      "asset_type": "index",
+      "matched_aliases": [],
+      "sources": [
+        "trade_observations.asset_symbol"
+      ],
+      "market": {
+        "market_date": "2025-05-23",
+        "close": 5802.8198,
+        "ret_1d_pct": -0.67,
+        "ret_5d_pct": -2.61,
+        "ret_20d_pct": 5.02,
+        "ret_60d_pct": -1.0
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "台股加權指數",
+      "symbol": "^TWII",
+      "asset_type": "index",
+      "matched_aliases": [
+        "台股",
+        "大盤"
+      ],
+      "sources": [
+        "trade_observations.asset_symbol",
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2025-05-23",
+        "close": 21652.2402,
+        "ret_1d_pct": -0.09,
+        "ret_5d_pct": -0.88,
+        "ret_20d_pct": 11.16,
+        "ret_60d_pct": -8.12
+      },
+      "pricing_status": "ok"
+    }
+  ],
+  "sector_basket_matches": [
+    "半導體供應鏈",
+    "航運/物流",
+    "被動元件",
+    "電動車供應鏈"
+  ],
+  "unresolved_mentions": []
+}

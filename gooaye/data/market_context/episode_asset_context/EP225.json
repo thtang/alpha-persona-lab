@@ -1,0 +1,455 @@
+{
+  "episode": 225,
+  "episode_date": "2022-05-09",
+  "title": "🚀 期貨套利與避險操作實戰",
+  "baseline_market_context": {
+    "^TWII": {
+      "market_date": "2022-05-09",
+      "close": 16048.9199,
+      "ret_1d_pct": -2.19,
+      "ret_5d_pct": -3.27,
+      "ret_20d_pct": -7.15,
+      "ret_60d_pct": -10.67
+    },
+    "^GSPC": {
+      "market_date": "2022-05-09",
+      "close": 3991.24,
+      "ret_1d_pct": -3.2,
+      "ret_5d_pct": -3.95,
+      "ret_20d_pct": -11.07,
+      "ret_60d_pct": -11.39
+    },
+    "^IXIC": {
+      "market_date": "2022-05-09",
+      "close": 11623.25,
+      "ret_1d_pct": -4.29,
+      "ret_5d_pct": -7.28,
+      "ret_20d_pct": -15.23,
+      "ret_60d_pct": -18.06
+    },
+    "^VIX": {
+      "market_date": "2022-05-09",
+      "close": 34.75,
+      "ret_1d_pct": 15.1,
+      "ret_5d_pct": 7.45,
+      "ret_20d_pct": 64.22,
+      "ret_60d_pct": 45.34
+    },
+    "^TNX": {
+      "market_date": "2022-05-09",
+      "close": 3.079,
+      "ret_1d_pct": -1.41,
+      "ret_5d_pct": 2.77,
+      "ret_20d_pct": 13.49,
+      "ret_60d_pct": 51.6
+    },
+    "TWD=X": {
+      "market_date": "2022-05-09",
+      "close": 29.751,
+      "ret_1d_pct": 0.34,
+      "ret_5d_pct": 0.9,
+      "ret_20d_pct": 2.48,
+      "ret_60d_pct": 6.78
+    },
+    "2330.TW": {
+      "market_date": "2022-05-09",
+      "close": 482.9066,
+      "ret_1d_pct": -1.52,
+      "ret_5d_pct": -3.35,
+      "ret_20d_pct": -8.29,
+      "ret_60d_pct": -16.79
+    },
+    "QQQ": {
+      "market_date": "2022-05-09",
+      "close": 289.7448,
+      "ret_1d_pct": -3.91,
+      "ret_5d_pct": -6.7,
+      "ret_20d_pct": -14.89,
+      "ret_60d_pct": -16.99
+    },
+    "SOXX": {
+      "market_date": "2022-05-09",
+      "close": 125.2151,
+      "ret_1d_pct": -5.09,
+      "ret_5d_pct": -6.25,
+      "ret_20d_pct": -9.45,
+      "ret_60d_pct": -20.43
+    },
+    "TSM": {
+      "market_date": "2022-05-09",
+      "close": 81.7201,
+      "ret_1d_pct": -4.73,
+      "ret_5d_pct": -6.89,
+      "ret_20d_pct": -12.08,
+      "ret_60d_pct": -29.66
+    },
+    "NVDA": {
+      "market_date": "2022-05-09",
+      "close": 16.9192,
+      "ret_1d_pct": -9.24,
+      "ret_5d_pct": -13.22,
+      "ret_20d_pct": -26.68,
+      "ret_60d_pct": -34.35
+    },
+    "TSLA": {
+      "market_date": "2022-05-09",
+      "close": 262.37,
+      "ret_1d_pct": -9.07,
+      "ret_5d_pct": -12.83,
+      "ret_20d_pct": -23.25,
+      "ret_60d_pct": -12.98
+    },
+    "BTC-USD": {
+      "market_date": "2022-05-09",
+      "close": 30296.9531,
+      "ret_1d_pct": -11.05,
+      "ret_5d_pct": -23.68,
+      "ret_20d_pct": -27.0,
+      "ret_60d_pct": -23.18
+    }
+  },
+  "mentioned_assets": [
+    {
+      "asset_name": "台達電",
+      "symbol": "2308.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "Delta"
+      ],
+      "sources": [
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2022-05-09",
+        "close": 210.5812,
+        "ret_1d_pct": -1.71,
+        "ret_5d_pct": -8.0,
+        "ret_20d_pct": -11.88,
+        "ret_60d_pct": -14.5
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "台積電",
+      "symbol": "2330.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "台積電"
+      ],
+      "sources": [
+        "trade_observations.asset_symbol",
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2022-05-09",
+        "close": 482.9066,
+        "ret_1d_pct": -1.52,
+        "ret_5d_pct": -3.35,
+        "ret_20d_pct": -8.29,
+        "ret_60d_pct": -16.79
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "瑞昱",
+      "symbol": "2379.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "瑞昱"
+      ],
+      "sources": [
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2022-05-09",
+        "close": 325.2366,
+        "ret_1d_pct": -0.24,
+        "ret_5d_pct": 0.12,
+        "ret_20d_pct": 0.25,
+        "ret_60d_pct": -20.62
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "聯發科",
+      "symbol": "2454.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "聯發科"
+      ],
+      "sources": [
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2022-05-09",
+        "close": 599.8297,
+        "ret_1d_pct": -2.52,
+        "ret_5d_pct": -2.05,
+        "ret_20d_pct": -3.21,
+        "ret_60d_pct": -25.75
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "長榮",
+      "symbol": "2603.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "長榮"
+      ],
+      "sources": [
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2022-05-09",
+        "close": 138.664,
+        "ret_1d_pct": -4.55,
+        "ret_5d_pct": 1.38,
+        "ret_20d_pct": 8.49,
+        "ret_60d_pct": 13.95
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "長榮航",
+      "symbol": "2618.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "長榮航"
+      ],
+      "sources": [
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2022-05-09",
+        "close": 30.1017,
+        "ret_1d_pct": -3.31,
+        "ret_5d_pct": -1.82,
+        "ret_20d_pct": 3.7,
+        "ret_60d_pct": 27.97
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "富邦金",
+      "symbol": "2881.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "金控"
+      ],
+      "sources": [
+        "sector_basket:金融股"
+      ],
+      "market": {
+        "market_date": "2022-05-09",
+        "close": 48.571,
+        "ret_1d_pct": -4.91,
+        "ret_5d_pct": -8.87,
+        "ret_20d_pct": -11.14,
+        "ret_60d_pct": -11.72
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "國泰金",
+      "symbol": "2882.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "金控"
+      ],
+      "sources": [
+        "sector_basket:金融股"
+      ],
+      "market": {
+        "market_date": "2022-05-09",
+        "close": 48.2239,
+        "ret_1d_pct": -4.08,
+        "ret_5d_pct": -6.08,
+        "ret_20d_pct": -9.69,
+        "ret_60d_pct": -11.06
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "兆豐金",
+      "symbol": "2886.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "金控"
+      ],
+      "sources": [
+        "sector_basket:金融股"
+      ],
+      "market": {
+        "market_date": "2022-05-09",
+        "close": 30.7314,
+        "ret_1d_pct": -3.43,
+        "ret_5d_pct": -8.65,
+        "ret_20d_pct": -14.32,
+        "ret_60d_pct": -2.44
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "中信金",
+      "symbol": "2891.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "金控"
+      ],
+      "sources": [
+        "sector_basket:金融股"
+      ],
+      "market": {
+        "market_date": "2022-05-09",
+        "close": 22.4978,
+        "ret_1d_pct": -2.5,
+        "ret_5d_pct": -6.67,
+        "ret_20d_pct": -10.49,
+        "ret_60d_pct": -4.88
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "Apple",
+      "symbol": "AAPL",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "Apple"
+      ],
+      "sources": [
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2022-05-09",
+        "close": 149.205,
+        "ret_1d_pct": -3.32,
+        "ret_5d_pct": -3.59,
+        "ret_20d_pct": -10.47,
+        "ret_60d_pct": -11.52
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "比特幣",
+      "symbol": "BTC-USD",
+      "asset_type": "crypto",
+      "matched_aliases": [],
+      "sources": [
+        "trade_observations.asset_symbol"
+      ],
+      "market": {
+        "market_date": "2022-05-09",
+        "close": 30296.9531,
+        "ret_1d_pct": -11.05,
+        "ret_5d_pct": -23.68,
+        "ret_20d_pct": -27.0,
+        "ret_60d_pct": -23.18
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "Meta",
+      "symbol": "META",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "Facebook"
+      ],
+      "sources": [
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2022-05-09",
+        "close": 194.6822,
+        "ret_1d_pct": -3.71,
+        "ret_5d_pct": -7.07,
+        "ret_20d_pct": -11.75,
+        "ret_60d_pct": -13.97
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "台積電 ADR",
+      "symbol": "TSM",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "TSM"
+      ],
+      "sources": [
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2022-05-09",
+        "close": 81.7201,
+        "ret_1d_pct": -4.73,
+        "ret_5d_pct": -6.89,
+        "ret_20d_pct": -12.08,
+        "ret_60d_pct": -29.66
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "Block",
+      "symbol": "XYZ",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "Block"
+      ],
+      "sources": [
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2022-05-09",
+        "close": 83.86,
+        "ret_1d_pct": -12.82,
+        "ret_5d_pct": -20.78,
+        "ret_20d_pct": -31.94,
+        "ret_60d_pct": -23.02
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "標普 500",
+      "symbol": "^GSPC",
+      "asset_type": "index",
+      "matched_aliases": [],
+      "sources": [
+        "trade_observations.asset_symbol"
+      ],
+      "market": {
+        "market_date": "2022-05-09",
+        "close": 3991.24,
+        "ret_1d_pct": -3.2,
+        "ret_5d_pct": -3.95,
+        "ret_20d_pct": -11.07,
+        "ret_60d_pct": -11.39
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "台股加權指數",
+      "symbol": "^TWII",
+      "asset_type": "index",
+      "matched_aliases": [
+        "加權指數",
+        "台股"
+      ],
+      "sources": [
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2022-05-09",
+        "close": 16048.9199,
+        "ret_1d_pct": -2.19,
+        "ret_5d_pct": -3.27,
+        "ret_20d_pct": -7.15,
+        "ret_60d_pct": -10.67
+      },
+      "pricing_status": "ok"
+    }
+  ],
+  "sector_basket_matches": [
+    "金融股"
+  ],
+  "unresolved_mentions": []
+}

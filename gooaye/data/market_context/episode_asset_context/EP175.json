@@ -1,0 +1,628 @@
+{
+  "episode": 175,
+  "episode_date": "2021-09-15",
+  "title": "天峰回來到 iPhone 13 發表與蘋蓋股困局",
+  "baseline_market_context": {
+    "^TWII": {
+      "market_date": "2021-09-15",
+      "close": 17354.0,
+      "ret_1d_pct": -0.46,
+      "ret_5d_pct": 0.48,
+      "ret_20d_pct": 3.14,
+      "ret_60d_pct": 0.1
+    },
+    "^GSPC": {
+      "market_date": "2021-09-15",
+      "close": 4480.7002,
+      "ret_1d_pct": 0.85,
+      "ret_5d_pct": -0.74,
+      "ret_20d_pct": 0.73,
+      "ret_60d_pct": 6.06
+    },
+    "^IXIC": {
+      "market_date": "2021-09-15",
+      "close": 15161.5303,
+      "ret_1d_pct": 0.82,
+      "ret_5d_pct": -0.82,
+      "ret_20d_pct": 3.45,
+      "ret_60d_pct": 7.21
+    },
+    "^VIX": {
+      "market_date": "2021-09-15",
+      "close": 18.18,
+      "ret_1d_pct": -6.58,
+      "ret_5d_pct": 1.22,
+      "ret_20d_pct": 1.51,
+      "ret_60d_pct": 1.62
+    },
+    "^TNX": {
+      "market_date": "2021-09-15",
+      "close": 1.304,
+      "ret_1d_pct": 2.11,
+      "ret_5d_pct": -2.25,
+      "ret_20d_pct": 3.66,
+      "ret_60d_pct": -12.13
+    },
+    "TWD=X": {
+      "market_date": "2021-09-15",
+      "close": 27.6127,
+      "ret_1d_pct": -0.08,
+      "ret_5d_pct": -0.21,
+      "ret_20d_pct": -0.82,
+      "ret_60d_pct": -1.51
+    },
+    "2330.TW": {
+      "market_date": "2021-09-15",
+      "close": 555.8219,
+      "ret_1d_pct": -0.98,
+      "ret_5d_pct": -1.94,
+      "ret_20d_pct": 5.75,
+      "ret_60d_pct": 2.02
+    },
+    "QQQ": {
+      "market_date": "2021-09-15",
+      "close": 367.2967,
+      "ret_1d_pct": 0.74,
+      "ret_5d_pct": -0.72,
+      "ret_20d_pct": 3.37,
+      "ret_60d_pct": 9.78
+    },
+    "SOXX": {
+      "market_date": "2021-09-15",
+      "close": 152.4545,
+      "ret_1d_pct": 0.58,
+      "ret_5d_pct": 2.71,
+      "ret_20d_pct": 6.97,
+      "ret_60d_pct": 10.67
+    },
+    "TSM": {
+      "market_date": "2021-09-15",
+      "close": 112.2609,
+      "ret_1d_pct": -1.29,
+      "ret_5d_pct": -0.32,
+      "ret_20d_pct": 9.35,
+      "ret_60d_pct": 6.45
+    },
+    "NVDA": {
+      "market_date": "2021-09-15",
+      "close": 22.2939,
+      "ret_1d_pct": 0.45,
+      "ret_5d_pct": 0.01,
+      "ret_20d_pct": 14.84,
+      "ret_60d_pct": 21.26
+    },
+    "TSLA": {
+      "market_date": "2021-09-15",
+      "close": 251.9433,
+      "ret_1d_pct": 1.52,
+      "ret_5d_pct": 0.26,
+      "ret_20d_pct": 13.54,
+      "ret_60d_pct": 21.75
+    },
+    "BTC-USD": {
+      "market_date": "2021-09-15",
+      "close": 48176.3477,
+      "ret_1d_pct": 2.3,
+      "ret_5d_pct": 7.34,
+      "ret_20d_pct": 2.63,
+      "ret_60d_pct": 52.78
+    }
+  },
+  "mentioned_assets": [
+    {
+      "asset_name": "和大",
+      "symbol": "1536.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "EV 供應鏈",
+        "車用",
+        "車用供應鏈",
+        "電動車供應鏈"
+      ],
+      "sources": [
+        "sector_basket:電動車供應鏈",
+        "trade_observations.asset_or_sector"
+      ],
+      "market": {
+        "market_date": "2021-09-15",
+        "close": 89.6901,
+        "ret_1d_pct": 0.52,
+        "ret_5d_pct": 5.43,
+        "ret_20d_pct": 2.65,
+        "ret_60d_pct": -10.0
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "聯電",
+      "symbol": "2303.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "IC 設計",
+        "半導體",
+        "晶圓代工",
+        "費城半導體"
+      ],
+      "sources": [
+        "sector_basket:半導體供應鏈",
+        "trade_observations.asset_or_sector"
+      ],
+      "market": {
+        "market_date": "2021-09-15",
+        "close": 51.1175,
+        "ret_1d_pct": -0.61,
+        "ret_5d_pct": -0.3,
+        "ret_20d_pct": 12.91,
+        "ret_60d_pct": 27.8
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "台達電",
+      "symbol": "2308.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "Delta",
+        "EV 供應鏈",
+        "車用",
+        "車用供應鏈",
+        "電動車供應鏈"
+      ],
+      "sources": [
+        "sector_basket:電動車供應鏈",
+        "trade_observations.asset_or_sector",
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2021-09-15",
+        "close": 236.2172,
+        "ret_1d_pct": -2.09,
+        "ret_5d_pct": -4.62,
+        "ret_20d_pct": -3.37,
+        "ret_60d_pct": -11.25
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "鴻海",
+      "symbol": "2317.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "EV 供應鏈",
+        "車用",
+        "車用供應鏈",
+        "電動車供應鏈",
+        "鴻海"
+      ],
+      "sources": [
+        "sector_basket:電動車供應鏈",
+        "trade_observations.asset_or_sector",
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2021-09-15",
+        "close": 92.5987,
+        "ret_1d_pct": 0.93,
+        "ret_5d_pct": 0.93,
+        "ret_20d_pct": 1.4,
+        "ret_60d_pct": 0.9
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "台積電",
+      "symbol": "2330.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "IC 設計",
+        "半導體",
+        "台積電",
+        "晶圓代工",
+        "費城半導體"
+      ],
+      "sources": [
+        "sector_basket:半導體供應鏈",
+        "trade_observations.asset_or_sector",
+        "trade_observations.asset_symbol",
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2021-09-15",
+        "close": 555.8219,
+        "ret_1d_pct": -0.98,
+        "ret_5d_pct": -1.94,
+        "ret_20d_pct": 5.75,
+        "ret_60d_pct": 2.02
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "華邦電",
+      "symbol": "2344.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "NAND",
+        "記憶體"
+      ],
+      "sources": [
+        "sector_basket:記憶體"
+      ],
+      "market": {
+        "market_date": "2021-09-15",
+        "close": 26.4743,
+        "ret_1d_pct": -1.7,
+        "ret_5d_pct": 0.17,
+        "ret_20d_pct": -3.99,
+        "ret_60d_pct": -13.24
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "瑞昱",
+      "symbol": "2379.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "IC 設計",
+        "半導體",
+        "晶圓代工",
+        "費城半導體"
+      ],
+      "sources": [
+        "sector_basket:半導體供應鏈",
+        "trade_observations.asset_or_sector"
+      ],
+      "market": {
+        "market_date": "2021-09-15",
+        "close": 412.1258,
+        "ret_1d_pct": -2.27,
+        "ret_5d_pct": -1.52,
+        "ret_20d_pct": -3.7,
+        "ret_60d_pct": 9.63
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "廣達",
+      "symbol": "2382.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "廣達"
+      ],
+      "sources": [
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2021-09-15",
+        "close": 60.3336,
+        "ret_1d_pct": 0.26,
+        "ret_5d_pct": -0.39,
+        "ret_20d_pct": 0.93,
+        "ret_60d_pct": -7.37
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "南亞科",
+      "symbol": "2408.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "NAND",
+        "記憶體"
+      ],
+      "sources": [
+        "sector_basket:記憶體"
+      ],
+      "market": {
+        "market_date": "2021-09-15",
+        "close": 58.0489,
+        "ret_1d_pct": -3.32,
+        "ret_5d_pct": -0.47,
+        "ret_20d_pct": -7.25,
+        "ret_60d_pct": -14.99
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "聯發科",
+      "symbol": "2454.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "IC 設計",
+        "半導體",
+        "晶圓代工",
+        "費城半導體"
+      ],
+      "sources": [
+        "sector_basket:半導體供應鏈",
+        "trade_observations.asset_or_sector"
+      ],
+      "market": {
+        "market_date": "2021-09-15",
+        "close": 689.8411,
+        "ret_1d_pct": -1.27,
+        "ret_5d_pct": 2.52,
+        "ret_20d_pct": 2.52,
+        "ret_60d_pct": 3.36
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "聯詠",
+      "symbol": "3034.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "IC 設計",
+        "半導體",
+        "晶圓代工",
+        "費城半導體"
+      ],
+      "sources": [
+        "sector_basket:半導體供應鏈",
+        "trade_observations.asset_or_sector"
+      ],
+      "market": {
+        "market_date": "2021-09-15",
+        "close": 292.9355,
+        "ret_1d_pct": -2.05,
+        "ret_5d_pct": 1.29,
+        "ret_20d_pct": -12.31,
+        "ret_60d_pct": -9.24
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "日月光投控",
+      "symbol": "3711.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "IC 設計",
+        "半導體",
+        "日月光",
+        "晶圓代工",
+        "費城半導體"
+      ],
+      "sources": [
+        "sector_basket:半導體供應鏈",
+        "trade_observations.asset_or_sector",
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2021-09-15",
+        "close": 99.222,
+        "ret_1d_pct": -0.4,
+        "ret_5d_pct": 3.77,
+        "ret_20d_pct": 7.72,
+        "ret_60d_pct": 10.5
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "群聯",
+      "symbol": "8299.TWO",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "NAND",
+        "記憶體"
+      ],
+      "sources": [
+        "sector_basket:記憶體"
+      ],
+      "market": {
+        "market_date": "2021-09-15",
+        "close": 331.4737,
+        "ret_1d_pct": -3.03,
+        "ret_5d_pct": -2.79,
+        "ret_20d_pct": -9.71,
+        "ret_60d_pct": -11.61
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "Apple",
+      "symbol": "AAPL",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "AAPL",
+        "Apple",
+        "蘋果"
+      ],
+      "sources": [
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2021-09-15",
+        "close": 145.619,
+        "ret_1d_pct": 0.61,
+        "ret_5d_pct": -3.92,
+        "ret_20d_pct": -0.77,
+        "ret_60d_pct": 12.81
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "Alphabet",
+      "symbol": "GOOGL",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "Google"
+      ],
+      "sources": [
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2021-09-15",
+        "close": 143.2456,
+        "ret_1d_pct": 1.32,
+        "ret_5d_pct": 0.51,
+        "ret_20d_pct": 5.68,
+        "ret_60d_pct": 18.57
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "Meta",
+      "symbol": "META",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "Facebook"
+      ],
+      "sources": [
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2021-09-15",
+        "close": 371.0085,
+        "ret_1d_pct": -0.69,
+        "ret_5d_pct": -0.97,
+        "ret_20d_pct": 4.32,
+        "ret_60d_pct": 12.53
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "Micron",
+      "symbol": "MU",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "NAND",
+        "記憶體"
+      ],
+      "sources": [
+        "sector_basket:記憶體"
+      ],
+      "market": {
+        "market_date": "2021-09-15",
+        "close": 71.9957,
+        "ret_1d_pct": 0.45,
+        "ret_5d_pct": 2.14,
+        "ret_20d_pct": 4.3,
+        "ret_60d_pct": -4.22
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "NVIDIA",
+      "symbol": "NVDA",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "NVIDIA"
+      ],
+      "sources": [
+        "trade_observations.asset_symbol",
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2021-09-15",
+        "close": 22.2939,
+        "ret_1d_pct": 0.45,
+        "ret_5d_pct": 0.01,
+        "ret_20d_pct": 14.84,
+        "ret_60d_pct": 21.26
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "iShares Semiconductor ETF",
+      "symbol": "SOXX",
+      "asset_type": "sector",
+      "matched_aliases": [
+        "IC 設計",
+        "半導體",
+        "晶圓代工",
+        "費城半導體"
+      ],
+      "sources": [
+        "sector_basket:半導體供應鏈",
+        "trade_observations.asset_or_sector",
+        "trade_observations.asset_symbol"
+      ],
+      "market": {
+        "market_date": "2021-09-15",
+        "close": 152.4545,
+        "ret_1d_pct": 0.58,
+        "ret_5d_pct": 2.71,
+        "ret_20d_pct": 6.97,
+        "ret_60d_pct": 10.67
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "Tesla",
+      "symbol": "TSLA",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "EV 供應鏈",
+        "特斯拉",
+        "車用",
+        "車用供應鏈",
+        "電動車供應鏈"
+      ],
+      "sources": [
+        "sector_basket:電動車供應鏈",
+        "trade_observations.asset_or_sector",
+        "trade_observations.asset_symbol",
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2021-09-15",
+        "close": 251.9433,
+        "ret_1d_pct": 1.52,
+        "ret_5d_pct": 0.26,
+        "ret_20d_pct": 13.54,
+        "ret_60d_pct": 21.75
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "台積電 ADR",
+      "symbol": "TSM",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "IC 設計",
+        "半導體",
+        "晶圓代工",
+        "費城半導體"
+      ],
+      "sources": [
+        "sector_basket:半導體供應鏈",
+        "trade_observations.asset_or_sector"
+      ],
+      "market": {
+        "market_date": "2021-09-15",
+        "close": 112.2609,
+        "ret_1d_pct": -1.29,
+        "ret_5d_pct": -0.32,
+        "ret_20d_pct": 9.35,
+        "ret_60d_pct": 6.45
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "台股加權指數",
+      "symbol": "^TWII",
+      "asset_type": "index",
+      "matched_aliases": [
+        "台股",
+        "大盤"
+      ],
+      "sources": [
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2021-09-15",
+        "close": 17354.0,
+        "ret_1d_pct": -0.46,
+        "ret_5d_pct": 0.48,
+        "ret_20d_pct": 3.14,
+        "ret_60d_pct": 0.1
+      },
+      "pricing_status": "ok"
+    }
+  ],
+  "sector_basket_matches": [
+    "半導體供應鏈",
+    "記憶體",
+    "電動車供應鏈"
+  ],
+  "unresolved_mentions": []
+}

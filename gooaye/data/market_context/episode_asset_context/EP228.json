@@ -1,0 +1,604 @@
+{
+  "episode": 228,
+  "episode_date": "2022-05-19",
+  "title": "🧛 台灣升息與資本市場影響",
+  "baseline_market_context": {
+    "^TWII": {
+      "market_date": "2022-05-19",
+      "close": 16020.3203,
+      "ret_1d_pct": -1.7,
+      "ret_5d_pct": 2.58,
+      "ret_20d_pct": -6.58,
+      "ret_60d_pct": -12.13
+    },
+    "^GSPC": {
+      "market_date": "2022-05-19",
+      "close": 3900.79,
+      "ret_1d_pct": -0.58,
+      "ret_5d_pct": -0.75,
+      "ret_20d_pct": -11.22,
+      "ret_60d_pct": -7.68
+    },
+    "^IXIC": {
+      "market_date": "2022-05-19",
+      "close": 11388.5,
+      "ret_1d_pct": -0.26,
+      "ret_5d_pct": 0.15,
+      "ret_20d_pct": -13.56,
+      "ret_60d_pct": -12.65
+    },
+    "^VIX": {
+      "market_date": "2022-05-19",
+      "close": 29.35,
+      "ret_1d_pct": -5.2,
+      "ret_5d_pct": -7.62,
+      "ret_20d_pct": 29.41,
+      "ret_60d_pct": -5.38
+    },
+    "^TNX": {
+      "market_date": "2022-05-19",
+      "close": 2.855,
+      "ret_1d_pct": -1.07,
+      "ret_5d_pct": 1.35,
+      "ret_20d_pct": -2.13,
+      "ret_60d_pct": 44.41
+    },
+    "TWD=X": {
+      "market_date": "2022-05-19",
+      "close": 29.6005,
+      "ret_1d_pct": -0.47,
+      "ret_5d_pct": -0.74,
+      "ret_20d_pct": 1.06,
+      "ret_60d_pct": 5.46
+    },
+    "2330.TW": {
+      "market_date": "2022-05-19",
+      "close": 484.764,
+      "ret_1d_pct": -2.97,
+      "ret_5d_pct": 3.37,
+      "ret_20d_pct": -8.42,
+      "ret_60d_pct": -17.65
+    },
+    "QQQ": {
+      "market_date": "2022-05-19",
+      "close": 282.3634,
+      "ret_1d_pct": -0.54,
+      "ret_5d_pct": -0.54,
+      "ret_20d_pct": -13.34,
+      "ret_60d_pct": -11.99
+    },
+    "SOXX": {
+      "market_date": "2022-05-19",
+      "close": 128.082,
+      "ret_1d_pct": -0.61,
+      "ret_5d_pct": 2.44,
+      "ret_20d_pct": -5.41,
+      "ret_60d_pct": -12.1
+    },
+    "TSM": {
+      "market_date": "2022-05-19",
+      "close": 84.4441,
+      "ret_1d_pct": -0.35,
+      "ret_5d_pct": 2.87,
+      "ret_20d_pct": -7.63,
+      "ret_60d_pct": -21.79
+    },
+    "NVDA": {
+      "market_date": "2022-05-19",
+      "close": 17.0929,
+      "ret_1d_pct": 1.1,
+      "ret_5d_pct": 5.87,
+      "ret_20d_pct": -15.16,
+      "ret_60d_pct": -23.5
+    },
+    "TSLA": {
+      "market_date": "2022-05-19",
+      "close": 236.4733,
+      "ret_1d_pct": -0.05,
+      "ret_5d_pct": -2.55,
+      "ret_20d_pct": -29.68,
+      "ret_60d_pct": -7.15
+    },
+    "BTC-USD": {
+      "market_date": "2022-05-19",
+      "close": 30314.334,
+      "ret_1d_pct": 5.55,
+      "ret_5d_pct": 0.71,
+      "ret_20d_pct": -21.49,
+      "ret_60d_pct": -26.51
+    }
+  },
+  "mentioned_assets": [
+    {
+      "asset_name": "聯電",
+      "symbol": "2303.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "晶圓代工"
+      ],
+      "sources": [
+        "sector_basket:半導體供應鏈"
+      ],
+      "market": {
+        "market_date": "2022-05-19",
+        "close": 39.5849,
+        "ret_1d_pct": -0.2,
+        "ret_5d_pct": 6.28,
+        "ret_20d_pct": 6.61,
+        "ret_60d_pct": -5.4
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "台積電",
+      "symbol": "2330.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "台積電",
+        "晶圓代工"
+      ],
+      "sources": [
+        "sector_basket:半導體供應鏈",
+        "trade_observations.asset_symbol",
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2022-05-19",
+        "close": 484.764,
+        "ret_1d_pct": -2.97,
+        "ret_5d_pct": 3.37,
+        "ret_20d_pct": -8.42,
+        "ret_60d_pct": -17.65
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "技嘉",
+      "symbol": "2376.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "技嘉"
+      ],
+      "sources": [
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2022-05-19",
+        "close": 87.3933,
+        "ret_1d_pct": -1.36,
+        "ret_5d_pct": 3.32,
+        "ret_20d_pct": -6.03,
+        "ret_60d_pct": -28.52
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "瑞昱",
+      "symbol": "2379.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "晶圓代工"
+      ],
+      "sources": [
+        "sector_basket:半導體供應鏈"
+      ],
+      "market": {
+        "market_date": "2022-05-19",
+        "close": 351.9411,
+        "ret_1d_pct": 2.2,
+        "ret_5d_pct": 7.55,
+        "ret_20d_pct": 9.01,
+        "ret_60d_pct": -8.59
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "聯發科",
+      "symbol": "2454.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "晶圓代工"
+      ],
+      "sources": [
+        "sector_basket:半導體供應鏈"
+      ],
+      "market": {
+        "market_date": "2022-05-19",
+        "close": 623.4393,
+        "ret_1d_pct": -1.17,
+        "ret_5d_pct": 3.05,
+        "ret_20d_pct": -1.29,
+        "ret_60d_pct": -24.55
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "長榮",
+      "symbol": "2603.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "航運",
+        "航運股"
+      ],
+      "sources": [
+        "sector_basket:航運/物流"
+      ],
+      "market": {
+        "market_date": "2022-05-19",
+        "close": 128.2878,
+        "ret_1d_pct": -1.09,
+        "ret_5d_pct": -2.16,
+        "ret_20d_pct": -5.23,
+        "ret_60d_pct": -3.89
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "陽明",
+      "symbol": "2609.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "航運",
+        "航運股"
+      ],
+      "sources": [
+        "sector_basket:航運/物流"
+      ],
+      "market": {
+        "market_date": "2022-05-19",
+        "close": 56.6571,
+        "ret_1d_pct": -2.13,
+        "ret_5d_pct": -4.96,
+        "ret_20d_pct": -6.88,
+        "ret_60d_pct": -1.29
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "萬海",
+      "symbol": "2615.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "航運",
+        "航運股"
+      ],
+      "sources": [
+        "sector_basket:航運/物流"
+      ],
+      "market": {
+        "market_date": "2022-05-19",
+        "close": 99.8546,
+        "ret_1d_pct": -1.02,
+        "ret_5d_pct": -1.68,
+        "ret_20d_pct": -6.11,
+        "ret_60d_pct": -24.94
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "富邦金",
+      "symbol": "2881.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "銀行股"
+      ],
+      "sources": [
+        "sector_basket:金融股"
+      ],
+      "market": {
+        "market_date": "2022-05-19",
+        "close": 44.1294,
+        "ret_1d_pct": -3.3,
+        "ret_5d_pct": -2.69,
+        "ret_20d_pct": -17.76,
+        "ret_60d_pct": -20.82
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "國泰金",
+      "symbol": "2882.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "銀行股"
+      ],
+      "sources": [
+        "sector_basket:金融股"
+      ],
+      "market": {
+        "market_date": "2022-05-19",
+        "close": 43.2947,
+        "ret_1d_pct": -2.59,
+        "ret_5d_pct": -2.59,
+        "ret_20d_pct": -17.53,
+        "ret_60d_pct": -18.42
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "兆豐金",
+      "symbol": "2886.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "銀行股"
+      ],
+      "sources": [
+        "sector_basket:金融股"
+      ],
+      "market": {
+        "market_date": "2022-05-19",
+        "close": 29.5992,
+        "ret_1d_pct": -2.4,
+        "ret_5d_pct": -1.08,
+        "ret_20d_pct": -12.34,
+        "ret_60d_pct": -3.94
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "中信金",
+      "symbol": "2891.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "銀行股"
+      ],
+      "sources": [
+        "sector_basket:金融股"
+      ],
+      "market": {
+        "market_date": "2022-05-19",
+        "close": 20.8496,
+        "ret_1d_pct": -3.07,
+        "ret_5d_pct": -2.88,
+        "ret_20d_pct": -13.36,
+        "ret_60d_pct": -10.76
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "聯詠",
+      "symbol": "3034.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "晶圓代工"
+      ],
+      "sources": [
+        "sector_basket:半導體供應鏈"
+      ],
+      "market": {
+        "market_date": "2022-05-19",
+        "close": 273.5651,
+        "ret_1d_pct": 1.9,
+        "ret_5d_pct": 3.6,
+        "ret_20d_pct": -0.74,
+        "ret_60d_pct": -9.85
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "日月光投控",
+      "symbol": "3711.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "晶圓代工"
+      ],
+      "sources": [
+        "sector_basket:半導體供應鏈"
+      ],
+      "market": {
+        "market_date": "2022-05-19",
+        "close": 76.577,
+        "ret_1d_pct": -1.24,
+        "ret_5d_pct": 2.9,
+        "ret_20d_pct": -3.53,
+        "ret_60d_pct": -7.98
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "Apple",
+      "symbol": "AAPL",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "蘋果"
+      ],
+      "sources": [
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2022-05-19",
+        "close": 134.7711,
+        "ret_1d_pct": -2.46,
+        "ret_5d_pct": -3.65,
+        "ret_20d_pct": -17.35,
+        "ret_60d_pct": -14.07
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "AMD",
+      "symbol": "AMD",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "AMD"
+      ],
+      "sources": [
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2022-05-19",
+        "close": 96.67,
+        "ret_1d_pct": 0.41,
+        "ret_5d_pct": 11.04,
+        "ret_20d_pct": 7.59,
+        "ret_60d_pct": -11.93
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "NVIDIA",
+      "symbol": "NVDA",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "NVIDIA",
+        "老黃"
+      ],
+      "sources": [
+        "trade_observations.asset_symbol",
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2022-05-19",
+        "close": 17.0929,
+        "ret_1d_pct": 1.1,
+        "ret_5d_pct": 5.87,
+        "ret_20d_pct": -15.16,
+        "ret_60d_pct": -23.5
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "Invesco QQQ",
+      "symbol": "QQQ",
+      "asset_type": "index",
+      "matched_aliases": [],
+      "sources": [
+        "trade_observations.asset_symbol"
+      ],
+      "market": {
+        "market_date": "2022-05-19",
+        "close": 282.3634,
+        "ret_1d_pct": -0.54,
+        "ret_5d_pct": -0.54,
+        "ret_20d_pct": -13.34,
+        "ret_60d_pct": -11.99
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "iShares Semiconductor ETF",
+      "symbol": "SOXX",
+      "asset_type": "sector",
+      "matched_aliases": [
+        "晶圓代工"
+      ],
+      "sources": [
+        "sector_basket:半導體供應鏈"
+      ],
+      "market": {
+        "market_date": "2022-05-19",
+        "close": 128.082,
+        "ret_1d_pct": -0.61,
+        "ret_5d_pct": 2.44,
+        "ret_20d_pct": -5.41,
+        "ret_60d_pct": -12.1
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "Tesla",
+      "symbol": "TSLA",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "特斯拉"
+      ],
+      "sources": [
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2022-05-19",
+        "close": 236.4733,
+        "ret_1d_pct": -0.05,
+        "ret_5d_pct": -2.55,
+        "ret_20d_pct": -29.68,
+        "ret_60d_pct": -7.15
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "台積電 ADR",
+      "symbol": "TSM",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "晶圓代工"
+      ],
+      "sources": [
+        "sector_basket:半導體供應鏈"
+      ],
+      "market": {
+        "market_date": "2022-05-19",
+        "close": 84.4441,
+        "ret_1d_pct": -0.35,
+        "ret_5d_pct": 2.87,
+        "ret_20d_pct": -7.63,
+        "ret_60d_pct": -21.79
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "Block",
+      "symbol": "XYZ",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "SQ"
+      ],
+      "sources": [
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2022-05-19",
+        "close": 87.14,
+        "ret_1d_pct": 6.19,
+        "ret_5d_pct": 15.02,
+        "ret_20d_pct": -19.1,
+        "ret_60d_pct": -1.78
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "標普 500",
+      "symbol": "^GSPC",
+      "asset_type": "index",
+      "matched_aliases": [],
+      "sources": [
+        "trade_observations.asset_symbol"
+      ],
+      "market": {
+        "market_date": "2022-05-19",
+        "close": 3900.79,
+        "ret_1d_pct": -0.58,
+        "ret_5d_pct": -0.75,
+        "ret_20d_pct": -11.22,
+        "ret_60d_pct": -7.68
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "台股加權指數",
+      "symbol": "^TWII",
+      "asset_type": "index",
+      "matched_aliases": [
+        "台股",
+        "大盤"
+      ],
+      "sources": [
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2022-05-19",
+        "close": 16020.3203,
+        "ret_1d_pct": -1.7,
+        "ret_5d_pct": 2.58,
+        "ret_20d_pct": -6.58,
+        "ret_60d_pct": -12.13
+      },
+      "pricing_status": "ok"
+    }
+  ],
+  "sector_basket_matches": [
+    "半導體供應鏈",
+    "航運/物流",
+    "金融股"
+  ],
+  "unresolved_mentions": []
+}

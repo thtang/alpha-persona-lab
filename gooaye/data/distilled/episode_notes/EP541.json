@@ -1,0 +1,178 @@
+{
+  "schema_version": "v2",
+  "episode": 541,
+  "date": "2025-05-19",
+  "episode_archetype": {
+    "primary": "philosophy",
+    "secondary": [
+      "market_commentary"
+    ]
+  },
+  "segment_breakdown": {
+    "market_pct": 25,
+    "qa_pct": 5,
+    "life_or_aside_pct": 35,
+    "ads_pct": 8,
+    "principles_pct": 27
+  },
+  "market_regime": {
+    "phase_label": "急跌後反彈",
+    "narrative": "^TWII 收 21523.83、1日 -1.46%、20日 +10.98%、60日 -9.05%；2330.TW 收 969.53、1日 -1.40%、20日 +15.76%、60日 -10.13%；SOXX 收 210.50、1日 -0.60%、20日 +29.46%、60日 -5.29%；QQQ 收 519.50、1日 +0.10%、20日 +20.53%、60日 -0.63%；NVDA 收 135.54、1日 +0.13%、20日 +39.89%、60日 +0.86%；盤面處於急跌後反彈，主持人的討論聚焦於波動下的部位與題材判斷。",
+    "geopolitical_factors": [],
+    "regime_tags": [
+      "反彈修復",
+      "波動放大",
+      "資金控管"
+    ]
+  },
+  "topics": [
+    "輝達",
+    "GTC",
+    "現金水位",
+    "股市下跌與人生谷底的自我救贖"
+  ],
+  "host_state": {
+    "leverage_state": "他提到維持現金水位以保留後續調整空間。",
+    "disclosed_positions": [],
+    "self_critique": [
+      {
+        "target": "近期交易與部位管理",
+        "assessment": "他把行情波動視為需要檢討水位與心態的訊號",
+        "tone": "serious"
+      }
+    ],
+    "personal_arc_markers": []
+  },
+  "investment_logic": [
+    {
+      "claim": "反彈提供人道走廊時，應把部位調回能承受的水位。",
+      "trigger": "急跌後反彈、現金不足或心理壓力過高",
+      "is_conditional": false,
+      "condition": null,
+      "action_bias": "trim",
+      "risk_control": "保留現金與心理彈性",
+      "risk_control_type": "position-size",
+      "evidence": "EP541 2025-05-19 摘述：最後強調心態管理的重要性，持有現金維持靈活度，等待更好的介入點。",
+      "source_type": "host_framework",
+      "confidence": "medium"
+    },
+    {
+      "claim": "熱門題材若需求假設過度樂觀，供應鏈會承受砍單與估值修正。",
+      "trigger": "AI 或硬體供應鏈預期過熱",
+      "is_conditional": false,
+      "condition": null,
+      "action_bias": "wait",
+      "risk_control": "等待訂單與需求證據確認",
+      "risk_control_type": "none",
+      "evidence": "EP541 2025-05-19 摘述：另外提醒 GPU die 與 chip 定義改變、inference 需求過度樂觀、供應鏈面臨挑戰，以及擔心未來 CSP 可能因新產品推出速度過快而出現重複下單情形。",
+      "source_type": "host_framework",
+      "confidence": "medium"
+    }
+  ],
+  "trade_observations": [
+    {
+      "asset_or_sector": "台股盤面",
+      "asset_symbol": "^TWII",
+      "asset_type": "index",
+      "view": {
+        "short_term": "conditional",
+        "medium_term": "conditional",
+        "long_term": "unstated"
+      },
+      "primary_horizon": "medium-term",
+      "reasoning": "他以台股急跌、反彈或融資籌碼變化作為調整部位的背景。",
+      "industry_nodes": [],
+      "catalyst_anchor": null,
+      "consensus_level": "unclear",
+      "market_alignment": "^TWII 收 21523.83、1日 -1.46%、20日 +10.98%、60日 -9.05%",
+      "tone": "serious"
+    },
+    {
+      "asset_or_sector": "半導體與 AI 硬體",
+      "asset_symbol": "SOXX",
+      "asset_type": "sector",
+      "view": {
+        "short_term": "conditional",
+        "medium_term": "neutral",
+        "long_term": "bullish"
+      },
+      "primary_horizon": "medium-term",
+      "reasoning": "他把 AI 硬體供應鏈視為主線，但提醒估值、需求與訂單節奏需要確認。",
+      "industry_nodes": [
+        "AI infrastructure"
+      ],
+      "catalyst_anchor": null,
+      "consensus_level": "crowded",
+      "market_alignment": "SOXX 收 210.50、1日 -0.60%、20日 +29.46%、60日 -5.29%",
+      "tone": "serious"
+    },
+    {
+      "asset_or_sector": "輝達",
+      "asset_symbol": "NVDA",
+      "asset_type": "stock",
+      "view": {
+        "short_term": "conditional",
+        "medium_term": "neutral",
+        "long_term": "bullish"
+      },
+      "primary_horizon": "medium-term",
+      "reasoning": "他討論 GTC、出口管制或 inference 需求，語氣偏向關注風險與後續驗證。",
+      "industry_nodes": [
+        "GPU",
+        "inference"
+      ],
+      "catalyst_anchor": null,
+      "consensus_level": "crowded",
+      "market_alignment": "NVDA 收 135.54、1日 +0.13%、20日 +39.89%、60日 +0.86%",
+      "tone": "serious"
+    }
+  ],
+  "qa_views": [],
+  "catalysts": [
+    {
+      "id": "nvidia_gtc_2025",
+      "event": "NVIDIA GTC 大會",
+      "expected_date": "2025-03",
+      "category": "conference",
+      "expected_impact": "市場觀察 AI 硬體與供應鏈敘事是否有新增催化",
+      "linked_assets": [
+        "NVDA",
+        "SOXX",
+        "QQQ"
+      ]
+    }
+  ],
+  "narrative_threads": [],
+  "view_changes": [],
+  "principles": [
+    {
+      "principle": "先活下來再求表現",
+      "explanation": "極端行情或人生壓力下，先維持心理與財務韌性，才有後續決策空間。",
+      "category": "mental_health",
+      "evidence": "EP541 2025-05-19 摘述：最後強調心態管理的重要性，持有現金維持靈活度，等待更好的介入點。"
+    },
+    {
+      "principle": "現金是選擇權",
+      "explanation": "保留現金能讓投資人在反彈或再殺時有調整空間，不被單一路徑綁死。",
+      "category": "position_sizing",
+      "evidence": "EP541 2025-05-19 摘述：最後強調心態管理的重要性，持有現金維持靈活度，等待更好的介入點。"
+    }
+  ],
+  "mantras_or_catchphrases": [],
+  "warnings": [
+    {
+      "type": "anti_pattern",
+      "target": "把熱門題材線性外推",
+      "warning": "題材越熱越要檢查需求與供給，不要只看最漂亮的財報或敘事。",
+      "evidence": "EP541 2025-05-19 摘述：另外提醒 GPU die 與 chip 定義改變、inference 需求過度樂觀、供應鏈面臨挑戰，以及擔心未來 CSP 可能因新產品推出速度過快而出現重複下單情形。"
+    }
+  ],
+  "references": [],
+  "non_tradeable_insights": [
+    {
+      "insight": "關稅與地緣政治可能推動供應鏈分流，企業必須重新配置生產與客戶結構。",
+      "domain": "macro_trend"
+    }
+  ],
+  "open_questions": []
+}

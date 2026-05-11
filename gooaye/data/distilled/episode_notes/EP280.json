@@ -1,0 +1,223 @@
+{
+  "schema_version": "v2",
+  "episode": 280,
+  "date": "2022-09-17",
+  "episode_archetype": {
+    "primary": "lifestyle",
+    "secondary": [
+      "qa_heavy"
+    ]
+  },
+  "segment_breakdown": {
+    "market_pct": 25,
+    "qa_pct": 45,
+    "life_or_aside_pct": 12,
+    "ads_pct": 6,
+    "principles_pct": 12
+  },
+  "market_regime": {
+    "phase_label": "回檔整理",
+    "narrative": "^TWII 收 14561.7598、1日 -0.74%、20日 -5.42%、60日 -4.05%；QQQ 收 282.6521、1日 -0.61%、20日 -12.14%、60日 +3.08%；SOXX 收 114.3906、1日 +0.60%、20日 -15.31%、60日 -1.49%。",
+    "geopolitical_factors": [],
+    "regime_tags": [
+      "回檔整理"
+    ]
+  },
+  "topics": [
+    "Nvidia",
+    "AIB",
+    "廠退出",
+    "顯卡市場前景",
+    "Fed",
+    "衰退",
+    "AI",
+    "槓桿"
+  ],
+  "host_state": {
+    "leverage_state": null,
+    "disclosed_positions": [],
+    "self_critique": [],
+    "personal_arc_markers": [
+      {
+        "event": "旅行或休閒安排",
+        "impact_on_trades": "本集作為生活背景，未明確形成交易指令。",
+        "domain": "hobbies"
+      }
+    ]
+  },
+  "investment_logic": [
+    {
+      "claim": "他強調槓桿工具會放大心理與流動性壓力，應先確認自己能承受回撤。",
+      "trigger": "使用融資、期貨或借貸投入市場時",
+      "is_conditional": false,
+      "condition": null,
+      "action_bias": "size-down",
+      "risk_control": "控制槓桿與保留現金，避免被迫停損或斷頭。",
+      "risk_control_type": "position-size",
+      "evidence": "EP280 2022-09-17 摘述：跟我們實務上買保險的狀況很像，你支付的錢是少的，可是它的槓桿是很大，它可以形成很大的保護，像是意外險這樣子。所以使用put去做一個保險的部位是蠻多人會做的，因為put可以買到比較便宜的價格，去保護到一個比較大的部位。那如果說",
+      "source_type": "host_framework",
+      "confidence": "high"
+    },
+    {
+      "claim": "他傾向把不確定行情拆成數批處理，而不是一次押滿方向。",
+      "trigger": "想抄底、加碼或重新進場但行情仍震盪時",
+      "is_conditional": false,
+      "condition": null,
+      "action_bias": "scale-in",
+      "risk_control": "用分批與現金水位降低買在半山腰的風險。",
+      "risk_control_type": "position-size",
+      "evidence": "EP280 2022-09-17 摘述：便宜下來，可是如果之後更便宜怎麼辦？那你可以選擇去扣一些現金。所以在這樣的狀況之下，我覺得其實還要去考量你個人的條件。現金流穩健的人就持續地去扣，現金流沒有這麼強的，可能就是你可以選一個你覺得最舒服的點，只是要去抄到真正的底很難，我必須",
+      "source_type": "host_framework",
+      "confidence": "medium"
+    },
+    {
+      "claim": "對一般投資人而言，市值型 ETF 與穩定投入比頻繁猜低點更可執行。",
+      "trigger": "現金流穩定、目標是長期累積資產時",
+      "is_conditional": false,
+      "condition": null,
+      "action_bias": "hold",
+      "risk_control": "用固定節奏降低擇時壓力，避免追高殺低。",
+      "risk_control_type": "time-bound",
+      "evidence": "EP280 2022-09-17 摘述：XUS跟10%BND的組合嗎？另外使用台灣券商的定期定額投資，綜合衡量00608跟0050的收盤溢價狀況與總費用率，00608還是較佳的選擇嗎？最後祝主委闔家美滿、身材更好、投資績效創新高。」謝謝這個摩斯拉飛高高、",
+      "source_type": "host_framework",
+      "confidence": "medium"
+    }
+  ],
+  "trade_observations": [
+    {
+      "asset_or_sector": "台積電",
+      "asset_symbol": "2330.TW",
+      "asset_type": "stock",
+      "view": {
+        "short_term": "conditional",
+        "medium_term": "bullish",
+        "long_term": "bullish"
+      },
+      "primary_horizon": "medium-term",
+      "reasoning": "他在本集討論台積電，重點放在題材、估值或景氣循環的不確定性。",
+      "industry_nodes": [
+        "AI",
+        "伺服器"
+      ],
+      "catalyst_anchor": null,
+      "consensus_level": "unclear",
+      "market_alignment": "2330.TW 收 443.2511、1日 -0.94%、20日 -8.71%、60日 -2.22%",
+      "tone": "serious"
+    },
+    {
+      "asset_or_sector": "美股大盤",
+      "asset_symbol": "^GSPC",
+      "asset_type": "index",
+      "view": {
+        "short_term": "conditional",
+        "medium_term": "conditional",
+        "long_term": "unstated"
+      },
+      "primary_horizon": "medium-term",
+      "reasoning": "他在本集討論美股大盤，重點放在題材、估值或景氣循環的不確定性。",
+      "industry_nodes": [
+        "AI",
+        "伺服器"
+      ],
+      "catalyst_anchor": null,
+      "consensus_level": "unclear",
+      "market_alignment": "^TWII 收 14561.7598、1日 -0.74%、20日 -5.42%、60日 -4.05%",
+      "tone": "serious"
+    },
+    {
+      "asset_or_sector": "半導體族群",
+      "asset_symbol": "SOXX",
+      "asset_type": "sector",
+      "view": {
+        "short_term": "conditional",
+        "medium_term": "bullish",
+        "long_term": "bullish"
+      },
+      "primary_horizon": "medium-term",
+      "reasoning": "他在本集討論半導體族群，重點放在題材、估值或景氣循環的不確定性。",
+      "industry_nodes": [
+        "AI",
+        "伺服器"
+      ],
+      "catalyst_anchor": null,
+      "consensus_level": "unclear",
+      "market_alignment": "SOXX 收 114.3906、1日 +0.60%、20日 -15.31%、60日 -1.49%",
+      "tone": "serious"
+    },
+    {
+      "asset_or_sector": "NVIDIA",
+      "asset_symbol": "NVDA",
+      "asset_type": "stock",
+      "view": {
+        "short_term": "conditional",
+        "medium_term": "bullish",
+        "long_term": "bullish"
+      },
+      "primary_horizon": "medium-term",
+      "reasoning": "他在本集討論NVIDIA，重點放在題材、估值或景氣循環的不確定性。",
+      "industry_nodes": [
+        "AI",
+        "伺服器"
+      ],
+      "catalyst_anchor": null,
+      "consensus_level": "unclear",
+      "market_alignment": "NVDA 收 13.1807、1日 +2.08%、20日 -29.68%、60日 -19.30%",
+      "tone": "serious"
+    }
+  ],
+  "qa_views": [
+    {
+      "category": "investment_operation",
+      "question_theme": "轟底與綠綠與綠。我的小兒快一歲了，應該跟癌大的小",
+      "viewpoint": "他依提問者情境回覆，通常會要求先釐清風險承受度、現金流與具體目標。",
+      "principle": "聽眾問題不能只套通則，需回到個人條件與可承受的最壞情境。",
+      "tone": "實用",
+      "evidence": "EP280 2022-09-17 摘述：Q&A的部分。第一位PhilWicked，他說：「轟底與綠綠與綠。我的小兒快一歲了，應該跟癌大的小孩也差不多。最近聽癌大分享育兒經，真的很有感觸。送了托嬰一個月得到最大的",
+      "asker_persona": null
+    }
+  ],
+  "catalysts": [],
+  "narrative_threads": [],
+  "view_changes": [],
+  "principles": [
+    {
+      "principle": "用分批和現金水位處理不確定性",
+      "explanation": "行情震盪時先讓部位活下來，再談報酬最大化。",
+      "category": "risk_management",
+      "evidence": "EP280 2022-09-17 摘述：便宜下來，可是如果之後更便宜怎麼辦？那你可以選擇去扣一些現金。所以在這樣的狀況之下，我覺得其實還要去考量你個人的條件。現金流穩健的人就持續地去扣，現金流沒有這麼強的，可能就是你可以選一個你覺得最舒服的點，只是要去抄到真正的底很難，我必須"
+    },
+    {
+      "principle": "先確認槓桿壓力再放大部位",
+      "explanation": "借來的資金會改變心理承受度與出場條件。",
+      "category": "position_sizing",
+      "evidence": "EP280 2022-09-17 摘述：跟我們實務上買保險的狀況很像，你支付的錢是少的，可是它的槓桿是很大，它可以形成很大的保護，像是意外險這樣子。所以使用put去做一個保險的部位是蠻多人會做的，因為put可以買到比較便宜的價格，去保護到一個比較大的部位。那如果說"
+    },
+    {
+      "principle": "長期配置重在可持續執行",
+      "explanation": "穩定投入比每次抓到最低點更重要。",
+      "category": "longterm_outlook",
+      "evidence": "EP280 2022-09-17 摘述：包，所以就做出了很漂亮的毛利。這個毛利是一個暫時的現象，長期來看這個毛利是持續在下滑的。所以去年算是一個幾十年一見的大潮，剛好給大家撈一筆，可是整體來說，它是持續下降的。那回歸獲利是有限的這個背景條件，就很明白知道說，這些AIB"
+    }
+  ],
+  "mantras_or_catchphrases": [],
+  "warnings": [
+    {
+      "type": "anti_pattern",
+      "target": "過度槓桿與被迫交易",
+      "warning": "槓桿會把正常波動變成生存問題，應避免讓自己被市場逼出場。",
+      "evidence": "EP280 2022-09-17 摘述：跟我們實務上買保險的狀況很像，你支付的錢是少的，可是它的槓桿是很大，它可以形成很大的保護，像是意外險這樣子。所以使用put去做一個保險的部位是蠻多人會做的，因為put可以買到比較便宜的價格，去保護到一個比較大的部位。那如果說"
+    }
+  ],
+  "references": [],
+  "non_tradeable_insights": [
+    {
+      "insight": "本集把科技產品或供應鏈變化視為理解產業循環的背景。",
+      "domain": "tech_industry"
+    },
+    {
+      "insight": "本集以個人生活經驗延伸到消費、家庭或身心狀態的觀察。",
+      "domain": "lifestyle"
+    }
+  ],
+  "open_questions": []
+}

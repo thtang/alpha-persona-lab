@@ -1,0 +1,202 @@
+{
+  "schema_version": "v2",
+  "episode": 538,
+  "date": "2025-05-08",
+  "episode_archetype": {
+    "primary": "industry_supply_chain",
+    "secondary": [
+      "market_commentary"
+    ]
+  },
+  "segment_breakdown": {
+    "market_pct": 45,
+    "qa_pct": 5,
+    "life_or_aside_pct": 15,
+    "ads_pct": 8,
+    "principles_pct": 27
+  },
+  "market_regime": {
+    "phase_label": "急跌後反彈",
+    "narrative": "^TWII 收 20543.40、1日 -0.02%、20日 +18.12%、60日 -12.50%；2330.TW 收 904.50、1日 -1.08%、20日 +16.94%、60日 -18.02%；SOXX 收 190.52、1日 +0.89%、20日 +4.42%、60日 -12.69%；QQQ 收 485.94、1日 +1.03%、20日 +4.78%、60日 -7.38%；NVDA 收 117.34、1日 +0.26%、20日 +2.66%、60日 -11.61%；盤面處於急跌後反彈，主持人的討論聚焦於波動下的部位與題材判斷。",
+    "geopolitical_factors": [],
+    "regime_tags": [
+      "反彈修復",
+      "波動放大",
+      "資金控管"
+    ]
+  },
+  "topics": [
+    "川普關稅",
+    "AI 產業",
+    "台積電",
+    "輝達",
+    "Apple AI",
+    "槓桿控管",
+    "現金水位"
+  ],
+  "host_state": {
+    "leverage_state": "他提到維持現金水位以保留後續調整空間。",
+    "disclosed_positions": [],
+    "self_critique": [
+      {
+        "target": "近期交易與部位管理",
+        "assessment": "他把行情波動視為需要檢討水位與心態的訊號",
+        "tone": "serious"
+      }
+    ],
+    "personal_arc_markers": []
+  },
+  "investment_logic": [
+    {
+      "claim": "反彈提供人道走廊時，應把部位調回能承受的水位。",
+      "trigger": "急跌後反彈、現金不足或心理壓力過高",
+      "is_conditional": false,
+      "condition": null,
+      "action_bias": "trim",
+      "risk_control": "保留現金與心理彈性",
+      "risk_control_type": "position-size",
+      "evidence": "EP538 2025-05-08 摘述：聊最近美股那波超大跌幅、為什麼沒地方躲，還有怎麼調整槓桿跟現金配置才不會賠到怕；",
+      "source_type": "host_framework",
+      "confidence": "medium"
+    },
+    {
+      "claim": "高波動期間不應讓融資或槓桿決定自己的生死。",
+      "trigger": "融資維持率惡化、熱門股鎖跌停或行情急殺",
+      "is_conditional": false,
+      "condition": null,
+      "action_bias": "size-down",
+      "risk_control": "降低槓桿，避免被強制出場",
+      "risk_control_type": "position-size",
+      "evidence": "EP538 2025-05-08 摘述：聊最近美股那波超大跌幅、為什麼沒地方躲，還有怎麼調整槓桿跟現金配置才不會賠到怕；",
+      "source_type": "host_framework",
+      "confidence": "high"
+    }
+  ],
+  "trade_observations": [
+    {
+      "asset_or_sector": "半導體與 AI 硬體",
+      "asset_symbol": "SOXX",
+      "asset_type": "sector",
+      "view": {
+        "short_term": "conditional",
+        "medium_term": "neutral",
+        "long_term": "bullish"
+      },
+      "primary_horizon": "medium-term",
+      "reasoning": "他把 AI 硬體供應鏈視為主線，但提醒估值、需求與訂單節奏需要確認。",
+      "industry_nodes": [
+        "AI infrastructure"
+      ],
+      "catalyst_anchor": null,
+      "consensus_level": "crowded",
+      "market_alignment": "SOXX 收 190.52、1日 +0.89%、20日 +4.42%、60日 -12.69%",
+      "tone": "serious"
+    },
+    {
+      "asset_or_sector": "輝達",
+      "asset_symbol": "NVDA",
+      "asset_type": "stock",
+      "view": {
+        "short_term": "conditional",
+        "medium_term": "neutral",
+        "long_term": "bullish"
+      },
+      "primary_horizon": "medium-term",
+      "reasoning": "他討論 GTC、出口管制或 inference 需求，語氣偏向關注風險與後續驗證。",
+      "industry_nodes": [
+        "GPU",
+        "inference"
+      ],
+      "catalyst_anchor": null,
+      "consensus_level": "crowded",
+      "market_alignment": "NVDA 收 117.34、1日 +0.26%、20日 +2.66%、60日 -11.61%",
+      "tone": "serious"
+    },
+    {
+      "asset_or_sector": "台積電",
+      "asset_symbol": "2330.TW",
+      "asset_type": "stock",
+      "view": {
+        "short_term": "conditional",
+        "medium_term": "bullish",
+        "long_term": "bullish"
+      },
+      "primary_horizon": "medium-term",
+      "reasoning": "他把台積電放在 AI 與供應鏈重整脈絡中觀察，但短線受市場波動影響。",
+      "industry_nodes": [
+        "先進製程"
+      ],
+      "catalyst_anchor": null,
+      "consensus_level": "consensus",
+      "market_alignment": "2330.TW 收 904.50、1日 -1.08%、20日 +16.94%、60日 -18.02%",
+      "tone": "serious"
+    },
+    {
+      "asset_or_sector": "Apple AI",
+      "asset_symbol": null,
+      "asset_type": "theme",
+      "view": {
+        "short_term": "conditional",
+        "medium_term": "neutral",
+        "long_term": "unstated"
+      },
+      "primary_horizon": "medium-term",
+      "reasoning": "他在本集以Apple AI作為產業或資產案例，重點是等待需求、估值與景氣位置互相印證。",
+      "industry_nodes": [],
+      "catalyst_anchor": null,
+      "consensus_level": "unclear",
+      "market_alignment": "^TWII 收 20543.40、1日 -0.02%、20日 +18.12%、60日 -12.50%；SOXX 收 190.52、1日 +0.89%、20日 +4.42%、60日 -12.69%；QQQ 收 485.94、1日 +1.03%、20日 +4.78%、60日 -7.38%；NVDA 收 117.34、1日 +0.26%、20日 +2.66%、60日 -11.61%",
+      "tone": "serious"
+    }
+  ],
+  "qa_views": [],
+  "catalysts": [
+    {
+      "id": "trump_tariff_2025",
+      "event": "川普關稅談判與政策變化",
+      "expected_date": "2025",
+      "category": "regulation",
+      "expected_impact": "政策反覆會影響供應鏈、出口與市場風險偏好",
+      "linked_assets": [
+        "^TWII",
+        "QQQ",
+        "SOXX"
+      ]
+    }
+  ],
+  "narrative_threads": [
+    {
+      "thread_id": "trump_tariff_2025",
+      "label": "川普關稅戰",
+      "this_episode_role": "update",
+      "prior_episode_refs": []
+    },
+    {
+      "thread_id": "ai_infrastructure_2024_2025",
+      "label": "AI 基礎建設與應用輪動",
+      "this_episode_role": "update",
+      "prior_episode_refs": []
+    }
+  ],
+  "view_changes": [],
+  "principles": [
+    {
+      "principle": "現金是選擇權",
+      "explanation": "保留現金能讓投資人在反彈或再殺時有調整空間，不被單一路徑綁死。",
+      "category": "position_sizing",
+      "evidence": "EP538 2025-05-08 摘述：聊最近美股那波超大跌幅、為什麼沒地方躲，還有怎麼調整槓桿跟現金配置才不會賠到怕；"
+    }
+  ],
+  "mantras_or_catchphrases": [],
+  "warnings": [
+    {
+      "type": "anti_pattern",
+      "target": "高槓桿追熱門股",
+      "warning": "熱門股在流動性消失時可能無法賣出，槓桿會把波動放大成生存問題。",
+      "evidence": "EP538 2025-05-08 摘述：聊最近美股那波超大跌幅、為什麼沒地方躲，還有怎麼調整槓桿跟現金配置才不會賠到怕；"
+    }
+  ],
+  "references": [],
+  "non_tradeable_insights": [],
+  "open_questions": []
+}

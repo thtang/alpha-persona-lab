@@ -1,0 +1,440 @@
+{
+  "episode": 156,
+  "episode_date": "2021-06-10",
+  "title": "賭場上線啦 衍生金融品工具與風險管理",
+  "baseline_market_context": {
+    "^TWII": {
+      "market_date": "2021-06-10",
+      "close": 17159.2207,
+      "ret_1d_pct": 1.14,
+      "ret_5d_pct": -0.5,
+      "ret_20d_pct": 9.5,
+      "ret_60d_pct": 5.56
+    },
+    "^GSPC": {
+      "market_date": "2021-06-10",
+      "close": 4239.1802,
+      "ret_1d_pct": 0.47,
+      "ret_5d_pct": 1.1,
+      "ret_20d_pct": 4.34,
+      "ret_60d_pct": 6.98
+    },
+    "^IXIC": {
+      "market_date": "2021-06-10",
+      "close": 14020.3301,
+      "ret_1d_pct": 0.78,
+      "ret_5d_pct": 2.98,
+      "ret_20d_pct": 7.59,
+      "ret_60d_pct": 4.07
+    },
+    "^VIX": {
+      "market_date": "2021-06-10",
+      "close": 16.1,
+      "ret_1d_pct": -10.01,
+      "ret_5d_pct": -10.75,
+      "ret_20d_pct": -41.65,
+      "ret_60d_pct": -18.65
+    },
+    "^TNX": {
+      "market_date": "2021-06-10",
+      "close": 1.459,
+      "ret_1d_pct": -2.01,
+      "ret_5d_pct": -10.22,
+      "ret_20d_pct": -13.92,
+      "ret_60d_pct": -9.99
+    },
+    "TWD=X": {
+      "market_date": "2021-06-10",
+      "close": 27.5575,
+      "ret_1d_pct": -0.8,
+      "ret_5d_pct": -0.24,
+      "ret_20d_pct": -1.36,
+      "ret_60d_pct": -2.98
+    },
+    "2330.TW": {
+      "market_date": "2021-06-10",
+      "close": 546.2301,
+      "ret_1d_pct": 2.22,
+      "ret_5d_pct": 0.5,
+      "ret_20d_pct": 9.51,
+      "ret_60d_pct": -2.04
+    },
+    "QQQ": {
+      "market_date": "2021-06-10",
+      "close": 330.2859,
+      "ret_1d_pct": 1.04,
+      "ret_5d_pct": 3.14,
+      "ret_20d_pct": 7.4,
+      "ret_60d_pct": 6.3
+    },
+    "SOXX": {
+      "market_date": "2021-06-10",
+      "close": 138.9041,
+      "ret_1d_pct": 1.15,
+      "ret_5d_pct": 1.71,
+      "ret_20d_pct": 11.96,
+      "ret_60d_pct": 4.26
+    },
+    "TSM": {
+      "market_date": "2021-06-10",
+      "close": 108.8313,
+      "ret_1d_pct": 0.95,
+      "ret_5d_pct": 1.22,
+      "ret_20d_pct": 9.27,
+      "ret_60d_pct": -0.56
+    },
+    "NVDA": {
+      "market_date": "2021-06-10",
+      "close": 17.3852,
+      "ret_1d_pct": 0.38,
+      "ret_5d_pct": 2.71,
+      "ret_20d_pct": 26.68,
+      "ret_60d_pct": 31.13
+    },
+    "TSLA": {
+      "market_date": "2021-06-10",
+      "close": 203.3733,
+      "ret_1d_pct": 1.89,
+      "ret_5d_pct": 6.51,
+      "ret_20d_pct": 3.43,
+      "ret_60d_pct": -9.86
+    },
+    "BTC-USD": {
+      "market_date": "2021-06-10",
+      "close": 36702.5977,
+      "ret_1d_pct": -1.72,
+      "ret_5d_pct": 3.24,
+      "ret_20d_pct": -1.61,
+      "ret_60d_pct": -39.04
+    }
+  },
+  "mentioned_assets": [
+    {
+      "asset_name": "台積電",
+      "symbol": "2330.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "台積電"
+      ],
+      "sources": [
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2021-06-10",
+        "close": 546.2301,
+        "ret_1d_pct": 2.22,
+        "ret_5d_pct": 0.5,
+        "ret_20d_pct": 9.51,
+        "ret_60d_pct": -2.04
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "長榮",
+      "symbol": "2603.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "航運"
+      ],
+      "sources": [
+        "sector_basket:航運/物流"
+      ],
+      "market": {
+        "market_date": "2021-06-10",
+        "close": 105.0237,
+        "ret_1d_pct": -2.16,
+        "ret_5d_pct": -4.62,
+        "ret_20d_pct": 46.45,
+        "ret_60d_pct": 192.53
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "陽明",
+      "symbol": "2609.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "航運"
+      ],
+      "sources": [
+        "sector_basket:航運/物流"
+      ],
+      "market": {
+        "market_date": "2021-06-10",
+        "close": 54.4401,
+        "ret_1d_pct": -2.21,
+        "ret_5d_pct": -1.78,
+        "ret_20d_pct": 39.52,
+        "ret_60d_pct": 279.07
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "萬海",
+      "symbol": "2615.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "航運"
+      ],
+      "sources": [
+        "sector_basket:航運/物流"
+      ],
+      "market": {
+        "market_date": "2021-06-10",
+        "close": 98.3444,
+        "ret_1d_pct": -0.63,
+        "ret_5d_pct": -1.24,
+        "ret_20d_pct": 98.5,
+        "ret_60d_pct": 235.44
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "富邦金",
+      "symbol": "2881.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "金融股"
+      ],
+      "sources": [
+        "sector_basket:金融股"
+      ],
+      "market": {
+        "market_date": "2021-06-10",
+        "close": 46.3667,
+        "ret_1d_pct": 1.23,
+        "ret_5d_pct": 0.27,
+        "ret_20d_pct": 7.58,
+        "ret_60d_pct": 34.43
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "國泰金",
+      "symbol": "2882.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "金融股"
+      ],
+      "sources": [
+        "sector_basket:金融股"
+      ],
+      "market": {
+        "market_date": "2021-06-10",
+        "close": 43.0747,
+        "ret_1d_pct": 0.74,
+        "ret_5d_pct": -1.97,
+        "ret_20d_pct": 7.05,
+        "ret_60d_pct": 19.17
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "兆豐金",
+      "symbol": "2886.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "金融股"
+      ],
+      "sources": [
+        "sector_basket:金融股"
+      ],
+      "market": {
+        "market_date": "2021-06-10",
+        "close": 25.4889,
+        "ret_1d_pct": 0.46,
+        "ret_5d_pct": 0.3,
+        "ret_20d_pct": 5.41,
+        "ret_60d_pct": 7.99
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "中信金",
+      "symbol": "2891.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "金融股"
+      ],
+      "sources": [
+        "sector_basket:金融股"
+      ],
+      "market": {
+        "market_date": "2021-06-10",
+        "close": 17.6882,
+        "ret_1d_pct": 0.22,
+        "ret_5d_pct": -1.75,
+        "ret_20d_pct": 2.04,
+        "ret_60d_pct": 5.39
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "Amazon",
+      "symbol": "AMZN",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "Amazon",
+        "亞馬遜"
+      ],
+      "sources": [
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2021-06-10",
+        "close": 167.4825,
+        "ret_1d_pct": 2.09,
+        "ret_5d_pct": 5.1,
+        "ret_20d_pct": 6.27,
+        "ret_60d_pct": 8.34
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "Alphabet",
+      "symbol": "GOOGL",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "Google"
+      ],
+      "sources": [
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2021-06-10",
+        "close": 120.7584,
+        "ret_1d_pct": 1.13,
+        "ret_5d_pct": 3.73,
+        "ret_20d_pct": 10.68,
+        "ret_60d_pct": 16.86
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "Meta",
+      "symbol": "META",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "Facebook",
+        "臉書"
+      ],
+      "sources": [
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2021-06-10",
+        "close": 329.8713,
+        "ret_1d_pct": 0.67,
+        "ret_5d_pct": 1.97,
+        "ret_20d_pct": 9.89,
+        "ret_60d_pct": 19.04
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "Netflix",
+      "symbol": "NFLX",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "Netflix"
+      ],
+      "sources": [
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2021-06-10",
+        "close": 48.727,
+        "ret_1d_pct": 0.3,
+        "ret_5d_pct": -0.44,
+        "ret_20d_pct": 0.47,
+        "ret_60d_pct": -7.01
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "Tesla",
+      "symbol": "TSLA",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "特斯拉"
+      ],
+      "sources": [
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2021-06-10",
+        "close": 203.3733,
+        "ret_1d_pct": 1.89,
+        "ret_5d_pct": 6.51,
+        "ret_20d_pct": 3.43,
+        "ret_60d_pct": -9.86
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "Block",
+      "symbol": "XYZ",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "Square"
+      ],
+      "sources": [
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2021-06-10",
+        "close": 217.14,
+        "ret_1d_pct": 3.3,
+        "ret_5d_pct": 2.7,
+        "ret_20d_pct": 5.07,
+        "ret_60d_pct": -10.77
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "標普 500",
+      "symbol": "^GSPC",
+      "asset_type": "index",
+      "matched_aliases": [],
+      "sources": [
+        "trade_observations.asset_symbol"
+      ],
+      "market": {
+        "market_date": "2021-06-10",
+        "close": 4239.1802,
+        "ret_1d_pct": 0.47,
+        "ret_5d_pct": 1.1,
+        "ret_20d_pct": 4.34,
+        "ret_60d_pct": 6.98
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "台股加權指數",
+      "symbol": "^TWII",
+      "asset_type": "index",
+      "matched_aliases": [
+        "台股",
+        "大盤"
+      ],
+      "sources": [
+        "trade_observations.asset_symbol",
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2021-06-10",
+        "close": 17159.2207,
+        "ret_1d_pct": 1.14,
+        "ret_5d_pct": -0.5,
+        "ret_20d_pct": 9.5,
+        "ret_60d_pct": 5.56
+      },
+      "pricing_status": "ok"
+    }
+  ],
+  "sector_basket_matches": [
+    "航運/物流",
+    "金融股"
+  ],
+  "unresolved_mentions": []
+}

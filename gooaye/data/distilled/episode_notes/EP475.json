@@ -1,0 +1,170 @@
+{
+  "schema_version": "v2",
+  "episode": 475,
+  "date": "2024-07-31",
+  "episode_archetype": {
+    "primary": "philosophy",
+    "secondary": [
+      "market_commentary",
+      "qa_heavy"
+    ]
+  },
+  "segment_breakdown": {
+    "market_pct": 25,
+    "qa_pct": 5,
+    "life_or_aside_pct": 35,
+    "ads_pct": 8,
+    "principles_pct": 27
+  },
+  "market_regime": {
+    "phase_label": "震盪整理",
+    "narrative": "^TWII 收 22199.35、1日 -0.11%、20日 -3.73%、60日 +9.19%；2330.TW 收 908.44、1日 -0.64%、20日 -3.51%、60日 +20.21%；SOXX 收 232.65、1日 +6.71%、20日 -5.88%、60日 +9.03%；QQQ 收 466.69、1日 +2.96%、20日 -3.27%、60日 +8.34%；NVDA 收 116.96、1日 +12.81%、20日 -4.61%、60日 +31.81%；盤面處於震盪整理，主持人的討論聚焦於波動下的部位與題材判斷。",
+    "geopolitical_factors": [],
+    "regime_tags": [
+      "震盪盤",
+      "族群輪動",
+      "觀望"
+    ]
+  },
+  "topics": [
+    "輝達",
+    "槓桿控管",
+    "遊戲產業",
+    "遊戲投資與槓桿調整"
+  ],
+  "host_state": {
+    "leverage_state": "他提到槓桿或融資風險，重點放在降低爆倉與保留彈性。",
+    "disclosed_positions": [],
+    "self_critique": [],
+    "personal_arc_markers": []
+  },
+  "investment_logic": [
+    {
+      "claim": "高波動期間不應讓融資或槓桿決定自己的生死。",
+      "trigger": "融資維持率惡化、熱門股鎖跌停或行情急殺",
+      "is_conditional": false,
+      "condition": null,
+      "action_bias": "size-down",
+      "risk_control": "降低槓桿，避免被強制出場",
+      "risk_control_type": "position-size",
+      "evidence": "EP475 2024-07-31 摘述：市場進入降槓桿、去槓桿時期，日圓升值成觀察指標，自己補部位補得有點急但仍可接受；",
+      "source_type": "host_framework",
+      "confidence": "high"
+    },
+    {
+      "claim": "熱門題材若需求假設過度樂觀，供應鏈會承受砍單與估值修正。",
+      "trigger": "AI 或硬體供應鏈預期過熱",
+      "is_conditional": false,
+      "condition": null,
+      "action_bias": "wait",
+      "risk_control": "等待訂單與需求證據確認",
+      "risk_control_type": "none",
+      "evidence": "EP475 2024-07-31 摘述：深度拆解 NVIDIA Blackwell 架構、B100/B102/B200 產品線差異，解釋所謂「砍單」其實是「轉單」，以及潛在的 B102 HGX 方案可能帶來的新產品線機會；",
+      "source_type": "host_framework",
+      "confidence": "medium"
+    }
+  ],
+  "trade_observations": [
+    {
+      "asset_or_sector": "台股盤面",
+      "asset_symbol": "^TWII",
+      "asset_type": "index",
+      "view": {
+        "short_term": "conditional",
+        "medium_term": "neutral",
+        "long_term": "unstated"
+      },
+      "primary_horizon": "medium-term",
+      "reasoning": "他以台股急跌、反彈或融資籌碼變化作為調整部位的背景。",
+      "industry_nodes": [],
+      "catalyst_anchor": null,
+      "consensus_level": "unclear",
+      "market_alignment": "^TWII 收 22199.35、1日 -0.11%、20日 -3.73%、60日 +9.19%",
+      "tone": "serious"
+    },
+    {
+      "asset_or_sector": "半導體與 AI 硬體",
+      "asset_symbol": "SOXX",
+      "asset_type": "sector",
+      "view": {
+        "short_term": "conditional",
+        "medium_term": "neutral",
+        "long_term": "bullish"
+      },
+      "primary_horizon": "medium-term",
+      "reasoning": "他把 AI 硬體供應鏈視為主線，但提醒估值、需求與訂單節奏需要確認。",
+      "industry_nodes": [
+        "AI infrastructure"
+      ],
+      "catalyst_anchor": null,
+      "consensus_level": "crowded",
+      "market_alignment": "SOXX 收 232.65、1日 +6.71%、20日 -5.88%、60日 +9.03%",
+      "tone": "serious"
+    },
+    {
+      "asset_or_sector": "輝達",
+      "asset_symbol": "NVDA",
+      "asset_type": "stock",
+      "view": {
+        "short_term": "conditional",
+        "medium_term": "neutral",
+        "long_term": "bullish"
+      },
+      "primary_horizon": "medium-term",
+      "reasoning": "他討論 GTC、出口管制或 inference 需求，語氣偏向關注風險與後續驗證。",
+      "industry_nodes": [
+        "GPU",
+        "inference"
+      ],
+      "catalyst_anchor": null,
+      "consensus_level": "crowded",
+      "market_alignment": "NVDA 收 116.96、1日 +12.81%、20日 -4.61%、60日 +31.81%",
+      "tone": "serious"
+    }
+  ],
+  "qa_views": [
+    {
+      "category": "investment_operation",
+      "question_theme": "聽眾投資與生活提問",
+      "viewpoint": "他把回答拉回風險承受度、現金水位與自身處境，而不是給單一標準答案。",
+      "principle": "投資建議要配合個人現金流、家庭責任與心理承受度。",
+      "tone": "實用",
+      "evidence": "EP475 2024-07-31 摘述：回答聽眾提問包括微型台指、美股期貨、買房裝潢、投資入門等。",
+      "asker_persona": null
+    }
+  ],
+  "catalysts": [],
+  "narrative_threads": [],
+  "view_changes": [],
+  "principles": [
+    {
+      "principle": "先活下來再求表現",
+      "explanation": "極端行情或人生壓力下，先維持心理與財務韌性，才有後續決策空間。",
+      "category": "mental_health",
+      "evidence": "EP475 2024-07-31 摘述：談命盤分析與人生循環，認為現在正在「播種」階段；"
+    },
+    {
+      "principle": "現金是選擇權",
+      "explanation": "保留現金能讓投資人在反彈或再殺時有調整空間，不被單一路徑綁死。",
+      "category": "position_sizing",
+      "evidence": "EP475 2024-07-31 摘述：市場進入降槓桿、去槓桿時期，日圓升值成觀察指標，自己補部位補得有點急但仍可接受；"
+    }
+  ],
+  "mantras_or_catchphrases": [],
+  "warnings": [
+    {
+      "type": "anti_pattern",
+      "target": "高槓桿追熱門股",
+      "warning": "熱門股在流動性消失時可能無法賣出，槓桿會把波動放大成生存問題。",
+      "evidence": "EP475 2024-07-31 摘述：市場進入降槓桿、去槓桿時期，日圓升值成觀察指標，自己補部位補得有點急但仍可接受；"
+    }
+  ],
+  "references": [],
+  "non_tradeable_insights": [
+    {
+      "insight": "關稅與地緣政治可能推動供應鏈分流，企業必須重新配置生產與客戶結構。",
+      "domain": "macro_trend"
+    }
+  ],
+  "open_questions": []
+}

@@ -1,0 +1,812 @@
+{
+  "episode": 473,
+  "episode_date": "2024-07-24",
+  "title": "🌀 颱風襲台與市場修正預判",
+  "baseline_market_context": {
+    "^TWII": {
+      "market_date": "2024-07-23",
+      "close": 22871.8398,
+      "ret_1d_pct": 2.76,
+      "ret_5d_pct": -4.69,
+      "ret_20d_pct": -0.02,
+      "ret_60d_pct": 13.67
+    },
+    "^GSPC": {
+      "market_date": "2024-07-24",
+      "close": 5427.1299,
+      "ret_1d_pct": -2.31,
+      "ret_5d_pct": -2.88,
+      "ret_20d_pct": -0.77,
+      "ret_60d_pct": 6.42
+    },
+    "^IXIC": {
+      "market_date": "2024-07-24",
+      "close": 17342.4102,
+      "ret_1d_pct": -3.64,
+      "ret_5d_pct": -3.64,
+      "ret_20d_pct": -2.12,
+      "ret_60d_pct": 8.88
+    },
+    "^VIX": {
+      "market_date": "2024-07-24",
+      "close": 18.04,
+      "ret_1d_pct": 22.55,
+      "ret_5d_pct": 24.59,
+      "ret_20d_pct": 40.5,
+      "ret_60d_pct": 20.03
+    },
+    "^TNX": {
+      "market_date": "2024-07-24",
+      "close": 4.286,
+      "ret_1d_pct": 1.11,
+      "ret_5d_pct": 3.38,
+      "ret_20d_pct": 1.13,
+      "ret_60d_pct": -8.2
+    },
+    "TWD=X": {
+      "market_date": "2024-07-24",
+      "close": 32.7148,
+      "ret_1d_pct": -0.11,
+      "ret_5d_pct": 0.69,
+      "ret_20d_pct": 0.41,
+      "ret_60d_pct": 0.74
+    },
+    "2330.TW": {
+      "market_date": "2024-07-23",
+      "close": 952.2103,
+      "ret_1d_pct": 4.26,
+      "ret_5d_pct": -7.2,
+      "ret_20d_pct": 3.6,
+      "ret_60d_pct": 25.68
+    },
+    "QQQ": {
+      "market_date": "2024-07-24",
+      "close": 459.0748,
+      "ret_1d_pct": -3.59,
+      "ret_5d_pct": -3.82,
+      "ret_20d_pct": -3.34,
+      "ret_60d_pct": 7.68
+    },
+    "SOXX": {
+      "market_date": "2024-07-24",
+      "close": 227.009,
+      "ret_1d_pct": -5.32,
+      "ret_5d_pct": -5.55,
+      "ret_20d_pct": -6.78,
+      "ret_60d_pct": 6.02
+    },
+    "TSM": {
+      "market_date": "2024-07-24",
+      "close": 156.1583,
+      "ret_1d_pct": -5.9,
+      "ret_5d_pct": -6.66,
+      "ret_20d_pct": -7.42,
+      "ret_60d_pct": 15.91
+    },
+    "NVDA": {
+      "market_date": "2024-07-24",
+      "close": 114.1949,
+      "ret_1d_pct": -6.8,
+      "ret_5d_pct": -3.17,
+      "ret_20d_pct": -9.39,
+      "ret_60d_pct": 30.23
+    },
+    "TSLA": {
+      "market_date": "2024-07-24",
+      "close": 215.99,
+      "ret_1d_pct": -12.33,
+      "ret_5d_pct": -13.08,
+      "ret_20d_pct": 15.29,
+      "ret_60d_pct": 28.34
+    },
+    "BTC-USD": {
+      "market_date": "2024-07-24",
+      "close": 65372.1328,
+      "ret_1d_pct": -0.84,
+      "ret_5d_pct": -2.01,
+      "ret_20d_pct": 14.73,
+      "ret_60d_pct": -5.62
+    }
+  },
+  "mentioned_assets": [
+    {
+      "asset_name": "和大",
+      "symbol": "1536.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "車用"
+      ],
+      "sources": [
+        "sector_basket:電動車供應鏈"
+      ],
+      "market": {
+        "market_date": "2024-07-23",
+        "close": 64.1944,
+        "ret_1d_pct": 1.56,
+        "ret_5d_pct": -11.52,
+        "ret_20d_pct": 20.48,
+        "ret_60d_pct": 22.25
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "聯電",
+      "symbol": "2303.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "半導體",
+        "半導體與 AI 硬體",
+        "聯電"
+      ],
+      "sources": [
+        "sector_basket:半導體供應鏈",
+        "trade_observations.asset_or_sector",
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2024-07-23",
+        "close": 48.1891,
+        "ret_1d_pct": 2.19,
+        "ret_5d_pct": -3.21,
+        "ret_20d_pct": -3.98,
+        "ret_60d_pct": 8.75
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "台達電",
+      "symbol": "2308.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "AI",
+        "AI Server",
+        "AI server",
+        "AI 股",
+        "Delta",
+        "半導體與 AI 硬體",
+        "台達",
+        "台達電",
+        "車用"
+      ],
+      "sources": [
+        "sector_basket:AI 伺服器供應鏈",
+        "sector_basket:電動車供應鏈",
+        "trade_observations.asset_or_sector",
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2024-07-23",
+        "close": 382.6923,
+        "ret_1d_pct": 4.28,
+        "ret_5d_pct": -5.58,
+        "ret_20d_pct": 0.65,
+        "ret_60d_pct": 25.95
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "鴻海",
+      "symbol": "2317.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "車用",
+        "鴻海"
+      ],
+      "sources": [
+        "sector_basket:電動車供應鏈",
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2024-07-23",
+        "close": 194.4384,
+        "ret_1d_pct": 4.68,
+        "ret_5d_pct": -5.4,
+        "ret_20d_pct": -2.05,
+        "ret_60d_pct": 33.33
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "台積電",
+      "symbol": "2330.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "AI",
+        "AI Server",
+        "AI server",
+        "AI 股",
+        "TSMC",
+        "半導體",
+        "半導體與 AI 硬體",
+        "台積電"
+      ],
+      "sources": [
+        "sector_basket:AI 伺服器供應鏈",
+        "sector_basket:半導體供應鏈",
+        "trade_observations.asset_or_sector",
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2024-07-23",
+        "close": 952.2103,
+        "ret_1d_pct": 4.26,
+        "ret_5d_pct": -7.2,
+        "ret_20d_pct": 3.6,
+        "ret_60d_pct": 25.68
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "華邦電",
+      "symbol": "2344.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "DRAM",
+        "NAND",
+        "記憶體"
+      ],
+      "sources": [
+        "sector_basket:記憶體"
+      ],
+      "market": {
+        "market_date": "2024-07-23",
+        "close": 23.7755,
+        "ret_1d_pct": 0.21,
+        "ret_5d_pct": -5.72,
+        "ret_20d_pct": -7.38,
+        "ret_60d_pct": -4.97
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "瑞昱",
+      "symbol": "2379.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "半導體",
+        "半導體與 AI 硬體"
+      ],
+      "sources": [
+        "sector_basket:半導體供應鏈",
+        "trade_observations.asset_or_sector"
+      ],
+      "market": {
+        "market_date": "2024-07-23",
+        "close": 486.8535,
+        "ret_1d_pct": 2.73,
+        "ret_5d_pct": -5.72,
+        "ret_20d_pct": -0.94,
+        "ret_60d_pct": 1.35
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "廣達",
+      "symbol": "2382.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "AI",
+        "AI Server",
+        "AI server",
+        "AI 股",
+        "半導體與 AI 硬體"
+      ],
+      "sources": [
+        "sector_basket:AI 伺服器供應鏈",
+        "trade_observations.asset_or_sector"
+      ],
+      "market": {
+        "market_date": "2024-07-23",
+        "close": 283.4763,
+        "ret_1d_pct": 3.12,
+        "ret_5d_pct": -7.91,
+        "ret_20d_pct": -2.62,
+        "ret_60d_pct": 15.34
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "南亞科",
+      "symbol": "2408.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "DRAM",
+        "NAND",
+        "記憶體"
+      ],
+      "sources": [
+        "sector_basket:記憶體"
+      ],
+      "market": {
+        "market_date": "2024-07-23",
+        "close": 60.6,
+        "ret_1d_pct": -2.1,
+        "ret_5d_pct": -10.22,
+        "ret_20d_pct": -11.53,
+        "ret_60d_pct": -7.76
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "聯發科",
+      "symbol": "2454.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "AI",
+        "AI Server",
+        "AI server",
+        "AI 股",
+        "半導體",
+        "半導體與 AI 硬體",
+        "聯發科"
+      ],
+      "sources": [
+        "sector_basket:AI 伺服器供應鏈",
+        "sector_basket:半導體供應鏈",
+        "trade_observations.asset_or_sector",
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2024-07-23",
+        "close": 1201.4691,
+        "ret_1d_pct": 4.08,
+        "ret_5d_pct": -5.2,
+        "ret_20d_pct": -5.91,
+        "ret_60d_pct": 29.67
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "奇鋐",
+      "symbol": "3017.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "AI",
+        "AI Server",
+        "AI server",
+        "AI 股",
+        "半導體與 AI 硬體",
+        "散熱"
+      ],
+      "sources": [
+        "sector_basket:AI 伺服器供應鏈",
+        "sector_basket:散熱供應鏈",
+        "trade_observations.asset_or_sector"
+      ],
+      "market": {
+        "market_date": "2024-07-23",
+        "close": 655.4691,
+        "ret_1d_pct": 5.52,
+        "ret_5d_pct": -3.18,
+        "ret_20d_pct": -4.56,
+        "ret_60d_pct": 4.21
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "聯詠",
+      "symbol": "3034.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "半導體",
+        "半導體與 AI 硬體"
+      ],
+      "sources": [
+        "sector_basket:半導體供應鏈",
+        "trade_observations.asset_or_sector"
+      ],
+      "market": {
+        "market_date": "2024-07-23",
+        "close": 512.633,
+        "ret_1d_pct": 3.24,
+        "ret_5d_pct": -3.05,
+        "ret_20d_pct": -5.42,
+        "ret_60d_pct": -5.26
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "緯創",
+      "symbol": "3231.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "AI",
+        "AI Server",
+        "AI server",
+        "AI 股",
+        "半導體與 AI 硬體"
+      ],
+      "sources": [
+        "sector_basket:AI 伺服器供應鏈",
+        "trade_observations.asset_or_sector"
+      ],
+      "market": {
+        "market_date": "2024-07-23",
+        "close": 97.6632,
+        "ret_1d_pct": 0.5,
+        "ret_5d_pct": -11.01,
+        "ret_20d_pct": -6.48,
+        "ret_60d_pct": -8.46
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "雙鴻",
+      "symbol": "3324.TWO",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "AI",
+        "AI Server",
+        "AI server",
+        "AI 股",
+        "半導體與 AI 硬體",
+        "散熱"
+      ],
+      "sources": [
+        "sector_basket:AI 伺服器供應鏈",
+        "sector_basket:散熱供應鏈",
+        "trade_observations.asset_or_sector"
+      ],
+      "market": {
+        "market_date": "2024-07-23",
+        "close": 741.9823,
+        "ret_1d_pct": 7.8,
+        "ret_5d_pct": 2.98,
+        "ret_20d_pct": 0.93,
+        "ret_60d_pct": -7.99
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "健策",
+      "symbol": "3653.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "散熱"
+      ],
+      "sources": [
+        "sector_basket:散熱供應鏈"
+      ],
+      "market": {
+        "market_date": "2024-07-23",
+        "close": 1118.9663,
+        "ret_1d_pct": 6.1,
+        "ret_5d_pct": -8.87,
+        "ret_20d_pct": 15.03,
+        "ret_60d_pct": 18.87
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "日月光投控",
+      "symbol": "3711.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "半導體",
+        "半導體與 AI 硬體"
+      ],
+      "sources": [
+        "sector_basket:半導體供應鏈",
+        "trade_observations.asset_or_sector"
+      ],
+      "market": {
+        "market_date": "2024-07-23",
+        "close": 166.2211,
+        "ret_1d_pct": 5.18,
+        "ret_5d_pct": -3.63,
+        "ret_20d_pct": 5.32,
+        "ret_60d_pct": 24.91
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "緯穎",
+      "symbol": "6669.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "AI",
+        "AI Server",
+        "AI server",
+        "AI 股",
+        "半導體與 AI 硬體"
+      ],
+      "sources": [
+        "sector_basket:AI 伺服器供應鏈",
+        "trade_observations.asset_or_sector"
+      ],
+      "market": {
+        "market_date": "2024-07-23",
+        "close": 2107.0276,
+        "ret_1d_pct": 0.46,
+        "ret_5d_pct": -11.79,
+        "ret_20d_pct": -16.7,
+        "ret_60d_pct": -5.15
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "群聯",
+      "symbol": "8299.TWO",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "DRAM",
+        "NAND",
+        "群聯",
+        "記憶體"
+      ],
+      "sources": [
+        "sector_basket:記憶體",
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2024-07-23",
+        "close": 528.7237,
+        "ret_1d_pct": 0.72,
+        "ret_5d_pct": -9.4,
+        "ret_20d_pct": -5.34,
+        "ret_60d_pct": -20.14
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "Apple",
+      "symbol": "AAPL",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "蘋果"
+      ],
+      "sources": [
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2024-07-24",
+        "close": 216.8628,
+        "ret_1d_pct": -2.88,
+        "ret_5d_pct": -4.52,
+        "ret_20d_pct": 4.53,
+        "ret_60d_pct": 29.26
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "AMD",
+      "symbol": "AMD",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "AI",
+        "AI Server",
+        "AI server",
+        "AI 股",
+        "AMD",
+        "半導體與 AI 硬體"
+      ],
+      "sources": [
+        "sector_basket:AI 伺服器供應鏈",
+        "trade_observations.asset_or_sector",
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2024-07-24",
+        "close": 144.63,
+        "ret_1d_pct": -6.08,
+        "ret_5d_pct": -9.28,
+        "ret_20d_pct": -9.75,
+        "ret_60d_pct": -8.11
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "Broadcom",
+      "symbol": "AVGO",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "AI",
+        "AI Server",
+        "AI server",
+        "AI 股",
+        "Broadcom",
+        "半導體與 AI 硬體",
+        "博通"
+      ],
+      "sources": [
+        "sector_basket:AI 伺服器供應鏈",
+        "trade_observations.asset_or_sector",
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2024-07-24",
+        "close": 148.7814,
+        "ret_1d_pct": -7.59,
+        "ret_5d_pct": -2.97,
+        "ret_20d_pct": -4.26,
+        "ret_60d_pct": 12.96
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "Alphabet",
+      "symbol": "GOOGL",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "Google"
+      ],
+      "sources": [
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2024-07-24",
+        "close": 171.4114,
+        "ret_1d_pct": -5.04,
+        "ret_5d_pct": -4.63,
+        "ret_20d_pct": -6.19,
+        "ret_60d_pct": 0.51
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "Meta",
+      "symbol": "META",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "臉書"
+      ],
+      "sources": [
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2024-07-24",
+        "close": 458.6189,
+        "ret_1d_pct": -5.61,
+        "ret_5d_pct": -0.16,
+        "ret_20d_pct": -9.66,
+        "ret_60d_pct": 4.16
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "Micron",
+      "symbol": "MU",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "DRAM",
+        "NAND",
+        "記憶體"
+      ],
+      "sources": [
+        "sector_basket:記憶體"
+      ],
+      "market": {
+        "market_date": "2024-07-24",
+        "close": 109.6076,
+        "ret_1d_pct": -3.47,
+        "ret_5d_pct": -7.72,
+        "ret_20d_pct": -21.79,
+        "ret_60d_pct": -3.89
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "NVIDIA",
+      "symbol": "NVDA",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "AI",
+        "AI Server",
+        "AI server",
+        "AI 股",
+        "NVIDIA",
+        "半導體與 AI 硬體"
+      ],
+      "sources": [
+        "sector_basket:AI 伺服器供應鏈",
+        "trade_observations.asset_or_sector",
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2024-07-24",
+        "close": 114.1949,
+        "ret_1d_pct": -6.8,
+        "ret_5d_pct": -3.17,
+        "ret_20d_pct": -9.39,
+        "ret_60d_pct": 30.23
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "iShares Semiconductor ETF",
+      "symbol": "SOXX",
+      "asset_type": "sector",
+      "matched_aliases": [
+        "半導體",
+        "半導體與 AI 硬體"
+      ],
+      "sources": [
+        "sector_basket:半導體供應鏈",
+        "trade_observations.asset_or_sector",
+        "trade_observations.asset_symbol"
+      ],
+      "market": {
+        "market_date": "2024-07-24",
+        "close": 227.009,
+        "ret_1d_pct": -5.32,
+        "ret_5d_pct": -5.55,
+        "ret_20d_pct": -6.78,
+        "ret_60d_pct": 6.02
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "Tesla",
+      "symbol": "TSLA",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "車用"
+      ],
+      "sources": [
+        "sector_basket:電動車供應鏈"
+      ],
+      "market": {
+        "market_date": "2024-07-24",
+        "close": 215.99,
+        "ret_1d_pct": -12.33,
+        "ret_5d_pct": -13.08,
+        "ret_20d_pct": 15.29,
+        "ret_60d_pct": 28.34
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "台積電 ADR",
+      "symbol": "TSM",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "半導體",
+        "半導體與 AI 硬體"
+      ],
+      "sources": [
+        "sector_basket:半導體供應鏈",
+        "trade_observations.asset_or_sector"
+      ],
+      "market": {
+        "market_date": "2024-07-24",
+        "close": 156.1583,
+        "ret_1d_pct": -5.9,
+        "ret_5d_pct": -6.66,
+        "ret_20d_pct": -7.42,
+        "ret_60d_pct": 15.91
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "台股加權指數",
+      "symbol": "^TWII",
+      "asset_type": "index",
+      "matched_aliases": [
+        "加權指數",
+        "台股",
+        "大盤"
+      ],
+      "sources": [
+        "trade_observations.asset_symbol",
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2024-07-23",
+        "close": 22871.8398,
+        "ret_1d_pct": 2.76,
+        "ret_5d_pct": -4.69,
+        "ret_20d_pct": -0.02,
+        "ret_60d_pct": 13.67
+      },
+      "pricing_status": "ok"
+    }
+  ],
+  "sector_basket_matches": [
+    "AI 伺服器供應鏈",
+    "半導體供應鏈",
+    "散熱供應鏈",
+    "記憶體",
+    "電動車供應鏈"
+  ],
+  "unresolved_mentions": []
+}

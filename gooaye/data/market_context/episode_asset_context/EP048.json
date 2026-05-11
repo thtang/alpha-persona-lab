@@ -1,0 +1,552 @@
+{
+  "episode": 48,
+  "episode_date": "2020-06-27",
+  "title": "菜雞悲歌 散户為何淪為市場待宰羔羊",
+  "baseline_market_context": {
+    "^TWII": {
+      "market_date": "2020-06-24",
+      "close": 11660.6699,
+      "ret_1d_pct": 0.42,
+      "ret_5d_pct": 1.09,
+      "ret_20d_pct": 5.86,
+      "ret_60d_pct": 20.23
+    },
+    "^GSPC": {
+      "market_date": "2020-06-26",
+      "close": 3009.05,
+      "ret_1d_pct": -2.42,
+      "ret_5d_pct": -2.86,
+      "ret_20d_pct": -1.16,
+      "ret_60d_pct": 21.8
+    },
+    "^IXIC": {
+      "market_date": "2020-06-26",
+      "close": 9757.2197,
+      "ret_1d_pct": -2.59,
+      "ret_5d_pct": -1.9,
+      "ret_20d_pct": 2.82,
+      "ret_60d_pct": 32.56
+    },
+    "^VIX": {
+      "market_date": "2020-06-26",
+      "close": 34.73,
+      "ret_1d_pct": 7.79,
+      "ret_5d_pct": -1.11,
+      "ret_20d_pct": 26.24,
+      "ret_60d_pct": -39.13
+    },
+    "^TNX": {
+      "market_date": "2020-06-26",
+      "close": 0.636,
+      "ret_1d_pct": -5.64,
+      "ret_5d_pct": -8.75,
+      "ret_20d_pct": -1.85,
+      "ret_60d_pct": 0.16
+    },
+    "TWD=X": {
+      "market_date": "2020-06-25",
+      "close": 29.38,
+      "ret_1d_pct": -0.05,
+      "ret_5d_pct": -0.72,
+      "ret_20d_pct": -1.77,
+      "ret_60d_pct": -2.33
+    },
+    "2330.TW": {
+      "market_date": "2020-06-24",
+      "close": 285.3742,
+      "ret_1d_pct": 0.79,
+      "ret_5d_pct": 1.6,
+      "ret_20d_pct": 7.94,
+      "ret_60d_pct": 17.23
+    },
+    "QQQ": {
+      "market_date": "2020-06-26",
+      "close": 232.4014,
+      "ret_1d_pct": -2.36,
+      "ret_5d_pct": -1.47,
+      "ret_20d_pct": 3.12,
+      "ret_60d_pct": 31.99
+    },
+    "SOXX": {
+      "market_date": "2020-06-26",
+      "close": 82.9791,
+      "ret_1d_pct": -1.87,
+      "ret_5d_pct": -2.28,
+      "ret_20d_pct": 3.93,
+      "ret_60d_pct": 34.94
+    },
+    "TSM": {
+      "market_date": "2020-06-26",
+      "close": 51.1718,
+      "ret_1d_pct": -1.24,
+      "ret_5d_pct": 1.84,
+      "ret_20d_pct": 12.76,
+      "ret_60d_pct": 22.02
+    },
+    "NVDA": {
+      "market_date": "2020-06-26",
+      "close": 9.1234,
+      "ret_1d_pct": -3.53,
+      "ret_5d_pct": -1.15,
+      "ret_20d_pct": 3.2,
+      "ret_60d_pct": 50.72
+    },
+    "TSLA": {
+      "market_date": "2020-06-26",
+      "close": 63.9827,
+      "ret_1d_pct": -2.66,
+      "ret_5d_pct": -4.11,
+      "ret_20d_pct": 14.94,
+      "ret_60d_pct": 99.3
+    },
+    "BTC-USD": {
+      "market_date": "2020-06-27",
+      "close": 9045.3906,
+      "ret_1d_pct": -1.28,
+      "ret_5d_pct": -6.25,
+      "ret_20d_pct": -7.31,
+      "ret_60d_pct": 15.86
+    }
+  },
+  "mentioned_assets": [
+    {
+      "asset_name": "光寶科",
+      "symbol": "2301.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "光寶",
+        "光寶科"
+      ],
+      "sources": [
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2020-06-24",
+        "close": 35.1096,
+        "ret_1d_pct": -0.21,
+        "ret_5d_pct": -1.88,
+        "ret_20d_pct": 3.46,
+        "ret_60d_pct": 22.91
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "台達電",
+      "symbol": "2308.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "台達",
+        "台達電"
+      ],
+      "sources": [
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2020-06-24",
+        "close": 146.6128,
+        "ret_1d_pct": -1.18,
+        "ret_5d_pct": 5.66,
+        "ret_20d_pct": 19.15,
+        "ret_60d_pct": 42.37
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "鴻海",
+      "symbol": "2317.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "鴻海"
+      ],
+      "sources": [
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2020-06-24",
+        "close": 65.3684,
+        "ret_1d_pct": 4.11,
+        "ret_5d_pct": 6.78,
+        "ret_20d_pct": 10.89,
+        "ret_60d_pct": 19.12
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "台積電",
+      "symbol": "2330.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "台積電"
+      ],
+      "sources": [
+        "trade_observations.asset_symbol",
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2020-06-24",
+        "close": 285.3742,
+        "ret_1d_pct": 0.79,
+        "ret_5d_pct": 1.6,
+        "ret_20d_pct": 7.94,
+        "ret_60d_pct": 17.23
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "旺宏",
+      "symbol": "2337.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "旺宏"
+      ],
+      "sources": [
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2020-06-24",
+        "close": 25.7971,
+        "ret_1d_pct": -0.32,
+        "ret_5d_pct": -1.56,
+        "ret_20d_pct": -6.79,
+        "ret_60d_pct": 21.81
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "華邦電",
+      "symbol": "2344.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "華邦",
+        "華邦電",
+        "記憶體"
+      ],
+      "sources": [
+        "sector_basket:記憶體",
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2020-06-24",
+        "close": 12.1167,
+        "ret_1d_pct": -1.47,
+        "ret_5d_pct": -2.19,
+        "ret_20d_pct": -6.29,
+        "ret_60d_pct": 15.02
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "南亞科",
+      "symbol": "2408.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "記憶體"
+      ],
+      "sources": [
+        "sector_basket:記憶體"
+      ],
+      "market": {
+        "market_date": "2020-06-24",
+        "close": 52.869,
+        "ret_1d_pct": 1.33,
+        "ret_5d_pct": 0.33,
+        "ret_20d_pct": 0.16,
+        "ret_60d_pct": 10.55
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "奇鋐",
+      "symbol": "3017.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "散熱"
+      ],
+      "sources": [
+        "sector_basket:散熱供應鏈"
+      ],
+      "market": {
+        "market_date": "2020-06-24",
+        "close": 35.5665,
+        "ret_1d_pct": -0.73,
+        "ret_5d_pct": 0.0,
+        "ret_20d_pct": 8.91,
+        "ret_60d_pct": 41.21
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "雙鴻",
+      "symbol": "3324.TWO",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "散熱"
+      ],
+      "sources": [
+        "sector_basket:散熱供應鏈"
+      ],
+      "market": {
+        "market_date": "2020-06-24",
+        "close": 146.1217,
+        "ret_1d_pct": 0.59,
+        "ret_5d_pct": 0.3,
+        "ret_20d_pct": 3.99,
+        "ret_60d_pct": 37.8
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "健策",
+      "symbol": "3653.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "健策",
+        "散熱"
+      ],
+      "sources": [
+        "sector_basket:散熱供應鏈",
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2020-06-24",
+        "close": 235.3188,
+        "ret_1d_pct": -0.7,
+        "ret_5d_pct": 1.97,
+        "ret_20d_pct": 15.92,
+        "ret_60d_pct": 64.64
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "群聯",
+      "symbol": "8299.TWO",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "記憶體"
+      ],
+      "sources": [
+        "sector_basket:記憶體"
+      ],
+      "market": {
+        "market_date": "2020-06-24",
+        "close": 221.1819,
+        "ret_1d_pct": 0.52,
+        "ret_5d_pct": 2.82,
+        "ret_20d_pct": 4.29,
+        "ret_60d_pct": 15.42
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "Apple",
+      "symbol": "AAPL",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "Apple",
+        "蘋果"
+      ],
+      "sources": [
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2020-06-26",
+        "close": 85.6775,
+        "ret_1d_pct": -3.07,
+        "ret_5d_pct": 1.12,
+        "ret_20d_pct": 11.23,
+        "ret_60d_pct": 47.19
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "AMD",
+      "symbol": "AMD",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "AMD"
+      ],
+      "sources": [
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2020-06-26",
+        "close": 50.1,
+        "ret_1d_pct": -3.52,
+        "ret_5d_pct": -7.62,
+        "ret_20d_pct": -6.88,
+        "ret_60d_pct": 14.75
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "Amazon",
+      "symbol": "AMZN",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "Amazon"
+      ],
+      "sources": [
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2020-06-26",
+        "close": 134.6435,
+        "ret_1d_pct": -2.24,
+        "ret_5d_pct": 0.67,
+        "ret_20d_pct": 10.26,
+        "ret_60d_pct": 41.16
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "Alphabet",
+      "symbol": "GOOGL",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "Google"
+      ],
+      "sources": [
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2020-06-26",
+        "close": 67.5685,
+        "ret_1d_pct": -5.45,
+        "ret_5d_pct": -4.36,
+        "ret_20d_pct": -4.95,
+        "ret_60d_pct": 23.63
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "Meta",
+      "symbol": "META",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "Facebook",
+        "臉書"
+      ],
+      "sources": [
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2020-06-26",
+        "close": 214.3975,
+        "ret_1d_pct": -8.32,
+        "ret_5d_pct": -9.51,
+        "ret_20d_pct": -4.0,
+        "ret_60d_pct": 35.39
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "Microsoft",
+      "symbol": "MSFT",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "Microsoft",
+        "微軟"
+      ],
+      "sources": [
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2020-06-26",
+        "close": 187.0145,
+        "ret_1d_pct": -2.0,
+        "ret_5d_pct": 0.6,
+        "ret_20d_pct": 7.14,
+        "ret_60d_pct": 29.43
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "Micron",
+      "symbol": "MU",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "記憶體"
+      ],
+      "sources": [
+        "sector_basket:記憶體"
+      ],
+      "market": {
+        "market_date": "2020-06-26",
+        "close": 47.2917,
+        "ret_1d_pct": -1.42,
+        "ret_5d_pct": -4.6,
+        "ret_20d_pct": 1.21,
+        "ret_60d_pct": 21.56
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "Tesla",
+      "symbol": "TSLA",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "特斯拉"
+      ],
+      "sources": [
+        "trade_observations.asset_symbol",
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2020-06-26",
+        "close": 63.9827,
+        "ret_1d_pct": -2.66,
+        "ret_5d_pct": -4.11,
+        "ret_20d_pct": 14.94,
+        "ret_60d_pct": 99.3
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "那斯達克綜合指數",
+      "symbol": "^IXIC",
+      "asset_type": "index",
+      "matched_aliases": [
+        "納斯達克"
+      ],
+      "sources": [
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2020-06-26",
+        "close": 9757.2197,
+        "ret_1d_pct": -2.59,
+        "ret_5d_pct": -1.9,
+        "ret_20d_pct": 2.82,
+        "ret_60d_pct": 32.56
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "台股加權指數",
+      "symbol": "^TWII",
+      "asset_type": "index",
+      "matched_aliases": [
+        "台股",
+        "大盤"
+      ],
+      "sources": [
+        "trade_observations.asset_symbol",
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2020-06-24",
+        "close": 11660.6699,
+        "ret_1d_pct": 0.42,
+        "ret_5d_pct": 1.09,
+        "ret_20d_pct": 5.86,
+        "ret_60d_pct": 20.23
+      },
+      "pricing_status": "ok"
+    }
+  ],
+  "sector_basket_matches": [
+    "散熱供應鏈",
+    "記憶體"
+  ],
+  "unresolved_mentions": []
+}

@@ -1,0 +1,142 @@
+{
+  "schema_version": "v2",
+  "episode": 547,
+  "date": "2025-04-09",
+  "episode_archetype": {
+    "primary": "philosophy",
+    "secondary": [
+      "market_commentary"
+    ]
+  },
+  "segment_breakdown": {
+    "market_pct": 25,
+    "qa_pct": 5,
+    "life_or_aside_pct": 35,
+    "ads_pct": 8,
+    "principles_pct": 27
+  },
+  "market_regime": {
+    "phase_label": "關稅股災修正",
+    "narrative": "^TWII 收 17391.76、1日 -5.79%、20日 -22.56%、60日 -24.50%；2330.TW 收 773.46、1日 -3.80%、20日 -20.98%、60日 -26.64%；SOXX 收 182.45、1日 +18.57%、20日 -6.23%、60日 -15.48%；QQQ 收 463.76、1日 +12.00%、20日 -2.14%、60日 -7.69%；NVDA 收 114.30、1日 +18.72%、20日 -1.22%、60日 -14.18%；盤面處於關稅股災修正，主持人的討論聚焦於波動下的部位與題材判斷。",
+    "geopolitical_factors": [],
+    "regime_tags": [
+      "關稅戰",
+      "急跌修正",
+      "風險控管"
+    ]
+  },
+  "topics": [
+    "川普關稅",
+    "關稅戰",
+    "融資風控",
+    "家庭與健康",
+    "市場崩盤",
+    "新生兒與人生低潮"
+  ],
+  "host_state": {
+    "leverage_state": "他提到槓桿或融資風險，重點放在降低爆倉與保留彈性。",
+    "disclosed_positions": [],
+    "self_critique": [],
+    "personal_arc_markers": [
+      {
+        "event": "家庭與育兒事件",
+        "impact_on_trades": "生活壓力影響心態，但他仍把風控與現金彈性分開處理",
+        "domain": "family"
+      },
+      {
+        "event": "健康與醫療事件",
+        "impact_on_trades": "健康議題讓他更重視心理韌性與生活平衡",
+        "domain": "health"
+      }
+    ]
+  },
+  "investment_logic": [
+    {
+      "claim": "高波動期間不應讓融資或槓桿決定自己的生死。",
+      "trigger": "融資維持率惡化、熱門股鎖跌停或行情急殺",
+      "is_conditional": false,
+      "condition": null,
+      "action_bias": "size-down",
+      "risk_control": "降低槓桿，避免被強制出場",
+      "risk_control_type": "position-size",
+      "evidence": "EP547 2025-04-09 摘述：這集主持人分享個人近期經歷的多重危機：兒子順利誕生但發現腎臟異位、自己首次健檢、股市暴跌融資鎖停。",
+      "source_type": "host_framework",
+      "confidence": "high"
+    }
+  ],
+  "trade_observations": [
+    {
+      "asset_or_sector": "台股盤面",
+      "asset_symbol": "^TWII",
+      "asset_type": "index",
+      "view": {
+        "short_term": "bearish",
+        "medium_term": "neutral",
+        "long_term": "unstated"
+      },
+      "primary_horizon": "medium-term",
+      "reasoning": "他以台股急跌、反彈或融資籌碼變化作為調整部位的背景。",
+      "industry_nodes": [],
+      "catalyst_anchor": null,
+      "consensus_level": "unclear",
+      "market_alignment": "^TWII 收 17391.76、1日 -5.79%、20日 -22.56%、60日 -24.50%",
+      "tone": "serious"
+    }
+  ],
+  "qa_views": [],
+  "catalysts": [
+    {
+      "id": "trump_tariff_2025",
+      "event": "川普關稅談判與政策變化",
+      "expected_date": "2025",
+      "category": "regulation",
+      "expected_impact": "政策反覆會影響供應鏈、出口與市場風險偏好",
+      "linked_assets": [
+        "^TWII",
+        "QQQ",
+        "SOXX"
+      ]
+    }
+  ],
+  "narrative_threads": [
+    {
+      "thread_id": "trump_tariff_2025",
+      "label": "川普關稅戰",
+      "this_episode_role": "update",
+      "prior_episode_refs": []
+    },
+    {
+      "thread_id": "host_family_2025",
+      "label": "主持人家庭與二寶事件",
+      "this_episode_role": "update",
+      "prior_episode_refs": []
+    }
+  ],
+  "view_changes": [],
+  "principles": [
+    {
+      "principle": "先活下來再求表現",
+      "explanation": "極端行情或人生壓力下，先維持心理與財務韌性，才有後續決策空間。",
+      "category": "mental_health",
+      "evidence": "EP547 2025-04-09 摘述：強調雖然短期極度慘烈，但基於過往經驗相信終會有轉機，呼籲聽眾做好風控、不要放棄希望，並表示後續重點是關注關稅談判有無轉圜空間。"
+    },
+    {
+      "principle": "現金是選擇權",
+      "explanation": "保留現金能讓投資人在反彈或再殺時有調整空間，不被單一路徑綁死。",
+      "category": "position_sizing",
+      "evidence": "EP547 2025-04-09 摘述：這集主持人分享個人近期經歷的多重危機：兒子順利誕生但發現腎臟異位、自己首次健檢、股市暴跌融資鎖停。"
+    }
+  ],
+  "mantras_or_catchphrases": [],
+  "warnings": [
+    {
+      "type": "anti_pattern",
+      "target": "高槓桿追熱門股",
+      "warning": "熱門股在流動性消失時可能無法賣出，槓桿會把波動放大成生存問題。",
+      "evidence": "EP547 2025-04-09 摘述：這集主持人分享個人近期經歷的多重危機：兒子順利誕生但發現腎臟異位、自己首次健檢、股市暴跌融資鎖停。"
+    }
+  ],
+  "references": [],
+  "non_tradeable_insights": [],
+  "open_questions": []
+}

@@ -1,0 +1,789 @@
+{
+  "episode": 123,
+  "episode_date": "2021-03-17",
+  "title": "蘋果怎麼吃才營養",
+  "baseline_market_context": {
+    "^TWII": {
+      "market_date": "2021-03-17",
+      "close": 16215.8203,
+      "ret_1d_pct": -0.6,
+      "ret_5d_pct": 1.91,
+      "ret_20d_pct": 2.62,
+      "ret_60d_pct": 13.8
+    },
+    "^GSPC": {
+      "market_date": "2021-03-17",
+      "close": 3974.1201,
+      "ret_1d_pct": 0.29,
+      "ret_5d_pct": 1.93,
+      "ret_20d_pct": 1.09,
+      "ret_60d_pct": 6.76
+    },
+    "^IXIC": {
+      "market_date": "2021-03-17",
+      "close": 13525.2002,
+      "ret_1d_pct": 0.4,
+      "ret_5d_pct": 3.49,
+      "ret_20d_pct": -3.15,
+      "ret_60d_pct": 5.96
+    },
+    "^VIX": {
+      "market_date": "2021-03-17",
+      "close": 19.23,
+      "ret_1d_pct": -2.83,
+      "ret_5d_pct": -14.76,
+      "ret_20d_pct": -10.56,
+      "ret_60d_pct": -12.31
+    },
+    "^TNX": {
+      "market_date": "2021-03-17",
+      "close": 1.641,
+      "ret_1d_pct": 1.23,
+      "ret_5d_pct": 7.96,
+      "ret_20d_pct": 26.13,
+      "ret_60d_pct": 76.45
+    },
+    "TWD=X": {
+      "market_date": "2021-03-17",
+      "close": 28.2365,
+      "ret_1d_pct": 0.21,
+      "ret_5d_pct": -0.05,
+      "ret_20d_pct": 0.7,
+      "ret_60d_pct": 0.38
+    },
+    "2330.TW": {
+      "market_date": "2021-03-17",
+      "close": 550.7894,
+      "ret_1d_pct": -1.06,
+      "ret_5d_pct": 1.59,
+      "ret_20d_pct": -4.04,
+      "ret_60d_pct": 19.03
+    },
+    "QQQ": {
+      "market_date": "2021-03-17",
+      "close": 311.9875,
+      "ret_1d_pct": 0.41,
+      "ret_5d_pct": 3.54,
+      "ret_20d_pct": -3.6,
+      "ret_60d_pct": 3.69
+    },
+    "SOXX": {
+      "market_date": "2021-03-17",
+      "close": 134.9053,
+      "ret_1d_pct": 1.26,
+      "ret_5d_pct": 7.99,
+      "ret_20d_pct": -2.22,
+      "ret_60d_pct": 11.97
+    },
+    "TSM": {
+      "market_date": "2021-03-17",
+      "close": 109.3099,
+      "ret_1d_pct": -0.12,
+      "ret_5d_pct": 4.72,
+      "ret_20d_pct": -12.52,
+      "ret_60d_pct": 14.73
+    },
+    "NVDA": {
+      "market_date": "2021-03-17",
+      "close": 13.3077,
+      "ret_1d_pct": 0.38,
+      "ret_5d_pct": 7.0,
+      "ret_20d_pct": -10.47,
+      "ret_60d_pct": 0.03
+    },
+    "TSLA": {
+      "market_date": "2021-03-17",
+      "close": 233.9367,
+      "ret_1d_pct": 3.68,
+      "ret_5d_pct": 5.05,
+      "ret_20d_pct": -12.07,
+      "ret_60d_pct": 7.0
+    },
+    "BTC-USD": {
+      "market_date": "2021-03-17",
+      "close": 58870.8945,
+      "ret_1d_pct": 3.64,
+      "ret_5d_pct": 2.68,
+      "ret_20d_pct": 25.01,
+      "ret_60d_pct": 62.73
+    }
+  },
+  "mentioned_assets": [
+    {
+      "asset_name": "和大",
+      "symbol": "1536.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "EV 供應鏈",
+        "車用",
+        "車用供應鏈",
+        "電動車供應鏈"
+      ],
+      "sources": [
+        "sector_basket:電動車供應鏈",
+        "trade_observations.asset_or_sector"
+      ],
+      "market": {
+        "market_date": "2021-03-17",
+        "close": 100.1081,
+        "ret_1d_pct": -0.45,
+        "ret_5d_pct": 1.86,
+        "ret_20d_pct": -7.98,
+        "ret_60d_pct": 2.43
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "聯電",
+      "symbol": "2303.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "晶圓代工"
+      ],
+      "sources": [
+        "sector_basket:半導體供應鏈"
+      ],
+      "market": {
+        "market_date": "2021-03-17",
+        "close": 36.2251,
+        "ret_1d_pct": -0.62,
+        "ret_5d_pct": 3.11,
+        "ret_20d_pct": -9.26,
+        "ret_60d_pct": 1.48
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "台達電",
+      "symbol": "2308.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "EV 供應鏈",
+        "車用",
+        "車用供應鏈",
+        "電動車供應鏈"
+      ],
+      "sources": [
+        "sector_basket:電動車供應鏈",
+        "trade_observations.asset_or_sector"
+      ],
+      "market": {
+        "market_date": "2021-03-17",
+        "close": 255.3788,
+        "ret_1d_pct": 0.71,
+        "ret_5d_pct": 7.17,
+        "ret_20d_pct": 1.25,
+        "ret_60d_pct": 14.52
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "鴻海",
+      "symbol": "2317.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "EV 供應鏈",
+        "車用",
+        "車用供應鏈",
+        "電動車供應鏈",
+        "鴻海"
+      ],
+      "sources": [
+        "sector_basket:電動車供應鏈",
+        "trade_observations.asset_or_sector",
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2021-03-17",
+        "close": 103.7105,
+        "ret_1d_pct": 2.44,
+        "ret_5d_pct": 9.09,
+        "ret_20d_pct": 11.01,
+        "ret_60d_pct": 43.67
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "國巨",
+      "symbol": "2327.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "國巨",
+        "被動元件"
+      ],
+      "sources": [
+        "sector_basket:被動元件",
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2021-03-17",
+        "close": 128.586,
+        "ret_1d_pct": -1.9,
+        "ret_5d_pct": 6.37,
+        "ret_20d_pct": -3.4,
+        "ret_60d_pct": 11.59
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "台積電",
+      "symbol": "2330.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "晶圓代工"
+      ],
+      "sources": [
+        "sector_basket:半導體供應鏈"
+      ],
+      "market": {
+        "market_date": "2021-03-17",
+        "close": 550.7894,
+        "ret_1d_pct": -1.06,
+        "ret_5d_pct": 1.59,
+        "ret_20d_pct": -4.04,
+        "ret_60d_pct": 19.03
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "旺宏",
+      "symbol": "2337.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "旺宏"
+      ],
+      "sources": [
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2021-03-17",
+        "close": 37.2566,
+        "ret_1d_pct": 0.69,
+        "ret_5d_pct": 4.65,
+        "ret_20d_pct": 7.2,
+        "ret_60d_pct": 5.15
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "華邦電",
+      "symbol": "2344.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "記憶體"
+      ],
+      "sources": [
+        "sector_basket:記憶體"
+      ],
+      "market": {
+        "market_date": "2021-03-17",
+        "close": 25.6414,
+        "ret_1d_pct": -0.18,
+        "ret_5d_pct": 4.84,
+        "ret_20d_pct": -0.53,
+        "ret_60d_pct": 15.37
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "凱美",
+      "symbol": "2375.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "被動元件"
+      ],
+      "sources": [
+        "sector_basket:被動元件"
+      ],
+      "market": {
+        "market_date": "2021-03-17",
+        "close": 144.6429,
+        "ret_1d_pct": -0.37,
+        "ret_5d_pct": 10.29,
+        "ret_20d_pct": 25.23,
+        "ret_60d_pct": 89.0
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "瑞昱",
+      "symbol": "2379.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "晶圓代工"
+      ],
+      "sources": [
+        "sector_basket:半導體供應鏈"
+      ],
+      "market": {
+        "market_date": "2021-03-17",
+        "close": 351.8491,
+        "ret_1d_pct": 0.22,
+        "ret_5d_pct": 4.62,
+        "ret_20d_pct": -8.48,
+        "ret_60d_pct": 13.82
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "南亞科",
+      "symbol": "2408.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "南亞科",
+        "記憶體"
+      ],
+      "sources": [
+        "sector_basket:記憶體",
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2021-03-17",
+        "close": 81.9231,
+        "ret_1d_pct": -1.61,
+        "ret_5d_pct": 4.91,
+        "ret_20d_pct": 6.0,
+        "ret_60d_pct": 4.08
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "聯發科",
+      "symbol": "2454.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "晶圓代工"
+      ],
+      "sources": [
+        "sector_basket:半導體供應鏈"
+      ],
+      "market": {
+        "market_date": "2021-03-17",
+        "close": 644.0197,
+        "ret_1d_pct": -1.2,
+        "ret_5d_pct": 5.09,
+        "ret_20d_pct": -4.42,
+        "ret_60d_pct": 28.07
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "大毅",
+      "symbol": "2478.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "被動元件"
+      ],
+      "sources": [
+        "sector_basket:被動元件"
+      ],
+      "market": {
+        "market_date": "2021-03-17",
+        "close": 64.4991,
+        "ret_1d_pct": -1.33,
+        "ret_5d_pct": 2.63,
+        "ret_20d_pct": 4.2,
+        "ret_60d_pct": 5.41
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "華新科",
+      "symbol": "2492.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "華新科",
+        "被動元件"
+      ],
+      "sources": [
+        "sector_basket:被動元件",
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2021-03-17",
+        "close": 218.6449,
+        "ret_1d_pct": -1.35,
+        "ret_5d_pct": 7.13,
+        "ret_20d_pct": 8.26,
+        "ret_60d_pct": 8.72
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "禾伸堂",
+      "symbol": "3026.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "被動元件"
+      ],
+      "sources": [
+        "sector_basket:被動元件"
+      ],
+      "market": {
+        "market_date": "2021-03-17",
+        "close": 88.3121,
+        "ret_1d_pct": -0.39,
+        "ret_5d_pct": 9.4,
+        "ret_20d_pct": 11.3,
+        "ret_60d_pct": 8.02
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "聯詠",
+      "symbol": "3034.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "晶圓代工"
+      ],
+      "sources": [
+        "sector_basket:半導體供應鏈"
+      ],
+      "market": {
+        "market_date": "2021-03-17",
+        "close": 334.6251,
+        "ret_1d_pct": 2.11,
+        "ret_5d_pct": 6.5,
+        "ret_20d_pct": 6.05,
+        "ret_60d_pct": 60.0
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "日月光投控",
+      "symbol": "3711.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "晶圓代工"
+      ],
+      "sources": [
+        "sector_basket:半導體供應鏈"
+      ],
+      "market": {
+        "market_date": "2021-03-17",
+        "close": 79.7299,
+        "ret_1d_pct": -0.96,
+        "ret_5d_pct": 1.98,
+        "ret_20d_pct": -2.37,
+        "ret_60d_pct": 27.79
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "群聯",
+      "symbol": "8299.TWO",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "記憶體"
+      ],
+      "sources": [
+        "sector_basket:記憶體"
+      ],
+      "market": {
+        "market_date": "2021-03-17",
+        "close": 373.0197,
+        "ret_1d_pct": 0.75,
+        "ret_5d_pct": 6.55,
+        "ret_20d_pct": 21.96,
+        "ret_60d_pct": 38.82
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "Apple",
+      "symbol": "AAPL",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "Apple",
+        "蘋果"
+      ],
+      "sources": [
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2021-03-17",
+        "close": 121.5157,
+        "ret_1d_pct": -0.65,
+        "ret_5d_pct": 3.98,
+        "ret_20d_pct": -4.65,
+        "ret_60d_pct": -2.92
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "Amazon",
+      "symbol": "AMZN",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "Amazon"
+      ],
+      "sources": [
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2021-03-17",
+        "close": 156.7865,
+        "ret_1d_pct": 1.42,
+        "ret_5d_pct": 2.55,
+        "ret_20d_pct": -5.23,
+        "ret_60d_pct": -3.1
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "Alphabet",
+      "symbol": "GOOGL",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "Google"
+      ],
+      "sources": [
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2021-03-17",
+        "close": 103.2576,
+        "ret_1d_pct": -0.08,
+        "ret_5d_pct": 2.26,
+        "ret_20d_pct": -1.72,
+        "ret_60d_pct": 19.63
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "Meta",
+      "symbol": "META",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "臉書"
+      ],
+      "sources": [
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2021-03-17",
+        "close": 281.7986,
+        "ret_1d_pct": 1.69,
+        "ret_5d_pct": 7.21,
+        "ret_20d_pct": 3.82,
+        "ret_60d_pct": 3.47
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "Microsoft",
+      "symbol": "MSFT",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "Microsoft"
+      ],
+      "sources": [
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2021-03-17",
+        "close": 227.454,
+        "ret_1d_pct": -0.28,
+        "ret_5d_pct": 1.99,
+        "ret_20d_pct": -2.93,
+        "ret_60d_pct": 8.28
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "Micron",
+      "symbol": "MU",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "記憶體"
+      ],
+      "sources": [
+        "sector_basket:記憶體"
+      ],
+      "market": {
+        "market_date": "2021-03-17",
+        "close": 92.4182,
+        "ret_1d_pct": 3.64,
+        "ret_5d_pct": 10.95,
+        "ret_20d_pct": 10.12,
+        "ret_60d_pct": 31.14
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "Netflix",
+      "symbol": "NFLX",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "Netflix"
+      ],
+      "sources": [
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2021-03-17",
+        "close": 52.444,
+        "ret_1d_pct": 0.08,
+        "ret_5d_pct": 3.94,
+        "ret_20d_pct": -4.88,
+        "ret_60d_pct": -1.59
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "NVIDIA",
+      "symbol": "NVDA",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "NVIDIA"
+      ],
+      "sources": [
+        "trade_observations.asset_symbol",
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2021-03-17",
+        "close": 13.3077,
+        "ret_1d_pct": 0.38,
+        "ret_5d_pct": 7.0,
+        "ret_20d_pct": -10.47,
+        "ret_60d_pct": 0.03
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "Invesco QQQ",
+      "symbol": "QQQ",
+      "asset_type": "index",
+      "matched_aliases": [],
+      "sources": [
+        "trade_observations.asset_symbol"
+      ],
+      "market": {
+        "market_date": "2021-03-17",
+        "close": 311.9875,
+        "ret_1d_pct": 0.41,
+        "ret_5d_pct": 3.54,
+        "ret_20d_pct": -3.6,
+        "ret_60d_pct": 3.69
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "iShares Semiconductor ETF",
+      "symbol": "SOXX",
+      "asset_type": "sector",
+      "matched_aliases": [
+        "晶圓代工"
+      ],
+      "sources": [
+        "sector_basket:半導體供應鏈"
+      ],
+      "market": {
+        "market_date": "2021-03-17",
+        "close": 134.9053,
+        "ret_1d_pct": 1.26,
+        "ret_5d_pct": 7.99,
+        "ret_20d_pct": -2.22,
+        "ret_60d_pct": 11.97
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "Tesla",
+      "symbol": "TSLA",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "EV 供應鏈",
+        "特斯拉",
+        "車用",
+        "車用供應鏈",
+        "電動車供應鏈"
+      ],
+      "sources": [
+        "sector_basket:電動車供應鏈",
+        "trade_observations.asset_or_sector",
+        "trade_observations.asset_symbol",
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2021-03-17",
+        "close": 233.9367,
+        "ret_1d_pct": 3.68,
+        "ret_5d_pct": 5.05,
+        "ret_20d_pct": -12.07,
+        "ret_60d_pct": 7.0
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "台積電 ADR",
+      "symbol": "TSM",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "晶圓代工"
+      ],
+      "sources": [
+        "sector_basket:半導體供應鏈"
+      ],
+      "market": {
+        "market_date": "2021-03-17",
+        "close": 109.3099,
+        "ret_1d_pct": -0.12,
+        "ret_5d_pct": 4.72,
+        "ret_20d_pct": -12.52,
+        "ret_60d_pct": 14.73
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "Block",
+      "symbol": "XYZ",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "Square"
+      ],
+      "sources": [
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2021-03-17",
+        "close": 246.47,
+        "ret_1d_pct": 1.28,
+        "ret_5d_pct": 8.71,
+        "ret_20d_pct": -9.03,
+        "ret_60d_pct": 6.82
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "台股加權指數",
+      "symbol": "^TWII",
+      "asset_type": "index",
+      "matched_aliases": [
+        "台股",
+        "大盤"
+      ],
+      "sources": [
+        "trade_observations.asset_symbol",
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2021-03-17",
+        "close": 16215.8203,
+        "ret_1d_pct": -0.6,
+        "ret_5d_pct": 1.91,
+        "ret_20d_pct": 2.62,
+        "ret_60d_pct": 13.8
+      },
+      "pricing_status": "ok"
+    }
+  ],
+  "sector_basket_matches": [
+    "半導體供應鏈",
+    "被動元件",
+    "記憶體",
+    "電動車供應鏈"
+  ],
+  "unresolved_mentions": []
+}

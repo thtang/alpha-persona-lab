@@ -1,0 +1,570 @@
+{
+  "episode": 629,
+  "episode_date": "2026-01-21",
+  "title": "桂格贊助與SpaceX上市題材",
+  "baseline_market_context": {
+    "^TWII": {
+      "market_date": "2026-01-21",
+      "close": 31246.3691,
+      "ret_1d_pct": -1.62,
+      "ret_5d_pct": 0.98,
+      "ret_20d_pct": 11.0,
+      "ret_60d_pct": 11.62
+    },
+    "^GSPC": {
+      "market_date": "2026-01-21",
+      "close": 6875.6201,
+      "ret_1d_pct": 1.16,
+      "ret_5d_pct": -1.27,
+      "ret_20d_pct": 0.6,
+      "ret_60d_pct": 2.04
+    },
+    "^IXIC": {
+      "market_date": "2026-01-21",
+      "close": 23224.8203,
+      "ret_1d_pct": 1.18,
+      "ret_5d_pct": -2.05,
+      "ret_20d_pct": -0.36,
+      "ret_60d_pct": 1.23
+    },
+    "^VIX": {
+      "market_date": "2026-01-21",
+      "close": 16.9,
+      "ret_1d_pct": -15.88,
+      "ret_5d_pct": 5.76,
+      "ret_20d_pct": 13.35,
+      "ret_60d_pct": -2.31
+    },
+    "^TNX": {
+      "market_date": "2026-01-21",
+      "close": 4.253,
+      "ret_1d_pct": -0.98,
+      "ret_5d_pct": 1.97,
+      "ret_20d_pct": 2.46,
+      "ret_60d_pct": 6.56
+    },
+    "TWD=X": {
+      "market_date": "2026-01-21",
+      "close": 31.6823,
+      "ret_1d_pct": 0.42,
+      "ret_5d_pct": 0.21,
+      "ret_20d_pct": 0.57,
+      "ret_60d_pct": 2.75
+    },
+    "2330.TW": {
+      "market_date": "2026-01-21",
+      "close": 1734.3414,
+      "ret_1d_pct": -1.97,
+      "ret_5d_pct": 1.75,
+      "ret_20d_pct": 18.77,
+      "ret_60d_pct": 17.96
+    },
+    "QQQ": {
+      "market_date": "2026-01-21",
+      "close": 615.5039,
+      "ret_1d_pct": 1.35,
+      "ret_5d_pct": -1.59,
+      "ret_20d_pct": 0.0,
+      "ret_60d_pct": 1.06
+    },
+    "SOXX": {
+      "market_date": "2026-01-21",
+      "close": 347.9257,
+      "ret_1d_pct": 3.2,
+      "ret_5d_pct": 4.45,
+      "ret_20d_pct": 16.12,
+      "ret_60d_pct": 19.79
+    },
+    "TSM": {
+      "market_date": "2026-01-21",
+      "close": 325.2036,
+      "ret_1d_pct": -0.32,
+      "ret_5d_pct": -1.54,
+      "ret_20d_pct": 12.86,
+      "ret_60d_pct": 12.48
+    },
+    "NVDA": {
+      "market_date": "2026-01-21",
+      "close": 183.3101,
+      "ret_1d_pct": 2.95,
+      "ret_5d_pct": -1.34,
+      "ret_20d_pct": 1.29,
+      "ret_60d_pct": 0.64
+    },
+    "TSLA": {
+      "market_date": "2026-01-21",
+      "close": 431.44,
+      "ret_1d_pct": 2.91,
+      "ret_5d_pct": -3.52,
+      "ret_20d_pct": -10.34,
+      "ret_60d_pct": -3.91
+    },
+    "BTC-USD": {
+      "market_date": "2026-01-21",
+      "close": 89376.9609,
+      "ret_1d_pct": 1.21,
+      "ret_5d_pct": -6.44,
+      "ret_20d_pct": 0.73,
+      "ret_60d_pct": 5.59
+    }
+  },
+  "mentioned_assets": [
+    {
+      "asset_name": "聯電",
+      "symbol": "2303.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "半導體"
+      ],
+      "sources": [
+        "sector_basket:半導體供應鏈"
+      ],
+      "market": {
+        "market_date": "2026-01-21",
+        "close": 68.4,
+        "ret_1d_pct": 0.88,
+        "ret_5d_pct": 26.67,
+        "ret_20d_pct": 34.38,
+        "ret_60d_pct": 50.0
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "台達電",
+      "symbol": "2308.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "AI"
+      ],
+      "sources": [
+        "sector_basket:AI 伺服器供應鏈"
+      ],
+      "market": {
+        "market_date": "2026-01-21",
+        "close": 1135.0,
+        "ret_1d_pct": 0.44,
+        "ret_5d_pct": 7.08,
+        "ret_20d_pct": 19.1,
+        "ret_60d_pct": 6.07
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "台積電",
+      "symbol": "2330.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "AI",
+        "半導體"
+      ],
+      "sources": [
+        "sector_basket:AI 伺服器供應鏈",
+        "sector_basket:半導體供應鏈"
+      ],
+      "market": {
+        "market_date": "2026-01-21",
+        "close": 1734.3414,
+        "ret_1d_pct": -1.97,
+        "ret_5d_pct": 1.75,
+        "ret_20d_pct": 18.77,
+        "ret_60d_pct": 17.96
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "瑞昱",
+      "symbol": "2379.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "半導體"
+      ],
+      "sources": [
+        "sector_basket:半導體供應鏈"
+      ],
+      "market": {
+        "market_date": "2026-01-21",
+        "close": 502.0,
+        "ret_1d_pct": -2.9,
+        "ret_5d_pct": -5.64,
+        "ret_20d_pct": 2.03,
+        "ret_60d_pct": -4.38
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "廣達",
+      "symbol": "2382.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "AI"
+      ],
+      "sources": [
+        "sector_basket:AI 伺服器供應鏈"
+      ],
+      "market": {
+        "market_date": "2026-01-21",
+        "close": 275.0,
+        "ret_1d_pct": -0.9,
+        "ret_5d_pct": -3.85,
+        "ret_20d_pct": 3.0,
+        "ret_60d_pct": -11.15
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "聯發科",
+      "symbol": "2454.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "AI",
+        "半導體"
+      ],
+      "sources": [
+        "sector_basket:AI 伺服器供應鏈",
+        "sector_basket:半導體供應鏈"
+      ],
+      "market": {
+        "market_date": "2026-01-21",
+        "close": 1465.0,
+        "ret_1d_pct": -1.35,
+        "ret_5d_pct": -2.33,
+        "ret_20d_pct": 6.67,
+        "ret_60d_pct": 11.87
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "奇鋐",
+      "symbol": "3017.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "AI"
+      ],
+      "sources": [
+        "sector_basket:AI 伺服器供應鏈"
+      ],
+      "market": {
+        "market_date": "2026-01-21",
+        "close": 1280.0,
+        "ret_1d_pct": -1.16,
+        "ret_5d_pct": -9.86,
+        "ret_20d_pct": -13.22,
+        "ret_60d_pct": 7.56
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "聯詠",
+      "symbol": "3034.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "半導體"
+      ],
+      "sources": [
+        "sector_basket:半導體供應鏈"
+      ],
+      "market": {
+        "market_date": "2026-01-21",
+        "close": 377.5,
+        "ret_1d_pct": -3.7,
+        "ret_5d_pct": -1.44,
+        "ret_20d_pct": 0.13,
+        "ret_60d_pct": -8.82
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "緯創",
+      "symbol": "3231.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "AI"
+      ],
+      "sources": [
+        "sector_basket:AI 伺服器供應鏈"
+      ],
+      "market": {
+        "market_date": "2026-01-21",
+        "close": 133.5,
+        "ret_1d_pct": -1.84,
+        "ret_5d_pct": -8.56,
+        "ret_20d_pct": -8.87,
+        "ret_60d_pct": -8.87
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "雙鴻",
+      "symbol": "3324.TWO",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "AI"
+      ],
+      "sources": [
+        "sector_basket:AI 伺服器供應鏈"
+      ],
+      "market": {
+        "market_date": "2026-01-21",
+        "close": 900.0,
+        "ret_1d_pct": -3.02,
+        "ret_5d_pct": -9.27,
+        "ret_20d_pct": -9.18,
+        "ret_60d_pct": -8.26
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "日月光投控",
+      "symbol": "3711.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "半導體"
+      ],
+      "sources": [
+        "sector_basket:半導體供應鏈"
+      ],
+      "market": {
+        "market_date": "2026-01-21",
+        "close": 291.0,
+        "ret_1d_pct": -1.69,
+        "ret_5d_pct": -1.19,
+        "ret_20d_pct": 25.43,
+        "ret_60d_pct": 43.7
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "緯穎",
+      "symbol": "6669.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "AI"
+      ],
+      "sources": [
+        "sector_basket:AI 伺服器供應鏈"
+      ],
+      "market": {
+        "market_date": "2026-01-21",
+        "close": 3605.0,
+        "ret_1d_pct": -1.77,
+        "ret_5d_pct": -8.96,
+        "ret_20d_pct": -15.18,
+        "ret_60d_pct": -11.1
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "AMD",
+      "symbol": "AMD",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "AI"
+      ],
+      "sources": [
+        "sector_basket:AI 伺服器供應鏈"
+      ],
+      "market": {
+        "market_date": "2026-01-21",
+        "close": 249.8,
+        "ret_1d_pct": 7.71,
+        "ret_5d_pct": 13.05,
+        "ret_20d_pct": 17.04,
+        "ret_60d_pct": 6.3
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "Broadcom",
+      "symbol": "AVGO",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "AI",
+        "AVGO",
+        "Broadcom"
+      ],
+      "sources": [
+        "sector_basket:AI 伺服器供應鏈",
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2026-01-21",
+        "close": 328.1117,
+        "ret_1d_pct": -1.14,
+        "ret_5d_pct": -7.28,
+        "ret_20d_pct": -3.21,
+        "ret_60d_pct": -4.32
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "Meta",
+      "symbol": "META",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "Facebook"
+      ],
+      "sources": [
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2026-01-21",
+        "close": 612.4357,
+        "ret_1d_pct": 1.46,
+        "ret_5d_pct": -2.87,
+        "ret_20d_pct": -6.95,
+        "ret_60d_pct": -16.42
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "NVIDIA",
+      "symbol": "NVDA",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "AI",
+        "NVIDIA"
+      ],
+      "sources": [
+        "sector_basket:AI 伺服器供應鏈",
+        "trade_observations.asset_symbol",
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2026-01-21",
+        "close": 183.3101,
+        "ret_1d_pct": 2.95,
+        "ret_5d_pct": -1.34,
+        "ret_20d_pct": 1.29,
+        "ret_60d_pct": 0.64
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "iShares Semiconductor ETF",
+      "symbol": "SOXX",
+      "asset_type": "sector",
+      "matched_aliases": [
+        "半導體"
+      ],
+      "sources": [
+        "sector_basket:半導體供應鏈"
+      ],
+      "market": {
+        "market_date": "2026-01-21",
+        "close": 347.9257,
+        "ret_1d_pct": 3.2,
+        "ret_5d_pct": 4.45,
+        "ret_20d_pct": 16.12,
+        "ret_60d_pct": 19.79
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "Tesla",
+      "symbol": "TSLA",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "Tesla"
+      ],
+      "sources": [
+        "trade_observations.asset_symbol",
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2026-01-21",
+        "close": 431.44,
+        "ret_1d_pct": 2.91,
+        "ret_5d_pct": -3.52,
+        "ret_20d_pct": -10.34,
+        "ret_60d_pct": -3.91
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "台積電 ADR",
+      "symbol": "TSM",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "TSM",
+        "半導體"
+      ],
+      "sources": [
+        "sector_basket:半導體供應鏈",
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2026-01-21",
+        "close": 325.2036,
+        "ret_1d_pct": -0.32,
+        "ret_5d_pct": -1.54,
+        "ret_20d_pct": 12.86,
+        "ret_60d_pct": 12.48
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "標普 500",
+      "symbol": "^GSPC",
+      "asset_type": "index",
+      "matched_aliases": [],
+      "sources": [
+        "trade_observations.asset_symbol"
+      ],
+      "market": {
+        "market_date": "2026-01-21",
+        "close": 6875.6201,
+        "ret_1d_pct": 1.16,
+        "ret_5d_pct": -1.27,
+        "ret_20d_pct": 0.6,
+        "ret_60d_pct": 2.04
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "那斯達克綜合指數",
+      "symbol": "^IXIC",
+      "asset_type": "index",
+      "matched_aliases": [
+        "NASDAQ"
+      ],
+      "sources": [
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2026-01-21",
+        "close": 23224.8203,
+        "ret_1d_pct": 1.18,
+        "ret_5d_pct": -2.05,
+        "ret_20d_pct": -0.36,
+        "ret_60d_pct": 1.23
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "台股加權指數",
+      "symbol": "^TWII",
+      "asset_type": "index",
+      "matched_aliases": [
+        "台股"
+      ],
+      "sources": [
+        "trade_observations.asset_symbol",
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2026-01-21",
+        "close": 31246.3691,
+        "ret_1d_pct": -1.62,
+        "ret_5d_pct": 0.98,
+        "ret_20d_pct": 11.0,
+        "ret_60d_pct": 11.62
+      },
+      "pricing_status": "ok"
+    }
+  ],
+  "sector_basket_matches": [
+    "AI 伺服器供應鏈",
+    "半導體供應鏈"
+  ],
+  "unresolved_mentions": []
+}

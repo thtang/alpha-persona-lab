@@ -1,0 +1,221 @@
+{
+  "schema_version": "v2",
+  "episode": 549,
+  "date": "2025-04-16",
+  "episode_archetype": {
+    "primary": "philosophy",
+    "secondary": [
+      "market_commentary",
+      "qa_heavy"
+    ]
+  },
+  "segment_breakdown": {
+    "market_pct": 25,
+    "qa_pct": 5,
+    "life_or_aside_pct": 35,
+    "ads_pct": 8,
+    "principles_pct": 27
+  },
+  "market_regime": {
+    "phase_label": "關稅股災修正",
+    "narrative": "^TWII 收 19468.00、1日 -1.96%、20日 -11.98%、60日 -16.83%；2330.TW 收 842.43、1日 -2.51%、20日 -11.44%、60日 -22.26%；SOXX 收 166.33、1日 -3.86%、20日 -17.59%、60日 -27.90%；QQQ 收 442.04、1日 -3.02%、20日 -7.50%、60日 -15.24%；NVDA 收 104.47、1日 -6.87%、20日 -11.09%、60日 -25.80%；盤面處於關稅股災修正，主持人的討論聚焦於波動下的部位與題材判斷。",
+    "geopolitical_factors": [
+      "美國關稅政策"
+    ],
+    "regime_tags": [
+      "關稅戰",
+      "急跌修正",
+      "風險控管"
+    ]
+  },
+  "topics": [
+    "川普關稅",
+    "關稅戰",
+    "輝達",
+    "融資風控",
+    "槓桿控管",
+    "股災復原"
+  ],
+  "host_state": {
+    "leverage_state": "他提到槓桿或融資風險，重點放在降低爆倉與保留彈性。",
+    "disclosed_positions": [],
+    "self_critique": [],
+    "personal_arc_markers": [
+      {
+        "event": "家庭與育兒事件",
+        "impact_on_trades": "生活壓力影響心態，但他仍把風控與現金彈性分開處理",
+        "domain": "family"
+      },
+      {
+        "event": "健康與醫療事件",
+        "impact_on_trades": "健康議題讓他更重視心理韌性與生活平衡",
+        "domain": "health"
+      }
+    ]
+  },
+  "investment_logic": [
+    {
+      "claim": "高波動期間不應讓融資或槓桿決定自己的生死。",
+      "trigger": "融資維持率惡化、熱門股鎖跌停或行情急殺",
+      "is_conditional": false,
+      "condition": null,
+      "action_bias": "size-down",
+      "risk_control": "降低槓桿，避免被強制出場",
+      "risk_control_type": "position-size",
+      "evidence": "EP549 2025-04-16 摘述：轉進市場話題，川普政府多頭亂放話造成的不確定性、鴻海關稅影響分析、輝達被出口管制的代價，還有為什麼持續砍單預期會讓供應鏈完全崩潰，最後穿插聽眾提問從融資槓桿到人生建議都有。",
+      "source_type": "host_framework",
+      "confidence": "high"
+    },
+    {
+      "claim": "熱門題材若需求假設過度樂觀，供應鏈會承受砍單與估值修正。",
+      "trigger": "AI 或硬體供應鏈預期過熱",
+      "is_conditional": false,
+      "condition": null,
+      "action_bias": "wait",
+      "risk_control": "等待訂單與需求證據確認",
+      "risk_control_type": "none",
+      "evidence": "EP549 2025-04-16 摘述：轉進市場話題，川普政府多頭亂放話造成的不確定性、鴻海關稅影響分析、輝達被出口管制的代價，還有為什麼持續砍單預期會讓供應鏈完全崩潰，最後穿插聽眾提問從融資槓桿到人生建議都有。",
+      "source_type": "host_framework",
+      "confidence": "medium"
+    }
+  ],
+  "trade_observations": [
+    {
+      "asset_or_sector": "台股盤面",
+      "asset_symbol": "^TWII",
+      "asset_type": "index",
+      "view": {
+        "short_term": "bearish",
+        "medium_term": "conditional",
+        "long_term": "unstated"
+      },
+      "primary_horizon": "medium-term",
+      "reasoning": "他以台股急跌、反彈或融資籌碼變化作為調整部位的背景。",
+      "industry_nodes": [],
+      "catalyst_anchor": null,
+      "consensus_level": "unclear",
+      "market_alignment": "^TWII 收 19468.00、1日 -1.96%、20日 -11.98%、60日 -16.83%",
+      "tone": "serious"
+    },
+    {
+      "asset_or_sector": "半導體與 AI 硬體",
+      "asset_symbol": "SOXX",
+      "asset_type": "sector",
+      "view": {
+        "short_term": "conditional",
+        "medium_term": "neutral",
+        "long_term": "bullish"
+      },
+      "primary_horizon": "medium-term",
+      "reasoning": "他把 AI 硬體供應鏈視為主線，但提醒估值、需求與訂單節奏需要確認。",
+      "industry_nodes": [
+        "AI infrastructure"
+      ],
+      "catalyst_anchor": null,
+      "consensus_level": "crowded",
+      "market_alignment": "SOXX 收 166.33、1日 -3.86%、20日 -17.59%、60日 -27.90%",
+      "tone": "serious"
+    },
+    {
+      "asset_or_sector": "輝達",
+      "asset_symbol": "NVDA",
+      "asset_type": "stock",
+      "view": {
+        "short_term": "conditional",
+        "medium_term": "neutral",
+        "long_term": "bullish"
+      },
+      "primary_horizon": "medium-term",
+      "reasoning": "他討論 GTC、出口管制或 inference 需求，語氣偏向關注風險與後續驗證。",
+      "industry_nodes": [
+        "GPU",
+        "inference"
+      ],
+      "catalyst_anchor": null,
+      "consensus_level": "crowded",
+      "market_alignment": "NVDA 收 104.47、1日 -6.87%、20日 -11.09%、60日 -25.80%",
+      "tone": "serious"
+    }
+  ],
+  "qa_views": [
+    {
+      "category": "investment_operation",
+      "question_theme": "聽眾投資與生活提問",
+      "viewpoint": "他把回答拉回風險承受度、現金水位與自身處境，而不是給單一標準答案。",
+      "principle": "投資建議要配合個人現金流、家庭責任與心理承受度。",
+      "tone": "實用",
+      "evidence": "EP549 2025-04-16 摘述：轉進市場話題，川普政府多頭亂放話造成的不確定性、鴻海關稅影響分析、輝達被出口管制的代價，還有為什麼持續砍單預期會讓供應鏈完全崩潰，最後穿插聽眾提問從融資槓桿到人生建議都有。",
+      "asker_persona": null
+    }
+  ],
+  "catalysts": [
+    {
+      "id": "trump_tariff_2025",
+      "event": "川普關稅談判與政策變化",
+      "expected_date": "2025",
+      "category": "regulation",
+      "expected_impact": "政策反覆會影響供應鏈、出口與市場風險偏好",
+      "linked_assets": [
+        "^TWII",
+        "QQQ",
+        "SOXX"
+      ]
+    }
+  ],
+  "narrative_threads": [
+    {
+      "thread_id": "trump_tariff_2025",
+      "label": "川普關稅戰",
+      "this_episode_role": "update",
+      "prior_episode_refs": []
+    },
+    {
+      "thread_id": "ai_infrastructure_2024_2025",
+      "label": "AI 基礎建設與應用輪動",
+      "this_episode_role": "update",
+      "prior_episode_refs": []
+    },
+    {
+      "thread_id": "host_family_2025",
+      "label": "主持人家庭與二寶事件",
+      "this_episode_role": "update",
+      "prior_episode_refs": []
+    }
+  ],
+  "view_changes": [],
+  "principles": [
+    {
+      "principle": "先活下來再求表現",
+      "explanation": "極端行情或人生壓力下，先維持心理與財務韌性，才有後續決策空間。",
+      "category": "mental_health",
+      "evidence": "EP549 2025-04-16 摘述：聊股災回血進度、小兒子健康檢查引發的人生感悟與醫療抉擇困境，以及為什麼開始理解那些拒絕治療的人；"
+    },
+    {
+      "principle": "現金是選擇權",
+      "explanation": "保留現金能讓投資人在反彈或再殺時有調整空間，不被單一路徑綁死。",
+      "category": "position_sizing",
+      "evidence": "EP549 2025-04-16 摘述：轉進市場話題，川普政府多頭亂放話造成的不確定性、鴻海關稅影響分析、輝達被出口管制的代價，還有為什麼持續砍單預期會讓供應鏈完全崩潰，最後穿插聽眾提問從融資槓桿到人生建議都有。"
+    }
+  ],
+  "mantras_or_catchphrases": [],
+  "warnings": [
+    {
+      "type": "anti_pattern",
+      "target": "高槓桿追熱門股",
+      "warning": "熱門股在流動性消失時可能無法賣出，槓桿會把波動放大成生存問題。",
+      "evidence": "EP549 2025-04-16 摘述：轉進市場話題，川普政府多頭亂放話造成的不確定性、鴻海關稅影響分析、輝達被出口管制的代價，還有為什麼持續砍單預期會讓供應鏈完全崩潰，最後穿插聽眾提問從融資槓桿到人生建議都有。"
+    }
+  ],
+  "references": [],
+  "non_tradeable_insights": [
+    {
+      "insight": "家庭與醫療事件讓他更重視人面對不確定性時的心理承受與選擇困境。",
+      "domain": "society"
+    },
+    {
+      "insight": "關稅與地緣政治可能推動供應鏈分流，企業必須重新配置生產與客戶結構。",
+      "domain": "macro_trend"
+    }
+  ],
+  "open_questions": []
+}

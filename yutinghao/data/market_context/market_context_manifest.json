@@ -1,0 +1,36 @@
+{
+  "built_at": "2026-05-11T09:20:27.910665+00:00",
+  "source": "Yahoo Finance chart API",
+  "episode_count": 83,
+  "symbols": [
+    "^TWII",
+    "2330.TW",
+    "SPY",
+    "QQQ",
+    "SOXX",
+    "DIA",
+    "IWM",
+    "NVDA",
+    "TSM",
+    "^VIX",
+    "^TNX",
+    "^IRX",
+    "DX-Y.NYB",
+    "TWD=X",
+    "JPY=X",
+    "CL=F",
+    "BZ=F",
+    "GC=F",
+    "HG=F",
+    "BTC-USD"
+  ],
+  "start": "2025-09-24",
+  "end": "2026-05-13",
+  "alignment": "nearest prior close on episode_date - 1 day",
+  "outputs": {
+    "jsonl": "data/market_context/episode_market_context.jsonl",
+    "csv": "data/market_context/episode_market_context.csv",
+    "prices_dir": "data/market_context/prices"
+  },
+  "errors": []
+}

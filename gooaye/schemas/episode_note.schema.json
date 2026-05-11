@@ -1,0 +1,156 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Gooaye Structured Episode Note",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "episode",
+    "date",
+    "title",
+    "market_regime",
+    "topics",
+    "investment_logic",
+    "trade_observations",
+    "qa_views",
+    "open_questions"
+  ],
+  "properties": {
+    "episode": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "date": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "title": {
+      "type": "string"
+    },
+    "market_regime": {
+      "type": "string",
+      "minLength": 1
+    },
+    "topics": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 8,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "investment_logic": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "claim",
+          "trigger",
+          "action_bias",
+          "risk_control",
+          "evidence",
+          "confidence"
+        ],
+        "properties": {
+          "claim": {
+            "type": "string"
+          },
+          "trigger": {
+            "type": "string"
+          },
+          "action_bias": {
+            "type": "string",
+            "enum": ["buy", "sell", "hold", "hedge", "wait", "size-down", "rotate", "unknown"]
+          },
+          "risk_control": {
+            "type": "string"
+          },
+          "evidence": {
+            "type": "string",
+            "maxLength": 200
+          },
+          "confidence": {
+            "type": "string",
+            "enum": ["high", "medium", "low"]
+          }
+        }
+      }
+    },
+    "trade_observations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "asset_or_sector",
+          "view",
+          "time_horizon",
+          "reasoning",
+          "market_alignment",
+          "is_joke_or_aside"
+        ],
+        "properties": {
+          "asset_or_sector": {
+            "type": "string"
+          },
+          "view": {
+            "type": "string",
+            "enum": ["bullish", "bearish", "neutral", "conditional"]
+          },
+          "time_horizon": {
+            "type": "string",
+            "enum": ["intraday", "swing", "medium-term", "long-term", "unclear"]
+          },
+          "reasoning": {
+            "type": "string"
+          },
+          "market_alignment": {
+            "type": "string"
+          },
+          "is_joke_or_aside": {
+            "type": "boolean"
+          }
+        }
+      }
+    },
+    "qa_views": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "question_theme",
+          "viewpoint",
+          "principle",
+          "tone",
+          "evidence"
+        ],
+        "properties": {
+          "question_theme": {
+            "type": "string"
+          },
+          "viewpoint": {
+            "type": "string"
+          },
+          "principle": {
+            "type": "string"
+          },
+          "tone": {
+            "type": "string"
+          },
+          "evidence": {
+            "type": "string",
+            "maxLength": 200
+          }
+        }
+      }
+    },
+    "open_questions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

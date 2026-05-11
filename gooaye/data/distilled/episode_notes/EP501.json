@@ -1,0 +1,107 @@
+{
+  "schema_version": "v2",
+  "episode": 501,
+  "date": "2024-10-30",
+  "episode_archetype": {
+    "primary": "event_response",
+    "secondary": [
+      "market_commentary"
+    ]
+  },
+  "segment_breakdown": {
+    "market_pct": 60,
+    "qa_pct": 5,
+    "life_or_aside_pct": 18,
+    "ads_pct": 8,
+    "principles_pct": 9
+  },
+  "market_regime": {
+    "phase_label": "震盪整理",
+    "narrative": "^TWII 收 22820.43、1日 -0.46%、20日 -0.01%、60日 +0.79%；2330.TW 收 1006.28、1日 -0.96%、20日 +3.00%、60日 +7.77%；SOXX 收 224.99、1日 -3.53%、20日 -0.04%、60日 +11.04%；QQQ 收 492.46、1日 -0.76%、20日 +2.99%、60日 +13.09%；NVDA 收 139.28、1日 -1.35%、20日 +17.24%、60日 +33.67%；盤面處於震盪整理，主持人的討論聚焦於波動下的部位與題材判斷。",
+    "geopolitical_factors": [
+      "美國關稅政策"
+    ],
+    "regime_tags": [
+      "震盪盤",
+      "族群輪動",
+      "觀望"
+    ]
+  },
+  "topics": [
+    "川普關稅",
+    "關稅戰",
+    "婚戒廣告",
+    "演唱會與川普政策解析"
+  ],
+  "host_state": {
+    "leverage_state": null,
+    "disclosed_positions": [],
+    "self_critique": [],
+    "personal_arc_markers": []
+  },
+  "investment_logic": [
+    {
+      "claim": "盤勢不明時先維持可睡得著的部位，再等待更明確訊號。",
+      "trigger": "市場震盪、生活壓力或題材分歧",
+      "is_conditional": false,
+      "condition": null,
+      "action_bias": "wait",
+      "risk_control": "控制部位讓決策不被情緒綁架",
+      "risk_control_type": "position-size",
+      "evidence": "EP501 2024-10-30 摘述：本集聊婚戒贊助商亞立詩的優惠活動，分享群組促成的聽眾婚禮喜訊與盆栽園藝心得，另外去看了英式搖滾 cover 演唱會感受年輕活力，最後大篇幅討論川普上 Joe Rogan Podcast 的言論：包括對台灣晶片課稅、關稅政策、電動車法案廢除、環保與開採政策的看法，以及減少過度管制的主張，整體評估若是美國人會投川普，但身為台灣人得平衡台灣利益來考量。",
+      "source_type": "host_framework",
+      "confidence": "medium"
+    }
+  ],
+  "trade_observations": [
+    {
+      "asset_or_sector": "半導體與 AI 硬體",
+      "asset_symbol": "SOXX",
+      "asset_type": "sector",
+      "view": {
+        "short_term": "conditional",
+        "medium_term": "neutral",
+        "long_term": "bullish"
+      },
+      "primary_horizon": "medium-term",
+      "reasoning": "他把 AI 硬體供應鏈視為主線，但提醒估值、需求與訂單節奏需要確認。",
+      "industry_nodes": [
+        "AI infrastructure"
+      ],
+      "catalyst_anchor": null,
+      "consensus_level": "crowded",
+      "market_alignment": "SOXX 收 224.99、1日 -3.53%、20日 -0.04%、60日 +11.04%",
+      "tone": "serious"
+    }
+  ],
+  "qa_views": [],
+  "catalysts": [
+    {
+      "id": "trump_tariff_2025",
+      "event": "川普關稅談判與政策變化",
+      "expected_date": "2025",
+      "category": "regulation",
+      "expected_impact": "政策反覆會影響供應鏈、出口與市場風險偏好",
+      "linked_assets": [
+        "^TWII",
+        "QQQ",
+        "SOXX"
+      ]
+    }
+  ],
+  "narrative_threads": [
+    {
+      "thread_id": "trump_tariff_2025",
+      "label": "川普關稅戰",
+      "this_episode_role": "update",
+      "prior_episode_refs": []
+    }
+  ],
+  "view_changes": [],
+  "principles": [],
+  "mantras_or_catchphrases": [],
+  "warnings": [],
+  "references": [],
+  "non_tradeable_insights": [],
+  "open_questions": []
+}

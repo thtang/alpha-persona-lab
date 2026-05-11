@@ -1,0 +1,143 @@
+{
+  "schema_version": "v2",
+  "episode": 14,
+  "date": "2020-03-20",
+  "episode_archetype": {
+    "primary": "market_commentary",
+    "secondary": []
+  },
+  "segment_breakdown": {
+    "market_pct": 63,
+    "qa_pct": 10,
+    "life_or_aside_pct": 15,
+    "ads_pct": 0,
+    "principles_pct": 12
+  },
+  "market_regime": {
+    "phase_label": "疫情崩跌期",
+    "narrative": "疫情崩跌期下，^TWII 收 9234.0898、1日 6.37%、5日 -8.83%、20日 -21.25%。 同期QQQ 收 164.5069、1日 -3.92%、5日 -11.25%、20日 -25.87%。",
+    "geopolitical_factors": [
+      "新冠疫情"
+    ],
+    "regime_tags": [
+      "疫情恐慌",
+      "流動性風險",
+      "高波動"
+    ]
+  },
+  "topics": [
+    "武漢肺炎",
+    "台積電",
+    "台股",
+    "降息",
+    "QE",
+    "ETF",
+    "中國",
+    "川普"
+  ],
+  "host_state": {
+    "leverage_state": null,
+    "disclosed_positions": [],
+    "self_critique": [],
+    "personal_arc_markers": []
+  },
+  "investment_logic": [
+    {
+      "claim": "他主張用分批與資金控管降低買在單一高點的壓力。",
+      "trigger": "市場波動大或投資人想追熱門標的時",
+      "is_conditional": true,
+      "condition": "若標的短線漲幅已大或投資人心理承受度不足",
+      "action_bias": "scale-in",
+      "risk_control": "保留現金與分批投入，避免一次押滿。",
+      "risk_control_type": "position-size",
+      "evidence": "EP014 2020-03-20 摘述：他提醒不要把所有資金一次投入。",
+      "source_type": "host_framework",
+      "confidence": "medium"
+    }
+  ],
+  "trade_observations": [
+    {
+      "asset_or_sector": "台積電",
+      "asset_symbol": "2330.TW",
+      "asset_type": "stock",
+      "view": {
+        "short_term": "bearish",
+        "medium_term": "unstated",
+        "long_term": "unstated"
+      },
+      "primary_horizon": "swing",
+      "reasoning": "他在本集討論台積電與當時行情的關係。",
+      "industry_nodes": [
+        "半導體"
+      ],
+      "catalyst_anchor": null,
+      "consensus_level": "unclear",
+      "market_alignment": "2330.TW 收 240.7544、1日 8.87%、5日 -5.99%、20日 -16.25%。",
+      "tone": "serious"
+    },
+    {
+      "asset_or_sector": "台股大盤",
+      "asset_symbol": "^TWII",
+      "asset_type": "index",
+      "view": {
+        "short_term": "bearish",
+        "medium_term": "unstated",
+        "long_term": "unstated"
+      },
+      "primary_horizon": "swing",
+      "reasoning": "他在本集討論台股大盤與當時行情的關係。",
+      "industry_nodes": [],
+      "catalyst_anchor": null,
+      "consensus_level": "unclear",
+      "market_alignment": "^TWII 收 9234.0898、1日 6.37%、5日 -8.83%、20日 -21.25%。",
+      "tone": "serious"
+    },
+    {
+      "asset_or_sector": "NASDAQ / QQQ",
+      "asset_symbol": "QQQ",
+      "asset_type": "index",
+      "view": {
+        "short_term": "bearish",
+        "medium_term": "unstated",
+        "long_term": "unstated"
+      },
+      "primary_horizon": "swing",
+      "reasoning": "他在本集討論NASDAQ / QQQ與當時行情的關係。",
+      "industry_nodes": [],
+      "catalyst_anchor": null,
+      "consensus_level": "unclear",
+      "market_alignment": "QQQ 收 164.5069、1日 -3.92%、5日 -11.25%、20日 -25.87%。",
+      "tone": "serious"
+    }
+  ],
+  "qa_views": [],
+  "catalysts": [],
+  "narrative_threads": [],
+  "view_changes": [],
+  "principles": [
+    {
+      "principle": "分批大法",
+      "explanation": "他把分批視為降低買在單一高點與心理壓力的基本方法。",
+      "category": "position_sizing",
+      "evidence": "EP014 2020-03-20 摘述：他提醒以分批投入平滑成本。"
+    }
+  ],
+  "mantras_or_catchphrases": [],
+  "warnings": [
+    {
+      "type": "instrument_trap",
+      "target": "槓桿或衍生性商品",
+      "warning": "他提醒不了解商品結構與槓桿效果時，不應把它當成簡單避險或存股工具。",
+      "evidence": "EP014 2020-03-20 摘述：他提醒衍生性商品和槓桿工具容易造成額外風險。"
+    },
+    {
+      "type": "anti_pattern",
+      "target": "追高或重壓單一點位",
+      "warning": "他提醒把大量資金壓在熱門標的高點，心理壓力與被洗出的機率都會上升。",
+      "evidence": "EP014 2020-03-20 摘述：他提醒不要盲目追高或一次投入過多資金。"
+    }
+  ],
+  "references": [],
+  "non_tradeable_insights": [],
+  "open_questions": []
+}

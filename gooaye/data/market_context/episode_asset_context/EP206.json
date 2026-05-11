@@ -1,0 +1,772 @@
+{
+  "episode": 206,
+  "episode_date": "2022-01-01",
+  "title": "新年快樂 年度檢討與投資心態調整",
+  "baseline_market_context": {
+    "^TWII": {
+      "market_date": "2021-12-30",
+      "close": 18218.8398,
+      "ret_1d_pct": -0.16,
+      "ret_5d_pct": 1.52,
+      "ret_20d_pct": 2.79,
+      "ret_60d_pct": 11.14
+    },
+    "^GSPC": {
+      "market_date": "2021-12-31",
+      "close": 4766.1802,
+      "ret_1d_pct": -0.26,
+      "ret_5d_pct": 0.85,
+      "ret_20d_pct": 4.13,
+      "ret_60d_pct": 9.23
+    },
+    "^IXIC": {
+      "market_date": "2021-12-31",
+      "close": 15644.9697,
+      "ret_1d_pct": -0.61,
+      "ret_5d_pct": -0.05,
+      "ret_20d_pct": 1.71,
+      "ret_60d_pct": 7.88
+    },
+    "^VIX": {
+      "market_date": "2021-12-31",
+      "close": 17.22,
+      "ret_1d_pct": -0.63,
+      "ret_5d_pct": -4.12,
+      "ret_20d_pct": -38.39,
+      "ret_60d_pct": -18.0
+    },
+    "^TNX": {
+      "market_date": "2021-12-31",
+      "close": 1.512,
+      "ret_1d_pct": -0.2,
+      "ret_5d_pct": 1.27,
+      "ret_20d_pct": 4.42,
+      "ret_60d_pct": -0.79
+    },
+    "TWD=X": {
+      "market_date": "2021-12-31",
+      "close": 27.6587,
+      "ret_1d_pct": 0.15,
+      "ret_5d_pct": 0.12,
+      "ret_20d_pct": -0.07,
+      "ret_60d_pct": -1.11
+    },
+    "2330.TW": {
+      "market_date": "2021-12-30",
+      "close": 568.3152,
+      "ret_1d_pct": -0.16,
+      "ret_5d_pct": 1.49,
+      "ret_20d_pct": 0.46,
+      "ret_60d_pct": 8.2
+    },
+    "QQQ": {
+      "market_date": "2021-12-31",
+      "close": 387.4563,
+      "ret_1d_pct": -0.62,
+      "ret_5d_pct": 0.23,
+      "ret_20d_pct": 2.17,
+      "ret_60d_pct": 10.76
+    },
+    "SOXX": {
+      "market_date": "2021-12-31",
+      "close": 174.5655,
+      "ret_1d_pct": -0.3,
+      "ret_5d_pct": 0.31,
+      "ret_20d_pct": 3.34,
+      "ret_60d_pct": 22.66
+    },
+    "TSM": {
+      "market_date": "2021-12-31",
+      "close": 112.0797,
+      "ret_1d_pct": -0.09,
+      "ret_5d_pct": -0.31,
+      "ret_20d_pct": -0.73,
+      "ret_60d_pct": 10.49
+    },
+    "NVDA": {
+      "market_date": "2021-12-31",
+      "close": 29.3525,
+      "ret_1d_pct": -0.59,
+      "ret_5d_pct": -0.77,
+      "ret_20d_pct": -8.45,
+      "ret_60d_pct": 42.1
+    },
+    "TSLA": {
+      "market_date": "2021-12-31",
+      "close": 352.26,
+      "ret_1d_pct": -1.27,
+      "ret_5d_pct": -0.96,
+      "ret_20d_pct": -2.56,
+      "ret_60d_pct": 35.01
+    },
+    "BTC-USD": {
+      "market_date": "2022-01-01",
+      "close": 47686.8125,
+      "ret_1d_pct": 2.98,
+      "ret_5d_pct": -5.83,
+      "ret_20d_pct": -4.81,
+      "ret_60d_pct": -24.58
+    }
+  },
+  "mentioned_assets": [
+    {
+      "asset_name": "和大",
+      "symbol": "1536.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "車用"
+      ],
+      "sources": [
+        "sector_basket:電動車供應鏈"
+      ],
+      "market": {
+        "market_date": "2021-12-30",
+        "close": 84.4196,
+        "ret_1d_pct": 0.77,
+        "ret_5d_pct": 0.44,
+        "ret_20d_pct": 0.44,
+        "ret_60d_pct": 3.63
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "聯電",
+      "symbol": "2303.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "IC 設計",
+        "IC設計",
+        "半導體"
+      ],
+      "sources": [
+        "sector_basket:半導體供應鏈"
+      ],
+      "market": {
+        "market_date": "2021-12-30",
+        "close": 50.65,
+        "ret_1d_pct": 0.0,
+        "ret_5d_pct": 1.72,
+        "ret_20d_pct": -2.55,
+        "ret_60d_pct": 8.51
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "台達電",
+      "symbol": "2308.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "Delta",
+        "車用"
+      ],
+      "sources": [
+        "sector_basket:電動車供應鏈",
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2021-12-30",
+        "close": 251.7819,
+        "ret_1d_pct": -1.08,
+        "ret_5d_pct": 1.85,
+        "ret_20d_pct": 5.16,
+        "ret_60d_pct": 12.47
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "鴻海",
+      "symbol": "2317.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "車用"
+      ],
+      "sources": [
+        "sector_basket:電動車供應鏈"
+      ],
+      "market": {
+        "market_date": "2021-12-30",
+        "close": 88.7582,
+        "ret_1d_pct": -0.95,
+        "ret_5d_pct": 0.0,
+        "ret_20d_pct": -0.95,
+        "ret_60d_pct": 0.97
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "台積電",
+      "symbol": "2330.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "IC 設計",
+        "IC設計",
+        "半導體",
+        "台積電"
+      ],
+      "sources": [
+        "sector_basket:半導體供應鏈",
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2021-12-30",
+        "close": 568.3152,
+        "ret_1d_pct": -0.16,
+        "ret_5d_pct": 1.49,
+        "ret_20d_pct": 0.46,
+        "ret_60d_pct": 8.2
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "華邦電",
+      "symbol": "2344.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "記憶體"
+      ],
+      "sources": [
+        "sector_basket:記憶體"
+      ],
+      "market": {
+        "market_date": "2021-12-30",
+        "close": 31.1463,
+        "ret_1d_pct": 7.42,
+        "ret_5d_pct": 8.11,
+        "ret_20d_pct": 7.09,
+        "ret_60d_pct": 37.37
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "瑞昱",
+      "symbol": "2379.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "IC 設計",
+        "IC設計",
+        "半導體"
+      ],
+      "sources": [
+        "sector_basket:半導體供應鏈"
+      ],
+      "market": {
+        "market_date": "2021-12-30",
+        "close": 462.3462,
+        "ret_1d_pct": 0.35,
+        "ret_5d_pct": 1.4,
+        "ret_20d_pct": 4.69,
+        "ret_60d_pct": 22.23
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "南亞科",
+      "symbol": "2408.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "記憶體"
+      ],
+      "sources": [
+        "sector_basket:記憶體"
+      ],
+      "market": {
+        "market_date": "2021-12-30",
+        "close": 70.8378,
+        "ret_1d_pct": 1.96,
+        "ret_5d_pct": 2.9,
+        "ret_20d_pct": -2.13,
+        "ret_60d_pct": 27.2
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "聯發科",
+      "symbol": "2454.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "IC 設計",
+        "IC設計",
+        "半導體",
+        "聯發科"
+      ],
+      "sources": [
+        "sector_basket:半導體供應鏈",
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2021-12-30",
+        "close": 877.9795,
+        "ret_1d_pct": 0.42,
+        "ret_5d_pct": 8.68,
+        "ret_20d_pct": 10.19,
+        "ret_60d_pct": 36.62
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "長榮",
+      "symbol": "2603.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "航運",
+        "航運股"
+      ],
+      "sources": [
+        "sector_basket:航運/物流"
+      ],
+      "market": {
+        "market_date": "2021-12-30",
+        "close": 134.4192,
+        "ret_1d_pct": -1.04,
+        "ret_5d_pct": 2.52,
+        "ret_20d_pct": 7.14,
+        "ret_60d_pct": 45.71
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "陽明",
+      "symbol": "2609.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "航運",
+        "航運股"
+      ],
+      "sources": [
+        "sector_basket:航運/物流"
+      ],
+      "market": {
+        "market_date": "2021-12-30",
+        "close": 59.6132,
+        "ret_1d_pct": -2.81,
+        "ret_5d_pct": -1.22,
+        "ret_20d_pct": -0.82,
+        "ret_60d_pct": 30.81
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "萬海",
+      "symbol": "2615.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "航運",
+        "航運股"
+      ],
+      "sources": [
+        "sector_basket:航運/物流"
+      ],
+      "market": {
+        "market_date": "2021-12-30",
+        "close": 135.7612,
+        "ret_1d_pct": -1.24,
+        "ret_5d_pct": -0.75,
+        "ret_20d_pct": 17.11,
+        "ret_60d_pct": 22.91
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "富邦金",
+      "symbol": "2881.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "金融股"
+      ],
+      "sources": [
+        "sector_basket:金融股"
+      ],
+      "market": {
+        "market_date": "2021-12-30",
+        "close": 54.6603,
+        "ret_1d_pct": -0.39,
+        "ret_5d_pct": 2.01,
+        "ret_20d_pct": 3.53,
+        "ret_60d_pct": 2.14
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "國泰金",
+      "symbol": "2882.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "金融股"
+      ],
+      "sources": [
+        "sector_basket:金融股"
+      ],
+      "market": {
+        "market_date": "2021-12-30",
+        "close": 51.3457,
+        "ret_1d_pct": -0.79,
+        "ret_5d_pct": 3.31,
+        "ret_20d_pct": 5.04,
+        "ret_60d_pct": 9.46
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "兆豐金",
+      "symbol": "2886.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "金融股"
+      ],
+      "sources": [
+        "sector_basket:金融股"
+      ],
+      "market": {
+        "market_date": "2021-12-30",
+        "close": 28.75,
+        "ret_1d_pct": -0.14,
+        "ret_5d_pct": 0.14,
+        "ret_20d_pct": 3.8,
+        "ret_60d_pct": 10.23
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "中信金",
+      "symbol": "2891.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "金融股"
+      ],
+      "sources": [
+        "sector_basket:金融股"
+      ],
+      "market": {
+        "market_date": "2021-12-30",
+        "close": 21.3852,
+        "ret_1d_pct": -0.57,
+        "ret_5d_pct": 0.19,
+        "ret_20d_pct": 3.8,
+        "ret_60d_pct": 14.32
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "聯詠",
+      "symbol": "3034.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "IC 設計",
+        "IC設計",
+        "半導體"
+      ],
+      "sources": [
+        "sector_basket:半導體供應鏈"
+      ],
+      "market": {
+        "market_date": "2021-12-30",
+        "close": 366.3394,
+        "ret_1d_pct": 0.94,
+        "ret_5d_pct": 0.19,
+        "ret_20d_pct": 10.91,
+        "ret_60d_pct": 37.85
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "日月光投控",
+      "symbol": "3711.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "IC 設計",
+        "IC設計",
+        "半導體"
+      ],
+      "sources": [
+        "sector_basket:半導體供應鏈"
+      ],
+      "market": {
+        "market_date": "2021-12-30",
+        "close": 85.2189,
+        "ret_1d_pct": 0.47,
+        "ret_5d_pct": 2.9,
+        "ret_20d_pct": 1.43,
+        "ret_60d_pct": 6.5
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "群聯",
+      "symbol": "8299.TWO",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "記憶體"
+      ],
+      "sources": [
+        "sector_basket:記憶體"
+      ],
+      "market": {
+        "market_date": "2021-12-30",
+        "close": 433.5908,
+        "ret_1d_pct": -0.39,
+        "ret_5d_pct": 4.6,
+        "ret_20d_pct": 14.12,
+        "ret_60d_pct": 41.41
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "Apple",
+      "symbol": "AAPL",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "蘋果"
+      ],
+      "sources": [
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2021-12-31",
+        "close": 173.759,
+        "ret_1d_pct": -0.35,
+        "ret_5d_pct": 0.73,
+        "ret_20d_pct": 8.43,
+        "ret_60d_pct": 25.23
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "Amazon",
+      "symbol": "AMZN",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "Amazon"
+      ],
+      "sources": [
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2021-12-31",
+        "close": 166.717,
+        "ret_1d_pct": -1.14,
+        "ret_5d_pct": -2.54,
+        "ret_20d_pct": -3.0,
+        "ret_60d_pct": 2.22
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "Meta",
+      "symbol": "META",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "臉書"
+      ],
+      "sources": [
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2021-12-31",
+        "close": 333.7311,
+        "ret_1d_pct": -2.33,
+        "ret_5d_pct": 0.33,
+        "ret_20d_pct": 8.36,
+        "ret_60d_pct": 0.81
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "Micron",
+      "symbol": "MU",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "Micron",
+        "記憶體"
+      ],
+      "sources": [
+        "sector_basket:記憶體",
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2021-12-31",
+        "close": 91.072,
+        "ret_1d_pct": -0.68,
+        "ret_5d_pct": -1.24,
+        "ret_20d_pct": 12.51,
+        "ret_60d_pct": 33.33
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "Invesco QQQ",
+      "symbol": "QQQ",
+      "asset_type": "index",
+      "matched_aliases": [
+        "QQQ"
+      ],
+      "sources": [
+        "trade_observations.asset_symbol",
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2021-12-31",
+        "close": 387.4563,
+        "ret_1d_pct": -0.62,
+        "ret_5d_pct": 0.23,
+        "ret_20d_pct": 2.17,
+        "ret_60d_pct": 10.76
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "iShares Semiconductor ETF",
+      "symbol": "SOXX",
+      "asset_type": "sector",
+      "matched_aliases": [
+        "IC 設計",
+        "IC設計",
+        "半導體"
+      ],
+      "sources": [
+        "sector_basket:半導體供應鏈"
+      ],
+      "market": {
+        "market_date": "2021-12-31",
+        "close": 174.5655,
+        "ret_1d_pct": -0.3,
+        "ret_5d_pct": 0.31,
+        "ret_20d_pct": 3.34,
+        "ret_60d_pct": 22.66
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "Tesla",
+      "symbol": "TSLA",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "車用"
+      ],
+      "sources": [
+        "sector_basket:電動車供應鏈"
+      ],
+      "market": {
+        "market_date": "2021-12-31",
+        "close": 352.26,
+        "ret_1d_pct": -1.27,
+        "ret_5d_pct": -0.96,
+        "ret_20d_pct": -2.56,
+        "ret_60d_pct": 35.01
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "台積電 ADR",
+      "symbol": "TSM",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "IC 設計",
+        "IC設計",
+        "半導體"
+      ],
+      "sources": [
+        "sector_basket:半導體供應鏈"
+      ],
+      "market": {
+        "market_date": "2021-12-31",
+        "close": 112.0797,
+        "ret_1d_pct": -0.09,
+        "ret_5d_pct": -0.31,
+        "ret_20d_pct": -0.73,
+        "ret_60d_pct": 10.49
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "Block",
+      "symbol": "XYZ",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "Square"
+      ],
+      "sources": [
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2021-12-31",
+        "close": 161.51,
+        "ret_1d_pct": -2.32,
+        "ret_5d_pct": -3.7,
+        "ret_20d_pct": -15.95,
+        "ret_60d_pct": -32.46
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "標普 500",
+      "symbol": "^GSPC",
+      "asset_type": "index",
+      "matched_aliases": [
+        "S&P 500"
+      ],
+      "sources": [
+        "trade_observations.asset_symbol",
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2021-12-31",
+        "close": 4766.1802,
+        "ret_1d_pct": -0.26,
+        "ret_5d_pct": 0.85,
+        "ret_20d_pct": 4.13,
+        "ret_60d_pct": 9.23
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "那斯達克綜合指數",
+      "symbol": "^IXIC",
+      "asset_type": "index",
+      "matched_aliases": [
+        "那斯達克"
+      ],
+      "sources": [
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2021-12-31",
+        "close": 15644.9697,
+        "ret_1d_pct": -0.61,
+        "ret_5d_pct": -0.05,
+        "ret_20d_pct": 1.71,
+        "ret_60d_pct": 7.88
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "台股加權指數",
+      "symbol": "^TWII",
+      "asset_type": "index",
+      "matched_aliases": [
+        "台股",
+        "大盤"
+      ],
+      "sources": [
+        "trade_observations.asset_symbol",
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2021-12-30",
+        "close": 18218.8398,
+        "ret_1d_pct": -0.16,
+        "ret_5d_pct": 1.52,
+        "ret_20d_pct": 2.79,
+        "ret_60d_pct": 11.14
+      },
+      "pricing_status": "ok"
+    }
+  ],
+  "sector_basket_matches": [
+    "半導體供應鏈",
+    "航運/物流",
+    "記憶體",
+    "金融股",
+    "電動車供應鏈"
+  ],
+  "unresolved_mentions": []
+}

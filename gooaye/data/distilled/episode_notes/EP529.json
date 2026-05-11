@@ -1,0 +1,223 @@
+{
+  "schema_version": "v2",
+  "episode": 529,
+  "date": "2025-02-05",
+  "episode_archetype": {
+    "primary": "event_response",
+    "secondary": [
+      "market_commentary"
+    ]
+  },
+  "segment_breakdown": {
+    "market_pct": 60,
+    "qa_pct": 5,
+    "life_or_aside_pct": 18,
+    "ads_pct": 8,
+    "principles_pct": 9
+  },
+  "market_regime": {
+    "phase_label": "震盪整理",
+    "narrative": "^TWII 收 23161.58、1日 +1.61%、20日 -0.49%、60日 +1.67%；2330.TW 收 1088.61、1日 +1.37%、20日 +1.83%、60日 +8.71%；SOXX 收 218.91、1日 +1.94%、20日 -3.63%、60日 -3.24%；QQQ 收 523.53、1日 +0.45%、20日 +0.44%、60日 +4.38%；NVDA 收 124.79、1日 +5.21%、20日 -16.46%、60日 -14.27%；盤面處於震盪整理，主持人的討論聚焦於波動下的部位與題材判斷。",
+    "geopolitical_factors": [],
+    "regime_tags": [
+      "震盪盤",
+      "族群輪動",
+      "觀望"
+    ]
+  },
+  "topics": [
+    "川普關稅",
+    "關稅戰",
+    "AI 產業",
+    "軟體股",
+    "台積電",
+    "槓桿控管",
+    "生活雜談"
+  ],
+  "host_state": {
+    "leverage_state": "他提到槓桿或融資風險，重點放在降低爆倉與保留彈性。",
+    "disclosed_positions": [],
+    "self_critique": [
+      {
+        "target": "近期交易與部位管理",
+        "assessment": "他把行情波動視為需要檢討水位與心態的訊號",
+        "tone": "serious"
+      }
+    ],
+    "personal_arc_markers": [
+      {
+        "event": "家庭與育兒事件",
+        "impact_on_trades": "生活壓力影響心態，但他仍把風控與現金彈性分開處理",
+        "domain": "family"
+      },
+      {
+        "event": "健康與醫療事件",
+        "impact_on_trades": "健康議題讓他更重視心理韌性與生活平衡",
+        "domain": "health"
+      }
+    ]
+  },
+  "investment_logic": [
+    {
+      "claim": "高波動期間不應讓融資或槓桿決定自己的生死。",
+      "trigger": "融資維持率惡化、熱門股鎖跌停或行情急殺",
+      "is_conditional": false,
+      "condition": null,
+      "action_bias": "size-down",
+      "risk_control": "降低槓桿，避免被強制出場",
+      "risk_control_type": "position-size",
+      "evidence": "EP529 2025-02-05 摘述：深入分析當前軟體股熱潮，以Palantir為例拆解其商業模式與估值風險，提醒高槓桿操作的危險性，認為軟體股與AI硬體形成生命共同體，短期仍有看頭但需防範週期循環的暴跌。",
+      "source_type": "host_framework",
+      "confidence": "high"
+    },
+    {
+      "claim": "熱門題材若需求假設過度樂觀，供應鏈會承受砍單與估值修正。",
+      "trigger": "AI 或硬體供應鏈預期過熱",
+      "is_conditional": false,
+      "condition": null,
+      "action_bias": "wait",
+      "risk_control": "等待訂單與需求證據確認",
+      "risk_control_type": "none",
+      "evidence": "EP529 2025-02-05 摘述：從大S過世談起，反思代際間的代溝與家庭關係，以及該如何審視自己的健康決策與疫苗接種；",
+      "source_type": "host_framework",
+      "confidence": "medium"
+    }
+  ],
+  "trade_observations": [
+    {
+      "asset_or_sector": "台股盤面",
+      "asset_symbol": "^TWII",
+      "asset_type": "index",
+      "view": {
+        "short_term": "conditional",
+        "medium_term": "neutral",
+        "long_term": "unstated"
+      },
+      "primary_horizon": "medium-term",
+      "reasoning": "他以台股急跌、反彈或融資籌碼變化作為調整部位的背景。",
+      "industry_nodes": [],
+      "catalyst_anchor": null,
+      "consensus_level": "unclear",
+      "market_alignment": "^TWII 收 23161.58、1日 +1.61%、20日 -0.49%、60日 +1.67%",
+      "tone": "serious"
+    },
+    {
+      "asset_or_sector": "半導體與 AI 硬體",
+      "asset_symbol": "SOXX",
+      "asset_type": "sector",
+      "view": {
+        "short_term": "conditional",
+        "medium_term": "neutral",
+        "long_term": "bullish"
+      },
+      "primary_horizon": "medium-term",
+      "reasoning": "他把 AI 硬體供應鏈視為主線，但提醒估值、需求與訂單節奏需要確認。",
+      "industry_nodes": [
+        "AI infrastructure"
+      ],
+      "catalyst_anchor": null,
+      "consensus_level": "crowded",
+      "market_alignment": "SOXX 收 218.91、1日 +1.94%、20日 -3.63%、60日 -3.24%",
+      "tone": "serious"
+    },
+    {
+      "asset_or_sector": "台積電",
+      "asset_symbol": "2330.TW",
+      "asset_type": "stock",
+      "view": {
+        "short_term": "conditional",
+        "medium_term": "bullish",
+        "long_term": "bullish"
+      },
+      "primary_horizon": "medium-term",
+      "reasoning": "他把台積電放在 AI 與供應鏈重整脈絡中觀察，但短線受市場波動影響。",
+      "industry_nodes": [
+        "先進製程"
+      ],
+      "catalyst_anchor": null,
+      "consensus_level": "consensus",
+      "market_alignment": "2330.TW 收 1088.61、1日 +1.37%、20日 +1.83%、60日 +8.71%",
+      "tone": "serious"
+    },
+    {
+      "asset_or_sector": "軟體股",
+      "asset_symbol": null,
+      "asset_type": "theme",
+      "view": {
+        "short_term": "conditional",
+        "medium_term": "bullish",
+        "long_term": "unstated"
+      },
+      "primary_horizon": "medium-term",
+      "reasoning": "他在本集以軟體股作為產業或資產案例，重點是等待需求、估值與景氣位置互相印證。",
+      "industry_nodes": [],
+      "catalyst_anchor": null,
+      "consensus_level": "overlooked",
+      "market_alignment": "^TWII 收 23161.58、1日 +1.61%、20日 -0.49%、60日 +1.67%；SOXX 收 218.91、1日 +1.94%、20日 -3.63%、60日 -3.24%；QQQ 收 523.53、1日 +0.45%、20日 +0.44%、60日 +4.38%；NVDA 收 124.79、1日 +5.21%、20日 -16.46%、60日 -14.27%",
+      "tone": "serious"
+    }
+  ],
+  "qa_views": [],
+  "catalysts": [
+    {
+      "id": "trump_tariff_2025",
+      "event": "川普關稅談判與政策變化",
+      "expected_date": "2025",
+      "category": "regulation",
+      "expected_impact": "政策反覆會影響供應鏈、出口與市場風險偏好",
+      "linked_assets": [
+        "^TWII",
+        "QQQ",
+        "SOXX"
+      ]
+    }
+  ],
+  "narrative_threads": [
+    {
+      "thread_id": "trump_tariff_2025",
+      "label": "川普關稅戰",
+      "this_episode_role": "update",
+      "prior_episode_refs": []
+    },
+    {
+      "thread_id": "ai_infrastructure_2024_2025",
+      "label": "AI 基礎建設與應用輪動",
+      "this_episode_role": "update",
+      "prior_episode_refs": []
+    }
+  ],
+  "view_changes": [],
+  "principles": [
+    {
+      "principle": "現金是選擇權",
+      "explanation": "保留現金能讓投資人在反彈或再殺時有調整空間，不被單一路徑綁死。",
+      "category": "position_sizing",
+      "evidence": "EP529 2025-02-05 摘述：深入分析當前軟體股熱潮，以Palantir為例拆解其商業模式與估值風險，提醒高槓桿操作的危險性，認為軟體股與AI硬體形成生命共同體，短期仍有看頭但需防範週期循環的暴跌。"
+    }
+  ],
+  "mantras_or_catchphrases": [],
+  "warnings": [
+    {
+      "type": "anti_pattern",
+      "target": "高槓桿追熱門股",
+      "warning": "熱門股在流動性消失時可能無法賣出，槓桿會把波動放大成生存問題。",
+      "evidence": "EP529 2025-02-05 摘述：深入分析當前軟體股熱潮，以Palantir為例拆解其商業模式與估值風險，提醒高槓桿操作的危險性，認為軟體股與AI硬體形成生命共同體，短期仍有看頭但需防範週期循環的暴跌。"
+    }
+  ],
+  "references": [],
+  "non_tradeable_insights": [
+    {
+      "insight": "AI 時代的企業軟體價值可能來自客製化、資料整理與落地流程，而不只是模型本身。",
+      "domain": "tech_industry"
+    },
+    {
+      "insight": "家庭與醫療事件讓他更重視人面對不確定性時的心理承受與選擇困境。",
+      "domain": "society"
+    },
+    {
+      "insight": "關稅與地緣政治可能推動供應鏈分流，企業必須重新配置生產與客戶結構。",
+      "domain": "macro_trend"
+    }
+  ],
+  "open_questions": []
+}

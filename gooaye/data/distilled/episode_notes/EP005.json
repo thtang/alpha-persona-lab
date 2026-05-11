@@ -1,0 +1,125 @@
+{
+  "schema_version": "v2",
+  "episode": 5,
+  "date": "2020-03-04",
+  "episode_archetype": {
+    "primary": "market_commentary",
+    "secondary": []
+  },
+  "segment_breakdown": {
+    "market_pct": 70,
+    "qa_pct": 10,
+    "life_or_aside_pct": 8,
+    "ads_pct": 0,
+    "principles_pct": 12
+  },
+  "market_regime": {
+    "phase_label": "疫情崩跌期",
+    "narrative": "疫情崩跌期下，^TWII 收 11392.3496、1日 0.57%、5日 -1.28%、20日 -1.42%。 同期QQQ 收 210.3028、1日 4.17%、5日 0.8%、20日 -4.07%。",
+    "geopolitical_factors": [
+      "新冠疫情"
+    ],
+    "regime_tags": [
+      "疫情恐慌",
+      "流動性風險",
+      "高波動"
+    ]
+  },
+  "topics": [
+    "武漢肺炎",
+    "疫情",
+    "台股",
+    "降息",
+    "QE",
+    "中國",
+    "川普",
+    "房地產"
+  ],
+  "host_state": {
+    "leverage_state": null,
+    "disclosed_positions": [],
+    "self_critique": [],
+    "personal_arc_markers": []
+  },
+  "investment_logic": [
+    {
+      "claim": "他主張用分批與資金控管降低買在單一高點的壓力。",
+      "trigger": "市場波動大或投資人想追熱門標的時",
+      "is_conditional": true,
+      "condition": "若標的短線漲幅已大或投資人心理承受度不足",
+      "action_bias": "scale-in",
+      "risk_control": "保留現金與分批投入，避免一次押滿。",
+      "risk_control_type": "position-size",
+      "evidence": "EP005 2020-03-04 摘述：聊疫情爆發後全球股市暴跌、美聯準會緊急降息反而掀起拋售潮的荒謬，以及為什麼看對趨勢沒用、時間點才是關鍵",
+      "source_type": "host_framework",
+      "confidence": "medium"
+    }
+  ],
+  "trade_observations": [
+    {
+      "asset_or_sector": "台股大盤",
+      "asset_symbol": "^TWII",
+      "asset_type": "index",
+      "view": {
+        "short_term": "conditional",
+        "medium_term": "conditional",
+        "long_term": "unstated"
+      },
+      "primary_horizon": "medium-term",
+      "reasoning": "聊疫情爆發後全球股市暴跌、美聯準會緊急降息反而掀起拋售潮的荒謬，以及為什麼看對趨勢沒用、時間點才是關鍵",
+      "industry_nodes": [],
+      "catalyst_anchor": null,
+      "consensus_level": "unclear",
+      "market_alignment": "^TWII 收 11392.3496、1日 0.57%、5日 -1.28%、20日 -1.42%。",
+      "tone": "serious"
+    },
+    {
+      "asset_or_sector": "美股大盤",
+      "asset_symbol": "^GSPC",
+      "asset_type": "index",
+      "view": {
+        "short_term": "conditional",
+        "medium_term": "conditional",
+        "long_term": "unstated"
+      },
+      "primary_horizon": "medium-term",
+      "reasoning": "聊疫情爆發後全球股市暴跌、美聯準會緊急降息反而掀起拋售潮的荒謬，以及為什麼看對趨勢沒用、時間點才是關鍵",
+      "industry_nodes": [],
+      "catalyst_anchor": null,
+      "consensus_level": "unclear",
+      "market_alignment": "QQQ 收 210.3028、1日 4.17%、5日 0.8%、20日 -4.07%。",
+      "tone": "serious"
+    }
+  ],
+  "qa_views": [],
+  "catalysts": [],
+  "narrative_threads": [],
+  "view_changes": [],
+  "principles": [
+    {
+      "principle": "分批大法",
+      "explanation": "他把分批視為降低買在單一高點與心理壓力的基本方法。",
+      "category": "position_sizing",
+      "evidence": "EP005 2020-03-04 摘述：聊疫情爆發後全球股市暴跌、美聯準會緊急降息反而掀起拋售潮的荒謬，以及為什麼看對趨勢沒用、時間點才是關鍵"
+    }
+  ],
+  "mantras_or_catchphrases": [],
+  "warnings": [
+    {
+      "type": "instrument_trap",
+      "target": "槓桿或衍生性商品",
+      "warning": "他提醒不了解商品結構與槓桿效果時，不應把它當成簡單避險或存股工具。",
+      "evidence": "EP005 2020-03-04 摘述：聊疫情爆發後全球股市暴跌、美聯準會緊急降息反而掀起拋售潮的荒謬，以及為什麼看對趨勢沒用、時間點才是關鍵"
+    }
+  ],
+  "references": [
+    {
+      "type": "expert_quote",
+      "title": "Ray Dalio 中國觀點",
+      "author": "Ray Dalio",
+      "context": "他提到國際資金看待中國市場的角度。"
+    }
+  ],
+  "non_tradeable_insights": [],
+  "open_questions": []
+}

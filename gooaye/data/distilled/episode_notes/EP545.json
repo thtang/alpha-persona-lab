@@ -1,0 +1,154 @@
+{
+  "schema_version": "v2",
+  "episode": 545,
+  "date": "2025-04-02",
+  "episode_archetype": {
+    "primary": "philosophy",
+    "secondary": [
+      "market_commentary"
+    ]
+  },
+  "segment_breakdown": {
+    "market_pct": 25,
+    "qa_pct": 5,
+    "life_or_aside_pct": 35,
+    "ads_pct": 8,
+    "principles_pct": 27
+  },
+  "market_regime": {
+    "phase_label": "科技股回檔",
+    "narrative": "^TWII 收 21298.22、1日 +0.08%、20日 -6.88%、60日 -8.38%；2330.TW 收 928.15、1日 -0.21%、20日 -7.22%、60日 -12.78%；SOXX 收 188.28、1日 +0.64%、20日 -8.18%、60日 -14.72%；QQQ 收 473.86、1日 +0.73%、20日 -5.01%、60日 -8.05%；NVDA 收 110.39、1日 +0.25%、20日 -5.86%、60日 -23.56%；盤面處於科技股回檔，主持人的討論聚焦於波動下的部位與題材判斷。",
+    "geopolitical_factors": [],
+    "regime_tags": [
+      "估值修正",
+      "科技股回檔",
+      "等待確認"
+    ]
+  },
+  "topics": [
+    "AI 產業",
+    "融資風控",
+    "生活雜談",
+    "家庭與健康",
+    "第二胎確診少一腎與人生的課題"
+  ],
+  "host_state": {
+    "leverage_state": "他提到槓桿或融資風險，重點放在降低爆倉與保留彈性。",
+    "disclosed_positions": [],
+    "self_critique": [],
+    "personal_arc_markers": [
+      {
+        "event": "家庭與育兒事件",
+        "impact_on_trades": "生活壓力影響心態，但他仍把風控與現金彈性分開處理",
+        "domain": "family"
+      }
+    ]
+  },
+  "investment_logic": [
+    {
+      "claim": "高波動期間不應讓融資或槓桿決定自己的生死。",
+      "trigger": "融資維持率惡化、熱門股鎖跌停或行情急殺",
+      "is_conditional": false,
+      "condition": null,
+      "action_bias": "size-down",
+      "risk_control": "降低槓桿，避免被強制出場",
+      "risk_control_type": "position-size",
+      "evidence": "EP545 2025-04-02 摘述：評估台股融資斷頭力度不足，預期後續可能再有一波殺盤，並採取分批布局策略應對。",
+      "source_type": "host_framework",
+      "confidence": "high"
+    },
+    {
+      "claim": "利空造成價格快速下修時，可以分批而非一次性承接。",
+      "trigger": "基本面未完全破壞但市場因事件恐慌",
+      "is_conditional": false,
+      "condition": null,
+      "action_bias": "scale-in",
+      "risk_control": "分批進場，避免單點判斷錯誤",
+      "risk_control_type": "position-size",
+      "evidence": "EP545 2025-04-02 摘述：評估台股融資斷頭力度不足，預期後續可能再有一波殺盤，並採取分批布局策略應對。",
+      "source_type": "host_framework",
+      "confidence": "medium"
+    }
+  ],
+  "trade_observations": [
+    {
+      "asset_or_sector": "台股盤面",
+      "asset_symbol": "^TWII",
+      "asset_type": "index",
+      "view": {
+        "short_term": "bearish",
+        "medium_term": "conditional",
+        "long_term": "unstated"
+      },
+      "primary_horizon": "medium-term",
+      "reasoning": "他以台股急跌、反彈或融資籌碼變化作為調整部位的背景。",
+      "industry_nodes": [],
+      "catalyst_anchor": null,
+      "consensus_level": "unclear",
+      "market_alignment": "^TWII 收 21298.22、1日 +0.08%、20日 -6.88%、60日 -8.38%",
+      "tone": "serious"
+    },
+    {
+      "asset_or_sector": "半導體與 AI 硬體",
+      "asset_symbol": "SOXX",
+      "asset_type": "sector",
+      "view": {
+        "short_term": "conditional",
+        "medium_term": "neutral",
+        "long_term": "bullish"
+      },
+      "primary_horizon": "medium-term",
+      "reasoning": "他把 AI 硬體供應鏈視為主線，但提醒估值、需求與訂單節奏需要確認。",
+      "industry_nodes": [
+        "AI infrastructure"
+      ],
+      "catalyst_anchor": null,
+      "consensus_level": "crowded",
+      "market_alignment": "SOXX 收 188.28、1日 +0.64%、20日 -8.18%、60日 -14.72%",
+      "tone": "serious"
+    }
+  ],
+  "qa_views": [],
+  "catalysts": [],
+  "narrative_threads": [
+    {
+      "thread_id": "ai_infrastructure_2024_2025",
+      "label": "AI 基礎建設與應用輪動",
+      "this_episode_role": "update",
+      "prior_episode_refs": []
+    },
+    {
+      "thread_id": "host_family_2025",
+      "label": "主持人家庭與二寶事件",
+      "this_episode_role": "update",
+      "prior_episode_refs": []
+    }
+  ],
+  "view_changes": [],
+  "principles": [
+    {
+      "principle": "先活下來再求表現",
+      "explanation": "極端行情或人生壓力下，先維持心理與財務韌性，才有後續決策空間。",
+      "category": "mental_health",
+      "evidence": "EP545 2025-04-02 摘述：謝孟恭分享從確認懷孕到產檢發現二寶少一個腎的心路歷程，談及如何面對生活中的不確定性與逆境。"
+    },
+    {
+      "principle": "現金是選擇權",
+      "explanation": "保留現金能讓投資人在反彈或再殺時有調整空間，不被單一路徑綁死。",
+      "category": "position_sizing",
+      "evidence": "EP545 2025-04-02 摘述：評估台股融資斷頭力度不足，預期後續可能再有一波殺盤，並採取分批布局策略應對。"
+    }
+  ],
+  "mantras_or_catchphrases": [],
+  "warnings": [
+    {
+      "type": "anti_pattern",
+      "target": "高槓桿追熱門股",
+      "warning": "熱門股在流動性消失時可能無法賣出，槓桿會把波動放大成生存問題。",
+      "evidence": "EP545 2025-04-02 摘述：評估台股融資斷頭力度不足，預期後續可能再有一波殺盤，並採取分批布局策略應對。"
+    }
+  ],
+  "references": [],
+  "non_tradeable_insights": [],
+  "open_questions": []
+}

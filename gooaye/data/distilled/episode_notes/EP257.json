@@ -1,0 +1,240 @@
+{
+  "schema_version": "v2",
+  "episode": 257,
+  "date": "2022-07-29",
+  "episode_archetype": {
+    "primary": "lifestyle",
+    "secondary": [
+      "qa_heavy"
+    ]
+  },
+  "segment_breakdown": {
+    "market_pct": 25,
+    "qa_pct": 45,
+    "life_or_aside_pct": 12,
+    "ads_pct": 6,
+    "principles_pct": 12
+  },
+  "market_regime": {
+    "phase_label": "反彈觀望",
+    "narrative": "^TWII 收 15000.0703、1日 +0.73%、20日 +4.58%、60日 -10.16%；QQQ 收 308.1898、1日 +1.82%、20日 +12.55%、60日 -0.86%；SOXX 收 131.5604、1日 +0.77%、20日 +16.51%、60日 -2.31%。",
+    "geopolitical_factors": [
+      "中國政策",
+      "防疫政策",
+      "央行政策"
+    ],
+    "regime_tags": [
+      "升息週期",
+      "熊市修正",
+      "反彈觀望"
+    ]
+  },
+  "topics": [
+    "借钱爆仓与市场困局",
+    "升息",
+    "利率",
+    "通膨",
+    "衰退",
+    "特斯拉",
+    "車用",
+    "期貨"
+  ],
+  "host_state": {
+    "leverage_state": "槓桿開到爆掉，使用股期就是他媽 7 倍",
+    "disclosed_positions": [],
+    "self_critique": [],
+    "personal_arc_markers": [
+      {
+        "event": "健康或防疫經驗",
+        "impact_on_trades": "他以個人經驗延伸生活觀察，未明確揭露部位變化。",
+        "domain": "health"
+      }
+    ]
+  },
+  "investment_logic": [
+    {
+      "claim": "他強調槓桿工具會放大心理與流動性壓力，應先確認自己能承受回撤。",
+      "trigger": "使用融資、期貨或借貸投入市場時",
+      "is_conditional": false,
+      "condition": null,
+      "action_bias": "size-down",
+      "risk_control": "控制槓桿與保留現金，避免被迫停損或斷頭。",
+      "risk_control_type": "position-size",
+      "evidence": "EP257 2022-07-29 摘述：一律一直跟你強調一個最核心的觀念，就是你不要借錢、不要開槓桿，這個老聽眾應該他媽聽到都不想聽了。所以你說你是我的始終聽眾，然後你開槓桿開到爆掉，你再掰的，你一定是沒有聽我的東西，或是你聽了你就是鐵頭，完全不照我講的去做，為什麼你還要來找",
+      "source_type": "host_framework",
+      "confidence": "high"
+    },
+    {
+      "claim": "他傾向把不確定行情拆成數批處理，而不是一次押滿方向。",
+      "trigger": "想抄底、加碼或重新進場但行情仍震盪時",
+      "is_conditional": false,
+      "condition": null,
+      "action_bias": "scale-in",
+      "risk_control": "用分批與現金水位降低買在半山腰的風險。",
+      "risk_control_type": "position-size",
+      "evidence": "EP257 2022-07-29 摘述：題，這也是我一直跟大家強調，cashistrash，現金就是垃圾，不要懷疑。你可能有時候在短期時間內，因為你看到東西在跌，現金為王，持有現金就對了。也未必，因為你現在看的時間軸是很短的。假設你這時候把現金都縮排去，搞不好兩年後你回頭",
+      "source_type": "host_framework",
+      "confidence": "medium"
+    },
+    {
+      "claim": "對一般投資人而言，市值型 ETF 與穩定投入比頻繁猜低點更可執行。",
+      "trigger": "現金流穩定、目標是長期累積資產時",
+      "is_conditional": false,
+      "condition": null,
+      "action_bias": "hold",
+      "risk_control": "用固定節奏降低擇時壓力，避免追高殺低。",
+      "risk_control_type": "time-bound",
+      "evidence": "EP257 2022-07-29 摘述：謝。」不要再問我這種什麼SmartBeta的ETF了，我已經提過這種所謂的策略型ETF，是一種自慰型的，他一定會用盡所有的方法，然後告訴你說他有辦法贏大盤。為什麼？幹，他講廢話，因為大盤的歷史擺在那邊，我當然可以挑幾個引",
+      "source_type": "host_framework",
+      "confidence": "medium"
+    }
+  ],
+  "trade_observations": [
+    {
+      "asset_or_sector": "美股大盤",
+      "asset_symbol": "^GSPC",
+      "asset_type": "index",
+      "view": {
+        "short_term": "conditional",
+        "medium_term": "conditional",
+        "long_term": "unstated"
+      },
+      "primary_horizon": "medium-term",
+      "reasoning": "他在本集討論美股大盤，重點放在題材、估值或景氣循環的不確定性。",
+      "industry_nodes": [
+        "車用"
+      ],
+      "catalyst_anchor": null,
+      "consensus_level": "unclear",
+      "market_alignment": "^TWII 收 15000.0703、1日 +0.73%、20日 +4.58%、60日 -10.16%",
+      "tone": "serious"
+    },
+    {
+      "asset_or_sector": "那斯達克與科技股",
+      "asset_symbol": "QQQ",
+      "asset_type": "index",
+      "view": {
+        "short_term": "conditional",
+        "medium_term": "bullish",
+        "long_term": "bullish"
+      },
+      "primary_horizon": "medium-term",
+      "reasoning": "他在本集討論那斯達克與科技股，重點放在題材、估值或景氣循環的不確定性。",
+      "industry_nodes": [
+        "車用"
+      ],
+      "catalyst_anchor": null,
+      "consensus_level": "unclear",
+      "market_alignment": "QQQ 收 308.1898、1日 +1.82%、20日 +12.55%、60日 -0.86%",
+      "tone": "serious"
+    },
+    {
+      "asset_or_sector": "半導體族群",
+      "asset_symbol": "SOXX",
+      "asset_type": "sector",
+      "view": {
+        "short_term": "conditional",
+        "medium_term": "bullish",
+        "long_term": "bullish"
+      },
+      "primary_horizon": "medium-term",
+      "reasoning": "他在本集討論半導體族群，重點放在題材、估值或景氣循環的不確定性。",
+      "industry_nodes": [
+        "車用"
+      ],
+      "catalyst_anchor": null,
+      "consensus_level": "unclear",
+      "market_alignment": "SOXX 收 131.5604、1日 +0.77%、20日 +16.51%、60日 -2.31%",
+      "tone": "serious"
+    },
+    {
+      "asset_or_sector": "NVIDIA",
+      "asset_symbol": "NVDA",
+      "asset_type": "stock",
+      "view": {
+        "short_term": "conditional",
+        "medium_term": "bullish",
+        "long_term": "bullish"
+      },
+      "primary_horizon": "medium-term",
+      "reasoning": "他在本集討論NVIDIA，重點放在題材、估值或景氣循環的不確定性。",
+      "industry_nodes": [
+        "車用"
+      ],
+      "catalyst_anchor": null,
+      "consensus_level": "unclear",
+      "market_alignment": "NVDA 收 18.1338、1日 +1.00%、20日 +19.82%、60日 -7.32%",
+      "tone": "serious"
+    }
+  ],
+  "qa_views": [
+    {
+      "category": "investment_operation",
+      "question_theme": "股癌大大我愛你，五星吹捧，選我拜託。",
+      "viewpoint": "他依提問者情境回覆，通常會要求先釐清風險承受度、現金流與具體目標。",
+      "principle": "聽眾問題不能只套通則，需回到個人條件與可承受的最壞情境。",
+      "tone": "實用",
+      "evidence": "EP257 2022-07-29 摘述：Q&A，有一位聽眾聊到高通，恭喜你，高通在昨天屌噴，因為市場訊息傳出說蘋果的5G晶片開發有遇到一些瓶頸。所以本來預計是這樣子，就是說高通它在蘋果份額會降到兩成甚至更低，可是因為",
+      "asker_persona": null
+    }
+  ],
+  "catalysts": [],
+  "narrative_threads": [],
+  "view_changes": [],
+  "principles": [
+    {
+      "principle": "用分批和現金水位處理不確定性",
+      "explanation": "行情震盪時先讓部位活下來，再談報酬最大化。",
+      "category": "risk_management",
+      "evidence": "EP257 2022-07-29 摘述：題，這也是我一直跟大家強調，cashistrash，現金就是垃圾，不要懷疑。你可能有時候在短期時間內，因為你看到東西在跌，現金為王，持有現金就對了。也未必，因為你現在看的時間軸是很短的。假設你這時候把現金都縮排去，搞不好兩年後你回頭"
+    },
+    {
+      "principle": "先確認槓桿壓力再放大部位",
+      "explanation": "借來的資金會改變心理承受度與出場條件。",
+      "category": "position_sizing",
+      "evidence": "EP257 2022-07-29 摘述：一律一直跟你強調一個最核心的觀念，就是你不要借錢、不要開槓桿，這個老聽眾應該他媽聽到都不想聽了。所以你說你是我的始終聽眾，然後你開槓桿開到爆掉，你再掰的，你一定是沒有聽我的東西，或是你聽了你就是鐵頭，完全不照我講的去做，為什麼你還要來找"
+    },
+    {
+      "principle": "長期配置重在可持續執行",
+      "explanation": "穩定投入比每次抓到最低點更重要。",
+      "category": "longterm_outlook",
+      "evidence": "EP257 2022-07-29 摘述：表現的不如現金。但整體來看，我們假設投入全世界全市場，它長期來看的效果是絕對是比現金好，因為現金它是持續貶值的。他舉一個例子，跟大家聊到1966到1982這段時間，它是一個週期性的……就那時候發展是很不錯，也看到一個通膨的現"
+    }
+  ],
+  "mantras_or_catchphrases": [
+    "灰階思考"
+  ],
+  "warnings": [
+    {
+      "type": "scam_alert",
+      "target": "快速致富或詐騙敘事",
+      "warning": "他提醒聽眾不要把高報酬包裝當成低風險機會。",
+      "evidence": "EP257 2022-07-29 摘述：就是開始有一些私訊竟然還跟我借錢。我不知道這是一個集體的詐騙，還是說市場行情真的糟到有些人風控有問題，搞到大爆炸。根據我看這些人的私訊內容，都是提到差不多的東西，反正就是因為他借錢借很大，然後去壓期貨、股期，結果爆掉，到處借又借不到，希"
+    },
+    {
+      "type": "anti_pattern",
+      "target": "過度槓桿與被迫交易",
+      "warning": "槓桿會把正常波動變成生存問題，應避免讓自己被市場逼出場。",
+      "evidence": "EP257 2022-07-29 摘述：。這種事情真的太丟臉了，這個是追繳而已，它並不是什麼真的斷頭，然後搞到我破產，它只是那個賬戶裡面追繳，其中一個維持率有問題而已，那樣子我就覺得非常可恥。我覺得只要有一點sense的，然後是全職交易的，你應該要知道說，這種東西是絕對不"
+    }
+  ],
+  "references": [
+    {
+      "type": "book",
+      "title": "Howard Marks",
+      "author": "Howard Marks",
+      "context": "本集用作投資、科技或生活話題的參照。"
+    }
+  ],
+  "non_tradeable_insights": [
+    {
+      "insight": "本集以個人生活經驗延伸到消費、家庭或身心狀態的觀察。",
+      "domain": "lifestyle"
+    },
+    {
+      "insight": "本集把個人財務決策放在風險承受與生活目標下討論。",
+      "domain": "personal_finance"
+    }
+  ],
+  "open_questions": []
+}

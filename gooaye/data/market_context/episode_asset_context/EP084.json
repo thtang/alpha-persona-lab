@@ -1,0 +1,445 @@
+{
+  "episode": 84,
+  "episode_date": "2020-10-30",
+  "title": "性感會更有價值 談估值想像力與市場輪動",
+  "baseline_market_context": {
+    "^TWII": {
+      "market_date": "2020-10-30",
+      "close": 12546.3398,
+      "ret_1d_pct": -0.92,
+      "ret_5d_pct": -2.73,
+      "ret_20d_pct": 0.63,
+      "ret_60d_pct": -1.29
+    },
+    "^GSPC": {
+      "market_date": "2020-10-30",
+      "close": 3269.96,
+      "ret_1d_pct": -1.21,
+      "ret_5d_pct": -5.64,
+      "ret_20d_pct": -2.34,
+      "ret_60d_pct": -2.36
+    },
+    "^IXIC": {
+      "market_date": "2020-10-30",
+      "close": 10911.5898,
+      "ret_1d_pct": -2.45,
+      "ret_5d_pct": -5.51,
+      "ret_20d_pct": -1.48,
+      "ret_60d_pct": -1.77
+    },
+    "^VIX": {
+      "market_date": "2020-10-30",
+      "close": 38.02,
+      "ret_1d_pct": 1.14,
+      "ret_5d_pct": 38.0,
+      "ret_20d_pct": 37.6,
+      "ret_60d_pct": 67.86
+    },
+    "^TNX": {
+      "market_date": "2020-10-30",
+      "close": 0.86,
+      "ret_1d_pct": 2.99,
+      "ret_5d_pct": 2.26,
+      "ret_20d_pct": 23.56,
+      "ret_60d_pct": 60.45
+    },
+    "TWD=X": {
+      "market_date": "2020-10-30",
+      "close": 28.3656,
+      "ret_1d_pct": -0.76,
+      "ret_5d_pct": -1.1,
+      "ret_20d_pct": -1.74,
+      "ret_60d_pct": -3.42
+    },
+    "2330.TW": {
+      "market_date": "2020-10-30",
+      "close": 390.4199,
+      "ret_1d_pct": -1.14,
+      "ret_5d_pct": -4.42,
+      "ret_20d_pct": 0.23,
+      "ret_60d_pct": 2.08
+    },
+    "QQQ": {
+      "market_date": "2020-10-30",
+      "close": 260.6123,
+      "ret_1d_pct": -2.54,
+      "ret_5d_pct": -5.39,
+      "ret_20d_pct": -1.8,
+      "ret_60d_pct": -1.92
+    },
+    "SOXX": {
+      "market_date": "2020-10-30",
+      "close": 97.4046,
+      "ret_1d_pct": -1.33,
+      "ret_5d_pct": -4.64,
+      "ret_20d_pct": 1.22,
+      "ret_60d_pct": 2.36
+    },
+    "TSM": {
+      "market_date": "2020-10-30",
+      "close": 76.5833,
+      "ret_1d_pct": -1.2,
+      "ret_5d_pct": -5.03,
+      "ret_20d_pct": 3.8,
+      "ret_60d_pct": 4.7
+    },
+    "NVDA": {
+      "market_date": "2020-10-30",
+      "close": 12.4945,
+      "ret_1d_pct": -3.76,
+      "ret_5d_pct": -7.77,
+      "ret_20d_pct": -4.04,
+      "ret_60d_pct": 10.61
+    },
+    "TSLA": {
+      "market_date": "2020-10-30",
+      "close": 129.3467,
+      "ret_1d_pct": -5.55,
+      "ret_5d_pct": -7.75,
+      "ret_20d_pct": -6.52,
+      "ret_60d_pct": 30.25
+    },
+    "BTC-USD": {
+      "market_date": "2020-10-30",
+      "close": 13546.5225,
+      "ret_1d_pct": 0.81,
+      "ret_5d_pct": 3.95,
+      "ret_20d_pct": 19.92,
+      "ret_60d_pct": 15.97
+    }
+  },
+  "mentioned_assets": [
+    {
+      "asset_name": "聯電",
+      "symbol": "2303.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "晶圓代工"
+      ],
+      "sources": [
+        "sector_basket:半導體供應鏈"
+      ],
+      "market": {
+        "market_date": "2020-10-30",
+        "close": 23.169,
+        "ret_1d_pct": -6.83,
+        "ret_5d_pct": -6.26,
+        "ret_20d_pct": 11.64,
+        "ret_60d_pct": 25.05
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "台積電",
+      "symbol": "2330.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "台積電",
+        "晶圓代工"
+      ],
+      "sources": [
+        "sector_basket:半導體供應鏈",
+        "trade_observations.asset_symbol",
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2020-10-30",
+        "close": 390.4199,
+        "ret_1d_pct": -1.14,
+        "ret_5d_pct": -4.42,
+        "ret_20d_pct": 0.23,
+        "ret_60d_pct": 2.08
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "瑞昱",
+      "symbol": "2379.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "晶圓代工"
+      ],
+      "sources": [
+        "sector_basket:半導體供應鏈"
+      ],
+      "market": {
+        "market_date": "2020-10-30",
+        "close": 276.12,
+        "ret_1d_pct": -0.97,
+        "ret_5d_pct": -2.6,
+        "ret_20d_pct": -3.13,
+        "ret_60d_pct": -8.03
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "聯發科",
+      "symbol": "2454.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "晶圓代工"
+      ],
+      "sources": [
+        "sector_basket:半導體供應鏈"
+      ],
+      "market": {
+        "market_date": "2020-10-30",
+        "close": 480.8869,
+        "ret_1d_pct": -0.88,
+        "ret_5d_pct": 0.0,
+        "ret_20d_pct": 11.15,
+        "ret_60d_pct": -7.38
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "聯詠",
+      "symbol": "3034.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "晶圓代工"
+      ],
+      "sources": [
+        "sector_basket:半導體供應鏈"
+      ],
+      "market": {
+        "market_date": "2020-10-30",
+        "close": 175.8758,
+        "ret_1d_pct": -2.73,
+        "ret_5d_pct": -4.3,
+        "ret_20d_pct": 1.14,
+        "ret_60d_pct": -10.25
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "日月光投控",
+      "symbol": "3711.TW",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "晶圓代工"
+      ],
+      "sources": [
+        "sector_basket:半導體供應鏈"
+      ],
+      "market": {
+        "market_date": "2020-10-30",
+        "close": 48.9217,
+        "ret_1d_pct": 1.12,
+        "ret_5d_pct": -3.07,
+        "ret_20d_pct": 7.85,
+        "ret_60d_pct": -7.85
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "Apple",
+      "symbol": "AAPL",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "Apple",
+        "蘋果"
+      ],
+      "sources": [
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2020-10-30",
+        "close": 105.6886,
+        "ret_1d_pct": -5.6,
+        "ret_5d_pct": -5.37,
+        "ret_20d_pct": -3.68,
+        "ret_60d_pct": -4.25
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "Amazon",
+      "symbol": "AMZN",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "亞馬遜"
+      ],
+      "sources": [
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2020-10-30",
+        "close": 151.8075,
+        "ret_1d_pct": -5.45,
+        "ret_5d_pct": -5.25,
+        "ret_20d_pct": -2.84,
+        "ret_60d_pct": -5.86
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "Alphabet",
+      "symbol": "GOOGL",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "Google"
+      ],
+      "sources": [
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2020-10-30",
+        "close": 80.1431,
+        "ret_1d_pct": 3.8,
+        "ret_5d_pct": -1.03,
+        "ret_20d_pct": 11.03,
+        "ret_60d_pct": 7.39
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "Meta",
+      "symbol": "META",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "臉書"
+      ],
+      "sources": [
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2020-10-30",
+        "close": 261.0613,
+        "ret_1d_pct": -6.31,
+        "ret_5d_pct": -7.61,
+        "ret_20d_pct": 1.22,
+        "ret_60d_pct": -0.82
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "Microsoft",
+      "symbol": "MSFT",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "微軟"
+      ],
+      "sources": [
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2020-10-30",
+        "close": 193.3295,
+        "ret_1d_pct": -1.1,
+        "ret_5d_pct": -6.36,
+        "ret_20d_pct": -1.8,
+        "ret_60d_pct": -6.19
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "iShares Semiconductor ETF",
+      "symbol": "SOXX",
+      "asset_type": "sector",
+      "matched_aliases": [
+        "晶圓代工"
+      ],
+      "sources": [
+        "sector_basket:半導體供應鏈"
+      ],
+      "market": {
+        "market_date": "2020-10-30",
+        "close": 97.4046,
+        "ret_1d_pct": -1.33,
+        "ret_5d_pct": -4.64,
+        "ret_20d_pct": 1.22,
+        "ret_60d_pct": 2.36
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "Tesla",
+      "symbol": "TSLA",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "Tesla",
+        "特斯拉"
+      ],
+      "sources": [
+        "trade_observations.asset_symbol",
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2020-10-30",
+        "close": 129.3467,
+        "ret_1d_pct": -5.55,
+        "ret_5d_pct": -7.75,
+        "ret_20d_pct": -6.52,
+        "ret_60d_pct": 30.25
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "台積電 ADR",
+      "symbol": "TSM",
+      "asset_type": "stock",
+      "matched_aliases": [
+        "晶圓代工"
+      ],
+      "sources": [
+        "sector_basket:半導體供應鏈"
+      ],
+      "market": {
+        "market_date": "2020-10-30",
+        "close": 76.5833,
+        "ret_1d_pct": -1.2,
+        "ret_5d_pct": -5.03,
+        "ret_20d_pct": 3.8,
+        "ret_60d_pct": 4.7
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "標普 500",
+      "symbol": "^GSPC",
+      "asset_type": "index",
+      "matched_aliases": [
+        "S&P 500"
+      ],
+      "sources": [
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2020-10-30",
+        "close": 3269.96,
+        "ret_1d_pct": -1.21,
+        "ret_5d_pct": -5.64,
+        "ret_20d_pct": -2.34,
+        "ret_60d_pct": -2.36
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "台股加權指數",
+      "symbol": "^TWII",
+      "asset_type": "index",
+      "matched_aliases": [
+        "台股",
+        "大盤"
+      ],
+      "sources": [
+        "trade_observations.asset_symbol",
+        "transcript"
+      ],
+      "market": {
+        "market_date": "2020-10-30",
+        "close": 12546.3398,
+        "ret_1d_pct": -0.92,
+        "ret_5d_pct": -2.73,
+        "ret_20d_pct": 0.63,
+        "ret_60d_pct": -1.29
+      },
+      "pricing_status": "ok"
+    }
+  ],
+  "sector_basket_matches": [
+    "半導體供應鏈"
+  ],
+  "unresolved_mentions": []
+}
