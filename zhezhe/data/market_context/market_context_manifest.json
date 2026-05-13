@@ -1,0 +1,34 @@
+{
+  "built_at": "2026-05-12T13:02:23.523921+00:00",
+  "source": "Yahoo Finance chart API",
+  "source_inventory_count": 1710,
+  "dated_source_count": 1710,
+  "symbols": [
+    "^TWII",
+    "^TWOII",
+    "2330.TW",
+    "2454.TW",
+    "SPY",
+    "QQQ",
+    "SOXX",
+    "NVDA",
+    "TSM",
+    "^VIX",
+    "^TNX",
+    "DX-Y.NYB",
+    "TWD=X",
+    "JPY=X",
+    "CL=F",
+    "GC=F",
+    "BTC-USD"
+  ],
+  "start": "2020-08-23",
+  "end": "2026-05-17",
+  "alignment": "Asia/Taipei >= 13:35 uses same-day close; earlier uses prior day; non-trading days use nearest prior close.",
+  "outputs": {
+    "jsonl": "data/market_context/episode_market_context.jsonl",
+    "csv": "data/market_context/episode_market_context.csv",
+    "prices_dir": "data/market_context/prices"
+  },
+  "errors": []
+}
