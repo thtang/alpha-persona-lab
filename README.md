@@ -22,8 +22,8 @@
 <br>
 
 <p>
-  目前包含 <code>gooaye</code> 股癌 Podcast 與 <code>yutinghao</code> 游庭皓的財經皓角。<br>
-  股癌 659 集逐字稿；財經皓角 82 篇逐字稿、61 篇筆記、459 篇官方公開文章。<br>
+  目前包含 <code>gooaye</code> 股癌 Podcast、<code>yutinghao</code> 游庭皓的財經皓角、<code>zhezhe</code> 郭哲榮分析師 / 摩爾證券投顧。<br>
+  股癌 659 集逐字稿；財經皓角 82 篇逐字稿、61 篇筆記、459 篇官方公開文章；哲哲 565 篇 ASR 逐字稿、SoundOn metadata、20 篇 UDN 公開文章。<br>
   不是復讀語錄，是把創作者的判斷方式接上 market context、結構化資料和可更新 scripts。
 </p>
 
@@ -59,6 +59,15 @@ yutinghao ❯ 結論：等回檔，不是完全不碰。
             你買到的可能是行情後段的波動，不是產業轉折。
             觸發條件是報價續強、族群輪動沒散、回檔不破前波支撐。
 
+使用者  ❯ $zhezhe 被動元件現在能不能追？
+
+zhezhe   ❯ 依公開語料脈絡，他會先把問題拆成大盤位置、主流題材、
+            外資與台幣方向，再看族群裡的報價與指標股是否同時配合。
+            可以研究，但不能只因為國巨或華新科漲了就追。
+            比較像他的框架是：台股多頭結構還在、AI/記憶體主流未散、
+            被動元件補漲有量，才用小部位跟；若大盤轉弱或族群破線，
+            先把風險控下來。
+
 使用者  ❯ $gooaye 要不要為了更高薪轉職？
 
 gooaye  ❯ 可以談，但不要只看薪水。
@@ -82,7 +91,7 @@ yutinghao ❯ 很多人一開始買股票，只有下跌才虧錢。
             最後落點是：心態不對，怎麼做都會虧。
 ```
 
-這不是語錄搜尋器。`gooaye` 會把股癌的部位、追高、停損和生活 QA 框架拿來判斷你的問題；`yutinghao` 會把財經皓角的宏觀 regime、資金流、產業鏈和笑話類比拿來重建推理。
+這不是語錄搜尋器。`gooaye` 會把股癌的部位、追高、停損和生活 QA 框架拿來判斷你的問題；`yutinghao` 會把財經皓角的宏觀 regime、資金流、產業鏈和笑話類比拿來重建推理；`zhezhe` 會把郭哲榮公開語料裡的大盤方向、主流族群、權值股、績效敘事與風控語氣拆成可查證的分析框架。
 
 ## 安裝
 
@@ -100,6 +109,7 @@ yutinghao ❯ 很多人一開始買股票，只有下跌才虧錢。
 ```text
 請從 https://github.com/thtang/alpha-persona-lab 安裝 gooaye skill
 請從 https://github.com/thtang/alpha-persona-lab 安裝 yutinghao skill
+請從 https://github.com/thtang/alpha-persona-lab 安裝 zhezhe skill
 ```
 
 安裝後重開 Codex session，或重新載入 skills。之後可用：
@@ -107,6 +117,7 @@ yutinghao ❯ 很多人一開始買股票，只有下跌才虧錢。
 ```text
 $gooaye ...
 $yutinghao ...
+$zhezhe ...
 ```
 
 如果自然語言安裝沒有正確抓到子資料夾，改用下面的手動 symlink。
@@ -118,6 +129,7 @@ Claude Desktop App 也可以直接用自然語言要求下載安裝：
 ```text
 請從 https://github.com/thtang/alpha-persona-lab 安裝 gooaye skill
 請從 https://github.com/thtang/alpha-persona-lab 安裝 yutinghao skill
+請從 https://github.com/thtang/alpha-persona-lab 安裝 zhezhe skill
 ```
 
 安裝後重開 Claude Desktop，或重新載入 skills。之後可用：
@@ -125,6 +137,7 @@ Claude Desktop App 也可以直接用自然語言要求下載安裝：
 ```text
 $gooaye ...
 $yutinghao ...
+$zhezhe ...
 ```
 
 如果 App 安裝器沒有正確處理 multi-skill repo 的子資料夾，改用下面的手動 symlink。
@@ -138,6 +151,7 @@ $yutinghao ...
 - 同時使用兩個 persona：複製 [`mobile-instructions/combined.finance-persona.mobile.md`](mobile-instructions/combined.finance-persona.mobile.md)
 
 如果 App 的 instruction 欄位長度有限，優先貼單一 persona 版；`combined` 版比較適合 Claude Project Instructions 或較長的專案指令欄位。
+`zhezhe` 目前建議使用桌面版 skill，因為它依賴本地 ASR 逐字稿、SoundOn metadata、文章語料與 market context 檢索。
 
 使用方式：
 
@@ -174,6 +188,7 @@ cd alpha-persona-lab
 mkdir -p ~/.codex/skills
 ln -sfn "$PWD/gooaye" ~/.codex/skills/gooaye
 ln -sfn "$PWD/yutinghao" ~/.codex/skills/yutinghao
+ln -sfn "$PWD/zhezhe" ~/.codex/skills/zhezhe
 ```
 
 重開 Codex session，或重新載入 skills。
@@ -184,6 +199,7 @@ ln -sfn "$PWD/yutinghao" ~/.codex/skills/yutinghao
 mkdir -p ~/.claude/skills
 ln -sfn "$PWD/gooaye" ~/.claude/skills/gooaye
 ln -sfn "$PWD/yutinghao" ~/.claude/skills/yutinghao
+ln -sfn "$PWD/zhezhe" ~/.claude/skills/zhezhe
 ```
 
 重開 Claude Desktop / Claude Code，或重新載入 skills。
@@ -194,8 +210,10 @@ ln -sfn "$PWD/yutinghao" ~/.claude/skills/yutinghao
 mkdir -p ~/.claude/skills ~/.codex/skills
 cp -R gooaye ~/.claude/skills/gooaye
 cp -R yutinghao ~/.claude/skills/yutinghao
+cp -R zhezhe ~/.claude/skills/zhezhe
 cp -R gooaye ~/.codex/skills/gooaye
 cp -R yutinghao ~/.codex/skills/yutinghao
+cp -R zhezhe ~/.codex/skills/zhezhe
 ```
 
 複製安裝的缺點是之後 repo 更新時要重新複製一次。
@@ -257,11 +275,31 @@ $yutinghao 唐僧女兒國那段到底是在講什麼投資規則？
 $yutinghao 他有哪些常用的荒謬類比？
 ```
 
+### Zhezhe / 郭哲榮分析師
+
+台股與族群：
+
+```text
+$zhezhe 台股創高後還能追嗎？
+$zhezhe 國巨、華新科、被動元件這波怎麼看？
+$zhezhe 台積電、鴻海、廣達誰比較符合他的主流股框架？
+$zhezhe 記憶體漲到這裡，南亞科跟華邦電該怎麼拆？
+```
+
+公開語料與風格：
+
+```text
+$zhezhe 找出他近期談台股萬點、崩盤、拉回的共同邏輯
+$zhezhe 他怎麼把會員績效、外資方向和主流題材串在一起？
+$zhezhe 用他的公開語料拆解「風險控制」到底是什麼訊號
+```
+
 ### 交叉比較
 
 ```text
 用 $gooaye 和 $yutinghao 分別判斷：NVDA 現在能不能追？
 用 $gooaye 和 $yutinghao 比較他們對槓桿、追高、停損的差異
+用 $gooaye、$yutinghao、$zhezhe 分別判斷：國巨這波是補漲還是追高？
 ```
 
 ## 更新資料
@@ -290,9 +328,19 @@ python3 gooaye/scripts/build_life_memory.py
 python3 yutinghao/scripts/sync_daily_sources.py --force-check
 ```
 
+### Zhezhe
+
+資料來源包含 SoundOn RSS metadata、郭哲榮集數 ASR 逐字稿、UDN/摩爾公開文章與 market context。`zhezhe` skill 觸發時會先做每日同步檢查；MP3 只作為 ASR 暫存，轉完預設刪除。
+
+手動更新：
+
+```bash
+python3 zhezhe/scripts/sync_daily_sources.py --force-check
+```
+
 ## Market Context
 
-兩個 skill 都使用 episode-date market context 輔助理解，不把歷史逐字稿當成即時建議。
+三個 skill 都使用 episode-date market context 輔助理解，不把歷史逐字稿當成即時建議。
 
 ### Baseline Context
 
@@ -327,6 +375,12 @@ alpha-persona-lab/
     data/
     references/
     scripts/
+  zhezhe/
+    SKILL.md
+    agents/openai.yaml
+    data/
+    references/
+    scripts/
 ```
 
 ## 常用指令
@@ -342,6 +396,11 @@ python3 gooaye/scripts/distill_episodes.py validate
 python3 yutinghao/scripts/search_corpus.py AI 記憶體 台韓 --limit 20
 python3 yutinghao/scripts/search_corpus.py 唐僧 自律 槓桿 --kind joke --limit 10
 python3 -m json.tool yutinghao/data/market_context/episode_asset_context_manifest.json
+
+# Zhezhe
+python3 zhezhe/scripts/search_corpus.py 國巨 被動元件 --kind metadata --kind transcript --limit 20
+python3 zhezhe/scripts/search_corpus.py 台股 季線 風險 --kind article --limit 20
+python3 -m json.tool zhezhe/data/distilled/asset_memory.json
 ```
 
 ## Notes
@@ -359,6 +418,8 @@ python3 -m json.tool yutinghao/data/market_context/episode_asset_context_manifes
 - 財經皓角 Digital Garden: 來自 `https://digitalgarden-five-azure.vercel.app/筆記：游庭皓的財經皓角/` 與其公開 file tree 的筆記、逐字稿與整理頁。
 - 財經皓角 YouTube metadata: 來自公開 YouTube RSS 的影片 id、標題、發布時間、描述與章節資訊。
 - 財經皓角官方公開文章: 來自 `yutinghao.finance` 公開 WordPress REST API / 公開文章頁的文章內容、摘要、分類與 metadata。
+- 哲哲 / 郭哲榮 SoundOn metadata 與 ASR 逐字稿: 來自公開 SoundOn RSS feed 的 episode metadata、MP3 URL 與本地 ASR 生成逐字稿。ASR transcript 是衍生資料，使用時應回看來源 metadata 與必要的上下文。
+- 哲哲 / 郭哲榮公開文章: 來自 UDN 理財作者頁與摩爾證券投顧公開頁的文章 inventory、連結、摘要與可抓取正文。
 - 市場行情資料: 來自 Yahoo Finance chart API 的日線價格資料，包含指數、股票、ETF、匯率、利率、商品與 crypto proxy。episode market context 以節目日期對齊最近可用收盤價，並計算 `ret_1d / 5d / 20d / 60d` 等衍生欄位。
 - 專案自建 reference data: asset alias map、sector basket、distillation schema、joke/asides inventory、investment/life memory 都是本專案為檢索與分析建立的衍生資料，不代表原作者或資料來源直接背書。
 
@@ -366,12 +427,12 @@ python3 -m json.tool yutinghao/data/market_context/episode_asset_context_manifes
 
 本專案原創的程式碼、scripts、schema、skill 指令與文件以 [MIT License](LICENSE) 授權。
 
-第三方逐字稿、筆記、文章、影片 metadata、行情資料，以及基於這些資料生成的結構化萃取與 market context，不包含在本專案 MIT 授權範圍內；相關權利仍屬原作者、平台或資料提供方。
+第三方逐字稿、筆記、文章、音訊 metadata、影片 metadata、行情資料，以及基於這些資料生成的 ASR transcript、結構化萃取與 market context，不包含在本專案 MIT 授權範圍內；相關權利仍屬原作者、平台或資料提供方。
 
 ### 風險提示
 
 本專案僅供研究、學習、文本蒸餾與個人知識管理使用，不構成投資建議、交易建議、財務規劃、法律建議或稅務建議。所有回答都應被視為「基於歷史語料與行情背景的分析」，不是保證獲利或避免虧損的操作指令。
 
-本專案與股癌、游庭皓、財經皓角、whatmkreallysaid.com、YouTube、Yahoo Finance 或任何資料提供方皆無官方關係，也未取得其背書。逐字稿、筆記、文章、影片 metadata 與行情資料的著作權、商標權與資料權利屬於各自權利人；本 repo 中的本地副本只用於可重現的個人研究與 skill 測試。
+本專案與股癌、游庭皓、財經皓角、郭哲榮、摩爾證券投顧、whatmkreallysaid.com、SoundOn、YouTube、Yahoo Finance 或任何資料提供方皆無官方關係，也未取得其背書。逐字稿、筆記、文章、音訊 metadata、影片 metadata 與行情資料的著作權、商標權與資料權利屬於各自權利人；本 repo 中的本地副本只用於可重現的個人研究與 skill 測試。
 
 市場資料可能延遲、缺漏、調整或與券商/交易所資料不同；歷史節目中的觀點也可能已不適用於現在。實際投資前請自行查證最新價格、財報、法說、重大新聞與個人風險承受度，並為自己的決策負責。
