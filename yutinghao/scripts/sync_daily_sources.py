@@ -6,6 +6,7 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import re
 import subprocess
 import sys
 from datetime import datetime, timezone
@@ -41,6 +42,8 @@ DERIVED_FILES = [
     "market_context/episode_asset_context_manifest.json",
 ]
 
+DEFAULT_ASR_MODEL = "mlx-community/whisper-large-v3-turbo"
+
 
 def read_json(path: Path) -> Any:
     return json.loads(path.read_text(encoding="utf-8"))
@@ -49,6 +52,16 @@ def read_json(path: Path) -> Any:
 def write_json(path: Path, data: Any) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+
+def read_jsonl(path: Path) -> list[dict[str, Any]]:
+    if not path.exists():
+        return []
+    rows: list[dict[str, Any]] = []
+    for line in path.read_text(encoding="utf-8").splitlines():
+        if line.strip():
+            rows.append(json.loads(line))
+    return rows
 
 
 def local_today() -> str:
@@ -99,6 +112,62 @@ def changed_paths(before: dict[str, str], after: dict[str, str]) -> dict[str, li
     }
 
 
+def video_date(row: dict[str, Any]) -> str | None:
+    title = str(row.get("title") or "")
+    match = re.search(r"(20\d{2})[/-](\d{1,2})[/-](\d{1,2})", title)
+    if match:
+        year, month, day = match.groups()
+        return f"{int(year):04d}-{int(month):02d}-{int(day):02d}"
+    for key in ("published", "updated"):
+        value = row.get(key)
+        if isinstance(value, str) and len(value) >= 10 and value[4:5] == "-" and value[7:8] == "-":
+            return value[:10]
+    return None
+
+
+def transcript_exists_for_video(data_dir: Path, row: dict[str, Any]) -> bool:
+    date = video_date(row)
+    if date and (data_dir / "transcripts" / f"{date}.md").exists():
+        return True
+    manifest_rows = read_jsonl(data_dir / "source" / "youtube_audio_manifest.jsonl")
+    video_id = str(row.get("video_id") or "")
+    for item in manifest_rows:
+        if str(item.get("video_id") or "") != video_id:
+            continue
+        transcript_path = item.get("transcript_path")
+        if transcript_path:
+            path = Path(str(transcript_path))
+            path = path if path.is_absolute() else data_dir.parent / path
+            if path.exists():
+                return True
+        if str(item.get("asr_status") or "").lower() == "done" and date:
+            return (data_dir / "transcripts" / f"{date}.md").exists()
+    return False
+
+
+def latest_missing_asr_video(data_dir: Path, *, include_errors: bool = False) -> dict[str, Any] | None:
+    youtube_path = data_dir / "source" / "youtube_recent.json"
+    if not youtube_path.exists():
+        return None
+    rows = read_json(youtube_path)
+    if not isinstance(rows, list):
+        return None
+    latest = next((row for row in rows if isinstance(row, dict) and row.get("video_id")), None)
+    if latest is None or transcript_exists_for_video(data_dir, latest):
+        return None
+    manifest_by_id = {
+        str(item.get("video_id") or ""): item
+        for item in read_jsonl(data_dir / "source" / "youtube_audio_manifest.jsonl")
+        if item.get("video_id")
+    }
+    status = str(manifest_by_id.get(str(latest["video_id"]), {}).get("asr_status") or "").lower()
+    if status in {"running"}:
+        return None
+    if status == "error" and not include_errors:
+        return None
+    return latest
+
+
 def count_markdown_files(data_dir: Path, folder: str) -> int:
     return sum(1 for path in (data_dir / folder).glob("*.md") if path.is_file())
 
@@ -121,7 +190,17 @@ def main() -> int:
     parser.add_argument("--skip-jokes", action="store_true", help="do not rebuild the jokes inventory")
     parser.add_argument("--skip-market", action="store_true", help="do not refresh broad episode market context")
     parser.add_argument("--skip-asset-market", action="store_true", help="do not refresh mentioned-asset context")
+    parser.add_argument(
+        "--no-auto-asr",
+        dest="auto_asr_latest",
+        action="store_false",
+        help="skip YouTube audio ASR fallback for the newest missing transcript",
+    )
+    parser.add_argument("--asr-model", default=DEFAULT_ASR_MODEL)
+    parser.add_argument("--keep-audio", action="store_true", help="keep downloaded YouTube audio after ASR")
+    parser.add_argument("--force-asr", action="store_true", help="retry the newest missing video even after an ASR error")
     parser.add_argument("--today", default=None, help="override local date for tests, YYYY-MM-DD")
+    parser.set_defaults(auto_asr_latest=True)
     args = parser.parse_args()
 
     skill_dir = args.skill_dir.resolve()
@@ -136,11 +215,13 @@ def main() -> int:
 
     source_missing = missing_source_files(data_dir)
     derived_missing = missing_derived_files(data_dir)
+    asr_target_before = latest_missing_asr_video(data_dir, include_errors=args.force_asr) if args.auto_asr_latest else None
     if (
         not args.force_check
         and state.get("checked_date") == today
         and not source_missing
         and not derived_missing
+        and not asr_target_before
     ):
         print(f"Yu Ting-Hao public sources already checked for {today}; skipping source crawl.", flush=True)
         return 0
@@ -148,6 +229,28 @@ def main() -> int:
     before = source_signature(data_dir)
 
     run_step([sys.executable, str(scripts_dir / "crawl_sources.py"), "--out-dir", str(skill_dir)])
+
+    asr_targets: list[dict[str, Any]] = []
+    asr_status: dict[str, int] = {}
+    asr_target_after_crawl = latest_missing_asr_video(data_dir, include_errors=args.force_asr) if args.auto_asr_latest else None
+    if asr_target_after_crawl:
+        asr_targets.append(asr_target_after_crawl)
+        asr_cmd = [
+            sys.executable,
+            str(scripts_dir / "transcribe_youtube_audio.py"),
+            "--skill-dir",
+            str(skill_dir),
+            "--video-id",
+            str(asr_target_after_crawl["video_id"]),
+            "--model",
+            args.asr_model,
+        ]
+        if args.keep_audio:
+            asr_cmd.append("--keep-audio")
+        if args.force_asr:
+            asr_cmd.append("--force")
+            asr_cmd.append("--retry-errors")
+        asr_status[str(asr_target_after_crawl["video_id"])] = run_step(asr_cmd, required=False)
 
     after = source_signature(data_dir)
     changes = changed_paths(before, after)
@@ -191,6 +294,10 @@ def main() -> int:
         "rebuild_needed": rebuild_needed,
         "missing_source_files_before_crawl": source_missing,
         "missing_derived_files_before_rebuild": derived_missing,
+        "auto_asr_latest": args.auto_asr_latest,
+        "auto_asr_target_before_crawl": asr_target_before,
+        "auto_asr_targets": asr_targets,
+        "auto_asr_exit_codes": asr_status,
         "counts": {
             "notes": count_markdown_files(data_dir, "notes"),
             "transcripts": count_markdown_files(data_dir, "transcripts"),

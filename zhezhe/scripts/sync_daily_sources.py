@@ -6,6 +6,7 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import re
 import subprocess
 import sys
 from datetime import datetime, timezone
@@ -39,10 +40,27 @@ DISTILLED_FILES = [
 ]
 
 DERIVED_FILES = MARKET_DERIVED_FILES + DISTILLED_FILES
+DEFAULT_ASR_MODEL = "mlx-community/whisper-large-v3-turbo"
 
 
 def read_json(path: Path) -> Any:
     return json.loads(path.read_text(encoding="utf-8"))
+
+
+def read_jsonl(path: Path) -> list[dict[str, Any]]:
+    if not path.exists():
+        return []
+    rows: list[dict[str, Any]] = []
+    for line in path.read_text(encoding="utf-8", errors="ignore").splitlines():
+        if not line.strip():
+            continue
+        try:
+            item = json.loads(line)
+        except json.JSONDecodeError:
+            continue
+        if isinstance(item, dict):
+            rows.append(item)
+    return rows
 
 
 def write_json(path: Path, data: Any) -> None:
@@ -119,6 +137,104 @@ def run_step(cmd: list[str], *, required: bool = True) -> int:
     return result.returncode
 
 
+def transcript_exists(data_dir: Path, row: dict[str, Any]) -> bool:
+    value = row.get("transcript_path")
+    if value:
+        path = Path(str(value))
+        candidates = [path]
+        if not path.is_absolute():
+            candidates.append(data_dir.parent / path)
+            candidates.append(data_dir / path)
+        if any(candidate.exists() for candidate in candidates):
+            return True
+    episode_id = row.get("episode_id")
+    if episode_id:
+        return any((data_dir / "transcripts").glob(f"*_{episode_id}.md"))
+    return False
+
+
+def parse_time_key(row: dict[str, Any]) -> float:
+    for key in ("pub_date_utc", "published_at", "pub_date", "local_date"):
+        value = row.get(key)
+        if not value:
+            continue
+        text = str(value).replace("Z", "+00:00")
+        if len(text) == 10:
+            text += "T00:00:00+00:00"
+        try:
+            return datetime.fromisoformat(text).timestamp()
+        except ValueError:
+            continue
+    return 0.0
+
+
+def is_full_audio(row: dict[str, Any], min_duration_seconds: int) -> bool:
+    title = str(row.get("title") or "").lower()
+    duration = int(row.get("duration_seconds") or 0)
+    if "#shorts" in title or "只有60秒" in title:
+        return False
+    return duration >= min_duration_seconds
+
+
+def asr_done(data_dir: Path, row: dict[str, Any]) -> bool:
+    return str(row.get("asr_status") or "").lower() in {"done", "transcribed"} or transcript_exists(data_dir, row)
+
+
+def content_key(row: dict[str, Any]) -> tuple[str, str, int]:
+    title = str(row.get("title") or "")
+    title = re.sub(r"#shorts", "", title, flags=re.IGNORECASE)
+    title = title.replace("郭哲榮分析師", "")
+    title = title.replace("哲哲只有60秒", "")
+    title = re.sub(r"\s+", "", title)
+    duration_bucket = int(int(row.get("duration_seconds") or 0) / 30)
+    return str(row.get("local_date") or ""), title, duration_bucket
+
+
+def latest_missing_asr_targets(
+    data_dir: Path,
+    *,
+    limit: int,
+    prefer_full_audio: bool,
+    min_duration_seconds: int,
+) -> list[str]:
+    rows = read_jsonl(data_dir / "audio_manifest.jsonl")
+    eligible = [
+        row
+        for row in rows
+        if row.get("episode_id")
+        and row.get("audio_url")
+        and str(row.get("asr_status") or "").lower() not in {"error", "running"}
+    ]
+    if not eligible:
+        return []
+
+    latest_date = max(str(row.get("local_date") or "") for row in eligible)
+    same_day = [row for row in eligible if str(row.get("local_date") or "") == latest_date]
+    if prefer_full_audio:
+        full_rows = [row for row in same_day if is_full_audio(row, min_duration_seconds)]
+        if full_rows:
+            same_day = full_rows
+
+    same_day.sort(
+        key=lambda row: (
+            parse_time_key(row),
+            1 if "郭哲榮" in str(row.get("channel_author") or "") else 0,
+            int(row.get("duration_seconds") or 0),
+        ),
+        reverse=True,
+    )
+    if not same_day:
+        return []
+
+    target_key = content_key(same_day[0])
+    duplicate_rows = [row for row in same_day if content_key(row) == target_key]
+    if any(asr_done(data_dir, row) for row in duplicate_rows):
+        return []
+    selected = [row for row in duplicate_rows if not asr_done(data_dir, row)]
+    selected = selected[:limit] if limit else selected
+    return [str(row["episode_id"]) for row in selected]
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(
         description="Fetch Zhezhe public sources once per local day and rebuild derived market context when data changes."
@@ -131,7 +247,25 @@ def main() -> int:
     parser.add_argument("--skip-market", action="store_true")
     parser.add_argument("--skip-asset-market", action="store_true")
     parser.add_argument("--skip-distill", action="store_true")
+    parser.add_argument(
+        "--no-auto-asr",
+        dest="auto_asr_latest",
+        action="store_false",
+        help="do not automatically ASR the newest missing filtered episode",
+    )
+    parser.add_argument("--asr-limit", type=int, default=1, help="max newest missing episodes to auto-ASR; 0 means all")
+    parser.add_argument("--asr-model", default=DEFAULT_ASR_MODEL)
+    parser.add_argument("--keep-audio", action="store_true", help="keep downloaded MP3 files after auto-ASR")
+    parser.add_argument("--force-asr", action="store_true", help="re-transcribe rows even if marked done")
+    parser.add_argument(
+        "--allow-shorts-first",
+        dest="prefer_full_audio",
+        action="store_false",
+        help="allow 60-second shorts to be auto-ASR'd before full-length episodes",
+    )
+    parser.add_argument("--min-full-duration-seconds", type=int, default=300)
     parser.add_argument("--today", help="override local date for tests, YYYY-MM-DD")
+    parser.set_defaults(auto_asr_latest=True, prefer_full_audio=True)
     args = parser.parse_args()
 
     skill_dir = args.skill_dir.resolve()
@@ -147,7 +281,23 @@ def main() -> int:
     current_signature = source_signature(data_dir)
     derived_missing = missing_derived_files(data_dir)
     signature_unchanged = state.get("source_signature") == current_signature
-    if not args.force_check and state.get("checked_date") == today and not derived_missing and signature_unchanged:
+    auto_asr_targets_before = (
+        latest_missing_asr_targets(
+            data_dir,
+            limit=args.asr_limit,
+            prefer_full_audio=args.prefer_full_audio,
+            min_duration_seconds=args.min_full_duration_seconds,
+        )
+        if args.auto_asr_latest
+        else []
+    )
+    if (
+        not args.force_check
+        and state.get("checked_date") == today
+        and not derived_missing
+        and signature_unchanged
+        and not auto_asr_targets_before
+    ):
         print(f"Zhezhe public sources already checked for {today}; skipping source crawl.", flush=True)
         return 0
 
@@ -158,6 +308,7 @@ def main() -> int:
     market_status: int | None = None
     asset_market_status: int | None = None
     distill_status: int | None = None
+    asr_statuses: dict[str, int] = {}
 
     if not args.skip_podcast:
         podcast_status = run_step(
@@ -170,6 +321,31 @@ def main() -> int:
             [sys.executable, str(scripts_dir / "crawl_articles.py"), "--skill-dir", str(skill_dir)],
             required=False,
         )
+
+    auto_asr_targets = (
+        latest_missing_asr_targets(
+            data_dir,
+            limit=args.asr_limit,
+            prefer_full_audio=args.prefer_full_audio,
+            min_duration_seconds=args.min_full_duration_seconds,
+        )
+        if args.auto_asr_latest
+        else []
+    )
+    for episode_id in auto_asr_targets:
+        cmd = [
+            sys.executable,
+            str(scripts_dir / "transcribe_audio.py"),
+            "--episode-id",
+            episode_id,
+            "--model",
+            args.asr_model,
+        ]
+        if args.keep_audio:
+            cmd.append("--keep-audio")
+        if args.force_asr:
+            cmd.append("--force")
+        asr_statuses[episode_id] = run_step(cmd, required=False)
 
     after = source_signature(data_dir)
     changes = changed_paths(before, after)
@@ -213,6 +389,10 @@ def main() -> int:
         "source_signature": final_signature,
         "podcast_fetch_exit_code": podcast_status,
         "article_fetch_exit_code": article_status,
+        "auto_asr_latest": args.auto_asr_latest,
+        "auto_asr_targets_before_fetch": auto_asr_targets_before,
+        "auto_asr_targets": auto_asr_targets,
+        "auto_asr_exit_codes": asr_statuses,
         "market_refresh_exit_code": market_status,
         "asset_market_refresh_exit_code": asset_market_status,
         "distill_refresh_exit_code": distill_status,
@@ -236,6 +416,12 @@ def main() -> int:
         )
     else:
         print("No Zhezhe public source updates found.", flush=True)
+    if auto_asr_targets:
+        print(
+            "Auto-ASR attempted for latest missing Zhezhe episode(s): "
+            + ", ".join(f"{episode_id}={code}" for episode_id, code in asr_statuses.items()),
+            flush=True,
+        )
     return 0
 
 

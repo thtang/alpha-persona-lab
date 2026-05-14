@@ -25,6 +25,8 @@ Analyze 郭哲榮 / 哲哲 as a public-source corpus and decision framework, not
 
 ## Quick Start
 
+Daily Freshness Contract: on the first Zhezhe activation of each local day, run `python3 zhezhe/scripts/sync_daily_sources.py` without `--no-auto-asr`. The goal is to keep the local corpus current every day: SoundOn RSS/audio inventory first, public article inventory second, and one newest full-length episode ASR fallback when the newest filtered episode has no transcript. Use `--no-auto-asr` only when the user explicitly asks for a fast metadata-only check.
+
 At the start of each Zhezhe skill activation, run:
 
 ```bash
@@ -32,6 +34,7 @@ python3 zhezhe/scripts/sync_daily_sources.py
 ```
 
 It checks the SoundOn RSS feed, filters 郭哲榮 episodes, refreshes UDN public article inventory, rebuilds broad market context, rebuilds mentioned-asset context, and refreshes distilled memory when sources changed.
+If the newest filtered SoundOn episode has no local transcript, the sync attempts one bounded ASR fallback by default, preferring the newest full-length episode over 60-second shorts. Pass `--no-auto-asr` for a fast metadata-only sync.
 
 If the user asks for latest episode, latest call, or this week, force a fresh check:
 
@@ -45,7 +48,7 @@ If network access fails, disclose that the corpus may be stale and continue from
 
 1. SoundOn RSS is the authoritative podcast metadata source for the public 摩爾證券投顧 podcast and the dedicated 榮耀華爾街 podcast.
 2. The 摩爾證券投顧 feed contains many Moore analysts, so always filter 郭哲榮 episodes by title, description, keywords, channel author, and known links. The 榮耀華爾街 feed is authored by 郭哲榮 投資長 and should be preserved as a first-class source, not treated as a side channel.
-3. Preserve every raw URL and manifest record before downloading audio. Do not download every MP3 by default.
+3. Preserve every raw URL and manifest record before downloading audio. Do not download every MP3 by default; the daily sync only attempts the newest missing full-length episode as a fallback.
 4. Use `mlx-whisper` / `whisper-large-v3-turbo` to turn filtered audio into transcripts when needed:
 
 ```bash
@@ -176,6 +179,7 @@ Current first-pass distilled coverage: 565 ASR transcripts from 2025-07-24 throu
 
 ```bash
 python3 zhezhe/scripts/sync_daily_sources.py
+python3 zhezhe/scripts/sync_daily_sources.py --no-auto-asr
 python3 zhezhe/scripts/sync_daily_sources.py --force-check
 python3 zhezhe/scripts/fetch_podcast_feed.py
 python3 zhezhe/scripts/crawl_articles.py

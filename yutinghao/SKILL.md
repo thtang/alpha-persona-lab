@@ -21,13 +21,21 @@ Use this skill as a corpus-grounded macro, market, and persona-distillation assi
 
 ## Quick Start
 
+Daily Freshness Contract: on the first Yutinghao activation of each local day, run `python3 yutinghao/scripts/sync_daily_sources.py` without `--no-auto-asr`. The goal is to keep the local corpus current every day: Digital Garden transcript first, YouTube RSS metadata second, and one newest-video audio ASR fallback when Digital Garden is behind. Use `--no-auto-asr` only when the user explicitly asks for a fast metadata-only check.
+
 1. At the start of each Yutinghao skill activation, run the daily public-source sync before answering:
 
 ```bash
 python3 yutinghao/scripts/sync_daily_sources.py
 ```
 
-It checks Digital Garden notes/transcripts, YouTube RSS metadata, and public official-site articles at most once per local day. If new or changed source material appears, it refreshes the jokes inventory, baseline market context, and mentioned-asset market context.
+It checks Digital Garden notes/transcripts, YouTube RSS metadata, and public official-site articles at most once per local day. If the newest YouTube RSS episode has no local Digital Garden transcript yet, it attempts one bounded YouTube-audio ASR fallback by default, then deletes the downloaded audio. If new or changed source material appears, it refreshes the jokes inventory, baseline market context, and mentioned-asset market context.
+
+Use a metadata-only fast path when ASR is not needed:
+
+```bash
+python3 yutinghao/scripts/sync_daily_sources.py --no-auto-asr
+```
 
 If the user asks about the latest episode, current market, or "this week" and you suspect the local daily marker is stale, force a fresh source check:
 
@@ -63,6 +71,9 @@ python3 yutinghao/scripts/search_corpus.py 利率 美債 --kind official --since
 - `data/notes/YYYY-MM-DD.md`: semi-structured Digital Garden notes.
 - `data/official_articles/*.md`: public official-site articles and reports.
 - `data/source/youtube_recent.json`: recent YouTube RSS metadata, video ids, titles, descriptions, and chapters.
+- `data/source/youtube_audio_manifest.jsonl`: YouTube audio ASR fallback status for newest missing transcripts.
+- `data/audio/`: optional temporary YouTube audio cache. It should usually be empty because ASR deletes audio after processing.
+- `data/asr/raw/`: raw ASR JSON from YouTube fallback runs.
 - `data/source/crawl_summary.json`: source counts and latest crawl summary.
 - `data/.runtime/daily_source_check.json`: local daily sync state; this prevents repeated website checks after the first Yutinghao activation of the day.
 - `data/source/digitalgarden_notes.jsonl`: note inventory.
@@ -84,13 +95,14 @@ python3 yutinghao/scripts/search_corpus.py 利率 美債 --kind official --since
 
 ## Source Priority
 
-1. YouTube RSS metadata for video id, title, publish time, description, and chapters.
-2. Digital Garden transcript for timestamped evidence.
+1. Digital Garden transcript for timestamped evidence.
+2. YouTube-audio ASR fallback transcript for the newest episode when Digital Garden is behind.
 3. Digital Garden note for themes, section labels, and joke anchors.
-4. Official full article for long-form macro and investment framework.
-5. Official metadata-only post for topic and date signal only.
+4. YouTube RSS metadata for video id, title, publish time, description, and chapters.
+5. Official full article for long-form macro and investment framework.
+6. Official metadata-only post for topic and date signal only.
 
-Do not bypass paywalls or login-only content. If direct YouTube transcripts are unavailable, use Digital Garden transcripts and clearly label the source.
+Do not bypass paywalls or login-only content. If Digital Garden transcripts are unavailable, use the bounded YouTube audio ASR fallback and clearly label the transcript as machine-generated.
 
 ## Market Context Rules
 
@@ -180,7 +192,10 @@ Extraction rules:
 
 ```bash
 python3 yutinghao/scripts/sync_daily_sources.py
+python3 yutinghao/scripts/sync_daily_sources.py --no-auto-asr
 python3 yutinghao/scripts/sync_daily_sources.py --force-check
+python3 yutinghao/scripts/transcribe_youtube_audio.py --limit 1
+python3 yutinghao/scripts/transcribe_youtube_audio.py --video-id m-MXDX4s6PU
 python3 yutinghao/scripts/crawl_sources.py --out-dir yutinghao
 python3 yutinghao/scripts/extract_note_jokes.py
 python3 yutinghao/scripts/align_market_context.py

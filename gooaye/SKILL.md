@@ -1,6 +1,6 @@
 ---
 name: gooaye
-description: Distill Gooaye/股癌 Podcast transcripts into evidence-based investment, trading, and life/QA worldview analysis. Use when Codex needs to search or update the local Gooaye transcript corpus, check whatmkreallysaid.com for new transcripts, align episode commentary with contemporaneous market conditions, extract recurring trading logic, summarize personal views from listener QA, or answer questions about Gooaye episodes without impersonating the podcaster.
+description: Distill Gooaye/股癌 Podcast transcripts into evidence-based investment, trading, and life/QA worldview analysis. Use when Codex needs to search or update the local Gooaye transcript corpus, check whatmkreallysaid.com and SoundOn RSS for new episodes, run ASR fallback for episodes without public transcripts, align episode commentary with contemporaneous market conditions, extract recurring trading logic, summarize personal views from listener QA, or answer questions about Gooaye episodes without impersonating the podcaster.
 ---
 
 # Gooaye
@@ -9,7 +9,10 @@ Analyze Gooaye/股癌 as a source corpus and decision framework, not as a rolepl
 
 ## Quick Start
 
-- At the start of each Gooaye skill activation, run `python3 gooaye/scripts/sync_daily_transcripts.py` before answering. It checks `https://whatmkreallysaid.com/` at most once per local day, downloads any new or changed episodes into `data/transcripts/`, refreshes baseline and mentioned-asset market alignment when transcripts changed, and rebuilds both investment and life/QA memory.
+- Daily Freshness Contract: on the first Gooaye activation of each local day, run `python3 gooaye/scripts/sync_daily_sources.py` without `--no-auto-asr`. The goal is to keep the local corpus current every day: canonical transcript first, SoundOn RSS/audio inventory second, and one newest-episode ASR fallback when the transcript site is behind. Use `--no-auto-asr` only when the user explicitly asks for a fast metadata-only check.
+- At the start of each Gooaye skill activation, run `python3 gooaye/scripts/sync_daily_sources.py` before answering. It checks `https://whatmkreallysaid.com/` for canonical transcripts, checks the SoundOn RSS feed for newer episode metadata and MP3 URLs, reconciles any existing ASR transcripts into the manifest, and automatically ASRs the newest missing SoundOn episode when the canonical transcript site is behind. It refreshes market alignment when transcripts changed and rebuilds both investment and life/QA memory.
+- Use the transcript source ladder in this order: `whatmkreallysaid.com` transcript first; SoundOn RSS metadata + existing local ASR transcript second; SoundOn MP3 + `mlx-whisper` ASR as the latest-episode fallback. Pass `--no-auto-asr` only when a fast metadata-only sync is needed.
+- The ASR script downloads the MP3 into `data/audio/`, writes raw ASR JSON under `data/asr/raw/`, stores the transcript as `data/transcripts/EP###.md`, updates the manifest/index/source metadata, then deletes the MP3 unless `--keep-audio` is passed.
 - If the daily sync cannot reach the website, disclose that the local corpus may be stale and continue from the latest local data instead of blocking the answer.
 - Prefer `data/distilled/episode_notes/EP###.json` for serious Gooaye-style reasoning. These are the canonical per-episode notes generated from `references/distillation-schema.md`.
 - If distilled episode notes are missing or stale, use Codex subagents with disjoint episode ranges to read transcripts and write `data/distilled/episode_notes/EP###.json` directly from `references/distillation-schema.md`. Do not use external LLM APIs unless the user explicitly asks for that path. Validate outputs with `python3 gooaye/scripts/distill_episodes.py validate`.
@@ -33,10 +36,17 @@ Analyze Gooaye/股癌 as a source corpus and decision framework, not as a rolepl
 
 - `data/source/episodes.json`: episode metadata from `whatmkreallysaid.com`.
 - `data/source/pack_manifest.json`: upstream transcript pack version metadata.
+- `data/source/soundon_feed_snapshot_954689a5-3096-43a4-a80b-7810b219cef3.xml`: latest SoundOn RSS snapshot for Gooaye.
+- `data/source/soundon_episodes.jsonl`: SoundOn episode metadata, MP3 URLs, dates, durations, GUIDs, and ASR status.
+- `data/source/soundon_fetch_summary.json`: compact RSS fetch summary, latest episode, and pending ASR list.
+- `data/audio_manifest.jsonl`: one SoundOn audio/ASR tracking record per episode.
 - `data/transcripts/EP###.md`: local episode markdown transcripts with stable filenames.
 - `data/transcripts_manifest.json`: source filename, URL, local path, byte size, and SHA-256 for each stored transcript.
 - `data/transcripts_index.jsonl`: one compact lookup record per episode.
 - `data/.runtime/daily_transcript_check.json`: local daily sync state; this prevents repeated website checks after the first Gooaye activation of the day.
+- `data/.runtime/daily_source_check.json`: combined canonical-transcript, SoundOn RSS, ASR, and derived-data sync status.
+- `data/audio/`: temporary MP3 downloads for ASR; ignored by git and normally emptied after transcription.
+- `data/asr/raw/`: raw `mlx-whisper` JSON outputs; ignored by git because they are reproducible and bulky.
 - `data/distilled/episode_notes/EP###.json`: canonical per-episode distillation notes. Each file follows `references/distillation-schema.md` and includes `schema_version`, `episode_archetype`, `segment_breakdown`, `market_regime`, `host_state`, `investment_logic`, `trade_observations`, `qa_views`, `catalysts`, `narrative_threads`, `view_changes`, `principles`, `warnings`, `references`, `non_tradeable_insights`, and `open_questions`.
 - `data/structured/episode_notes.jsonl`: legacy v1 per-episode semantic extraction notes, when the older LLM extraction pass has been run.
 - `data/structured/episode_note_inputs.jsonl`: legacy generated LLM input records for missing/stale structured notes.
@@ -52,11 +62,11 @@ Analyze Gooaye/股癌 as a source corpus and decision framework, not as a rolepl
 - `data/distilled/life_theme_memory.json`: corpus-wide Gooaye life/QA themes, year distribution, dense episodes, and recent episodes.
 - `data/distilled/episode_life_memory.jsonl`: per-episode life/QA themes and snippets.
 
-If a local transcript is missing or stale, rerun `fetch_transcripts.py`. The script preserves upstream filenames in the manifest while storing stable local filenames.
+If a canonical local transcript is missing or stale, rerun `fetch_transcripts.py`. If SoundOn is ahead of the canonical transcript site, run `fetch_podcast_feed.py` to record metadata first, then `transcribe_audio.py` or `sync_daily_sources.py --run-asr` to backfill the missing transcript. ASR transcripts are machine-generated; verify important quotes against audio or later canonical transcripts before treating them as exact wording.
 
 ## Research Workflow
 
-1. Run the daily transcript sync first: `python3 gooaye/scripts/sync_daily_transcripts.py`. This is mandatory on the first Gooaye trigger of each local day because `whatmkreallysaid.com` updates irregularly.
+1. Run the daily source sync first: `python3 gooaye/scripts/sync_daily_sources.py`. This is mandatory on the first Gooaye trigger of each local day because `whatmkreallysaid.com` updates irregularly and SoundOn can be ahead of the public transcript pack.
 2. Identify the user question type: live investment decision, allocation planning, single episode, theme, ticker/sector history, relationship/life QA, work/family QA, or broader worldview.
 3. Use canonical distilled episode notes first when available:
    - `market_regime.phase_label`, `market_regime.narrative`, and `regime_tags` for similar-regime retrieval.
@@ -95,7 +105,12 @@ If a local transcript is missing or stale, rerun `fetch_transcripts.py`. The scr
 ## Common Commands
 
 ```bash
+python3 gooaye/scripts/sync_daily_sources.py
+python3 gooaye/scripts/sync_daily_sources.py --no-auto-asr
+python3 gooaye/scripts/sync_daily_sources.py --run-asr --asr-limit 1
 python3 gooaye/scripts/sync_daily_transcripts.py
+python3 gooaye/scripts/fetch_podcast_feed.py
+python3 gooaye/scripts/transcribe_audio.py --limit 1
 python3 gooaye/scripts/distill_episodes.py validate
 python3 gooaye/scripts/fetch_transcripts.py
 python3 gooaye/scripts/build_investment_memory.py
