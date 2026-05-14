@@ -116,9 +116,9 @@ python3 gooaye/scripts/fetch_transcripts.py
 python3 gooaye/scripts/build_investment_memory.py
 python3 gooaye/scripts/build_life_memory.py
 python3 gooaye/scripts/build_episode_asset_context.py
-python3 gooaye/scripts/retrieve_investment_context.py 台積電 下週 買進 估值 趨勢 部位
+python3 gooaye/scripts/retrieve_investment_context.py 未來 能買 股票 回檔 輪動 二軍 CPU 被動元件 ASIC 軟體
 python3 gooaye/scripts/retrieve_life_context.py 遠距離 戀愛 是否 繼續
-python3 gooaye/scripts/search_corpus.py 本益比 停損 抄底 --limit 30
+python3 gooaye/scripts/search_corpus.py 未來 能買股票 回檔 追高 強勢 二軍 --limit 30
 python3 gooaye/scripts/search_corpus.py 遠距 感情 --limit 20
 python3 gooaye/scripts/search_corpus.py 遠距 感情 --limit 20 --oldest-first
 python3 gooaye/scripts/search_corpus.py 台積電 --episode 1 --episode 2
@@ -129,6 +129,7 @@ python3 gooaye/scripts/align_market_context.py
 
 - **Single episode**: episode/date, market setup, investment claims, QA views, uncertainties.
 - **Theme distillation**: principle, supporting episodes, counterexamples, regime dependency, confidence.
-- **Ticker or sector**: timeline of mentions, market context around each mention, stance shifts, what triggered changes.
+- **Future stock recommendations**: start from recent corpus themes and current market context, reject pure rearview winners, then provide a ranked watchlist with thesis, direct-mention vs inference label, entry trigger, invalidation, first size, add rule, and why the idea is not already fully priced.
+- **Ticker or sector**: timeline of mentions, market context around each mention, stance shifts, what triggered changes, and whether it is a buy-now setup, wait-for-pullback setup, or avoid-chasing setup.
 - **Aggressive trade call**: verdict enum, one-line reason, trigger, invalidation, max size, one supporting Gooaye rule.
 - **QA worldview**: recurring values, examples by episode, where his stance changes by listener constraints.
