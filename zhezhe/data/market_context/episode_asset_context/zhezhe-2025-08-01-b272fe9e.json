@@ -5,7 +5,7 @@
   "published_at": "2025-08-01T18:14:02+08:00",
   "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/b272fe9e-e307-4b64-90a2-ec506b382b9e",
   "metadata": {
-    "asr_status": "pending",
+    "asr_status": "transcribed",
     "audio_path": null,
     "audio_url": "https://rss.soundon.fm/rssf/35eb55b5-8669-418b-9a08-dc13c482809a/feedurl/b272fe9e-e307-4b64-90a2-ec506b382b9e/rssFileVip.mp3?timestamp=1754043317533",
     "channel_author": "郭哲榮 投資長",
@@ -64,9 +64,15 @@
     "soundon_id": "b272fe9e-e307-4b64-90a2-ec506b382b9e",
     "soundon_updated_at": "2025-08-01T10:15:17.533Z",
     "title": "【震撼! 關稅20%! 台股面臨千家廠商倒閉?】2025.08.01 哲哲只有60秒",
-    "transcript_path": null
+    "transcript_path": "data/transcripts/2025-08-01_zhezhe-2025-08-01-b272fe9e.md",
+    "date": "2025-08-01",
+    "asr_model": "mlx-community/whisper-large-v3-turbo",
+    "asr_at": "2026-05-13T11:07:07Z",
+    "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/b272fe9e-e307-4b64-90a2-ec506b382b9e"
   },
-  "paths": [],
+  "paths": [
+    "data/transcripts/2025-08-01_zhezhe-2025-08-01-b272fe9e.md"
+  ],
   "context_target_date": "2025-08-01",
   "session_alignment": "same_day_close_after_1335_taipei",
   "baseline_market_context": {
@@ -430,6 +436,29 @@
         "ret_20d_pct": 1.65,
         "ret_60d_pct": 19.44,
         "drawdown_60d_pct": -1.99
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "USD/TWD",
+      "symbol": "TWD=X",
+      "pricing_symbol": "TWD=X",
+      "asset_type": "fx",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "台幣"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2025-07-31",
+        "close": 29.906,
+        "ret_1d_pct": 0.26,
+        "ret_5d_pct": 1.75,
+        "ret_20d_pct": 3.42,
+        "ret_60d_pct": -1.2,
+        "drawdown_60d_pct": -1.71
       },
       "pricing_status": "ok"
     },

@@ -5,7 +5,7 @@
   "published_at": "2026-04-17T18:37:32+08:00",
   "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/13674a3f-d851-44b3-9b86-755c630240c7",
   "metadata": {
-    "asr_status": "pending",
+    "asr_status": "transcribed",
     "audio_path": null,
     "audio_url": "https://rss.soundon.fm/rssf/35eb55b5-8669-418b-9a08-dc13c482809a/feedurl/13674a3f-d851-44b3-9b86-755c630240c7/rssFileVip.mp3?timestamp=1776422295450",
     "channel_author": "郭哲榮 投資長",
@@ -65,9 +65,15 @@
     "soundon_id": "13674a3f-d851-44b3-9b86-755c630240c7",
     "soundon_updated_at": "2026-04-17T10:38:15.450Z",
     "title": "【台積跌倒 中小股吃飽 下週一樣嗎?】2026/4/17哲哲只有60秒 #shorts",
-    "transcript_path": null
+    "transcript_path": "data/transcripts/2026-04-17_zhezhe-2026-04-17-13674a3f.md",
+    "date": "2026-04-17",
+    "asr_model": "mlx-community/whisper-large-v3-turbo",
+    "asr_at": "2026-05-12T18:00:25Z",
+    "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/13674a3f-d851-44b3-9b86-755c630240c7"
   },
-  "paths": [],
+  "paths": [
+    "data/transcripts/2026-04-17_zhezhe-2026-04-17-13674a3f.md"
+  ],
   "context_target_date": "2026-04-17",
   "session_alignment": "same_day_close_after_1335_taipei",
   "baseline_market_context": {
@@ -297,6 +303,29 @@
       "pricing_status": "ok"
     },
     {
+      "asset_name": "南亞科",
+      "symbol": "2408.TW",
+      "pricing_symbol": "2408.TW",
+      "asset_type": "stock",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "南亞科"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2026-04-17",
+        "close": 210.0,
+        "ret_1d_pct": -1.64,
+        "ret_5d_pct": -2.33,
+        "ret_20d_pct": -23.91,
+        "ret_60d_pct": -3.45,
+        "drawdown_60d_pct": -35.68
+      },
+      "pricing_status": "ok"
+    },
+    {
       "asset_name": "聯發科",
       "symbol": "2454.TW",
       "pricing_symbol": "2454.TW",
@@ -431,6 +460,53 @@
         "ret_20d_pct": 4.6,
         "ret_60d_pct": -8.39,
         "drawdown_60d_pct": -6.51
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "TSMC ADR",
+      "symbol": "TSM",
+      "pricing_symbol": "TSM",
+      "asset_type": "stock",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "台積電ADR"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2026-04-17",
+        "close": 370.5,
+        "ret_1d_pct": 1.97,
+        "ret_5d_pct": -0.03,
+        "ret_20d_pct": 9.36,
+        "ret_60d_pct": 13.93,
+        "drawdown_60d_pct": -4.17
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "加權指數",
+      "symbol": "^TWII",
+      "pricing_symbol": "^TWII",
+      "asset_type": "index",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "台灣股市",
+        "大盤"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2026-04-17",
+        "close": 36804.3398,
+        "ret_1d_pct": -0.88,
+        "ret_5d_pct": 3.91,
+        "ret_20d_pct": 7.15,
+        "ret_60d_pct": 21.51,
+        "drawdown_60d_pct": -0.88
       },
       "pricing_status": "ok"
     }

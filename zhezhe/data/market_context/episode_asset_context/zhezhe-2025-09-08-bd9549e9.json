@@ -5,7 +5,7 @@
   "published_at": "2025-09-08T18:12:59+08:00",
   "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/bd9549e9-c308-4938-95d9-2792a84e5997",
   "metadata": {
-    "asr_status": "pending",
+    "asr_status": "transcribed",
     "audio_path": null,
     "audio_url": "https://rss.soundon.fm/rssf/35eb55b5-8669-418b-9a08-dc13c482809a/feedurl/bd9549e9-c308-4938-95d9-2792a84e5997/rssFileVip.mp3?timestamp=1757326439644",
     "channel_author": "郭哲榮 投資長",
@@ -65,9 +65,15 @@
     "soundon_id": "bd9549e9-c308-4938-95d9-2792a84e5997",
     "soundon_updated_at": "2025-09-08T10:13:59.644Z",
     "title": "【台股創新高是崩盤前奏? 我美債絕對賺2200萬出場!】2025.09.08 哲哲只有60秒#shorts",
-    "transcript_path": null
+    "transcript_path": "data/transcripts/2025-09-08_zhezhe-2025-09-08-bd9549e9.md",
+    "date": "2025-09-08",
+    "asr_model": "mlx-community/whisper-large-v3-turbo",
+    "asr_at": "2026-05-13T08:22:10Z",
+    "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/bd9549e9-c308-4938-95d9-2792a84e5997"
   },
-  "paths": [],
+  "paths": [
+    "data/transcripts/2025-09-08_zhezhe-2025-09-08-bd9549e9.md"
+  ],
   "context_target_date": "2025-09-08",
   "session_alignment": "same_day_close_after_1335_taipei",
   "baseline_market_context": {
@@ -297,6 +303,30 @@
       "pricing_status": "ok"
     },
     {
+      "asset_name": "南亞科",
+      "symbol": "2408.TW",
+      "pricing_symbol": "2408.TW",
+      "asset_type": "stock",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "2408",
+        "南亞科"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2025-09-08",
+        "close": 53.5,
+        "ret_1d_pct": 0.94,
+        "ret_5d_pct": 14.44,
+        "ret_20d_pct": 22.15,
+        "ret_60d_pct": 0.0,
+        "drawdown_60d_pct": -11.42
+      },
+      "pricing_status": "ok"
+    },
+    {
       "asset_name": "聯發科",
       "symbol": "2454.TW",
       "pricing_symbol": "2454.TW",
@@ -435,12 +465,36 @@
       "pricing_status": "ok"
     },
     {
+      "asset_name": "USD/TWD",
+      "symbol": "TWD=X",
+      "pricing_symbol": "TWD=X",
+      "asset_type": "fx",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "台幣"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2025-09-08",
+        "close": 30.3311,
+        "ret_1d_pct": -0.49,
+        "ret_5d_pct": -0.96,
+        "ret_20d_pct": 1.28,
+        "ret_60d_pct": 4.57,
+        "drawdown_60d_pct": -1.34
+      },
+      "pricing_status": "ok"
+    },
+    {
       "asset_name": "加權指數",
       "symbol": "^TWII",
       "pricing_symbol": "^TWII",
       "asset_type": "index",
       "mention_kind": "direct",
       "matched_aliases": [
+        "台灣股市",
         "台股"
       ],
       "sources": [

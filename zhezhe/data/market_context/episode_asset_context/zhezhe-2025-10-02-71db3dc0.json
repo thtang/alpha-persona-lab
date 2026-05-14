@@ -5,7 +5,7 @@
   "published_at": "2025-10-02T18:47:40+08:00",
   "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/71db3dc0-e9c9-408c-9bea-ca1662782a16",
   "metadata": {
-    "asr_status": "pending",
+    "asr_status": "transcribed",
     "audio_path": null,
     "audio_url": "https://rss.soundon.fm/rssf/35eb55b5-8669-418b-9a08-dc13c482809a/feedurl/71db3dc0-e9c9-408c-9bea-ca1662782a16/rssFileVip.mp3?timestamp=1759402186660",
     "channel_author": "郭哲榮 投資長",
@@ -113,9 +113,15 @@
     "soundon_id": "71db3dc0-e9c9-408c-9bea-ca1662782a16",
     "soundon_updated_at": "2025-10-02T10:49:46.660Z",
     "title": "【台股創歷史新高 就業海嘯卻來了! 華邦電、南亞科、鴻海、緯創】2025.10.02 哲哲只有60秒",
-    "transcript_path": null
+    "transcript_path": "data/transcripts/2025-10-02_zhezhe-2025-10-02-71db3dc0.md",
+    "date": "2025-10-02",
+    "asr_model": "mlx-community/whisper-large-v3-turbo",
+    "asr_at": "2026-05-13T06:34:38Z",
+    "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/71db3dc0-e9c9-408c-9bea-ca1662782a16"
   },
-  "paths": [],
+  "paths": [
+    "data/transcripts/2025-10-02_zhezhe-2025-10-02-71db3dc0.md"
+  ],
   "context_target_date": "2025-10-02",
   "session_alignment": "same_day_close_after_1335_taipei",
   "baseline_market_context": {
@@ -554,6 +560,29 @@
       "pricing_status": "ok"
     },
     {
+      "asset_name": "晶豪科",
+      "symbol": "3006.TW",
+      "pricing_symbol": "3006.TW",
+      "asset_type": "stock",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "3006"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2025-10-02",
+        "close": 75.0,
+        "ret_1d_pct": 3.88,
+        "ret_5d_pct": 1.08,
+        "ret_20d_pct": 29.09,
+        "ret_60d_pct": 52.13,
+        "drawdown_60d_pct": -7.41
+      },
+      "pricing_status": "ok"
+    },
+    {
       "asset_name": "欣興",
       "symbol": "3037.TW",
       "pricing_symbol": "3037.TW",
@@ -583,6 +612,7 @@
       "asset_type": "stock",
       "mention_kind": "direct",
       "matched_aliases": [
+        "3231",
         "緯創"
       ],
       "sources": [
@@ -595,6 +625,29 @@
         "ret_5d_pct": 23.05,
         "ret_20d_pct": 35.91,
         "ret_60d_pct": 26.16,
+        "drawdown_60d_pct": 0.0
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "Micron",
+      "symbol": "MU",
+      "pricing_symbol": "MU",
+      "asset_type": "stock",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "美光"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2025-10-02",
+        "close": 183.4837,
+        "ret_1d_pct": 0.88,
+        "ret_5d_pct": 17.17,
+        "ret_20d_pct": 47.93,
+        "ret_60d_pct": 50.32,
         "drawdown_60d_pct": 0.0
       },
       "pricing_status": "ok"

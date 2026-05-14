@@ -5,7 +5,7 @@
   "published_at": "2025-08-28T18:42:24+08:00",
   "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/d5bba62b-d12c-4bef-b6ed-34fdedc4510f",
   "metadata": {
-    "asr_status": "pending",
+    "asr_status": "transcribed",
     "audio_path": null,
     "audio_url": "https://rss.soundon.fm/rssf/35eb55b5-8669-418b-9a08-dc13c482809a/feedurl/d5bba62b-d12c-4bef-b6ed-34fdedc4510f/rssFileVip.mp3?timestamp=1756377844818",
     "channel_author": "郭哲榮 投資長",
@@ -113,9 +113,15 @@
     "soundon_id": "d5bba62b-d12c-4bef-b6ed-34fdedc4510f",
     "soundon_updated_at": "2025-08-28T10:44:04.818Z",
     "title": "【輝達財爆 散戶開心 該進場嗎?】2025.08.28 哲哲只有60秒",
-    "transcript_path": null
+    "transcript_path": "data/transcripts/2025-08-28_zhezhe-2025-08-28-d5bba62b.md",
+    "date": "2025-08-28",
+    "asr_model": "mlx-community/whisper-large-v3-turbo",
+    "asr_at": "2026-05-13T09:06:32Z",
+    "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/d5bba62b-d12c-4bef-b6ed-34fdedc4510f"
   },
-  "paths": [],
+  "paths": [
+    "data/transcripts/2025-08-28_zhezhe-2025-08-28-d5bba62b.md"
+  ],
   "context_target_date": "2025-08-28",
   "session_alignment": "same_day_close_after_1335_taipei",
   "baseline_market_context": {
@@ -530,6 +536,29 @@
       "pricing_status": "ok"
     },
     {
+      "asset_name": "景碩",
+      "symbol": "3189.TW",
+      "pricing_symbol": "3189.TW",
+      "asset_type": "stock",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "景碩"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2025-08-28",
+        "close": 113.5,
+        "ret_1d_pct": -0.87,
+        "ret_5d_pct": 8.1,
+        "ret_20d_pct": 8.1,
+        "ret_60d_pct": 41.23,
+        "drawdown_60d_pct": -0.87
+      },
+      "pricing_status": "ok"
+    },
+    {
       "asset_name": "緯創",
       "symbol": "3231.TW",
       "pricing_symbol": "3231.TW",
@@ -797,31 +826,6 @@
       },
       "pricing_status": "ok",
       "sector_name": "passive_components"
-    },
-    {
-      "asset_name": "景碩",
-      "symbol": "3189.TW",
-      "pricing_symbol": "3189.TW",
-      "asset_type": "stock",
-      "mention_kind": "sector_proxy",
-      "matched_aliases": [
-        "ABF",
-        "載板"
-      ],
-      "sources": [
-        "sector_basket:pcb_ccl"
-      ],
-      "market": {
-        "market_date": "2025-08-28",
-        "close": 113.5,
-        "ret_1d_pct": -0.87,
-        "ret_5d_pct": 8.1,
-        "ret_20d_pct": 8.1,
-        "ret_60d_pct": 41.23,
-        "drawdown_60d_pct": -0.87
-      },
-      "pricing_status": "ok",
-      "sector_name": "pcb_ccl"
     },
     {
       "asset_name": "緯穎",

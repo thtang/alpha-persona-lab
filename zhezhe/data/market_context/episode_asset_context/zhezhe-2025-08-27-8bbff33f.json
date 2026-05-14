@@ -5,7 +5,7 @@
   "published_at": "2025-08-27T15:52:13+08:00",
   "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/8bbff33f-b4a1-40b3-9c21-d8f2a8513233",
   "metadata": {
-    "asr_status": "pending",
+    "asr_status": "transcribed",
     "audio_path": null,
     "audio_url": "https://rss.soundon.fm/rssf/35eb55b5-8669-418b-9a08-dc13c482809a/feedurl/8bbff33f-b4a1-40b3-9c21-d8f2a8513233/rssFileVip.mp3?timestamp=1756281189400",
     "channel_author": "郭哲榮 投資長",
@@ -100,9 +100,15 @@
     "soundon_id": "8bbff33f-b4a1-40b3-9c21-d8f2a8513233",
     "soundon_updated_at": "2025-08-27T07:53:09.400Z",
     "title": "郭哲榮分析師【明天輝達財報 台股跟著爆?】2025.08.27",
-    "transcript_path": null
+    "transcript_path": "data/transcripts/2025-08-27_zhezhe-2025-08-27-8bbff33f.md",
+    "date": "2025-08-27",
+    "asr_model": "mlx-community/whisper-large-v3-turbo",
+    "asr_at": "2026-05-13T09:26:04Z",
+    "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/8bbff33f-b4a1-40b3-9c21-d8f2a8513233"
   },
-  "paths": [],
+  "paths": [
+    "data/transcripts/2025-08-27_zhezhe-2025-08-27-8bbff33f.md"
+  ],
   "context_target_date": "2025-08-27",
   "session_alignment": "same_day_close_after_1335_taipei",
   "baseline_market_context": {
@@ -431,6 +437,7 @@
       "asset_type": "stock",
       "mention_kind": "direct",
       "matched_aliases": [
+        "3037",
         "欣興"
       ],
       "sources": [
@@ -443,6 +450,30 @@
         "ret_5d_pct": 13.86,
         "ret_20d_pct": 8.57,
         "ret_60d_pct": 50.85,
+        "drawdown_60d_pct": 0.0
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "景碩",
+      "symbol": "3189.TW",
+      "pricing_symbol": "3189.TW",
+      "asset_type": "stock",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "3189",
+        "景碩"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2025-08-27",
+        "close": 114.5,
+        "ret_1d_pct": 0.44,
+        "ret_5d_pct": 11.71,
+        "ret_20d_pct": 8.02,
+        "ret_60d_pct": 49.27,
         "drawdown_60d_pct": 0.0
       },
       "pricing_status": "ok"
@@ -494,12 +525,37 @@
       "pricing_status": "ok"
     },
     {
+      "asset_name": "USD/TWD",
+      "symbol": "TWD=X",
+      "pricing_symbol": "TWD=X",
+      "asset_type": "fx",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "台幣",
+        "新台幣"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2025-08-27",
+        "close": 30.575,
+        "ret_1d_pct": 0.09,
+        "ret_5d_pct": 0.97,
+        "ret_20d_pct": 2.5,
+        "ret_60d_pct": 2.11,
+        "drawdown_60d_pct": 0.0
+      },
+      "pricing_status": "ok"
+    },
+    {
       "asset_name": "加權指數",
       "symbol": "^TWII",
       "pricing_symbol": "^TWII",
       "asset_type": "index",
       "mention_kind": "direct",
       "matched_aliases": [
+        "台灣股市",
         "台股",
         "大盤"
       ],
@@ -626,6 +682,7 @@
       "mention_kind": "sector_proxy",
       "matched_aliases": [
         "ABF",
+        "PCB",
         "載板"
       ],
       "sources": [
@@ -699,6 +756,7 @@
       "mention_kind": "sector_proxy",
       "matched_aliases": [
         "ABF",
+        "PCB",
         "載板"
       ],
       "sources": [
@@ -787,31 +845,6 @@
       },
       "pricing_status": "ok",
       "sector_name": "shipping"
-    },
-    {
-      "asset_name": "景碩",
-      "symbol": "3189.TW",
-      "pricing_symbol": "3189.TW",
-      "asset_type": "stock",
-      "mention_kind": "sector_proxy",
-      "matched_aliases": [
-        "ABF",
-        "載板"
-      ],
-      "sources": [
-        "sector_basket:pcb_ccl"
-      ],
-      "market": {
-        "market_date": "2025-08-27",
-        "close": 114.5,
-        "ret_1d_pct": 0.44,
-        "ret_5d_pct": 11.71,
-        "ret_20d_pct": 8.02,
-        "ret_60d_pct": 49.27,
-        "drawdown_60d_pct": 0.0
-      },
-      "pricing_status": "ok",
-      "sector_name": "pcb_ccl"
     },
     {
       "asset_name": "緯穎",
@@ -909,6 +942,7 @@
       "sector_name": "pcb_ccl",
       "matched_aliases": [
         "ABF",
+        "PCB",
         "載板"
       ],
       "proxy_symbols": [

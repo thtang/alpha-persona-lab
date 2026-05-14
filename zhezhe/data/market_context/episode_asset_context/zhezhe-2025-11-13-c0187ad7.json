@@ -5,7 +5,7 @@
   "published_at": "2025-11-13T19:09:00+08:00",
   "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/c0187ad7-576f-48f9-a341-f09027dd1c99",
   "metadata": {
-    "asr_status": "pending",
+    "asr_status": "transcribed",
     "audio_path": null,
     "audio_url": "https://rss.soundon.fm/rssf/35eb55b5-8669-418b-9a08-dc13c482809a/feedurl/c0187ad7-576f-48f9-a341-f09027dd1c99/rssFileVip.mp3?timestamp=1763032222281",
     "channel_author": "郭哲榮 投資長",
@@ -113,9 +113,15 @@
     "soundon_id": "c0187ad7-576f-48f9-a341-f09027dd1c99",
     "soundon_updated_at": "2025-11-13T11:10:22.281Z",
     "title": "【台幣大逃殺 6500億爆量 記憶體拖垮台股?】2025.11.13 哲哲只有60秒",
-    "transcript_path": null
+    "transcript_path": "data/transcripts/2025-11-13_zhezhe-2025-11-13-c0187ad7.md",
+    "date": "2025-11-13",
+    "asr_model": "mlx-community/whisper-large-v3-turbo",
+    "asr_at": "2026-05-13T03:49:26Z",
+    "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/c0187ad7-576f-48f9-a341-f09027dd1c99"
   },
-  "paths": [],
+  "paths": [
+    "data/transcripts/2025-11-13_zhezhe-2025-11-13-c0187ad7.md"
+  ],
   "context_target_date": "2025-11-13",
   "session_alignment": "same_day_close_after_1335_taipei",
   "baseline_market_context": {
@@ -415,6 +421,30 @@
       "pricing_status": "ok"
     },
     {
+      "asset_name": "南亞科",
+      "symbol": "2408.TW",
+      "pricing_symbol": "2408.TW",
+      "asset_type": "stock",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "2408",
+        "南亞科"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2025-11-13",
+        "close": 163.5,
+        "ret_1d_pct": 0.31,
+        "ret_5d_pct": 10.47,
+        "ret_20d_pct": 89.46,
+        "ret_60d_pct": 240.62,
+        "drawdown_60d_pct": -0.61
+      },
+      "pricing_status": "ok"
+    },
+    {
       "asset_name": "聯發科",
       "symbol": "2454.TW",
       "pricing_symbol": "2454.TW",
@@ -513,6 +543,7 @@
       "asset_type": "stock",
       "mention_kind": "direct",
       "matched_aliases": [
+        "3037",
         "欣興"
       ],
       "sources": [
@@ -526,6 +557,29 @@
         "ret_20d_pct": 11.75,
         "ret_60d_pct": 30.72,
         "drawdown_60d_pct": -0.77
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "景碩",
+      "symbol": "3189.TW",
+      "pricing_symbol": "3189.TW",
+      "asset_type": "stock",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "景碩"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2025-11-13",
+        "close": 144.5,
+        "ret_1d_pct": 9.89,
+        "ret_5d_pct": 11.15,
+        "ret_20d_pct": 7.43,
+        "ret_60d_pct": 41.67,
+        "drawdown_60d_pct": -4.3
       },
       "pricing_status": "ok"
     },
@@ -582,6 +636,7 @@
       "asset_type": "index",
       "mention_kind": "direct",
       "matched_aliases": [
+        "台灣股市",
         "台股",
         "大盤"
       ],
@@ -823,30 +878,6 @@
       "sector_name": "pcb_ccl"
     },
     {
-      "asset_name": "南亞科",
-      "symbol": "2408.TW",
-      "pricing_symbol": "2408.TW",
-      "asset_type": "stock",
-      "mention_kind": "sector_proxy",
-      "matched_aliases": [
-        "記憶體"
-      ],
-      "sources": [
-        "sector_basket:memory"
-      ],
-      "market": {
-        "market_date": "2025-11-13",
-        "close": 163.5,
-        "ret_1d_pct": 0.31,
-        "ret_5d_pct": 10.47,
-        "ret_20d_pct": 89.46,
-        "ret_60d_pct": 240.62,
-        "drawdown_60d_pct": -0.61
-      },
-      "pricing_status": "ok",
-      "sector_name": "memory"
-    },
-    {
       "asset_name": "華新科",
       "symbol": "2492.TW",
       "pricing_symbol": "2492.TW",
@@ -893,31 +924,6 @@
       },
       "pricing_status": "ok",
       "sector_name": "memory"
-    },
-    {
-      "asset_name": "景碩",
-      "symbol": "3189.TW",
-      "pricing_symbol": "3189.TW",
-      "asset_type": "stock",
-      "mention_kind": "sector_proxy",
-      "matched_aliases": [
-        "ABF",
-        "載板"
-      ],
-      "sources": [
-        "sector_basket:pcb_ccl"
-      ],
-      "market": {
-        "market_date": "2025-11-13",
-        "close": 144.5,
-        "ret_1d_pct": 9.89,
-        "ret_5d_pct": 11.15,
-        "ret_20d_pct": 7.43,
-        "ret_60d_pct": 41.67,
-        "drawdown_60d_pct": -4.3
-      },
-      "pricing_status": "ok",
-      "sector_name": "pcb_ccl"
     },
     {
       "asset_name": "緯穎",

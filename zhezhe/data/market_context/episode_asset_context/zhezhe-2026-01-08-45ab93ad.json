@@ -5,7 +5,7 @@
   "published_at": "2026-01-08T18:49:01+08:00",
   "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/45ab93ad-f690-4a82-b473-2606508a7fe6",
   "metadata": {
-    "asr_status": "pending",
+    "asr_status": "transcribed",
     "audio_path": null,
     "audio_url": "https://rss.soundon.fm/rssf/35eb55b5-8669-418b-9a08-dc13c482809a/feedurl/45ab93ad-f690-4a82-b473-2606508a7fe6/rssFileVip.mp3?timestamp=1767869403519",
     "channel_author": "郭哲榮 投資長",
@@ -113,9 +113,15 @@
     "soundon_id": "45ab93ad-f690-4a82-b473-2606508a7fe6",
     "soundon_updated_at": "2026-01-08T10:50:03.519Z",
     "title": "【無法無天! 南亞科、華邦電、力積電、旺宏 最飆記憶體才是它!】2026.01.08 哲哲只有60秒",
-    "transcript_path": null
+    "transcript_path": "data/transcripts/2026-01-08_zhezhe-2026-01-08-45ab93ad.md",
+    "date": "2026-01-08",
+    "asr_model": "mlx-community/whisper-large-v3-turbo",
+    "asr_at": "2026-05-12T23:58:07Z",
+    "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/45ab93ad-f690-4a82-b473-2606508a7fe6"
   },
-  "paths": [],
+  "paths": [
+    "data/transcripts/2026-01-08_zhezhe-2026-01-08-45ab93ad.md"
+  ],
   "context_target_date": "2026-01-08",
   "session_alignment": "same_day_close_after_1335_taipei",
   "baseline_market_context": {
@@ -646,6 +652,29 @@
       "pricing_status": "ok"
     },
     {
+      "asset_name": "NVIDIA",
+      "symbol": "NVDA",
+      "pricing_symbol": "NVDA",
+      "asset_type": "stock",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "黃仁勳"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2026-01-08",
+        "close": 185.03,
+        "ret_1d_pct": -2.15,
+        "ret_5d_pct": -0.78,
+        "ret_20d_pct": 0.04,
+        "ret_60d_pct": -1.74,
+        "drawdown_60d_pct": -10.62
+      },
+      "pricing_status": "ok"
+    },
+    {
       "asset_name": "加權指數",
       "symbol": "^TWII",
       "pricing_symbol": "^TWII",
@@ -988,30 +1017,6 @@
       },
       "pricing_status": "ok",
       "sector_name": "memory"
-    },
-    {
-      "asset_name": "NVIDIA",
-      "symbol": "NVDA",
-      "pricing_symbol": "NVDA",
-      "asset_type": "stock",
-      "mention_kind": "sector_proxy",
-      "matched_aliases": [
-        "AI"
-      ],
-      "sources": [
-        "sector_basket:ai_supply_chain"
-      ],
-      "market": {
-        "market_date": "2026-01-08",
-        "close": 185.03,
-        "ret_1d_pct": -2.15,
-        "ret_5d_pct": -0.78,
-        "ret_20d_pct": 0.04,
-        "ret_60d_pct": -1.74,
-        "drawdown_60d_pct": -10.62
-      },
-      "pricing_status": "ok",
-      "sector_name": "ai_supply_chain"
     },
     {
       "asset_name": "Semiconductor ETF",

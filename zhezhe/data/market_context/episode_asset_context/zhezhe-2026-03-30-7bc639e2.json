@@ -5,7 +5,7 @@
   "published_at": "2026-03-30T15:40:00+08:00",
   "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/7bc639e2-71a7-4f05-bed1-31a770f7233e",
   "metadata": {
-    "asr_status": "pending",
+    "asr_status": "transcribed",
     "audio_path": null,
     "audio_url": "https://rss.soundon.fm/rssf/35eb55b5-8669-418b-9a08-dc13c482809a/feedurl/7bc639e2-71a7-4f05-bed1-31a770f7233e/rssFileVip.mp3?timestamp=1774856445231",
     "channel_author": "郭哲榮 投資長",
@@ -100,9 +100,15 @@
     "soundon_id": "7bc639e2-71a7-4f05-bed1-31a770f7233e",
     "soundon_updated_at": "2026-03-30T07:40:45.231Z",
     "title": "郭哲榮分析師【連假前不賣股 清明後撿骨?】2026/3/30",
-    "transcript_path": null
+    "transcript_path": "data/transcripts/2026-03-30_zhezhe-2026-03-30-7bc639e2.md",
+    "date": "2026-03-30",
+    "asr_model": "mlx-community/whisper-large-v3-turbo",
+    "asr_at": "2026-05-12T19:10:55Z",
+    "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/7bc639e2-71a7-4f05-bed1-31a770f7233e"
   },
-  "paths": [],
+  "paths": [
+    "data/transcripts/2026-03-30_zhezhe-2026-03-30-7bc639e2.md"
+  ],
   "context_target_date": "2026-03-30",
   "session_alignment": "same_day_close_after_1335_taipei",
   "baseline_market_context": {
@@ -315,6 +321,7 @@
       "asset_type": "stock",
       "mention_kind": "direct",
       "matched_aliases": [
+        "2317",
         "鴻海"
       ],
       "sources": [
@@ -379,12 +386,36 @@
       "pricing_status": "ok"
     },
     {
+      "asset_name": "南亞科",
+      "symbol": "2408.TW",
+      "pricing_symbol": "2408.TW",
+      "asset_type": "stock",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "2408"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2026-03-30",
+        "close": 220.5,
+        "ret_1d_pct": 0.46,
+        "ret_5d_pct": -1.12,
+        "ret_20d_pct": -22.63,
+        "ret_60d_pct": 22.5,
+        "drawdown_60d_pct": -32.47
+      },
+      "pricing_status": "ok"
+    },
+    {
       "asset_name": "聯發科",
       "symbol": "2454.TW",
       "pricing_symbol": "2454.TW",
       "asset_type": "stock",
       "mention_kind": "direct",
       "matched_aliases": [
+        "2454",
         "聯發科"
       ],
       "sources": [
@@ -477,6 +508,7 @@
       "asset_type": "index",
       "mention_kind": "direct",
       "matched_aliases": [
+        "台灣股市",
         "台股",
         "大盤"
       ],

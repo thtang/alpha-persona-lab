@@ -5,7 +5,7 @@
   "published_at": "2026-04-27T17:51:32+08:00",
   "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/53f4db38-c689-4e50-bea4-a167e8a61af5",
   "metadata": {
-    "asr_status": "pending",
+    "asr_status": "transcribed",
     "audio_path": null,
     "audio_url": "https://rss.soundon.fm/rssf/35eb55b5-8669-418b-9a08-dc13c482809a/feedurl/53f4db38-c689-4e50-bea4-a167e8a61af5/rssFileVip.mp3?timestamp=1777283540734",
     "channel_author": "郭哲榮 投資長",
@@ -65,9 +65,15 @@
     "soundon_id": "53f4db38-c689-4e50-bea4-a167e8a61af5",
     "soundon_updated_at": "2026-04-27T09:52:20.734Z",
     "title": "【聯發科4000 台積電3000 鴻海300 五月誰先到?】2026/4/27哲哲只有60秒 #shorts",
-    "transcript_path": null
+    "transcript_path": "data/transcripts/2026-04-27_zhezhe-2026-04-27-53f4db38.md",
+    "date": "2026-04-27",
+    "asr_model": "mlx-community/whisper-large-v3-turbo",
+    "asr_at": "2026-05-12T17:20:24Z",
+    "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/53f4db38-c689-4e50-bea4-a167e8a61af5"
   },
-  "paths": [],
+  "paths": [
+    "data/transcripts/2026-04-27_zhezhe-2026-04-27-53f4db38.md"
+  ],
   "context_target_date": "2026-04-27",
   "session_alignment": "same_day_close_after_1335_taipei",
   "baseline_market_context": {
@@ -233,6 +239,7 @@
       "asset_type": "stock",
       "mention_kind": "direct",
       "matched_aliases": [
+        "2317",
         "鴻海"
       ],
       "sources": [
@@ -431,6 +438,29 @@
         "ret_20d_pct": 12.2,
         "ret_60d_pct": 2.89,
         "drawdown_60d_pct": -1.38
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "加權指數",
+      "symbol": "^TWII",
+      "pricing_symbol": "^TWII",
+      "asset_type": "index",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "台股"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2026-04-27",
+        "close": 39616.6289,
+        "ret_1d_pct": 1.76,
+        "ret_5d_pct": 7.19,
+        "ret_20d_pct": 18.83,
+        "ret_60d_pct": 25.21,
+        "drawdown_60d_pct": 0.0
       },
       "pricing_status": "ok"
     }

@@ -5,7 +5,7 @@
   "published_at": "2026-03-13T18:48:56+08:00",
   "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/c68311f7-3737-41ca-a628-b79b48706293",
   "metadata": {
-    "asr_status": "pending",
+    "asr_status": "transcribed",
     "audio_path": null,
     "audio_url": "https://rss.soundon.fm/rssf/35eb55b5-8669-418b-9a08-dc13c482809a/feedurl/c68311f7-3737-41ca-a628-b79b48706293/rssFileVip.mp3?timestamp=1773399015668",
     "channel_author": "郭哲榮 投資長",
@@ -65,9 +65,15 @@
     "soundon_id": "c68311f7-3737-41ca-a628-b79b48706293",
     "soundon_updated_at": "2026-03-13T10:50:15.668Z",
     "title": "【不甩美伊戰爭 台股開低走高 大騙局】2026/3/13哲哲只有60秒 #shorts",
-    "transcript_path": null
+    "transcript_path": "data/transcripts/2026-03-13_zhezhe-2026-03-13-c68311f7.md",
+    "date": "2026-03-13",
+    "asr_model": "mlx-community/whisper-large-v3-turbo",
+    "asr_at": "2026-05-12T20:04:41Z",
+    "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/c68311f7-3737-41ca-a628-b79b48706293"
   },
-  "paths": [],
+  "paths": [
+    "data/transcripts/2026-03-13_zhezhe-2026-03-13-c68311f7.md"
+  ],
   "context_target_date": "2026-03-13",
   "session_alignment": "same_day_close_after_1335_taipei",
   "baseline_market_context": {
@@ -297,6 +303,29 @@
       "pricing_status": "ok"
     },
     {
+      "asset_name": "南亞科",
+      "symbol": "2408.TW",
+      "pricing_symbol": "2408.TW",
+      "asset_type": "stock",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "南亞科"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2026-03-13",
+        "close": 238.0,
+        "ret_1d_pct": -0.63,
+        "ret_5d_pct": 2.15,
+        "ret_20d_pct": -14.23,
+        "ret_60d_pct": 55.56,
+        "drawdown_60d_pct": -27.11
+      },
+      "pricing_status": "ok"
+    },
+    {
       "asset_name": "聯發科",
       "symbol": "2454.TW",
       "pricing_symbol": "2454.TW",
@@ -435,13 +464,38 @@
       "pricing_status": "ok"
     },
     {
+      "asset_name": "TSMC ADR",
+      "symbol": "TSM",
+      "pricing_symbol": "TSM",
+      "asset_type": "stock",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "台積電ADR"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2026-03-13",
+        "close": 337.3594,
+        "ret_1d_pct": 0.48,
+        "ret_5d_pct": -0.17,
+        "ret_20d_pct": -8.09,
+        "ret_60d_pct": 17.57,
+        "drawdown_60d_pct": -12.75
+      },
+      "pricing_status": "ok"
+    },
+    {
       "asset_name": "加權指數",
       "symbol": "^TWII",
       "pricing_symbol": "^TWII",
       "asset_type": "index",
       "mention_kind": "direct",
       "matched_aliases": [
-        "台股"
+        "台灣股市",
+        "台股",
+        "大盤"
       ],
       "sources": [
         "alias_scan"
@@ -557,6 +611,17 @@
     }
   ],
   "sector_basket_matches": [
+    {
+      "sector_name": "shipping",
+      "matched_aliases": [
+        "航運"
+      ],
+      "proxy_symbols": [
+        "2603.TW",
+        "2609.TW",
+        "2615.TW"
+      ]
+    },
     {
       "sector_name": "taiwan_etf_bond",
       "matched_aliases": [

@@ -5,7 +5,7 @@
   "published_at": "2025-07-25T15:45:58+08:00",
   "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/d36dc90d-19d9-4101-907c-e38a7d78a7c8",
   "metadata": {
-    "asr_status": "pending",
+    "asr_status": "transcribed",
     "audio_path": null,
     "audio_url": "https://rss.soundon.fm/rssf/35eb55b5-8669-418b-9a08-dc13c482809a/feedurl/d36dc90d-19d9-4101-907c-e38a7d78a7c8/rssFileVip.mp3?timestamp=1753429576644",
     "channel_author": "郭哲榮 投資長",
@@ -100,9 +100,15 @@
     "soundon_id": "d36dc90d-19d9-4101-907c-e38a7d78a7c8",
     "soundon_updated_at": "2025-07-25T07:46:16.644Z",
     "title": "郭哲榮分析師【確定了! 下週公佈台灣關稅 台股再漲1200點!?】2025.07.25",
-    "transcript_path": null
+    "transcript_path": "data/transcripts/2025-07-25_zhezhe-2025-07-25-d36dc90d.md",
+    "date": "2025-07-25",
+    "asr_model": "mlx-community/whisper-large-v3-turbo",
+    "asr_at": "2026-05-13T11:46:01Z",
+    "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/d36dc90d-19d9-4101-907c-e38a7d78a7c8"
   },
-  "paths": [],
+  "paths": [
+    "data/transcripts/2025-07-25_zhezhe-2025-07-25-d36dc90d.md"
+  ],
   "context_target_date": "2025-07-25",
   "session_alignment": "same_day_close_after_1335_taipei",
   "baseline_market_context": {
@@ -268,7 +274,8 @@
       "asset_type": "etf",
       "mention_kind": "direct",
       "matched_aliases": [
-        "0050"
+        "0050",
+        "台灣50"
       ],
       "sources": [
         "alias_scan"
@@ -315,6 +322,7 @@
       "asset_type": "stock",
       "mention_kind": "direct",
       "matched_aliases": [
+        "2317",
         "鴻海"
       ],
       "sources": [
@@ -425,12 +433,36 @@
       "pricing_status": "ok"
     },
     {
+      "asset_name": "萬海",
+      "symbol": "2615.TW",
+      "pricing_symbol": "2615.TW",
+      "asset_type": "stock",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "萬海"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2025-07-25",
+        "close": 91.6,
+        "ret_1d_pct": -0.22,
+        "ret_5d_pct": -0.33,
+        "ret_20d_pct": -0.43,
+        "ret_60d_pct": 15.17,
+        "drawdown_60d_pct": -24.89
+      },
+      "pricing_status": "ok"
+    },
+    {
       "asset_name": "欣興",
       "symbol": "3037.TW",
       "pricing_symbol": "3037.TW",
       "asset_type": "stock",
       "mention_kind": "direct",
       "matched_aliases": [
+        "3037",
         "欣興"
       ],
       "sources": [
@@ -444,6 +476,29 @@
         "ret_20d_pct": 17.36,
         "ret_60d_pct": 41.23,
         "drawdown_60d_pct": -3.32
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "景碩",
+      "symbol": "3189.TW",
+      "pricing_symbol": "3189.TW",
+      "asset_type": "stock",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "3189"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2025-07-25",
+        "close": 100.0,
+        "ret_1d_pct": -2.91,
+        "ret_5d_pct": -0.99,
+        "ret_20d_pct": 18.74,
+        "ret_60d_pct": 34.53,
+        "drawdown_60d_pct": -4.31
       },
       "pricing_status": "ok"
     },
@@ -471,12 +526,59 @@
       "pricing_status": "ok"
     },
     {
+      "asset_name": "Nasdaq 100 ETF",
+      "symbol": "QQQ",
+      "pricing_symbol": "QQQ",
+      "asset_type": "etf",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "納斯達克"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2025-07-25",
+        "close": 564.2748,
+        "ret_1d_pct": 0.24,
+        "ret_5d_pct": 0.91,
+        "ret_20d_pct": 3.69,
+        "ret_60d_pct": 19.24,
+        "drawdown_60d_pct": 0.0
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "USD/TWD",
+      "symbol": "TWD=X",
+      "pricing_symbol": "TWD=X",
+      "asset_type": "fx",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "台幣"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2025-07-24",
+        "close": 29.391,
+        "ret_1d_pct": 0.54,
+        "ret_5d_pct": -0.04,
+        "ret_20d_pct": 1.98,
+        "ret_60d_pct": -8.47,
+        "drawdown_60d_pct": -4.28
+      },
+      "pricing_status": "ok"
+    },
+    {
       "asset_name": "加權指數",
       "symbol": "^TWII",
       "pricing_symbol": "^TWII",
       "asset_type": "index",
       "mention_kind": "direct",
       "matched_aliases": [
+        "台灣股市",
         "台股",
         "大盤"
       ],
@@ -504,6 +606,7 @@
       "mention_kind": "sector_proxy",
       "matched_aliases": [
         "ETF",
+        "台灣50",
         "美債"
       ],
       "sources": [
@@ -529,6 +632,7 @@
       "mention_kind": "sector_proxy",
       "matched_aliases": [
         "ETF",
+        "台灣50",
         "美債"
       ],
       "sources": [
@@ -554,6 +658,7 @@
       "mention_kind": "sector_proxy",
       "matched_aliases": [
         "ETF",
+        "台灣50",
         "美債"
       ],
       "sources": [
@@ -742,55 +847,6 @@
       "sector_name": "shipping"
     },
     {
-      "asset_name": "萬海",
-      "symbol": "2615.TW",
-      "pricing_symbol": "2615.TW",
-      "asset_type": "stock",
-      "mention_kind": "sector_proxy",
-      "matched_aliases": [
-        "航運"
-      ],
-      "sources": [
-        "sector_basket:shipping"
-      ],
-      "market": {
-        "market_date": "2025-07-25",
-        "close": 91.6,
-        "ret_1d_pct": -0.22,
-        "ret_5d_pct": -0.33,
-        "ret_20d_pct": -0.43,
-        "ret_60d_pct": 15.17,
-        "drawdown_60d_pct": -24.89
-      },
-      "pricing_status": "ok",
-      "sector_name": "shipping"
-    },
-    {
-      "asset_name": "景碩",
-      "symbol": "3189.TW",
-      "pricing_symbol": "3189.TW",
-      "asset_type": "stock",
-      "mention_kind": "sector_proxy",
-      "matched_aliases": [
-        "ABF",
-        "載板"
-      ],
-      "sources": [
-        "sector_basket:pcb_ccl"
-      ],
-      "market": {
-        "market_date": "2025-07-25",
-        "close": 100.0,
-        "ret_1d_pct": -2.91,
-        "ret_5d_pct": -0.99,
-        "ret_20d_pct": 18.74,
-        "ret_60d_pct": 34.53,
-        "drawdown_60d_pct": -4.31
-      },
-      "pricing_status": "ok",
-      "sector_name": "pcb_ccl"
-    },
-    {
       "asset_name": "緯穎",
       "symbol": "6669.TW",
       "pricing_symbol": "6669.TW",
@@ -944,6 +1000,7 @@
       "sector_name": "taiwan_etf_bond",
       "matched_aliases": [
         "ETF",
+        "台灣50",
         "美債"
       ],
       "proxy_symbols": [

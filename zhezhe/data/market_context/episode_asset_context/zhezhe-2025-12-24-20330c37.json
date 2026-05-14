@@ -5,7 +5,7 @@
   "published_at": "2025-12-24T18:49:13+08:00",
   "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/20330c37-00e9-4e6b-81e2-c37a9cbc2b73",
   "metadata": {
-    "asr_status": "pending",
+    "asr_status": "transcribed",
     "audio_path": null,
     "audio_url": "https://rss.soundon.fm/rssf/35eb55b5-8669-418b-9a08-dc13c482809a/feedurl/20330c37-00e9-4e6b-81e2-c37a9cbc2b73/rssFileVip.mp3?timestamp=1766573427964",
     "channel_author": "郭哲榮 投資長",
@@ -65,9 +65,15 @@
     "soundon_id": "20330c37-00e9-4e6b-81e2-c37a9cbc2b73",
     "soundon_updated_at": "2025-12-24T10:50:27.964Z",
     "title": "【台股只剩記憶體 四大利空來襲 AI泡沫炸裂?】2025.12.24 哲哲只有60秒#shorts",
-    "transcript_path": null
+    "transcript_path": "data/transcripts/2025-12-24_zhezhe-2025-12-24-20330c37.md",
+    "date": "2025-12-24",
+    "asr_model": "mlx-community/whisper-large-v3-turbo",
+    "asr_at": "2026-05-13T00:53:20Z",
+    "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/20330c37-00e9-4e6b-81e2-c37a9cbc2b73"
   },
-  "paths": [],
+  "paths": [
+    "data/transcripts/2025-12-24_zhezhe-2025-12-24-20330c37.md"
+  ],
   "context_target_date": "2025-12-24",
   "session_alignment": "same_day_close_after_1335_taipei",
   "baseline_market_context": {
@@ -274,6 +280,29 @@
       "pricing_status": "ok"
     },
     {
+      "asset_name": "華邦電",
+      "symbol": "2344.TW",
+      "pricing_symbol": "2344.TW",
+      "asset_type": "stock",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "2344"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2025-12-24",
+        "close": 76.4995,
+        "ret_1d_pct": 5.34,
+        "ret_5d_pct": 4.06,
+        "ret_20d_pct": 43.47,
+        "ret_60d_pct": 130.24,
+        "drawdown_60d_pct": 0.0
+      },
+      "pricing_status": "ok"
+    },
+    {
       "asset_name": "廣達",
       "symbol": "2382.TW",
       "pricing_symbol": "2382.TW",
@@ -293,6 +322,29 @@
         "ret_20d_pct": -5.55,
         "ret_60d_pct": -7.37,
         "drawdown_60d_pct": -14.7
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "南亞科",
+      "symbol": "2408.TW",
+      "pricing_symbol": "2408.TW",
+      "asset_type": "stock",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "南亞科"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2025-12-24",
+        "close": 189.0,
+        "ret_1d_pct": 7.08,
+        "ret_5d_pct": 14.89,
+        "ret_20d_pct": 38.46,
+        "ret_60d_pct": 146.74,
+        "drawdown_60d_pct": 0.0
       },
       "pricing_status": "ok"
     },
@@ -441,6 +493,7 @@
       "asset_type": "index",
       "mention_kind": "direct",
       "matched_aliases": [
+        "台灣股市",
         "台股"
       ],
       "sources": [
@@ -580,30 +633,6 @@
       "sector_name": "memory"
     },
     {
-      "asset_name": "華邦電",
-      "symbol": "2344.TW",
-      "pricing_symbol": "2344.TW",
-      "asset_type": "stock",
-      "mention_kind": "sector_proxy",
-      "matched_aliases": [
-        "記憶體"
-      ],
-      "sources": [
-        "sector_basket:memory"
-      ],
-      "market": {
-        "market_date": "2025-12-24",
-        "close": 76.4995,
-        "ret_1d_pct": 5.34,
-        "ret_5d_pct": 4.06,
-        "ret_20d_pct": 43.47,
-        "ret_60d_pct": 130.24,
-        "drawdown_60d_pct": 0.0
-      },
-      "pricing_status": "ok",
-      "sector_name": "memory"
-    },
-    {
       "asset_name": "技嘉",
       "symbol": "2376.TW",
       "pricing_symbol": "2376.TW",
@@ -650,30 +679,6 @@
       },
       "pricing_status": "ok",
       "sector_name": "ai_supply_chain"
-    },
-    {
-      "asset_name": "南亞科",
-      "symbol": "2408.TW",
-      "pricing_symbol": "2408.TW",
-      "asset_type": "stock",
-      "mention_kind": "sector_proxy",
-      "matched_aliases": [
-        "記憶體"
-      ],
-      "sources": [
-        "sector_basket:memory"
-      ],
-      "market": {
-        "market_date": "2025-12-24",
-        "close": 189.0,
-        "ret_1d_pct": 7.08,
-        "ret_5d_pct": 14.89,
-        "ret_20d_pct": 38.46,
-        "ret_60d_pct": 146.74,
-        "drawdown_60d_pct": 0.0
-      },
-      "pricing_status": "ok",
-      "sector_name": "memory"
     },
     {
       "asset_name": "晶豪科",

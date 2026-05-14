@@ -5,7 +5,7 @@
   "published_at": "2026-05-05T15:39:00+08:00",
   "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/4e221516-ece1-4985-b42a-6d729cb1a49e",
   "metadata": {
-    "asr_status": "pending",
+    "asr_status": "transcribed",
     "audio_path": null,
     "audio_url": "https://rss.soundon.fm/rssf/35eb55b5-8669-418b-9a08-dc13c482809a/feedurl/4e221516-ece1-4985-b42a-6d729cb1a49e/rssFileVip.mp3?timestamp=1777966946130",
     "channel_author": "郭哲榮 投資長",
@@ -100,9 +100,15 @@
     "soundon_id": "4e221516-ece1-4985-b42a-6d729cb1a49e",
     "soundon_updated_at": "2026-05-05T07:42:26.130Z",
     "title": "郭哲榮分析師【記憶體回來了 鴻海卻噴了! 】2026/5/5",
-    "transcript_path": null
+    "transcript_path": "data/transcripts/2026-05-05_zhezhe-2026-05-05-4e221516.md",
+    "date": "2026-05-05",
+    "asr_model": "mlx-community/whisper-large-v3-turbo",
+    "asr_at": "2026-05-12T17:04:52Z",
+    "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/4e221516-ece1-4985-b42a-6d729cb1a49e"
   },
-  "paths": [],
+  "paths": [
+    "data/transcripts/2026-05-05_zhezhe-2026-05-05-4e221516.md"
+  ],
   "context_target_date": "2026-05-05",
   "session_alignment": "same_day_close_after_1335_taipei",
   "baseline_market_context": {
@@ -285,6 +291,29 @@
       "pricing_status": "ok"
     },
     {
+      "asset_name": "富邦台50",
+      "symbol": "006208.TW",
+      "pricing_symbol": "006208.TW",
+      "asset_type": "etf",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "006208"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2026-05-05",
+        "close": 219.6,
+        "ret_1d_pct": 0.18,
+        "ret_5d_pct": 1.93,
+        "ret_20d_pct": 27.97,
+        "ret_60d_pct": 31.26,
+        "drawdown_60d_pct": 0.0
+      },
+      "pricing_status": "ok"
+    },
+    {
       "asset_name": "國泰20年美債",
       "symbol": "00687B.TWO",
       "pricing_symbol": "00687B.TWO",
@@ -332,12 +361,36 @@
       "pricing_status": "ok"
     },
     {
+      "asset_name": "國巨",
+      "symbol": "2327.TW",
+      "pricing_symbol": "2327.TW",
+      "asset_type": "stock",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "2327"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2026-05-05",
+        "close": 348.5,
+        "ret_1d_pct": 1.75,
+        "ret_5d_pct": 14.26,
+        "ret_20d_pct": 41.67,
+        "ret_60d_pct": 21.43,
+        "drawdown_60d_pct": 0.0
+      },
+      "pricing_status": "ok"
+    },
+    {
       "asset_name": "台積電",
       "symbol": "2330.TW",
       "pricing_symbol": "2330.TW",
       "asset_type": "stock",
       "mention_kind": "direct",
       "matched_aliases": [
+        "2330",
         "台積",
         "台積電"
       ],
@@ -375,6 +428,30 @@
         "ret_20d_pct": 9.75,
         "ret_60d_pct": -3.33,
         "drawdown_60d_pct": -4.3
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "南亞科",
+      "symbol": "2408.TW",
+      "pricing_symbol": "2408.TW",
+      "asset_type": "stock",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "2408",
+        "南亞科"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2026-05-05",
+        "close": 256.5,
+        "ret_1d_pct": 8.23,
+        "ret_5d_pct": 13.25,
+        "ret_20d_pct": 27.93,
+        "ret_60d_pct": -10.31,
+        "drawdown_60d_pct": -21.44
       },
       "pricing_status": "ok"
     },
@@ -477,6 +554,7 @@
       "asset_type": "index",
       "mention_kind": "direct",
       "matched_aliases": [
+        "台灣股市",
         "台股",
         "大盤"
       ],
@@ -496,31 +574,6 @@
     }
   ],
   "sector_proxy_assets": [
-    {
-      "asset_name": "富邦台50",
-      "symbol": "006208.TW",
-      "pricing_symbol": "006208.TW",
-      "asset_type": "etf",
-      "mention_kind": "sector_proxy",
-      "matched_aliases": [
-        "ETF",
-        "美債"
-      ],
-      "sources": [
-        "sector_basket:taiwan_etf_bond"
-      ],
-      "market": {
-        "market_date": "2026-05-05",
-        "close": 219.6,
-        "ret_1d_pct": 0.18,
-        "ret_5d_pct": 1.93,
-        "ret_20d_pct": 27.97,
-        "ret_60d_pct": 31.26,
-        "drawdown_60d_pct": 0.0
-      },
-      "pricing_status": "ok",
-      "sector_name": "taiwan_etf_bond"
-    },
     {
       "asset_name": "富邦NASDAQ",
       "symbol": "00662.TW",
@@ -570,30 +623,6 @@
       },
       "pricing_status": "ok",
       "sector_name": "taiwan_etf_bond"
-    },
-    {
-      "asset_name": "國巨",
-      "symbol": "2327.TW",
-      "pricing_symbol": "2327.TW",
-      "asset_type": "stock",
-      "mention_kind": "sector_proxy",
-      "matched_aliases": [
-        "被動元件"
-      ],
-      "sources": [
-        "sector_basket:passive_components"
-      ],
-      "market": {
-        "market_date": "2026-05-05",
-        "close": 348.5,
-        "ret_1d_pct": 1.75,
-        "ret_5d_pct": 14.26,
-        "ret_20d_pct": 41.67,
-        "ret_60d_pct": 21.43,
-        "drawdown_60d_pct": 0.0
-      },
-      "pricing_status": "ok",
-      "sector_name": "passive_components"
     },
     {
       "asset_name": "旺宏",
@@ -740,30 +769,6 @@
       },
       "pricing_status": "ok",
       "sector_name": "pcb_ccl"
-    },
-    {
-      "asset_name": "南亞科",
-      "symbol": "2408.TW",
-      "pricing_symbol": "2408.TW",
-      "asset_type": "stock",
-      "mention_kind": "sector_proxy",
-      "matched_aliases": [
-        "記憶體"
-      ],
-      "sources": [
-        "sector_basket:memory"
-      ],
-      "market": {
-        "market_date": "2026-05-05",
-        "close": 256.5,
-        "ret_1d_pct": 8.23,
-        "ret_5d_pct": 13.25,
-        "ret_20d_pct": 27.93,
-        "ret_60d_pct": -10.31,
-        "drawdown_60d_pct": -21.44
-      },
-      "pricing_status": "ok",
-      "sector_name": "memory"
     },
     {
       "asset_name": "華新科",

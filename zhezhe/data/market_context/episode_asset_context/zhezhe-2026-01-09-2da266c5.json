@@ -5,7 +5,7 @@
   "published_at": "2026-01-09T14:39:49+08:00",
   "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/2da266c5-b231-419c-a7a3-bd0bcd74be8b",
   "metadata": {
-    "asr_status": "pending",
+    "asr_status": "transcribed",
     "audio_path": null,
     "audio_url": "https://rss.soundon.fm/rssf/35eb55b5-8669-418b-9a08-dc13c482809a/feedurl/2da266c5-b231-419c-a7a3-bd0bcd74be8b/rssFileVip.mp3?timestamp=1767940803579",
     "channel_author": "郭哲榮 投資長",
@@ -100,9 +100,15 @@
     "soundon_id": "2da266c5-b231-419c-a7a3-bd0bcd74be8b",
     "soundon_updated_at": "2026-01-09T06:40:03.579Z",
     "title": "郭哲榮分析師【南亞科、華邦電、力積電、旺宏全跌停 航運慘劇2.0 ?】2026.01.09",
-    "transcript_path": null
+    "transcript_path": "data/transcripts/2026-01-09_zhezhe-2026-01-09-2da266c5.md",
+    "date": "2026-01-09",
+    "asr_model": "mlx-community/whisper-large-v3-turbo",
+    "asr_at": "2026-05-12T23:57:30Z",
+    "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/2da266c5-b231-419c-a7a3-bd0bcd74be8b"
   },
-  "paths": [],
+  "paths": [
+    "data/transcripts/2026-01-09_zhezhe-2026-01-09-2da266c5.md"
+  ],
   "context_target_date": "2026-01-09",
   "session_alignment": "same_day_close_after_1335_taipei",
   "baseline_market_context": {
@@ -426,12 +432,36 @@
       "pricing_status": "ok"
     },
     {
+      "asset_name": "廣達",
+      "symbol": "2382.TW",
+      "pricing_symbol": "2382.TW",
+      "asset_type": "stock",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "廣達"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2026-01-09",
+        "close": 283.0,
+        "ret_1d_pct": 3.66,
+        "ret_5d_pct": 2.17,
+        "ret_20d_pct": -3.25,
+        "ret_60d_pct": -0.35,
+        "drawdown_60d_pct": -8.56
+      },
+      "pricing_status": "ok"
+    },
+    {
       "asset_name": "南亞科",
       "symbol": "2408.TW",
       "pricing_symbol": "2408.TW",
       "asset_type": "stock",
       "mention_kind": "direct",
       "matched_aliases": [
+        "2408",
         "南亞科"
       ],
       "sources": [
@@ -547,6 +577,7 @@
       "asset_type": "stock",
       "mention_kind": "direct",
       "matched_aliases": [
+        "6770",
         "力積電"
       ],
       "sources": [
@@ -560,6 +591,29 @@
         "ret_20d_pct": 36.89,
         "ret_60d_pct": 73.99,
         "drawdown_60d_pct": -4.33
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "Micron",
+      "symbol": "MU",
+      "pricing_symbol": "MU",
+      "asset_type": "stock",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "美光"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2026-01-09",
+        "close": 344.9451,
+        "ret_1d_pct": 5.53,
+        "ret_5d_pct": 9.41,
+        "ret_20d_pct": 30.91,
+        "ret_60d_pct": 84.56,
+        "drawdown_60d_pct": 0.0
       },
       "pricing_status": "ok"
     },
@@ -738,30 +792,6 @@
       "sector_name": "ai_supply_chain"
     },
     {
-      "asset_name": "廣達",
-      "symbol": "2382.TW",
-      "pricing_symbol": "2382.TW",
-      "asset_type": "stock",
-      "mention_kind": "sector_proxy",
-      "matched_aliases": [
-        "AI"
-      ],
-      "sources": [
-        "sector_basket:ai_supply_chain"
-      ],
-      "market": {
-        "market_date": "2026-01-09",
-        "close": 283.0,
-        "ret_1d_pct": 3.66,
-        "ret_5d_pct": 2.17,
-        "ret_20d_pct": -3.25,
-        "ret_60d_pct": -0.35,
-        "drawdown_60d_pct": -8.56
-      },
-      "pricing_status": "ok",
-      "sector_name": "ai_supply_chain"
-    },
-    {
       "asset_name": "台光電",
       "symbol": "2383.TW",
       "pricing_symbol": "2383.TW",
@@ -857,6 +887,30 @@
       },
       "pricing_status": "ok",
       "sector_name": "shipping"
+    },
+    {
+      "asset_name": "晶豪科",
+      "symbol": "3006.TW",
+      "pricing_symbol": "3006.TW",
+      "asset_type": "stock",
+      "mention_kind": "sector_proxy",
+      "matched_aliases": [
+        "記憶體"
+      ],
+      "sources": [
+        "sector_basket:memory"
+      ],
+      "market": {
+        "market_date": "2026-01-09",
+        "close": 136.0,
+        "ret_1d_pct": -7.17,
+        "ret_5d_pct": 5.02,
+        "ret_20d_pct": 66.06,
+        "ret_60d_pct": 75.48,
+        "drawdown_60d_pct": -7.17
+      },
+      "pricing_status": "ok",
+      "sector_name": "memory"
     },
     {
       "asset_name": "景碩",
@@ -981,6 +1035,20 @@
     }
   ],
   "sector_basket_matches": [
+    {
+      "sector_name": "memory",
+      "matched_aliases": [
+        "記憶體"
+      ],
+      "proxy_symbols": [
+        "2408.TW",
+        "2344.TW",
+        "6770.TW",
+        "3006.TW",
+        "2337.TW",
+        "MU"
+      ]
+    },
     {
       "sector_name": "ai_supply_chain",
       "matched_aliases": [

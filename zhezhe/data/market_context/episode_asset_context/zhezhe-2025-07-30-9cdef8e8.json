@@ -5,7 +5,7 @@
   "published_at": "2025-07-30T15:49:46+08:00",
   "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/9cdef8e8-247f-45c7-87cb-c27c082bc842",
   "metadata": {
-    "asr_status": "pending",
+    "asr_status": "transcribed",
     "audio_path": null,
     "audio_url": "https://rss.soundon.fm/rssf/35eb55b5-8669-418b-9a08-dc13c482809a/feedurl/9cdef8e8-247f-45c7-87cb-c27c082bc842/rssFileVip.mp3?timestamp=1753861806157",
     "channel_author": "郭哲榮 投資長",
@@ -100,9 +100,15 @@
     "soundon_id": "9cdef8e8-247f-45c7-87cb-c27c082bc842",
     "soundon_updated_at": "2025-07-30T07:50:06.157Z",
     "title": "郭哲榮分析師【砸9兆才能救關稅! 台股沒錢怎麼辦?】2025.07.30",
-    "transcript_path": null
+    "transcript_path": "data/transcripts/2025-07-30_zhezhe-2025-07-30-9cdef8e8.md",
+    "date": "2025-07-30",
+    "asr_model": "mlx-community/whisper-large-v3-turbo",
+    "asr_at": "2026-05-13T11:31:59Z",
+    "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/9cdef8e8-247f-45c7-87cb-c27c082bc842"
   },
-  "paths": [],
+  "paths": [
+    "data/transcripts/2025-07-30_zhezhe-2025-07-30-9cdef8e8.md"
+  ],
   "context_target_date": "2025-07-30",
   "session_alignment": "same_day_close_after_1335_taipei",
   "baseline_market_context": {
@@ -268,7 +274,8 @@
       "asset_type": "etf",
       "mention_kind": "direct",
       "matched_aliases": [
-        "0050"
+        "0050",
+        "台灣50"
       ],
       "sources": [
         "alias_scan"
@@ -379,6 +386,30 @@
       "pricing_status": "ok"
     },
     {
+      "asset_name": "南亞科",
+      "symbol": "2408.TW",
+      "pricing_symbol": "2408.TW",
+      "asset_type": "stock",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "2408",
+        "南亞科"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2025-07-30",
+        "close": 44.9,
+        "ret_1d_pct": 6.4,
+        "ret_5d_pct": 4.3,
+        "ret_20d_pct": -9.2,
+        "ret_60d_pct": 26.84,
+        "drawdown_60d_pct": -25.66
+      },
+      "pricing_status": "ok"
+    },
+    {
       "asset_name": "聯發科",
       "symbol": "2454.TW",
       "pricing_symbol": "2454.TW",
@@ -431,6 +462,7 @@
       "asset_type": "stock",
       "mention_kind": "direct",
       "matched_aliases": [
+        "3037",
         "欣興"
       ],
       "sources": [
@@ -444,6 +476,29 @@
         "ret_20d_pct": 28.35,
         "ret_60d_pct": 55.74,
         "drawdown_60d_pct": 0.0
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "景碩",
+      "symbol": "3189.TW",
+      "pricing_symbol": "3189.TW",
+      "asset_type": "stock",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "3189"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2025-07-30",
+        "close": 105.0,
+        "ret_1d_pct": -0.94,
+        "ret_5d_pct": 1.94,
+        "ret_20d_pct": 26.46,
+        "ret_60d_pct": 42.2,
+        "drawdown_60d_pct": -0.94
       },
       "pricing_status": "ok"
     },
@@ -471,12 +526,105 @@
       "pricing_status": "ok"
     },
     {
+      "asset_name": "AMD",
+      "symbol": "AMD",
+      "pricing_symbol": "AMD",
+      "asset_type": "stock",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "AMD"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2025-07-30",
+        "close": 179.51,
+        "ret_1d_pct": 1.17,
+        "ret_5d_pct": 13.15,
+        "ret_20d_pct": 31.89,
+        "ret_60d_pct": 81.69,
+        "drawdown_60d_pct": 0.0
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "NVIDIA",
+      "symbol": "NVDA",
+      "pricing_symbol": "NVDA",
+      "asset_type": "stock",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "NVIDIA"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2025-07-30",
+        "close": 179.2402,
+        "ret_1d_pct": 2.14,
+        "ret_5d_pct": 4.97,
+        "ret_20d_pct": 16.94,
+        "ret_60d_pct": 56.58,
+        "drawdown_60d_pct": 0.0
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "Nasdaq 100 ETF",
+      "symbol": "QQQ",
+      "pricing_symbol": "QQQ",
+      "asset_type": "etf",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "納斯達克"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2025-07-30",
+        "close": 565.9187,
+        "ret_1d_pct": 0.13,
+        "ret_5d_pct": 0.75,
+        "ret_20d_pct": 3.84,
+        "ret_60d_pct": 16.33,
+        "drawdown_60d_pct": -0.02
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "USD/TWD",
+      "symbol": "TWD=X",
+      "pricing_symbol": "TWD=X",
+      "asset_type": "fx",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "台幣"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2025-07-30",
+        "close": 29.828,
+        "ret_1d_pct": 0.47,
+        "ret_5d_pct": 2.03,
+        "ret_20d_pct": 2.97,
+        "ret_60d_pct": -1.85,
+        "drawdown_60d_pct": -1.96
+      },
+      "pricing_status": "ok"
+    },
+    {
       "asset_name": "加權指數",
       "symbol": "^TWII",
       "pricing_symbol": "^TWII",
       "asset_type": "index",
       "mention_kind": "direct",
       "matched_aliases": [
+        "台灣股市",
         "台股",
         "大盤"
       ],
@@ -504,6 +652,8 @@
       "mention_kind": "sector_proxy",
       "matched_aliases": [
         "ETF",
+        "債券",
+        "台灣50",
         "美債"
       ],
       "sources": [
@@ -529,6 +679,8 @@
       "mention_kind": "sector_proxy",
       "matched_aliases": [
         "ETF",
+        "債券",
+        "台灣50",
         "美債"
       ],
       "sources": [
@@ -554,6 +706,8 @@
       "mention_kind": "sector_proxy",
       "matched_aliases": [
         "ETF",
+        "債券",
+        "台灣50",
         "美債"
       ],
       "sources": [
@@ -627,7 +781,9 @@
       "asset_type": "stock",
       "mention_kind": "sector_proxy",
       "matched_aliases": [
-        "AI"
+        "AI",
+        "AI伺服器",
+        "伺服器"
       ],
       "sources": [
         "sector_basket:ai_supply_chain"
@@ -651,7 +807,9 @@
       "asset_type": "stock",
       "mention_kind": "sector_proxy",
       "matched_aliases": [
-        "AI"
+        "AI",
+        "AI伺服器",
+        "伺服器"
       ],
       "sources": [
         "sector_basket:ai_supply_chain"
@@ -766,38 +924,15 @@
       "sector_name": "shipping"
     },
     {
-      "asset_name": "景碩",
-      "symbol": "3189.TW",
-      "pricing_symbol": "3189.TW",
-      "asset_type": "stock",
-      "mention_kind": "sector_proxy",
-      "matched_aliases": [
-        "ABF",
-        "載板"
-      ],
-      "sources": [
-        "sector_basket:pcb_ccl"
-      ],
-      "market": {
-        "market_date": "2025-07-30",
-        "close": 105.0,
-        "ret_1d_pct": -0.94,
-        "ret_5d_pct": 1.94,
-        "ret_20d_pct": 26.46,
-        "ret_60d_pct": 42.2,
-        "drawdown_60d_pct": -0.94
-      },
-      "pricing_status": "ok",
-      "sector_name": "pcb_ccl"
-    },
-    {
       "asset_name": "緯穎",
       "symbol": "6669.TW",
       "pricing_symbol": "6669.TW",
       "asset_type": "stock",
       "mention_kind": "sector_proxy",
       "matched_aliases": [
-        "AI"
+        "AI",
+        "AI伺服器",
+        "伺服器"
       ],
       "sources": [
         "sector_basket:ai_supply_chain"
@@ -815,61 +950,15 @@
       "sector_name": "ai_supply_chain"
     },
     {
-      "asset_name": "AMD",
-      "symbol": "AMD",
-      "pricing_symbol": "AMD",
-      "asset_type": "stock",
-      "mention_kind": "sector_proxy",
-      "matched_aliases": [
-        "AI"
-      ],
-      "sources": [
-        "sector_basket:ai_supply_chain"
-      ],
-      "market": {
-        "market_date": "2025-07-30",
-        "close": 179.51,
-        "ret_1d_pct": 1.17,
-        "ret_5d_pct": 13.15,
-        "ret_20d_pct": 31.89,
-        "ret_60d_pct": 81.69,
-        "drawdown_60d_pct": 0.0
-      },
-      "pricing_status": "ok",
-      "sector_name": "ai_supply_chain"
-    },
-    {
-      "asset_name": "NVIDIA",
-      "symbol": "NVDA",
-      "pricing_symbol": "NVDA",
-      "asset_type": "stock",
-      "mention_kind": "sector_proxy",
-      "matched_aliases": [
-        "AI"
-      ],
-      "sources": [
-        "sector_basket:ai_supply_chain"
-      ],
-      "market": {
-        "market_date": "2025-07-30",
-        "close": 179.2402,
-        "ret_1d_pct": 2.14,
-        "ret_5d_pct": 4.97,
-        "ret_20d_pct": 16.94,
-        "ret_60d_pct": 56.58,
-        "drawdown_60d_pct": 0.0
-      },
-      "pricing_status": "ok",
-      "sector_name": "ai_supply_chain"
-    },
-    {
       "asset_name": "Semiconductor ETF",
       "symbol": "SOXX",
       "pricing_symbol": "SOXX",
       "asset_type": "etf",
       "mention_kind": "sector_proxy",
       "matched_aliases": [
-        "AI"
+        "AI",
+        "AI伺服器",
+        "伺服器"
       ],
       "sources": [
         "sector_basket:ai_supply_chain"
@@ -891,7 +980,9 @@
     {
       "sector_name": "ai_supply_chain",
       "matched_aliases": [
-        "AI"
+        "AI",
+        "AI伺服器",
+        "伺服器"
       ],
       "proxy_symbols": [
         "2330.TW",
@@ -944,6 +1035,8 @@
       "sector_name": "taiwan_etf_bond",
       "matched_aliases": [
         "ETF",
+        "債券",
+        "台灣50",
         "美債"
       ],
       "proxy_symbols": [

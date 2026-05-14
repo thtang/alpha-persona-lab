@@ -5,7 +5,7 @@
   "published_at": "2026-02-25T19:35:15+08:00",
   "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/43e248cb-b581-463c-b019-122ea44cd890",
   "metadata": {
-    "asr_status": "pending",
+    "asr_status": "transcribed",
     "audio_path": null,
     "audio_url": "https://rss.soundon.fm/rssf/35eb55b5-8669-418b-9a08-dc13c482809a/feedurl/43e248cb-b581-463c-b019-122ea44cd890/rssFileVip.mp3?timestamp=1772019379764",
     "channel_author": "郭哲榮 投資長",
@@ -65,9 +65,15 @@
     "soundon_id": "43e248cb-b581-463c-b019-122ea44cd890",
     "soundon_updated_at": "2026-02-25T11:36:19.764Z",
     "title": "【台股天天狂噴 記憶體卻崩盤 輝達財報大不妙?】2026.02.25哲哲只有60秒#shorts",
-    "transcript_path": null
+    "transcript_path": "data/transcripts/2026-02-25_zhezhe-2026-02-25-43e248cb.md",
+    "date": "2026-02-25",
+    "asr_model": "mlx-community/whisper-large-v3-turbo",
+    "asr_at": "2026-05-12T21:19:04Z",
+    "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/43e248cb-b581-463c-b019-122ea44cd890"
   },
-  "paths": [],
+  "paths": [
+    "data/transcripts/2026-02-25_zhezhe-2026-02-25-43e248cb.md"
+  ],
   "context_target_date": "2026-02-25",
   "session_alignment": "same_day_close_after_1335_taipei",
   "baseline_market_context": {
@@ -389,6 +395,29 @@
       "pricing_status": "ok"
     },
     {
+      "asset_name": "晶豪科",
+      "symbol": "3006.TW",
+      "pricing_symbol": "3006.TW",
+      "asset_type": "stock",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "3006"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2026-02-25",
+        "close": 159.0,
+        "ret_1d_pct": -4.79,
+        "ret_5d_pct": -1.85,
+        "ret_20d_pct": 0.32,
+        "ret_60d_pct": 83.18,
+        "drawdown_60d_pct": -18.46
+      },
+      "pricing_status": "ok"
+    },
+    {
       "asset_name": "欣興",
       "symbol": "3037.TW",
       "pricing_symbol": "3037.TW",
@@ -627,6 +656,54 @@
       "sector_name": "memory"
     },
     {
+      "asset_name": "技嘉",
+      "symbol": "2376.TW",
+      "pricing_symbol": "2376.TW",
+      "asset_type": "stock",
+      "mention_kind": "sector_proxy",
+      "matched_aliases": [
+        "AI"
+      ],
+      "sources": [
+        "sector_basket:ai_supply_chain"
+      ],
+      "market": {
+        "market_date": "2026-02-25",
+        "close": 235.0,
+        "ret_1d_pct": 3.07,
+        "ret_5d_pct": 4.91,
+        "ret_20d_pct": -2.08,
+        "ret_60d_pct": -5.24,
+        "drawdown_60d_pct": -9.27
+      },
+      "pricing_status": "ok",
+      "sector_name": "ai_supply_chain"
+    },
+    {
+      "asset_name": "微星",
+      "symbol": "2377.TW",
+      "pricing_symbol": "2377.TW",
+      "asset_type": "stock",
+      "mention_kind": "sector_proxy",
+      "matched_aliases": [
+        "AI"
+      ],
+      "sources": [
+        "sector_basket:ai_supply_chain"
+      ],
+      "market": {
+        "market_date": "2026-02-25",
+        "close": 92.2,
+        "ret_1d_pct": 0.66,
+        "ret_5d_pct": 4.18,
+        "ret_20d_pct": -7.62,
+        "ret_60d_pct": -10.49,
+        "drawdown_60d_pct": -14.63
+      },
+      "pricing_status": "ok",
+      "sector_name": "ai_supply_chain"
+    },
+    {
       "asset_name": "南亞科",
       "symbol": "2408.TW",
       "pricing_symbol": "2408.TW",
@@ -651,28 +728,28 @@
       "sector_name": "memory"
     },
     {
-      "asset_name": "晶豪科",
-      "symbol": "3006.TW",
-      "pricing_symbol": "3006.TW",
+      "asset_name": "緯穎",
+      "symbol": "6669.TW",
+      "pricing_symbol": "6669.TW",
       "asset_type": "stock",
       "mention_kind": "sector_proxy",
       "matched_aliases": [
-        "記憶體"
+        "AI"
       ],
       "sources": [
-        "sector_basket:memory"
+        "sector_basket:ai_supply_chain"
       ],
       "market": {
         "market_date": "2026-02-25",
-        "close": 159.0,
-        "ret_1d_pct": -4.79,
-        "ret_5d_pct": -1.85,
-        "ret_20d_pct": 0.32,
-        "ret_60d_pct": 83.18,
-        "drawdown_60d_pct": -18.46
+        "close": 4060.0,
+        "ret_1d_pct": 5.87,
+        "ret_5d_pct": 11.85,
+        "ret_20d_pct": 9.14,
+        "ret_60d_pct": -5.14,
+        "drawdown_60d_pct": -13.34
       },
       "pricing_status": "ok",
-      "sector_name": "memory"
+      "sector_name": "ai_supply_chain"
     },
     {
       "asset_name": "力積電",
@@ -699,6 +776,30 @@
       "sector_name": "memory"
     },
     {
+      "asset_name": "AMD",
+      "symbol": "AMD",
+      "pricing_symbol": "AMD",
+      "asset_type": "stock",
+      "mention_kind": "sector_proxy",
+      "matched_aliases": [
+        "AI"
+      ],
+      "sources": [
+        "sector_basket:ai_supply_chain"
+      ],
+      "market": {
+        "market_date": "2026-02-25",
+        "close": 210.86,
+        "ret_1d_pct": -1.39,
+        "ret_5d_pct": 5.37,
+        "ret_20d_pct": -16.34,
+        "ret_60d_pct": -1.58,
+        "drawdown_60d_pct": -18.8
+      },
+      "pricing_status": "ok",
+      "sector_name": "ai_supply_chain"
+    },
+    {
       "asset_name": "Micron",
       "symbol": "MU",
       "pricing_symbol": "MU",
@@ -721,6 +822,30 @@
       },
       "pricing_status": "ok",
       "sector_name": "memory"
+    },
+    {
+      "asset_name": "Semiconductor ETF",
+      "symbol": "SOXX",
+      "pricing_symbol": "SOXX",
+      "asset_type": "etf",
+      "mention_kind": "sector_proxy",
+      "matched_aliases": [
+        "AI"
+      ],
+      "sources": [
+        "sector_basket:ai_supply_chain"
+      ],
+      "market": {
+        "market_date": "2026-02-25",
+        "close": 367.7734,
+        "ret_1d_pct": 1.65,
+        "ret_5d_pct": 2.82,
+        "ret_20d_pct": 4.82,
+        "ret_60d_pct": 26.48,
+        "drawdown_60d_pct": 0.0
+      },
+      "pricing_status": "ok",
+      "sector_name": "ai_supply_chain"
     }
   ],
   "sector_basket_matches": [
@@ -736,6 +861,24 @@
         "3006.TW",
         "2337.TW",
         "MU"
+      ]
+    },
+    {
+      "sector_name": "ai_supply_chain",
+      "matched_aliases": [
+        "AI"
+      ],
+      "proxy_symbols": [
+        "2330.TW",
+        "2317.TW",
+        "2382.TW",
+        "6669.TW",
+        "3231.TW",
+        "2376.TW",
+        "2377.TW",
+        "NVDA",
+        "AMD",
+        "SOXX"
       ]
     },
     {

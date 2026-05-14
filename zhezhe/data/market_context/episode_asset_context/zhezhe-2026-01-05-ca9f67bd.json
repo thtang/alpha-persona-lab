@@ -5,7 +5,7 @@
   "published_at": "2026-01-05T18:01:03+08:00",
   "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/ca9f67bd-6584-4cac-83dc-1a78cd7b1d77",
   "metadata": {
-    "asr_status": "pending",
+    "asr_status": "transcribed",
     "audio_path": null,
     "audio_url": "https://rss.soundon.fm/rssf/35eb55b5-8669-418b-9a08-dc13c482809a/feedurl/ca9f67bd-6584-4cac-83dc-1a78cd7b1d77/rssFileVip.mp3?timestamp=1767607340424",
     "channel_author": "郭哲榮 投資長",
@@ -65,9 +65,15 @@
     "soundon_id": "ca9f67bd-6584-4cac-83dc-1a78cd7b1d77",
     "soundon_updated_at": "2026-01-05T10:02:20.424Z",
     "title": "【千點漲幅、千家下跌 今天三萬點、今年最高點?】2026.01.05 哲哲只有60秒#shorts",
-    "transcript_path": null
+    "transcript_path": "data/transcripts/2026-01-05_zhezhe-2026-01-05-ca9f67bd.md",
+    "date": "2026-01-05",
+    "asr_model": "mlx-community/whisper-large-v3-turbo",
+    "asr_at": "2026-05-13T00:16:05Z",
+    "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/ca9f67bd-6584-4cac-83dc-1a78cd7b1d77"
   },
-  "paths": [],
+  "paths": [
+    "data/transcripts/2026-01-05_zhezhe-2026-01-05-ca9f67bd.md"
+  ],
   "context_target_date": "2026-01-05",
   "session_alignment": "same_day_close_after_1335_taipei",
   "baseline_market_context": {
@@ -227,6 +233,29 @@
   },
   "direct_mentioned_assets": [
     {
+      "asset_name": "元大台灣50",
+      "symbol": "0050.TW",
+      "pricing_symbol": "0050.TW",
+      "asset_type": "etf",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "0050"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2026-01-05",
+        "close": 68.5327,
+        "ret_1d_pct": 3.81,
+        "ret_5d_pct": 7.92,
+        "ret_20d_pct": 11.74,
+        "ret_60d_pct": 12.64,
+        "drawdown_60d_pct": 0.0
+      },
+      "pricing_status": "ok"
+    },
+    {
       "asset_name": "鴻海",
       "symbol": "2317.TW",
       "pricing_symbol": "2317.TW",
@@ -256,6 +285,7 @@
       "asset_type": "stock",
       "mention_kind": "direct",
       "matched_aliases": [
+        "2330",
         "台積",
         "台積電"
       ],
@@ -433,33 +463,56 @@
         "drawdown_60d_pct": 0.0
       },
       "pricing_status": "ok"
-    }
-  ],
-  "sector_proxy_assets": [
+    },
     {
-      "asset_name": "元大台灣50",
-      "symbol": "0050.TW",
-      "pricing_symbol": "0050.TW",
-      "asset_type": "etf",
-      "mention_kind": "sector_proxy",
+      "asset_name": "力積電",
+      "symbol": "6770.TW",
+      "pricing_symbol": "6770.TW",
+      "asset_type": "stock",
+      "mention_kind": "direct",
       "matched_aliases": [
-        "美債"
+        "6770"
       ],
       "sources": [
-        "sector_basket:taiwan_etf_bond"
+        "alias_scan"
       ],
       "market": {
         "market_date": "2026-01-05",
-        "close": 68.5327,
-        "ret_1d_pct": 3.81,
-        "ret_5d_pct": 7.92,
-        "ret_20d_pct": 11.74,
-        "ret_60d_pct": 12.64,
+        "close": 43.45,
+        "ret_1d_pct": 3.21,
+        "ret_5d_pct": 8.49,
+        "ret_20d_pct": 34.52,
+        "ret_60d_pct": 45.32,
         "drawdown_60d_pct": 0.0
       },
-      "pricing_status": "ok",
-      "sector_name": "taiwan_etf_bond"
+      "pricing_status": "ok"
     },
+    {
+      "asset_name": "加權指數",
+      "symbol": "^TWII",
+      "pricing_symbol": "^TWII",
+      "asset_type": "index",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "台灣股市",
+        "大盤"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2026-01-05",
+        "close": 30105.0391,
+        "ret_1d_pct": 2.57,
+        "ret_5d_pct": 5.42,
+        "ret_20d_pct": 8.31,
+        "ret_60d_pct": 10.63,
+        "drawdown_60d_pct": 0.0
+      },
+      "pricing_status": "ok"
+    }
+  ],
+  "sector_proxy_assets": [
     {
       "asset_name": "富邦台50",
       "symbol": "006208.TW",

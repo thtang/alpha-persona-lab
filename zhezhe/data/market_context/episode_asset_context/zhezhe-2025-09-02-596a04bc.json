@@ -5,7 +5,7 @@
   "published_at": "2025-09-02T18:48:05+08:00",
   "source_url": "https://player.soundon.fm/p/7c9b0925-29e2-472c-8120-15b13e70b377/episodes/596a04bc-df85-4e31-a4b8-d65362eec186",
   "metadata": {
-    "asr_status": "pending",
+    "asr_status": "transcribed",
     "audio_path": null,
     "audio_url": "https://rss.soundon.fm/rssf/7c9b0925-29e2-472c-8120-15b13e70b377/feedurl/596a04bc-df85-4e31-a4b8-d65362eec186/rssFileVip.mp3?timestamp=1756811270783",
     "channel_author": "摩爾證券投資顧問股份有限公司",
@@ -112,9 +112,15 @@
     "soundon_id": "596a04bc-df85-4e31-a4b8-d65362eec186",
     "soundon_updated_at": "2025-09-02T11:07:50.783Z",
     "title": "【PCB崩盤後噴出 壓垮台股最後稻草? 金居 富喬 神達 台達電 宏達電】2025.09.02 哲哲只有60秒",
-    "transcript_path": null
+    "transcript_path": "data/transcripts/2025-09-02_zhezhe-2025-09-02-596a04bc.md",
+    "date": "2025-09-02",
+    "asr_model": "mlx-community/whisper-large-v3-turbo",
+    "asr_at": "2026-05-13T08:47:42Z",
+    "source_url": "https://player.soundon.fm/p/7c9b0925-29e2-472c-8120-15b13e70b377/episodes/596a04bc-df85-4e31-a4b8-d65362eec186"
   },
-  "paths": [],
+  "paths": [
+    "data/transcripts/2025-09-02_zhezhe-2025-09-02-596a04bc.md"
+  ],
   "context_target_date": "2025-09-02",
   "session_alignment": "same_day_close_after_1335_taipei",
   "baseline_market_context": {
@@ -548,6 +554,29 @@
         "ret_20d_pct": -11.29,
         "ret_60d_pct": -3.08,
         "drawdown_60d_pct": -13.73
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "USD/TWD",
+      "symbol": "TWD=X",
+      "pricing_symbol": "TWD=X",
+      "asset_type": "fx",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "台幣"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2025-09-02",
+        "close": 30.744,
+        "ret_1d_pct": 0.39,
+        "ret_5d_pct": 0.65,
+        "ret_20d_pct": 2.69,
+        "ret_60d_pct": 2.86,
+        "drawdown_60d_pct": 0.0
       },
       "pricing_status": "ok"
     },

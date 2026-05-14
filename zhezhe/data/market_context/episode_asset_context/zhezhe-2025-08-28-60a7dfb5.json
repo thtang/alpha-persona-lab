@@ -5,7 +5,7 @@
   "published_at": "2025-08-28T15:58:12+08:00",
   "source_url": "https://player.soundon.fm/p/7c9b0925-29e2-472c-8120-15b13e70b377/episodes/60a7dfb5-373a-4874-89e1-6c6038667674",
   "metadata": {
-    "asr_status": "pending",
+    "asr_status": "transcribed",
     "audio_path": null,
     "audio_url": "https://rss.soundon.fm/rssf/7c9b0925-29e2-472c-8120-15b13e70b377/feedurl/60a7dfb5-373a-4874-89e1-6c6038667674/rssFileVip.mp3?timestamp=1756368676667",
     "channel_author": "摩爾證券投資顧問股份有限公司",
@@ -39,9 +39,15 @@
     "soundon_id": "60a7dfb5-373a-4874-89e1-6c6038667674",
     "soundon_updated_at": "2025-08-28T08:11:16.667Z",
     "title": "郭哲榮分析師【輝達財爆 散戶開心 該進場嗎?】2025.08.28",
-    "transcript_path": null
+    "transcript_path": "data/transcripts/2025-08-28_zhezhe-2025-08-28-60a7dfb5.md",
+    "date": "2025-08-28",
+    "asr_model": "mlx-community/whisper-large-v3-turbo",
+    "asr_at": "2026-05-13T09:13:05Z",
+    "source_url": "https://player.soundon.fm/p/7c9b0925-29e2-472c-8120-15b13e70b377/episodes/60a7dfb5-373a-4874-89e1-6c6038667674"
   },
-  "paths": [],
+  "paths": [
+    "data/transcripts/2025-08-28_zhezhe-2025-08-28-60a7dfb5.md"
+  ],
   "context_target_date": "2025-08-28",
   "session_alignment": "same_day_close_after_1335_taipei",
   "baseline_market_context": {
@@ -201,13 +207,130 @@
   },
   "direct_mentioned_assets": [
     {
+      "asset_name": "元大台灣50",
+      "symbol": "0050.TW",
+      "pricing_symbol": "0050.TW",
+      "asset_type": "etf",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "台灣50"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2025-08-28",
+        "close": 51.7693,
+        "ret_1d_pct": -0.94,
+        "ret_5d_pct": 0.96,
+        "ret_20d_pct": 1.84,
+        "ret_60d_pct": 16.42,
+        "drawdown_60d_pct": -1.59
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "台積電",
+      "symbol": "2330.TW",
+      "pricing_symbol": "2330.TW",
+      "asset_type": "stock",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "台積",
+        "台積電"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2025-08-28",
+        "close": 1147.7953,
+        "ret_1d_pct": -2.52,
+        "ret_5d_pct": 0.87,
+        "ret_20d_pct": 0.43,
+        "ret_60d_pct": 17.67,
+        "drawdown_60d_pct": -3.33
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "微星",
+      "symbol": "2377.TW",
+      "pricing_symbol": "2377.TW",
+      "asset_type": "stock",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "微星"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2025-08-28",
+        "close": 136.5,
+        "ret_1d_pct": -0.36,
+        "ret_5d_pct": 1.5,
+        "ret_20d_pct": -1.33,
+        "ret_60d_pct": 0.78,
+        "drawdown_60d_pct": -7.15
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "南亞科",
+      "symbol": "2408.TW",
+      "pricing_symbol": "2408.TW",
+      "asset_type": "stock",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "南亞科"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2025-08-28",
+        "close": 46.65,
+        "ret_1d_pct": -2.41,
+        "ret_5d_pct": 0.43,
+        "ret_20d_pct": 3.9,
+        "ret_60d_pct": -5.28,
+        "drawdown_60d_pct": -22.76
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "萬海",
+      "symbol": "2615.TW",
+      "pricing_symbol": "2615.TW",
+      "asset_type": "stock",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "萬海"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2025-08-28",
+        "close": 84.1,
+        "ret_1d_pct": 0.84,
+        "ret_5d_pct": -1.87,
+        "ret_20d_pct": -7.07,
+        "ret_60d_pct": -20.33,
+        "drawdown_60d_pct": -18.09
+      },
+      "pricing_status": "ok"
+    },
+    {
       "asset_name": "NVIDIA",
       "symbol": "NVDA",
       "pricing_symbol": "NVDA",
       "asset_type": "stock",
       "mention_kind": "direct",
       "matched_aliases": [
-        "輝達"
+        "輝達",
+        "黃仁勳"
       ],
       "sources": [
         "alias_scan"
@@ -222,8 +345,465 @@
         "drawdown_60d_pct": -1.63
       },
       "pricing_status": "ok"
+    },
+    {
+      "asset_name": "USD/TWD",
+      "symbol": "TWD=X",
+      "pricing_symbol": "TWD=X",
+      "asset_type": "fx",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "台幣",
+        "新台幣"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2025-08-28",
+        "close": 30.4928,
+        "ret_1d_pct": -0.27,
+        "ret_5d_pct": -0.08,
+        "ret_20d_pct": 1.96,
+        "ret_60d_pct": 1.83,
+        "drawdown_60d_pct": -0.27
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "加權指數",
+      "symbol": "^TWII",
+      "pricing_symbol": "^TWII",
+      "asset_type": "index",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "台灣股市",
+        "台股",
+        "大盤"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2025-08-28",
+        "close": 24236.4492,
+        "ret_1d_pct": -1.16,
+        "ret_5d_pct": 1.14,
+        "ret_20d_pct": 2.95,
+        "ret_60d_pct": 11.82,
+        "drawdown_60d_pct": -1.16
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "櫃買指數",
+      "symbol": "^TWOII",
+      "pricing_symbol": "^TWOII",
+      "asset_type": "index",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "OTC",
+        "上櫃"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2025-08-28",
+        "close": 253.99,
+        "ret_1d_pct": 0.06,
+        "ret_5d_pct": 3.38,
+        "ret_20d_pct": 9.48,
+        "ret_60d_pct": 11.78,
+        "drawdown_60d_pct": 0.0
+      },
+      "pricing_status": "ok"
     }
   ],
-  "sector_proxy_assets": [],
-  "sector_basket_matches": []
+  "sector_proxy_assets": [
+    {
+      "asset_name": "富邦台50",
+      "symbol": "006208.TW",
+      "pricing_symbol": "006208.TW",
+      "asset_type": "etf",
+      "mention_kind": "sector_proxy",
+      "matched_aliases": [
+        "ETF",
+        "台灣50"
+      ],
+      "sources": [
+        "sector_basket:taiwan_etf_bond"
+      ],
+      "market": {
+        "market_date": "2025-08-28",
+        "close": 119.9735,
+        "ret_1d_pct": -1.09,
+        "ret_5d_pct": 1.07,
+        "ret_20d_pct": 1.91,
+        "ret_60d_pct": 15.89,
+        "drawdown_60d_pct": -1.64
+      },
+      "pricing_status": "ok",
+      "sector_name": "taiwan_etf_bond"
+    },
+    {
+      "asset_name": "富邦NASDAQ",
+      "symbol": "00662.TW",
+      "pricing_symbol": "00662.TW",
+      "asset_type": "etf",
+      "mention_kind": "sector_proxy",
+      "matched_aliases": [
+        "ETF",
+        "台灣50"
+      ],
+      "sources": [
+        "sector_basket:taiwan_etf_bond"
+      ],
+      "market": {
+        "market_date": "2025-08-28",
+        "close": 92.2,
+        "ret_1d_pct": -0.27,
+        "ret_5d_pct": 1.21,
+        "ret_20d_pct": 1.32,
+        "ret_60d_pct": 10.55,
+        "drawdown_60d_pct": -0.27
+      },
+      "pricing_status": "ok",
+      "sector_name": "taiwan_etf_bond"
+    },
+    {
+      "asset_name": "國泰費城半導體",
+      "symbol": "00830.TW",
+      "pricing_symbol": "00830.TW",
+      "asset_type": "etf",
+      "mention_kind": "sector_proxy",
+      "matched_aliases": [
+        "ETF",
+        "台灣50"
+      ],
+      "sources": [
+        "sector_basket:taiwan_etf_bond"
+      ],
+      "market": {
+        "market_date": "2025-08-28",
+        "close": 39.1989,
+        "ret_1d_pct": -0.44,
+        "ret_5d_pct": 2.73,
+        "ret_20d_pct": 1.99,
+        "ret_60d_pct": 17.48,
+        "drawdown_60d_pct": -0.44
+      },
+      "pricing_status": "ok",
+      "sector_name": "taiwan_etf_bond"
+    },
+    {
+      "asset_name": "鴻海",
+      "symbol": "2317.TW",
+      "pricing_symbol": "2317.TW",
+      "asset_type": "stock",
+      "mention_kind": "sector_proxy",
+      "matched_aliases": [
+        "AI"
+      ],
+      "sources": [
+        "sector_basket:ai_supply_chain"
+      ],
+      "market": {
+        "market_date": "2025-08-28",
+        "close": 206.0,
+        "ret_1d_pct": -0.96,
+        "ret_5d_pct": 0.0,
+        "ret_20d_pct": 20.12,
+        "ret_60d_pct": 36.85,
+        "drawdown_60d_pct": -1.9
+      },
+      "pricing_status": "ok",
+      "sector_name": "ai_supply_chain"
+    },
+    {
+      "asset_name": "金像電",
+      "symbol": "2368.TW",
+      "pricing_symbol": "2368.TW",
+      "asset_type": "stock",
+      "mention_kind": "sector_proxy",
+      "matched_aliases": [
+        "PCB"
+      ],
+      "sources": [
+        "sector_basket:pcb_ccl"
+      ],
+      "market": {
+        "market_date": "2025-08-28",
+        "close": 486.0,
+        "ret_1d_pct": 2.1,
+        "ret_5d_pct": 8.24,
+        "ret_20d_pct": 37.48,
+        "ret_60d_pct": 85.47,
+        "drawdown_60d_pct": 0.0
+      },
+      "pricing_status": "ok",
+      "sector_name": "pcb_ccl"
+    },
+    {
+      "asset_name": "技嘉",
+      "symbol": "2376.TW",
+      "pricing_symbol": "2376.TW",
+      "asset_type": "stock",
+      "mention_kind": "sector_proxy",
+      "matched_aliases": [
+        "AI"
+      ],
+      "sources": [
+        "sector_basket:ai_supply_chain"
+      ],
+      "market": {
+        "market_date": "2025-08-28",
+        "close": 281.0,
+        "ret_1d_pct": -1.23,
+        "ret_5d_pct": 3.12,
+        "ret_20d_pct": 4.66,
+        "ret_60d_pct": 1.5,
+        "drawdown_60d_pct": -2.94
+      },
+      "pricing_status": "ok",
+      "sector_name": "ai_supply_chain"
+    },
+    {
+      "asset_name": "廣達",
+      "symbol": "2382.TW",
+      "pricing_symbol": "2382.TW",
+      "asset_type": "stock",
+      "mention_kind": "sector_proxy",
+      "matched_aliases": [
+        "AI"
+      ],
+      "sources": [
+        "sector_basket:ai_supply_chain"
+      ],
+      "market": {
+        "market_date": "2025-08-28",
+        "close": 266.0,
+        "ret_1d_pct": -1.12,
+        "ret_5d_pct": 2.7,
+        "ret_20d_pct": -1.48,
+        "ret_60d_pct": -0.47,
+        "drawdown_60d_pct": -8.43
+      },
+      "pricing_status": "ok",
+      "sector_name": "ai_supply_chain"
+    },
+    {
+      "asset_name": "台光電",
+      "symbol": "2383.TW",
+      "pricing_symbol": "2383.TW",
+      "asset_type": "stock",
+      "mention_kind": "sector_proxy",
+      "matched_aliases": [
+        "PCB"
+      ],
+      "sources": [
+        "sector_basket:pcb_ccl"
+      ],
+      "market": {
+        "market_date": "2025-08-28",
+        "close": 1250.0,
+        "ret_1d_pct": -1.06,
+        "ret_5d_pct": 2.54,
+        "ret_20d_pct": 26.01,
+        "ret_60d_pct": 62.36,
+        "drawdown_60d_pct": -2.96
+      },
+      "pricing_status": "ok",
+      "sector_name": "pcb_ccl"
+    },
+    {
+      "asset_name": "欣興",
+      "symbol": "3037.TW",
+      "pricing_symbol": "3037.TW",
+      "asset_type": "stock",
+      "mention_kind": "sector_proxy",
+      "matched_aliases": [
+        "PCB"
+      ],
+      "sources": [
+        "sector_basket:pcb_ccl"
+      ],
+      "market": {
+        "market_date": "2025-08-28",
+        "close": 150.0,
+        "ret_1d_pct": -1.32,
+        "ret_5d_pct": 12.36,
+        "ret_20d_pct": 5.63,
+        "ret_60d_pct": 47.42,
+        "drawdown_60d_pct": -1.32
+      },
+      "pricing_status": "ok",
+      "sector_name": "pcb_ccl"
+    },
+    {
+      "asset_name": "景碩",
+      "symbol": "3189.TW",
+      "pricing_symbol": "3189.TW",
+      "asset_type": "stock",
+      "mention_kind": "sector_proxy",
+      "matched_aliases": [
+        "PCB"
+      ],
+      "sources": [
+        "sector_basket:pcb_ccl"
+      ],
+      "market": {
+        "market_date": "2025-08-28",
+        "close": 113.5,
+        "ret_1d_pct": -0.87,
+        "ret_5d_pct": 8.1,
+        "ret_20d_pct": 8.1,
+        "ret_60d_pct": 41.23,
+        "drawdown_60d_pct": -0.87
+      },
+      "pricing_status": "ok",
+      "sector_name": "pcb_ccl"
+    },
+    {
+      "asset_name": "緯創",
+      "symbol": "3231.TW",
+      "pricing_symbol": "3231.TW",
+      "asset_type": "stock",
+      "mention_kind": "sector_proxy",
+      "matched_aliases": [
+        "AI"
+      ],
+      "sources": [
+        "sector_basket:ai_supply_chain"
+      ],
+      "market": {
+        "market_date": "2025-08-28",
+        "close": 115.0,
+        "ret_1d_pct": 0.0,
+        "ret_5d_pct": 3.14,
+        "ret_20d_pct": -4.56,
+        "ret_60d_pct": 0.88,
+        "drawdown_60d_pct": -9.8
+      },
+      "pricing_status": "ok",
+      "sector_name": "ai_supply_chain"
+    },
+    {
+      "asset_name": "緯穎",
+      "symbol": "6669.TW",
+      "pricing_symbol": "6669.TW",
+      "asset_type": "stock",
+      "mention_kind": "sector_proxy",
+      "matched_aliases": [
+        "AI"
+      ],
+      "sources": [
+        "sector_basket:ai_supply_chain"
+      ],
+      "market": {
+        "market_date": "2025-08-28",
+        "close": 2975.0,
+        "ret_1d_pct": -0.34,
+        "ret_5d_pct": -1.82,
+        "ret_20d_pct": 12.26,
+        "ret_60d_pct": 20.86,
+        "drawdown_60d_pct": -13.14
+      },
+      "pricing_status": "ok",
+      "sector_name": "ai_supply_chain"
+    },
+    {
+      "asset_name": "AMD",
+      "symbol": "AMD",
+      "pricing_symbol": "AMD",
+      "asset_type": "stock",
+      "mention_kind": "sector_proxy",
+      "matched_aliases": [
+        "AI"
+      ],
+      "sources": [
+        "sector_basket:ai_supply_chain"
+      ],
+      "market": {
+        "market_date": "2025-08-28",
+        "close": 168.58,
+        "ret_1d_pct": 0.87,
+        "ret_5d_pct": 2.97,
+        "ret_20d_pct": -4.38,
+        "ret_60d_pct": 43.7,
+        "drawdown_60d_pct": -8.59
+      },
+      "pricing_status": "ok",
+      "sector_name": "ai_supply_chain"
+    },
+    {
+      "asset_name": "Semiconductor ETF",
+      "symbol": "SOXX",
+      "pricing_symbol": "SOXX",
+      "asset_type": "etf",
+      "mention_kind": "sector_proxy",
+      "matched_aliases": [
+        "AI"
+      ],
+      "sources": [
+        "sector_basket:ai_supply_chain"
+      ],
+      "market": {
+        "market_date": "2025-08-28",
+        "close": 251.4964,
+        "ret_1d_pct": 0.48,
+        "ret_5d_pct": 4.2,
+        "ret_20d_pct": 5.22,
+        "ret_60d_pct": 18.48,
+        "drawdown_60d_pct": -0.63
+      },
+      "pricing_status": "ok",
+      "sector_name": "ai_supply_chain"
+    }
+  ],
+  "sector_basket_matches": [
+    {
+      "sector_name": "ai_supply_chain",
+      "matched_aliases": [
+        "AI"
+      ],
+      "proxy_symbols": [
+        "2330.TW",
+        "2317.TW",
+        "2382.TW",
+        "6669.TW",
+        "3231.TW",
+        "2376.TW",
+        "2377.TW",
+        "NVDA",
+        "AMD",
+        "SOXX"
+      ]
+    },
+    {
+      "sector_name": "pcb_ccl",
+      "matched_aliases": [
+        "PCB"
+      ],
+      "proxy_symbols": [
+        "2383.TW",
+        "2368.TW",
+        "3037.TW",
+        "3189.TW"
+      ]
+    },
+    {
+      "sector_name": "taiwan_etf_bond",
+      "matched_aliases": [
+        "ETF",
+        "台灣50"
+      ],
+      "proxy_symbols": [
+        "0050.TW",
+        "006208.TW",
+        "00662.TW",
+        "00830.TW"
+      ]
+    }
+  ]
 }

@@ -5,7 +5,7 @@
   "published_at": "2026-02-23T18:18:27+08:00",
   "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/26e18739-8297-4041-be8c-c1e5f22cfa0a",
   "metadata": {
-    "asr_status": "pending",
+    "asr_status": "transcribed",
     "audio_path": null,
     "audio_url": "https://rss.soundon.fm/rssf/35eb55b5-8669-418b-9a08-dc13c482809a/feedurl/26e18739-8297-4041-be8c-c1e5f22cfa0a/rssFileVip.mp3?timestamp=1771841964999",
     "channel_author": "郭哲榮 投資長",
@@ -65,9 +65,15 @@
     "soundon_id": "26e18739-8297-4041-be8c-c1e5f22cfa0a",
     "soundon_updated_at": "2026-02-23T10:19:24.999Z",
     "title": "【記憶體狂漲 但黑天鵝來了 ChatGPT大減支出】2026.02.23哲哲只有60秒#shorts",
-    "transcript_path": null
+    "transcript_path": "data/transcripts/2026-02-23_zhezhe-2026-02-23-26e18739.md",
+    "date": "2026-02-23",
+    "asr_model": "mlx-community/whisper-large-v3-turbo",
+    "asr_at": "2026-05-12T21:29:52Z",
+    "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/26e18739-8297-4041-be8c-c1e5f22cfa0a"
   },
-  "paths": [],
+  "paths": [
+    "data/transcripts/2026-02-23_zhezhe-2026-02-23-26e18739.md"
+  ],
   "context_target_date": "2026-02-23",
   "session_alignment": "same_day_close_after_1335_taipei",
   "baseline_market_context": {
@@ -320,6 +326,29 @@
       "pricing_status": "ok"
     },
     {
+      "asset_name": "華新科",
+      "symbol": "2492.TW",
+      "pricing_symbol": "2492.TW",
+      "asset_type": "stock",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "2492"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2026-02-23",
+        "close": 135.5,
+        "ret_1d_pct": 9.72,
+        "ret_5d_pct": 8.4,
+        "ret_20d_pct": 1.12,
+        "ret_60d_pct": 14.35,
+        "drawdown_60d_pct": -13.97
+      },
+      "pricing_status": "ok"
+    },
+    {
       "asset_name": "長榮",
       "symbol": "2603.TW",
       "pricing_symbol": "2603.TW",
@@ -395,6 +424,7 @@
       "asset_type": "stock",
       "mention_kind": "direct",
       "matched_aliases": [
+        "3037",
         "欣興"
       ],
       "sources": [
@@ -407,6 +437,29 @@
         "ret_5d_pct": 10.94,
         "ret_20d_pct": 62.53,
         "ret_60d_pct": 138.53,
+        "drawdown_60d_pct": 0.0
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "景碩",
+      "symbol": "3189.TW",
+      "pricing_symbol": "3189.TW",
+      "asset_type": "stock",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "景碩"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2026-02-23",
+        "close": 292.0,
+        "ret_1d_pct": 9.98,
+        "ret_5d_pct": 10.82,
+        "ret_20d_pct": 66.86,
+        "ret_60d_pct": 100.69,
         "drawdown_60d_pct": 0.0
       },
       "pricing_status": "ok"
@@ -431,6 +484,53 @@
         "ret_20d_pct": -9.76,
         "ret_60d_pct": -5.47,
         "drawdown_60d_pct": -18.3
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "Nasdaq 100 ETF",
+      "symbol": "QQQ",
+      "pricing_symbol": "QQQ",
+      "asset_type": "etf",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "那斯達克"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2026-02-23",
+        "close": 600.6526,
+        "ret_1d_pct": -1.22,
+        "ret_5d_pct": -0.08,
+        "ret_20d_pct": -3.42,
+        "ret_60d_pct": -0.49,
+        "drawdown_60d_pct": -5.02
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "加權指數",
+      "symbol": "^TWII",
+      "pricing_symbol": "^TWII",
+      "asset_type": "index",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "台灣股市",
+        "台股"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2026-02-23",
+        "close": 33773.2617,
+        "ret_1d_pct": 0.5,
+        "ret_5d_pct": 6.2,
+        "ret_20d_pct": 9.62,
+        "ret_60d_pct": 26.23,
+        "drawdown_60d_pct": 0.0
       },
       "pricing_status": "ok"
     }
@@ -531,6 +631,30 @@
       },
       "pricing_status": "ok",
       "sector_name": "taiwan_etf_bond"
+    },
+    {
+      "asset_name": "國巨",
+      "symbol": "2327.TW",
+      "pricing_symbol": "2327.TW",
+      "asset_type": "stock",
+      "mention_kind": "sector_proxy",
+      "matched_aliases": [
+        "被動元件"
+      ],
+      "sources": [
+        "sector_basket:passive_components"
+      ],
+      "market": {
+        "market_date": "2026-02-23",
+        "close": 281.5,
+        "ret_1d_pct": 9.96,
+        "ret_5d_pct": 9.11,
+        "ret_20d_pct": 2.93,
+        "ret_60d_pct": 22.93,
+        "drawdown_60d_pct": -4.9
+      },
+      "pricing_status": "ok",
+      "sector_name": "passive_components"
     },
     {
       "asset_name": "旺宏",
@@ -690,6 +814,16 @@
         "3006.TW",
         "2337.TW",
         "MU"
+      ]
+    },
+    {
+      "sector_name": "passive_components",
+      "matched_aliases": [
+        "被動元件"
+      ],
+      "proxy_symbols": [
+        "2327.TW",
+        "2492.TW"
       ]
     },
     {

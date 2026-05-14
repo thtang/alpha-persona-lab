@@ -5,7 +5,7 @@
   "published_at": "2025-08-01T15:49:27+08:00",
   "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/8db42dab-c2f5-45ad-ad62-b5f48b8efa45",
   "metadata": {
-    "asr_status": "pending",
+    "asr_status": "transcribed",
     "audio_path": null,
     "audio_url": "https://rss.soundon.fm/rssf/35eb55b5-8669-418b-9a08-dc13c482809a/feedurl/8db42dab-c2f5-45ad-ad62-b5f48b8efa45/rssFileVip.mp3?timestamp=1754034638093",
     "channel_author": "郭哲榮 投資長",
@@ -100,9 +100,15 @@
     "soundon_id": "8db42dab-c2f5-45ad-ad62-b5f48b8efa45",
     "soundon_updated_at": "2025-08-01T07:50:38.093Z",
     "title": "郭哲榮分析師【震撼! 關稅20%! 台股面臨千家廠商倒閉?】2025.08.01",
-    "transcript_path": null
+    "transcript_path": "data/transcripts/2025-08-01_zhezhe-2025-08-01-8db42dab.md",
+    "date": "2025-08-01",
+    "asr_model": "mlx-community/whisper-large-v3-turbo",
+    "asr_at": "2026-05-13T11:19:13Z",
+    "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/8db42dab-c2f5-45ad-ad62-b5f48b8efa45"
   },
-  "paths": [],
+  "paths": [
+    "data/transcripts/2025-08-01_zhezhe-2025-08-01-8db42dab.md"
+  ],
   "context_target_date": "2025-08-01",
   "session_alignment": "same_day_close_after_1335_taipei",
   "baseline_market_context": {
@@ -379,6 +385,30 @@
       "pricing_status": "ok"
     },
     {
+      "asset_name": "廣達",
+      "symbol": "2382.TW",
+      "pricing_symbol": "2382.TW",
+      "asset_type": "stock",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "2382",
+        "廣達"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2025-07-31",
+        "close": 281.5,
+        "ret_1d_pct": 4.26,
+        "ret_5d_pct": 4.65,
+        "ret_20d_pct": 0.54,
+        "ret_60d_pct": 16.11,
+        "drawdown_60d_pct": -0.18
+      },
+      "pricing_status": "ok"
+    },
+    {
       "asset_name": "聯發科",
       "symbol": "2454.TW",
       "pricing_symbol": "2454.TW",
@@ -471,12 +501,59 @@
       "pricing_status": "ok"
     },
     {
+      "asset_name": "NVIDIA",
+      "symbol": "NVDA",
+      "pricing_symbol": "NVDA",
+      "asset_type": "stock",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "黃仁勳"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2025-08-01",
+        "close": 173.6911,
+        "ret_1d_pct": -2.33,
+        "ret_5d_pct": 0.13,
+        "ret_20d_pct": 9.02,
+        "ret_60d_pct": 53.01,
+        "drawdown_60d_pct": -3.1
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "USD/TWD",
+      "symbol": "TWD=X",
+      "pricing_symbol": "TWD=X",
+      "asset_type": "fx",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "台幣"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2025-07-31",
+        "close": 29.906,
+        "ret_1d_pct": 0.26,
+        "ret_5d_pct": 1.75,
+        "ret_20d_pct": 3.42,
+        "ret_60d_pct": -1.2,
+        "drawdown_60d_pct": -1.71
+      },
+      "pricing_status": "ok"
+    },
+    {
       "asset_name": "加權指數",
       "symbol": "^TWII",
       "pricing_symbol": "^TWII",
       "asset_type": "index",
       "mention_kind": "direct",
       "matched_aliases": [
+        "台灣股市",
         "台股",
         "大盤"
       ],
@@ -491,6 +568,29 @@
         "ret_20d_pct": 3.93,
         "ret_60d_pct": 14.07,
         "drawdown_60d_pct": -0.46
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "櫃買指數",
+      "symbol": "^TWOII",
+      "pricing_symbol": "^TWOII",
+      "asset_type": "index",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "上櫃"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2025-08-01",
+        "close": 234.03,
+        "ret_1d_pct": 0.87,
+        "ret_5d_pct": 0.54,
+        "ret_20d_pct": 1.04,
+        "ret_60d_pct": 5.09,
+        "drawdown_60d_pct": -0.69
       },
       "pricing_status": "ok"
     }
@@ -640,30 +740,6 @@
         "ret_20d_pct": 3.11,
         "ret_60d_pct": 20.04,
         "drawdown_60d_pct": -1.86
-      },
-      "pricing_status": "ok",
-      "sector_name": "ai_supply_chain"
-    },
-    {
-      "asset_name": "廣達",
-      "symbol": "2382.TW",
-      "pricing_symbol": "2382.TW",
-      "asset_type": "stock",
-      "mention_kind": "sector_proxy",
-      "matched_aliases": [
-        "AI"
-      ],
-      "sources": [
-        "sector_basket:ai_supply_chain"
-      ],
-      "market": {
-        "market_date": "2025-07-31",
-        "close": 281.5,
-        "ret_1d_pct": 4.26,
-        "ret_5d_pct": 4.65,
-        "ret_20d_pct": 0.54,
-        "ret_60d_pct": 16.11,
-        "drawdown_60d_pct": -0.18
       },
       "pricing_status": "ok",
       "sector_name": "ai_supply_chain"
@@ -834,30 +910,6 @@
         "ret_20d_pct": 24.5,
         "ret_60d_pct": 74.1,
         "drawdown_60d_pct": -4.35
-      },
-      "pricing_status": "ok",
-      "sector_name": "ai_supply_chain"
-    },
-    {
-      "asset_name": "NVIDIA",
-      "symbol": "NVDA",
-      "pricing_symbol": "NVDA",
-      "asset_type": "stock",
-      "mention_kind": "sector_proxy",
-      "matched_aliases": [
-        "AI"
-      ],
-      "sources": [
-        "sector_basket:ai_supply_chain"
-      ],
-      "market": {
-        "market_date": "2025-08-01",
-        "close": 173.6911,
-        "ret_1d_pct": -2.33,
-        "ret_5d_pct": 0.13,
-        "ret_20d_pct": 9.02,
-        "ret_60d_pct": 53.01,
-        "drawdown_60d_pct": -3.1
       },
       "pricing_status": "ok",
       "sector_name": "ai_supply_chain"

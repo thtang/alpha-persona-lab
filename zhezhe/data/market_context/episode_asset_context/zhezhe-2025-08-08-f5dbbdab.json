@@ -5,7 +5,7 @@
   "published_at": "2025-08-08T16:01:08+08:00",
   "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/f5dbbdab-86e4-40ac-abc1-b1c232c43f90",
   "metadata": {
-    "asr_status": "pending",
+    "asr_status": "transcribed",
     "audio_path": null,
     "audio_url": "https://rss.soundon.fm/rssf/35eb55b5-8669-418b-9a08-dc13c482809a/feedurl/f5dbbdab-86e4-40ac-abc1-b1c232c43f90/rssFileVip.mp3?timestamp=1754640093500",
     "channel_author": "郭哲榮 投資長",
@@ -100,9 +100,15 @@
     "soundon_id": "f5dbbdab-86e4-40ac-abc1-b1c232c43f90",
     "soundon_updated_at": "2025-08-08T08:01:33.500Z",
     "title": "郭哲榮分析師【台積電、緯創、廣達營收大不同 台積2000、緯創200、鴻海300、廣達400!?】2025.08.08",
-    "transcript_path": null
+    "transcript_path": "data/transcripts/2025-08-08_zhezhe-2025-08-08-f5dbbdab.md",
+    "date": "2025-08-08",
+    "asr_model": "mlx-community/whisper-large-v3-turbo",
+    "asr_at": "2026-05-13T10:48:36Z",
+    "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/f5dbbdab-86e4-40ac-abc1-b1c232c43f90"
   },
-  "paths": [],
+  "paths": [
+    "data/transcripts/2025-08-08_zhezhe-2025-08-08-f5dbbdab.md"
+  ],
   "context_target_date": "2025-08-08",
   "session_alignment": "same_day_close_after_1335_taipei",
   "baseline_market_context": {
@@ -402,6 +408,30 @@
       "pricing_status": "ok"
     },
     {
+      "asset_name": "南亞科",
+      "symbol": "2408.TW",
+      "pricing_symbol": "2408.TW",
+      "asset_type": "stock",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "2408",
+        "南亞科"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2025-08-08",
+        "close": 43.95,
+        "ret_1d_pct": 4.15,
+        "ret_5d_pct": -1.35,
+        "ret_20d_pct": -6.79,
+        "ret_60d_pct": -2.22,
+        "drawdown_60d_pct": -27.24
+      },
+      "pricing_status": "ok"
+    },
+    {
       "asset_name": "聯發科",
       "symbol": "2454.TW",
       "pricing_symbol": "2454.TW",
@@ -477,6 +507,7 @@
       "asset_type": "stock",
       "mention_kind": "direct",
       "matched_aliases": [
+        "3231",
         "緯創"
       ],
       "sources": [
@@ -494,12 +525,36 @@
       "pricing_status": "ok"
     },
     {
+      "asset_name": "USD/TWD",
+      "symbol": "TWD=X",
+      "pricing_symbol": "TWD=X",
+      "asset_type": "fx",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "台幣"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2025-08-07",
+        "close": 29.8081,
+        "ret_1d_pct": -0.36,
+        "ret_5d_pct": -0.33,
+        "ret_20d_pct": 1.93,
+        "ret_60d_pct": -1.19,
+        "drawdown_60d_pct": -1.31
+      },
+      "pricing_status": "ok"
+    },
+    {
       "asset_name": "加權指數",
       "symbol": "^TWII",
       "pricing_symbol": "^TWII",
       "asset_type": "index",
       "mention_kind": "direct",
       "matched_aliases": [
+        "台灣股市",
         "台股",
         "大盤"
       ],
@@ -619,6 +674,54 @@
       "sector_name": "passive_components"
     },
     {
+      "asset_name": "旺宏",
+      "symbol": "2337.TW",
+      "pricing_symbol": "2337.TW",
+      "asset_type": "stock",
+      "mention_kind": "sector_proxy",
+      "matched_aliases": [
+        "記憶體"
+      ],
+      "sources": [
+        "sector_basket:memory"
+      ],
+      "market": {
+        "market_date": "2025-08-08",
+        "close": 19.05,
+        "ret_1d_pct": 4.1,
+        "ret_5d_pct": 0.53,
+        "ret_20d_pct": -8.85,
+        "ret_60d_pct": -10.98,
+        "drawdown_60d_pct": -16.45
+      },
+      "pricing_status": "ok",
+      "sector_name": "memory"
+    },
+    {
+      "asset_name": "華邦電",
+      "symbol": "2344.TW",
+      "pricing_symbol": "2344.TW",
+      "asset_type": "stock",
+      "mention_kind": "sector_proxy",
+      "matched_aliases": [
+        "記憶體"
+      ],
+      "sources": [
+        "sector_basket:memory"
+      ],
+      "market": {
+        "market_date": "2025-08-08",
+        "close": 17.3591,
+        "ret_1d_pct": 5.76,
+        "ret_5d_pct": 0.58,
+        "ret_20d_pct": -5.68,
+        "ret_60d_pct": -3.86,
+        "drawdown_60d_pct": -17.49
+      },
+      "pricing_status": "ok",
+      "sector_name": "memory"
+    },
+    {
       "asset_name": "金像電",
       "symbol": "2368.TW",
       "pricing_symbol": "2368.TW",
@@ -626,6 +729,7 @@
       "mention_kind": "sector_proxy",
       "matched_aliases": [
         "ABF",
+        "PCB",
         "載板"
       ],
       "sources": [
@@ -650,7 +754,9 @@
       "asset_type": "stock",
       "mention_kind": "sector_proxy",
       "matched_aliases": [
-        "AI"
+        "AI",
+        "AI伺服器",
+        "伺服器"
       ],
       "sources": [
         "sector_basket:ai_supply_chain"
@@ -675,6 +781,7 @@
       "mention_kind": "sector_proxy",
       "matched_aliases": [
         "ABF",
+        "PCB",
         "載板"
       ],
       "sources": [
@@ -765,6 +872,30 @@
       "sector_name": "shipping"
     },
     {
+      "asset_name": "晶豪科",
+      "symbol": "3006.TW",
+      "pricing_symbol": "3006.TW",
+      "asset_type": "stock",
+      "mention_kind": "sector_proxy",
+      "matched_aliases": [
+        "記憶體"
+      ],
+      "sources": [
+        "sector_basket:memory"
+      ],
+      "market": {
+        "market_date": "2025-08-08",
+        "close": 52.5,
+        "ret_1d_pct": 2.14,
+        "ret_5d_pct": 4.58,
+        "ret_20d_pct": 5.21,
+        "ret_60d_pct": -3.83,
+        "drawdown_60d_pct": -11.17
+      },
+      "pricing_status": "ok",
+      "sector_name": "memory"
+    },
+    {
       "asset_name": "景碩",
       "symbol": "3189.TW",
       "pricing_symbol": "3189.TW",
@@ -772,6 +903,7 @@
       "mention_kind": "sector_proxy",
       "matched_aliases": [
         "ABF",
+        "PCB",
         "載板"
       ],
       "sources": [
@@ -796,7 +928,9 @@
       "asset_type": "stock",
       "mention_kind": "sector_proxy",
       "matched_aliases": [
-        "AI"
+        "AI",
+        "AI伺服器",
+        "伺服器"
       ],
       "sources": [
         "sector_basket:ai_supply_chain"
@@ -814,13 +948,39 @@
       "sector_name": "ai_supply_chain"
     },
     {
+      "asset_name": "力積電",
+      "symbol": "6770.TW",
+      "pricing_symbol": "6770.TW",
+      "asset_type": "stock",
+      "mention_kind": "sector_proxy",
+      "matched_aliases": [
+        "記憶體"
+      ],
+      "sources": [
+        "sector_basket:memory"
+      ],
+      "market": {
+        "market_date": "2025-08-08",
+        "close": 14.9,
+        "ret_1d_pct": 0.34,
+        "ret_5d_pct": -0.67,
+        "ret_20d_pct": -4.49,
+        "ret_60d_pct": -6.88,
+        "drawdown_60d_pct": -15.58
+      },
+      "pricing_status": "ok",
+      "sector_name": "memory"
+    },
+    {
       "asset_name": "AMD",
       "symbol": "AMD",
       "pricing_symbol": "AMD",
       "asset_type": "stock",
       "mention_kind": "sector_proxy",
       "matched_aliases": [
-        "AI"
+        "AI",
+        "AI伺服器",
+        "伺服器"
       ],
       "sources": [
         "sector_basket:ai_supply_chain"
@@ -838,13 +998,39 @@
       "sector_name": "ai_supply_chain"
     },
     {
+      "asset_name": "Micron",
+      "symbol": "MU",
+      "pricing_symbol": "MU",
+      "asset_type": "stock",
+      "mention_kind": "sector_proxy",
+      "matched_aliases": [
+        "記憶體"
+      ],
+      "sources": [
+        "sector_basket:memory"
+      ],
+      "market": {
+        "market_date": "2025-08-08",
+        "close": 118.7177,
+        "ret_1d_pct": 6.28,
+        "ret_5d_pct": 13.36,
+        "ret_20d_pct": -4.53,
+        "ret_60d_pct": 22.77,
+        "drawdown_60d_pct": -6.96
+      },
+      "pricing_status": "ok",
+      "sector_name": "memory"
+    },
+    {
       "asset_name": "NVIDIA",
       "symbol": "NVDA",
       "pricing_symbol": "NVDA",
       "asset_type": "stock",
       "mention_kind": "sector_proxy",
       "matched_aliases": [
-        "AI"
+        "AI",
+        "AI伺服器",
+        "伺服器"
       ],
       "sources": [
         "sector_basket:ai_supply_chain"
@@ -868,7 +1054,9 @@
       "asset_type": "etf",
       "mention_kind": "sector_proxy",
       "matched_aliases": [
-        "AI"
+        "AI",
+        "AI伺服器",
+        "伺服器"
       ],
       "sources": [
         "sector_basket:ai_supply_chain"
@@ -888,9 +1076,25 @@
   ],
   "sector_basket_matches": [
     {
+      "sector_name": "memory",
+      "matched_aliases": [
+        "記憶體"
+      ],
+      "proxy_symbols": [
+        "2408.TW",
+        "2344.TW",
+        "6770.TW",
+        "3006.TW",
+        "2337.TW",
+        "MU"
+      ]
+    },
+    {
       "sector_name": "ai_supply_chain",
       "matched_aliases": [
-        "AI"
+        "AI",
+        "AI伺服器",
+        "伺服器"
       ],
       "proxy_symbols": [
         "2330.TW",
@@ -909,6 +1113,7 @@
       "sector_name": "pcb_ccl",
       "matched_aliases": [
         "ABF",
+        "PCB",
         "載板"
       ],
       "proxy_symbols": [

@@ -5,7 +5,7 @@
   "published_at": "2025-09-17T18:19:51+08:00",
   "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/9897f3b8-cf78-4cf8-ab2e-23919a888ccf",
   "metadata": {
-    "asr_status": "pending",
+    "asr_status": "transcribed",
     "audio_path": null,
     "audio_url": "https://rss.soundon.fm/rssf/35eb55b5-8669-418b-9a08-dc13c482809a/feedurl/9897f3b8-cf78-4cf8-ab2e-23919a888ccf/rssFileVip.mp3?timestamp=1758109411722",
     "channel_author": "郭哲榮 投資長",
@@ -65,9 +65,15 @@
     "soundon_id": "9897f3b8-cf78-4cf8-ab2e-23919a888ccf",
     "soundon_updated_at": "2025-09-17T11:43:31.722Z",
     "title": "【就是明天! 降息後 台股大反轉!?】2025.09.17 哲哲只有60秒#shorts",
-    "transcript_path": null
+    "transcript_path": "data/transcripts/2025-09-17_zhezhe-2025-09-17-9897f3b8.md",
+    "date": "2025-09-17",
+    "asr_model": "mlx-community/whisper-large-v3-turbo",
+    "asr_at": "2026-05-13T07:36:58Z",
+    "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/9897f3b8-cf78-4cf8-ab2e-23919a888ccf"
   },
-  "paths": [],
+  "paths": [
+    "data/transcripts/2025-09-17_zhezhe-2025-09-17-9897f3b8.md"
+  ],
   "context_target_date": "2025-09-17",
   "session_alignment": "same_day_close_after_1335_taipei",
   "baseline_market_context": {
@@ -293,6 +299,29 @@
         "ret_20d_pct": 5.2,
         "ret_60d_pct": -1.2,
         "drawdown_60d_pct": -6.02
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "南亞科",
+      "symbol": "2408.TW",
+      "pricing_symbol": "2408.TW",
+      "asset_type": "stock",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "2408"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2025-09-17",
+        "close": 73.3,
+        "ret_1d_pct": 5.92,
+        "ret_5d_pct": 34.74,
+        "ret_20d_pct": 64.53,
+        "ret_60d_pct": 29.28,
+        "drawdown_60d_pct": 0.0
       },
       "pricing_status": "ok"
     },
@@ -554,9 +583,185 @@
       },
       "pricing_status": "ok",
       "sector_name": "taiwan_etf_bond"
+    },
+    {
+      "asset_name": "技嘉",
+      "symbol": "2376.TW",
+      "pricing_symbol": "2376.TW",
+      "asset_type": "stock",
+      "mention_kind": "sector_proxy",
+      "matched_aliases": [
+        "AI",
+        "AI伺服器",
+        "伺服器"
+      ],
+      "sources": [
+        "sector_basket:ai_supply_chain"
+      ],
+      "market": {
+        "market_date": "2025-09-17",
+        "close": 270.0,
+        "ret_1d_pct": -2.35,
+        "ret_5d_pct": -2.53,
+        "ret_20d_pct": 0.0,
+        "ret_60d_pct": -1.44,
+        "drawdown_60d_pct": -6.74
+      },
+      "pricing_status": "ok",
+      "sector_name": "ai_supply_chain"
+    },
+    {
+      "asset_name": "微星",
+      "symbol": "2377.TW",
+      "pricing_symbol": "2377.TW",
+      "asset_type": "stock",
+      "mention_kind": "sector_proxy",
+      "matched_aliases": [
+        "AI",
+        "AI伺服器",
+        "伺服器"
+      ],
+      "sources": [
+        "sector_basket:ai_supply_chain"
+      ],
+      "market": {
+        "market_date": "2025-09-17",
+        "close": 120.5,
+        "ret_1d_pct": -2.03,
+        "ret_5d_pct": -5.12,
+        "ret_20d_pct": -11.03,
+        "ret_60d_pct": -11.66,
+        "drawdown_60d_pct": -18.04
+      },
+      "pricing_status": "ok",
+      "sector_name": "ai_supply_chain"
+    },
+    {
+      "asset_name": "緯穎",
+      "symbol": "6669.TW",
+      "pricing_symbol": "6669.TW",
+      "asset_type": "stock",
+      "mention_kind": "sector_proxy",
+      "matched_aliases": [
+        "AI",
+        "AI伺服器",
+        "伺服器"
+      ],
+      "sources": [
+        "sector_basket:ai_supply_chain"
+      ],
+      "market": {
+        "market_date": "2025-09-17",
+        "close": 3160.0,
+        "ret_1d_pct": -1.25,
+        "ret_5d_pct": -4.53,
+        "ret_20d_pct": 5.86,
+        "ret_60d_pct": 25.65,
+        "drawdown_60d_pct": -7.74
+      },
+      "pricing_status": "ok",
+      "sector_name": "ai_supply_chain"
+    },
+    {
+      "asset_name": "AMD",
+      "symbol": "AMD",
+      "pricing_symbol": "AMD",
+      "asset_type": "stock",
+      "mention_kind": "sector_proxy",
+      "matched_aliases": [
+        "AI",
+        "AI伺服器",
+        "伺服器"
+      ],
+      "sources": [
+        "sector_basket:ai_supply_chain"
+      ],
+      "market": {
+        "market_date": "2025-09-17",
+        "close": 159.16,
+        "ret_1d_pct": -0.81,
+        "ret_5d_pct": -0.24,
+        "ret_20d_pct": -4.44,
+        "ret_60d_pct": 22.83,
+        "drawdown_60d_pct": -13.7
+      },
+      "pricing_status": "ok",
+      "sector_name": "ai_supply_chain"
+    },
+    {
+      "asset_name": "NVIDIA",
+      "symbol": "NVDA",
+      "pricing_symbol": "NVDA",
+      "asset_type": "stock",
+      "mention_kind": "sector_proxy",
+      "matched_aliases": [
+        "AI",
+        "AI伺服器",
+        "伺服器"
+      ],
+      "sources": [
+        "sector_basket:ai_supply_chain"
+      ],
+      "market": {
+        "market_date": "2025-09-17",
+        "close": 170.2713,
+        "ret_1d_pct": -2.62,
+        "ret_5d_pct": -3.96,
+        "ret_20d_pct": -3.04,
+        "ret_60d_pct": 18.12,
+        "drawdown_60d_pct": -7.02
+      },
+      "pricing_status": "ok",
+      "sector_name": "ai_supply_chain"
+    },
+    {
+      "asset_name": "Semiconductor ETF",
+      "symbol": "SOXX",
+      "pricing_symbol": "SOXX",
+      "asset_type": "etf",
+      "mention_kind": "sector_proxy",
+      "matched_aliases": [
+        "AI",
+        "AI伺服器",
+        "伺服器"
+      ],
+      "sources": [
+        "sector_basket:ai_supply_chain"
+      ],
+      "market": {
+        "market_date": "2025-09-17",
+        "close": 257.9928,
+        "ret_1d_pct": -0.02,
+        "ret_5d_pct": 2.22,
+        "ret_20d_pct": 5.68,
+        "ret_60d_pct": 14.38,
+        "drawdown_60d_pct": -0.02
+      },
+      "pricing_status": "ok",
+      "sector_name": "ai_supply_chain"
     }
   ],
   "sector_basket_matches": [
+    {
+      "sector_name": "ai_supply_chain",
+      "matched_aliases": [
+        "AI",
+        "AI伺服器",
+        "伺服器"
+      ],
+      "proxy_symbols": [
+        "2330.TW",
+        "2317.TW",
+        "2382.TW",
+        "6669.TW",
+        "3231.TW",
+        "2376.TW",
+        "2377.TW",
+        "NVDA",
+        "AMD",
+        "SOXX"
+      ]
+    },
     {
       "sector_name": "taiwan_etf_bond",
       "matched_aliases": [

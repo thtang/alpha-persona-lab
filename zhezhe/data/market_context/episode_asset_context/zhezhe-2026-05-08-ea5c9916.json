@@ -5,7 +5,7 @@
   "published_at": "2026-05-08T15:43:32+08:00",
   "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/ea5c9916-0079-4a7b-a42d-cda8ed62a35a",
   "metadata": {
-    "asr_status": "pending",
+    "asr_status": "transcribed",
     "audio_path": null,
     "audio_url": "https://rss.soundon.fm/rssf/35eb55b5-8669-418b-9a08-dc13c482809a/feedurl/ea5c9916-0079-4a7b-a42d-cda8ed62a35a/rssFileVip.mp3?timestamp=1778226229592",
     "channel_author": "郭哲榮 投資長",
@@ -100,9 +100,15 @@
     "soundon_id": "ea5c9916-0079-4a7b-a42d-cda8ed62a35a",
     "soundon_updated_at": "2026-05-08T07:43:49.592Z",
     "title": "郭哲榮分析師【千檔下跌 下週跌千點?】2026/5/8",
-    "transcript_path": null
+    "transcript_path": "data/transcripts/2026-05-08_zhezhe-2026-05-08-ea5c9916.md",
+    "date": "2026-05-08",
+    "asr_model": "mlx-community/whisper-large-v3-turbo",
+    "asr_at": "2026-05-12T15:28:23Z",
+    "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/ea5c9916-0079-4a7b-a42d-cda8ed62a35a"
   },
-  "paths": [],
+  "paths": [
+    "data/transcripts/2026-05-08_zhezhe-2026-05-08-ea5c9916.md"
+  ],
   "context_target_date": "2026-05-08",
   "session_alignment": "same_day_close_after_1335_taipei",
   "baseline_market_context": {
@@ -268,7 +274,8 @@
       "asset_type": "etf",
       "mention_kind": "direct",
       "matched_aliases": [
-        "0050"
+        "0050",
+        "台灣50"
       ],
       "sources": [
         "alias_scan"
@@ -332,6 +339,30 @@
       "pricing_status": "ok"
     },
     {
+      "asset_name": "國巨",
+      "symbol": "2327.TW",
+      "pricing_symbol": "2327.TW",
+      "asset_type": "stock",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "2327",
+        "國巨"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2026-05-08",
+        "close": 389.0,
+        "ret_1d_pct": 4.71,
+        "ret_5d_pct": 22.71,
+        "ret_20d_pct": 38.19,
+        "ret_60d_pct": 40.43,
+        "drawdown_60d_pct": 0.0
+      },
+      "pricing_status": "ok"
+    },
+    {
       "asset_name": "台積電",
       "symbol": "2330.TW",
       "pricing_symbol": "2330.TW",
@@ -385,6 +416,8 @@
       "asset_type": "stock",
       "mention_kind": "direct",
       "matched_aliases": [
+        "2454",
+        "發哥",
         "聯發科"
       ],
       "sources": [
@@ -477,6 +510,7 @@
       "asset_type": "index",
       "mention_kind": "direct",
       "matched_aliases": [
+        "台灣股市",
         "台股",
         "大盤"
       ],
@@ -504,6 +538,7 @@
       "mention_kind": "sector_proxy",
       "matched_aliases": [
         "ETF",
+        "台灣50",
         "美債"
       ],
       "sources": [
@@ -529,6 +564,7 @@
       "mention_kind": "sector_proxy",
       "matched_aliases": [
         "ETF",
+        "台灣50",
         "美債"
       ],
       "sources": [
@@ -554,6 +590,7 @@
       "mention_kind": "sector_proxy",
       "matched_aliases": [
         "ETF",
+        "台灣50",
         "美債"
       ],
       "sources": [
@@ -572,30 +609,6 @@
       "sector_name": "taiwan_etf_bond"
     },
     {
-      "asset_name": "國巨",
-      "symbol": "2327.TW",
-      "pricing_symbol": "2327.TW",
-      "asset_type": "stock",
-      "mention_kind": "sector_proxy",
-      "matched_aliases": [
-        "被動元件"
-      ],
-      "sources": [
-        "sector_basket:passive_components"
-      ],
-      "market": {
-        "market_date": "2026-05-08",
-        "close": 389.0,
-        "ret_1d_pct": 4.71,
-        "ret_5d_pct": 22.71,
-        "ret_20d_pct": 38.19,
-        "ret_60d_pct": 40.43,
-        "drawdown_60d_pct": 0.0
-      },
-      "pricing_status": "ok",
-      "sector_name": "passive_components"
-    },
-    {
       "asset_name": "金像電",
       "symbol": "2368.TW",
       "pricing_symbol": "2368.TW",
@@ -603,6 +616,7 @@
       "mention_kind": "sector_proxy",
       "matched_aliases": [
         "ABF",
+        "PCB",
         "載板"
       ],
       "sources": [
@@ -676,6 +690,7 @@
       "mention_kind": "sector_proxy",
       "matched_aliases": [
         "ABF",
+        "PCB",
         "載板"
       ],
       "sources": [
@@ -773,6 +788,7 @@
       "mention_kind": "sector_proxy",
       "matched_aliases": [
         "ABF",
+        "PCB",
         "載板"
       ],
       "sources": [
@@ -910,6 +926,7 @@
       "sector_name": "pcb_ccl",
       "matched_aliases": [
         "ABF",
+        "PCB",
         "載板"
       ],
       "proxy_symbols": [
@@ -944,6 +961,7 @@
       "sector_name": "taiwan_etf_bond",
       "matched_aliases": [
         "ETF",
+        "台灣50",
         "美債"
       ],
       "proxy_symbols": [

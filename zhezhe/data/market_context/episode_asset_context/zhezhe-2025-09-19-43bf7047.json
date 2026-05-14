@@ -5,7 +5,7 @@
   "published_at": "2025-09-19T19:05:49+08:00",
   "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/43bf7047-e299-4e17-8175-fb98bbcc460c",
   "metadata": {
-    "asr_status": "pending",
+    "asr_status": "transcribed",
     "audio_path": null,
     "audio_url": "https://rss.soundon.fm/rssf/35eb55b5-8669-418b-9a08-dc13c482809a/feedurl/43bf7047-e299-4e17-8175-fb98bbcc460c/rssFileVip.mp3?timestamp=1758280039653",
     "channel_author": "郭哲榮 投資長",
@@ -65,9 +65,15 @@
     "soundon_id": "43bf7047-e299-4e17-8175-fb98bbcc460c",
     "soundon_updated_at": "2025-09-19T11:07:19.653Z",
     "title": "【輝達合夥英特爾 台積完蛋 下週台股最後逃命波?】2025.09.19 哲哲只有60秒#shorts",
-    "transcript_path": null
+    "transcript_path": "data/transcripts/2025-09-19_zhezhe-2025-09-19-43bf7047.md",
+    "date": "2025-09-19",
+    "asr_model": "mlx-community/whisper-large-v3-turbo",
+    "asr_at": "2026-05-13T07:24:02Z",
+    "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/43bf7047-e299-4e17-8175-fb98bbcc460c"
   },
-  "paths": [],
+  "paths": [
+    "data/transcripts/2025-09-19_zhezhe-2025-09-19-43bf7047.md"
+  ],
   "context_target_date": "2025-09-19",
   "session_alignment": "same_day_close_after_1335_taipei",
   "baseline_market_context": {
@@ -226,6 +232,29 @@
     }
   },
   "direct_mentioned_assets": [
+    {
+      "asset_name": "元大台灣50",
+      "symbol": "0050.TW",
+      "pricing_symbol": "0050.TW",
+      "asset_type": "etf",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "0050"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2025-09-19",
+        "close": 56.2067,
+        "ret_1d_pct": 0.09,
+        "ret_5d_pct": 1.79,
+        "ret_20d_pct": 10.14,
+        "ret_60d_pct": 18.87,
+        "drawdown_60d_pct": 0.0
+      },
+      "pricing_status": "ok"
+    },
     {
       "asset_name": "鴻海",
       "symbol": "2317.TW",
@@ -482,30 +511,6 @@
     }
   ],
   "sector_proxy_assets": [
-    {
-      "asset_name": "元大台灣50",
-      "symbol": "0050.TW",
-      "pricing_symbol": "0050.TW",
-      "asset_type": "etf",
-      "mention_kind": "sector_proxy",
-      "matched_aliases": [
-        "美債"
-      ],
-      "sources": [
-        "sector_basket:taiwan_etf_bond"
-      ],
-      "market": {
-        "market_date": "2025-09-19",
-        "close": 56.2067,
-        "ret_1d_pct": 0.09,
-        "ret_5d_pct": 1.79,
-        "ret_20d_pct": 10.14,
-        "ret_60d_pct": 18.87,
-        "drawdown_60d_pct": 0.0
-      },
-      "pricing_status": "ok",
-      "sector_name": "taiwan_etf_bond"
-    },
     {
       "asset_name": "富邦台50",
       "symbol": "006208.TW",

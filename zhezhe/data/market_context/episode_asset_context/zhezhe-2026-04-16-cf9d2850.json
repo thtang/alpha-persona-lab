@@ -5,7 +5,7 @@
   "published_at": "2026-04-16T19:18:42+08:00",
   "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/cf9d2850-8e42-4c37-acbc-b0b24c9cde83",
   "metadata": {
-    "asr_status": "pending",
+    "asr_status": "transcribed",
     "audio_path": null,
     "audio_url": "https://rss.soundon.fm/rssf/35eb55b5-8669-418b-9a08-dc13c482809a/feedurl/cf9d2850-8e42-4c37-acbc-b0b24c9cde83/rssFileVip.mp3?timestamp=1776338419075",
     "channel_author": "郭哲榮 投資長",
@@ -113,9 +113,15 @@
     "soundon_id": "cf9d2850-8e42-4c37-acbc-b0b24c9cde83",
     "soundon_updated_at": "2026-04-16T11:20:19.075Z",
     "title": "【台積法說有夠好 明天四萬點?】2026/4/16哲哲只有60秒",
-    "transcript_path": null
+    "transcript_path": "data/transcripts/2026-04-16_zhezhe-2026-04-16-cf9d2850.md",
+    "date": "2026-04-16",
+    "asr_model": "mlx-community/whisper-large-v3-turbo",
+    "asr_at": "2026-05-12T18:09:39Z",
+    "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/cf9d2850-8e42-4c37-acbc-b0b24c9cde83"
   },
-  "paths": [],
+  "paths": [
+    "data/transcripts/2026-04-16_zhezhe-2026-04-16-cf9d2850.md"
+  ],
   "context_target_date": "2026-04-16",
   "session_alignment": "same_day_close_after_1335_taipei",
   "baseline_market_context": {
@@ -328,6 +334,7 @@
       "asset_type": "stock",
       "mention_kind": "direct",
       "matched_aliases": [
+        "2317",
         "鴻海"
       ],
       "sources": [
@@ -341,6 +348,29 @@
         "ret_20d_pct": -2.36,
         "ret_60d_pct": -9.8,
         "drawdown_60d_pct": -16.02
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "國巨",
+      "symbol": "2327.TW",
+      "pricing_symbol": "2327.TW",
+      "asset_type": "stock",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "2327"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2026-04-16",
+        "close": 325.0,
+        "ret_1d_pct": 0.93,
+        "ret_5d_pct": 15.45,
+        "ret_20d_pct": 13.64,
+        "ret_60d_pct": 36.84,
+        "drawdown_60d_pct": 0.0
       },
       "pricing_status": "ok"
     },
@@ -411,6 +441,29 @@
         "ret_20d_pct": 10.21,
         "ret_60d_pct": 16.67,
         "drawdown_60d_pct": -1.39
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "南亞科",
+      "symbol": "2408.TW",
+      "pricing_symbol": "2408.TW",
+      "asset_type": "stock",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "2408"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2026-04-16",
+        "close": 213.5,
+        "ret_1d_pct": 0.95,
+        "ret_5d_pct": 4.15,
+        "ret_20d_pct": -21.36,
+        "ret_60d_pct": -11.59,
+        "drawdown_60d_pct": -34.61
       },
       "pricing_status": "ok"
     },
@@ -559,6 +612,7 @@
       "asset_type": "index",
       "mention_kind": "direct",
       "matched_aliases": [
+        "台灣股市",
         "台股",
         "大盤"
       ],
@@ -652,30 +706,6 @@
       },
       "pricing_status": "ok",
       "sector_name": "taiwan_etf_bond"
-    },
-    {
-      "asset_name": "國巨",
-      "symbol": "2327.TW",
-      "pricing_symbol": "2327.TW",
-      "asset_type": "stock",
-      "mention_kind": "sector_proxy",
-      "matched_aliases": [
-        "被動元件"
-      ],
-      "sources": [
-        "sector_basket:passive_components"
-      ],
-      "market": {
-        "market_date": "2026-04-16",
-        "close": 325.0,
-        "ret_1d_pct": 0.93,
-        "ret_5d_pct": 15.45,
-        "ret_20d_pct": 13.64,
-        "ret_60d_pct": 36.84,
-        "drawdown_60d_pct": 0.0
-      },
-      "pricing_status": "ok",
-      "sector_name": "passive_components"
     },
     {
       "asset_name": "金像電",

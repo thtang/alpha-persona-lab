@@ -5,7 +5,7 @@
   "published_at": "2026-04-21T18:48:59+08:00",
   "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/12d9f593-ae8b-42d1-87da-3c417a90a19b",
   "metadata": {
-    "asr_status": "pending",
+    "asr_status": "transcribed",
     "audio_path": null,
     "audio_url": "https://rss.soundon.fm/rssf/35eb55b5-8669-418b-9a08-dc13c482809a/feedurl/12d9f593-ae8b-42d1-87da-3c417a90a19b/rssFileVip.mp3?timestamp=1776768664801",
     "channel_author": "郭哲榮 投資長",
@@ -113,9 +113,15 @@
     "soundon_id": "12d9f593-ae8b-42d1-87da-3c417a90a19b",
     "soundon_updated_at": "2026-04-21T10:51:04.801Z",
     "title": "【聯發科都漲停⊕! 台股三萬八 還能追嗎?】2026/4/21哲哲只有60秒",
-    "transcript_path": null
+    "transcript_path": "data/transcripts/2026-04-21_zhezhe-2026-04-21-12d9f593.md",
+    "date": "2026-04-21",
+    "asr_model": "mlx-community/whisper-large-v3-turbo",
+    "asr_at": "2026-05-12T17:47:12Z",
+    "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/12d9f593-ae8b-42d1-87da-3c417a90a19b"
   },
-  "paths": [],
+  "paths": [
+    "data/transcripts/2026-04-21_zhezhe-2026-04-21-12d9f593.md"
+  ],
   "context_target_date": "2026-04-21",
   "session_alignment": "same_day_close_after_1335_taipei",
   "baseline_market_context": {
@@ -369,6 +375,30 @@
       "pricing_status": "ok"
     },
     {
+      "asset_name": "華邦電",
+      "symbol": "2344.TW",
+      "pricing_symbol": "2344.TW",
+      "asset_type": "stock",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "華邦",
+        "華邦電"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2026-04-21",
+        "close": 91.1,
+        "ret_1d_pct": 6.3,
+        "ret_5d_pct": -2.57,
+        "ret_20d_pct": -16.75,
+        "ret_60d_pct": -8.24,
+        "drawdown_60d_pct": -29.56
+      },
+      "pricing_status": "ok"
+    },
+    {
       "asset_name": "微星",
       "symbol": "2377.TW",
       "pricing_symbol": "2377.TW",
@@ -553,12 +583,36 @@
       "pricing_status": "ok"
     },
     {
+      "asset_name": "力積電",
+      "symbol": "6770.TW",
+      "pricing_symbol": "6770.TW",
+      "asset_type": "stock",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "6770"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2026-04-21",
+        "close": 54.0,
+        "ret_1d_pct": 5.06,
+        "ret_5d_pct": -1.1,
+        "ret_20d_pct": -28.48,
+        "ret_60d_pct": 6.51,
+        "drawdown_60d_pct": -29.69
+      },
+      "pricing_status": "ok"
+    },
+    {
       "asset_name": "加權指數",
       "symbol": "^TWII",
       "pricing_symbol": "^TWII",
       "asset_type": "index",
       "mention_kind": "direct",
       "matched_aliases": [
+        "台灣股市",
         "台股",
         "大盤"
       ],
@@ -678,6 +732,30 @@
       "sector_name": "passive_components"
     },
     {
+      "asset_name": "旺宏",
+      "symbol": "2337.TW",
+      "pricing_symbol": "2337.TW",
+      "asset_type": "stock",
+      "mention_kind": "sector_proxy",
+      "matched_aliases": [
+        "記憶體"
+      ],
+      "sources": [
+        "sector_basket:memory"
+      ],
+      "market": {
+        "market_date": "2026-04-21",
+        "close": 132.5,
+        "ret_1d_pct": 9.96,
+        "ret_5d_pct": -14.79,
+        "ret_20d_pct": -17.19,
+        "ret_60d_pct": 117.57,
+        "drawdown_60d_pct": -17.19
+      },
+      "pricing_status": "ok",
+      "sector_name": "memory"
+    },
+    {
       "asset_name": "金像電",
       "symbol": "2368.TW",
       "pricing_symbol": "2368.TW",
@@ -752,6 +830,30 @@
       "sector_name": "pcb_ccl"
     },
     {
+      "asset_name": "南亞科",
+      "symbol": "2408.TW",
+      "pricing_symbol": "2408.TW",
+      "asset_type": "stock",
+      "mention_kind": "sector_proxy",
+      "matched_aliases": [
+        "記憶體"
+      ],
+      "sources": [
+        "sector_basket:memory"
+      ],
+      "market": {
+        "market_date": "2026-04-21",
+        "close": 220.0,
+        "ret_1d_pct": 6.28,
+        "ret_5d_pct": 0.0,
+        "ret_20d_pct": -5.98,
+        "ret_60d_pct": -4.35,
+        "drawdown_60d_pct": -32.62
+      },
+      "pricing_status": "ok",
+      "sector_name": "memory"
+    },
+    {
       "asset_name": "華新科",
       "symbol": "2492.TW",
       "pricing_symbol": "2492.TW",
@@ -774,6 +876,30 @@
       },
       "pricing_status": "ok",
       "sector_name": "passive_components"
+    },
+    {
+      "asset_name": "晶豪科",
+      "symbol": "3006.TW",
+      "pricing_symbol": "3006.TW",
+      "asset_type": "stock",
+      "mention_kind": "sector_proxy",
+      "matched_aliases": [
+        "記憶體"
+      ],
+      "sources": [
+        "sector_basket:memory"
+      ],
+      "market": {
+        "market_date": "2026-04-21",
+        "close": 161.0,
+        "ret_1d_pct": 6.98,
+        "ret_5d_pct": 0.31,
+        "ret_20d_pct": -17.65,
+        "ret_60d_pct": 9.9,
+        "drawdown_60d_pct": -25.81
+      },
+      "pricing_status": "ok",
+      "sector_name": "memory"
     },
     {
       "asset_name": "景碩",
@@ -849,6 +975,30 @@
       "sector_name": "ai_supply_chain"
     },
     {
+      "asset_name": "Micron",
+      "symbol": "MU",
+      "pricing_symbol": "MU",
+      "asset_type": "stock",
+      "mention_kind": "sector_proxy",
+      "matched_aliases": [
+        "記憶體"
+      ],
+      "sources": [
+        "sector_basket:memory"
+      ],
+      "market": {
+        "market_date": "2026-04-21",
+        "close": 449.38,
+        "ret_1d_pct": 0.21,
+        "ret_5d_pct": -3.5,
+        "ret_20d_pct": 11.18,
+        "ret_60d_pct": 12.49,
+        "drawdown_60d_pct": -3.5
+      },
+      "pricing_status": "ok",
+      "sector_name": "memory"
+    },
+    {
       "asset_name": "NVIDIA",
       "symbol": "NVDA",
       "pricing_symbol": "NVDA",
@@ -898,6 +1048,20 @@
     }
   ],
   "sector_basket_matches": [
+    {
+      "sector_name": "memory",
+      "matched_aliases": [
+        "記憶體"
+      ],
+      "proxy_symbols": [
+        "2408.TW",
+        "2344.TW",
+        "6770.TW",
+        "3006.TW",
+        "2337.TW",
+        "MU"
+      ]
+    },
     {
       "sector_name": "ai_supply_chain",
       "matched_aliases": [

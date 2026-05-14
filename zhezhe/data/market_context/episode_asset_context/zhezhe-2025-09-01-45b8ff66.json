@@ -5,7 +5,7 @@
   "published_at": "2025-09-01T18:30:32+08:00",
   "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/45b8ff66-db98-465e-a765-1b0442e8a907",
   "metadata": {
-    "asr_status": "pending",
+    "asr_status": "transcribed",
     "audio_path": null,
     "audio_url": "https://rss.soundon.fm/rssf/35eb55b5-8669-418b-9a08-dc13c482809a/feedurl/45b8ff66-db98-465e-a765-1b0442e8a907/rssFileVip.mp3?timestamp=1756722738435",
     "channel_author": "郭哲榮 投資長",
@@ -65,9 +65,15 @@
     "soundon_id": "45b8ff66-db98-465e-a765-1b0442e8a907",
     "soundon_updated_at": "2025-09-01T10:32:18.435Z",
     "title": "【PCB大逃殺 九月台股崩盤倒數!?】2025.09.01 哲哲只有60秒#shorts",
-    "transcript_path": null
+    "transcript_path": "data/transcripts/2025-09-01_zhezhe-2025-09-01-45b8ff66.md",
+    "date": "2025-09-01",
+    "asr_model": "mlx-community/whisper-large-v3-turbo",
+    "asr_at": "2026-05-13T08:54:06Z",
+    "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/45b8ff66-db98-465e-a765-1b0442e8a907"
   },
-  "paths": [],
+  "paths": [
+    "data/transcripts/2025-09-01_zhezhe-2025-09-01-45b8ff66.md"
+  ],
   "context_target_date": "2025-09-01",
   "session_alignment": "same_day_close_after_1335_taipei",
   "baseline_market_context": {
@@ -412,6 +418,29 @@
       "pricing_status": "ok"
     },
     {
+      "asset_name": "景碩",
+      "symbol": "3189.TW",
+      "pricing_symbol": "3189.TW",
+      "asset_type": "stock",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "景碩"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2025-09-01",
+        "close": 105.5,
+        "ret_1d_pct": -7.05,
+        "ret_5d_pct": -1.86,
+        "ret_20d_pct": 3.94,
+        "ret_60d_pct": 31.44,
+        "drawdown_60d_pct": -7.86
+      },
+      "pricing_status": "ok"
+    },
+    {
       "asset_name": "緯創",
       "symbol": "3231.TW",
       "pricing_symbol": "3231.TW",
@@ -431,6 +460,29 @@
         "ret_20d_pct": -8.37,
         "ret_60d_pct": -0.45,
         "drawdown_60d_pct": -14.12
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "USD/TWD",
+      "symbol": "TWD=X",
+      "pricing_symbol": "TWD=X",
+      "asset_type": "fx",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "台幣"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2025-09-01",
+        "close": 30.6253,
+        "ret_1d_pct": 0.21,
+        "ret_5d_pct": 0.6,
+        "ret_20d_pct": 2.48,
+        "ret_60d_pct": 2.38,
+        "drawdown_60d_pct": 0.0
       },
       "pricing_status": "ok"
     },
@@ -599,30 +651,6 @@
         "ret_20d_pct": 5.42,
         "ret_60d_pct": 48.5,
         "drawdown_60d_pct": -10.33
-      },
-      "pricing_status": "ok",
-      "sector_name": "pcb_ccl"
-    },
-    {
-      "asset_name": "景碩",
-      "symbol": "3189.TW",
-      "pricing_symbol": "3189.TW",
-      "asset_type": "stock",
-      "mention_kind": "sector_proxy",
-      "matched_aliases": [
-        "PCB"
-      ],
-      "sources": [
-        "sector_basket:pcb_ccl"
-      ],
-      "market": {
-        "market_date": "2025-09-01",
-        "close": 105.5,
-        "ret_1d_pct": -7.05,
-        "ret_5d_pct": -1.86,
-        "ret_20d_pct": 3.94,
-        "ret_60d_pct": 31.44,
-        "drawdown_60d_pct": -7.86
       },
       "pricing_status": "ok",
       "sector_name": "pcb_ccl"

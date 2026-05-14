@@ -5,7 +5,7 @@
   "published_at": "2025-08-26T15:58:58+08:00",
   "source_url": "https://player.soundon.fm/p/7c9b0925-29e2-472c-8120-15b13e70b377/episodes/5d11368b-1c25-4fec-80ae-dac9408e518b",
   "metadata": {
-    "asr_status": "pending",
+    "asr_status": "transcribed",
     "audio_path": null,
     "audio_url": "https://rss.soundon.fm/rssf/7c9b0925-29e2-472c-8120-15b13e70b377/feedurl/5d11368b-1c25-4fec-80ae-dac9408e518b/rssFileVip.mp3?timestamp=1756197301392",
     "channel_author": "摩爾證券投資顧問股份有限公司",
@@ -39,9 +39,15 @@
     "soundon_id": "5d11368b-1c25-4fec-80ae-dac9408e518b",
     "soundon_updated_at": "2025-08-26T08:35:01.392Z",
     "title": "郭哲榮分析師【開除FED理事 台股及美債最大危機?】2025.08.26",
-    "transcript_path": null
+    "transcript_path": "data/transcripts/2025-08-26_zhezhe-2025-08-26-5d11368b.md",
+    "date": "2025-08-26",
+    "asr_model": "mlx-community/whisper-large-v3-turbo",
+    "asr_at": "2026-05-13T09:33:13Z",
+    "source_url": "https://player.soundon.fm/p/7c9b0925-29e2-472c-8120-15b13e70b377/episodes/5d11368b-1c25-4fec-80ae-dac9408e518b"
   },
-  "paths": [],
+  "paths": [
+    "data/transcripts/2025-08-26_zhezhe-2025-08-26-5d11368b.md"
+  ],
   "context_target_date": "2025-08-26",
   "session_alignment": "same_day_close_after_1335_taipei",
   "baseline_market_context": {
@@ -201,13 +207,108 @@
   },
   "direct_mentioned_assets": [
     {
+      "asset_name": "台積電",
+      "symbol": "2330.TW",
+      "pricing_symbol": "2330.TW",
+      "asset_type": "stock",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "台積",
+        "台積電"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2025-08-26",
+        "close": 1162.6372,
+        "ret_1d_pct": 0.43,
+        "ret_5d_pct": -0.84,
+        "ret_20d_pct": 2.62,
+        "ret_60d_pct": 24.73,
+        "drawdown_60d_pct": -2.08
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "廣達",
+      "symbol": "2382.TW",
+      "pricing_symbol": "2382.TW",
+      "asset_type": "stock",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "2382"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2025-08-26",
+        "close": 265.0,
+        "ret_1d_pct": -1.12,
+        "ret_5d_pct": -1.12,
+        "ret_20d_pct": -2.57,
+        "ret_60d_pct": 2.45,
+        "drawdown_60d_pct": -8.78
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "景碩",
+      "symbol": "3189.TW",
+      "pricing_symbol": "3189.TW",
+      "asset_type": "stock",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "景碩"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2025-08-26",
+        "close": 114.0,
+        "ret_1d_pct": 6.05,
+        "ret_5d_pct": 5.07,
+        "ret_20d_pct": 14.0,
+        "ret_60d_pct": 49.39,
+        "drawdown_60d_pct": 0.0
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "Nasdaq 100 ETF",
+      "symbol": "QQQ",
+      "pricing_symbol": "QQQ",
+      "asset_type": "etf",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "納斯達克"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2025-08-26",
+        "close": 570.4916,
+        "ret_1d_pct": 0.4,
+        "ret_5d_pct": 0.58,
+        "ret_20d_pct": 0.94,
+        "ret_60d_pct": 10.43,
+        "drawdown_60d_pct": -1.33
+      },
+      "pricing_status": "ok"
+    },
+    {
       "asset_name": "加權指數",
       "symbol": "^TWII",
       "pricing_symbol": "^TWII",
       "asset_type": "index",
       "mention_kind": "direct",
       "matched_aliases": [
-        "台股"
+        "台灣股市",
+        "台股",
+        "大盤"
       ],
       "sources": [
         "alias_scan"
@@ -232,6 +333,7 @@
       "asset_type": "etf",
       "mention_kind": "sector_proxy",
       "matched_aliases": [
+        "債券",
         "美債"
       ],
       "sources": [
@@ -256,6 +358,7 @@
       "asset_type": "etf",
       "mention_kind": "sector_proxy",
       "matched_aliases": [
+        "債券",
         "美債"
       ],
       "sources": [
@@ -280,6 +383,7 @@
       "asset_type": "etf",
       "mention_kind": "sector_proxy",
       "matched_aliases": [
+        "債券",
         "美債"
       ],
       "sources": [
@@ -304,6 +408,7 @@
       "asset_type": "etf",
       "mention_kind": "sector_proxy",
       "matched_aliases": [
+        "債券",
         "美債"
       ],
       "sources": [
@@ -320,12 +425,101 @@
       },
       "pricing_status": "ok",
       "sector_name": "taiwan_etf_bond"
+    },
+    {
+      "asset_name": "金像電",
+      "symbol": "2368.TW",
+      "pricing_symbol": "2368.TW",
+      "asset_type": "stock",
+      "mention_kind": "sector_proxy",
+      "matched_aliases": [
+        "ABF",
+        "載板"
+      ],
+      "sources": [
+        "sector_basket:pcb_ccl"
+      ],
+      "market": {
+        "market_date": "2025-08-26",
+        "close": 458.0,
+        "ret_1d_pct": -1.61,
+        "ret_5d_pct": -2.14,
+        "ret_20d_pct": 32.75,
+        "ret_60d_pct": 83.7,
+        "drawdown_60d_pct": -4.28
+      },
+      "pricing_status": "ok",
+      "sector_name": "pcb_ccl"
+    },
+    {
+      "asset_name": "台光電",
+      "symbol": "2383.TW",
+      "pricing_symbol": "2383.TW",
+      "asset_type": "stock",
+      "mention_kind": "sector_proxy",
+      "matched_aliases": [
+        "ABF",
+        "載板"
+      ],
+      "sources": [
+        "sector_basket:pcb_ccl"
+      ],
+      "market": {
+        "market_date": "2025-08-26",
+        "close": 1233.813,
+        "ret_1d_pct": 0.0,
+        "ret_5d_pct": 1.63,
+        "ret_20d_pct": 21.95,
+        "ret_60d_pct": 64.91,
+        "drawdown_60d_pct": -4.21
+      },
+      "pricing_status": "ok",
+      "sector_name": "pcb_ccl"
+    },
+    {
+      "asset_name": "欣興",
+      "symbol": "3037.TW",
+      "pricing_symbol": "3037.TW",
+      "asset_type": "stock",
+      "mention_kind": "sector_proxy",
+      "matched_aliases": [
+        "ABF",
+        "載板"
+      ],
+      "sources": [
+        "sector_basket:pcb_ccl"
+      ],
+      "market": {
+        "market_date": "2025-08-26",
+        "close": 142.0,
+        "ret_1d_pct": 1.43,
+        "ret_5d_pct": 2.16,
+        "ret_20d_pct": 6.77,
+        "ret_60d_pct": 42.32,
+        "drawdown_60d_pct": -0.35
+      },
+      "pricing_status": "ok",
+      "sector_name": "pcb_ccl"
     }
   ],
   "sector_basket_matches": [
     {
+      "sector_name": "pcb_ccl",
+      "matched_aliases": [
+        "ABF",
+        "載板"
+      ],
+      "proxy_symbols": [
+        "2383.TW",
+        "2368.TW",
+        "3037.TW",
+        "3189.TW"
+      ]
+    },
+    {
       "sector_name": "taiwan_etf_bond",
       "matched_aliases": [
+        "債券",
         "美債"
       ],
       "proxy_symbols": [

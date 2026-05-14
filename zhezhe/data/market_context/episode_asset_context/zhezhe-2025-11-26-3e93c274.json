@@ -5,7 +5,7 @@
   "published_at": "2025-11-26T16:08:22+08:00",
   "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/3e93c274-bd42-4eba-91ef-6f4c07a9b306",
   "metadata": {
-    "asr_status": "pending",
+    "asr_status": "transcribed",
     "audio_path": null,
     "audio_url": "https://rss.soundon.fm/rssf/35eb55b5-8669-418b-9a08-dc13c482809a/feedurl/3e93c274-bd42-4eba-91ef-6f4c07a9b306/rssFileVip.mp3?timestamp=1764144555609",
     "channel_author": "郭哲榮 投資長",
@@ -100,9 +100,15 @@
     "soundon_id": "3e93c274-bd42-4eba-91ef-6f4c07a9b306",
     "soundon_updated_at": "2025-11-26T08:09:15.609Z",
     "title": "郭哲榮分析師【Google壓垮輝達 AI大泡沫?】2025.11.26",
-    "transcript_path": null
+    "transcript_path": "data/transcripts/2025-11-26_zhezhe-2025-11-26-3e93c274.md",
+    "date": "2025-11-26",
+    "asr_model": "mlx-community/whisper-large-v3-turbo",
+    "asr_at": "2026-05-13T03:03:10Z",
+    "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/3e93c274-bd42-4eba-91ef-6f4c07a9b306"
   },
-  "paths": [],
+  "paths": [
+    "data/transcripts/2025-11-26_zhezhe-2025-11-26-3e93c274.md"
+  ],
   "context_target_date": "2025-11-26",
   "session_alignment": "same_day_close_after_1335_taipei",
   "baseline_market_context": {
@@ -379,6 +385,29 @@
       "pricing_status": "ok"
     },
     {
+      "asset_name": "南亞科",
+      "symbol": "2408.TW",
+      "pricing_symbol": "2408.TW",
+      "asset_type": "stock",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "南亞科"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2025-11-26",
+        "close": 136.5,
+        "ret_1d_pct": -4.88,
+        "ret_5d_pct": -14.69,
+        "ret_20d_pct": 2.63,
+        "ret_60d_pct": 192.6,
+        "drawdown_60d_pct": -18.02
+      },
+      "pricing_status": "ok"
+    },
+    {
       "asset_name": "聯發科",
       "symbol": "2454.TW",
       "pricing_symbol": "2454.TW",
@@ -454,6 +483,7 @@
       "asset_type": "stock",
       "mention_kind": "direct",
       "matched_aliases": [
+        "3231",
         "緯創"
       ],
       "sources": [
@@ -477,6 +507,7 @@
       "asset_type": "stock",
       "mention_kind": "direct",
       "matched_aliases": [
+        "NVIDIA",
         "輝達"
       ],
       "sources": [
@@ -500,6 +531,7 @@
       "asset_type": "index",
       "mention_kind": "direct",
       "matched_aliases": [
+        "台灣股市",
         "台股",
         "大盤"
       ],
@@ -619,6 +651,54 @@
       "sector_name": "passive_components"
     },
     {
+      "asset_name": "旺宏",
+      "symbol": "2337.TW",
+      "pricing_symbol": "2337.TW",
+      "asset_type": "stock",
+      "mention_kind": "sector_proxy",
+      "matched_aliases": [
+        "記憶體"
+      ],
+      "sources": [
+        "sector_basket:memory"
+      ],
+      "market": {
+        "market_date": "2025-11-26",
+        "close": 32.85,
+        "ret_1d_pct": -4.78,
+        "ret_5d_pct": -9.75,
+        "ret_20d_pct": -14.68,
+        "ret_60d_pct": 63.43,
+        "drawdown_60d_pct": -19.19
+      },
+      "pricing_status": "ok",
+      "sector_name": "memory"
+    },
+    {
+      "asset_name": "華邦電",
+      "symbol": "2344.TW",
+      "pricing_symbol": "2344.TW",
+      "asset_type": "stock",
+      "mention_kind": "sector_proxy",
+      "matched_aliases": [
+        "記憶體"
+      ],
+      "sources": [
+        "sector_basket:memory"
+      ],
+      "market": {
+        "market_date": "2025-11-26",
+        "close": 53.3208,
+        "ret_1d_pct": -6.78,
+        "ret_5d_pct": -9.76,
+        "ret_20d_pct": -0.74,
+        "ret_60d_pct": 173.47,
+        "drawdown_60d_pct": -19.03
+      },
+      "pricing_status": "ok",
+      "sector_name": "memory"
+    },
+    {
       "asset_name": "金像電",
       "symbol": "2368.TW",
       "pricing_symbol": "2368.TW",
@@ -650,7 +730,10 @@
       "asset_type": "stock",
       "mention_kind": "sector_proxy",
       "matched_aliases": [
-        "AI"
+        "AI",
+        "AI伺服器",
+        "人工智慧",
+        "伺服器"
       ],
       "sources": [
         "sector_basket:ai_supply_chain"
@@ -674,7 +757,10 @@
       "asset_type": "stock",
       "mention_kind": "sector_proxy",
       "matched_aliases": [
-        "AI"
+        "AI",
+        "AI伺服器",
+        "人工智慧",
+        "伺服器"
       ],
       "sources": [
         "sector_basket:ai_supply_chain"
@@ -789,6 +875,54 @@
       "sector_name": "shipping"
     },
     {
+      "asset_name": "晶豪科",
+      "symbol": "3006.TW",
+      "pricing_symbol": "3006.TW",
+      "asset_type": "stock",
+      "mention_kind": "sector_proxy",
+      "matched_aliases": [
+        "記憶體"
+      ],
+      "sources": [
+        "sector_basket:memory"
+      ],
+      "market": {
+        "market_date": "2025-11-26",
+        "close": 80.1,
+        "ret_1d_pct": -1.84,
+        "ret_5d_pct": -6.43,
+        "ret_20d_pct": -8.56,
+        "ret_60d_pct": 39.55,
+        "drawdown_60d_pct": -18.43
+      },
+      "pricing_status": "ok",
+      "sector_name": "memory"
+    },
+    {
+      "asset_name": "奇鋐",
+      "symbol": "3017.TW",
+      "pricing_symbol": "3017.TW",
+      "asset_type": "stock",
+      "mention_kind": "sector_proxy",
+      "matched_aliases": [
+        "散熱"
+      ],
+      "sources": [
+        "sector_basket:cooling"
+      ],
+      "market": {
+        "market_date": "2025-11-26",
+        "close": 1385.0,
+        "ret_1d_pct": 5.32,
+        "ret_5d_pct": 3.36,
+        "ret_20d_pct": 4.14,
+        "ret_60d_pct": 36.45,
+        "drawdown_60d_pct": -10.65
+      },
+      "pricing_status": "ok",
+      "sector_name": "cooling"
+    },
+    {
       "asset_name": "景碩",
       "symbol": "3189.TW",
       "pricing_symbol": "3189.TW",
@@ -814,13 +948,40 @@
       "sector_name": "pcb_ccl"
     },
     {
+      "asset_name": "健策",
+      "symbol": "3653.TW",
+      "pricing_symbol": "3653.TW",
+      "asset_type": "stock",
+      "mention_kind": "sector_proxy",
+      "matched_aliases": [
+        "散熱"
+      ],
+      "sources": [
+        "sector_basket:cooling"
+      ],
+      "market": {
+        "market_date": "2025-11-26",
+        "close": 2635.0,
+        "ret_1d_pct": 1.54,
+        "ret_5d_pct": 7.55,
+        "ret_20d_pct": 24.59,
+        "ret_60d_pct": 38.32,
+        "drawdown_60d_pct": -0.75
+      },
+      "pricing_status": "ok",
+      "sector_name": "cooling"
+    },
+    {
       "asset_name": "緯穎",
       "symbol": "6669.TW",
       "pricing_symbol": "6669.TW",
       "asset_type": "stock",
       "mention_kind": "sector_proxy",
       "matched_aliases": [
-        "AI"
+        "AI",
+        "AI伺服器",
+        "人工智慧",
+        "伺服器"
       ],
       "sources": [
         "sector_basket:ai_supply_chain"
@@ -838,13 +999,64 @@
       "sector_name": "ai_supply_chain"
     },
     {
+      "asset_name": "力積電",
+      "symbol": "6770.TW",
+      "pricing_symbol": "6770.TW",
+      "asset_type": "stock",
+      "mention_kind": "sector_proxy",
+      "matched_aliases": [
+        "記憶體"
+      ],
+      "sources": [
+        "sector_basket:memory"
+      ],
+      "market": {
+        "market_date": "2025-11-26",
+        "close": 31.65,
+        "ret_1d_pct": -4.95,
+        "ret_5d_pct": -10.47,
+        "ret_20d_pct": -1.86,
+        "ret_60d_pct": 97.2,
+        "drawdown_60d_pct": -13.29
+      },
+      "pricing_status": "ok",
+      "sector_name": "memory"
+    },
+    {
+      "asset_name": "高力",
+      "symbol": "8996.TW",
+      "pricing_symbol": "8996.TW",
+      "asset_type": "stock",
+      "mention_kind": "sector_proxy",
+      "matched_aliases": [
+        "散熱"
+      ],
+      "sources": [
+        "sector_basket:cooling"
+      ],
+      "market": {
+        "market_date": "2025-11-26",
+        "close": 499.2938,
+        "ret_1d_pct": -4.38,
+        "ret_5d_pct": 1.41,
+        "ret_20d_pct": -16.75,
+        "ret_60d_pct": 32.11,
+        "drawdown_60d_pct": -24.17
+      },
+      "pricing_status": "ok",
+      "sector_name": "cooling"
+    },
+    {
       "asset_name": "AMD",
       "symbol": "AMD",
       "pricing_symbol": "AMD",
       "asset_type": "stock",
       "mention_kind": "sector_proxy",
       "matched_aliases": [
-        "AI"
+        "AI",
+        "AI伺服器",
+        "人工智慧",
+        "伺服器"
       ],
       "sources": [
         "sector_basket:ai_supply_chain"
@@ -862,13 +1074,40 @@
       "sector_name": "ai_supply_chain"
     },
     {
+      "asset_name": "Micron",
+      "symbol": "MU",
+      "pricing_symbol": "MU",
+      "asset_type": "stock",
+      "mention_kind": "sector_proxy",
+      "matched_aliases": [
+        "記憶體"
+      ],
+      "sources": [
+        "sector_basket:memory"
+      ],
+      "market": {
+        "market_date": "2025-11-26",
+        "close": 230.0704,
+        "ret_1d_pct": 2.55,
+        "ret_5d_pct": 1.92,
+        "ret_20d_pct": 1.6,
+        "ret_60d_pct": 94.07,
+        "drawdown_60d_pct": -9.1
+      },
+      "pricing_status": "ok",
+      "sector_name": "memory"
+    },
+    {
       "asset_name": "Semiconductor ETF",
       "symbol": "SOXX",
       "pricing_symbol": "SOXX",
       "asset_type": "etf",
       "mention_kind": "sector_proxy",
       "matched_aliases": [
-        "AI"
+        "AI",
+        "AI伺服器",
+        "人工智慧",
+        "伺服器"
       ],
       "sources": [
         "sector_basket:ai_supply_chain"
@@ -888,9 +1127,26 @@
   ],
   "sector_basket_matches": [
     {
+      "sector_name": "memory",
+      "matched_aliases": [
+        "記憶體"
+      ],
+      "proxy_symbols": [
+        "2408.TW",
+        "2344.TW",
+        "6770.TW",
+        "3006.TW",
+        "2337.TW",
+        "MU"
+      ]
+    },
+    {
       "sector_name": "ai_supply_chain",
       "matched_aliases": [
-        "AI"
+        "AI",
+        "AI伺服器",
+        "人工智慧",
+        "伺服器"
       ],
       "proxy_symbols": [
         "2330.TW",
@@ -903,6 +1159,17 @@
         "NVDA",
         "AMD",
         "SOXX"
+      ]
+    },
+    {
+      "sector_name": "cooling",
+      "matched_aliases": [
+        "散熱"
+      ],
+      "proxy_symbols": [
+        "3017.TW",
+        "3653.TW",
+        "8996.TW"
       ]
     },
     {

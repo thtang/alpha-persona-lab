@@ -5,7 +5,7 @@
   "published_at": "2025-12-08T18:49:18+08:00",
   "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/32dc42ed-b297-4022-9552-4f87198f95a1",
   "metadata": {
-    "asr_status": "pending",
+    "asr_status": "transcribed",
     "audio_path": null,
     "audio_url": "https://rss.soundon.fm/rssf/35eb55b5-8669-418b-9a08-dc13c482809a/feedurl/32dc42ed-b297-4022-9552-4f87198f95a1/rssFileVip.mp3?timestamp=1765191317021",
     "channel_author": "郭哲榮 投資長",
@@ -65,9 +65,15 @@
     "soundon_id": "32dc42ed-b297-4022-9552-4f87198f95a1",
     "soundon_updated_at": "2025-12-08T10:55:17.021Z",
     "title": "【緯創 廣達鬼營收! 記憶體噴 換老AI接棒!】2025.12.08 哲哲只有60秒#shorts",
-    "transcript_path": null
+    "transcript_path": "data/transcripts/2025-12-08_zhezhe-2025-12-08-32dc42ed.md",
+    "date": "2025-12-08",
+    "asr_model": "mlx-community/whisper-large-v3-turbo",
+    "asr_at": "2026-05-13T02:06:38Z",
+    "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/32dc42ed-b297-4022-9552-4f87198f95a1"
   },
-  "paths": [],
+  "paths": [
+    "data/transcripts/2025-12-08_zhezhe-2025-12-08-32dc42ed.md"
+  ],
   "context_target_date": "2025-12-08",
   "session_alignment": "same_day_close_after_1335_taipei",
   "baseline_market_context": {
@@ -227,6 +233,29 @@
   },
   "direct_mentioned_assets": [
     {
+      "asset_name": "元大台灣50",
+      "symbol": "0050.TW",
+      "pricing_symbol": "0050.TW",
+      "asset_type": "etf",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "0050"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2025-12-08",
+        "close": 62.8134,
+        "ret_1d_pct": 1.51,
+        "ret_5d_pct": 3.58,
+        "ret_20d_pct": 0.55,
+        "ret_60d_pct": 18.18,
+        "drawdown_60d_pct": -1.62
+      },
+      "pricing_status": "ok"
+    },
+    {
       "asset_name": "鴻海",
       "symbol": "2317.TW",
       "pricing_symbol": "2317.TW",
@@ -293,6 +322,29 @@
         "ret_20d_pct": 2.06,
         "ret_60d_pct": 13.33,
         "drawdown_60d_pct": -3.88
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "南亞科",
+      "symbol": "2408.TW",
+      "pricing_symbol": "2408.TW",
+      "asset_type": "stock",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "南亞科"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2025-12-08",
+        "close": 163.5,
+        "ret_1d_pct": 6.86,
+        "ret_5d_pct": 9.36,
+        "ret_20d_pct": 1.24,
+        "ret_60d_pct": 203.34,
+        "drawdown_60d_pct": -1.8
       },
       "pricing_status": "ok"
     },
@@ -395,6 +447,7 @@
       "asset_type": "stock",
       "mention_kind": "direct",
       "matched_aliases": [
+        "3037",
         "欣興"
       ],
       "sources": [
@@ -433,33 +486,32 @@
         "drawdown_60d_pct": -4.49
       },
       "pricing_status": "ok"
-    }
-  ],
-  "sector_proxy_assets": [
+    },
     {
-      "asset_name": "元大台灣50",
-      "symbol": "0050.TW",
-      "pricing_symbol": "0050.TW",
-      "asset_type": "etf",
-      "mention_kind": "sector_proxy",
+      "asset_name": "加權指數",
+      "symbol": "^TWII",
+      "pricing_symbol": "^TWII",
+      "asset_type": "index",
+      "mention_kind": "direct",
       "matched_aliases": [
-        "美債"
+        "大盤"
       ],
       "sources": [
-        "sector_basket:taiwan_etf_bond"
+        "alias_scan"
       ],
       "market": {
         "market_date": "2025-12-08",
-        "close": 62.8134,
-        "ret_1d_pct": 1.51,
-        "ret_5d_pct": 3.58,
-        "ret_20d_pct": 0.55,
-        "ret_60d_pct": 18.18,
-        "drawdown_60d_pct": -1.62
+        "close": 28303.7793,
+        "ret_1d_pct": 1.15,
+        "ret_5d_pct": 3.52,
+        "ret_20d_pct": 1.56,
+        "ret_60d_pct": 13.87,
+        "drawdown_60d_pct": -0.11
       },
-      "pricing_status": "ok",
-      "sector_name": "taiwan_etf_bond"
-    },
+      "pricing_status": "ok"
+    }
+  ],
+  "sector_proxy_assets": [
     {
       "asset_name": "富邦台50",
       "symbol": "006208.TW",
@@ -627,30 +679,6 @@
       },
       "pricing_status": "ok",
       "sector_name": "ai_supply_chain"
-    },
-    {
-      "asset_name": "南亞科",
-      "symbol": "2408.TW",
-      "pricing_symbol": "2408.TW",
-      "asset_type": "stock",
-      "mention_kind": "sector_proxy",
-      "matched_aliases": [
-        "記憶體"
-      ],
-      "sources": [
-        "sector_basket:memory"
-      ],
-      "market": {
-        "market_date": "2025-12-08",
-        "close": 163.5,
-        "ret_1d_pct": 6.86,
-        "ret_5d_pct": 9.36,
-        "ret_20d_pct": 1.24,
-        "ret_60d_pct": 203.34,
-        "drawdown_60d_pct": -1.8
-      },
-      "pricing_status": "ok",
-      "sector_name": "memory"
     },
     {
       "asset_name": "晶豪科",

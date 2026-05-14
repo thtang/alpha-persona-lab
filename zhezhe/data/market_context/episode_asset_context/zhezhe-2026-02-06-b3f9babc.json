@@ -5,7 +5,7 @@
   "published_at": "2026-02-06T18:32:11+08:00",
   "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/b3f9babc-0365-4034-95a9-37815d14cd8e",
   "metadata": {
-    "asr_status": "pending",
+    "asr_status": "transcribed",
     "audio_path": null,
     "audio_url": "https://rss.soundon.fm/rssf/35eb55b5-8669-418b-9a08-dc13c482809a/feedurl/b3f9babc-0365-4034-95a9-37815d14cd8e/rssFileVip.mp3?timestamp=1770374003148",
     "channel_author": "郭哲榮 投資長",
@@ -113,9 +113,15 @@
     "soundon_id": "b3f9babc-0365-4034-95a9-37815d14cd8e",
     "soundon_updated_at": "2026-02-06T10:33:23.148Z",
     "title": "【記憶體破底翻 崩盤4000點逃命倒數?】2026.02.06 哲哲只有60秒",
-    "transcript_path": null
+    "transcript_path": "data/transcripts/2026-02-06_zhezhe-2026-02-06-b3f9babc.md",
+    "date": "2026-02-06",
+    "asr_model": "mlx-community/whisper-large-v3-turbo",
+    "asr_at": "2026-05-12T21:49:10Z",
+    "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/b3f9babc-0365-4034-95a9-37815d14cd8e"
   },
-  "paths": [],
+  "paths": [
+    "data/transcripts/2026-02-06_zhezhe-2026-02-06-b3f9babc.md"
+  ],
   "context_target_date": "2026-02-06",
   "session_alignment": "same_day_close_after_1335_taipei",
   "baseline_market_context": {
@@ -415,6 +421,52 @@
       "pricing_status": "ok"
     },
     {
+      "asset_name": "台光電",
+      "symbol": "2383.TW",
+      "pricing_symbol": "2383.TW",
+      "asset_type": "stock",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "2383"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2026-02-06",
+        "close": 1925.0,
+        "ret_1d_pct": -1.28,
+        "ret_5d_pct": 10.32,
+        "ret_20d_pct": 23.0,
+        "ret_60d_pct": 43.12,
+        "drawdown_60d_pct": -5.64
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "南亞科",
+      "symbol": "2408.TW",
+      "pricing_symbol": "2408.TW",
+      "asset_type": "stock",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "南亞科"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2026-02-06",
+        "close": 264.0,
+        "ret_1d_pct": -4.0,
+        "ret_5d_pct": -19.14,
+        "ret_20d_pct": 21.38,
+        "ret_60d_pct": 61.96,
+        "drawdown_60d_pct": -19.14
+      },
+      "pricing_status": "ok"
+    },
+    {
       "asset_name": "聯發科",
       "symbol": "2454.TW",
       "pricing_symbol": "2454.TW",
@@ -559,6 +611,7 @@
       "asset_type": "index",
       "mention_kind": "direct",
       "matched_aliases": [
+        "台灣股市",
         "台股",
         "大盤"
       ],
@@ -773,55 +826,6 @@
       },
       "pricing_status": "ok",
       "sector_name": "ai_supply_chain"
-    },
-    {
-      "asset_name": "台光電",
-      "symbol": "2383.TW",
-      "pricing_symbol": "2383.TW",
-      "asset_type": "stock",
-      "mention_kind": "sector_proxy",
-      "matched_aliases": [
-        "ABF",
-        "載板"
-      ],
-      "sources": [
-        "sector_basket:pcb_ccl"
-      ],
-      "market": {
-        "market_date": "2026-02-06",
-        "close": 1925.0,
-        "ret_1d_pct": -1.28,
-        "ret_5d_pct": 10.32,
-        "ret_20d_pct": 23.0,
-        "ret_60d_pct": 43.12,
-        "drawdown_60d_pct": -5.64
-      },
-      "pricing_status": "ok",
-      "sector_name": "pcb_ccl"
-    },
-    {
-      "asset_name": "南亞科",
-      "symbol": "2408.TW",
-      "pricing_symbol": "2408.TW",
-      "asset_type": "stock",
-      "mention_kind": "sector_proxy",
-      "matched_aliases": [
-        "記憶體"
-      ],
-      "sources": [
-        "sector_basket:memory"
-      ],
-      "market": {
-        "market_date": "2026-02-06",
-        "close": 264.0,
-        "ret_1d_pct": -4.0,
-        "ret_5d_pct": -19.14,
-        "ret_20d_pct": 21.38,
-        "ret_60d_pct": 61.96,
-        "drawdown_60d_pct": -19.14
-      },
-      "pricing_status": "ok",
-      "sector_name": "memory"
     },
     {
       "asset_name": "華新科",

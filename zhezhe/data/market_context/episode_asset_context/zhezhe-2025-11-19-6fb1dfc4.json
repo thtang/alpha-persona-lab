@@ -5,7 +5,7 @@
   "published_at": "2025-11-19T18:29:41+08:00",
   "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/6fb1dfc4-d688-47bd-acee-859ee355b3e2",
   "metadata": {
-    "asr_status": "pending",
+    "asr_status": "transcribed",
     "audio_path": null,
     "audio_url": "https://rss.soundon.fm/rssf/35eb55b5-8669-418b-9a08-dc13c482809a/feedurl/6fb1dfc4-d688-47bd-acee-859ee355b3e2/rssFileVip.mp3?timestamp=1763548794356",
     "channel_author": "郭哲榮 投資長",
@@ -65,9 +65,15 @@
     "soundon_id": "6fb1dfc4-d688-47bd-acee-859ee355b3e2",
     "soundon_updated_at": "2025-11-19T10:39:54.356Z",
     "title": "【AI泡沫大破裂 明天輝達財報 崩2000點只是前菜?】2025.11.19 哲哲只有60秒#shorts",
-    "transcript_path": null
+    "transcript_path": "data/transcripts/2025-11-19_zhezhe-2025-11-19-6fb1dfc4.md",
+    "date": "2025-11-19",
+    "asr_model": "mlx-community/whisper-large-v3-turbo",
+    "asr_at": "2026-05-13T03:27:27Z",
+    "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/6fb1dfc4-d688-47bd-acee-859ee355b3e2"
   },
-  "paths": [],
+  "paths": [
+    "data/transcripts/2025-11-19_zhezhe-2025-11-19-6fb1dfc4.md"
+  ],
   "context_target_date": "2025-11-19",
   "session_alignment": "same_day_close_after_1335_taipei",
   "baseline_market_context": {
@@ -226,6 +232,29 @@
     }
   },
   "direct_mentioned_assets": [
+    {
+      "asset_name": "富邦NASDAQ",
+      "symbol": "00662.TW",
+      "pricing_symbol": "00662.TW",
+      "asset_type": "etf",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "00662"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2025-11-19",
+        "close": 98.1,
+        "ret_1d_pct": -0.91,
+        "ret_5d_pct": -3.96,
+        "ret_20d_pct": -0.96,
+        "ret_60d_pct": 7.68,
+        "drawdown_60d_pct": -4.71
+      },
+      "pricing_status": "ok"
+    },
     {
       "asset_name": "鴻海",
       "symbol": "2317.TW",
@@ -435,6 +464,29 @@
       "pricing_status": "ok"
     },
     {
+      "asset_name": "力積電",
+      "symbol": "6770.TW",
+      "pricing_symbol": "6770.TW",
+      "asset_type": "stock",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "6770"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2025-11-19",
+        "close": 35.35,
+        "ret_1d_pct": -1.53,
+        "ret_5d_pct": -3.15,
+        "ret_20d_pct": 15.15,
+        "ret_60d_pct": 122.33,
+        "drawdown_60d_pct": -3.15
+      },
+      "pricing_status": "ok"
+    },
+    {
       "asset_name": "NVIDIA",
       "symbol": "NVDA",
       "pricing_symbol": "NVDA",
@@ -503,30 +555,6 @@
         "ret_20d_pct": -4.71,
         "ret_60d_pct": 15.67,
         "drawdown_60d_pct": -7.35
-      },
-      "pricing_status": "ok",
-      "sector_name": "taiwan_etf_bond"
-    },
-    {
-      "asset_name": "富邦NASDAQ",
-      "symbol": "00662.TW",
-      "pricing_symbol": "00662.TW",
-      "asset_type": "etf",
-      "mention_kind": "sector_proxy",
-      "matched_aliases": [
-        "美債"
-      ],
-      "sources": [
-        "sector_basket:taiwan_etf_bond"
-      ],
-      "market": {
-        "market_date": "2025-11-19",
-        "close": 98.1,
-        "ret_1d_pct": -0.91,
-        "ret_5d_pct": -3.96,
-        "ret_20d_pct": -0.96,
-        "ret_60d_pct": 7.68,
-        "drawdown_60d_pct": -4.71
       },
       "pricing_status": "ok",
       "sector_name": "taiwan_etf_bond"

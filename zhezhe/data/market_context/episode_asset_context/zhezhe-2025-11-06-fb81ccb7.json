@@ -5,7 +5,7 @@
   "published_at": "2025-11-06T18:31:09+08:00",
   "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/fb81ccb7-0b8f-46e0-878d-6ed2ac7f28eb",
   "metadata": {
-    "asr_status": "pending",
+    "asr_status": "transcribed",
     "audio_path": null,
     "audio_url": "https://rss.soundon.fm/rssf/35eb55b5-8669-418b-9a08-dc13c482809a/feedurl/fb81ccb7-0b8f-46e0-878d-6ed2ac7f28eb/rssFileVip.mp3?timestamp=1762425129970",
     "channel_author": "郭哲榮 投資長",
@@ -113,9 +113,15 @@
     "soundon_id": "fb81ccb7-0b8f-46e0-878d-6ed2ac7f28eb",
     "soundon_updated_at": "2025-11-06T10:32:09.970Z",
     "title": "【AI記憶體回穩 為何兩萬八站不穩?】2025.11.06 哲哲只有60秒",
-    "transcript_path": null
+    "transcript_path": "data/transcripts/2025-11-06_zhezhe-2025-11-06-fb81ccb7.md",
+    "date": "2025-11-06",
+    "asr_model": "mlx-community/whisper-large-v3-turbo",
+    "asr_at": "2026-05-13T04:17:58Z",
+    "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/fb81ccb7-0b8f-46e0-878d-6ed2ac7f28eb"
   },
-  "paths": [],
+  "paths": [
+    "data/transcripts/2025-11-06_zhezhe-2025-11-06-fb81ccb7.md"
+  ],
   "context_target_date": "2025-11-06",
   "session_alignment": "same_day_close_after_1335_taipei",
   "baseline_market_context": {
@@ -328,6 +334,7 @@
       "asset_type": "stock",
       "mention_kind": "direct",
       "matched_aliases": [
+        "2317",
         "鴻海"
       ],
       "sources": [
@@ -365,6 +372,29 @@
         "ret_20d_pct": 2.09,
         "ret_60d_pct": 25.18,
         "drawdown_60d_pct": -2.98
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "旺宏",
+      "symbol": "2337.TW",
+      "pricing_symbol": "2337.TW",
+      "asset_type": "stock",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "2337"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2025-11-06",
+        "close": 34.45,
+        "ret_1d_pct": 9.89,
+        "ret_5d_pct": -0.58,
+        "ret_20d_pct": 27.12,
+        "ret_60d_pct": 80.84,
+        "drawdown_60d_pct": -10.52
       },
       "pricing_status": "ok"
     },
@@ -503,6 +533,29 @@
         "ret_20d_pct": 12.79,
         "ret_60d_pct": -6.85,
         "drawdown_60d_pct": -7.99
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "晶豪科",
+      "symbol": "3006.TW",
+      "pricing_symbol": "3006.TW",
+      "asset_type": "stock",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "3006"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2025-11-06",
+        "close": 95.6,
+        "ret_1d_pct": 7.78,
+        "ret_5d_pct": -0.73,
+        "ret_20d_pct": 10.27,
+        "ret_60d_pct": 82.1,
+        "drawdown_60d_pct": -0.73
       },
       "pricing_status": "ok"
     },
@@ -678,30 +731,6 @@
       "sector_name": "passive_components"
     },
     {
-      "asset_name": "旺宏",
-      "symbol": "2337.TW",
-      "pricing_symbol": "2337.TW",
-      "asset_type": "stock",
-      "mention_kind": "sector_proxy",
-      "matched_aliases": [
-        "記憶體"
-      ],
-      "sources": [
-        "sector_basket:memory"
-      ],
-      "market": {
-        "market_date": "2025-11-06",
-        "close": 34.45,
-        "ret_1d_pct": 9.89,
-        "ret_5d_pct": -0.58,
-        "ret_20d_pct": 27.12,
-        "ret_60d_pct": 80.84,
-        "drawdown_60d_pct": -10.52
-      },
-      "pricing_status": "ok",
-      "sector_name": "memory"
-    },
-    {
       "asset_name": "華邦電",
       "symbol": "2344.TW",
       "pricing_symbol": "2344.TW",
@@ -846,30 +875,6 @@
       },
       "pricing_status": "ok",
       "sector_name": "passive_components"
-    },
-    {
-      "asset_name": "晶豪科",
-      "symbol": "3006.TW",
-      "pricing_symbol": "3006.TW",
-      "asset_type": "stock",
-      "mention_kind": "sector_proxy",
-      "matched_aliases": [
-        "記憶體"
-      ],
-      "sources": [
-        "sector_basket:memory"
-      ],
-      "market": {
-        "market_date": "2025-11-06",
-        "close": 95.6,
-        "ret_1d_pct": 7.78,
-        "ret_5d_pct": -0.73,
-        "ret_20d_pct": 10.27,
-        "ret_60d_pct": 82.1,
-        "drawdown_60d_pct": -0.73
-      },
-      "pricing_status": "ok",
-      "sector_name": "memory"
     },
     {
       "asset_name": "景碩",

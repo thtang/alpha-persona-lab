@@ -5,7 +5,7 @@
   "published_at": "2026-01-29T18:15:27+08:00",
   "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/56bc0728-68d3-4668-90b0-bcd8aa472916",
   "metadata": {
-    "asr_status": "pending",
+    "asr_status": "transcribed",
     "audio_path": null,
     "audio_url": "https://rss.soundon.fm/rssf/35eb55b5-8669-418b-9a08-dc13c482809a/feedurl/56bc0728-68d3-4668-90b0-bcd8aa472916/rssFileVip.mp3?timestamp=1769681839866",
     "channel_author": "郭哲榮 投資長",
@@ -113,9 +113,15 @@
     "soundon_id": "56bc0728-68d3-4668-90b0-bcd8aa472916",
     "soundon_updated_at": "2026-01-29T10:17:19.866Z",
     "title": "【旺宏獨強 記憶體怎麼了! 台股有大事發生?】2026.01.29 哲哲只有60秒",
-    "transcript_path": null
+    "transcript_path": "data/transcripts/2026-01-29_zhezhe-2026-01-29-56bc0728.md",
+    "date": "2026-01-29",
+    "asr_model": "mlx-community/whisper-large-v3-turbo",
+    "asr_at": "2026-05-12T22:24:30Z",
+    "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/56bc0728-68d3-4668-90b0-bcd8aa472916"
   },
-  "paths": [],
+  "paths": [
+    "data/transcripts/2026-01-29_zhezhe-2026-01-29-56bc0728.md"
+  ],
   "context_target_date": "2026-01-29",
   "session_alignment": "same_day_close_after_1335_taipei",
   "baseline_market_context": {
@@ -576,12 +582,59 @@
       "pricing_status": "ok"
     },
     {
+      "asset_name": "力積電",
+      "symbol": "6770.TW",
+      "pricing_symbol": "6770.TW",
+      "asset_type": "stock",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "6770"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2026-01-29",
+        "close": 65.1,
+        "ret_1d_pct": -0.46,
+        "ret_5d_pct": 2.36,
+        "ret_20d_pct": 64.6,
+        "ret_60d_pct": 124.1,
+        "drawdown_60d_pct": -4.55
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "USD/TWD",
+      "symbol": "TWD=X",
+      "pricing_symbol": "TWD=X",
+      "asset_type": "fx",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "台幣"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2026-01-29",
+        "close": 31.2696,
+        "ret_1d_pct": 0.51,
+        "ret_5d_pct": -1.17,
+        "ret_20d_pct": 0.08,
+        "ret_60d_pct": 1.19,
+        "drawdown_60d_pct": -1.3
+      },
+      "pricing_status": "ok"
+    },
+    {
       "asset_name": "加權指數",
       "symbol": "^TWII",
       "pricing_symbol": "^TWII",
       "asset_type": "index",
       "mention_kind": "direct",
       "matched_aliases": [
+        "台灣股市",
         "台股",
         "大盤"
       ],
@@ -918,30 +971,6 @@
       },
       "pricing_status": "ok",
       "sector_name": "ai_supply_chain"
-    },
-    {
-      "asset_name": "力積電",
-      "symbol": "6770.TW",
-      "pricing_symbol": "6770.TW",
-      "asset_type": "stock",
-      "mention_kind": "sector_proxy",
-      "matched_aliases": [
-        "記憶體"
-      ],
-      "sources": [
-        "sector_basket:memory"
-      ],
-      "market": {
-        "market_date": "2026-01-29",
-        "close": 65.1,
-        "ret_1d_pct": -0.46,
-        "ret_5d_pct": 2.36,
-        "ret_20d_pct": 64.6,
-        "ret_60d_pct": 124.1,
-        "drawdown_60d_pct": -4.55
-      },
-      "pricing_status": "ok",
-      "sector_name": "memory"
     },
     {
       "asset_name": "AMD",

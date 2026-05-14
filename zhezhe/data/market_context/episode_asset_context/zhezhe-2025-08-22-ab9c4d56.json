@@ -5,7 +5,7 @@
   "published_at": "2025-08-22T15:52:01+08:00",
   "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/ab9c4d56-0124-408b-adba-3e9e995d6b55",
   "metadata": {
-    "asr_status": "pending",
+    "asr_status": "transcribed",
     "audio_path": null,
     "audio_url": "https://rss.soundon.fm/rssf/35eb55b5-8669-418b-9a08-dc13c482809a/feedurl/ab9c4d56-0124-408b-adba-3e9e995d6b55/rssFileVip.mp3?timestamp=1755849138537",
     "channel_author": "郭哲榮 投資長",
@@ -100,9 +100,15 @@
     "soundon_id": "ab9c4d56-0124-408b-adba-3e9e995d6b55",
     "soundon_updated_at": "2025-08-22T07:52:18.537Z",
     "title": "郭哲榮分析師【黃仁勳來台 為了新晶片 鴻海、緯創、廣達誰賺?】2025.08.22",
-    "transcript_path": null
+    "transcript_path": "data/transcripts/2025-08-22_zhezhe-2025-08-22-ab9c4d56.md",
+    "date": "2025-08-22",
+    "asr_model": "mlx-community/whisper-large-v3-turbo",
+    "asr_at": "2026-05-13T09:45:56Z",
+    "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/ab9c4d56-0124-408b-adba-3e9e995d6b55"
   },
-  "paths": [],
+  "paths": [
+    "data/transcripts/2025-08-22_zhezhe-2025-08-22-ab9c4d56.md"
+  ],
   "context_target_date": "2025-08-22",
   "session_alignment": "same_day_close_after_1335_taipei",
   "baseline_market_context": {
@@ -268,7 +274,8 @@
       "asset_type": "etf",
       "mention_kind": "direct",
       "matched_aliases": [
-        "0050"
+        "0050",
+        "台灣50"
       ],
       "sources": [
         "alias_scan"
@@ -385,6 +392,7 @@
       "asset_type": "stock",
       "mention_kind": "direct",
       "matched_aliases": [
+        "2382",
         "廣達"
       ],
       "sources": [
@@ -517,12 +525,84 @@
       "pricing_status": "ok"
     },
     {
+      "asset_name": "Nasdaq 100 ETF",
+      "symbol": "QQQ",
+      "pricing_symbol": "QQQ",
+      "asset_type": "etf",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "納斯達克"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2025-08-22",
+        "close": 569.854,
+        "ret_1d_pct": 1.54,
+        "ret_5d_pct": -0.93,
+        "ret_20d_pct": 0.99,
+        "ret_60d_pct": 10.35,
+        "drawdown_60d_pct": -1.44
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "Semiconductor ETF",
+      "symbol": "SOXX",
+      "pricing_symbol": "SOXX",
+      "asset_type": "etf",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "費半"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2025-08-22",
+        "close": 248.0508,
+        "ret_1d_pct": 2.78,
+        "ret_5d_pct": 0.31,
+        "ret_20d_pct": 3.13,
+        "ret_60d_pct": 19.88,
+        "drawdown_60d_pct": -1.99
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "USD/TWD",
+      "symbol": "TWD=X",
+      "pricing_symbol": "TWD=X",
+      "asset_type": "fx",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "匯率",
+        "台幣"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2025-08-21",
+        "close": 30.516,
+        "ret_1d_pct": 0.78,
+        "ret_5d_pct": 1.45,
+        "ret_20d_pct": 3.83,
+        "ret_60d_pct": 2.23,
+        "drawdown_60d_pct": 0.0
+      },
+      "pricing_status": "ok"
+    },
+    {
       "asset_name": "加權指數",
       "symbol": "^TWII",
       "pricing_symbol": "^TWII",
       "asset_type": "index",
       "mention_kind": "direct",
       "matched_aliases": [
+        "加權指數",
+        "台灣股市",
         "台股",
         "大盤"
       ],
@@ -550,6 +630,7 @@
       "mention_kind": "sector_proxy",
       "matched_aliases": [
         "ETF",
+        "台灣50",
         "美債"
       ],
       "sources": [
@@ -575,6 +656,7 @@
       "mention_kind": "sector_proxy",
       "matched_aliases": [
         "ETF",
+        "台灣50",
         "美債"
       ],
       "sources": [
@@ -600,6 +682,7 @@
       "mention_kind": "sector_proxy",
       "matched_aliases": [
         "ETF",
+        "台灣50",
         "美債"
       ],
       "sources": [
@@ -649,6 +732,7 @@
       "mention_kind": "sector_proxy",
       "matched_aliases": [
         "ABF",
+        "PCB",
         "載板"
       ],
       "sources": [
@@ -673,7 +757,9 @@
       "asset_type": "stock",
       "mention_kind": "sector_proxy",
       "matched_aliases": [
-        "AI"
+        "AI",
+        "AI伺服器",
+        "伺服器"
       ],
       "sources": [
         "sector_basket:ai_supply_chain"
@@ -698,6 +784,7 @@
       "mention_kind": "sector_proxy",
       "matched_aliases": [
         "ABF",
+        "PCB",
         "載板"
       ],
       "sources": [
@@ -795,6 +882,7 @@
       "mention_kind": "sector_proxy",
       "matched_aliases": [
         "ABF",
+        "PCB",
         "載板"
       ],
       "sources": [
@@ -819,7 +907,9 @@
       "asset_type": "stock",
       "mention_kind": "sector_proxy",
       "matched_aliases": [
-        "AI"
+        "AI",
+        "AI伺服器",
+        "伺服器"
       ],
       "sources": [
         "sector_basket:ai_supply_chain"
@@ -843,7 +933,9 @@
       "asset_type": "stock",
       "mention_kind": "sector_proxy",
       "matched_aliases": [
-        "AI"
+        "AI",
+        "AI伺服器",
+        "伺服器"
       ],
       "sources": [
         "sector_basket:ai_supply_chain"
@@ -859,37 +951,15 @@
       },
       "pricing_status": "ok",
       "sector_name": "ai_supply_chain"
-    },
-    {
-      "asset_name": "Semiconductor ETF",
-      "symbol": "SOXX",
-      "pricing_symbol": "SOXX",
-      "asset_type": "etf",
-      "mention_kind": "sector_proxy",
-      "matched_aliases": [
-        "AI"
-      ],
-      "sources": [
-        "sector_basket:ai_supply_chain"
-      ],
-      "market": {
-        "market_date": "2025-08-22",
-        "close": 248.0508,
-        "ret_1d_pct": 2.78,
-        "ret_5d_pct": 0.31,
-        "ret_20d_pct": 3.13,
-        "ret_60d_pct": 19.88,
-        "drawdown_60d_pct": -1.99
-      },
-      "pricing_status": "ok",
-      "sector_name": "ai_supply_chain"
     }
   ],
   "sector_basket_matches": [
     {
       "sector_name": "ai_supply_chain",
       "matched_aliases": [
-        "AI"
+        "AI",
+        "AI伺服器",
+        "伺服器"
       ],
       "proxy_symbols": [
         "2330.TW",
@@ -908,6 +978,7 @@
       "sector_name": "pcb_ccl",
       "matched_aliases": [
         "ABF",
+        "PCB",
         "載板"
       ],
       "proxy_symbols": [
@@ -942,6 +1013,7 @@
       "sector_name": "taiwan_etf_bond",
       "matched_aliases": [
         "ETF",
+        "台灣50",
         "美債"
       ],
       "proxy_symbols": [

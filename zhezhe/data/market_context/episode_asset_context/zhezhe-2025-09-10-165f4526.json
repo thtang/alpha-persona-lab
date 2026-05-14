@@ -5,7 +5,7 @@
   "published_at": "2025-09-10T18:37:08+08:00",
   "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/165f4526-1317-40a1-a739-d5ce0ff29192",
   "metadata": {
-    "asr_status": "pending",
+    "asr_status": "transcribed",
     "audio_path": null,
     "audio_url": "https://rss.soundon.fm/rssf/35eb55b5-8669-418b-9a08-dc13c482809a/feedurl/165f4526-1317-40a1-a739-d5ce0ff29192/rssFileVip.mp3?timestamp=1757500698453",
     "channel_author": "郭哲榮 投資長",
@@ -64,9 +64,15 @@
     "soundon_id": "165f4526-1317-40a1-a739-d5ce0ff29192",
     "soundon_updated_at": "2025-09-10T10:38:18.453Z",
     "title": "【本月先上後下 降息後必崩?】2025.09.10 哲哲只有60秒",
-    "transcript_path": null
+    "transcript_path": "data/transcripts/2025-09-10_zhezhe-2025-09-10-165f4526.md",
+    "date": "2025-09-10",
+    "asr_model": "mlx-community/whisper-large-v3-turbo",
+    "asr_at": "2026-05-13T08:09:21Z",
+    "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/165f4526-1317-40a1-a739-d5ce0ff29192"
   },
-  "paths": [],
+  "paths": [
+    "data/transcripts/2025-09-10_zhezhe-2025-09-10-165f4526.md"
+  ],
   "context_target_date": "2025-09-10",
   "session_alignment": "same_day_close_after_1335_taipei",
   "baseline_market_context": {
@@ -296,6 +302,29 @@
       "pricing_status": "ok"
     },
     {
+      "asset_name": "南亞科",
+      "symbol": "2408.TW",
+      "pricing_symbol": "2408.TW",
+      "asset_type": "stock",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "2408"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2025-09-10",
+        "close": 54.4,
+        "ret_1d_pct": 0.93,
+        "ret_5d_pct": 17.37,
+        "ret_20d_pct": 18.13,
+        "ret_60d_pct": 1.12,
+        "drawdown_60d_pct": -9.93
+      },
+      "pricing_status": "ok"
+    },
+    {
       "asset_name": "聯發科",
       "symbol": "2454.TW",
       "pricing_symbol": "2454.TW",
@@ -430,6 +459,29 @@
         "ret_20d_pct": 2.13,
         "ret_60d_pct": 1.69,
         "drawdown_60d_pct": -5.88
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "加權指數",
+      "symbol": "^TWII",
+      "pricing_symbol": "^TWII",
+      "asset_type": "index",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "台股"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2025-09-10",
+        "close": 25192.5898,
+        "ret_1d_pct": 1.36,
+        "ret_5d_pct": 4.53,
+        "ret_20d_pct": 3.38,
+        "ret_60d_pct": 12.68,
+        "drawdown_60d_pct": 0.0
       },
       "pricing_status": "ok"
     }

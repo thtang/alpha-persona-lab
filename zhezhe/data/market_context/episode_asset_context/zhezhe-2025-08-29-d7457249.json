@@ -5,7 +5,7 @@
   "published_at": "2025-08-29T15:53:31+08:00",
   "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/d7457249-7de8-444c-bcbe-dc3c16a1be4e",
   "metadata": {
-    "asr_status": "pending",
+    "asr_status": "transcribed",
     "audio_path": null,
     "audio_url": "https://rss.soundon.fm/rssf/35eb55b5-8669-418b-9a08-dc13c482809a/feedurl/d7457249-7de8-444c-bcbe-dc3c16a1be4e/rssFileVip.mp3?timestamp=1756454040845",
     "channel_author": "郭哲榮 投資長",
@@ -100,9 +100,15 @@
     "soundon_id": "d7457249-7de8-444c-bcbe-dc3c16a1be4e",
     "soundon_updated_at": "2025-08-29T07:54:00.845Z",
     "title": "郭哲榮分析師【台股創歷史高 崩盤卻在眼前? 鴻海、神達、漢翔、南亞科、南電】2025.08.29",
-    "transcript_path": null
+    "transcript_path": "data/transcripts/2025-08-29_zhezhe-2025-08-29-d7457249.md",
+    "date": "2025-08-29",
+    "asr_model": "mlx-community/whisper-large-v3-turbo",
+    "asr_at": "2026-05-13T09:12:59Z",
+    "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/d7457249-7de8-444c-bcbe-dc3c16a1be4e"
   },
-  "paths": [],
+  "paths": [
+    "data/transcripts/2025-08-29_zhezhe-2025-08-29-d7457249.md"
+  ],
   "context_target_date": "2025-08-29",
   "session_alignment": "same_day_close_after_1335_taipei",
   "baseline_market_context": {
@@ -379,12 +385,36 @@
       "pricing_status": "ok"
     },
     {
+      "asset_name": "廣達",
+      "symbol": "2382.TW",
+      "pricing_symbol": "2382.TW",
+      "asset_type": "stock",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "廣達"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2025-08-29",
+        "close": 262.5,
+        "ret_1d_pct": -1.32,
+        "ret_5d_pct": 1.55,
+        "ret_20d_pct": -6.75,
+        "ret_60d_pct": -2.3,
+        "drawdown_60d_pct": -9.64
+      },
+      "pricing_status": "ok"
+    },
+    {
       "asset_name": "南亞科",
       "symbol": "2408.TW",
       "pricing_symbol": "2408.TW",
       "asset_type": "stock",
       "mention_kind": "direct",
       "matched_aliases": [
+        "2408",
         "南亞科"
       ],
       "sources": [
@@ -494,12 +524,36 @@
       "pricing_status": "ok"
     },
     {
+      "asset_name": "S&P 500 ETF",
+      "symbol": "SPY",
+      "pricing_symbol": "SPY",
+      "asset_type": "etf",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "標普"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2025-08-29",
+        "close": 639.6246,
+        "ret_1d_pct": -0.6,
+        "ret_5d_pct": -0.04,
+        "ret_20d_pct": 3.75,
+        "ret_60d_pct": 8.56,
+        "drawdown_60d_pct": -0.6
+      },
+      "pricing_status": "ok"
+    },
+    {
       "asset_name": "加權指數",
       "symbol": "^TWII",
       "pricing_symbol": "^TWII",
       "asset_type": "index",
       "mention_kind": "direct",
       "matched_aliases": [
+        "台灣股市",
         "台股",
         "大盤"
       ],
@@ -663,30 +717,6 @@
         "ret_20d_pct": 0.73,
         "ret_60d_pct": -0.12,
         "drawdown_60d_pct": -4.32
-      },
-      "pricing_status": "ok",
-      "sector_name": "ai_supply_chain"
-    },
-    {
-      "asset_name": "廣達",
-      "symbol": "2382.TW",
-      "pricing_symbol": "2382.TW",
-      "asset_type": "stock",
-      "mention_kind": "sector_proxy",
-      "matched_aliases": [
-        "AI"
-      ],
-      "sources": [
-        "sector_basket:ai_supply_chain"
-      ],
-      "market": {
-        "market_date": "2025-08-29",
-        "close": 262.5,
-        "ret_1d_pct": -1.32,
-        "ret_5d_pct": 1.55,
-        "ret_20d_pct": -6.75,
-        "ret_60d_pct": -2.3,
-        "drawdown_60d_pct": -9.64
       },
       "pricing_status": "ok",
       "sector_name": "ai_supply_chain"

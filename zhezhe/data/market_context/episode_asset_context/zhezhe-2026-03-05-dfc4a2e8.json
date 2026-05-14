@@ -5,7 +5,7 @@
   "published_at": "2026-03-05T19:02:30+08:00",
   "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/dfc4a2e8-3947-4605-a7dd-3f3c69d9686b",
   "metadata": {
-    "asr_status": "pending",
+    "asr_status": "transcribed",
     "audio_path": null,
     "audio_url": "https://rss.soundon.fm/rssf/35eb55b5-8669-418b-9a08-dc13c482809a/feedurl/dfc4a2e8-3947-4605-a7dd-3f3c69d9686b/rssFileVip.mp3?timestamp=1772708595146",
     "channel_author": "郭哲榮 投資長",
@@ -113,9 +113,15 @@
     "soundon_id": "dfc4a2e8-3947-4605-a7dd-3f3c69d9686b",
     "soundon_updated_at": "2026-03-05T11:03:15.146Z",
     "title": "【大漲是假的! 美伊戰爭不會停 台股將崩6000點!】2026/3/5哲哲只有60秒",
-    "transcript_path": null
+    "transcript_path": "data/transcripts/2026-03-05_zhezhe-2026-03-05-dfc4a2e8.md",
+    "date": "2026-03-05",
+    "asr_model": "mlx-community/whisper-large-v3-turbo",
+    "asr_at": "2026-05-12T20:43:47Z",
+    "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/dfc4a2e8-3947-4605-a7dd-3f3c69d9686b"
   },
-  "paths": [],
+  "paths": [
+    "data/transcripts/2026-03-05_zhezhe-2026-03-05-dfc4a2e8.md"
+  ],
   "context_target_date": "2026-03-05",
   "session_alignment": "same_day_close_after_1335_taipei",
   "baseline_market_context": {
@@ -369,6 +375,29 @@
       "pricing_status": "ok"
     },
     {
+      "asset_name": "旺宏",
+      "symbol": "2337.TW",
+      "pricing_symbol": "2337.TW",
+      "asset_type": "stock",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "2337"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2026-03-05",
+        "close": 107.5,
+        "ret_1d_pct": 9.69,
+        "ret_5d_pct": -0.46,
+        "ret_20d_pct": 41.08,
+        "ret_60d_pct": 218.99,
+        "drawdown_60d_pct": -7.33
+      },
+      "pricing_status": "ok"
+    },
+    {
       "asset_name": "微星",
       "symbol": "2377.TW",
       "pricing_symbol": "2377.TW",
@@ -411,6 +440,29 @@
         "ret_20d_pct": 0.87,
         "ret_60d_pct": 2.84,
         "drawdown_60d_pct": -3.82
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "南亞科",
+      "symbol": "2408.TW",
+      "pricing_symbol": "2408.TW",
+      "asset_type": "stock",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "2408"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2026-03-05",
+        "close": 257.5,
+        "ret_1d_pct": 9.81,
+        "ret_5d_pct": -10.59,
+        "ret_20d_pct": -9.97,
+        "ret_60d_pct": 76.37,
+        "drawdown_60d_pct": -21.13
       },
       "pricing_status": "ok"
     },
@@ -513,6 +565,7 @@
       "asset_type": "stock",
       "mention_kind": "direct",
       "matched_aliases": [
+        "3037",
         "欣興"
       ],
       "sources": [
@@ -526,6 +579,29 @@
         "ret_20d_pct": 35.14,
         "ret_60d_pct": 140.64,
         "drawdown_60d_pct": -6.54
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "景碩",
+      "symbol": "3189.TW",
+      "pricing_symbol": "3189.TW",
+      "asset_type": "stock",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "3189"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2026-03-05",
+        "close": 297.5,
+        "ret_1d_pct": 4.57,
+        "ret_5d_pct": -8.6,
+        "ret_20d_pct": 43.03,
+        "ret_60d_pct": 110.99,
+        "drawdown_60d_pct": -8.6
       },
       "pricing_status": "ok"
     },
@@ -774,31 +850,6 @@
       },
       "pricing_status": "ok",
       "sector_name": "passive_components"
-    },
-    {
-      "asset_name": "景碩",
-      "symbol": "3189.TW",
-      "pricing_symbol": "3189.TW",
-      "asset_type": "stock",
-      "mention_kind": "sector_proxy",
-      "matched_aliases": [
-        "ABF",
-        "載板"
-      ],
-      "sources": [
-        "sector_basket:pcb_ccl"
-      ],
-      "market": {
-        "market_date": "2026-03-05",
-        "close": 297.5,
-        "ret_1d_pct": 4.57,
-        "ret_5d_pct": -8.6,
-        "ret_20d_pct": 43.03,
-        "ret_60d_pct": 110.99,
-        "drawdown_60d_pct": -8.6
-      },
-      "pricing_status": "ok",
-      "sector_name": "pcb_ccl"
     },
     {
       "asset_name": "緯穎",

@@ -5,7 +5,7 @@
   "published_at": "2025-08-12T18:42:25+08:00",
   "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/54485560-40f4-4b9c-988e-b063bb6d4811",
   "metadata": {
-    "asr_status": "pending",
+    "asr_status": "transcribed",
     "audio_path": null,
     "audio_url": "https://rss.soundon.fm/rssf/35eb55b5-8669-418b-9a08-dc13c482809a/feedurl/54485560-40f4-4b9c-988e-b063bb6d4811/rssFileVip.mp3?timestamp=1755076807603",
     "channel_author": "郭哲榮 投資長",
@@ -113,9 +113,15 @@
     "soundon_id": "54485560-40f4-4b9c-988e-b063bb6d4811",
     "soundon_updated_at": "2025-08-13T09:20:07.603Z",
     "title": "【台股得了不會跌的病! 美股下跌 台股火山爆發!】2025.08.12 哲哲只有60秒",
-    "transcript_path": null
+    "transcript_path": "data/transcripts/2025-08-12_zhezhe-2025-08-12-54485560.md",
+    "date": "2025-08-12",
+    "asr_model": "mlx-community/whisper-large-v3-turbo",
+    "asr_at": "2026-05-13T10:23:44Z",
+    "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/54485560-40f4-4b9c-988e-b063bb6d4811"
   },
-  "paths": [],
+  "paths": [
+    "data/transcripts/2025-08-12_zhezhe-2025-08-12-54485560.md"
+  ],
   "context_target_date": "2025-08-12",
   "session_alignment": "same_day_close_after_1335_taipei",
   "baseline_market_context": {
@@ -415,6 +421,29 @@
       "pricing_status": "ok"
     },
     {
+      "asset_name": "南亞科",
+      "symbol": "2408.TW",
+      "pricing_symbol": "2408.TW",
+      "asset_type": "stock",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "2408"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2025-08-12",
+        "close": 47.45,
+        "ret_1d_pct": 8.33,
+        "ret_5d_pct": 6.87,
+        "ret_20d_pct": 9.33,
+        "ret_60d_pct": 3.94,
+        "drawdown_60d_pct": -21.44
+      },
+      "pricing_status": "ok"
+    },
+    {
       "asset_name": "聯發科",
       "symbol": "2454.TW",
       "pricing_symbol": "2454.TW",
@@ -549,6 +578,29 @@
         "ret_20d_pct": 7.69,
         "ret_60d_pct": 17.39,
         "drawdown_60d_pct": -1.18
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "USD/TWD",
+      "symbol": "TWD=X",
+      "pricing_symbol": "TWD=X",
+      "asset_type": "fx",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "台幣"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2025-08-12",
+        "close": 29.8781,
+        "ret_1d_pct": -0.23,
+        "ret_5d_pct": -0.2,
+        "ret_20d_pct": 1.67,
+        "ret_60d_pct": -0.89,
+        "drawdown_60d_pct": -0.56
       },
       "pricing_status": "ok"
     },

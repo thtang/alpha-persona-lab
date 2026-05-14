@@ -5,7 +5,7 @@
   "published_at": "2025-09-25T18:34:37+08:00",
   "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/67fe438a-c087-46ce-b3a6-53bdd4178aeb",
   "metadata": {
-    "asr_status": "pending",
+    "asr_status": "transcribed",
     "audio_path": null,
     "audio_url": "https://rss.soundon.fm/rssf/35eb55b5-8669-418b-9a08-dc13c482809a/feedurl/67fe438a-c087-46ce-b3a6-53bdd4178aeb/rssFileVip.mp3?timestamp=1758796577666",
     "channel_author": "郭哲榮 投資長",
@@ -113,9 +113,15 @@
     "soundon_id": "67fe438a-c087-46ce-b3a6-53bdd4178aeb",
     "soundon_updated_at": "2025-09-25T10:36:17.666Z",
     "title": "【台積晶片強迫搬離 1500元遙遙無期 只剩鴻海、廣達、緯創振作?】2025.09.25 哲哲只有60秒",
-    "transcript_path": null
+    "transcript_path": "data/transcripts/2025-09-25_zhezhe-2025-09-25-67fe438a.md",
+    "date": "2025-09-25",
+    "asr_model": "mlx-community/whisper-large-v3-turbo",
+    "asr_at": "2026-05-13T07:00:10Z",
+    "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/67fe438a-c087-46ce-b3a6-53bdd4178aeb"
   },
-  "paths": [],
+  "paths": [
+    "data/transcripts/2025-09-25_zhezhe-2025-09-25-67fe438a.md"
+  ],
   "context_target_date": "2025-09-25",
   "session_alignment": "same_day_close_after_1335_taipei",
   "baseline_market_context": {
@@ -328,6 +334,7 @@
       "asset_type": "stock",
       "mention_kind": "direct",
       "matched_aliases": [
+        "2317",
         "鴻海"
       ],
       "sources": [
@@ -365,6 +372,30 @@
         "ret_20d_pct": 14.25,
         "ret_60d_pct": 22.15,
         "drawdown_60d_pct": -1.49
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "技嘉",
+      "symbol": "2376.TW",
+      "pricing_symbol": "2376.TW",
+      "asset_type": "stock",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "2376",
+        "技嘉"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2025-09-25",
+        "close": 293.0,
+        "ret_1d_pct": 5.4,
+        "ret_5d_pct": 6.35,
+        "ret_20d_pct": 4.27,
+        "ret_60d_pct": 7.9,
+        "drawdown_60d_pct": 0.0
       },
       "pricing_status": "ok"
     },
@@ -701,30 +732,6 @@
       },
       "pricing_status": "ok",
       "sector_name": "pcb_ccl"
-    },
-    {
-      "asset_name": "技嘉",
-      "symbol": "2376.TW",
-      "pricing_symbol": "2376.TW",
-      "asset_type": "stock",
-      "mention_kind": "sector_proxy",
-      "matched_aliases": [
-        "AI"
-      ],
-      "sources": [
-        "sector_basket:ai_supply_chain"
-      ],
-      "market": {
-        "market_date": "2025-09-25",
-        "close": 293.0,
-        "ret_1d_pct": 5.4,
-        "ret_5d_pct": 6.35,
-        "ret_20d_pct": 4.27,
-        "ret_60d_pct": 7.9,
-        "drawdown_60d_pct": 0.0
-      },
-      "pricing_status": "ok",
-      "sector_name": "ai_supply_chain"
     },
     {
       "asset_name": "台光電",

@@ -5,7 +5,7 @@
   "published_at": "2025-12-12T18:47:34+08:00",
   "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/b59693af-f694-4ce7-8fe1-cf48754cbb48",
   "metadata": {
-    "asr_status": "pending",
+    "asr_status": "transcribed",
     "audio_path": null,
     "audio_url": "https://rss.soundon.fm/rssf/35eb55b5-8669-418b-9a08-dc13c482809a/feedurl/b59693af-f694-4ce7-8fe1-cf48754cbb48/rssFileVip.mp3?timestamp=1765537761472",
     "channel_author": "郭哲榮 投資長",
@@ -65,9 +65,15 @@
     "soundon_id": "b59693af-f694-4ce7-8fe1-cf48754cbb48",
     "soundon_updated_at": "2025-12-12T11:09:21.472Z",
     "title": "【完蛋! 新GPT爛爆 台股三萬點沒了?】2025.12.12 哲哲只有60秒#shorts",
-    "transcript_path": null
+    "transcript_path": "data/transcripts/2025-12-12_zhezhe-2025-12-12-b59693af.md",
+    "date": "2025-12-12",
+    "asr_model": "mlx-community/whisper-large-v3-turbo",
+    "asr_at": "2026-05-13T01:42:06Z",
+    "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/b59693af-f694-4ce7-8fe1-cf48754cbb48"
   },
-  "paths": [],
+  "paths": [
+    "data/transcripts/2025-12-12_zhezhe-2025-12-12-b59693af.md"
+  ],
   "context_target_date": "2025-12-12",
   "session_alignment": "same_day_close_after_1335_taipei",
   "baseline_market_context": {
@@ -395,6 +401,7 @@
       "asset_type": "stock",
       "mention_kind": "direct",
       "matched_aliases": [
+        "3037",
         "欣興"
       ],
       "sources": [
@@ -435,12 +442,36 @@
       "pricing_status": "ok"
     },
     {
+      "asset_name": "力積電",
+      "symbol": "6770.TW",
+      "pricing_symbol": "6770.TW",
+      "asset_type": "stock",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "6770"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2025-12-12",
+        "close": 35.1,
+        "ret_1d_pct": 3.85,
+        "ret_5d_pct": 6.69,
+        "ret_20d_pct": 2.78,
+        "ret_60d_pct": 96.64,
+        "drawdown_60d_pct": -3.84
+      },
+      "pricing_status": "ok"
+    },
+    {
       "asset_name": "加權指數",
       "symbol": "^TWII",
       "pricing_symbol": "^TWII",
       "asset_type": "index",
       "mention_kind": "direct",
       "matched_aliases": [
+        "台灣股市",
         "台股"
       ],
       "sources": [

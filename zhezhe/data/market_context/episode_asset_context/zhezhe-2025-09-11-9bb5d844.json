@@ -5,7 +5,7 @@
   "published_at": "2025-09-11T18:44:37+08:00",
   "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/9bb5d844-d462-4825-bd73-9d4d9b601424",
   "metadata": {
-    "asr_status": "pending",
+    "asr_status": "transcribed",
     "audio_path": null,
     "audio_url": "https://rss.soundon.fm/rssf/35eb55b5-8669-418b-9a08-dc13c482809a/feedurl/9bb5d844-d462-4825-bd73-9d4d9b601424/rssFileVip.mp3?timestamp=1757587566485",
     "channel_author": "郭哲榮 投資長",
@@ -113,9 +113,15 @@
     "soundon_id": "9bb5d844-d462-4825-bd73-9d4d9b601424",
     "soundon_updated_at": "2025-09-11T10:46:06.485Z",
     "title": "【中小型股全倒 今晚通膨數據不保?】2025.09.11 哲哲只有60秒",
-    "transcript_path": null
+    "transcript_path": "data/transcripts/2025-09-11_zhezhe-2025-09-11-9bb5d844.md",
+    "date": "2025-09-11",
+    "asr_model": "mlx-community/whisper-large-v3-turbo",
+    "asr_at": "2026-05-13T08:02:49Z",
+    "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/9bb5d844-d462-4825-bd73-9d4d9b601424"
   },
-  "paths": [],
+  "paths": [
+    "data/transcripts/2025-09-11_zhezhe-2025-09-11-9bb5d844.md"
+  ],
   "context_target_date": "2025-09-11",
   "session_alignment": "same_day_close_after_1335_taipei",
   "baseline_market_context": {
@@ -415,6 +421,29 @@
       "pricing_status": "ok"
     },
     {
+      "asset_name": "南亞科",
+      "symbol": "2408.TW",
+      "pricing_symbol": "2408.TW",
+      "asset_type": "stock",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "2408"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2025-09-11",
+        "close": 56.5,
+        "ret_1d_pct": 3.86,
+        "ret_5d_pct": 17.22,
+        "ret_20d_pct": 21.9,
+        "ret_60d_pct": -4.4,
+        "drawdown_60d_pct": -6.46
+      },
+      "pricing_status": "ok"
+    },
+    {
       "asset_name": "聯發科",
       "symbol": "2454.TW",
       "pricing_symbol": "2454.TW",
@@ -553,12 +582,36 @@
       "pricing_status": "ok"
     },
     {
+      "asset_name": "USD/TWD",
+      "symbol": "TWD=X",
+      "pricing_symbol": "TWD=X",
+      "asset_type": "fx",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "台幣"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2025-09-11",
+        "close": 30.29,
+        "ret_1d_pct": 0.18,
+        "ret_5d_pct": -1.32,
+        "ret_20d_pct": 0.7,
+        "ret_60d_pct": 2.43,
+        "drawdown_60d_pct": -1.48
+      },
+      "pricing_status": "ok"
+    },
+    {
       "asset_name": "加權指數",
       "symbol": "^TWII",
       "pricing_symbol": "^TWII",
       "asset_type": "index",
       "mention_kind": "direct",
       "matched_aliases": [
+        "台灣股市",
         "台股",
         "大盤"
       ],

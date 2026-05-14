@@ -5,7 +5,7 @@
   "published_at": "2026-03-12T18:01:31+08:00",
   "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/3561ff3f-05a1-4a64-a022-47521a65822a",
   "metadata": {
-    "asr_status": "pending",
+    "asr_status": "transcribed",
     "audio_path": null,
     "audio_url": "https://rss.soundon.fm/rssf/35eb55b5-8669-418b-9a08-dc13c482809a/feedurl/3561ff3f-05a1-4a64-a022-47521a65822a/rssFileVip.mp3?timestamp=1773309742554",
     "channel_author": "郭哲榮 投資長",
@@ -65,9 +65,15 @@
     "soundon_id": "3561ff3f-05a1-4a64-a022-47521a65822a",
     "soundon_updated_at": "2026-03-12T10:02:22.554Z",
     "title": "【油價將漲一倍! 美伊戰爭不會停 台股崩盤6000點!】2026/3/12哲哲只有60秒 #shorts",
-    "transcript_path": null
+    "transcript_path": "data/transcripts/2026-03-12_zhezhe-2026-03-12-3561ff3f.md",
+    "date": "2026-03-12",
+    "asr_model": "mlx-community/whisper-large-v3-turbo",
+    "asr_at": "2026-05-12T20:10:36Z",
+    "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/3561ff3f-05a1-4a64-a022-47521a65822a"
   },
-  "paths": [],
+  "paths": [
+    "data/transcripts/2026-03-12_zhezhe-2026-03-12-3561ff3f.md"
+  ],
   "context_target_date": "2026-03-12",
   "session_alignment": "same_day_close_after_1335_taipei",
   "baseline_market_context": {
@@ -256,6 +262,7 @@
       "asset_type": "stock",
       "mention_kind": "direct",
       "matched_aliases": [
+        "2330",
         "台積",
         "台積電"
       ],
@@ -412,6 +419,29 @@
       "pricing_status": "ok"
     },
     {
+      "asset_name": "景碩",
+      "symbol": "3189.TW",
+      "pricing_symbol": "3189.TW",
+      "asset_type": "stock",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "景碩"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2026-03-12",
+        "close": 289.0,
+        "ret_1d_pct": -0.52,
+        "ret_5d_pct": -2.86,
+        "ret_20d_pct": 20.67,
+        "ret_60d_pct": 95.27,
+        "drawdown_60d_pct": -11.21
+      },
+      "pricing_status": "ok"
+    },
+    {
       "asset_name": "緯創",
       "symbol": "3231.TW",
       "pricing_symbol": "3231.TW",
@@ -441,6 +471,7 @@
       "asset_type": "index",
       "mention_kind": "direct",
       "matched_aliases": [
+        "台灣股市",
         "台股"
       ],
       "sources": [
@@ -466,6 +497,7 @@
       "asset_type": "etf",
       "mention_kind": "sector_proxy",
       "matched_aliases": [
+        "ETF",
         "美債"
       ],
       "sources": [
@@ -490,6 +522,7 @@
       "asset_type": "etf",
       "mention_kind": "sector_proxy",
       "matched_aliases": [
+        "ETF",
         "美債"
       ],
       "sources": [
@@ -514,6 +547,7 @@
       "asset_type": "etf",
       "mention_kind": "sector_proxy",
       "matched_aliases": [
+        "ETF",
         "美債"
       ],
       "sources": [
@@ -538,6 +572,7 @@
       "asset_type": "etf",
       "mention_kind": "sector_proxy",
       "matched_aliases": [
+        "ETF",
         "美債"
       ],
       "sources": [
@@ -560,6 +595,7 @@
     {
       "sector_name": "taiwan_etf_bond",
       "matched_aliases": [
+        "ETF",
         "美債"
       ],
       "proxy_symbols": [

@@ -5,7 +5,7 @@
   "published_at": "2025-08-20T18:18:08+08:00",
   "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/dd89e05f-7187-403b-bd31-ec16d17ae366",
   "metadata": {
-    "asr_status": "pending",
+    "asr_status": "transcribed",
     "audio_path": null,
     "audio_url": "https://rss.soundon.fm/rssf/35eb55b5-8669-418b-9a08-dc13c482809a/feedurl/dd89e05f-7187-403b-bd31-ec16d17ae366/rssFileVip.mp3?timestamp=1755765898550",
     "channel_author": "郭哲榮 投資長",
@@ -65,9 +65,15 @@
     "soundon_id": "dd89e05f-7187-403b-bd31-ec16d17ae366",
     "soundon_updated_at": "2025-08-21T08:44:58.550Z",
     "title": "【華爾街：AI泡沫! 台股大跌700點 台積電變美積電!】2025.08.20 哲哲只有60秒#shorts",
-    "transcript_path": null
+    "transcript_path": "data/transcripts/2025-08-20_zhezhe-2025-08-20-dd89e05f.md",
+    "date": "2025-08-20",
+    "asr_model": "mlx-community/whisper-large-v3-turbo",
+    "asr_at": "2026-05-13T09:46:08Z",
+    "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/dd89e05f-7187-403b-bd31-ec16d17ae366"
   },
-  "paths": [],
+  "paths": [
+    "data/transcripts/2025-08-20_zhezhe-2025-08-20-dd89e05f.md"
+  ],
   "context_target_date": "2025-08-20",
   "session_alignment": "same_day_close_after_1335_taipei",
   "baseline_market_context": {
@@ -435,12 +441,59 @@
       "pricing_status": "ok"
     },
     {
+      "asset_name": "Nasdaq 100 ETF",
+      "symbol": "QQQ",
+      "pricing_symbol": "QQQ",
+      "asset_type": "etf",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "納斯達克"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2025-08-20",
+        "close": 563.8065,
+        "ret_1d_pct": -0.59,
+        "ret_5d_pct": -2.49,
+        "ret_20d_pct": 0.37,
+        "ret_60d_pct": 11.25,
+        "drawdown_60d_pct": -2.49
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "USD/TWD",
+      "symbol": "TWD=X",
+      "pricing_symbol": "TWD=X",
+      "asset_type": "fx",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "台幣"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2025-08-20",
+        "close": 30.2801,
+        "ret_1d_pct": 0.57,
+        "ret_5d_pct": 1.14,
+        "ret_20d_pct": 3.58,
+        "ret_60d_pct": 1.1,
+        "drawdown_60d_pct": 0.0
+      },
+      "pricing_status": "ok"
+    },
+    {
       "asset_name": "加權指數",
       "symbol": "^TWII",
       "pricing_symbol": "^TWII",
       "asset_type": "index",
       "mention_kind": "direct",
       "matched_aliases": [
+        "台灣股市",
         "台股"
       ],
       "sources": [

@@ -5,7 +5,7 @@
   "published_at": "2025-09-04T15:57:50+08:00",
   "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/9b85cd17-1ff1-4510-b4e7-5168a1ae1d37",
   "metadata": {
-    "asr_status": "pending",
+    "asr_status": "transcribed",
     "audio_path": null,
     "audio_url": "https://rss.soundon.fm/rssf/35eb55b5-8669-418b-9a08-dc13c482809a/feedurl/9b85cd17-1ff1-4510-b4e7-5168a1ae1d37/rssFileVip.mp3?timestamp=1756975126413",
     "channel_author": "郭哲榮 投資長",
@@ -100,9 +100,15 @@
     "soundon_id": "9b85cd17-1ff1-4510-b4e7-5168a1ae1d37",
     "soundon_updated_at": "2025-09-04T08:38:46.413Z",
     "title": "郭哲榮分析師【美國就業數大減 股市搖搖欲墜!?】2025.09.04",
-    "transcript_path": null
+    "transcript_path": "data/transcripts/2025-09-04_zhezhe-2025-09-04-9b85cd17.md",
+    "date": "2025-09-04",
+    "asr_model": "mlx-community/whisper-large-v3-turbo",
+    "asr_at": "2026-05-13T08:47:09Z",
+    "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/9b85cd17-1ff1-4510-b4e7-5168a1ae1d37"
   },
-  "paths": [],
+  "paths": [
+    "data/transcripts/2025-09-04_zhezhe-2025-09-04-9b85cd17.md"
+  ],
   "context_target_date": "2025-09-04",
   "session_alignment": "same_day_close_after_1335_taipei",
   "baseline_market_context": {
@@ -268,7 +274,8 @@
       "asset_type": "etf",
       "mention_kind": "direct",
       "matched_aliases": [
-        "0050"
+        "0050",
+        "台灣50"
       ],
       "sources": [
         "alias_scan"
@@ -281,6 +288,29 @@
         "ret_20d_pct": -0.29,
         "ret_60d_pct": 11.67,
         "drawdown_60d_pct": -1.97
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "富邦NASDAQ",
+      "symbol": "00662.TW",
+      "pricing_symbol": "00662.TW",
+      "asset_type": "etf",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "00662"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2025-09-04",
+        "close": 92.3,
+        "ret_1d_pct": 0.49,
+        "ret_5d_pct": 0.11,
+        "ret_20d_pct": 3.13,
+        "ret_60d_pct": 10.87,
+        "drawdown_60d_pct": -0.54
       },
       "pricing_status": "ok"
     },
@@ -431,6 +461,7 @@
       "asset_type": "stock",
       "mention_kind": "direct",
       "matched_aliases": [
+        "3037",
         "欣興"
       ],
       "sources": [
@@ -477,6 +508,7 @@
       "asset_type": "index",
       "mention_kind": "direct",
       "matched_aliases": [
+        "台灣股市",
         "台股",
         "大盤"
       ],
@@ -504,6 +536,8 @@
       "mention_kind": "sector_proxy",
       "matched_aliases": [
         "ETF",
+        "債券",
+        "台灣50",
         "美債"
       ],
       "sources": [
@@ -522,31 +556,6 @@
       "sector_name": "taiwan_etf_bond"
     },
     {
-      "asset_name": "富邦NASDAQ",
-      "symbol": "00662.TW",
-      "pricing_symbol": "00662.TW",
-      "asset_type": "etf",
-      "mention_kind": "sector_proxy",
-      "matched_aliases": [
-        "ETF",
-        "美債"
-      ],
-      "sources": [
-        "sector_basket:taiwan_etf_bond"
-      ],
-      "market": {
-        "market_date": "2025-09-04",
-        "close": 92.3,
-        "ret_1d_pct": 0.49,
-        "ret_5d_pct": 0.11,
-        "ret_20d_pct": 3.13,
-        "ret_60d_pct": 10.87,
-        "drawdown_60d_pct": -0.54
-      },
-      "pricing_status": "ok",
-      "sector_name": "taiwan_etf_bond"
-    },
-    {
       "asset_name": "國泰費城半導體",
       "symbol": "00830.TW",
       "pricing_symbol": "00830.TW",
@@ -554,6 +563,8 @@
       "mention_kind": "sector_proxy",
       "matched_aliases": [
         "ETF",
+        "債券",
+        "台灣50",
         "美債"
       ],
       "sources": [
@@ -603,6 +614,7 @@
       "mention_kind": "sector_proxy",
       "matched_aliases": [
         "ABF",
+        "PCB",
         "載板"
       ],
       "sources": [
@@ -627,7 +639,8 @@
       "asset_type": "stock",
       "mention_kind": "sector_proxy",
       "matched_aliases": [
-        "AI"
+        "AI",
+        "人工智慧"
       ],
       "sources": [
         "sector_basket:ai_supply_chain"
@@ -651,7 +664,8 @@
       "asset_type": "stock",
       "mention_kind": "sector_proxy",
       "matched_aliases": [
-        "AI"
+        "AI",
+        "人工智慧"
       ],
       "sources": [
         "sector_basket:ai_supply_chain"
@@ -676,6 +690,7 @@
       "mention_kind": "sector_proxy",
       "matched_aliases": [
         "ABF",
+        "PCB",
         "載板"
       ],
       "sources": [
@@ -724,7 +739,9 @@
       "asset_type": "stock",
       "mention_kind": "sector_proxy",
       "matched_aliases": [
-        "航運"
+        "航運",
+        "貨櫃",
+        "貨櫃三雄"
       ],
       "sources": [
         "sector_basket:shipping"
@@ -748,7 +765,9 @@
       "asset_type": "stock",
       "mention_kind": "sector_proxy",
       "matched_aliases": [
-        "航運"
+        "航運",
+        "貨櫃",
+        "貨櫃三雄"
       ],
       "sources": [
         "sector_basket:shipping"
@@ -773,6 +792,7 @@
       "mention_kind": "sector_proxy",
       "matched_aliases": [
         "ABF",
+        "PCB",
         "載板"
       ],
       "sources": [
@@ -797,7 +817,8 @@
       "asset_type": "stock",
       "mention_kind": "sector_proxy",
       "matched_aliases": [
-        "AI"
+        "AI",
+        "人工智慧"
       ],
       "sources": [
         "sector_basket:ai_supply_chain"
@@ -821,7 +842,8 @@
       "asset_type": "stock",
       "mention_kind": "sector_proxy",
       "matched_aliases": [
-        "AI"
+        "AI",
+        "人工智慧"
       ],
       "sources": [
         "sector_basket:ai_supply_chain"
@@ -845,7 +867,8 @@
       "asset_type": "stock",
       "mention_kind": "sector_proxy",
       "matched_aliases": [
-        "AI"
+        "AI",
+        "人工智慧"
       ],
       "sources": [
         "sector_basket:ai_supply_chain"
@@ -869,7 +892,8 @@
       "asset_type": "etf",
       "mention_kind": "sector_proxy",
       "matched_aliases": [
-        "AI"
+        "AI",
+        "人工智慧"
       ],
       "sources": [
         "sector_basket:ai_supply_chain"
@@ -891,7 +915,8 @@
     {
       "sector_name": "ai_supply_chain",
       "matched_aliases": [
-        "AI"
+        "AI",
+        "人工智慧"
       ],
       "proxy_symbols": [
         "2330.TW",
@@ -910,6 +935,7 @@
       "sector_name": "pcb_ccl",
       "matched_aliases": [
         "ABF",
+        "PCB",
         "載板"
       ],
       "proxy_symbols": [
@@ -932,7 +958,9 @@
     {
       "sector_name": "shipping",
       "matched_aliases": [
-        "航運"
+        "航運",
+        "貨櫃",
+        "貨櫃三雄"
       ],
       "proxy_symbols": [
         "2603.TW",
@@ -944,6 +972,8 @@
       "sector_name": "taiwan_etf_bond",
       "matched_aliases": [
         "ETF",
+        "債券",
+        "台灣50",
         "美債"
       ],
       "proxy_symbols": [

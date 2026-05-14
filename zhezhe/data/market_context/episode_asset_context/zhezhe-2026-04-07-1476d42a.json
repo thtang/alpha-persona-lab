@@ -5,7 +5,7 @@
   "published_at": "2026-04-07T18:32:23+08:00",
   "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/1476d42a-c0fa-4fa8-984a-12945f07b1f1",
   "metadata": {
-    "asr_status": "pending",
+    "asr_status": "transcribed",
     "audio_path": null,
     "audio_url": "https://rss.soundon.fm/rssf/35eb55b5-8669-418b-9a08-dc13c482809a/feedurl/1476d42a-c0fa-4fa8-984a-12945f07b1f1/rssFileVip.mp3?timestamp=1775643618264",
     "channel_author": "郭哲榮 投資長",
@@ -65,9 +65,15 @@
     "soundon_id": "1476d42a-c0fa-4fa8-984a-12945f07b1f1",
     "soundon_updated_at": "2026-04-08T10:20:18.264Z",
     "title": "【倒數16小時 崩盤一念之間】2026/4/7哲哲只有60秒 #shorts",
-    "transcript_path": null
+    "transcript_path": "data/transcripts/2026-04-07_zhezhe-2026-04-07-1476d42a.md",
+    "date": "2026-04-07",
+    "asr_model": "mlx-community/whisper-large-v3-turbo",
+    "asr_at": "2026-05-12T18:47:39Z",
+    "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/1476d42a-c0fa-4fa8-984a-12945f07b1f1"
   },
-  "paths": [],
+  "paths": [
+    "data/transcripts/2026-04-07_zhezhe-2026-04-07-1476d42a.md"
+  ],
   "context_target_date": "2026-04-07",
   "session_alignment": "same_day_close_after_1335_taipei",
   "baseline_market_context": {
@@ -233,6 +239,7 @@
       "asset_type": "stock",
       "mention_kind": "direct",
       "matched_aliases": [
+        "2317",
         "鴻海"
       ],
       "sources": [
@@ -433,6 +440,29 @@
         "drawdown_60d_pct": -22.08
       },
       "pricing_status": "ok"
+    },
+    {
+      "asset_name": "加權指數",
+      "symbol": "^TWII",
+      "pricing_symbol": "^TWII",
+      "asset_type": "index",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "台股"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2026-04-07",
+        "close": 33229.8203,
+        "ret_1d_pct": 2.02,
+        "ret_5d_pct": 0.35,
+        "ret_20d_pct": -1.1,
+        "ret_60d_pct": 15.34,
+        "drawdown_60d_pct": -6.17
+      },
+      "pricing_status": "ok"
     }
   ],
   "sector_proxy_assets": [
@@ -443,6 +473,7 @@
       "asset_type": "etf",
       "mention_kind": "sector_proxy",
       "matched_aliases": [
+        "ETF",
         "美債"
       ],
       "sources": [
@@ -467,6 +498,7 @@
       "asset_type": "etf",
       "mention_kind": "sector_proxy",
       "matched_aliases": [
+        "ETF",
         "美債"
       ],
       "sources": [
@@ -491,6 +523,7 @@
       "asset_type": "etf",
       "mention_kind": "sector_proxy",
       "matched_aliases": [
+        "ETF",
         "美債"
       ],
       "sources": [
@@ -515,6 +548,7 @@
       "asset_type": "etf",
       "mention_kind": "sector_proxy",
       "matched_aliases": [
+        "ETF",
         "美債"
       ],
       "sources": [
@@ -537,6 +571,7 @@
     {
       "sector_name": "taiwan_etf_bond",
       "matched_aliases": [
+        "ETF",
         "美債"
       ],
       "proxy_symbols": [

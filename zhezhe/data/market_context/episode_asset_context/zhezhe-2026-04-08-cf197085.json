@@ -5,7 +5,7 @@
   "published_at": "2026-04-08T18:20:05+08:00",
   "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/cf197085-a1dc-4e72-9abb-1d91e61f87a0",
   "metadata": {
-    "asr_status": "pending",
+    "asr_status": "transcribed",
     "audio_path": null,
     "audio_url": "https://rss.soundon.fm/rssf/35eb55b5-8669-418b-9a08-dc13c482809a/feedurl/cf197085-a1dc-4e72-9abb-1d91e61f87a0/rssFileVip.mp3?timestamp=1775643677252",
     "channel_author": "郭哲榮 投資長",
@@ -65,9 +65,15 @@
     "soundon_id": "cf197085-a1dc-4e72-9abb-1d91e61f87a0",
     "soundon_updated_at": "2026-04-08T10:21:17.252Z",
     "title": "【台股大V轉3000點 這次來真的】2026/4/8哲哲只有60秒 #shorts",
-    "transcript_path": null
+    "transcript_path": "data/transcripts/2026-04-08_zhezhe-2026-04-08-cf197085.md",
+    "date": "2026-04-08",
+    "asr_model": "mlx-community/whisper-large-v3-turbo",
+    "asr_at": "2026-05-12T18:44:07Z",
+    "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/cf197085-a1dc-4e72-9abb-1d91e61f87a0"
   },
-  "paths": [],
+  "paths": [
+    "data/transcripts/2026-04-08_zhezhe-2026-04-08-cf197085.md"
+  ],
   "context_target_date": "2026-04-08",
   "session_alignment": "same_day_close_after_1335_taipei",
   "baseline_market_context": {
@@ -466,6 +472,7 @@
       "asset_type": "etf",
       "mention_kind": "sector_proxy",
       "matched_aliases": [
+        "ETF",
         "美債"
       ],
       "sources": [
@@ -490,6 +497,7 @@
       "asset_type": "etf",
       "mention_kind": "sector_proxy",
       "matched_aliases": [
+        "ETF",
         "美債"
       ],
       "sources": [
@@ -514,6 +522,7 @@
       "asset_type": "etf",
       "mention_kind": "sector_proxy",
       "matched_aliases": [
+        "ETF",
         "美債"
       ],
       "sources": [
@@ -538,6 +547,7 @@
       "asset_type": "etf",
       "mention_kind": "sector_proxy",
       "matched_aliases": [
+        "ETF",
         "美債"
       ],
       "sources": [
@@ -554,12 +564,175 @@
       },
       "pricing_status": "ok",
       "sector_name": "taiwan_etf_bond"
+    },
+    {
+      "asset_name": "技嘉",
+      "symbol": "2376.TW",
+      "pricing_symbol": "2376.TW",
+      "asset_type": "stock",
+      "mention_kind": "sector_proxy",
+      "matched_aliases": [
+        "AI"
+      ],
+      "sources": [
+        "sector_basket:ai_supply_chain"
+      ],
+      "market": {
+        "market_date": "2026-04-08",
+        "close": 244.5,
+        "ret_1d_pct": 9.89,
+        "ret_5d_pct": 7.24,
+        "ret_20d_pct": 13.72,
+        "ret_60d_pct": -0.61,
+        "drawdown_60d_pct": -5.6
+      },
+      "pricing_status": "ok",
+      "sector_name": "ai_supply_chain"
+    },
+    {
+      "asset_name": "微星",
+      "symbol": "2377.TW",
+      "pricing_symbol": "2377.TW",
+      "asset_type": "stock",
+      "mention_kind": "sector_proxy",
+      "matched_aliases": [
+        "AI"
+      ],
+      "sources": [
+        "sector_basket:ai_supply_chain"
+      ],
+      "market": {
+        "market_date": "2026-04-08",
+        "close": 92.2,
+        "ret_1d_pct": 3.36,
+        "ret_5d_pct": 4.42,
+        "ret_20d_pct": -0.65,
+        "ret_60d_pct": -3.96,
+        "drawdown_60d_pct": -9.61
+      },
+      "pricing_status": "ok",
+      "sector_name": "ai_supply_chain"
+    },
+    {
+      "asset_name": "緯穎",
+      "symbol": "6669.TW",
+      "pricing_symbol": "6669.TW",
+      "asset_type": "stock",
+      "mention_kind": "sector_proxy",
+      "matched_aliases": [
+        "AI"
+      ],
+      "sources": [
+        "sector_basket:ai_supply_chain"
+      ],
+      "market": {
+        "market_date": "2026-04-08",
+        "close": 3570.0,
+        "ret_1d_pct": 5.15,
+        "ret_5d_pct": 5.93,
+        "ret_20d_pct": -9.16,
+        "ret_60d_pct": -18.77,
+        "drawdown_60d_pct": -23.55
+      },
+      "pricing_status": "ok",
+      "sector_name": "ai_supply_chain"
+    },
+    {
+      "asset_name": "AMD",
+      "symbol": "AMD",
+      "pricing_symbol": "AMD",
+      "asset_type": "stock",
+      "mention_kind": "sector_proxy",
+      "matched_aliases": [
+        "AI"
+      ],
+      "sources": [
+        "sector_basket:ai_supply_chain"
+      ],
+      "market": {
+        "market_date": "2026-04-08",
+        "close": 231.82,
+        "ret_1d_pct": 4.64,
+        "ret_5d_pct": 13.96,
+        "ret_20d_pct": 14.07,
+        "ret_60d_pct": 14.1,
+        "drawdown_60d_pct": -10.73
+      },
+      "pricing_status": "ok",
+      "sector_name": "ai_supply_chain"
+    },
+    {
+      "asset_name": "NVIDIA",
+      "symbol": "NVDA",
+      "pricing_symbol": "NVDA",
+      "asset_type": "stock",
+      "mention_kind": "sector_proxy",
+      "matched_aliases": [
+        "AI"
+      ],
+      "sources": [
+        "sector_basket:ai_supply_chain"
+      ],
+      "market": {
+        "market_date": "2026-04-08",
+        "close": 182.08,
+        "ret_1d_pct": 2.23,
+        "ret_5d_pct": 4.4,
+        "ret_20d_pct": -1.45,
+        "ret_60d_pct": -1.5,
+        "drawdown_60d_pct": -6.89
+      },
+      "pricing_status": "ok",
+      "sector_name": "ai_supply_chain"
+    },
+    {
+      "asset_name": "Semiconductor ETF",
+      "symbol": "SOXX",
+      "pricing_symbol": "SOXX",
+      "asset_type": "etf",
+      "mention_kind": "sector_proxy",
+      "matched_aliases": [
+        "AI"
+      ],
+      "sources": [
+        "sector_basket:ai_supply_chain"
+      ],
+      "market": {
+        "market_date": "2026-04-08",
+        "close": 370.4,
+        "ret_1d_pct": 6.51,
+        "ret_5d_pct": 12.7,
+        "ret_20d_pct": 9.39,
+        "ret_60d_pct": 12.73,
+        "drawdown_60d_pct": 0.0
+      },
+      "pricing_status": "ok",
+      "sector_name": "ai_supply_chain"
     }
   ],
   "sector_basket_matches": [
     {
+      "sector_name": "ai_supply_chain",
+      "matched_aliases": [
+        "AI"
+      ],
+      "proxy_symbols": [
+        "2330.TW",
+        "2317.TW",
+        "2382.TW",
+        "6669.TW",
+        "3231.TW",
+        "2376.TW",
+        "2377.TW",
+        "NVDA",
+        "AMD",
+        "SOXX"
+      ]
+    },
+    {
       "sector_name": "taiwan_etf_bond",
       "matched_aliases": [
+        "ETF",
         "美債"
       ],
       "proxy_symbols": [

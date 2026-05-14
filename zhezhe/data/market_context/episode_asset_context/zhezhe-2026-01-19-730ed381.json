@@ -5,7 +5,7 @@
   "published_at": "2026-01-19T18:45:28+08:00",
   "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/730ed381-a426-4766-8eaa-657fd0614d29",
   "metadata": {
-    "asr_status": "pending",
+    "asr_status": "transcribed",
     "audio_path": null,
     "audio_url": "https://rss.soundon.fm/rssf/35eb55b5-8669-418b-9a08-dc13c482809a/feedurl/730ed381-a426-4766-8eaa-657fd0614d29/rssFileVip.mp3?timestamp=1768819579902",
     "channel_author": "郭哲榮 投資長",
@@ -65,9 +65,15 @@
     "soundon_id": "730ed381-a426-4766-8eaa-657fd0614d29",
     "soundon_updated_at": "2026-01-19T10:46:19.902Z",
     "title": "【台股瘋了! 南亞科400、華邦電200、力積電119、國巨500、欣興400 通通到!?】2026.01.19 哲哲只有60秒 #shorts",
-    "transcript_path": null
+    "transcript_path": "data/transcripts/2026-01-19_zhezhe-2026-01-19-730ed381.md",
+    "date": "2026-01-19",
+    "asr_model": "mlx-community/whisper-large-v3-turbo",
+    "asr_at": "2026-05-12T23:14:07Z",
+    "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/730ed381-a426-4766-8eaa-657fd0614d29"
   },
-  "paths": [],
+  "paths": [
+    "data/transcripts/2026-01-19_zhezhe-2026-01-19-730ed381.md"
+  ],
   "context_target_date": "2026-01-19",
   "session_alignment": "same_day_close_after_1335_taipei",
   "baseline_market_context": {
@@ -227,6 +233,29 @@
   },
   "direct_mentioned_assets": [
     {
+      "asset_name": "元大台灣50",
+      "symbol": "0050.TW",
+      "pricing_symbol": "0050.TW",
+      "asset_type": "etf",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "台灣50"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2026-01-19",
+        "close": 71.5896,
+        "ret_1d_pct": 0.83,
+        "ret_5d_pct": 3.2,
+        "ret_20d_pct": 17.29,
+        "ret_60d_pct": 15.79,
+        "drawdown_60d_pct": 0.0
+      },
+      "pricing_status": "ok"
+    },
+    {
       "asset_name": "鴻海",
       "symbol": "2317.TW",
       "pricing_symbol": "2317.TW",
@@ -350,6 +379,7 @@
       "asset_type": "stock",
       "mention_kind": "direct",
       "matched_aliases": [
+        "2408",
         "南亞科"
       ],
       "sources": [
@@ -465,6 +495,7 @@
       "asset_type": "stock",
       "mention_kind": "direct",
       "matched_aliases": [
+        "3037",
         "欣興"
       ],
       "sources": [
@@ -528,12 +559,59 @@
       "pricing_status": "ok"
     },
     {
+      "asset_name": "Micron",
+      "symbol": "MU",
+      "pricing_symbol": "MU",
+      "asset_type": "stock",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "美光"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2026-01-16",
+        "close": 362.5977,
+        "ret_1d_pct": 7.76,
+        "ret_5d_pct": 5.12,
+        "ret_20d_pct": 60.92,
+        "ret_60d_pct": 79.39,
+        "drawdown_60d_pct": 0.0
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "Semiconductor ETF",
+      "symbol": "SOXX",
+      "pricing_symbol": "SOXX",
+      "asset_type": "etf",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "費半"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2026-01-16",
+        "close": 342.2591,
+        "ret_1d_pct": 1.56,
+        "ret_5d_pct": 4.16,
+        "ret_20d_pct": 20.07,
+        "ret_60d_pct": 17.73,
+        "drawdown_60d_pct": 0.0
+      },
+      "pricing_status": "ok"
+    },
+    {
       "asset_name": "加權指數",
       "symbol": "^TWII",
       "pricing_symbol": "^TWII",
       "asset_type": "index",
       "mention_kind": "direct",
       "matched_aliases": [
+        "台灣股市",
         "台股"
       ],
       "sources": [
@@ -553,36 +631,13 @@
   ],
   "sector_proxy_assets": [
     {
-      "asset_name": "元大台灣50",
-      "symbol": "0050.TW",
-      "pricing_symbol": "0050.TW",
-      "asset_type": "etf",
-      "mention_kind": "sector_proxy",
-      "matched_aliases": [
-        "美債"
-      ],
-      "sources": [
-        "sector_basket:taiwan_etf_bond"
-      ],
-      "market": {
-        "market_date": "2026-01-19",
-        "close": 71.5896,
-        "ret_1d_pct": 0.83,
-        "ret_5d_pct": 3.2,
-        "ret_20d_pct": 17.29,
-        "ret_60d_pct": 15.79,
-        "drawdown_60d_pct": 0.0
-      },
-      "pricing_status": "ok",
-      "sector_name": "taiwan_etf_bond"
-    },
-    {
       "asset_name": "富邦台50",
       "symbol": "006208.TW",
       "pricing_symbol": "006208.TW",
       "asset_type": "etf",
       "mention_kind": "sector_proxy",
       "matched_aliases": [
+        "台灣50",
         "美債"
       ],
       "sources": [
@@ -607,6 +662,7 @@
       "asset_type": "etf",
       "mention_kind": "sector_proxy",
       "matched_aliases": [
+        "台灣50",
         "美債"
       ],
       "sources": [
@@ -631,6 +687,7 @@
       "asset_type": "etf",
       "mention_kind": "sector_proxy",
       "matched_aliases": [
+        "台灣50",
         "美債"
       ],
       "sources": [
@@ -647,12 +704,75 @@
       },
       "pricing_status": "ok",
       "sector_name": "taiwan_etf_bond"
+    },
+    {
+      "asset_name": "旺宏",
+      "symbol": "2337.TW",
+      "pricing_symbol": "2337.TW",
+      "asset_type": "stock",
+      "mention_kind": "sector_proxy",
+      "matched_aliases": [
+        "記憶體"
+      ],
+      "sources": [
+        "sector_basket:memory"
+      ],
+      "market": {
+        "market_date": "2026-01-19",
+        "close": 73.7,
+        "ret_1d_pct": 10.0,
+        "ret_5d_pct": 20.42,
+        "ret_20d_pct": 94.2,
+        "ret_60d_pct": 164.16,
+        "drawdown_60d_pct": 0.0
+      },
+      "pricing_status": "ok",
+      "sector_name": "memory"
+    },
+    {
+      "asset_name": "晶豪科",
+      "symbol": "3006.TW",
+      "pricing_symbol": "3006.TW",
+      "asset_type": "stock",
+      "mention_kind": "sector_proxy",
+      "matched_aliases": [
+        "記憶體"
+      ],
+      "sources": [
+        "sector_basket:memory"
+      ],
+      "market": {
+        "market_date": "2026-01-19",
+        "close": 158.5,
+        "ret_1d_pct": 2.59,
+        "ret_5d_pct": 8.56,
+        "ret_20d_pct": 94.48,
+        "ret_60d_pct": 89.14,
+        "drawdown_60d_pct": 0.0
+      },
+      "pricing_status": "ok",
+      "sector_name": "memory"
     }
   ],
   "sector_basket_matches": [
     {
+      "sector_name": "memory",
+      "matched_aliases": [
+        "記憶體"
+      ],
+      "proxy_symbols": [
+        "2408.TW",
+        "2344.TW",
+        "6770.TW",
+        "3006.TW",
+        "2337.TW",
+        "MU"
+      ]
+    },
+    {
       "sector_name": "taiwan_etf_bond",
       "matched_aliases": [
+        "台灣50",
         "美債"
       ],
       "proxy_symbols": [

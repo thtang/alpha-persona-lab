@@ -5,7 +5,7 @@
   "published_at": "2025-07-31T15:56:14+08:00",
   "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/5323d31c-9224-4434-8b4e-9afa27a54754",
   "metadata": {
-    "asr_status": "pending",
+    "asr_status": "transcribed",
     "audio_path": null,
     "audio_url": "https://rss.soundon.fm/rssf/35eb55b5-8669-418b-9a08-dc13c482809a/feedurl/5323d31c-9224-4434-8b4e-9afa27a54754/rssFileVip.mp3?timestamp=1753948594635",
     "channel_author": "郭哲榮 投資長",
@@ -100,9 +100,15 @@
     "soundon_id": "5323d31c-9224-4434-8b4e-9afa27a54754",
     "soundon_updated_at": "2025-07-31T07:56:34.635Z",
     "title": "郭哲榮分析師【倒數24小時公布關稅 明天台股先噴出!】2025.07.31",
-    "transcript_path": null
+    "transcript_path": "data/transcripts/2025-07-31_zhezhe-2025-07-31-5323d31c.md",
+    "date": "2025-07-31",
+    "asr_model": "mlx-community/whisper-large-v3-turbo",
+    "asr_at": "2026-05-13T11:19:25Z",
+    "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/5323d31c-9224-4434-8b4e-9afa27a54754"
   },
-  "paths": [],
+  "paths": [
+    "data/transcripts/2025-07-31_zhezhe-2025-07-31-5323d31c.md"
+  ],
   "context_target_date": "2025-07-31",
   "session_alignment": "same_day_close_after_1335_taipei",
   "baseline_market_context": {
@@ -292,7 +298,8 @@
       "mention_kind": "direct",
       "matched_aliases": [
         "00687B",
-        "國泰20年美債"
+        "國泰20年美債",
+        "美債ETF"
       ],
       "sources": [
         "alias_scan"
@@ -338,6 +345,7 @@
       "asset_type": "stock",
       "mention_kind": "direct",
       "matched_aliases": [
+        "2330",
         "台積",
         "台積電"
       ],
@@ -375,6 +383,53 @@
         "ret_20d_pct": -1.03,
         "ret_60d_pct": 2.86,
         "drawdown_60d_pct": -2.37
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "廣達",
+      "symbol": "2382.TW",
+      "pricing_symbol": "2382.TW",
+      "asset_type": "stock",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "2382",
+        "廣達"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2025-07-31",
+        "close": 281.5,
+        "ret_1d_pct": 4.26,
+        "ret_5d_pct": 4.65,
+        "ret_20d_pct": 0.54,
+        "ret_60d_pct": 16.11,
+        "drawdown_60d_pct": -0.18
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "台光電",
+      "symbol": "2383.TW",
+      "pricing_symbol": "2383.TW",
+      "asset_type": "stock",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "台光"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2025-07-31",
+        "close": 1090.6907,
+        "ret_1d_pct": 9.95,
+        "ret_5d_pct": 11.73,
+        "ret_20d_pct": 19.07,
+        "ret_60d_pct": 80.56,
+        "drawdown_60d_pct": 0.0
       },
       "pricing_status": "ok"
     },
@@ -448,6 +503,29 @@
       "pricing_status": "ok"
     },
     {
+      "asset_name": "景碩",
+      "symbol": "3189.TW",
+      "pricing_symbol": "3189.TW",
+      "asset_type": "stock",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "景碩"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2025-07-31",
+        "close": 103.0,
+        "ret_1d_pct": -1.9,
+        "ret_5d_pct": 0.0,
+        "ret_20d_pct": 16.78,
+        "ret_60d_pct": 38.01,
+        "drawdown_60d_pct": -2.83
+      },
+      "pricing_status": "ok"
+    },
+    {
       "asset_name": "緯創",
       "symbol": "3231.TW",
       "pricing_symbol": "3231.TW",
@@ -471,12 +549,36 @@
       "pricing_status": "ok"
     },
     {
+      "asset_name": "USD/TWD",
+      "symbol": "TWD=X",
+      "pricing_symbol": "TWD=X",
+      "asset_type": "fx",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "台幣"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2025-07-31",
+        "close": 29.906,
+        "ret_1d_pct": 0.26,
+        "ret_5d_pct": 1.75,
+        "ret_20d_pct": 3.42,
+        "ret_60d_pct": -1.2,
+        "drawdown_60d_pct": -1.71
+      },
+      "pricing_status": "ok"
+    },
+    {
       "asset_name": "加權指數",
       "symbol": "^TWII",
       "pricing_symbol": "^TWII",
       "asset_type": "index",
       "mention_kind": "direct",
       "matched_aliases": [
+        "台灣股市",
         "台股",
         "大盤"
       ],
@@ -645,55 +747,6 @@
       "sector_name": "ai_supply_chain"
     },
     {
-      "asset_name": "廣達",
-      "symbol": "2382.TW",
-      "pricing_symbol": "2382.TW",
-      "asset_type": "stock",
-      "mention_kind": "sector_proxy",
-      "matched_aliases": [
-        "AI"
-      ],
-      "sources": [
-        "sector_basket:ai_supply_chain"
-      ],
-      "market": {
-        "market_date": "2025-07-31",
-        "close": 281.5,
-        "ret_1d_pct": 4.26,
-        "ret_5d_pct": 4.65,
-        "ret_20d_pct": 0.54,
-        "ret_60d_pct": 16.11,
-        "drawdown_60d_pct": -0.18
-      },
-      "pricing_status": "ok",
-      "sector_name": "ai_supply_chain"
-    },
-    {
-      "asset_name": "台光電",
-      "symbol": "2383.TW",
-      "pricing_symbol": "2383.TW",
-      "asset_type": "stock",
-      "mention_kind": "sector_proxy",
-      "matched_aliases": [
-        "ABF",
-        "載板"
-      ],
-      "sources": [
-        "sector_basket:pcb_ccl"
-      ],
-      "market": {
-        "market_date": "2025-07-31",
-        "close": 1090.6907,
-        "ret_1d_pct": 9.95,
-        "ret_5d_pct": 11.73,
-        "ret_20d_pct": 19.07,
-        "ret_60d_pct": 80.56,
-        "drawdown_60d_pct": 0.0
-      },
-      "pricing_status": "ok",
-      "sector_name": "pcb_ccl"
-    },
-    {
       "asset_name": "華新科",
       "symbol": "2492.TW",
       "pricing_symbol": "2492.TW",
@@ -764,31 +817,6 @@
       },
       "pricing_status": "ok",
       "sector_name": "shipping"
-    },
-    {
-      "asset_name": "景碩",
-      "symbol": "3189.TW",
-      "pricing_symbol": "3189.TW",
-      "asset_type": "stock",
-      "mention_kind": "sector_proxy",
-      "matched_aliases": [
-        "ABF",
-        "載板"
-      ],
-      "sources": [
-        "sector_basket:pcb_ccl"
-      ],
-      "market": {
-        "market_date": "2025-07-31",
-        "close": 103.0,
-        "ret_1d_pct": -1.9,
-        "ret_5d_pct": 0.0,
-        "ret_20d_pct": 16.78,
-        "ret_60d_pct": 38.01,
-        "drawdown_60d_pct": -2.83
-      },
-      "pricing_status": "ok",
-      "sector_name": "pcb_ccl"
     },
     {
       "asset_name": "緯穎",

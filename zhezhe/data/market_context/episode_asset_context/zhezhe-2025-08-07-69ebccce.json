@@ -5,7 +5,7 @@
   "published_at": "2025-08-07T15:55:33+08:00",
   "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/69ebccce-d109-48f6-bcc7-14501fb0fa9f",
   "metadata": {
-    "asr_status": "pending",
+    "asr_status": "transcribed",
     "audio_path": null,
     "audio_url": "https://rss.soundon.fm/rssf/35eb55b5-8669-418b-9a08-dc13c482809a/feedurl/69ebccce-d109-48f6-bcc7-14501fb0fa9f/rssFileVip.mp3?timestamp=1754553352513",
     "channel_author": "郭哲榮 投資長",
@@ -100,9 +100,15 @@
     "soundon_id": "69ebccce-d109-48f6-bcc7-14501fb0fa9f",
     "soundon_updated_at": "2025-08-07T07:55:52.513Z",
     "title": "郭哲榮分析師【100%晶片關稅 台積2000、緯創200、鴻海300、廣達400!?】2025.08.07",
-    "transcript_path": null
+    "transcript_path": "data/transcripts/2025-08-07_zhezhe-2025-08-07-69ebccce.md",
+    "date": "2025-08-07",
+    "asr_model": "mlx-community/whisper-large-v3-turbo",
+    "asr_at": "2026-05-13T10:54:04Z",
+    "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/69ebccce-d109-48f6-bcc7-14501fb0fa9f"
   },
-  "paths": [],
+  "paths": [
+    "data/transcripts/2025-08-07_zhezhe-2025-08-07-69ebccce.md"
+  ],
   "context_target_date": "2025-08-07",
   "session_alignment": "same_day_close_after_1335_taipei",
   "baseline_market_context": {
@@ -268,7 +274,8 @@
       "asset_type": "etf",
       "mention_kind": "direct",
       "matched_aliases": [
-        "0050"
+        "0050",
+        "台灣50"
       ],
       "sources": [
         "alias_scan"
@@ -338,6 +345,7 @@
       "asset_type": "stock",
       "mention_kind": "direct",
       "matched_aliases": [
+        "2330",
         "台積",
         "台積電"
       ],
@@ -385,6 +393,7 @@
       "asset_type": "stock",
       "mention_kind": "direct",
       "matched_aliases": [
+        "2382",
         "廣達"
       ],
       "sources": [
@@ -494,12 +503,60 @@
       "pricing_status": "ok"
     },
     {
+      "asset_name": "TSMC ADR",
+      "symbol": "TSM",
+      "pricing_symbol": "TSM",
+      "asset_type": "stock",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "台積電ADR"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2025-08-07",
+        "close": 240.5281,
+        "ret_1d_pct": 4.86,
+        "ret_5d_pct": 0.41,
+        "ret_20d_pct": 5.6,
+        "ret_60d_pct": 30.23,
+        "drawdown_60d_pct": -1.21
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "USD/TWD",
+      "symbol": "TWD=X",
+      "pricing_symbol": "TWD=X",
+      "asset_type": "fx",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "匯率",
+        "台幣"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2025-08-07",
+        "close": 29.8081,
+        "ret_1d_pct": -0.36,
+        "ret_5d_pct": -0.33,
+        "ret_20d_pct": 1.93,
+        "ret_60d_pct": -1.19,
+        "drawdown_60d_pct": -1.31
+      },
+      "pricing_status": "ok"
+    },
+    {
       "asset_name": "加權指數",
       "symbol": "^TWII",
       "pricing_symbol": "^TWII",
       "asset_type": "index",
       "mention_kind": "direct",
       "matched_aliases": [
+        "台灣股市",
         "台股",
         "大盤"
       ],
@@ -516,6 +573,29 @@
         "drawdown_60d_pct": 0.0
       },
       "pricing_status": "ok"
+    },
+    {
+      "asset_name": "櫃買指數",
+      "symbol": "^TWOII",
+      "pricing_symbol": "^TWOII",
+      "asset_type": "index",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "上櫃"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2025-08-07",
+        "close": 239.54,
+        "ret_1d_pct": 1.48,
+        "ret_5d_pct": 3.25,
+        "ret_20d_pct": 3.69,
+        "ret_60d_pct": 3.49,
+        "drawdown_60d_pct": 0.0
+      },
+      "pricing_status": "ok"
     }
   ],
   "sector_proxy_assets": [
@@ -527,6 +607,7 @@
       "mention_kind": "sector_proxy",
       "matched_aliases": [
         "ETF",
+        "台灣50",
         "美債"
       ],
       "sources": [
@@ -552,6 +633,7 @@
       "mention_kind": "sector_proxy",
       "matched_aliases": [
         "ETF",
+        "台灣50",
         "美債"
       ],
       "sources": [
@@ -577,6 +659,7 @@
       "mention_kind": "sector_proxy",
       "matched_aliases": [
         "ETF",
+        "台灣50",
         "美債"
       ],
       "sources": [
@@ -943,6 +1026,7 @@
       "sector_name": "taiwan_etf_bond",
       "matched_aliases": [
         "ETF",
+        "台灣50",
         "美債"
       ],
       "proxy_symbols": [

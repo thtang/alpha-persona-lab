@@ -5,7 +5,7 @@
   "published_at": "2025-08-04T15:50:17+08:00",
   "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/9e2c2736-e335-4e2e-bf25-9e77d24be3c3",
   "metadata": {
-    "asr_status": "pending",
+    "asr_status": "transcribed",
     "audio_path": null,
     "audio_url": "https://rss.soundon.fm/rssf/35eb55b5-8669-418b-9a08-dc13c482809a/feedurl/9e2c2736-e335-4e2e-bf25-9e77d24be3c3/rssFileVip.mp3?timestamp=1754293835862",
     "channel_author": "郭哲榮 投資長",
@@ -100,9 +100,15 @@
     "soundon_id": "9e2c2736-e335-4e2e-bf25-9e77d24be3c3",
     "soundon_updated_at": "2025-08-04T07:50:35.862Z",
     "title": "郭哲榮分析師【不談了! 20%關稅是永遠的? 台股挫著等!】2025.08.04",
-    "transcript_path": null
+    "transcript_path": "data/transcripts/2025-08-04_zhezhe-2025-08-04-9e2c2736.md",
+    "date": "2025-08-04",
+    "asr_model": "mlx-community/whisper-large-v3-turbo",
+    "asr_at": "2026-05-13T11:12:30Z",
+    "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/9e2c2736-e335-4e2e-bf25-9e77d24be3c3"
   },
-  "paths": [],
+  "paths": [
+    "data/transcripts/2025-08-04_zhezhe-2025-08-04-9e2c2736.md"
+  ],
   "context_target_date": "2025-08-04",
   "session_alignment": "same_day_close_after_1335_taipei",
   "baseline_market_context": {
@@ -268,7 +274,8 @@
       "asset_type": "etf",
       "mention_kind": "direct",
       "matched_aliases": [
-        "0050"
+        "0050",
+        "台灣50"
       ],
       "sources": [
         "alias_scan"
@@ -315,6 +322,7 @@
       "asset_type": "stock",
       "mention_kind": "direct",
       "matched_aliases": [
+        "2317",
         "鴻海"
       ],
       "sources": [
@@ -375,6 +383,29 @@
         "ret_20d_pct": 3.51,
         "ret_60d_pct": 4.61,
         "drawdown_60d_pct": 0.0
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "廣達",
+      "symbol": "2382.TW",
+      "pricing_symbol": "2382.TW",
+      "asset_type": "stock",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "廣達"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2025-08-04",
+        "close": 281.0,
+        "ret_1d_pct": -0.18,
+        "ret_5d_pct": 4.66,
+        "ret_20d_pct": 1.08,
+        "ret_60d_pct": 17.06,
+        "drawdown_60d_pct": -0.35
       },
       "pricing_status": "ok"
     },
@@ -471,12 +502,59 @@
       "pricing_status": "ok"
     },
     {
+      "asset_name": "Nasdaq 100 ETF",
+      "symbol": "QQQ",
+      "pricing_symbol": "QQQ",
+      "asset_type": "etf",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "納斯達克"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2025-08-04",
+        "close": 562.0131,
+        "ret_1d_pct": 1.85,
+        "ret_5d_pct": -0.71,
+        "ret_20d_pct": 2.19,
+        "ret_60d_pct": 16.85,
+        "drawdown_60d_pct": -0.71
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "USD/TWD",
+      "symbol": "TWD=X",
+      "pricing_symbol": "TWD=X",
+      "asset_type": "fx",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "台幣"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2025-08-04",
+        "close": 29.8841,
+        "ret_1d_pct": 0.23,
+        "ret_5d_pct": 0.77,
+        "ret_20d_pct": 2.81,
+        "ret_60d_pct": -1.67,
+        "drawdown_60d_pct": -1.78
+      },
+      "pricing_status": "ok"
+    },
+    {
       "asset_name": "加權指數",
       "symbol": "^TWII",
       "pricing_symbol": "^TWII",
       "asset_type": "index",
       "mention_kind": "direct",
       "matched_aliases": [
+        "台灣股市",
         "台股",
         "大盤"
       ],
@@ -504,6 +582,7 @@
       "mention_kind": "sector_proxy",
       "matched_aliases": [
         "ETF",
+        "台灣50",
         "美債"
       ],
       "sources": [
@@ -529,6 +608,7 @@
       "mention_kind": "sector_proxy",
       "matched_aliases": [
         "ETF",
+        "台灣50",
         "美債"
       ],
       "sources": [
@@ -554,6 +634,7 @@
       "mention_kind": "sector_proxy",
       "matched_aliases": [
         "ETF",
+        "台灣50",
         "美債"
       ],
       "sources": [
@@ -640,30 +721,6 @@
         "ret_20d_pct": 3.86,
         "ret_60d_pct": 17.41,
         "drawdown_60d_pct": -2.4
-      },
-      "pricing_status": "ok",
-      "sector_name": "ai_supply_chain"
-    },
-    {
-      "asset_name": "廣達",
-      "symbol": "2382.TW",
-      "pricing_symbol": "2382.TW",
-      "asset_type": "stock",
-      "mention_kind": "sector_proxy",
-      "matched_aliases": [
-        "AI"
-      ],
-      "sources": [
-        "sector_basket:ai_supply_chain"
-      ],
-      "market": {
-        "market_date": "2025-08-04",
-        "close": 281.0,
-        "ret_1d_pct": -0.18,
-        "ret_5d_pct": 4.66,
-        "ret_20d_pct": 1.08,
-        "ret_60d_pct": 17.06,
-        "drawdown_60d_pct": -0.35
       },
       "pricing_status": "ok",
       "sector_name": "ai_supply_chain"
@@ -944,6 +1001,7 @@
       "sector_name": "taiwan_etf_bond",
       "matched_aliases": [
         "ETF",
+        "台灣50",
         "美債"
       ],
       "proxy_symbols": [

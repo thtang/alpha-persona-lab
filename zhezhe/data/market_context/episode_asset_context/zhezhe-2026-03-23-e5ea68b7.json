@@ -5,7 +5,7 @@
   "published_at": "2026-03-23T15:37:31+08:00",
   "source_url": "https://player.soundon.fm/p/7c9b0925-29e2-472c-8120-15b13e70b377/episodes/e5ea68b7-0f71-442e-9db6-64f8a09a822a",
   "metadata": {
-    "asr_status": "pending",
+    "asr_status": "transcribed",
     "audio_path": null,
     "audio_url": "https://rss.soundon.fm/rssf/7c9b0925-29e2-472c-8120-15b13e70b377/feedurl/e5ea68b7-0f71-442e-9db6-64f8a09a822a/rssFileVip.mp3?timestamp=1774253289640",
     "channel_author": "摩爾證券投資顧問股份有限公司",
@@ -99,9 +99,15 @@
     "soundon_id": "e5ea68b7-0f71-442e-9db6-64f8a09a822a",
     "soundon_updated_at": "2026-03-23T08:08:09.640Z",
     "title": "郭哲榮分析師【美國倒數18小時通牒 台股再跌4000點?】2026/3/23",
-    "transcript_path": null
+    "transcript_path": "data/transcripts/2026-03-23_zhezhe-2026-03-23-e5ea68b7.md",
+    "date": "2026-03-23",
+    "asr_model": "mlx-community/whisper-large-v3-turbo",
+    "asr_at": "2026-05-12T19:42:30Z",
+    "source_url": "https://player.soundon.fm/p/7c9b0925-29e2-472c-8120-15b13e70b377/episodes/e5ea68b7-0f71-442e-9db6-64f8a09a822a"
   },
-  "paths": [],
+  "paths": [
+    "data/transcripts/2026-03-23_zhezhe-2026-03-23-e5ea68b7.md"
+  ],
   "context_target_date": "2026-03-23",
   "session_alignment": "same_day_close_after_1335_taipei",
   "baseline_market_context": {
@@ -267,7 +273,8 @@
       "asset_type": "etf",
       "mention_kind": "direct",
       "matched_aliases": [
-        "0050"
+        "0050",
+        "台灣50"
       ],
       "sources": [
         "alias_scan"
@@ -280,6 +287,29 @@
         "ret_20d_pct": -3.82,
         "ret_60d_pct": 19.9,
         "drawdown_60d_pct": -8.5
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "富邦NASDAQ",
+      "symbol": "00662.TW",
+      "pricing_symbol": "00662.TW",
+      "asset_type": "etf",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "00662"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2026-03-23",
+        "close": 97.8,
+        "ret_1d_pct": -2.1,
+        "ret_5d_pct": -3.22,
+        "ret_20d_pct": -4.12,
+        "ret_60d_pct": -3.79,
+        "drawdown_60d_pct": -6.63
       },
       "pricing_status": "ok"
     },
@@ -355,6 +385,29 @@
       "pricing_status": "ok"
     },
     {
+      "asset_name": "華邦電",
+      "symbol": "2344.TW",
+      "pricing_symbol": "2344.TW",
+      "asset_type": "stock",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "華邦"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2026-03-23",
+        "close": 106.9401,
+        "ret_1d_pct": -2.27,
+        "ret_5d_pct": -8.12,
+        "ret_20d_pct": 1.9,
+        "ret_60d_pct": 51.2,
+        "drawdown_60d_pct": -17.31
+      },
+      "pricing_status": "ok"
+    },
+    {
       "asset_name": "微星",
       "symbol": "2377.TW",
       "pricing_symbol": "2377.TW",
@@ -374,6 +427,29 @@
         "ret_20d_pct": 0.55,
         "ret_60d_pct": -9.7,
         "drawdown_60d_pct": -11.46
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "南亞科",
+      "symbol": "2408.TW",
+      "pricing_symbol": "2408.TW",
+      "asset_type": "stock",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "南亞科"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2026-03-23",
+        "close": 223.0,
+        "ret_1d_pct": -4.7,
+        "ret_5d_pct": -14.72,
+        "ret_20d_pct": -19.78,
+        "ret_60d_pct": 37.23,
+        "drawdown_60d_pct": -31.7
       },
       "pricing_status": "ok"
     },
@@ -407,6 +483,7 @@
       "asset_type": "stock",
       "mention_kind": "direct",
       "matched_aliases": [
+        "2603",
         "長榮"
       ],
       "sources": [
@@ -420,6 +497,29 @@
         "ret_20d_pct": 9.68,
         "ret_60d_pct": 11.17,
         "drawdown_60d_pct": -6.64
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "陽明",
+      "symbol": "2609.TW",
+      "pricing_symbol": "2609.TW",
+      "asset_type": "stock",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "陽明"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2026-03-23",
+        "close": 52.8,
+        "ret_1d_pct": -5.88,
+        "ret_5d_pct": -10.96,
+        "ret_20d_pct": -0.94,
+        "ret_60d_pct": 2.92,
+        "drawdown_60d_pct": -20.0
       },
       "pricing_status": "ok"
     },
@@ -470,12 +570,36 @@
       "pricing_status": "ok"
     },
     {
+      "asset_name": "Nasdaq 100 ETF",
+      "symbol": "QQQ",
+      "pricing_symbol": "QQQ",
+      "asset_type": "etf",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "那斯達克"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2026-03-23",
+        "close": 588.0,
+        "ret_1d_pct": 1.15,
+        "ret_5d_pct": -1.94,
+        "ret_20d_pct": -2.11,
+        "ret_60d_pct": -5.36,
+        "drawdown_60d_pct": -7.02
+      },
+      "pricing_status": "ok"
+    },
+    {
       "asset_name": "加權指數",
       "symbol": "^TWII",
       "pricing_symbol": "^TWII",
       "asset_type": "index",
       "mention_kind": "direct",
       "matched_aliases": [
+        "台灣股市",
         "台股",
         "大盤"
       ],
@@ -503,6 +627,7 @@
       "mention_kind": "sector_proxy",
       "matched_aliases": [
         "ETF",
+        "台灣50",
         "美債"
       ],
       "sources": [
@@ -521,31 +646,6 @@
       "sector_name": "taiwan_etf_bond"
     },
     {
-      "asset_name": "富邦NASDAQ",
-      "symbol": "00662.TW",
-      "pricing_symbol": "00662.TW",
-      "asset_type": "etf",
-      "mention_kind": "sector_proxy",
-      "matched_aliases": [
-        "ETF",
-        "美債"
-      ],
-      "sources": [
-        "sector_basket:taiwan_etf_bond"
-      ],
-      "market": {
-        "market_date": "2026-03-23",
-        "close": 97.8,
-        "ret_1d_pct": -2.1,
-        "ret_5d_pct": -3.22,
-        "ret_20d_pct": -4.12,
-        "ret_60d_pct": -3.79,
-        "drawdown_60d_pct": -6.63
-      },
-      "pricing_status": "ok",
-      "sector_name": "taiwan_etf_bond"
-    },
-    {
       "asset_name": "國泰費城半導體",
       "symbol": "00830.TW",
       "pricing_symbol": "00830.TW",
@@ -553,6 +653,7 @@
       "mention_kind": "sector_proxy",
       "matched_aliases": [
         "ETF",
+        "台灣50",
         "美債"
       ],
       "sources": [
@@ -593,6 +694,30 @@
       },
       "pricing_status": "ok",
       "sector_name": "passive_components"
+    },
+    {
+      "asset_name": "旺宏",
+      "symbol": "2337.TW",
+      "pricing_symbol": "2337.TW",
+      "asset_type": "stock",
+      "mention_kind": "sector_proxy",
+      "matched_aliases": [
+        "記憶體"
+      ],
+      "sources": [
+        "sector_basket:memory"
+      ],
+      "market": {
+        "market_date": "2026-03-23",
+        "close": 148.5,
+        "ret_1d_pct": -7.19,
+        "ret_5d_pct": 24.79,
+        "ret_20d_pct": 50.76,
+        "ret_60d_pct": 291.3,
+        "drawdown_60d_pct": -7.19
+      },
+      "pricing_status": "ok",
+      "sector_name": "memory"
     },
     {
       "asset_name": "金像電",
@@ -717,30 +842,6 @@
       "sector_name": "passive_components"
     },
     {
-      "asset_name": "陽明",
-      "symbol": "2609.TW",
-      "pricing_symbol": "2609.TW",
-      "asset_type": "stock",
-      "mention_kind": "sector_proxy",
-      "matched_aliases": [
-        "航運"
-      ],
-      "sources": [
-        "sector_basket:shipping"
-      ],
-      "market": {
-        "market_date": "2026-03-23",
-        "close": 52.8,
-        "ret_1d_pct": -5.88,
-        "ret_5d_pct": -10.96,
-        "ret_20d_pct": -0.94,
-        "ret_60d_pct": 2.92,
-        "drawdown_60d_pct": -20.0
-      },
-      "pricing_status": "ok",
-      "sector_name": "shipping"
-    },
-    {
       "asset_name": "萬海",
       "symbol": "2615.TW",
       "pricing_symbol": "2615.TW",
@@ -763,6 +864,30 @@
       },
       "pricing_status": "ok",
       "sector_name": "shipping"
+    },
+    {
+      "asset_name": "晶豪科",
+      "symbol": "3006.TW",
+      "pricing_symbol": "3006.TW",
+      "asset_type": "stock",
+      "mention_kind": "sector_proxy",
+      "matched_aliases": [
+        "記憶體"
+      ],
+      "sources": [
+        "sector_basket:memory"
+      ],
+      "market": {
+        "market_date": "2026-03-23",
+        "close": 180.0,
+        "ret_1d_pct": -7.93,
+        "ret_5d_pct": 1.69,
+        "ret_20d_pct": 16.88,
+        "ret_60d_pct": 120.86,
+        "drawdown_60d_pct": -17.05
+      },
+      "pricing_status": "ok",
+      "sector_name": "memory"
     },
     {
       "asset_name": "景碩",
@@ -814,6 +939,30 @@
       "sector_name": "ai_supply_chain"
     },
     {
+      "asset_name": "力積電",
+      "symbol": "6770.TW",
+      "pricing_symbol": "6770.TW",
+      "asset_type": "stock",
+      "mention_kind": "sector_proxy",
+      "matched_aliases": [
+        "記憶體"
+      ],
+      "sources": [
+        "sector_basket:memory"
+      ],
+      "market": {
+        "market_date": "2026-03-23",
+        "close": 69.1,
+        "ret_1d_pct": -8.48,
+        "ret_5d_pct": 5.98,
+        "ret_20d_pct": 9.51,
+        "ret_60d_pct": 97.71,
+        "drawdown_60d_pct": -10.03
+      },
+      "pricing_status": "ok",
+      "sector_name": "memory"
+    },
+    {
       "asset_name": "AMD",
       "symbol": "AMD",
       "pricing_symbol": "AMD",
@@ -836,6 +985,30 @@
       },
       "pricing_status": "ok",
       "sector_name": "ai_supply_chain"
+    },
+    {
+      "asset_name": "Micron",
+      "symbol": "MU",
+      "pricing_symbol": "MU",
+      "asset_type": "stock",
+      "mention_kind": "sector_proxy",
+      "matched_aliases": [
+        "記憶體"
+      ],
+      "sources": [
+        "sector_basket:memory"
+      ],
+      "market": {
+        "market_date": "2026-03-23",
+        "close": 404.1802,
+        "ret_1d_pct": -4.39,
+        "ret_5d_pct": -8.48,
+        "ret_20d_pct": -3.95,
+        "ret_60d_pct": 46.42,
+        "drawdown_60d_pct": -12.43
+      },
+      "pricing_status": "ok",
+      "sector_name": "memory"
     },
     {
       "asset_name": "NVIDIA",
@@ -887,6 +1060,20 @@
     }
   ],
   "sector_basket_matches": [
+    {
+      "sector_name": "memory",
+      "matched_aliases": [
+        "記憶體"
+      ],
+      "proxy_symbols": [
+        "2408.TW",
+        "2344.TW",
+        "6770.TW",
+        "3006.TW",
+        "2337.TW",
+        "MU"
+      ]
+    },
     {
       "sector_name": "ai_supply_chain",
       "matched_aliases": [
@@ -943,6 +1130,7 @@
       "sector_name": "taiwan_etf_bond",
       "matched_aliases": [
         "ETF",
+        "台灣50",
         "美債"
       ],
       "proxy_symbols": [

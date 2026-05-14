@@ -5,7 +5,7 @@
   "published_at": "2026-05-11T15:50:22+08:00",
   "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/63ce76ca-8e30-4497-8eb7-03a3c0bb54de",
   "metadata": {
-    "asr_status": "pending",
+    "asr_status": "transcribed",
     "audio_path": null,
     "audio_url": "https://rss.soundon.fm/rssf/35eb55b5-8669-418b-9a08-dc13c482809a/feedurl/63ce76ca-8e30-4497-8eb7-03a3c0bb54de/rssFileVip.mp3?timestamp=1778485843098",
     "channel_author": "郭哲榮 投資長",
@@ -100,9 +100,15 @@
     "soundon_id": "63ce76ca-8e30-4497-8eb7-03a3c0bb54de",
     "soundon_updated_at": "2026-05-11T07:50:43.098Z",
     "title": "郭哲榮分析師【記憶體 哪一檔再漲100%?】2026/5/11",
-    "transcript_path": null
+    "transcript_path": "data/transcripts/2026-05-11_zhezhe-2026-05-11-63ce76ca.md",
+    "date": "2026-05-11",
+    "asr_model": "mlx-community/whisper-large-v3-turbo",
+    "asr_at": "2026-05-12T15:23:13Z",
+    "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/63ce76ca-8e30-4497-8eb7-03a3c0bb54de"
   },
-  "paths": [],
+  "paths": [
+    "data/transcripts/2026-05-11_zhezhe-2026-05-11-63ce76ca.md"
+  ],
   "context_target_date": "2026-05-11",
   "session_alignment": "same_day_close_after_1335_taipei",
   "baseline_market_context": {
@@ -268,7 +274,8 @@
       "asset_type": "etf",
       "mention_kind": "direct",
       "matched_aliases": [
-        "0050"
+        "0050",
+        "台灣50"
       ],
       "sources": [
         "alias_scan"
@@ -338,6 +345,7 @@
       "asset_type": "stock",
       "mention_kind": "direct",
       "matched_aliases": [
+        "2330",
         "台積",
         "台積電"
       ],
@@ -379,12 +387,60 @@
       "pricing_status": "ok"
     },
     {
+      "asset_name": "廣達",
+      "symbol": "2382.TW",
+      "pricing_symbol": "2382.TW",
+      "asset_type": "stock",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "廣達"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2026-05-11",
+        "close": 343.5,
+        "ret_1d_pct": 0.88,
+        "ret_5d_pct": 8.02,
+        "ret_20d_pct": 6.84,
+        "ret_60d_pct": 22.68,
+        "drawdown_60d_pct": -0.87
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "南亞科",
+      "symbol": "2408.TW",
+      "pricing_symbol": "2408.TW",
+      "asset_type": "stock",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "2408",
+        "南亞科"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2026-05-11",
+        "close": 301.0,
+        "ret_1d_pct": 9.85,
+        "ret_5d_pct": 27.0,
+        "ret_20d_pct": 40.0,
+        "ret_60d_pct": -7.81,
+        "drawdown_60d_pct": 0.0
+      },
+      "pricing_status": "ok"
+    },
+    {
       "asset_name": "聯發科",
       "symbol": "2454.TW",
       "pricing_symbol": "2454.TW",
       "asset_type": "stock",
       "mention_kind": "direct",
       "matched_aliases": [
+        "發哥",
         "聯發科"
       ],
       "sources": [
@@ -397,6 +453,29 @@
         "ret_5d_pct": 35.19,
         "ret_20d_pct": 146.35,
         "ret_60d_pct": 120.45,
+        "drawdown_60d_pct": 0.0
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "華新科",
+      "symbol": "2492.TW",
+      "pricing_symbol": "2492.TW",
+      "asset_type": "stock",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "華新科"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2026-05-11",
+        "close": 171.5,
+        "ret_1d_pct": 9.94,
+        "ret_5d_pct": 23.83,
+        "ret_20d_pct": 33.46,
+        "ret_60d_pct": 25.64,
         "drawdown_60d_pct": 0.0
       },
       "pricing_status": "ok"
@@ -454,6 +533,7 @@
       "asset_type": "stock",
       "mention_kind": "direct",
       "matched_aliases": [
+        "3231",
         "緯創"
       ],
       "sources": [
@@ -477,6 +557,7 @@
       "asset_type": "index",
       "mention_kind": "direct",
       "matched_aliases": [
+        "台灣股市",
         "台股",
         "大盤"
       ],
@@ -504,6 +585,7 @@
       "mention_kind": "sector_proxy",
       "matched_aliases": [
         "ETF",
+        "台灣50",
         "美債"
       ],
       "sources": [
@@ -529,6 +611,7 @@
       "mention_kind": "sector_proxy",
       "matched_aliases": [
         "ETF",
+        "台灣50",
         "美債"
       ],
       "sources": [
@@ -554,6 +637,7 @@
       "mention_kind": "sector_proxy",
       "matched_aliases": [
         "ETF",
+        "台灣50",
         "美債"
       ],
       "sources": [
@@ -693,30 +777,6 @@
       "sector_name": "ai_supply_chain"
     },
     {
-      "asset_name": "廣達",
-      "symbol": "2382.TW",
-      "pricing_symbol": "2382.TW",
-      "asset_type": "stock",
-      "mention_kind": "sector_proxy",
-      "matched_aliases": [
-        "AI"
-      ],
-      "sources": [
-        "sector_basket:ai_supply_chain"
-      ],
-      "market": {
-        "market_date": "2026-05-11",
-        "close": 343.5,
-        "ret_1d_pct": 0.88,
-        "ret_5d_pct": 8.02,
-        "ret_20d_pct": 6.84,
-        "ret_60d_pct": 22.68,
-        "drawdown_60d_pct": -0.87
-      },
-      "pricing_status": "ok",
-      "sector_name": "ai_supply_chain"
-    },
-    {
       "asset_name": "台光電",
       "symbol": "2383.TW",
       "pricing_symbol": "2383.TW",
@@ -740,54 +800,6 @@
       },
       "pricing_status": "ok",
       "sector_name": "pcb_ccl"
-    },
-    {
-      "asset_name": "南亞科",
-      "symbol": "2408.TW",
-      "pricing_symbol": "2408.TW",
-      "asset_type": "stock",
-      "mention_kind": "sector_proxy",
-      "matched_aliases": [
-        "記憶體"
-      ],
-      "sources": [
-        "sector_basket:memory"
-      ],
-      "market": {
-        "market_date": "2026-05-11",
-        "close": 301.0,
-        "ret_1d_pct": 9.85,
-        "ret_5d_pct": 27.0,
-        "ret_20d_pct": 40.0,
-        "ret_60d_pct": -7.81,
-        "drawdown_60d_pct": 0.0
-      },
-      "pricing_status": "ok",
-      "sector_name": "memory"
-    },
-    {
-      "asset_name": "華新科",
-      "symbol": "2492.TW",
-      "pricing_symbol": "2492.TW",
-      "asset_type": "stock",
-      "mention_kind": "sector_proxy",
-      "matched_aliases": [
-        "被動元件"
-      ],
-      "sources": [
-        "sector_basket:passive_components"
-      ],
-      "market": {
-        "market_date": "2026-05-11",
-        "close": 171.5,
-        "ret_1d_pct": 9.94,
-        "ret_5d_pct": 23.83,
-        "ret_20d_pct": 33.46,
-        "ret_60d_pct": 25.64,
-        "drawdown_60d_pct": 0.0
-      },
-      "pricing_status": "ok",
-      "sector_name": "passive_components"
     },
     {
       "asset_name": "陽明",
@@ -1102,6 +1114,7 @@
       "sector_name": "taiwan_etf_bond",
       "matched_aliases": [
         "ETF",
+        "台灣50",
         "美債"
       ],
       "proxy_symbols": [

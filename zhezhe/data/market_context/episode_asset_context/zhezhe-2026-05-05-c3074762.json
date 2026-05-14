@@ -5,7 +5,7 @@
   "published_at": "2026-05-05T19:03:49+08:00",
   "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/c3074762-f5e8-455b-8720-05696080f499",
   "metadata": {
-    "asr_status": "pending",
+    "asr_status": "transcribed",
     "audio_path": null,
     "audio_url": "https://rss.soundon.fm/rssf/35eb55b5-8669-418b-9a08-dc13c482809a/feedurl/c3074762-f5e8-455b-8720-05696080f499/rssFileVip.mp3?timestamp=1777979118887",
     "channel_author": "郭哲榮 投資長",
@@ -113,9 +113,15 @@
     "soundon_id": "c3074762-f5e8-455b-8720-05696080f499",
     "soundon_updated_at": "2026-05-05T11:05:18.887Z",
     "title": "【記憶體回來了 鴻海卻噴了!】2026/5/5哲哲只有60秒",
-    "transcript_path": null
+    "transcript_path": "data/transcripts/2026-05-05_zhezhe-2026-05-05-c3074762.md",
+    "date": "2026-05-05",
+    "asr_model": "mlx-community/whisper-large-v3-turbo",
+    "asr_at": "2026-05-12T13:39:25Z",
+    "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/c3074762-f5e8-455b-8720-05696080f499"
   },
-  "paths": [],
+  "paths": [
+    "data/transcripts/2026-05-05_zhezhe-2026-05-05-c3074762.md"
+  ],
   "context_target_date": "2026-05-05",
   "session_alignment": "same_day_close_after_1335_taipei",
   "baseline_market_context": {
@@ -351,6 +357,7 @@
       "asset_type": "stock",
       "mention_kind": "direct",
       "matched_aliases": [
+        "2330",
         "台積",
         "台積電"
       ],
@@ -411,6 +418,29 @@
         "ret_20d_pct": 12.83,
         "ret_60d_pct": 11.85,
         "drawdown_60d_pct": -5.59
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "南亞科",
+      "symbol": "2408.TW",
+      "pricing_symbol": "2408.TW",
+      "asset_type": "stock",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "南亞科"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2026-05-05",
+        "close": 256.5,
+        "ret_1d_pct": 8.23,
+        "ret_5d_pct": 13.25,
+        "ret_20d_pct": 27.93,
+        "ret_60d_pct": -10.31,
+        "drawdown_60d_pct": -21.44
       },
       "pricing_status": "ok"
     },
@@ -559,6 +589,7 @@
       "asset_type": "index",
       "mention_kind": "direct",
       "matched_aliases": [
+        "台灣股市",
         "台股",
         "大盤"
       ],
@@ -798,30 +829,6 @@
       },
       "pricing_status": "ok",
       "sector_name": "pcb_ccl"
-    },
-    {
-      "asset_name": "南亞科",
-      "symbol": "2408.TW",
-      "pricing_symbol": "2408.TW",
-      "asset_type": "stock",
-      "mention_kind": "sector_proxy",
-      "matched_aliases": [
-        "記憶體"
-      ],
-      "sources": [
-        "sector_basket:memory"
-      ],
-      "market": {
-        "market_date": "2026-05-05",
-        "close": 256.5,
-        "ret_1d_pct": 8.23,
-        "ret_5d_pct": 13.25,
-        "ret_20d_pct": 27.93,
-        "ret_60d_pct": -10.31,
-        "drawdown_60d_pct": -21.44
-      },
-      "pricing_status": "ok",
-      "sector_name": "memory"
     },
     {
       "asset_name": "華新科",

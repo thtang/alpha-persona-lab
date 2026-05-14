@@ -5,7 +5,7 @@
   "published_at": "2025-10-27T18:32:57+08:00",
   "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/c6557a89-e485-4f2c-a191-ada9133eccee",
   "metadata": {
-    "asr_status": "pending",
+    "asr_status": "transcribed",
     "audio_path": null,
     "audio_url": "https://rss.soundon.fm/rssf/35eb55b5-8669-418b-9a08-dc13c482809a/feedurl/c6557a89-e485-4f2c-a191-ada9133eccee/rssFileVip.mp3?timestamp=1761563805439",
     "channel_author": "郭哲榮 投資長",
@@ -65,9 +65,15 @@
     "soundon_id": "c6557a89-e485-4f2c-a191-ada9133eccee",
     "soundon_updated_at": "2025-10-27T11:16:45.439Z",
     "title": "【兩萬八達陣! 鴻海 緯創 廣達 南亞科 國巨 誰再漲100元?】2025.10.27 哲哲只有60秒#shorts",
-    "transcript_path": null
+    "transcript_path": "data/transcripts/2025-10-27_zhezhe-2025-10-27-c6557a89.md",
+    "date": "2025-10-27",
+    "asr_model": "mlx-community/whisper-large-v3-turbo",
+    "asr_at": "2026-05-13T05:06:48Z",
+    "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/c6557a89-e485-4f2c-a191-ada9133eccee"
   },
-  "paths": [],
+  "paths": [
+    "data/transcripts/2025-10-27_zhezhe-2025-10-27-c6557a89.md"
+  ],
   "context_target_date": "2025-10-27",
   "session_alignment": "same_day_close_after_1335_taipei",
   "baseline_market_context": {
@@ -479,6 +485,29 @@
         "drawdown_60d_pct": -6.09
       },
       "pricing_status": "ok"
+    },
+    {
+      "asset_name": "加權指數",
+      "symbol": "^TWII",
+      "pricing_symbol": "^TWII",
+      "asset_type": "index",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "台灣股市"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2025-10-27",
+        "close": 27993.6309,
+        "ret_1d_pct": 1.68,
+        "ret_5d_pct": 2.53,
+        "ret_20d_pct": 6.65,
+        "ret_60d_pct": 20.65,
+        "drawdown_60d_pct": 0.0
+      },
+      "pricing_status": "ok"
     }
   ],
   "sector_proxy_assets": [
@@ -577,9 +606,143 @@
       },
       "pricing_status": "ok",
       "sector_name": "taiwan_etf_bond"
+    },
+    {
+      "asset_name": "旺宏",
+      "symbol": "2337.TW",
+      "pricing_symbol": "2337.TW",
+      "asset_type": "stock",
+      "mention_kind": "sector_proxy",
+      "matched_aliases": [
+        "記憶體"
+      ],
+      "sources": [
+        "sector_basket:memory"
+      ],
+      "market": {
+        "market_date": "2025-10-27",
+        "close": 33.15,
+        "ret_1d_pct": 9.95,
+        "ret_5d_pct": 23.93,
+        "ret_20d_pct": 23.93,
+        "ret_60d_pct": 66.58,
+        "drawdown_60d_pct": 0.0
+      },
+      "pricing_status": "ok",
+      "sector_name": "memory"
+    },
+    {
+      "asset_name": "華邦電",
+      "symbol": "2344.TW",
+      "pricing_symbol": "2344.TW",
+      "asset_type": "stock",
+      "mention_kind": "sector_proxy",
+      "matched_aliases": [
+        "記憶體"
+      ],
+      "sources": [
+        "sector_basket:memory"
+      ],
+      "market": {
+        "market_date": "2025-10-27",
+        "close": 50.6349,
+        "ret_1d_pct": 9.94,
+        "ret_5d_pct": 15.81,
+        "ret_20d_pct": 39.64,
+        "ret_60d_pct": 190.86,
+        "drawdown_60d_pct": 0.0
+      },
+      "pricing_status": "ok",
+      "sector_name": "memory"
+    },
+    {
+      "asset_name": "晶豪科",
+      "symbol": "3006.TW",
+      "pricing_symbol": "3006.TW",
+      "asset_type": "stock",
+      "mention_kind": "sector_proxy",
+      "matched_aliases": [
+        "記憶體"
+      ],
+      "sources": [
+        "sector_basket:memory"
+      ],
+      "market": {
+        "market_date": "2025-10-27",
+        "close": 91.9,
+        "ret_1d_pct": 9.93,
+        "ret_5d_pct": 6.86,
+        "ret_20d_pct": 13.46,
+        "ret_60d_pct": 77.76,
+        "drawdown_60d_pct": 0.0
+      },
+      "pricing_status": "ok",
+      "sector_name": "memory"
+    },
+    {
+      "asset_name": "力積電",
+      "symbol": "6770.TW",
+      "pricing_symbol": "6770.TW",
+      "asset_type": "stock",
+      "mention_kind": "sector_proxy",
+      "matched_aliases": [
+        "記憶體"
+      ],
+      "sources": [
+        "sector_basket:memory"
+      ],
+      "market": {
+        "market_date": "2025-10-27",
+        "close": 31.5,
+        "ret_1d_pct": 9.95,
+        "ret_5d_pct": 6.78,
+        "ret_20d_pct": 34.33,
+        "ret_60d_pct": 107.92,
+        "drawdown_60d_pct": 0.0
+      },
+      "pricing_status": "ok",
+      "sector_name": "memory"
+    },
+    {
+      "asset_name": "Micron",
+      "symbol": "MU",
+      "pricing_symbol": "MU",
+      "asset_type": "stock",
+      "mention_kind": "sector_proxy",
+      "matched_aliases": [
+        "記憶體"
+      ],
+      "sources": [
+        "sector_basket:memory"
+      ],
+      "market": {
+        "market_date": "2025-10-27",
+        "close": 219.9187,
+        "ret_1d_pct": 0.49,
+        "ret_5d_pct": 6.45,
+        "ret_20d_pct": 34.37,
+        "ret_60d_pct": 109.99,
+        "drawdown_60d_pct": 0.0
+      },
+      "pricing_status": "ok",
+      "sector_name": "memory"
     }
   ],
   "sector_basket_matches": [
+    {
+      "sector_name": "memory",
+      "matched_aliases": [
+        "記憶體"
+      ],
+      "proxy_symbols": [
+        "2408.TW",
+        "2344.TW",
+        "6770.TW",
+        "3006.TW",
+        "2337.TW",
+        "MU"
+      ]
+    },
     {
       "sector_name": "taiwan_etf_bond",
       "matched_aliases": [

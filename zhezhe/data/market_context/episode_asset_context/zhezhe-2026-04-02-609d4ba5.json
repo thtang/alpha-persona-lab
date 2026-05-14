@@ -5,7 +5,7 @@
   "published_at": "2026-04-02T19:07:54+08:00",
   "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/609d4ba5-9942-4e5a-839c-ce226e89a7aa",
   "metadata": {
-    "asr_status": "pending",
+    "asr_status": "transcribed",
     "audio_path": null,
     "audio_url": "https://rss.soundon.fm/rssf/35eb55b5-8669-418b-9a08-dc13c482809a/feedurl/609d4ba5-9942-4e5a-839c-ce226e89a7aa/rssFileVip.mp3?timestamp=1775128115487",
     "channel_author": "郭哲榮 投資長",
@@ -113,9 +113,15 @@
     "soundon_id": "609d4ba5-9942-4e5a-839c-ce226e89a7aa",
     "soundon_updated_at": "2026-04-02T11:08:35.487Z",
     "title": "【開高走低殺千點 清明變盤再襲!】2026/4/2哲哲只有60秒",
-    "transcript_path": null
+    "transcript_path": "data/transcripts/2026-04-02_zhezhe-2026-04-02-609d4ba5.md",
+    "date": "2026-04-02",
+    "asr_model": "mlx-community/whisper-large-v3-turbo",
+    "asr_at": "2026-05-12T18:51:08Z",
+    "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/609d4ba5-9942-4e5a-839c-ce226e89a7aa"
   },
-  "paths": [],
+  "paths": [
+    "data/transcripts/2026-04-02_zhezhe-2026-04-02-609d4ba5.md"
+  ],
   "context_target_date": "2026-04-02",
   "session_alignment": "same_day_close_after_1335_taipei",
   "baseline_market_context": {
@@ -369,6 +375,29 @@
       "pricing_status": "ok"
     },
     {
+      "asset_name": "華邦電",
+      "symbol": "2344.TW",
+      "pricing_symbol": "2344.TW",
+      "asset_type": "stock",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "2344"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2026-04-02",
+        "close": 91.8,
+        "ret_1d_pct": -1.4,
+        "ret_5d_pct": -3.87,
+        "ret_20d_pct": -17.61,
+        "ret_60d_pct": 20.63,
+        "drawdown_60d_pct": -29.01
+      },
+      "pricing_status": "ok"
+    },
+    {
       "asset_name": "微星",
       "symbol": "2377.TW",
       "pricing_symbol": "2377.TW",
@@ -411,6 +440,29 @@
         "ret_20d_pct": -1.73,
         "ret_60d_pct": 8.17,
         "drawdown_60d_pct": -5.48
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "南亞科",
+      "symbol": "2408.TW",
+      "pricing_symbol": "2408.TW",
+      "asset_type": "stock",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "2408"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2026-04-02",
+        "close": 200.5,
+        "ret_1d_pct": -4.98,
+        "ret_5d_pct": -11.09,
+        "ret_20d_pct": -22.14,
+        "ret_60d_pct": 6.08,
+        "drawdown_60d_pct": -38.59
       },
       "pricing_status": "ok"
     },
@@ -530,6 +582,29 @@
       "pricing_status": "ok"
     },
     {
+      "asset_name": "景碩",
+      "symbol": "3189.TW",
+      "pricing_symbol": "3189.TW",
+      "asset_type": "stock",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "景碩"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2026-04-02",
+        "close": 336.0,
+        "ret_1d_pct": 1.2,
+        "ret_5d_pct": -4.41,
+        "ret_20d_pct": 12.94,
+        "ret_60d_pct": 119.61,
+        "drawdown_60d_pct": -12.39
+      },
+      "pricing_status": "ok"
+    },
+    {
       "asset_name": "緯創",
       "symbol": "3231.TW",
       "pricing_symbol": "3231.TW",
@@ -549,6 +624,29 @@
         "ret_20d_pct": -2.72,
         "ret_60d_pct": -14.68,
         "drawdown_60d_pct": -21.14
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "力積電",
+      "symbol": "6770.TW",
+      "pricing_symbol": "6770.TW",
+      "asset_type": "stock",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "6770"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2026-04-02",
+        "close": 53.5,
+        "ret_1d_pct": -2.55,
+        "ret_5d_pct": -14.81,
+        "ret_20d_pct": -16.93,
+        "ret_60d_pct": 33.58,
+        "drawdown_60d_pct": -30.34
       },
       "pricing_status": "ok"
     },
@@ -774,31 +872,6 @@
       },
       "pricing_status": "ok",
       "sector_name": "passive_components"
-    },
-    {
-      "asset_name": "景碩",
-      "symbol": "3189.TW",
-      "pricing_symbol": "3189.TW",
-      "asset_type": "stock",
-      "mention_kind": "sector_proxy",
-      "matched_aliases": [
-        "ABF",
-        "載板"
-      ],
-      "sources": [
-        "sector_basket:pcb_ccl"
-      ],
-      "market": {
-        "market_date": "2026-04-02",
-        "close": 336.0,
-        "ret_1d_pct": 1.2,
-        "ret_5d_pct": -4.41,
-        "ret_20d_pct": 12.94,
-        "ret_60d_pct": 119.61,
-        "drawdown_60d_pct": -12.39
-      },
-      "pricing_status": "ok",
-      "sector_name": "pcb_ccl"
     },
     {
       "asset_name": "緯穎",

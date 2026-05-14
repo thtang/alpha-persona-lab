@@ -5,7 +5,7 @@
   "published_at": "2025-08-08T17:57:46+08:00",
   "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/c9289e38-eca5-4a5f-b25a-498037d3b65c",
   "metadata": {
-    "asr_status": "pending",
+    "asr_status": "transcribed",
     "audio_path": null,
     "audio_url": "https://rss.soundon.fm/rssf/35eb55b5-8669-418b-9a08-dc13c482809a/feedurl/c9289e38-eca5-4a5f-b25a-498037d3b65c/rssFileVip.mp3?timestamp=1754662642829",
     "channel_author": "郭哲榮 投資長",
@@ -65,9 +65,15 @@
     "soundon_id": "c9289e38-eca5-4a5f-b25a-498037d3b65c",
     "soundon_updated_at": "2025-08-08T14:17:22.829Z",
     "title": "【台積電、緯創、廣達營收大不同 台積2000、緯創200、鴻海300、廣達400!? 】2025.08.08 哲哲只有60秒 #shorts",
-    "transcript_path": null
+    "transcript_path": "data/transcripts/2025-08-08_zhezhe-2025-08-08-c9289e38.md",
+    "date": "2025-08-08",
+    "asr_model": "mlx-community/whisper-large-v3-turbo",
+    "asr_at": "2026-05-13T10:36:45Z",
+    "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/c9289e38-eca5-4a5f-b25a-498037d3b65c"
   },
-  "paths": [],
+  "paths": [
+    "data/transcripts/2025-08-08_zhezhe-2025-08-08-c9289e38.md"
+  ],
   "context_target_date": "2025-08-08",
   "session_alignment": "same_day_close_after_1335_taipei",
   "baseline_market_context": {
@@ -431,6 +437,29 @@
         "ret_20d_pct": 3.75,
         "ret_60d_pct": 12.45,
         "drawdown_60d_pct": -0.8
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "加權指數",
+      "symbol": "^TWII",
+      "pricing_symbol": "^TWII",
+      "asset_type": "index",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "台股"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2025-08-08",
+        "close": 24021.2598,
+        "ret_1d_pct": 0.07,
+        "ret_5d_pct": 2.5,
+        "ret_20d_pct": 5.58,
+        "ret_60d_pct": 10.54,
+        "drawdown_60d_pct": 0.0
       },
       "pricing_status": "ok"
     }

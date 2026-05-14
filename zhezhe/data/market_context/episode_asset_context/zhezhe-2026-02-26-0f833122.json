@@ -5,7 +5,7 @@
   "published_at": "2026-02-26T18:41:47+08:00",
   "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/0f833122-22b5-430d-b3c8-a758c127c26e",
   "metadata": {
-    "asr_status": "pending",
+    "asr_status": "transcribed",
     "audio_path": null,
     "audio_url": "https://rss.soundon.fm/rssf/35eb55b5-8669-418b-9a08-dc13c482809a/feedurl/0f833122-22b5-430d-b3c8-a758c127c26e/rssFileVip.mp3?timestamp=1772103992266",
     "channel_author": "郭哲榮 投資長",
@@ -65,9 +65,15 @@
     "soundon_id": "0f833122-22b5-430d-b3c8-a758c127c26e",
     "soundon_updated_at": "2026-02-26T11:06:32.266Z",
     "title": "【三月四萬點? 台積2330元】2026.02.26哲哲只有60秒 #shorts",
-    "transcript_path": null
+    "transcript_path": "data/transcripts/2026-02-26_zhezhe-2026-02-26-0f833122.md",
+    "date": "2026-02-26",
+    "asr_model": "mlx-community/whisper-large-v3-turbo",
+    "asr_at": "2026-05-12T21:13:07Z",
+    "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/0f833122-22b5-430d-b3c8-a758c127c26e"
   },
-  "paths": [],
+  "paths": [
+    "data/transcripts/2026-02-26_zhezhe-2026-02-26-0f833122.md"
+  ],
   "context_target_date": "2026-02-26",
   "session_alignment": "same_day_close_after_1335_taipei",
   "baseline_market_context": {
@@ -390,12 +396,36 @@
       "pricing_status": "ok"
     },
     {
+      "asset_name": "晶豪科",
+      "symbol": "3006.TW",
+      "pricing_symbol": "3006.TW",
+      "asset_type": "stock",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "3006"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2026-02-26",
+        "close": 156.5,
+        "ret_1d_pct": -1.57,
+        "ret_5d_pct": 0.97,
+        "ret_20d_pct": 2.96,
+        "ret_60d_pct": 95.38,
+        "drawdown_60d_pct": -19.74
+      },
+      "pricing_status": "ok"
+    },
+    {
       "asset_name": "欣興",
       "symbol": "3037.TW",
       "pricing_symbol": "3037.TW",
       "asset_type": "stock",
       "mention_kind": "direct",
       "matched_aliases": [
+        "3037",
         "欣興"
       ],
       "sources": [
@@ -409,6 +439,30 @@
         "ret_20d_pct": 56.33,
         "ret_60d_pct": 200.94,
         "drawdown_60d_pct": 0.0
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "景碩",
+      "symbol": "3189.TW",
+      "pricing_symbol": "3189.TW",
+      "asset_type": "stock",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "3189",
+        "景碩"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2026-02-26",
+        "close": 314.5,
+        "ret_1d_pct": -3.38,
+        "ret_5d_pct": 24.06,
+        "ret_20d_pct": 57.53,
+        "ret_60d_pct": 143.8,
+        "drawdown_60d_pct": -3.38
       },
       "pricing_status": "ok"
     },
@@ -432,6 +486,30 @@
         "ret_20d_pct": 0.0,
         "ret_60d_pct": -2.16,
         "drawdown_60d_pct": -14.2
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "加權指數",
+      "symbol": "^TWII",
+      "pricing_symbol": "^TWII",
+      "asset_type": "index",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "台灣股市",
+        "台股"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2026-02-26",
+        "close": 35414.4883,
+        "ret_1d_pct": 0.0,
+        "ret_5d_pct": 7.08,
+        "ret_20d_pct": 11.51,
+        "ret_60d_pct": 33.97,
+        "drawdown_60d_pct": 0.0
       },
       "pricing_status": "ok"
     }
@@ -532,9 +610,171 @@
       },
       "pricing_status": "ok",
       "sector_name": "taiwan_etf_bond"
+    },
+    {
+      "asset_name": "技嘉",
+      "symbol": "2376.TW",
+      "pricing_symbol": "2376.TW",
+      "asset_type": "stock",
+      "mention_kind": "sector_proxy",
+      "matched_aliases": [
+        "AI"
+      ],
+      "sources": [
+        "sector_basket:ai_supply_chain"
+      ],
+      "market": {
+        "market_date": "2026-02-26",
+        "close": 239.5,
+        "ret_1d_pct": 1.91,
+        "ret_5d_pct": 5.74,
+        "ret_20d_pct": 0.63,
+        "ret_60d_pct": 0.0,
+        "drawdown_60d_pct": -7.53
+      },
+      "pricing_status": "ok",
+      "sector_name": "ai_supply_chain"
+    },
+    {
+      "asset_name": "微星",
+      "symbol": "2377.TW",
+      "pricing_symbol": "2377.TW",
+      "asset_type": "stock",
+      "mention_kind": "sector_proxy",
+      "matched_aliases": [
+        "AI"
+      ],
+      "sources": [
+        "sector_basket:ai_supply_chain"
+      ],
+      "market": {
+        "market_date": "2026-02-26",
+        "close": 94.3,
+        "ret_1d_pct": 2.28,
+        "ret_5d_pct": 4.31,
+        "ret_20d_pct": -6.17,
+        "ret_60d_pct": -6.63,
+        "drawdown_60d_pct": -12.69
+      },
+      "pricing_status": "ok",
+      "sector_name": "ai_supply_chain"
+    },
+    {
+      "asset_name": "緯穎",
+      "symbol": "6669.TW",
+      "pricing_symbol": "6669.TW",
+      "asset_type": "stock",
+      "mention_kind": "sector_proxy",
+      "matched_aliases": [
+        "AI"
+      ],
+      "sources": [
+        "sector_basket:ai_supply_chain"
+      ],
+      "market": {
+        "market_date": "2026-02-26",
+        "close": 4000.0,
+        "ret_1d_pct": -1.48,
+        "ret_5d_pct": 8.55,
+        "ret_20d_pct": 8.99,
+        "ret_60d_pct": -2.32,
+        "drawdown_60d_pct": -14.62
+      },
+      "pricing_status": "ok",
+      "sector_name": "ai_supply_chain"
+    },
+    {
+      "asset_name": "AMD",
+      "symbol": "AMD",
+      "pricing_symbol": "AMD",
+      "asset_type": "stock",
+      "mention_kind": "sector_proxy",
+      "matched_aliases": [
+        "AI"
+      ],
+      "sources": [
+        "sector_basket:ai_supply_chain"
+      ],
+      "market": {
+        "market_date": "2026-02-26",
+        "close": 203.68,
+        "ret_1d_pct": -3.41,
+        "ret_5d_pct": 0.15,
+        "ret_20d_pct": -19.41,
+        "ret_60d_pct": -6.37,
+        "drawdown_60d_pct": -21.57
+      },
+      "pricing_status": "ok",
+      "sector_name": "ai_supply_chain"
+    },
+    {
+      "asset_name": "NVIDIA",
+      "symbol": "NVDA",
+      "pricing_symbol": "NVDA",
+      "asset_type": "stock",
+      "mention_kind": "sector_proxy",
+      "matched_aliases": [
+        "AI"
+      ],
+      "sources": [
+        "sector_basket:ai_supply_chain"
+      ],
+      "market": {
+        "market_date": "2026-02-26",
+        "close": 184.88,
+        "ret_1d_pct": -5.46,
+        "ret_5d_pct": -1.6,
+        "ret_20d_pct": -3.46,
+        "ret_60d_pct": 4.46,
+        "drawdown_60d_pct": -5.46
+      },
+      "pricing_status": "ok",
+      "sector_name": "ai_supply_chain"
+    },
+    {
+      "asset_name": "Semiconductor ETF",
+      "symbol": "SOXX",
+      "pricing_symbol": "SOXX",
+      "asset_type": "etf",
+      "mention_kind": "sector_proxy",
+      "matched_aliases": [
+        "AI"
+      ],
+      "sources": [
+        "sector_basket:ai_supply_chain"
+      ],
+      "market": {
+        "market_date": "2026-02-26",
+        "close": 356.5803,
+        "ret_1d_pct": -3.04,
+        "ret_5d_pct": 0.27,
+        "ret_20d_pct": -1.02,
+        "ret_60d_pct": 20.42,
+        "drawdown_60d_pct": -3.04
+      },
+      "pricing_status": "ok",
+      "sector_name": "ai_supply_chain"
     }
   ],
   "sector_basket_matches": [
+    {
+      "sector_name": "ai_supply_chain",
+      "matched_aliases": [
+        "AI"
+      ],
+      "proxy_symbols": [
+        "2330.TW",
+        "2317.TW",
+        "2382.TW",
+        "6669.TW",
+        "3231.TW",
+        "2376.TW",
+        "2377.TW",
+        "NVDA",
+        "AMD",
+        "SOXX"
+      ]
+    },
     {
       "sector_name": "taiwan_etf_bond",
       "matched_aliases": [

@@ -5,7 +5,7 @@
   "published_at": "2026-05-11T17:51:44+08:00",
   "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/053c8b58-3021-4a51-8fde-7750848eb1d6",
   "metadata": {
-    "asr_status": "pending",
+    "asr_status": "transcribed",
     "audio_path": null,
     "audio_url": "https://rss.soundon.fm/rssf/35eb55b5-8669-418b-9a08-dc13c482809a/feedurl/053c8b58-3021-4a51-8fde-7750848eb1d6/rssFileVip.mp3?timestamp=1778493135267",
     "channel_author": "郭哲榮 投資長",
@@ -65,9 +65,15 @@
     "soundon_id": "053c8b58-3021-4a51-8fde-7750848eb1d6",
     "soundon_updated_at": "2026-05-11T09:52:15.267Z",
     "title": "【記憶體 哪一檔再漲100%?】2026/5/11哲哲只有60秒 #shorts",
-    "transcript_path": null
+    "transcript_path": "data/transcripts/2026-05-11_zhezhe-2026-05-11-053c8b58.md",
+    "date": "2026-05-11",
+    "asr_model": "mlx-community/whisper-large-v3-turbo",
+    "asr_at": "2026-05-12T13:37:39Z",
+    "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/053c8b58-3021-4a51-8fde-7750848eb1d6"
   },
-  "paths": [],
+  "paths": [
+    "data/transcripts/2026-05-11_zhezhe-2026-05-11-053c8b58.md"
+  ],
   "context_target_date": "2026-05-11",
   "session_alignment": "same_day_close_after_1335_taipei",
   "baseline_market_context": {
@@ -297,6 +303,29 @@
       "pricing_status": "ok"
     },
     {
+      "asset_name": "南亞科",
+      "symbol": "2408.TW",
+      "pricing_symbol": "2408.TW",
+      "asset_type": "stock",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "南亞科"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2026-05-11",
+        "close": 301.0,
+        "ret_1d_pct": 9.85,
+        "ret_5d_pct": 27.0,
+        "ret_20d_pct": 40.0,
+        "ret_60d_pct": -7.81,
+        "drawdown_60d_pct": 0.0
+      },
+      "pricing_status": "ok"
+    },
+    {
       "asset_name": "聯發科",
       "symbol": "2454.TW",
       "pricing_symbol": "2454.TW",
@@ -431,6 +460,29 @@
         "ret_20d_pct": 2.96,
         "ret_60d_pct": 6.51,
         "drawdown_60d_pct": -5.12
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "加權指數",
+      "symbol": "^TWII",
+      "pricing_symbol": "^TWII",
+      "asset_type": "index",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "台灣股市"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2026-05-11",
+        "close": 41790.0586,
+        "ret_1d_pct": 0.45,
+        "ret_5d_pct": 2.67,
+        "ret_20d_pct": 17.99,
+        "ret_60d_pct": 30.33,
+        "drawdown_60d_pct": -0.34
       },
       "pricing_status": "ok"
     }
@@ -576,30 +628,6 @@
         "ret_20d_pct": 25.67,
         "ret_60d_pct": -8.08,
         "drawdown_60d_pct": -7.72
-      },
-      "pricing_status": "ok",
-      "sector_name": "memory"
-    },
-    {
-      "asset_name": "南亞科",
-      "symbol": "2408.TW",
-      "pricing_symbol": "2408.TW",
-      "asset_type": "stock",
-      "mention_kind": "sector_proxy",
-      "matched_aliases": [
-        "記憶體"
-      ],
-      "sources": [
-        "sector_basket:memory"
-      ],
-      "market": {
-        "market_date": "2026-05-11",
-        "close": 301.0,
-        "ret_1d_pct": 9.85,
-        "ret_5d_pct": 27.0,
-        "ret_20d_pct": 40.0,
-        "ret_60d_pct": -7.81,
-        "drawdown_60d_pct": 0.0
       },
       "pricing_status": "ok",
       "sector_name": "memory"

@@ -5,7 +5,7 @@
   "published_at": "2026-01-16T19:14:15+08:00",
   "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/f0b698ca-ed97-4212-b771-294dd9a1fb8e",
   "metadata": {
-    "asr_status": "pending",
+    "asr_status": "transcribed",
     "audio_path": null,
     "audio_url": "https://rss.soundon.fm/rssf/35eb55b5-8669-418b-9a08-dc13c482809a/feedurl/f0b698ca-ed97-4212-b771-294dd9a1fb8e/rssFileVip.mp3?timestamp=1768562127160",
     "channel_author": "郭哲榮 投資長",
@@ -65,9 +65,15 @@
     "soundon_id": "f0b698ca-ed97-4212-b771-294dd9a1fb8e",
     "soundon_updated_at": "2026-01-16T11:15:27.160Z",
     "title": "【四萬點、台積2500、南亞科400、力積電100元 今年都到?】2026.01.16 哲哲只有60秒 #shorts",
-    "transcript_path": null
+    "transcript_path": "data/transcripts/2026-01-16_zhezhe-2026-01-16-f0b698ca.md",
+    "date": "2026-01-16",
+    "asr_model": "mlx-community/whisper-large-v3-turbo",
+    "asr_at": "2026-05-12T23:20:21Z",
+    "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/f0b698ca-ed97-4212-b771-294dd9a1fb8e"
   },
-  "paths": [],
+  "paths": [
+    "data/transcripts/2026-01-16_zhezhe-2026-01-16-f0b698ca.md"
+  ],
   "context_target_date": "2026-01-16",
   "session_alignment": "same_day_close_after_1335_taipei",
   "baseline_market_context": {
@@ -418,6 +424,7 @@
       "asset_type": "stock",
       "mention_kind": "direct",
       "matched_aliases": [
+        "3037",
         "欣興"
       ],
       "sources": [
@@ -430,6 +437,29 @@
         "ret_5d_pct": 21.51,
         "ret_20d_pct": 29.25,
         "ret_60d_pct": 71.25,
+        "drawdown_60d_pct": 0.0
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "景碩",
+      "symbol": "3189.TW",
+      "pricing_symbol": "3189.TW",
+      "asset_type": "stock",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "景碩"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2026-01-16",
+        "close": 192.5,
+        "ret_1d_pct": 10.0,
+        "ret_5d_pct": 14.24,
+        "ret_20d_pct": 41.54,
+        "ret_60d_pct": 28.33,
         "drawdown_60d_pct": 0.0
       },
       "pricing_status": "ok"
@@ -476,6 +506,30 @@
         "ret_5d_pct": 18.74,
         "ret_20d_pct": 62.07,
         "ret_60d_pct": 83.71,
+        "drawdown_60d_pct": 0.0
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "加權指數",
+      "symbol": "^TWII",
+      "pricing_symbol": "^TWII",
+      "asset_type": "index",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "台灣股市",
+        "台股"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2026-01-16",
+        "close": 31408.6992,
+        "ret_1d_pct": 1.94,
+        "ret_5d_pct": 3.7,
+        "ret_20d_pct": 14.11,
+        "ret_60d_pct": 13.17,
         "drawdown_60d_pct": 0.0
       },
       "pricing_status": "ok"

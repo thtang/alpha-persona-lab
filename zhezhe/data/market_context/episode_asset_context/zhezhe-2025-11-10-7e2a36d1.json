@@ -5,7 +5,7 @@
   "published_at": "2025-11-10T18:18:27+08:00",
   "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/7e2a36d1-9db0-4f56-9136-87aa1634d2c5",
   "metadata": {
-    "asr_status": "pending",
+    "asr_status": "transcribed",
     "audio_path": null,
     "audio_url": "https://rss.soundon.fm/rssf/35eb55b5-8669-418b-9a08-dc13c482809a/feedurl/7e2a36d1-9db0-4f56-9136-87aa1634d2c5/rssFileVip.mp3?timestamp=1762777157408",
     "channel_author": "郭哲榮 投資長",
@@ -65,9 +65,15 @@
     "soundon_id": "7e2a36d1-9db0-4f56-9136-87aa1634d2c5",
     "soundon_updated_at": "2025-11-10T12:19:17.408Z",
     "title": "【台積最新營收創新高 VS 記憶體30年大循環 誰漲更多?】2025.11.10 哲哲只有60秒#shorts",
-    "transcript_path": null
+    "transcript_path": "data/transcripts/2025-11-10_zhezhe-2025-11-10-7e2a36d1.md",
+    "date": "2025-11-10",
+    "asr_model": "mlx-community/whisper-large-v3-turbo",
+    "asr_at": "2026-05-13T04:06:28Z",
+    "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/7e2a36d1-9db0-4f56-9136-87aa1634d2c5"
   },
-  "paths": [],
+  "paths": [
+    "data/transcripts/2025-11-10_zhezhe-2025-11-10-7e2a36d1.md"
+  ],
   "context_target_date": "2025-11-10",
   "session_alignment": "same_day_close_after_1335_taipei",
   "baseline_market_context": {
@@ -274,6 +280,29 @@
       "pricing_status": "ok"
     },
     {
+      "asset_name": "華邦電",
+      "symbol": "2344.TW",
+      "pricing_symbol": "2344.TW",
+      "asset_type": "stock",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "2344"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2025-11-10",
+        "close": 63.5672,
+        "ret_1d_pct": 9.98,
+        "ret_5d_pct": 12.9,
+        "ret_20d_pct": 47.07,
+        "ret_60d_pct": 246.34,
+        "drawdown_60d_pct": 0.0
+      },
+      "pricing_status": "ok"
+    },
+    {
       "asset_name": "廣達",
       "symbol": "2382.TW",
       "pricing_symbol": "2382.TW",
@@ -293,6 +322,30 @@
         "ret_20d_pct": -2.18,
         "ret_60d_pct": 3.0,
         "drawdown_60d_pct": -5.82
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "南亞科",
+      "symbol": "2408.TW",
+      "pricing_symbol": "2408.TW",
+      "asset_type": "stock",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "2408",
+        "南亞科"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2025-11-10",
+        "close": 161.5,
+        "ret_1d_pct": 9.86,
+        "ret_5d_pct": 17.88,
+        "ret_20d_pct": 63.96,
+        "ret_60d_pct": 240.36,
+        "drawdown_60d_pct": 0.0
       },
       "pricing_status": "ok"
     },
@@ -389,6 +442,29 @@
       "pricing_status": "ok"
     },
     {
+      "asset_name": "晶豪科",
+      "symbol": "3006.TW",
+      "pricing_symbol": "3006.TW",
+      "asset_type": "stock",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "3006"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2025-11-10",
+        "close": 95.0,
+        "ret_1d_pct": 0.0,
+        "ret_5d_pct": 5.67,
+        "ret_20d_pct": 12.83,
+        "ret_60d_pct": 76.58,
+        "drawdown_60d_pct": -1.35
+      },
+      "pricing_status": "ok"
+    },
+    {
       "asset_name": "欣興",
       "symbol": "3037.TW",
       "pricing_symbol": "3037.TW",
@@ -408,6 +484,29 @@
         "ret_20d_pct": 1.38,
         "ret_60d_pct": 17.86,
         "drawdown_60d_pct": -8.55
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "景碩",
+      "symbol": "3189.TW",
+      "pricing_symbol": "3189.TW",
+      "asset_type": "stock",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "景碩"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2025-11-10",
+        "close": 128.0,
+        "ret_1d_pct": 0.0,
+        "ret_5d_pct": -7.91,
+        "ret_20d_pct": -6.91,
+        "ret_60d_pct": 23.67,
+        "drawdown_60d_pct": -15.23
       },
       "pricing_status": "ok"
     },
@@ -552,78 +651,6 @@
         "ret_20d_pct": 37.82,
         "ret_60d_pct": 96.88,
         "drawdown_60d_pct": -1.56
-      },
-      "pricing_status": "ok",
-      "sector_name": "memory"
-    },
-    {
-      "asset_name": "華邦電",
-      "symbol": "2344.TW",
-      "pricing_symbol": "2344.TW",
-      "asset_type": "stock",
-      "mention_kind": "sector_proxy",
-      "matched_aliases": [
-        "記憶體"
-      ],
-      "sources": [
-        "sector_basket:memory"
-      ],
-      "market": {
-        "market_date": "2025-11-10",
-        "close": 63.5672,
-        "ret_1d_pct": 9.98,
-        "ret_5d_pct": 12.9,
-        "ret_20d_pct": 47.07,
-        "ret_60d_pct": 246.34,
-        "drawdown_60d_pct": 0.0
-      },
-      "pricing_status": "ok",
-      "sector_name": "memory"
-    },
-    {
-      "asset_name": "南亞科",
-      "symbol": "2408.TW",
-      "pricing_symbol": "2408.TW",
-      "asset_type": "stock",
-      "mention_kind": "sector_proxy",
-      "matched_aliases": [
-        "記憶體"
-      ],
-      "sources": [
-        "sector_basket:memory"
-      ],
-      "market": {
-        "market_date": "2025-11-10",
-        "close": 161.5,
-        "ret_1d_pct": 9.86,
-        "ret_5d_pct": 17.88,
-        "ret_20d_pct": 63.96,
-        "ret_60d_pct": 240.36,
-        "drawdown_60d_pct": 0.0
-      },
-      "pricing_status": "ok",
-      "sector_name": "memory"
-    },
-    {
-      "asset_name": "晶豪科",
-      "symbol": "3006.TW",
-      "pricing_symbol": "3006.TW",
-      "asset_type": "stock",
-      "mention_kind": "sector_proxy",
-      "matched_aliases": [
-        "記憶體"
-      ],
-      "sources": [
-        "sector_basket:memory"
-      ],
-      "market": {
-        "market_date": "2025-11-10",
-        "close": 95.0,
-        "ret_1d_pct": 0.0,
-        "ret_5d_pct": 5.67,
-        "ret_20d_pct": 12.83,
-        "ret_60d_pct": 76.58,
-        "drawdown_60d_pct": -1.35
       },
       "pricing_status": "ok",
       "sector_name": "memory"

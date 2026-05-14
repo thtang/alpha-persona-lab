@@ -5,7 +5,7 @@
   "published_at": "2025-09-22T17:36:19+08:00",
   "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/aebb1a3c-2bd5-43ee-9aa7-5a517dbd14d7",
   "metadata": {
-    "asr_status": "pending",
+    "asr_status": "transcribed",
     "audio_path": null,
     "audio_url": "https://rss.soundon.fm/rssf/35eb55b5-8669-418b-9a08-dc13c482809a/feedurl/aebb1a3c-2bd5-43ee-9aa7-5a517dbd14d7/rssFileVip.mp3?timestamp=1758534085482",
     "channel_author": "郭哲榮 投資長",
@@ -65,9 +65,15 @@
     "soundon_id": "aebb1a3c-2bd5-43ee-9aa7-5a517dbd14d7",
     "soundon_updated_at": "2025-09-22T09:41:25.482Z",
     "title": "【鴻海、廣達不行? 改買華邦電、南亞科、國巨?】2025.09.22 哲哲只有60秒#shorts",
-    "transcript_path": null
+    "transcript_path": "data/transcripts/2025-09-22_zhezhe-2025-09-22-aebb1a3c.md",
+    "date": "2025-09-22",
+    "asr_model": "mlx-community/whisper-large-v3-turbo",
+    "asr_at": "2026-05-13T07:17:43Z",
+    "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/aebb1a3c-2bd5-43ee-9aa7-5a517dbd14d7"
   },
-  "paths": [],
+  "paths": [
+    "data/transcripts/2025-09-22_zhezhe-2025-09-22-aebb1a3c.md"
+  ],
   "context_target_date": "2025-09-22",
   "session_alignment": "same_day_close_after_1335_taipei",
   "baseline_market_context": {
@@ -503,6 +509,29 @@
         "drawdown_60d_pct": -4.71
       },
       "pricing_status": "ok"
+    },
+    {
+      "asset_name": "加權指數",
+      "symbol": "^TWII",
+      "pricing_symbol": "^TWII",
+      "asset_type": "index",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "台股"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2025-09-22",
+        "close": 25880.5996,
+        "ret_1d_pct": 1.18,
+        "ret_5d_pct": 2.06,
+        "ret_20d_pct": 6.6,
+        "ret_60d_pct": 16.29,
+        "drawdown_60d_pct": 0.0
+      },
+      "pricing_status": "ok"
     }
   ],
   "sector_proxy_assets": [
@@ -513,6 +542,7 @@
       "asset_type": "etf",
       "mention_kind": "sector_proxy",
       "matched_aliases": [
+        "ETF",
         "美債"
       ],
       "sources": [
@@ -537,6 +567,7 @@
       "asset_type": "etf",
       "mention_kind": "sector_proxy",
       "matched_aliases": [
+        "ETF",
         "美債"
       ],
       "sources": [
@@ -561,6 +592,7 @@
       "asset_type": "etf",
       "mention_kind": "sector_proxy",
       "matched_aliases": [
+        "ETF",
         "美債"
       ],
       "sources": [
@@ -585,6 +617,7 @@
       "asset_type": "etf",
       "mention_kind": "sector_proxy",
       "matched_aliases": [
+        "ETF",
         "美債"
       ],
       "sources": [
@@ -607,6 +640,7 @@
     {
       "sector_name": "taiwan_etf_bond",
       "matched_aliases": [
+        "ETF",
         "美債"
       ],
       "proxy_symbols": [

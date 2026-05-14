@@ -5,7 +5,7 @@
   "published_at": "2025-08-05T15:55:52+08:00",
   "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/68faf383-8999-4baa-917e-d2f02c07a2f2",
   "metadata": {
-    "asr_status": "pending",
+    "asr_status": "transcribed",
     "audio_path": null,
     "audio_url": "https://rss.soundon.fm/rssf/35eb55b5-8669-418b-9a08-dc13c482809a/feedurl/68faf383-8999-4baa-917e-d2f02c07a2f2/rssFileVip.mp3?timestamp=1754380575812",
     "channel_author": "郭哲榮 投資長",
@@ -100,9 +100,15 @@
     "soundon_id": "68faf383-8999-4baa-917e-d2f02c07a2f2",
     "soundon_updated_at": "2025-08-05T07:56:15.812Z",
     "title": "郭哲榮分析師【逼台積買英特爾賠大錢 才能降台灣關稅!】2025.08.05",
-    "transcript_path": null
+    "transcript_path": "data/transcripts/2025-08-05_zhezhe-2025-08-05-68faf383.md",
+    "date": "2025-08-05",
+    "asr_model": "mlx-community/whisper-large-v3-turbo",
+    "asr_at": "2026-05-13T11:06:56Z",
+    "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/68faf383-8999-4baa-917e-d2f02c07a2f2"
   },
-  "paths": [],
+  "paths": [
+    "data/transcripts/2025-08-05_zhezhe-2025-08-05-68faf383.md"
+  ],
   "context_target_date": "2025-08-05",
   "session_alignment": "same_day_close_after_1335_taipei",
   "baseline_market_context": {
@@ -362,6 +368,7 @@
       "asset_type": "stock",
       "mention_kind": "direct",
       "matched_aliases": [
+        "2377",
         "微星"
       ],
       "sources": [
@@ -374,6 +381,29 @@
         "ret_5d_pct": 5.54,
         "ret_20d_pct": 8.16,
         "ret_60d_pct": 7.02,
+        "drawdown_60d_pct": 0.0
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "廣達",
+      "symbol": "2382.TW",
+      "pricing_symbol": "2382.TW",
+      "asset_type": "stock",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "2382"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2025-08-05",
+        "close": 288.0,
+        "ret_1d_pct": 2.49,
+        "ret_5d_pct": 5.88,
+        "ret_20d_pct": 3.97,
+        "ret_60d_pct": 17.64,
         "drawdown_60d_pct": 0.0
       },
       "pricing_status": "ok"
@@ -454,6 +484,7 @@
       "asset_type": "stock",
       "mention_kind": "direct",
       "matched_aliases": [
+        "3231",
         "緯創"
       ],
       "sources": [
@@ -640,30 +671,6 @@
         "ret_20d_pct": 5.76,
         "ret_60d_pct": 17.87,
         "drawdown_60d_pct": -0.79
-      },
-      "pricing_status": "ok",
-      "sector_name": "ai_supply_chain"
-    },
-    {
-      "asset_name": "廣達",
-      "symbol": "2382.TW",
-      "pricing_symbol": "2382.TW",
-      "asset_type": "stock",
-      "mention_kind": "sector_proxy",
-      "matched_aliases": [
-        "AI"
-      ],
-      "sources": [
-        "sector_basket:ai_supply_chain"
-      ],
-      "market": {
-        "market_date": "2025-08-05",
-        "close": 288.0,
-        "ret_1d_pct": 2.49,
-        "ret_5d_pct": 5.88,
-        "ret_20d_pct": 3.97,
-        "ret_60d_pct": 17.64,
-        "drawdown_60d_pct": 0.0
       },
       "pricing_status": "ok",
       "sector_name": "ai_supply_chain"

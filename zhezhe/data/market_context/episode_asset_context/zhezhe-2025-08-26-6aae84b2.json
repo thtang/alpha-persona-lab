@@ -5,7 +5,7 @@
   "published_at": "2025-08-26T18:34:04+08:00",
   "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/6aae84b2-7678-4724-b256-afc0edba6cd0",
   "metadata": {
-    "asr_status": "pending",
+    "asr_status": "transcribed",
     "audio_path": null,
     "audio_url": "https://rss.soundon.fm/rssf/35eb55b5-8669-418b-9a08-dc13c482809a/feedurl/6aae84b2-7678-4724-b256-afc0edba6cd0/rssFileVip.mp3?timestamp=1756204517642",
     "channel_author": "郭哲榮 投資長",
@@ -113,9 +113,15 @@
     "soundon_id": "6aae84b2-7678-4724-b256-afc0edba6cd0",
     "soundon_updated_at": "2025-08-26T10:35:17.642Z",
     "title": "【開除FED理事 台股及美債最大危機?】2025.08.26 哲哲只有60秒",
-    "transcript_path": null
+    "transcript_path": "data/transcripts/2025-08-26_zhezhe-2025-08-26-6aae84b2.md",
+    "date": "2025-08-26",
+    "asr_model": "mlx-community/whisper-large-v3-turbo",
+    "asr_at": "2026-05-13T09:19:49Z",
+    "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/6aae84b2-7678-4724-b256-afc0edba6cd0"
   },
-  "paths": [],
+  "paths": [
+    "data/transcripts/2025-08-26_zhezhe-2025-08-26-6aae84b2.md"
+  ],
   "context_target_date": "2025-08-26",
   "session_alignment": "same_day_close_after_1335_taipei",
   "baseline_market_context": {
@@ -530,6 +536,30 @@
       "pricing_status": "ok"
     },
     {
+      "asset_name": "景碩",
+      "symbol": "3189.TW",
+      "pricing_symbol": "3189.TW",
+      "asset_type": "stock",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "3189",
+        "景碩"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2025-08-26",
+        "close": 114.0,
+        "ret_1d_pct": 6.05,
+        "ret_5d_pct": 5.07,
+        "ret_20d_pct": 14.0,
+        "ret_60d_pct": 49.39,
+        "drawdown_60d_pct": 0.0
+      },
+      "pricing_status": "ok"
+    },
+    {
       "asset_name": "緯創",
       "symbol": "3231.TW",
       "pricing_symbol": "3231.TW",
@@ -549,6 +579,29 @@
         "ret_20d_pct": -5.83,
         "ret_60d_pct": 1.62,
         "drawdown_60d_pct": -11.37
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "NVIDIA",
+      "symbol": "NVDA",
+      "pricing_symbol": "NVDA",
+      "asset_type": "stock",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "輝達"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2025-08-26",
+        "close": 181.7398,
+        "ret_1d_pct": 1.09,
+        "ret_5d_pct": 3.49,
+        "ret_20d_pct": 3.57,
+        "ret_60d_pct": 34.52,
+        "drawdown_60d_pct": -0.76
       },
       "pricing_status": "ok"
     },
@@ -776,31 +829,6 @@
       "sector_name": "passive_components"
     },
     {
-      "asset_name": "景碩",
-      "symbol": "3189.TW",
-      "pricing_symbol": "3189.TW",
-      "asset_type": "stock",
-      "mention_kind": "sector_proxy",
-      "matched_aliases": [
-        "ABF",
-        "載板"
-      ],
-      "sources": [
-        "sector_basket:pcb_ccl"
-      ],
-      "market": {
-        "market_date": "2025-08-26",
-        "close": 114.0,
-        "ret_1d_pct": 6.05,
-        "ret_5d_pct": 5.07,
-        "ret_20d_pct": 14.0,
-        "ret_60d_pct": 49.39,
-        "drawdown_60d_pct": 0.0
-      },
-      "pricing_status": "ok",
-      "sector_name": "pcb_ccl"
-    },
-    {
       "asset_name": "緯穎",
       "symbol": "6669.TW",
       "pricing_symbol": "6669.TW",
@@ -844,30 +872,6 @@
         "ret_20d_pct": -6.1,
         "ret_60d_pct": 50.47,
         "drawdown_60d_pct": -9.65
-      },
-      "pricing_status": "ok",
-      "sector_name": "ai_supply_chain"
-    },
-    {
-      "asset_name": "NVIDIA",
-      "symbol": "NVDA",
-      "pricing_symbol": "NVDA",
-      "asset_type": "stock",
-      "mention_kind": "sector_proxy",
-      "matched_aliases": [
-        "AI"
-      ],
-      "sources": [
-        "sector_basket:ai_supply_chain"
-      ],
-      "market": {
-        "market_date": "2025-08-26",
-        "close": 181.7398,
-        "ret_1d_pct": 1.09,
-        "ret_5d_pct": 3.49,
-        "ret_20d_pct": 3.57,
-        "ret_60d_pct": 34.52,
-        "drawdown_60d_pct": -0.76
       },
       "pricing_status": "ok",
       "sector_name": "ai_supply_chain"

@@ -5,7 +5,7 @@
   "published_at": "2025-11-20T18:20:57+08:00",
   "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/31aa51df-821b-4b74-b5c4-5817272050da",
   "metadata": {
-    "asr_status": "pending",
+    "asr_status": "transcribed",
     "audio_path": null,
     "audio_url": "https://rss.soundon.fm/rssf/35eb55b5-8669-418b-9a08-dc13c482809a/feedurl/31aa51df-821b-4b74-b5c4-5817272050da/rssFileVip.mp3?timestamp=1763634683872",
     "channel_author": "郭哲榮 投資長",
@@ -113,9 +113,15 @@
     "soundon_id": "31aa51df-821b-4b74-b5c4-5817272050da",
     "soundon_updated_at": "2025-11-20T10:31:23.872Z",
     "title": "【不是AI泡沫嗎 輝達財報為何這麼猛?】2025.11.20 哲哲只有60秒",
-    "transcript_path": null
+    "transcript_path": "data/transcripts/2025-11-20_zhezhe-2025-11-20-31aa51df.md",
+    "date": "2025-11-20",
+    "asr_model": "mlx-community/whisper-large-v3-turbo",
+    "asr_at": "2026-05-13T03:22:05Z",
+    "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/31aa51df-821b-4b74-b5c4-5817272050da"
   },
-  "paths": [],
+  "paths": [
+    "data/transcripts/2025-11-20_zhezhe-2025-11-20-31aa51df.md"
+  ],
   "context_target_date": "2025-11-20",
   "session_alignment": "same_day_close_after_1335_taipei",
   "baseline_market_context": {
@@ -369,6 +375,29 @@
       "pricing_status": "ok"
     },
     {
+      "asset_name": "金像電",
+      "symbol": "2368.TW",
+      "pricing_symbol": "2368.TW",
+      "asset_type": "stock",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "2368"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2025-11-20",
+        "close": 574.0,
+        "ret_1d_pct": 9.96,
+        "ret_5d_pct": 1.23,
+        "ret_20d_pct": 43.32,
+        "ret_60d_pct": 25.05,
+        "drawdown_60d_pct": 0.0
+      },
+      "pricing_status": "ok"
+    },
+    {
       "asset_name": "微星",
       "symbol": "2377.TW",
       "pricing_symbol": "2377.TW",
@@ -411,6 +440,29 @@
         "ret_20d_pct": -5.35,
         "ret_60d_pct": 6.0,
         "drawdown_60d_pct": -11.47
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "南亞科",
+      "symbol": "2408.TW",
+      "pricing_symbol": "2408.TW",
+      "asset_type": "stock",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "南亞科"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2025-11-20",
+        "close": 155.5,
+        "ret_1d_pct": -2.81,
+        "ret_5d_pct": -4.89,
+        "ret_20d_pct": 41.36,
+        "ret_60d_pct": 242.89,
+        "drawdown_60d_pct": -6.61
       },
       "pricing_status": "ok"
     },
@@ -549,6 +601,29 @@
         "ret_20d_pct": -0.35,
         "ret_60d_pct": 27.68,
         "drawdown_60d_pct": -8.33
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "力積電",
+      "symbol": "6770.TW",
+      "pricing_symbol": "6770.TW",
+      "asset_type": "stock",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "6770"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2025-11-20",
+        "close": 35.4,
+        "ret_1d_pct": 0.14,
+        "ret_5d_pct": -0.7,
+        "ret_20d_pct": 26.43,
+        "ret_60d_pct": 125.48,
+        "drawdown_60d_pct": -3.01
       },
       "pricing_status": "ok"
     },
@@ -699,31 +774,6 @@
       },
       "pricing_status": "ok",
       "sector_name": "passive_components"
-    },
-    {
-      "asset_name": "金像電",
-      "symbol": "2368.TW",
-      "pricing_symbol": "2368.TW",
-      "asset_type": "stock",
-      "mention_kind": "sector_proxy",
-      "matched_aliases": [
-        "ABF",
-        "載板"
-      ],
-      "sources": [
-        "sector_basket:pcb_ccl"
-      ],
-      "market": {
-        "market_date": "2025-11-20",
-        "close": 574.0,
-        "ret_1d_pct": 9.96,
-        "ret_5d_pct": 1.23,
-        "ret_20d_pct": 43.32,
-        "ret_60d_pct": 25.05,
-        "drawdown_60d_pct": 0.0
-      },
-      "pricing_status": "ok",
-      "sector_name": "pcb_ccl"
     },
     {
       "asset_name": "技嘉",

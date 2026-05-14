@@ -5,7 +5,7 @@
   "published_at": "2026-03-03T18:40:14+08:00",
   "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/fa9f82d4-f3c0-45d3-be29-3c0042c6f263",
   "metadata": {
-    "asr_status": "pending",
+    "asr_status": "transcribed",
     "audio_path": null,
     "audio_url": "https://rss.soundon.fm/rssf/35eb55b5-8669-418b-9a08-dc13c482809a/feedurl/fa9f82d4-f3c0-45d3-be29-3c0042c6f263/rssFileVip.mp3?timestamp=1772534464941",
     "channel_author": "郭哲榮 投資長",
@@ -113,9 +113,15 @@
     "soundon_id": "fa9f82d4-f3c0-45d3-be29-3c0042c6f263",
     "soundon_updated_at": "2026-03-03T10:41:04.941Z",
     "title": "【美伊戰爭無休止 台股重演2022年 殺盤4000點?】2026.03.03哲哲只有60秒",
-    "transcript_path": null
+    "transcript_path": "data/transcripts/2026-03-03_zhezhe-2026-03-03-fa9f82d4.md",
+    "date": "2026-03-03",
+    "asr_model": "mlx-community/whisper-large-v3-turbo",
+    "asr_at": "2026-05-12T20:56:56Z",
+    "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/fa9f82d4-f3c0-45d3-be29-3c0042c6f263"
   },
-  "paths": [],
+  "paths": [
+    "data/transcripts/2026-03-03_zhezhe-2026-03-03-fa9f82d4.md"
+  ],
   "context_target_date": "2026-03-03",
   "session_alignment": "same_day_close_after_1335_taipei",
   "baseline_market_context": {
@@ -415,6 +421,29 @@
       "pricing_status": "ok"
     },
     {
+      "asset_name": "南亞科",
+      "symbol": "2408.TW",
+      "pricing_symbol": "2408.TW",
+      "asset_type": "stock",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "南亞科"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2026-03-03",
+        "close": 256.5,
+        "ret_1d_pct": -10.0,
+        "ret_5d_pct": -11.25,
+        "ret_20d_pct": -3.75,
+        "ret_60d_pct": 78.75,
+        "drawdown_60d_pct": -21.44
+      },
+      "pricing_status": "ok"
+    },
+    {
       "asset_name": "聯發科",
       "symbol": "2454.TW",
       "pricing_symbol": "2454.TW",
@@ -559,6 +588,7 @@
       "asset_type": "index",
       "mention_kind": "direct",
       "matched_aliases": [
+        "台灣股市",
         "台股",
         "大盤"
       ],
@@ -942,7 +972,8 @@
     {
       "sector_name": "shipping",
       "matched_aliases": [
-        "航運"
+        "航運",
+        "貨櫃"
       ],
       "proxy_symbols": [
         "2603.TW",

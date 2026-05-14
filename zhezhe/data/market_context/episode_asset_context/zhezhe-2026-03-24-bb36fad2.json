@@ -5,7 +5,7 @@
   "published_at": "2026-03-24T18:46:38+08:00",
   "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/bb36fad2-a7fd-4738-8a88-435970a49148",
   "metadata": {
-    "asr_status": "pending",
+    "asr_status": "transcribed",
     "audio_path": null,
     "audio_url": "https://rss.soundon.fm/rssf/35eb55b5-8669-418b-9a08-dc13c482809a/feedurl/bb36fad2-a7fd-4738-8a88-435970a49148/rssFileVip.mp3?timestamp=1774393335629",
     "channel_author": "郭哲榮 投資長",
@@ -113,9 +113,15 @@
     "soundon_id": "bb36fad2-a7fd-4738-8a88-435970a49148",
     "soundon_updated_at": "2026-03-24T23:02:15.629Z",
     "title": "【美伊戰爭連環騙 崩盤6000點在眼前】2026/3/24哲哲只有60秒",
-    "transcript_path": null
+    "transcript_path": "data/transcripts/2026-03-24_zhezhe-2026-03-24-bb36fad2.md",
+    "date": "2026-03-24",
+    "asr_model": "mlx-community/whisper-large-v3-turbo",
+    "asr_at": "2026-05-12T19:24:24Z",
+    "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/bb36fad2-a7fd-4738-8a88-435970a49148"
   },
-  "paths": [],
+  "paths": [
+    "data/transcripts/2026-03-24_zhezhe-2026-03-24-bb36fad2.md"
+  ],
   "context_target_date": "2026-03-24",
   "session_alignment": "same_day_close_after_1335_taipei",
   "baseline_market_context": {
@@ -415,6 +421,30 @@
       "pricing_status": "ok"
     },
     {
+      "asset_name": "南亞科",
+      "symbol": "2408.TW",
+      "pricing_symbol": "2408.TW",
+      "asset_type": "stock",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "2408",
+        "南亞科"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2026-03-24",
+        "close": 216.5,
+        "ret_1d_pct": -2.91,
+        "ret_5d_pct": -20.26,
+        "ret_20d_pct": -25.09,
+        "ret_60d_pct": 37.03,
+        "drawdown_60d_pct": -33.69
+      },
+      "pricing_status": "ok"
+    },
+    {
       "asset_name": "聯發科",
       "symbol": "2454.TW",
       "pricing_symbol": "2454.TW",
@@ -513,6 +543,7 @@
       "asset_type": "stock",
       "mention_kind": "direct",
       "matched_aliases": [
+        "3037",
         "欣興"
       ],
       "sources": [
@@ -559,6 +590,7 @@
       "asset_type": "index",
       "mention_kind": "direct",
       "matched_aliases": [
+        "台灣股市",
         "台股",
         "大盤"
       ],

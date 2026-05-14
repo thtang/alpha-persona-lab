@@ -5,7 +5,7 @@
   "published_at": "2026-04-15T18:14:23+08:00",
   "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/abf86cfb-b8b1-4e5e-825c-ade8a0fc5b38",
   "metadata": {
-    "asr_status": "pending",
+    "asr_status": "transcribed",
     "audio_path": null,
     "audio_url": "https://rss.soundon.fm/rssf/35eb55b5-8669-418b-9a08-dc13c482809a/feedurl/abf86cfb-b8b1-4e5e-825c-ade8a0fc5b38/rssFileVip.mp3?timestamp=1776248124271",
     "channel_author": "郭哲榮 投資長",
@@ -65,9 +65,15 @@
     "soundon_id": "abf86cfb-b8b1-4e5e-825c-ade8a0fc5b38",
     "soundon_updated_at": "2026-04-15T10:15:24.271Z",
     "title": "【台股四萬在眼前 追或不追？】2026/4/15哲哲只有60秒 #shorts",
-    "transcript_path": null
+    "transcript_path": "data/transcripts/2026-04-15_zhezhe-2026-04-15-abf86cfb.md",
+    "date": "2026-04-15",
+    "asr_model": "mlx-community/whisper-large-v3-turbo",
+    "asr_at": "2026-05-12T18:16:10Z",
+    "source_url": "https://player.soundon.fm/p/35eb55b5-8669-418b-9a08-dc13c482809a/episodes/abf86cfb-b8b1-4e5e-825c-ade8a0fc5b38"
   },
-  "paths": [],
+  "paths": [
+    "data/transcripts/2026-04-15_zhezhe-2026-04-15-abf86cfb.md"
+  ],
   "context_target_date": "2026-04-15",
   "session_alignment": "same_day_close_after_1335_taipei",
   "baseline_market_context": {
@@ -280,6 +286,7 @@
       "asset_type": "stock",
       "mention_kind": "direct",
       "matched_aliases": [
+        "2382",
         "廣達"
       ],
       "sources": [
@@ -293,6 +300,29 @@
         "ret_20d_pct": 6.75,
         "ret_60d_pct": 9.4,
         "drawdown_60d_pct": -4.49
+      },
+      "pricing_status": "ok"
+    },
+    {
+      "asset_name": "南亞科",
+      "symbol": "2408.TW",
+      "pricing_symbol": "2408.TW",
+      "asset_type": "stock",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "南亞科"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2026-04-15",
+        "close": 211.5,
+        "ret_1d_pct": -3.86,
+        "ret_5d_pct": -5.16,
+        "ret_20d_pct": -19.12,
+        "ret_60d_pct": -12.24,
+        "drawdown_60d_pct": -35.22
       },
       "pricing_status": "ok"
     },
@@ -435,12 +465,36 @@
       "pricing_status": "ok"
     },
     {
+      "asset_name": "力積電",
+      "symbol": "6770.TW",
+      "pricing_symbol": "6770.TW",
+      "asset_type": "stock",
+      "mention_kind": "direct",
+      "matched_aliases": [
+        "6770"
+      ],
+      "sources": [
+        "alias_scan"
+      ],
+      "market": {
+        "market_date": "2026-04-15",
+        "close": 53.2,
+        "ret_1d_pct": -2.56,
+        "ret_5d_pct": -7.64,
+        "ret_20d_pct": -18.4,
+        "ret_60d_pct": 8.13,
+        "drawdown_60d_pct": -30.73
+      },
+      "pricing_status": "ok"
+    },
+    {
       "asset_name": "加權指數",
       "symbol": "^TWII",
       "pricing_symbol": "^TWII",
       "asset_type": "index",
       "mention_kind": "direct",
       "matched_aliases": [
+        "台灣股市",
         "台股"
       ],
       "sources": [
@@ -466,6 +520,7 @@
       "asset_type": "etf",
       "mention_kind": "sector_proxy",
       "matched_aliases": [
+        "ETF",
         "美債"
       ],
       "sources": [
@@ -490,6 +545,7 @@
       "asset_type": "etf",
       "mention_kind": "sector_proxy",
       "matched_aliases": [
+        "ETF",
         "美債"
       ],
       "sources": [
@@ -514,6 +570,7 @@
       "asset_type": "etf",
       "mention_kind": "sector_proxy",
       "matched_aliases": [
+        "ETF",
         "美債"
       ],
       "sources": [
@@ -538,6 +595,7 @@
       "asset_type": "etf",
       "mention_kind": "sector_proxy",
       "matched_aliases": [
+        "ETF",
         "美債"
       ],
       "sources": [
@@ -554,12 +612,175 @@
       },
       "pricing_status": "ok",
       "sector_name": "taiwan_etf_bond"
+    },
+    {
+      "asset_name": "技嘉",
+      "symbol": "2376.TW",
+      "pricing_symbol": "2376.TW",
+      "asset_type": "stock",
+      "mention_kind": "sector_proxy",
+      "matched_aliases": [
+        "AI"
+      ],
+      "sources": [
+        "sector_basket:ai_supply_chain"
+      ],
+      "market": {
+        "market_date": "2026-04-15",
+        "close": 279.0,
+        "ret_1d_pct": 5.88,
+        "ret_5d_pct": 14.11,
+        "ret_20d_pct": 17.97,
+        "ret_60d_pct": 13.88,
+        "drawdown_60d_pct": 0.0
+      },
+      "pricing_status": "ok",
+      "sector_name": "ai_supply_chain"
+    },
+    {
+      "asset_name": "微星",
+      "symbol": "2377.TW",
+      "pricing_symbol": "2377.TW",
+      "asset_type": "stock",
+      "mention_kind": "sector_proxy",
+      "matched_aliases": [
+        "AI"
+      ],
+      "sources": [
+        "sector_basket:ai_supply_chain"
+      ],
+      "market": {
+        "market_date": "2026-04-15",
+        "close": 88.7,
+        "ret_1d_pct": -0.22,
+        "ret_5d_pct": -3.8,
+        "ret_20d_pct": -5.64,
+        "ret_60d_pct": -7.89,
+        "drawdown_60d_pct": -13.04
+      },
+      "pricing_status": "ok",
+      "sector_name": "ai_supply_chain"
+    },
+    {
+      "asset_name": "緯穎",
+      "symbol": "6669.TW",
+      "pricing_symbol": "6669.TW",
+      "asset_type": "stock",
+      "mention_kind": "sector_proxy",
+      "matched_aliases": [
+        "AI"
+      ],
+      "sources": [
+        "sector_basket:ai_supply_chain"
+      ],
+      "market": {
+        "market_date": "2026-04-15",
+        "close": 3720.0,
+        "ret_1d_pct": -0.93,
+        "ret_5d_pct": 4.2,
+        "ret_20d_pct": -7.12,
+        "ret_60d_pct": -20.34,
+        "drawdown_60d_pct": -20.0
+      },
+      "pricing_status": "ok",
+      "sector_name": "ai_supply_chain"
+    },
+    {
+      "asset_name": "AMD",
+      "symbol": "AMD",
+      "pricing_symbol": "AMD",
+      "asset_type": "stock",
+      "mention_kind": "sector_proxy",
+      "matched_aliases": [
+        "AI"
+      ],
+      "sources": [
+        "sector_basket:ai_supply_chain"
+      ],
+      "market": {
+        "market_date": "2026-04-15",
+        "close": 258.12,
+        "ret_1d_pct": 1.2,
+        "ret_5d_pct": 11.35,
+        "ret_20d_pct": 31.49,
+        "ret_60d_pct": 11.34,
+        "drawdown_60d_pct": -0.6
+      },
+      "pricing_status": "ok",
+      "sector_name": "ai_supply_chain"
+    },
+    {
+      "asset_name": "NVIDIA",
+      "symbol": "NVDA",
+      "pricing_symbol": "NVDA",
+      "asset_type": "stock",
+      "mention_kind": "sector_proxy",
+      "matched_aliases": [
+        "AI"
+      ],
+      "sources": [
+        "sector_basket:ai_supply_chain"
+      ],
+      "market": {
+        "market_date": "2026-04-15",
+        "close": 198.87,
+        "ret_1d_pct": 1.2,
+        "ret_5d_pct": 9.22,
+        "ret_20d_pct": 9.31,
+        "ret_60d_pct": 6.79,
+        "drawdown_60d_pct": 0.0
+      },
+      "pricing_status": "ok",
+      "sector_name": "ai_supply_chain"
+    },
+    {
+      "asset_name": "Semiconductor ETF",
+      "symbol": "SOXX",
+      "pricing_symbol": "SOXX",
+      "asset_type": "etf",
+      "mention_kind": "sector_proxy",
+      "matched_aliases": [
+        "AI"
+      ],
+      "sources": [
+        "sector_basket:ai_supply_chain"
+      ],
+      "market": {
+        "market_date": "2026-04-15",
+        "close": 401.86,
+        "ret_1d_pct": 0.15,
+        "ret_5d_pct": 8.49,
+        "ret_20d_pct": 18.11,
+        "ret_60d_pct": 17.41,
+        "drawdown_60d_pct": 0.0
+      },
+      "pricing_status": "ok",
+      "sector_name": "ai_supply_chain"
     }
   ],
   "sector_basket_matches": [
     {
+      "sector_name": "ai_supply_chain",
+      "matched_aliases": [
+        "AI"
+      ],
+      "proxy_symbols": [
+        "2330.TW",
+        "2317.TW",
+        "2382.TW",
+        "6669.TW",
+        "3231.TW",
+        "2376.TW",
+        "2377.TW",
+        "NVDA",
+        "AMD",
+        "SOXX"
+      ]
+    },
+    {
       "sector_name": "taiwan_etf_bond",
       "matched_aliases": [
+        "ETF",
         "美債"
       ],
       "proxy_symbols": [
