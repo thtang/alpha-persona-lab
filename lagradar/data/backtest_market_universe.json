@@ -1,0 +1,53 @@
+{
+  "schema_version": "lagradar_backtest_universe_v1",
+  "updated_at": "2026-05-23",
+  "description": "Market, sector, commodity, rates, and FX proxies used as controls or leaders for 20-year cross-market theme diffusion backtests. Theme stock nodes are loaded from cross_market_theme_seed.json.",
+  "markets": [
+    {"symbol": "SPY", "name": "SPDR S&P 500 ETF", "market": "US", "kind": "market_index", "region": "US"},
+    {"symbol": "QQQ", "name": "Invesco QQQ", "market": "US", "kind": "market_index", "region": "US"},
+    {"symbol": "IWM", "name": "iShares Russell 2000 ETF", "market": "US", "kind": "market_index", "region": "US"},
+    {"symbol": "EWJ", "name": "iShares MSCI Japan ETF", "market": "US", "kind": "country_etf", "region": "Japan"},
+    {"symbol": "DXJ", "name": "WisdomTree Japan Hedged Equity ETF", "market": "US", "kind": "country_etf", "region": "Japan"},
+    {"symbol": "EWT", "name": "iShares MSCI Taiwan ETF", "market": "US", "kind": "country_etf", "region": "Taiwan"},
+    {"symbol": "^TWII", "name": "TAIEX", "market": "TW", "kind": "market_index", "region": "Taiwan"},
+    {"symbol": "MCHI", "name": "iShares MSCI China ETF", "market": "US", "kind": "country_etf", "region": "China"},
+    {"symbol": "ASHR", "name": "Xtrackers Harvest CSI 300 China A-Shares ETF", "market": "US", "kind": "country_etf", "region": "China A"},
+    {"symbol": "FXI", "name": "iShares China Large-Cap ETF", "market": "US", "kind": "country_etf", "region": "China/HK"},
+    {"symbol": "EWH", "name": "iShares MSCI Hong Kong ETF", "market": "US", "kind": "country_etf", "region": "Hong Kong"},
+    {"symbol": "EWY", "name": "iShares MSCI South Korea ETF", "market": "US", "kind": "country_etf", "region": "Korea"},
+    {"symbol": "^N225", "name": "Nikkei 225", "market": "JP", "kind": "market_index", "region": "Japan"},
+    {"symbol": "^HSI", "name": "Hang Seng Index", "market": "HK", "kind": "market_index", "region": "Hong Kong"},
+    {"symbol": "000001.SS", "name": "SSE Composite", "market": "CN", "kind": "market_index", "region": "China A"},
+    {"symbol": "^KS11", "name": "KOSPI Composite", "market": "KR", "kind": "market_index", "region": "Korea"}
+  ],
+  "sectors": [
+    {"symbol": "XLK", "name": "Technology Select Sector SPDR", "market": "US", "kind": "sector_etf", "sector": "technology"},
+    {"symbol": "SOXX", "name": "iShares Semiconductor ETF", "market": "US", "kind": "sector_etf", "sector": "semiconductors"},
+    {"symbol": "SMH", "name": "VanEck Semiconductor ETF", "market": "US", "kind": "sector_etf", "sector": "semiconductors"},
+    {"symbol": "XLI", "name": "Industrial Select Sector SPDR", "market": "US", "kind": "sector_etf", "sector": "industrials"},
+    {"symbol": "XLB", "name": "Materials Select Sector SPDR", "market": "US", "kind": "sector_etf", "sector": "materials"},
+    {"symbol": "XLE", "name": "Energy Select Sector SPDR", "market": "US", "kind": "sector_etf", "sector": "energy"},
+    {"symbol": "XLF", "name": "Financial Select Sector SPDR", "market": "US", "kind": "sector_etf", "sector": "financials"},
+    {"symbol": "KRE", "name": "SPDR S&P Regional Banking ETF", "market": "US", "kind": "sector_etf", "sector": "banks"},
+    {"symbol": "XLV", "name": "Health Care Select Sector SPDR", "market": "US", "kind": "sector_etf", "sector": "healthcare"},
+    {"symbol": "IBB", "name": "iShares Biotechnology ETF", "market": "US", "kind": "sector_etf", "sector": "biotech"},
+    {"symbol": "ITA", "name": "iShares U.S. Aerospace & Defense ETF", "market": "US", "kind": "sector_etf", "sector": "defense"},
+    {"symbol": "PPA", "name": "Invesco Aerospace & Defense ETF", "market": "US", "kind": "sector_etf", "sector": "defense"},
+    {"symbol": "SEA", "name": "U.S. Global Sea to Sky Cargo ETF", "market": "US", "kind": "sector_etf", "sector": "shipping"},
+    {"symbol": "COPX", "name": "Global X Copper Miners ETF", "market": "US", "kind": "sector_etf", "sector": "copper"}
+  ],
+  "macro": [
+    {"symbol": "DX-Y.NYB", "name": "US Dollar Index", "kind": "fx_index"},
+    {"symbol": "^TNX", "name": "US 10Y Treasury Yield", "kind": "rates"},
+    {"symbol": "CL=F", "name": "WTI Crude Oil Futures", "kind": "commodity"},
+    {"symbol": "BZ=F", "name": "Brent Crude Oil Futures", "kind": "commodity"},
+    {"symbol": "HG=F", "name": "Copper Futures", "kind": "commodity"},
+    {"symbol": "GC=F", "name": "Gold Futures", "kind": "commodity"},
+    {"symbol": "SI=F", "name": "Silver Futures", "kind": "commodity"},
+    {"symbol": "JPY=X", "name": "USD/JPY", "kind": "fx"},
+    {"symbol": "TWD=X", "name": "USD/TWD", "kind": "fx"},
+    {"symbol": "CNY=X", "name": "USD/CNY", "kind": "fx"},
+    {"symbol": "HKD=X", "name": "USD/HKD", "kind": "fx"},
+    {"symbol": "KRW=X", "name": "USD/KRW", "kind": "fx"}
+  ]
+}

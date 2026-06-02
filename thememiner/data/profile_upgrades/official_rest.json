@@ -1,0 +1,5725 @@
+{
+  "schema_version": "thememiner_company_profiles_official_shard_v1",
+  "updated_at": "2026-05-23",
+  "markets": [
+    "CN",
+    "HK",
+    "JP",
+    "KR"
+  ],
+  "shard": "",
+  "profile_count": 74,
+  "errors": [],
+  "profiles": [
+    {
+      "symbol": "0005.HK",
+      "name": "HSBC Holdings plc",
+      "market": "HK",
+      "region": "Hong Kong",
+      "exchange": "HKG",
+      "raw_industry": null,
+      "website": null,
+      "company_name": null,
+      "sector": "Financial Services / Banks—Diversified",
+      "specializations": [
+        "銀行"
+      ],
+      "products": [],
+      "platforms": [
+        "銀行"
+      ],
+      "constraints": [
+        "auto profile: verify product purity, customer exposure, and revenue mix before trading",
+        "verify official filings/product pages for revenue mix"
+      ],
+      "risk_flags": [
+        "auto profile: concept fit may be broad until upgraded with official sources",
+        "auto-upgraded profile: product purity can still be broad"
+      ],
+      "bottleneck_profile": {},
+      "supply_chain_profile": {
+        "layers": [],
+        "products": [],
+        "upstream_concepts": [],
+        "downstream_concepts": [],
+        "matched_rules": []
+      },
+      "concept_exposures": [
+        {
+          "concept_id": "banks",
+          "role": "global_leader",
+          "weight": 0.5,
+          "path": "HSBC Holdings plc metadata + exchange/supply-chain mapping -> 銀行 exposure candidate"
+        }
+      ],
+      "source_refs": [
+        {
+          "title": "Yahoo Finance search metadata for 0005.HK",
+          "url": "https://finance.yahoo.com/quote/0005.HK"
+        }
+      ],
+      "primary_business": "HSBC Holdings plc is upgraded from ticker/search metadata and ThemeMiner supply-chain mapping. ThemeMiner links it to 銀行. Official filing/profile extraction is still pending for this market.",
+      "profile_quality": "market_metadata_profile",
+      "profile_evidence_quality": "yahoo_search_plus_graph",
+      "official_metadata": {
+        "source": "pending_official_market_parser"
+      },
+      "updated_at": "2026-05-23",
+      "upgrade_batch": {
+        "markets": [
+          "CN",
+          "HK",
+          "JP",
+          "KR"
+        ],
+        "shard": "",
+        "output": "thememiner/data/profile_upgrades/official_rest.json"
+      }
+    },
+    {
+      "symbol": "000630.SZ",
+      "name": "Tongling Nonferrous Metals Group Co.,Ltd.",
+      "market": "CN",
+      "region": "China A",
+      "exchange": "SHZ",
+      "raw_industry": null,
+      "website": null,
+      "company_name": null,
+      "sector": "Basic Materials / Copper",
+      "specializations": [
+        "銅/銅箔",
+        "金屬製品",
+        "電線電纜"
+      ],
+      "products": [],
+      "platforms": [
+        "銅/銅箔",
+        "金屬製品",
+        "電線電纜"
+      ],
+      "constraints": [
+        "auto profile: verify product purity, customer exposure, and revenue mix before trading",
+        "verify official filings/product pages for revenue mix"
+      ],
+      "risk_flags": [
+        "auto profile: concept fit may be broad until upgraded with official sources",
+        "auto-upgraded profile: product purity can still be broad"
+      ],
+      "bottleneck_profile": {},
+      "supply_chain_profile": {
+        "layers": [],
+        "products": [],
+        "upstream_concepts": [],
+        "downstream_concepts": [],
+        "matched_rules": []
+      },
+      "concept_exposures": [
+        {
+          "concept_id": "copper",
+          "role": "core_follower",
+          "weight": 0.5,
+          "path": "Tongling Nonferrous Metals Group Co.,Ltd. metadata + exchange/supply-chain mapping -> 銅/銅箔 exposure candidate"
+        },
+        {
+          "concept_id": "metal_parts",
+          "role": "core_follower",
+          "weight": 0.5,
+          "path": "Tongling Nonferrous Metals Group Co.,Ltd. metadata + exchange/supply-chain mapping -> 金屬製品 exposure candidate"
+        },
+        {
+          "concept_id": "wire_cable",
+          "role": "core_follower",
+          "weight": 0.5,
+          "path": "Tongling Nonferrous Metals Group Co.,Ltd. metadata + exchange/supply-chain mapping -> 電線電纜 exposure candidate"
+        }
+      ],
+      "source_refs": [
+        {
+          "title": "Yahoo Finance search metadata for 000630.SZ",
+          "url": "https://finance.yahoo.com/quote/000630.SZ"
+        }
+      ],
+      "primary_business": "Tongling Nonferrous Metals Group Co.,Ltd. is upgraded from ticker/search metadata and ThemeMiner supply-chain mapping. ThemeMiner links it to 銅/銅箔, 金屬製品, 電線電纜. Official filing/profile extraction is still pending for this market.",
+      "profile_quality": "market_metadata_profile",
+      "profile_evidence_quality": "yahoo_search_plus_graph",
+      "official_metadata": {
+        "source": "pending_official_market_parser"
+      },
+      "updated_at": "2026-05-23",
+      "upgrade_batch": {
+        "markets": [
+          "CN",
+          "HK",
+          "JP",
+          "KR"
+        ],
+        "shard": "",
+        "output": "thememiner/data/profile_upgrades/official_rest.json"
+      }
+    },
+    {
+      "symbol": "000636.SZ",
+      "name": "Guangdong Fenghua Advanced Technology (Holding) Co., Ltd.",
+      "market": "CN",
+      "region": "China A",
+      "exchange": "SHZ",
+      "raw_industry": null,
+      "website": null,
+      "company_name": null,
+      "sector": "Technology / Electronic Components",
+      "specializations": [
+        "晶片電阻",
+        "高壓MLCC",
+        "被動元件"
+      ],
+      "products": [],
+      "platforms": [
+        "晶片電阻",
+        "高壓MLCC",
+        "被動元件"
+      ],
+      "constraints": [
+        "auto profile: verify product purity, customer exposure, and revenue mix before trading",
+        "verify official filings/product pages for revenue mix"
+      ],
+      "risk_flags": [
+        "auto profile: concept fit may be broad until upgraded with official sources",
+        "auto-upgraded profile: product purity can still be broad"
+      ],
+      "bottleneck_profile": {},
+      "supply_chain_profile": {
+        "layers": [],
+        "products": [],
+        "upstream_concepts": [],
+        "downstream_concepts": [],
+        "matched_rules": []
+      },
+      "concept_exposures": [
+        {
+          "concept_id": "chip_resistor",
+          "role": "laggard_watch",
+          "weight": 0.5,
+          "path": "Guangdong Fenghua Advanced Technology (Holding) Co., Ltd. metadata + exchange/supply-chain mapping -> 晶片電阻 exposure candidate"
+        },
+        {
+          "concept_id": "high_voltage_mlcc",
+          "role": "laggard_watch",
+          "weight": 0.5,
+          "path": "Guangdong Fenghua Advanced Technology (Holding) Co., Ltd. metadata + exchange/supply-chain mapping -> 高壓MLCC exposure candidate"
+        },
+        {
+          "concept_id": "passive_components",
+          "role": "laggard_watch",
+          "weight": 0.5,
+          "path": "Guangdong Fenghua Advanced Technology (Holding) Co., Ltd. metadata + exchange/supply-chain mapping -> 被動元件 exposure candidate"
+        }
+      ],
+      "source_refs": [
+        {
+          "title": "Yahoo Finance search metadata for 000636.SZ",
+          "url": "https://finance.yahoo.com/quote/000636.SZ"
+        }
+      ],
+      "primary_business": "Guangdong Fenghua Advanced Technology (Holding) Co., Ltd. is upgraded from ticker/search metadata and ThemeMiner supply-chain mapping. ThemeMiner links it to 晶片電阻, 高壓MLCC, 被動元件. Official filing/profile extraction is still pending for this market.",
+      "profile_quality": "market_metadata_profile",
+      "profile_evidence_quality": "yahoo_search_plus_graph",
+      "official_metadata": {
+        "source": "pending_official_market_parser"
+      },
+      "updated_at": "2026-05-23",
+      "upgrade_batch": {
+        "markets": [
+          "CN",
+          "HK",
+          "JP",
+          "KR"
+        ],
+        "shard": "",
+        "output": "thememiner/data/profile_upgrades/official_rest.json"
+      }
+    },
+    {
+      "symbol": "000660.KS",
+      "name": "SK hynix Inc.",
+      "market": "KR",
+      "region": "Korea",
+      "exchange": "KSC",
+      "raw_industry": null,
+      "website": null,
+      "company_name": null,
+      "sector": "Technology / Semiconductors",
+      "specializations": [
+        "IC-DRAM製造",
+        "HBM"
+      ],
+      "products": [],
+      "platforms": [
+        "IC-DRAM製造",
+        "HBM"
+      ],
+      "constraints": [
+        "auto profile: verify product purity, customer exposure, and revenue mix before trading",
+        "verify official filings/product pages for revenue mix"
+      ],
+      "risk_flags": [
+        "auto profile: concept fit may be broad until upgraded with official sources",
+        "auto-upgraded profile: product purity can still be broad"
+      ],
+      "bottleneck_profile": {},
+      "supply_chain_profile": {
+        "layers": [],
+        "products": [],
+        "upstream_concepts": [],
+        "downstream_concepts": [],
+        "matched_rules": []
+      },
+      "concept_exposures": [
+        {
+          "concept_id": "dram_manufacturing",
+          "role": "global_leader",
+          "weight": 0.5,
+          "path": "SK hynix Inc. metadata + exchange/supply-chain mapping -> IC-DRAM製造 exposure candidate"
+        },
+        {
+          "concept_id": "hbm",
+          "role": "global_leader",
+          "weight": 0.5,
+          "path": "SK hynix Inc. metadata + exchange/supply-chain mapping -> HBM exposure candidate"
+        }
+      ],
+      "source_refs": [
+        {
+          "title": "Yahoo Finance search metadata for 000660.KS",
+          "url": "https://finance.yahoo.com/quote/000660.KS"
+        }
+      ],
+      "primary_business": "SK hynix Inc. is upgraded from ticker/search metadata and ThemeMiner supply-chain mapping. ThemeMiner links it to IC-DRAM製造, HBM. Official filing/profile extraction is still pending for this market.",
+      "profile_quality": "market_metadata_profile",
+      "profile_evidence_quality": "yahoo_search_plus_graph",
+      "official_metadata": {
+        "source": "pending_official_market_parser"
+      },
+      "updated_at": "2026-05-23",
+      "upgrade_batch": {
+        "markets": [
+          "CN",
+          "HK",
+          "JP",
+          "KR"
+        ],
+        "shard": "",
+        "output": "thememiner/data/profile_upgrades/official_rest.json"
+      }
+    },
+    {
+      "symbol": "000768.SZ",
+      "name": "AVIC Xi'an Aircraft Industry Group Company Ltd.",
+      "market": "CN",
+      "region": "China A",
+      "exchange": "SHZ",
+      "raw_industry": null,
+      "website": null,
+      "company_name": null,
+      "sector": "Industrials / Aerospace & Defense",
+      "specializations": [
+        "軍工/國防",
+        "無人機"
+      ],
+      "products": [],
+      "platforms": [
+        "軍工/國防",
+        "無人機"
+      ],
+      "constraints": [
+        "auto profile: verify product purity, customer exposure, and revenue mix before trading",
+        "verify official filings/product pages for revenue mix"
+      ],
+      "risk_flags": [
+        "auto profile: concept fit may be broad until upgraded with official sources",
+        "auto-upgraded profile: product purity can still be broad"
+      ],
+      "bottleneck_profile": {},
+      "supply_chain_profile": {
+        "layers": [],
+        "products": [],
+        "upstream_concepts": [],
+        "downstream_concepts": [],
+        "matched_rules": []
+      },
+      "concept_exposures": [
+        {
+          "concept_id": "defense",
+          "role": "core_follower",
+          "weight": 0.5,
+          "path": "AVIC Xi'an Aircraft Industry Group Company Ltd. metadata + exchange/supply-chain mapping -> 軍工/國防 exposure candidate"
+        },
+        {
+          "concept_id": "drone",
+          "role": "core_follower",
+          "weight": 0.5,
+          "path": "AVIC Xi'an Aircraft Industry Group Company Ltd. metadata + exchange/supply-chain mapping -> 無人機 exposure candidate"
+        }
+      ],
+      "source_refs": [
+        {
+          "title": "Yahoo Finance search metadata for 000768.SZ",
+          "url": "https://finance.yahoo.com/quote/000768.SZ"
+        }
+      ],
+      "primary_business": "AVIC Xi'an Aircraft Industry Group Company Ltd. is upgraded from ticker/search metadata and ThemeMiner supply-chain mapping. ThemeMiner links it to 軍工/國防, 無人機. Official filing/profile extraction is still pending for this market.",
+      "profile_quality": "market_metadata_profile",
+      "profile_evidence_quality": "yahoo_search_plus_graph",
+      "official_metadata": {
+        "source": "pending_official_market_parser"
+      },
+      "updated_at": "2026-05-23",
+      "upgrade_batch": {
+        "markets": [
+          "CN",
+          "HK",
+          "JP",
+          "KR"
+        ],
+        "shard": "",
+        "output": "thememiner/data/profile_upgrades/official_rest.json"
+      }
+    },
+    {
+      "symbol": "000977.SZ",
+      "name": "Inspur Electronic Information Industry Co., Ltd.",
+      "market": "CN",
+      "region": "China A",
+      "exchange": "SHZ",
+      "raw_industry": null,
+      "website": null,
+      "company_name": null,
+      "sector": "Technology / Computer Hardware",
+      "specializations": [
+        "AI算力Capex",
+        "AI先進製程/產能瓶頸",
+        "CoWoS",
+        "EMS",
+        "IC-代工",
+        "GPU加速器",
+        "IP/ASIC",
+        "TPU Cloud/ASIC算力"
+      ],
+      "products": [],
+      "platforms": [
+        "AI算力Capex",
+        "AI先進製程/產能瓶頸",
+        "CoWoS",
+        "EMS",
+        "IC-代工"
+      ],
+      "constraints": [
+        "auto profile: verify product purity, customer exposure, and revenue mix before trading",
+        "verify official filings/product pages for revenue mix"
+      ],
+      "risk_flags": [
+        "auto profile: concept fit may be broad until upgraded with official sources",
+        "auto-upgraded profile: product purity can still be broad"
+      ],
+      "bottleneck_profile": {},
+      "supply_chain_profile": {
+        "layers": [],
+        "products": [],
+        "upstream_concepts": [],
+        "downstream_concepts": [],
+        "matched_rules": []
+      },
+      "concept_exposures": [
+        {
+          "concept_id": "ai_capex",
+          "role": "core_follower",
+          "weight": 0.5,
+          "path": "Inspur Electronic Information Industry Co., Ltd. metadata + exchange/supply-chain mapping -> AI算力Capex exposure candidate"
+        },
+        {
+          "concept_id": "ai_foundry_capacity",
+          "role": "core_follower",
+          "weight": 0.5,
+          "path": "Inspur Electronic Information Industry Co., Ltd. metadata + exchange/supply-chain mapping -> AI先進製程/產能瓶頸 exposure candidate"
+        },
+        {
+          "concept_id": "cowos",
+          "role": "core_follower",
+          "weight": 0.5,
+          "path": "Inspur Electronic Information Industry Co., Ltd. metadata + exchange/supply-chain mapping -> CoWoS exposure candidate"
+        },
+        {
+          "concept_id": "ems",
+          "role": "core_follower",
+          "weight": 0.5,
+          "path": "Inspur Electronic Information Industry Co., Ltd. metadata + exchange/supply-chain mapping -> EMS exposure candidate"
+        },
+        {
+          "concept_id": "foundry",
+          "role": "core_follower",
+          "weight": 0.5,
+          "path": "Inspur Electronic Information Industry Co., Ltd. metadata + exchange/supply-chain mapping -> IC-代工 exposure candidate"
+        },
+        {
+          "concept_id": "gpu_accelerator",
+          "role": "core_follower",
+          "weight": 0.5,
+          "path": "Inspur Electronic Information Industry Co., Ltd. metadata + exchange/supply-chain mapping -> GPU加速器 exposure candidate"
+        },
+        {
+          "concept_id": "ip_asic",
+          "role": "core_follower",
+          "weight": 0.5,
+          "path": "Inspur Electronic Information Industry Co., Ltd. metadata + exchange/supply-chain mapping -> IP/ASIC exposure candidate"
+        },
+        {
+          "concept_id": "tpu_cloud",
+          "role": "core_follower",
+          "weight": 0.5,
+          "path": "Inspur Electronic Information Industry Co., Ltd. metadata + exchange/supply-chain mapping -> TPU Cloud/ASIC算力 exposure candidate"
+        }
+      ],
+      "source_refs": [
+        {
+          "title": "Yahoo Finance search metadata for 000977.SZ",
+          "url": "https://finance.yahoo.com/quote/000977.SZ"
+        }
+      ],
+      "primary_business": "Inspur Electronic Information Industry Co., Ltd. is upgraded from ticker/search metadata and ThemeMiner supply-chain mapping. ThemeMiner links it to AI算力Capex, AI先進製程/產能瓶頸, CoWoS, EMS, IC-代工, GPU加速器, IP/ASIC, TPU Cloud/ASIC算力. Official filing/profile extraction is still pending for this market.",
+      "profile_quality": "market_metadata_profile",
+      "profile_evidence_quality": "yahoo_search_plus_graph",
+      "official_metadata": {
+        "source": "pending_official_market_parser"
+      },
+      "updated_at": "2026-05-23",
+      "upgrade_batch": {
+        "markets": [
+          "CN",
+          "HK",
+          "JP",
+          "KR"
+        ],
+        "shard": "",
+        "output": "thememiner/data/profile_upgrades/official_rest.json"
+      }
+    },
+    {
+      "symbol": "002028.SZ",
+      "name": "Sieyuan Electric Co., Ltd.",
+      "market": "CN",
+      "region": "China A",
+      "exchange": "SHZ",
+      "raw_industry": null,
+      "website": null,
+      "company_name": null,
+      "sector": "Industrials / Electrical Equipment & Parts",
+      "specializations": [
+        "智慧電網",
+        "變壓器與UPS"
+      ],
+      "products": [],
+      "platforms": [
+        "智慧電網",
+        "變壓器與UPS"
+      ],
+      "constraints": [
+        "auto profile: verify product purity, customer exposure, and revenue mix before trading",
+        "verify official filings/product pages for revenue mix"
+      ],
+      "risk_flags": [
+        "auto profile: concept fit may be broad until upgraded with official sources",
+        "auto-upgraded profile: product purity can still be broad"
+      ],
+      "bottleneck_profile": {},
+      "supply_chain_profile": {
+        "layers": [],
+        "products": [],
+        "upstream_concepts": [],
+        "downstream_concepts": [],
+        "matched_rules": []
+      },
+      "concept_exposures": [
+        {
+          "concept_id": "smart_grid",
+          "role": "core_follower",
+          "weight": 0.5,
+          "path": "Sieyuan Electric Co., Ltd. metadata + exchange/supply-chain mapping -> 智慧電網 exposure candidate"
+        },
+        {
+          "concept_id": "transformer_ups",
+          "role": "core_follower",
+          "weight": 0.5,
+          "path": "Sieyuan Electric Co., Ltd. metadata + exchange/supply-chain mapping -> 變壓器與UPS exposure candidate"
+        }
+      ],
+      "source_refs": [
+        {
+          "title": "Yahoo Finance search metadata for 002028.SZ",
+          "url": "https://finance.yahoo.com/quote/002028.SZ"
+        }
+      ],
+      "primary_business": "Sieyuan Electric Co., Ltd. is upgraded from ticker/search metadata and ThemeMiner supply-chain mapping. ThemeMiner links it to 智慧電網, 變壓器與UPS. Official filing/profile extraction is still pending for this market.",
+      "profile_quality": "market_metadata_profile",
+      "profile_evidence_quality": "yahoo_search_plus_graph",
+      "official_metadata": {
+        "source": "pending_official_market_parser"
+      },
+      "updated_at": "2026-05-23",
+      "upgrade_batch": {
+        "markets": [
+          "CN",
+          "HK",
+          "JP",
+          "KR"
+        ],
+        "shard": "",
+        "output": "thememiner/data/profile_upgrades/official_rest.json"
+      }
+    },
+    {
+      "symbol": "002138.SZ",
+      "name": "Shenzhen Sunlord Electronics Co.,Ltd.",
+      "market": "CN",
+      "region": "China A",
+      "exchange": "SHZ",
+      "raw_industry": null,
+      "website": null,
+      "company_name": null,
+      "sector": "Technology / Electronic Components",
+      "specializations": [
+        "電感/扼流圈",
+        "被動元件"
+      ],
+      "products": [],
+      "platforms": [
+        "電感/扼流圈",
+        "被動元件"
+      ],
+      "constraints": [
+        "auto profile: verify product purity, customer exposure, and revenue mix before trading",
+        "verify official filings/product pages for revenue mix"
+      ],
+      "risk_flags": [
+        "auto profile: concept fit may be broad until upgraded with official sources",
+        "auto-upgraded profile: product purity can still be broad"
+      ],
+      "bottleneck_profile": {},
+      "supply_chain_profile": {
+        "layers": [],
+        "products": [],
+        "upstream_concepts": [],
+        "downstream_concepts": [],
+        "matched_rules": []
+      },
+      "concept_exposures": [
+        {
+          "concept_id": "inductor_choke",
+          "role": "core_follower",
+          "weight": 0.5,
+          "path": "Shenzhen Sunlord Electronics Co.,Ltd. metadata + exchange/supply-chain mapping -> 電感/扼流圈 exposure candidate"
+        },
+        {
+          "concept_id": "passive_components",
+          "role": "core_follower",
+          "weight": 0.5,
+          "path": "Shenzhen Sunlord Electronics Co.,Ltd. metadata + exchange/supply-chain mapping -> 被動元件 exposure candidate"
+        }
+      ],
+      "source_refs": [
+        {
+          "title": "Yahoo Finance search metadata for 002138.SZ",
+          "url": "https://finance.yahoo.com/quote/002138.SZ"
+        }
+      ],
+      "primary_business": "Shenzhen Sunlord Electronics Co.,Ltd. is upgraded from ticker/search metadata and ThemeMiner supply-chain mapping. ThemeMiner links it to 電感/扼流圈, 被動元件. Official filing/profile extraction is still pending for this market.",
+      "profile_quality": "market_metadata_profile",
+      "profile_evidence_quality": "yahoo_search_plus_graph",
+      "official_metadata": {
+        "source": "pending_official_market_parser"
+      },
+      "updated_at": "2026-05-23",
+      "upgrade_batch": {
+        "markets": [
+          "CN",
+          "HK",
+          "JP",
+          "KR"
+        ],
+        "shard": "",
+        "output": "thememiner/data/profile_upgrades/official_rest.json"
+      }
+    },
+    {
+      "symbol": "002463.SZ",
+      "name": "Wus Printed Circuit (Kunshan) Co., Ltd.",
+      "market": "CN",
+      "region": "China A",
+      "exchange": "SHZ",
+      "raw_industry": null,
+      "website": null,
+      "company_name": null,
+      "sector": "Technology / Electronic Components",
+      "specializations": [
+        "PCB-製造",
+        "PCB-材料設備"
+      ],
+      "products": [],
+      "platforms": [
+        "PCB-製造",
+        "PCB-材料設備"
+      ],
+      "constraints": [
+        "auto profile: verify product purity, customer exposure, and revenue mix before trading",
+        "verify official filings/product pages for revenue mix"
+      ],
+      "risk_flags": [
+        "auto profile: concept fit may be broad until upgraded with official sources",
+        "auto-upgraded profile: product purity can still be broad"
+      ],
+      "bottleneck_profile": {},
+      "supply_chain_profile": {
+        "layers": [],
+        "products": [],
+        "upstream_concepts": [],
+        "downstream_concepts": [],
+        "matched_rules": []
+      },
+      "concept_exposures": [
+        {
+          "concept_id": "pcb_manufacturing",
+          "role": "regional_leader",
+          "weight": 0.5,
+          "path": "Wus Printed Circuit (Kunshan) Co., Ltd. metadata + exchange/supply-chain mapping -> PCB-製造 exposure candidate"
+        },
+        {
+          "concept_id": "pcb_material_equipment",
+          "role": "regional_leader",
+          "weight": 0.5,
+          "path": "Wus Printed Circuit (Kunshan) Co., Ltd. metadata + exchange/supply-chain mapping -> PCB-材料設備 exposure candidate"
+        }
+      ],
+      "source_refs": [
+        {
+          "title": "Yahoo Finance search metadata for 002463.SZ",
+          "url": "https://finance.yahoo.com/quote/002463.SZ"
+        }
+      ],
+      "primary_business": "Wus Printed Circuit (Kunshan) Co., Ltd. is upgraded from ticker/search metadata and ThemeMiner supply-chain mapping. ThemeMiner links it to PCB-製造, PCB-材料設備. Official filing/profile extraction is still pending for this market.",
+      "profile_quality": "market_metadata_profile",
+      "profile_evidence_quality": "yahoo_search_plus_graph",
+      "official_metadata": {
+        "source": "pending_official_market_parser"
+      },
+      "updated_at": "2026-05-23",
+      "upgrade_batch": {
+        "markets": [
+          "CN",
+          "HK",
+          "JP",
+          "KR"
+        ],
+        "shard": "",
+        "output": "thememiner/data/profile_upgrades/official_rest.json"
+      }
+    },
+    {
+      "symbol": "002916.SZ",
+      "name": "Shennan Circuits Co., Ltd.",
+      "market": "CN",
+      "region": "China A",
+      "exchange": "SHZ",
+      "raw_industry": null,
+      "website": null,
+      "company_name": null,
+      "sector": "Technology / Electronic Components",
+      "specializations": [
+        "ABF",
+        "PCB-製造"
+      ],
+      "products": [],
+      "platforms": [
+        "ABF",
+        "PCB-製造"
+      ],
+      "constraints": [
+        "auto profile: verify product purity, customer exposure, and revenue mix before trading",
+        "verify official filings/product pages for revenue mix"
+      ],
+      "risk_flags": [
+        "auto profile: concept fit may be broad until upgraded with official sources",
+        "auto-upgraded profile: product purity can still be broad"
+      ],
+      "bottleneck_profile": {},
+      "supply_chain_profile": {
+        "layers": [],
+        "products": [],
+        "upstream_concepts": [],
+        "downstream_concepts": [],
+        "matched_rules": []
+      },
+      "concept_exposures": [
+        {
+          "concept_id": "abf_substrate",
+          "role": "core_follower",
+          "weight": 0.5,
+          "path": "Shennan Circuits Co., Ltd. metadata + exchange/supply-chain mapping -> ABF exposure candidate"
+        },
+        {
+          "concept_id": "pcb_manufacturing",
+          "role": "core_follower",
+          "weight": 0.5,
+          "path": "Shennan Circuits Co., Ltd. metadata + exchange/supply-chain mapping -> PCB-製造 exposure candidate"
+        }
+      ],
+      "source_refs": [
+        {
+          "title": "Yahoo Finance search metadata for 002916.SZ",
+          "url": "https://finance.yahoo.com/quote/002916.SZ"
+        }
+      ],
+      "primary_business": "Shennan Circuits Co., Ltd. is upgraded from ticker/search metadata and ThemeMiner supply-chain mapping. ThemeMiner links it to ABF, PCB-製造. Official filing/profile extraction is still pending for this market.",
+      "profile_quality": "market_metadata_profile",
+      "profile_evidence_quality": "yahoo_search_plus_graph",
+      "official_metadata": {
+        "source": "pending_official_market_parser"
+      },
+      "updated_at": "2026-05-23",
+      "upgrade_batch": {
+        "markets": [
+          "CN",
+          "HK",
+          "JP",
+          "KR"
+        ],
+        "shard": "",
+        "output": "thememiner/data/profile_upgrades/official_rest.json"
+      }
+    },
+    {
+      "symbol": "005930.KS",
+      "name": "Samsung Electronics Co., Ltd.",
+      "market": "KR",
+      "region": "Korea",
+      "exchange": "KSC",
+      "raw_industry": null,
+      "website": null,
+      "company_name": null,
+      "sector": "Technology / Consumer Electronics",
+      "specializations": [
+        "IC-DRAM製造",
+        "IC-代工",
+        "HBM"
+      ],
+      "products": [],
+      "platforms": [
+        "IC-DRAM製造",
+        "IC-代工",
+        "HBM"
+      ],
+      "constraints": [
+        "auto profile: verify product purity, customer exposure, and revenue mix before trading",
+        "verify official filings/product pages for revenue mix"
+      ],
+      "risk_flags": [
+        "auto profile: concept fit may be broad until upgraded with official sources",
+        "auto-upgraded profile: product purity can still be broad"
+      ],
+      "bottleneck_profile": {},
+      "supply_chain_profile": {
+        "layers": [],
+        "products": [],
+        "upstream_concepts": [],
+        "downstream_concepts": [],
+        "matched_rules": []
+      },
+      "concept_exposures": [
+        {
+          "concept_id": "dram_manufacturing",
+          "role": "regional_leader",
+          "weight": 0.5,
+          "path": "Samsung Electronics Co., Ltd. metadata + exchange/supply-chain mapping -> IC-DRAM製造 exposure candidate"
+        },
+        {
+          "concept_id": "foundry",
+          "role": "regional_leader",
+          "weight": 0.5,
+          "path": "Samsung Electronics Co., Ltd. metadata + exchange/supply-chain mapping -> IC-代工 exposure candidate"
+        },
+        {
+          "concept_id": "hbm",
+          "role": "regional_leader",
+          "weight": 0.5,
+          "path": "Samsung Electronics Co., Ltd. metadata + exchange/supply-chain mapping -> HBM exposure candidate"
+        }
+      ],
+      "source_refs": [
+        {
+          "title": "Yahoo Finance search metadata for 005930.KS",
+          "url": "https://finance.yahoo.com/quote/005930.KS"
+        }
+      ],
+      "primary_business": "Samsung Electronics Co., Ltd. is upgraded from ticker/search metadata and ThemeMiner supply-chain mapping. ThemeMiner links it to IC-DRAM製造, IC-代工, HBM. Official filing/profile extraction is still pending for this market.",
+      "profile_quality": "market_metadata_profile",
+      "profile_evidence_quality": "yahoo_search_plus_graph",
+      "official_metadata": {
+        "source": "pending_official_market_parser"
+      },
+      "updated_at": "2026-05-23",
+      "upgrade_batch": {
+        "markets": [
+          "CN",
+          "HK",
+          "JP",
+          "KR"
+        ],
+        "shard": "",
+        "output": "thememiner/data/profile_upgrades/official_rest.json"
+      }
+    },
+    {
+      "symbol": "012450.KS",
+      "name": "Hanwha Aerospace Co., Ltd.",
+      "market": "KR",
+      "region": "Korea",
+      "exchange": "KSC",
+      "raw_industry": null,
+      "website": null,
+      "company_name": null,
+      "sector": "Industrials / Aerospace & Defense",
+      "specializations": [
+        "軍工/國防"
+      ],
+      "products": [],
+      "platforms": [
+        "軍工/國防"
+      ],
+      "constraints": [
+        "auto profile: verify product purity, customer exposure, and revenue mix before trading",
+        "verify official filings/product pages for revenue mix"
+      ],
+      "risk_flags": [
+        "auto profile: concept fit may be broad until upgraded with official sources",
+        "auto-upgraded profile: product purity can still be broad"
+      ],
+      "bottleneck_profile": {},
+      "supply_chain_profile": {
+        "layers": [],
+        "products": [],
+        "upstream_concepts": [],
+        "downstream_concepts": [],
+        "matched_rules": []
+      },
+      "concept_exposures": [
+        {
+          "concept_id": "defense",
+          "role": "regional_leader",
+          "weight": 0.5,
+          "path": "Hanwha Aerospace Co., Ltd. metadata + exchange/supply-chain mapping -> 軍工/國防 exposure candidate"
+        }
+      ],
+      "source_refs": [
+        {
+          "title": "Yahoo Finance search metadata for 012450.KS",
+          "url": "https://finance.yahoo.com/quote/012450.KS"
+        }
+      ],
+      "primary_business": "Hanwha Aerospace Co., Ltd. is upgraded from ticker/search metadata and ThemeMiner supply-chain mapping. ThemeMiner links it to 軍工/國防. Official filing/profile extraction is still pending for this market.",
+      "profile_quality": "market_metadata_profile",
+      "profile_evidence_quality": "yahoo_search_plus_graph",
+      "official_metadata": {
+        "source": "pending_official_market_parser"
+      },
+      "updated_at": "2026-05-23",
+      "upgrade_batch": {
+        "markets": [
+          "CN",
+          "HK",
+          "JP",
+          "KR"
+        ],
+        "shard": "",
+        "output": "thememiner/data/profile_upgrades/official_rest.json"
+      }
+    },
+    {
+      "symbol": "0386.HK",
+      "name": "China Petroleum & Chemical Corporation",
+      "market": "HK",
+      "region": "Hong Kong",
+      "exchange": "HKG",
+      "raw_industry": null,
+      "website": null,
+      "company_name": null,
+      "sector": "Energy / Oil & Gas Integrated",
+      "specializations": [
+        "化學工業",
+        "油氣/LNG"
+      ],
+      "products": [],
+      "platforms": [
+        "化學工業",
+        "油氣/LNG"
+      ],
+      "constraints": [
+        "auto profile: verify product purity, customer exposure, and revenue mix before trading",
+        "verify official filings/product pages for revenue mix"
+      ],
+      "risk_flags": [
+        "auto profile: concept fit may be broad until upgraded with official sources",
+        "auto-upgraded profile: product purity can still be broad"
+      ],
+      "bottleneck_profile": {},
+      "supply_chain_profile": {
+        "layers": [],
+        "products": [],
+        "upstream_concepts": [],
+        "downstream_concepts": [],
+        "matched_rules": []
+      },
+      "concept_exposures": [
+        {
+          "concept_id": "chemicals",
+          "role": "core_follower",
+          "weight": 0.5,
+          "path": "China Petroleum & Chemical Corporation metadata + exchange/supply-chain mapping -> 化學工業 exposure candidate"
+        },
+        {
+          "concept_id": "oil_lng",
+          "role": "core_follower",
+          "weight": 0.5,
+          "path": "China Petroleum & Chemical Corporation metadata + exchange/supply-chain mapping -> 油氣/LNG exposure candidate"
+        }
+      ],
+      "source_refs": [
+        {
+          "title": "Yahoo Finance search metadata for 0386.HK",
+          "url": "https://finance.yahoo.com/quote/0386.HK"
+        }
+      ],
+      "primary_business": "China Petroleum & Chemical Corporation is upgraded from ticker/search metadata and ThemeMiner supply-chain mapping. ThemeMiner links it to 化學工業, 油氣/LNG. Official filing/profile extraction is still pending for this market.",
+      "profile_quality": "market_metadata_profile",
+      "profile_evidence_quality": "yahoo_search_plus_graph",
+      "official_metadata": {
+        "source": "pending_official_market_parser"
+      },
+      "updated_at": "2026-05-23",
+      "upgrade_batch": {
+        "markets": [
+          "CN",
+          "HK",
+          "JP",
+          "KR"
+        ],
+        "shard": "",
+        "output": "thememiner/data/profile_upgrades/official_rest.json"
+      }
+    },
+    {
+      "symbol": "047810.KS",
+      "name": "Korea Aerospace Industries, Ltd.",
+      "market": "KR",
+      "region": "Korea",
+      "exchange": "KSC",
+      "raw_industry": null,
+      "website": null,
+      "company_name": null,
+      "sector": "Industrials / Aerospace & Defense",
+      "specializations": [
+        "軍工/國防",
+        "無人機"
+      ],
+      "products": [],
+      "platforms": [
+        "軍工/國防",
+        "無人機"
+      ],
+      "constraints": [
+        "auto profile: verify product purity, customer exposure, and revenue mix before trading",
+        "verify official filings/product pages for revenue mix"
+      ],
+      "risk_flags": [
+        "auto profile: concept fit may be broad until upgraded with official sources",
+        "auto-upgraded profile: product purity can still be broad"
+      ],
+      "bottleneck_profile": {},
+      "supply_chain_profile": {
+        "layers": [],
+        "products": [],
+        "upstream_concepts": [],
+        "downstream_concepts": [],
+        "matched_rules": []
+      },
+      "concept_exposures": [
+        {
+          "concept_id": "defense",
+          "role": "core_follower",
+          "weight": 0.5,
+          "path": "Korea Aerospace Industries, Ltd. metadata + exchange/supply-chain mapping -> 軍工/國防 exposure candidate"
+        },
+        {
+          "concept_id": "drone",
+          "role": "core_follower",
+          "weight": 0.5,
+          "path": "Korea Aerospace Industries, Ltd. metadata + exchange/supply-chain mapping -> 無人機 exposure candidate"
+        }
+      ],
+      "source_refs": [
+        {
+          "title": "Yahoo Finance search metadata for 047810.KS",
+          "url": "https://finance.yahoo.com/quote/047810.KS"
+        }
+      ],
+      "primary_business": "Korea Aerospace Industries, Ltd. is upgraded from ticker/search metadata and ThemeMiner supply-chain mapping. ThemeMiner links it to 軍工/國防, 無人機. Official filing/profile extraction is still pending for this market.",
+      "profile_quality": "market_metadata_profile",
+      "profile_evidence_quality": "yahoo_search_plus_graph",
+      "official_metadata": {
+        "source": "pending_official_market_parser"
+      },
+      "updated_at": "2026-05-23",
+      "upgrade_batch": {
+        "markets": [
+          "CN",
+          "HK",
+          "JP",
+          "KR"
+        ],
+        "shard": "",
+        "output": "thememiner/data/profile_upgrades/official_rest.json"
+      }
+    },
+    {
+      "symbol": "068270.KS",
+      "name": "Celltrion, Inc.",
+      "market": "KR",
+      "region": "Korea",
+      "exchange": "KSC",
+      "raw_industry": null,
+      "website": null,
+      "company_name": null,
+      "sector": "Healthcare / Biotechnology",
+      "specializations": [
+        "CDMO/CRO",
+        "GLP-1/減重藥",
+        "新藥"
+      ],
+      "products": [],
+      "platforms": [
+        "CDMO/CRO",
+        "GLP-1/減重藥",
+        "新藥"
+      ],
+      "constraints": [
+        "auto profile: verify product purity, customer exposure, and revenue mix before trading",
+        "verify official filings/product pages for revenue mix"
+      ],
+      "risk_flags": [
+        "auto profile: concept fit may be broad until upgraded with official sources",
+        "auto-upgraded profile: product purity can still be broad"
+      ],
+      "bottleneck_profile": {},
+      "supply_chain_profile": {
+        "layers": [],
+        "products": [],
+        "upstream_concepts": [],
+        "downstream_concepts": [],
+        "matched_rules": []
+      },
+      "concept_exposures": [
+        {
+          "concept_id": "cdmo_cro",
+          "role": "core_follower",
+          "weight": 0.5,
+          "path": "Celltrion, Inc. metadata + exchange/supply-chain mapping -> CDMO/CRO exposure candidate"
+        },
+        {
+          "concept_id": "glp1_obesity",
+          "role": "core_follower",
+          "weight": 0.5,
+          "path": "Celltrion, Inc. metadata + exchange/supply-chain mapping -> GLP-1/減重藥 exposure candidate"
+        },
+        {
+          "concept_id": "new_drug",
+          "role": "core_follower",
+          "weight": 0.5,
+          "path": "Celltrion, Inc. metadata + exchange/supply-chain mapping -> 新藥 exposure candidate"
+        }
+      ],
+      "source_refs": [
+        {
+          "title": "Yahoo Finance search metadata for 068270.KS",
+          "url": "https://finance.yahoo.com/quote/068270.KS"
+        }
+      ],
+      "primary_business": "Celltrion, Inc. is upgraded from ticker/search metadata and ThemeMiner supply-chain mapping. ThemeMiner links it to CDMO/CRO, GLP-1/減重藥, 新藥. Official filing/profile extraction is still pending for this market.",
+      "profile_quality": "market_metadata_profile",
+      "profile_evidence_quality": "yahoo_search_plus_graph",
+      "official_metadata": {
+        "source": "pending_official_market_parser"
+      },
+      "updated_at": "2026-05-23",
+      "upgrade_batch": {
+        "markets": [
+          "CN",
+          "HK",
+          "JP",
+          "KR"
+        ],
+        "shard": "",
+        "output": "thememiner/data/profile_upgrades/official_rest.json"
+      }
+    },
+    {
+      "symbol": "0857.HK",
+      "name": "PetroChina Company Limited",
+      "market": "HK",
+      "region": "Hong Kong",
+      "exchange": "HKG",
+      "raw_industry": null,
+      "website": null,
+      "company_name": null,
+      "sector": "Energy / Oil & Gas Integrated",
+      "specializations": [
+        "化學工業",
+        "油氣/LNG"
+      ],
+      "products": [],
+      "platforms": [
+        "化學工業",
+        "油氣/LNG"
+      ],
+      "constraints": [
+        "auto profile: verify product purity, customer exposure, and revenue mix before trading",
+        "verify official filings/product pages for revenue mix"
+      ],
+      "risk_flags": [
+        "auto profile: concept fit may be broad until upgraded with official sources",
+        "auto-upgraded profile: product purity can still be broad"
+      ],
+      "bottleneck_profile": {},
+      "supply_chain_profile": {
+        "layers": [],
+        "products": [],
+        "upstream_concepts": [],
+        "downstream_concepts": [],
+        "matched_rules": []
+      },
+      "concept_exposures": [
+        {
+          "concept_id": "chemicals",
+          "role": "core_follower",
+          "weight": 0.5,
+          "path": "PetroChina Company Limited metadata + exchange/supply-chain mapping -> 化學工業 exposure candidate"
+        },
+        {
+          "concept_id": "oil_lng",
+          "role": "core_follower",
+          "weight": 0.5,
+          "path": "PetroChina Company Limited metadata + exchange/supply-chain mapping -> 油氣/LNG exposure candidate"
+        }
+      ],
+      "source_refs": [
+        {
+          "title": "Yahoo Finance search metadata for 0857.HK",
+          "url": "https://finance.yahoo.com/quote/0857.HK"
+        }
+      ],
+      "primary_business": "PetroChina Company Limited is upgraded from ticker/search metadata and ThemeMiner supply-chain mapping. ThemeMiner links it to 化學工業, 油氣/LNG. Official filing/profile extraction is still pending for this market.",
+      "profile_quality": "market_metadata_profile",
+      "profile_evidence_quality": "yahoo_search_plus_graph",
+      "official_metadata": {
+        "source": "pending_official_market_parser"
+      },
+      "updated_at": "2026-05-23",
+      "upgrade_batch": {
+        "markets": [
+          "CN",
+          "HK",
+          "JP",
+          "KR"
+        ],
+        "shard": "",
+        "output": "thememiner/data/profile_upgrades/official_rest.json"
+      }
+    },
+    {
+      "symbol": "0883.HK",
+      "name": "CNOOC Limited",
+      "market": "HK",
+      "region": "Hong Kong",
+      "exchange": "HKG",
+      "raw_industry": null,
+      "website": null,
+      "company_name": null,
+      "sector": "Energy / Oil & Gas E&P",
+      "specializations": [
+        "油氣/LNG"
+      ],
+      "products": [],
+      "platforms": [
+        "油氣/LNG"
+      ],
+      "constraints": [
+        "auto profile: verify product purity, customer exposure, and revenue mix before trading",
+        "verify official filings/product pages for revenue mix"
+      ],
+      "risk_flags": [
+        "auto profile: concept fit may be broad until upgraded with official sources",
+        "auto-upgraded profile: product purity can still be broad"
+      ],
+      "bottleneck_profile": {},
+      "supply_chain_profile": {
+        "layers": [],
+        "products": [],
+        "upstream_concepts": [],
+        "downstream_concepts": [],
+        "matched_rules": []
+      },
+      "concept_exposures": [
+        {
+          "concept_id": "oil_lng",
+          "role": "regional_leader",
+          "weight": 0.5,
+          "path": "CNOOC Limited metadata + exchange/supply-chain mapping -> 油氣/LNG exposure candidate"
+        }
+      ],
+      "source_refs": [
+        {
+          "title": "Yahoo Finance search metadata for 0883.HK",
+          "url": "https://finance.yahoo.com/quote/0883.HK"
+        }
+      ],
+      "primary_business": "CNOOC Limited is upgraded from ticker/search metadata and ThemeMiner supply-chain mapping. ThemeMiner links it to 油氣/LNG. Official filing/profile extraction is still pending for this market.",
+      "profile_quality": "market_metadata_profile",
+      "profile_evidence_quality": "yahoo_search_plus_graph",
+      "official_metadata": {
+        "source": "pending_official_market_parser"
+      },
+      "updated_at": "2026-05-23",
+      "upgrade_batch": {
+        "markets": [
+          "CN",
+          "HK",
+          "JP",
+          "KR"
+        ],
+        "shard": "",
+        "output": "thememiner/data/profile_upgrades/official_rest.json"
+      }
+    },
+    {
+      "symbol": "0992.HK",
+      "name": "Lenovo Group Limited",
+      "market": "HK",
+      "region": "Hong Kong",
+      "exchange": "HKG",
+      "raw_industry": null,
+      "website": null,
+      "company_name": null,
+      "sector": "Technology / Computer Hardware",
+      "specializations": [
+        "EMS",
+        "GB200",
+        "GB300",
+        "HVDC功率半導體",
+        "電源供應器",
+        "散熱零組件",
+        "Vera Rubin"
+      ],
+      "products": [],
+      "platforms": [
+        "EMS",
+        "GB200",
+        "GB300",
+        "HVDC功率半導體",
+        "電源供應器"
+      ],
+      "constraints": [
+        "auto profile: verify product purity, customer exposure, and revenue mix before trading",
+        "verify official filings/product pages for revenue mix"
+      ],
+      "risk_flags": [
+        "auto profile: concept fit may be broad until upgraded with official sources",
+        "auto-upgraded profile: product purity can still be broad"
+      ],
+      "bottleneck_profile": {},
+      "supply_chain_profile": {
+        "layers": [],
+        "products": [],
+        "upstream_concepts": [],
+        "downstream_concepts": [],
+        "matched_rules": []
+      },
+      "concept_exposures": [
+        {
+          "concept_id": "ems",
+          "role": "laggard_watch",
+          "weight": 0.5,
+          "path": "Lenovo Group Limited metadata + exchange/supply-chain mapping -> EMS exposure candidate"
+        },
+        {
+          "concept_id": "gb200",
+          "role": "laggard_watch",
+          "weight": 0.5,
+          "path": "Lenovo Group Limited metadata + exchange/supply-chain mapping -> GB200 exposure candidate"
+        },
+        {
+          "concept_id": "gb300",
+          "role": "laggard_watch",
+          "weight": 0.5,
+          "path": "Lenovo Group Limited metadata + exchange/supply-chain mapping -> GB300 exposure candidate"
+        },
+        {
+          "concept_id": "hvdc_power_semiconductor",
+          "role": "laggard_watch",
+          "weight": 0.5,
+          "path": "Lenovo Group Limited metadata + exchange/supply-chain mapping -> HVDC功率半導體 exposure candidate"
+        },
+        {
+          "concept_id": "power_supply",
+          "role": "laggard_watch",
+          "weight": 0.5,
+          "path": "Lenovo Group Limited metadata + exchange/supply-chain mapping -> 電源供應器 exposure candidate"
+        },
+        {
+          "concept_id": "thermal_components",
+          "role": "laggard_watch",
+          "weight": 0.5,
+          "path": "Lenovo Group Limited metadata + exchange/supply-chain mapping -> 散熱零組件 exposure candidate"
+        },
+        {
+          "concept_id": "vera_rubin",
+          "role": "laggard_watch",
+          "weight": 0.5,
+          "path": "Lenovo Group Limited metadata + exchange/supply-chain mapping -> Vera Rubin exposure candidate"
+        }
+      ],
+      "source_refs": [
+        {
+          "title": "Yahoo Finance search metadata for 0992.HK",
+          "url": "https://finance.yahoo.com/quote/0992.HK"
+        }
+      ],
+      "primary_business": "Lenovo Group Limited is upgraded from ticker/search metadata and ThemeMiner supply-chain mapping. ThemeMiner links it to EMS, GB200, GB300, HVDC功率半導體, 電源供應器, 散熱零組件, Vera Rubin. Official filing/profile extraction is still pending for this market.",
+      "profile_quality": "market_metadata_profile",
+      "profile_evidence_quality": "yahoo_search_plus_graph",
+      "official_metadata": {
+        "source": "pending_official_market_parser"
+      },
+      "updated_at": "2026-05-23",
+      "upgrade_batch": {
+        "markets": [
+          "CN",
+          "HK",
+          "JP",
+          "KR"
+        ],
+        "shard": "",
+        "output": "thememiner/data/profile_upgrades/official_rest.json"
+      }
+    },
+    {
+      "symbol": "1299.HK",
+      "name": "AIA Group Limited",
+      "market": "HK",
+      "region": "Hong Kong",
+      "exchange": "HKG",
+      "raw_industry": null,
+      "website": null,
+      "company_name": null,
+      "sector": "Financial Services / Insurance—Life",
+      "specializations": [
+        "保險"
+      ],
+      "products": [],
+      "platforms": [
+        "保險"
+      ],
+      "constraints": [
+        "auto profile: verify product purity, customer exposure, and revenue mix before trading",
+        "verify official filings/product pages for revenue mix"
+      ],
+      "risk_flags": [
+        "auto profile: concept fit may be broad until upgraded with official sources",
+        "auto-upgraded profile: product purity can still be broad"
+      ],
+      "bottleneck_profile": {},
+      "supply_chain_profile": {
+        "layers": [],
+        "products": [],
+        "upstream_concepts": [],
+        "downstream_concepts": [],
+        "matched_rules": []
+      },
+      "concept_exposures": [
+        {
+          "concept_id": "insurance",
+          "role": "core_follower",
+          "weight": 0.5,
+          "path": "AIA Group Limited metadata + exchange/supply-chain mapping -> 保險 exposure candidate"
+        }
+      ],
+      "source_refs": [
+        {
+          "title": "Yahoo Finance search metadata for 1299.HK",
+          "url": "https://finance.yahoo.com/quote/1299.HK"
+        }
+      ],
+      "primary_business": "AIA Group Limited is upgraded from ticker/search metadata and ThemeMiner supply-chain mapping. ThemeMiner links it to 保險. Official filing/profile extraction is still pending for this market.",
+      "profile_quality": "market_metadata_profile",
+      "profile_evidence_quality": "yahoo_search_plus_graph",
+      "official_metadata": {
+        "source": "pending_official_market_parser"
+      },
+      "updated_at": "2026-05-23",
+      "upgrade_batch": {
+        "markets": [
+          "CN",
+          "HK",
+          "JP",
+          "KR"
+        ],
+        "shard": "",
+        "output": "thememiner/data/profile_upgrades/official_rest.json"
+      }
+    },
+    {
+      "symbol": "1605.T",
+      "name": "Inpex Corporation",
+      "market": "JP",
+      "region": "Japan",
+      "exchange": "JPX",
+      "raw_industry": null,
+      "website": null,
+      "company_name": null,
+      "sector": "Energy / Oil & Gas E&P",
+      "specializations": [
+        "化學工業",
+        "油氣/LNG"
+      ],
+      "products": [],
+      "platforms": [
+        "化學工業",
+        "油氣/LNG"
+      ],
+      "constraints": [
+        "auto profile: verify product purity, customer exposure, and revenue mix before trading",
+        "verify official filings/product pages for revenue mix"
+      ],
+      "risk_flags": [
+        "auto profile: concept fit may be broad until upgraded with official sources",
+        "auto-upgraded profile: product purity can still be broad"
+      ],
+      "bottleneck_profile": {},
+      "supply_chain_profile": {
+        "layers": [],
+        "products": [],
+        "upstream_concepts": [],
+        "downstream_concepts": [],
+        "matched_rules": []
+      },
+      "concept_exposures": [
+        {
+          "concept_id": "chemicals",
+          "role": "regional_leader",
+          "weight": 0.5,
+          "path": "Inpex Corporation metadata + exchange/supply-chain mapping -> 化學工業 exposure candidate"
+        },
+        {
+          "concept_id": "oil_lng",
+          "role": "regional_leader",
+          "weight": 0.5,
+          "path": "Inpex Corporation metadata + exchange/supply-chain mapping -> 油氣/LNG exposure candidate"
+        }
+      ],
+      "source_refs": [
+        {
+          "title": "Yahoo Finance search metadata for 1605.T",
+          "url": "https://finance.yahoo.com/quote/1605.T"
+        }
+      ],
+      "primary_business": "Inpex Corporation is upgraded from ticker/search metadata and ThemeMiner supply-chain mapping. ThemeMiner links it to 化學工業, 油氣/LNG. Official filing/profile extraction is still pending for this market.",
+      "profile_quality": "market_metadata_profile",
+      "profile_evidence_quality": "yahoo_search_plus_graph",
+      "official_metadata": {
+        "source": "pending_official_market_parser"
+      },
+      "updated_at": "2026-05-23",
+      "upgrade_batch": {
+        "markets": [
+          "CN",
+          "HK",
+          "JP",
+          "KR"
+        ],
+        "shard": "",
+        "output": "thememiner/data/profile_upgrades/official_rest.json"
+      }
+    },
+    {
+      "symbol": "1919.HK",
+      "name": "COSCO SHIPPING Holdings Co., Ltd.",
+      "market": "HK",
+      "region": "Hong Kong",
+      "exchange": "HKG",
+      "raw_industry": null,
+      "website": null,
+      "company_name": null,
+      "sector": "Industrials / Marine Shipping",
+      "specializations": [
+        "航運"
+      ],
+      "products": [],
+      "platforms": [
+        "航運"
+      ],
+      "constraints": [
+        "auto profile: verify product purity, customer exposure, and revenue mix before trading",
+        "verify official filings/product pages for revenue mix"
+      ],
+      "risk_flags": [
+        "auto profile: concept fit may be broad until upgraded with official sources",
+        "auto-upgraded profile: product purity can still be broad"
+      ],
+      "bottleneck_profile": {},
+      "supply_chain_profile": {
+        "layers": [],
+        "products": [],
+        "upstream_concepts": [],
+        "downstream_concepts": [],
+        "matched_rules": []
+      },
+      "concept_exposures": [
+        {
+          "concept_id": "shipping",
+          "role": "core_follower",
+          "weight": 0.5,
+          "path": "COSCO SHIPPING Holdings Co., Ltd. metadata + exchange/supply-chain mapping -> 航運 exposure candidate"
+        }
+      ],
+      "source_refs": [
+        {
+          "title": "Yahoo Finance search metadata for 1919.HK",
+          "url": "https://finance.yahoo.com/quote/1919.HK"
+        }
+      ],
+      "primary_business": "COSCO SHIPPING Holdings Co., Ltd. is upgraded from ticker/search metadata and ThemeMiner supply-chain mapping. ThemeMiner links it to 航運. Official filing/profile extraction is still pending for this market.",
+      "profile_quality": "market_metadata_profile",
+      "profile_evidence_quality": "yahoo_search_plus_graph",
+      "official_metadata": {
+        "source": "pending_official_market_parser"
+      },
+      "updated_at": "2026-05-23",
+      "upgrade_batch": {
+        "markets": [
+          "CN",
+          "HK",
+          "JP",
+          "KR"
+        ],
+        "shard": "",
+        "output": "thememiner/data/profile_upgrades/official_rest.json"
+      }
+    },
+    {
+      "symbol": "207940.KS",
+      "name": "Samsung Biologics Co.,Ltd.",
+      "market": "KR",
+      "region": "Korea",
+      "exchange": "KSC",
+      "raw_industry": null,
+      "website": null,
+      "company_name": null,
+      "sector": "Healthcare / Biotechnology",
+      "specializations": [
+        "CDMO/CRO",
+        "新藥"
+      ],
+      "products": [],
+      "platforms": [
+        "CDMO/CRO",
+        "新藥"
+      ],
+      "constraints": [
+        "auto profile: verify product purity, customer exposure, and revenue mix before trading",
+        "verify official filings/product pages for revenue mix"
+      ],
+      "risk_flags": [
+        "auto profile: concept fit may be broad until upgraded with official sources",
+        "auto-upgraded profile: product purity can still be broad"
+      ],
+      "bottleneck_profile": {},
+      "supply_chain_profile": {
+        "layers": [],
+        "products": [],
+        "upstream_concepts": [],
+        "downstream_concepts": [],
+        "matched_rules": []
+      },
+      "concept_exposures": [
+        {
+          "concept_id": "cdmo_cro",
+          "role": "regional_leader",
+          "weight": 0.5,
+          "path": "Samsung Biologics Co.,Ltd. metadata + exchange/supply-chain mapping -> CDMO/CRO exposure candidate"
+        },
+        {
+          "concept_id": "new_drug",
+          "role": "regional_leader",
+          "weight": 0.5,
+          "path": "Samsung Biologics Co.,Ltd. metadata + exchange/supply-chain mapping -> 新藥 exposure candidate"
+        }
+      ],
+      "source_refs": [
+        {
+          "title": "Yahoo Finance search metadata for 207940.KS",
+          "url": "https://finance.yahoo.com/quote/207940.KS"
+        }
+      ],
+      "primary_business": "Samsung Biologics Co.,Ltd. is upgraded from ticker/search metadata and ThemeMiner supply-chain mapping. ThemeMiner links it to CDMO/CRO, 新藥. Official filing/profile extraction is still pending for this market.",
+      "profile_quality": "market_metadata_profile",
+      "profile_evidence_quality": "yahoo_search_plus_graph",
+      "official_metadata": {
+        "source": "pending_official_market_parser"
+      },
+      "updated_at": "2026-05-23",
+      "upgrade_batch": {
+        "markets": [
+          "CN",
+          "HK",
+          "JP",
+          "KR"
+        ],
+        "shard": "",
+        "output": "thememiner/data/profile_upgrades/official_rest.json"
+      }
+    },
+    {
+      "symbol": "2269.HK",
+      "name": "WuXi Biologics (Cayman) Inc.",
+      "market": "HK",
+      "region": "Hong Kong",
+      "exchange": "HKG",
+      "raw_industry": null,
+      "website": null,
+      "company_name": null,
+      "sector": "Healthcare / Biotechnology",
+      "specializations": [
+        "CDMO/CRO",
+        "新藥"
+      ],
+      "products": [],
+      "platforms": [
+        "CDMO/CRO",
+        "新藥"
+      ],
+      "constraints": [
+        "auto profile: verify product purity, customer exposure, and revenue mix before trading",
+        "verify official filings/product pages for revenue mix"
+      ],
+      "risk_flags": [
+        "auto profile: concept fit may be broad until upgraded with official sources",
+        "auto-upgraded profile: product purity can still be broad"
+      ],
+      "bottleneck_profile": {},
+      "supply_chain_profile": {
+        "layers": [],
+        "products": [],
+        "upstream_concepts": [],
+        "downstream_concepts": [],
+        "matched_rules": []
+      },
+      "concept_exposures": [
+        {
+          "concept_id": "cdmo_cro",
+          "role": "core_follower",
+          "weight": 0.5,
+          "path": "WuXi Biologics (Cayman) Inc. metadata + exchange/supply-chain mapping -> CDMO/CRO exposure candidate"
+        },
+        {
+          "concept_id": "new_drug",
+          "role": "core_follower",
+          "weight": 0.5,
+          "path": "WuXi Biologics (Cayman) Inc. metadata + exchange/supply-chain mapping -> 新藥 exposure candidate"
+        }
+      ],
+      "source_refs": [
+        {
+          "title": "Yahoo Finance search metadata for 2269.HK",
+          "url": "https://finance.yahoo.com/quote/2269.HK"
+        }
+      ],
+      "primary_business": "WuXi Biologics (Cayman) Inc. is upgraded from ticker/search metadata and ThemeMiner supply-chain mapping. ThemeMiner links it to CDMO/CRO, 新藥. Official filing/profile extraction is still pending for this market.",
+      "profile_quality": "market_metadata_profile",
+      "profile_evidence_quality": "yahoo_search_plus_graph",
+      "official_metadata": {
+        "source": "pending_official_market_parser"
+      },
+      "updated_at": "2026-05-23",
+      "upgrade_batch": {
+        "markets": [
+          "CN",
+          "HK",
+          "JP",
+          "KR"
+        ],
+        "shard": "",
+        "output": "thememiner/data/profile_upgrades/official_rest.json"
+      }
+    },
+    {
+      "symbol": "2359.HK",
+      "name": "WuXi AppTec Co., Ltd.",
+      "market": "HK",
+      "region": "Hong Kong",
+      "exchange": "HKG",
+      "raw_industry": null,
+      "website": null,
+      "company_name": null,
+      "sector": "Healthcare / Diagnostics & Research",
+      "specializations": [
+        "CDMO/CRO"
+      ],
+      "products": [],
+      "platforms": [
+        "CDMO/CRO"
+      ],
+      "constraints": [
+        "auto profile: verify product purity, customer exposure, and revenue mix before trading",
+        "verify official filings/product pages for revenue mix"
+      ],
+      "risk_flags": [
+        "auto profile: concept fit may be broad until upgraded with official sources",
+        "auto-upgraded profile: product purity can still be broad"
+      ],
+      "bottleneck_profile": {},
+      "supply_chain_profile": {
+        "layers": [],
+        "products": [],
+        "upstream_concepts": [],
+        "downstream_concepts": [],
+        "matched_rules": []
+      },
+      "concept_exposures": [
+        {
+          "concept_id": "cdmo_cro",
+          "role": "core_follower",
+          "weight": 0.5,
+          "path": "WuXi AppTec Co., Ltd. metadata + exchange/supply-chain mapping -> CDMO/CRO exposure candidate"
+        }
+      ],
+      "source_refs": [
+        {
+          "title": "Yahoo Finance search metadata for 2359.HK",
+          "url": "https://finance.yahoo.com/quote/2359.HK"
+        }
+      ],
+      "primary_business": "WuXi AppTec Co., Ltd. is upgraded from ticker/search metadata and ThemeMiner supply-chain mapping. ThemeMiner links it to CDMO/CRO. Official filing/profile extraction is still pending for this market.",
+      "profile_quality": "market_metadata_profile",
+      "profile_evidence_quality": "yahoo_search_plus_graph",
+      "official_metadata": {
+        "source": "pending_official_market_parser"
+      },
+      "updated_at": "2026-05-23",
+      "upgrade_batch": {
+        "markets": [
+          "CN",
+          "HK",
+          "JP",
+          "KR"
+        ],
+        "shard": "",
+        "output": "thememiner/data/profile_upgrades/official_rest.json"
+      }
+    },
+    {
+      "symbol": "2899.HK",
+      "name": "Zijin Mining Group Company Limited",
+      "market": "HK",
+      "region": "Hong Kong",
+      "exchange": "HKG",
+      "raw_industry": null,
+      "website": null,
+      "company_name": null,
+      "sector": "Basic Materials / Gold",
+      "specializations": [
+        "銅/銅箔",
+        "金屬製品",
+        "電線電纜"
+      ],
+      "products": [],
+      "platforms": [
+        "銅/銅箔",
+        "金屬製品",
+        "電線電纜"
+      ],
+      "constraints": [
+        "auto profile: verify product purity, customer exposure, and revenue mix before trading",
+        "verify official filings/product pages for revenue mix"
+      ],
+      "risk_flags": [
+        "auto profile: concept fit may be broad until upgraded with official sources",
+        "auto-upgraded profile: product purity can still be broad"
+      ],
+      "bottleneck_profile": {},
+      "supply_chain_profile": {
+        "layers": [],
+        "products": [],
+        "upstream_concepts": [],
+        "downstream_concepts": [],
+        "matched_rules": []
+      },
+      "concept_exposures": [
+        {
+          "concept_id": "copper",
+          "role": "core_follower",
+          "weight": 0.5,
+          "path": "Zijin Mining Group Company Limited metadata + exchange/supply-chain mapping -> 銅/銅箔 exposure candidate"
+        },
+        {
+          "concept_id": "metal_parts",
+          "role": "core_follower",
+          "weight": 0.5,
+          "path": "Zijin Mining Group Company Limited metadata + exchange/supply-chain mapping -> 金屬製品 exposure candidate"
+        },
+        {
+          "concept_id": "wire_cable",
+          "role": "core_follower",
+          "weight": 0.5,
+          "path": "Zijin Mining Group Company Limited metadata + exchange/supply-chain mapping -> 電線電纜 exposure candidate"
+        }
+      ],
+      "source_refs": [
+        {
+          "title": "Yahoo Finance search metadata for 2899.HK",
+          "url": "https://finance.yahoo.com/quote/2899.HK"
+        }
+      ],
+      "primary_business": "Zijin Mining Group Company Limited is upgraded from ticker/search metadata and ThemeMiner supply-chain mapping. ThemeMiner links it to 銅/銅箔, 金屬製品, 電線電纜. Official filing/profile extraction is still pending for this market.",
+      "profile_quality": "market_metadata_profile",
+      "profile_evidence_quality": "yahoo_search_plus_graph",
+      "official_metadata": {
+        "source": "pending_official_market_parser"
+      },
+      "updated_at": "2026-05-23",
+      "upgrade_batch": {
+        "markets": [
+          "CN",
+          "HK",
+          "JP",
+          "KR"
+        ],
+        "shard": "",
+        "output": "thememiner/data/profile_upgrades/official_rest.json"
+      }
+    },
+    {
+      "symbol": "300319.SZ",
+      "name": "Shenzhen Microgate Technology Co., Ltd.",
+      "market": "CN",
+      "region": "China A",
+      "exchange": "SHZ",
+      "raw_industry": null,
+      "website": null,
+      "company_name": null,
+      "sector": "Technology / Electronic Components",
+      "specializations": [
+        "通訊設備",
+        "電感/扼流圈",
+        "被動元件"
+      ],
+      "products": [],
+      "platforms": [
+        "通訊設備",
+        "電感/扼流圈",
+        "被動元件"
+      ],
+      "constraints": [
+        "auto profile: verify product purity, customer exposure, and revenue mix before trading",
+        "verify official filings/product pages for revenue mix"
+      ],
+      "risk_flags": [
+        "auto profile: concept fit may be broad until upgraded with official sources",
+        "auto-upgraded profile: product purity can still be broad"
+      ],
+      "bottleneck_profile": {},
+      "supply_chain_profile": {
+        "layers": [],
+        "products": [],
+        "upstream_concepts": [],
+        "downstream_concepts": [],
+        "matched_rules": []
+      },
+      "concept_exposures": [
+        {
+          "concept_id": "communication_equipment",
+          "role": "laggard_watch",
+          "weight": 0.5,
+          "path": "Shenzhen Microgate Technology Co., Ltd. metadata + exchange/supply-chain mapping -> 通訊設備 exposure candidate"
+        },
+        {
+          "concept_id": "inductor_choke",
+          "role": "laggard_watch",
+          "weight": 0.5,
+          "path": "Shenzhen Microgate Technology Co., Ltd. metadata + exchange/supply-chain mapping -> 電感/扼流圈 exposure candidate"
+        },
+        {
+          "concept_id": "passive_components",
+          "role": "laggard_watch",
+          "weight": 0.5,
+          "path": "Shenzhen Microgate Technology Co., Ltd. metadata + exchange/supply-chain mapping -> 被動元件 exposure candidate"
+        }
+      ],
+      "source_refs": [
+        {
+          "title": "Yahoo Finance search metadata for 300319.SZ",
+          "url": "https://finance.yahoo.com/quote/300319.SZ"
+        }
+      ],
+      "primary_business": "Shenzhen Microgate Technology Co., Ltd. is upgraded from ticker/search metadata and ThemeMiner supply-chain mapping. ThemeMiner links it to 通訊設備, 電感/扼流圈, 被動元件. Official filing/profile extraction is still pending for this market.",
+      "profile_quality": "market_metadata_profile",
+      "profile_evidence_quality": "yahoo_search_plus_graph",
+      "official_metadata": {
+        "source": "pending_official_market_parser"
+      },
+      "updated_at": "2026-05-23",
+      "upgrade_batch": {
+        "markets": [
+          "CN",
+          "HK",
+          "JP",
+          "KR"
+        ],
+        "shard": "",
+        "output": "thememiner/data/profile_upgrades/official_rest.json"
+      }
+    },
+    {
+      "symbol": "300408.SZ",
+      "name": "Chaozhou Three-Circle (Group) Co.,Ltd.",
+      "market": "CN",
+      "region": "China A",
+      "exchange": "SHZ",
+      "raw_industry": null,
+      "website": null,
+      "company_name": null,
+      "sector": "Technology / Electronic Components",
+      "specializations": [
+        "玻璃陶瓷",
+        "高壓MLCC",
+        "被動元件"
+      ],
+      "products": [],
+      "platforms": [
+        "玻璃陶瓷",
+        "高壓MLCC",
+        "被動元件"
+      ],
+      "constraints": [
+        "auto profile: verify product purity, customer exposure, and revenue mix before trading",
+        "verify official filings/product pages for revenue mix"
+      ],
+      "risk_flags": [
+        "auto profile: concept fit may be broad until upgraded with official sources",
+        "auto-upgraded profile: product purity can still be broad"
+      ],
+      "bottleneck_profile": {},
+      "supply_chain_profile": {
+        "layers": [],
+        "products": [],
+        "upstream_concepts": [],
+        "downstream_concepts": [],
+        "matched_rules": []
+      },
+      "concept_exposures": [
+        {
+          "concept_id": "glass_ceramics",
+          "role": "core_follower",
+          "weight": 0.5,
+          "path": "Chaozhou Three-Circle (Group) Co.,Ltd. metadata + exchange/supply-chain mapping -> 玻璃陶瓷 exposure candidate"
+        },
+        {
+          "concept_id": "high_voltage_mlcc",
+          "role": "core_follower",
+          "weight": 0.5,
+          "path": "Chaozhou Three-Circle (Group) Co.,Ltd. metadata + exchange/supply-chain mapping -> 高壓MLCC exposure candidate"
+        },
+        {
+          "concept_id": "passive_components",
+          "role": "core_follower",
+          "weight": 0.5,
+          "path": "Chaozhou Three-Circle (Group) Co.,Ltd. metadata + exchange/supply-chain mapping -> 被動元件 exposure candidate"
+        }
+      ],
+      "source_refs": [
+        {
+          "title": "Yahoo Finance search metadata for 300408.SZ",
+          "url": "https://finance.yahoo.com/quote/300408.SZ"
+        }
+      ],
+      "primary_business": "Chaozhou Three-Circle (Group) Co.,Ltd. is upgraded from ticker/search metadata and ThemeMiner supply-chain mapping. ThemeMiner links it to 玻璃陶瓷, 高壓MLCC, 被動元件. Official filing/profile extraction is still pending for this market.",
+      "profile_quality": "market_metadata_profile",
+      "profile_evidence_quality": "yahoo_search_plus_graph",
+      "official_metadata": {
+        "source": "pending_official_market_parser"
+      },
+      "updated_at": "2026-05-23",
+      "upgrade_batch": {
+        "markets": [
+          "CN",
+          "HK",
+          "JP",
+          "KR"
+        ],
+        "shard": "",
+        "output": "thememiner/data/profile_upgrades/official_rest.json"
+      }
+    },
+    {
+      "symbol": "300759.SZ",
+      "name": "Pharmaron Beijing Co., Ltd.",
+      "market": "CN",
+      "region": "China A",
+      "exchange": "SHZ",
+      "raw_industry": null,
+      "website": null,
+      "company_name": null,
+      "sector": "Healthcare / Biotechnology",
+      "specializations": [
+        "CDMO/CRO",
+        "GLP-1/減重藥",
+        "新藥"
+      ],
+      "products": [],
+      "platforms": [
+        "CDMO/CRO",
+        "GLP-1/減重藥",
+        "新藥"
+      ],
+      "constraints": [
+        "auto profile: verify product purity, customer exposure, and revenue mix before trading",
+        "verify official filings/product pages for revenue mix"
+      ],
+      "risk_flags": [
+        "auto profile: concept fit may be broad until upgraded with official sources",
+        "auto-upgraded profile: product purity can still be broad"
+      ],
+      "bottleneck_profile": {},
+      "supply_chain_profile": {
+        "layers": [],
+        "products": [],
+        "upstream_concepts": [],
+        "downstream_concepts": [],
+        "matched_rules": []
+      },
+      "concept_exposures": [
+        {
+          "concept_id": "cdmo_cro",
+          "role": "laggard_watch",
+          "weight": 0.5,
+          "path": "Pharmaron Beijing Co., Ltd. metadata + exchange/supply-chain mapping -> CDMO/CRO exposure candidate"
+        },
+        {
+          "concept_id": "glp1_obesity",
+          "role": "laggard_watch",
+          "weight": 0.5,
+          "path": "Pharmaron Beijing Co., Ltd. metadata + exchange/supply-chain mapping -> GLP-1/減重藥 exposure candidate"
+        },
+        {
+          "concept_id": "new_drug",
+          "role": "laggard_watch",
+          "weight": 0.5,
+          "path": "Pharmaron Beijing Co., Ltd. metadata + exchange/supply-chain mapping -> 新藥 exposure candidate"
+        }
+      ],
+      "source_refs": [
+        {
+          "title": "Yahoo Finance search metadata for 300759.SZ",
+          "url": "https://finance.yahoo.com/quote/300759.SZ"
+        }
+      ],
+      "primary_business": "Pharmaron Beijing Co., Ltd. is upgraded from ticker/search metadata and ThemeMiner supply-chain mapping. ThemeMiner links it to CDMO/CRO, GLP-1/減重藥, 新藥. Official filing/profile extraction is still pending for this market.",
+      "profile_quality": "market_metadata_profile",
+      "profile_evidence_quality": "yahoo_search_plus_graph",
+      "official_metadata": {
+        "source": "pending_official_market_parser"
+      },
+      "updated_at": "2026-05-23",
+      "upgrade_batch": {
+        "markets": [
+          "CN",
+          "HK",
+          "JP",
+          "KR"
+        ],
+        "shard": "",
+        "output": "thememiner/data/profile_upgrades/official_rest.json"
+      }
+    },
+    {
+      "symbol": "301308.SZ",
+      "name": "Shenzhen Longsys Electronics Co., Ltd.",
+      "market": "CN",
+      "region": "China A",
+      "exchange": "SHZ",
+      "raw_industry": null,
+      "website": null,
+      "company_name": null,
+      "sector": "Technology / Computer Hardware",
+      "specializations": [
+        "Agentic AI系統級基建",
+        "Agentic CPU Rack/編排運算",
+        "AI測試/Probe Card/Interface",
+        "CPU Socket/測試座/插槽",
+        "企業級SSD/eSSD",
+        "HDD冷資料/長期記憶",
+        "高速連接器/線纜",
+        "Host DRAM/上下文記憶",
+        "KV Cache/RAG記憶體",
+        "CPU-Memory Interface/CXL"
+      ],
+      "products": [],
+      "platforms": [
+        "Agentic AI系統級基建",
+        "Agentic CPU Rack/編排運算",
+        "AI測試/Probe Card/Interface",
+        "CPU Socket/測試座/插槽",
+        "企業級SSD/eSSD"
+      ],
+      "constraints": [
+        "auto profile: verify product purity, customer exposure, and revenue mix before trading",
+        "verify official filings/product pages for revenue mix"
+      ],
+      "risk_flags": [
+        "auto profile: concept fit may be broad until upgraded with official sources",
+        "auto-upgraded profile: product purity can still be broad"
+      ],
+      "bottleneck_profile": {},
+      "supply_chain_profile": {
+        "layers": [],
+        "products": [],
+        "upstream_concepts": [],
+        "downstream_concepts": [],
+        "matched_rules": []
+      },
+      "concept_exposures": [
+        {
+          "concept_id": "agentic_ai_infrastructure",
+          "role": "laggard_watch",
+          "weight": 0.5,
+          "path": "Shenzhen Longsys Electronics Co., Ltd. metadata + exchange/supply-chain mapping -> Agentic AI系統級基建 exposure candidate"
+        },
+        {
+          "concept_id": "agentic_cpu_rack",
+          "role": "laggard_watch",
+          "weight": 0.5,
+          "path": "Shenzhen Longsys Electronics Co., Ltd. metadata + exchange/supply-chain mapping -> Agentic CPU Rack/編排運算 exposure candidate"
+        },
+        {
+          "concept_id": "ai_test_probe_interface",
+          "role": "laggard_watch",
+          "weight": 0.5,
+          "path": "Shenzhen Longsys Electronics Co., Ltd. metadata + exchange/supply-chain mapping -> AI測試/Probe Card/Interface exposure candidate"
+        },
+        {
+          "concept_id": "cpu_socket",
+          "role": "laggard_watch",
+          "weight": 0.5,
+          "path": "Shenzhen Longsys Electronics Co., Ltd. metadata + exchange/supply-chain mapping -> CPU Socket/測試座/插槽 exposure candidate"
+        },
+        {
+          "concept_id": "enterprise_ssd",
+          "role": "laggard_watch",
+          "weight": 0.5,
+          "path": "Shenzhen Longsys Electronics Co., Ltd. metadata + exchange/supply-chain mapping -> 企業級SSD/eSSD exposure candidate"
+        },
+        {
+          "concept_id": "hdd_cold_storage",
+          "role": "laggard_watch",
+          "weight": 0.5,
+          "path": "Shenzhen Longsys Electronics Co., Ltd. metadata + exchange/supply-chain mapping -> HDD冷資料/長期記憶 exposure candidate"
+        },
+        {
+          "concept_id": "high_speed_connector",
+          "role": "laggard_watch",
+          "weight": 0.5,
+          "path": "Shenzhen Longsys Electronics Co., Ltd. metadata + exchange/supply-chain mapping -> 高速連接器/線纜 exposure candidate"
+        },
+        {
+          "concept_id": "host_dram",
+          "role": "laggard_watch",
+          "weight": 0.5,
+          "path": "Shenzhen Longsys Electronics Co., Ltd. metadata + exchange/supply-chain mapping -> Host DRAM/上下文記憶 exposure candidate"
+        },
+        {
+          "concept_id": "kv_cache_memory",
+          "role": "laggard_watch",
+          "weight": 0.5,
+          "path": "Shenzhen Longsys Electronics Co., Ltd. metadata + exchange/supply-chain mapping -> KV Cache/RAG記憶體 exposure candidate"
+        },
+        {
+          "concept_id": "memory_interface",
+          "role": "laggard_watch",
+          "weight": 0.5,
+          "path": "Shenzhen Longsys Electronics Co., Ltd. metadata + exchange/supply-chain mapping -> CPU-Memory Interface/CXL exposure candidate"
+        },
+        {
+          "concept_id": "networking",
+          "role": "laggard_watch",
+          "weight": 0.5,
+          "path": "Shenzhen Longsys Electronics Co., Ltd. metadata + exchange/supply-chain mapping -> 網通 exposure candidate"
+        },
+        {
+          "concept_id": "passive_components",
+          "role": "laggard_watch",
+          "weight": 0.5,
+          "path": "Shenzhen Longsys Electronics Co., Ltd. metadata + exchange/supply-chain mapping -> 被動元件 exposure candidate"
+        },
+        {
+          "concept_id": "precision_timing",
+          "role": "laggard_watch",
+          "weight": 0.5,
+          "path": "Shenzhen Longsys Electronics Co., Ltd. metadata + exchange/supply-chain mapping -> 精密時鐘/Timing exposure candidate"
+        },
+        {
+          "concept_id": "semicap_equipment",
+          "role": "laggard_watch",
+          "weight": 0.5,
+          "path": "Shenzhen Longsys Electronics Co., Ltd. metadata + exchange/supply-chain mapping -> IC-半導體設備 exposure candidate"
+        },
+        {
+          "concept_id": "server_pcb_abf",
+          "role": "laggard_watch",
+          "weight": 0.5,
+          "path": "Shenzhen Longsys Electronics Co., Ltd. metadata + exchange/supply-chain mapping -> AI Server PCB/ABF/基板 exposure candidate"
+        }
+      ],
+      "source_refs": [
+        {
+          "title": "Yahoo Finance search metadata for 301308.SZ",
+          "url": "https://finance.yahoo.com/quote/301308.SZ"
+        }
+      ],
+      "primary_business": "Shenzhen Longsys Electronics Co., Ltd. is upgraded from ticker/search metadata and ThemeMiner supply-chain mapping. ThemeMiner links it to Agentic AI系統級基建, Agentic CPU Rack/編排運算, AI測試/Probe Card/Interface, CPU Socket/測試座/插槽, 企業級SSD/eSSD, HDD冷資料/長期記憶, 高速連接器/線纜, Host DRAM/上下文記憶. Official filing/profile extraction is still pending for this market.",
+      "profile_quality": "market_metadata_profile",
+      "profile_evidence_quality": "yahoo_search_plus_graph",
+      "official_metadata": {
+        "source": "pending_official_market_parser"
+      },
+      "updated_at": "2026-05-23",
+      "upgrade_batch": {
+        "markets": [
+          "CN",
+          "HK",
+          "JP",
+          "KR"
+        ],
+        "shard": "",
+        "output": "thememiner/data/profile_upgrades/official_rest.json"
+      }
+    },
+    {
+      "symbol": "4062.T",
+      "name": "Ibiden Co.,Ltd.",
+      "market": "JP",
+      "region": "Japan",
+      "exchange": "JPX",
+      "raw_industry": null,
+      "website": null,
+      "company_name": null,
+      "sector": "Technology / Electronic Components",
+      "specializations": [
+        "ABF",
+        "PCB-材料設備"
+      ],
+      "products": [],
+      "platforms": [
+        "ABF",
+        "PCB-材料設備"
+      ],
+      "constraints": [
+        "auto profile: verify product purity, customer exposure, and revenue mix before trading",
+        "verify official filings/product pages for revenue mix"
+      ],
+      "risk_flags": [
+        "auto profile: concept fit may be broad until upgraded with official sources",
+        "auto-upgraded profile: product purity can still be broad"
+      ],
+      "bottleneck_profile": {},
+      "supply_chain_profile": {
+        "layers": [],
+        "products": [],
+        "upstream_concepts": [],
+        "downstream_concepts": [],
+        "matched_rules": []
+      },
+      "concept_exposures": [
+        {
+          "concept_id": "abf_substrate",
+          "role": "global_leader",
+          "weight": 0.5,
+          "path": "Ibiden Co.,Ltd. metadata + exchange/supply-chain mapping -> ABF exposure candidate"
+        },
+        {
+          "concept_id": "pcb_material_equipment",
+          "role": "global_leader",
+          "weight": 0.5,
+          "path": "Ibiden Co.,Ltd. metadata + exchange/supply-chain mapping -> PCB-材料設備 exposure candidate"
+        }
+      ],
+      "source_refs": [
+        {
+          "title": "Yahoo Finance search metadata for 4062.T",
+          "url": "https://finance.yahoo.com/quote/4062.T"
+        }
+      ],
+      "primary_business": "Ibiden Co.,Ltd. is upgraded from ticker/search metadata and ThemeMiner supply-chain mapping. ThemeMiner links it to ABF, PCB-材料設備. Official filing/profile extraction is still pending for this market.",
+      "profile_quality": "market_metadata_profile",
+      "profile_evidence_quality": "yahoo_search_plus_graph",
+      "official_metadata": {
+        "source": "pending_official_market_parser"
+      },
+      "updated_at": "2026-05-23",
+      "upgrade_batch": {
+        "markets": [
+          "CN",
+          "HK",
+          "JP",
+          "KR"
+        ],
+        "shard": "",
+        "output": "thememiner/data/profile_upgrades/official_rest.json"
+      }
+    },
+    {
+      "symbol": "4502.T",
+      "name": "Takeda Pharmaceutical Company Limited",
+      "market": "JP",
+      "region": "Japan",
+      "exchange": "JPX",
+      "raw_industry": null,
+      "website": null,
+      "company_name": null,
+      "sector": "Healthcare / Drug Manufacturers—Specialty & Generic",
+      "specializations": [
+        "CDMO/CRO",
+        "GLP-1/減重藥",
+        "新藥"
+      ],
+      "products": [],
+      "platforms": [
+        "CDMO/CRO",
+        "GLP-1/減重藥",
+        "新藥"
+      ],
+      "constraints": [
+        "auto profile: verify product purity, customer exposure, and revenue mix before trading",
+        "verify official filings/product pages for revenue mix"
+      ],
+      "risk_flags": [
+        "auto profile: concept fit may be broad until upgraded with official sources",
+        "auto-upgraded profile: product purity can still be broad"
+      ],
+      "bottleneck_profile": {},
+      "supply_chain_profile": {
+        "layers": [],
+        "products": [],
+        "upstream_concepts": [],
+        "downstream_concepts": [],
+        "matched_rules": []
+      },
+      "concept_exposures": [
+        {
+          "concept_id": "cdmo_cro",
+          "role": "core_follower",
+          "weight": 0.5,
+          "path": "Takeda Pharmaceutical Company Limited metadata + exchange/supply-chain mapping -> CDMO/CRO exposure candidate"
+        },
+        {
+          "concept_id": "glp1_obesity",
+          "role": "core_follower",
+          "weight": 0.5,
+          "path": "Takeda Pharmaceutical Company Limited metadata + exchange/supply-chain mapping -> GLP-1/減重藥 exposure candidate"
+        },
+        {
+          "concept_id": "new_drug",
+          "role": "core_follower",
+          "weight": 0.5,
+          "path": "Takeda Pharmaceutical Company Limited metadata + exchange/supply-chain mapping -> 新藥 exposure candidate"
+        }
+      ],
+      "source_refs": [
+        {
+          "title": "Yahoo Finance search metadata for 4502.T",
+          "url": "https://finance.yahoo.com/quote/4502.T"
+        }
+      ],
+      "primary_business": "Takeda Pharmaceutical Company Limited is upgraded from ticker/search metadata and ThemeMiner supply-chain mapping. ThemeMiner links it to CDMO/CRO, GLP-1/減重藥, 新藥. Official filing/profile extraction is still pending for this market.",
+      "profile_quality": "market_metadata_profile",
+      "profile_evidence_quality": "yahoo_search_plus_graph",
+      "official_metadata": {
+        "source": "pending_official_market_parser"
+      },
+      "updated_at": "2026-05-23",
+      "upgrade_batch": {
+        "markets": [
+          "CN",
+          "HK",
+          "JP",
+          "KR"
+        ],
+        "shard": "",
+        "output": "thememiner/data/profile_upgrades/official_rest.json"
+      }
+    },
+    {
+      "symbol": "4519.T",
+      "name": "Chugai Pharmaceutical Co., Ltd.",
+      "market": "JP",
+      "region": "Japan",
+      "exchange": "JPX",
+      "raw_industry": null,
+      "website": null,
+      "company_name": null,
+      "sector": "Healthcare / Drug Manufacturers—General",
+      "specializations": [
+        "CDMO/CRO",
+        "GLP-1/減重藥",
+        "新藥"
+      ],
+      "products": [],
+      "platforms": [
+        "CDMO/CRO",
+        "GLP-1/減重藥",
+        "新藥"
+      ],
+      "constraints": [
+        "auto profile: verify product purity, customer exposure, and revenue mix before trading",
+        "verify official filings/product pages for revenue mix"
+      ],
+      "risk_flags": [
+        "auto profile: concept fit may be broad until upgraded with official sources",
+        "auto-upgraded profile: product purity can still be broad"
+      ],
+      "bottleneck_profile": {},
+      "supply_chain_profile": {
+        "layers": [],
+        "products": [],
+        "upstream_concepts": [],
+        "downstream_concepts": [],
+        "matched_rules": []
+      },
+      "concept_exposures": [
+        {
+          "concept_id": "cdmo_cro",
+          "role": "regional_leader",
+          "weight": 0.5,
+          "path": "Chugai Pharmaceutical Co., Ltd. metadata + exchange/supply-chain mapping -> CDMO/CRO exposure candidate"
+        },
+        {
+          "concept_id": "glp1_obesity",
+          "role": "regional_leader",
+          "weight": 0.5,
+          "path": "Chugai Pharmaceutical Co., Ltd. metadata + exchange/supply-chain mapping -> GLP-1/減重藥 exposure candidate"
+        },
+        {
+          "concept_id": "new_drug",
+          "role": "regional_leader",
+          "weight": 0.5,
+          "path": "Chugai Pharmaceutical Co., Ltd. metadata + exchange/supply-chain mapping -> 新藥 exposure candidate"
+        }
+      ],
+      "source_refs": [
+        {
+          "title": "Yahoo Finance search metadata for 4519.T",
+          "url": "https://finance.yahoo.com/quote/4519.T"
+        }
+      ],
+      "primary_business": "Chugai Pharmaceutical Co., Ltd. is upgraded from ticker/search metadata and ThemeMiner supply-chain mapping. ThemeMiner links it to CDMO/CRO, GLP-1/減重藥, 新藥. Official filing/profile extraction is still pending for this market.",
+      "profile_quality": "market_metadata_profile",
+      "profile_evidence_quality": "yahoo_search_plus_graph",
+      "official_metadata": {
+        "source": "pending_official_market_parser"
+      },
+      "updated_at": "2026-05-23",
+      "upgrade_batch": {
+        "markets": [
+          "CN",
+          "HK",
+          "JP",
+          "KR"
+        ],
+        "shard": "",
+        "output": "thememiner/data/profile_upgrades/official_rest.json"
+      }
+    },
+    {
+      "symbol": "4568.T",
+      "name": "Daiichi Sankyo Company, Limited",
+      "market": "JP",
+      "region": "Japan",
+      "exchange": "JPX",
+      "raw_industry": null,
+      "website": null,
+      "company_name": null,
+      "sector": "Healthcare / Drug Manufacturers—General",
+      "specializations": [
+        "CDMO/CRO",
+        "GLP-1/減重藥",
+        "新藥"
+      ],
+      "products": [],
+      "platforms": [
+        "CDMO/CRO",
+        "GLP-1/減重藥",
+        "新藥"
+      ],
+      "constraints": [
+        "auto profile: verify product purity, customer exposure, and revenue mix before trading",
+        "verify official filings/product pages for revenue mix"
+      ],
+      "risk_flags": [
+        "auto profile: concept fit may be broad until upgraded with official sources",
+        "auto-upgraded profile: product purity can still be broad"
+      ],
+      "bottleneck_profile": {},
+      "supply_chain_profile": {
+        "layers": [],
+        "products": [],
+        "upstream_concepts": [],
+        "downstream_concepts": [],
+        "matched_rules": []
+      },
+      "concept_exposures": [
+        {
+          "concept_id": "cdmo_cro",
+          "role": "regional_leader",
+          "weight": 0.5,
+          "path": "Daiichi Sankyo Company, Limited metadata + exchange/supply-chain mapping -> CDMO/CRO exposure candidate"
+        },
+        {
+          "concept_id": "glp1_obesity",
+          "role": "regional_leader",
+          "weight": 0.5,
+          "path": "Daiichi Sankyo Company, Limited metadata + exchange/supply-chain mapping -> GLP-1/減重藥 exposure candidate"
+        },
+        {
+          "concept_id": "new_drug",
+          "role": "regional_leader",
+          "weight": 0.5,
+          "path": "Daiichi Sankyo Company, Limited metadata + exchange/supply-chain mapping -> 新藥 exposure candidate"
+        }
+      ],
+      "source_refs": [
+        {
+          "title": "Yahoo Finance search metadata for 4568.T",
+          "url": "https://finance.yahoo.com/quote/4568.T"
+        }
+      ],
+      "primary_business": "Daiichi Sankyo Company, Limited is upgraded from ticker/search metadata and ThemeMiner supply-chain mapping. ThemeMiner links it to CDMO/CRO, GLP-1/減重藥, 新藥. Official filing/profile extraction is still pending for this market.",
+      "profile_quality": "market_metadata_profile",
+      "profile_evidence_quality": "yahoo_search_plus_graph",
+      "official_metadata": {
+        "source": "pending_official_market_parser"
+      },
+      "updated_at": "2026-05-23",
+      "upgrade_batch": {
+        "markets": [
+          "CN",
+          "HK",
+          "JP",
+          "KR"
+        ],
+        "shard": "",
+        "output": "thememiner/data/profile_upgrades/official_rest.json"
+      }
+    },
+    {
+      "symbol": "5020.T",
+      "name": "ENEOS Holdings, Inc.",
+      "market": "JP",
+      "region": "Japan",
+      "exchange": "JPX",
+      "raw_industry": null,
+      "website": null,
+      "company_name": null,
+      "sector": "Energy / Oil & Gas Refining & Marketing",
+      "specializations": [
+        "化學工業",
+        "油氣/LNG"
+      ],
+      "products": [],
+      "platforms": [
+        "化學工業",
+        "油氣/LNG"
+      ],
+      "constraints": [
+        "auto profile: verify product purity, customer exposure, and revenue mix before trading",
+        "verify official filings/product pages for revenue mix"
+      ],
+      "risk_flags": [
+        "auto profile: concept fit may be broad until upgraded with official sources",
+        "auto-upgraded profile: product purity can still be broad"
+      ],
+      "bottleneck_profile": {},
+      "supply_chain_profile": {
+        "layers": [],
+        "products": [],
+        "upstream_concepts": [],
+        "downstream_concepts": [],
+        "matched_rules": []
+      },
+      "concept_exposures": [
+        {
+          "concept_id": "chemicals",
+          "role": "core_follower",
+          "weight": 0.5,
+          "path": "ENEOS Holdings, Inc. metadata + exchange/supply-chain mapping -> 化學工業 exposure candidate"
+        },
+        {
+          "concept_id": "oil_lng",
+          "role": "core_follower",
+          "weight": 0.5,
+          "path": "ENEOS Holdings, Inc. metadata + exchange/supply-chain mapping -> 油氣/LNG exposure candidate"
+        }
+      ],
+      "source_refs": [
+        {
+          "title": "Yahoo Finance search metadata for 5020.T",
+          "url": "https://finance.yahoo.com/quote/5020.T"
+        }
+      ],
+      "primary_business": "ENEOS Holdings, Inc. is upgraded from ticker/search metadata and ThemeMiner supply-chain mapping. ThemeMiner links it to 化學工業, 油氣/LNG. Official filing/profile extraction is still pending for this market.",
+      "profile_quality": "market_metadata_profile",
+      "profile_evidence_quality": "yahoo_search_plus_graph",
+      "official_metadata": {
+        "source": "pending_official_market_parser"
+      },
+      "updated_at": "2026-05-23",
+      "upgrade_batch": {
+        "markets": [
+          "CN",
+          "HK",
+          "JP",
+          "KR"
+        ],
+        "shard": "",
+        "output": "thememiner/data/profile_upgrades/official_rest.json"
+      }
+    },
+    {
+      "symbol": "5711.T",
+      "name": "Mitsubishi Materials Corporation",
+      "market": "JP",
+      "region": "Japan",
+      "exchange": "JPX",
+      "raw_industry": null,
+      "website": null,
+      "company_name": null,
+      "sector": "Basic Materials / Other Industrial Metals & Mining",
+      "specializations": [
+        "銅/銅箔",
+        "金屬製品",
+        "電線電纜"
+      ],
+      "products": [],
+      "platforms": [
+        "銅/銅箔",
+        "金屬製品",
+        "電線電纜"
+      ],
+      "constraints": [
+        "auto profile: verify product purity, customer exposure, and revenue mix before trading",
+        "verify official filings/product pages for revenue mix"
+      ],
+      "risk_flags": [
+        "auto profile: concept fit may be broad until upgraded with official sources",
+        "auto-upgraded profile: product purity can still be broad"
+      ],
+      "bottleneck_profile": {},
+      "supply_chain_profile": {
+        "layers": [],
+        "products": [],
+        "upstream_concepts": [],
+        "downstream_concepts": [],
+        "matched_rules": []
+      },
+      "concept_exposures": [
+        {
+          "concept_id": "copper",
+          "role": "core_follower",
+          "weight": 0.5,
+          "path": "Mitsubishi Materials Corporation metadata + exchange/supply-chain mapping -> 銅/銅箔 exposure candidate"
+        },
+        {
+          "concept_id": "metal_parts",
+          "role": "core_follower",
+          "weight": 0.5,
+          "path": "Mitsubishi Materials Corporation metadata + exchange/supply-chain mapping -> 金屬製品 exposure candidate"
+        },
+        {
+          "concept_id": "wire_cable",
+          "role": "core_follower",
+          "weight": 0.5,
+          "path": "Mitsubishi Materials Corporation metadata + exchange/supply-chain mapping -> 電線電纜 exposure candidate"
+        }
+      ],
+      "source_refs": [
+        {
+          "title": "Yahoo Finance search metadata for 5711.T",
+          "url": "https://finance.yahoo.com/quote/5711.T"
+        }
+      ],
+      "primary_business": "Mitsubishi Materials Corporation is upgraded from ticker/search metadata and ThemeMiner supply-chain mapping. ThemeMiner links it to 銅/銅箔, 金屬製品, 電線電纜. Official filing/profile extraction is still pending for this market.",
+      "profile_quality": "market_metadata_profile",
+      "profile_evidence_quality": "yahoo_search_plus_graph",
+      "official_metadata": {
+        "source": "pending_official_market_parser"
+      },
+      "updated_at": "2026-05-23",
+      "upgrade_batch": {
+        "markets": [
+          "CN",
+          "HK",
+          "JP",
+          "KR"
+        ],
+        "shard": "",
+        "output": "thememiner/data/profile_upgrades/official_rest.json"
+      }
+    },
+    {
+      "symbol": "5713.T",
+      "name": "Sumitomo Metal Mining Co., Ltd.",
+      "market": "JP",
+      "region": "Japan",
+      "exchange": "JPX",
+      "raw_industry": null,
+      "website": null,
+      "company_name": null,
+      "sector": "Basic Materials / Other Industrial Metals & Mining",
+      "specializations": [
+        "銅/銅箔",
+        "金屬製品",
+        "電線電纜"
+      ],
+      "products": [],
+      "platforms": [
+        "銅/銅箔",
+        "金屬製品",
+        "電線電纜"
+      ],
+      "constraints": [
+        "auto profile: verify product purity, customer exposure, and revenue mix before trading",
+        "verify official filings/product pages for revenue mix"
+      ],
+      "risk_flags": [
+        "auto profile: concept fit may be broad until upgraded with official sources",
+        "auto-upgraded profile: product purity can still be broad"
+      ],
+      "bottleneck_profile": {},
+      "supply_chain_profile": {
+        "layers": [],
+        "products": [],
+        "upstream_concepts": [],
+        "downstream_concepts": [],
+        "matched_rules": []
+      },
+      "concept_exposures": [
+        {
+          "concept_id": "copper",
+          "role": "regional_leader",
+          "weight": 0.5,
+          "path": "Sumitomo Metal Mining Co., Ltd. metadata + exchange/supply-chain mapping -> 銅/銅箔 exposure candidate"
+        },
+        {
+          "concept_id": "metal_parts",
+          "role": "regional_leader",
+          "weight": 0.5,
+          "path": "Sumitomo Metal Mining Co., Ltd. metadata + exchange/supply-chain mapping -> 金屬製品 exposure candidate"
+        },
+        {
+          "concept_id": "wire_cable",
+          "role": "regional_leader",
+          "weight": 0.5,
+          "path": "Sumitomo Metal Mining Co., Ltd. metadata + exchange/supply-chain mapping -> 電線電纜 exposure candidate"
+        }
+      ],
+      "source_refs": [
+        {
+          "title": "Yahoo Finance search metadata for 5713.T",
+          "url": "https://finance.yahoo.com/quote/5713.T"
+        }
+      ],
+      "primary_business": "Sumitomo Metal Mining Co., Ltd. is upgraded from ticker/search metadata and ThemeMiner supply-chain mapping. ThemeMiner links it to 銅/銅箔, 金屬製品, 電線電纜. Official filing/profile extraction is still pending for this market.",
+      "profile_quality": "market_metadata_profile",
+      "profile_evidence_quality": "yahoo_search_plus_graph",
+      "official_metadata": {
+        "source": "pending_official_market_parser"
+      },
+      "updated_at": "2026-05-23",
+      "upgrade_batch": {
+        "markets": [
+          "CN",
+          "HK",
+          "JP",
+          "KR"
+        ],
+        "shard": "",
+        "output": "thememiner/data/profile_upgrades/official_rest.json"
+      }
+    },
+    {
+      "symbol": "5801.T",
+      "name": "Furukawa Electric Co., Ltd.",
+      "market": "JP",
+      "region": "Japan",
+      "exchange": "JPX",
+      "raw_industry": null,
+      "website": null,
+      "company_name": null,
+      "sector": "Industrials / Electrical Equipment & Parts",
+      "specializations": [
+        "銅/銅箔",
+        "金屬製品",
+        "電線電纜"
+      ],
+      "products": [],
+      "platforms": [
+        "銅/銅箔",
+        "金屬製品",
+        "電線電纜"
+      ],
+      "constraints": [
+        "auto profile: verify product purity, customer exposure, and revenue mix before trading",
+        "verify official filings/product pages for revenue mix"
+      ],
+      "risk_flags": [
+        "auto profile: concept fit may be broad until upgraded with official sources",
+        "auto-upgraded profile: product purity can still be broad"
+      ],
+      "bottleneck_profile": {},
+      "supply_chain_profile": {
+        "layers": [],
+        "products": [],
+        "upstream_concepts": [],
+        "downstream_concepts": [],
+        "matched_rules": []
+      },
+      "concept_exposures": [
+        {
+          "concept_id": "copper",
+          "role": "core_follower",
+          "weight": 0.5,
+          "path": "Furukawa Electric Co., Ltd. metadata + exchange/supply-chain mapping -> 銅/銅箔 exposure candidate"
+        },
+        {
+          "concept_id": "metal_parts",
+          "role": "core_follower",
+          "weight": 0.5,
+          "path": "Furukawa Electric Co., Ltd. metadata + exchange/supply-chain mapping -> 金屬製品 exposure candidate"
+        },
+        {
+          "concept_id": "wire_cable",
+          "role": "core_follower",
+          "weight": 0.5,
+          "path": "Furukawa Electric Co., Ltd. metadata + exchange/supply-chain mapping -> 電線電纜 exposure candidate"
+        }
+      ],
+      "source_refs": [
+        {
+          "title": "Yahoo Finance search metadata for 5801.T",
+          "url": "https://finance.yahoo.com/quote/5801.T"
+        }
+      ],
+      "primary_business": "Furukawa Electric Co., Ltd. is upgraded from ticker/search metadata and ThemeMiner supply-chain mapping. ThemeMiner links it to 銅/銅箔, 金屬製品, 電線電纜. Official filing/profile extraction is still pending for this market.",
+      "profile_quality": "market_metadata_profile",
+      "profile_evidence_quality": "yahoo_search_plus_graph",
+      "official_metadata": {
+        "source": "pending_official_market_parser"
+      },
+      "updated_at": "2026-05-23",
+      "upgrade_batch": {
+        "markets": [
+          "CN",
+          "HK",
+          "JP",
+          "KR"
+        ],
+        "shard": "",
+        "output": "thememiner/data/profile_upgrades/official_rest.json"
+      }
+    },
+    {
+      "symbol": "600026.SS",
+      "name": "COSCO SHIPPING Energy Transportation Co., Ltd.",
+      "market": "CN",
+      "region": "China A",
+      "exchange": "SHH",
+      "raw_industry": null,
+      "website": null,
+      "company_name": null,
+      "sector": "Energy / Oil & Gas Midstream",
+      "specializations": [
+        "物流",
+        "航運"
+      ],
+      "products": [],
+      "platforms": [
+        "物流",
+        "航運"
+      ],
+      "constraints": [
+        "auto profile: verify product purity, customer exposure, and revenue mix before trading",
+        "verify official filings/product pages for revenue mix"
+      ],
+      "risk_flags": [
+        "auto profile: concept fit may be broad until upgraded with official sources",
+        "auto-upgraded profile: product purity can still be broad"
+      ],
+      "bottleneck_profile": {},
+      "supply_chain_profile": {
+        "layers": [],
+        "products": [],
+        "upstream_concepts": [],
+        "downstream_concepts": [],
+        "matched_rules": []
+      },
+      "concept_exposures": [
+        {
+          "concept_id": "logistics",
+          "role": "core_follower",
+          "weight": 0.5,
+          "path": "COSCO SHIPPING Energy Transportation Co., Ltd. metadata + exchange/supply-chain mapping -> 物流 exposure candidate"
+        },
+        {
+          "concept_id": "shipping",
+          "role": "core_follower",
+          "weight": 0.5,
+          "path": "COSCO SHIPPING Energy Transportation Co., Ltd. metadata + exchange/supply-chain mapping -> 航運 exposure candidate"
+        }
+      ],
+      "source_refs": [
+        {
+          "title": "Yahoo Finance search metadata for 600026.SS",
+          "url": "https://finance.yahoo.com/quote/600026.SS"
+        }
+      ],
+      "primary_business": "COSCO SHIPPING Energy Transportation Co., Ltd. is upgraded from ticker/search metadata and ThemeMiner supply-chain mapping. ThemeMiner links it to 物流, 航運. Official filing/profile extraction is still pending for this market.",
+      "profile_quality": "market_metadata_profile",
+      "profile_evidence_quality": "yahoo_search_plus_graph",
+      "official_metadata": {
+        "source": "pending_official_market_parser"
+      },
+      "updated_at": "2026-05-23",
+      "upgrade_batch": {
+        "markets": [
+          "CN",
+          "HK",
+          "JP",
+          "KR"
+        ],
+        "shard": "",
+        "output": "thememiner/data/profile_upgrades/official_rest.json"
+      }
+    },
+    {
+      "symbol": "600036.SS",
+      "name": "China Merchants Bank Co., Ltd.",
+      "market": "CN",
+      "region": "China A",
+      "exchange": "SHH",
+      "raw_industry": null,
+      "website": null,
+      "company_name": null,
+      "sector": "Financial Services / Banks—Regional",
+      "specializations": [
+        "銀行"
+      ],
+      "products": [],
+      "platforms": [
+        "銀行"
+      ],
+      "constraints": [
+        "auto profile: verify product purity, customer exposure, and revenue mix before trading",
+        "verify official filings/product pages for revenue mix"
+      ],
+      "risk_flags": [
+        "auto profile: concept fit may be broad until upgraded with official sources",
+        "auto-upgraded profile: product purity can still be broad"
+      ],
+      "bottleneck_profile": {},
+      "supply_chain_profile": {
+        "layers": [],
+        "products": [],
+        "upstream_concepts": [],
+        "downstream_concepts": [],
+        "matched_rules": []
+      },
+      "concept_exposures": [
+        {
+          "concept_id": "banks",
+          "role": "regional_leader",
+          "weight": 0.5,
+          "path": "China Merchants Bank Co., Ltd. metadata + exchange/supply-chain mapping -> 銀行 exposure candidate"
+        }
+      ],
+      "source_refs": [
+        {
+          "title": "Yahoo Finance search metadata for 600036.SS",
+          "url": "https://finance.yahoo.com/quote/600036.SS"
+        }
+      ],
+      "primary_business": "China Merchants Bank Co., Ltd. is upgraded from ticker/search metadata and ThemeMiner supply-chain mapping. ThemeMiner links it to 銀行. Official filing/profile extraction is still pending for this market.",
+      "profile_quality": "market_metadata_profile",
+      "profile_evidence_quality": "yahoo_search_plus_graph",
+      "official_metadata": {
+        "source": "pending_official_market_parser"
+      },
+      "updated_at": "2026-05-23",
+      "upgrade_batch": {
+        "markets": [
+          "CN",
+          "HK",
+          "JP",
+          "KR"
+        ],
+        "shard": "",
+        "output": "thememiner/data/profile_upgrades/official_rest.json"
+      }
+    },
+    {
+      "symbol": "600089.SS",
+      "name": "TBEA Co., Ltd.",
+      "market": "CN",
+      "region": "China A",
+      "exchange": "SHH",
+      "raw_industry": null,
+      "website": null,
+      "company_name": null,
+      "sector": "Industrials / Electrical Equipment & Parts",
+      "specializations": [
+        "智慧電網",
+        "變壓器與UPS"
+      ],
+      "products": [],
+      "platforms": [
+        "智慧電網",
+        "變壓器與UPS"
+      ],
+      "constraints": [
+        "auto profile: verify product purity, customer exposure, and revenue mix before trading",
+        "verify official filings/product pages for revenue mix"
+      ],
+      "risk_flags": [
+        "auto profile: concept fit may be broad until upgraded with official sources",
+        "auto-upgraded profile: product purity can still be broad"
+      ],
+      "bottleneck_profile": {},
+      "supply_chain_profile": {
+        "layers": [],
+        "products": [],
+        "upstream_concepts": [],
+        "downstream_concepts": [],
+        "matched_rules": []
+      },
+      "concept_exposures": [
+        {
+          "concept_id": "smart_grid",
+          "role": "core_follower",
+          "weight": 0.5,
+          "path": "TBEA Co., Ltd. metadata + exchange/supply-chain mapping -> 智慧電網 exposure candidate"
+        },
+        {
+          "concept_id": "transformer_ups",
+          "role": "core_follower",
+          "weight": 0.5,
+          "path": "TBEA Co., Ltd. metadata + exchange/supply-chain mapping -> 變壓器與UPS exposure candidate"
+        }
+      ],
+      "source_refs": [
+        {
+          "title": "Yahoo Finance search metadata for 600089.SS",
+          "url": "https://finance.yahoo.com/quote/600089.SS"
+        }
+      ],
+      "primary_business": "TBEA Co., Ltd. is upgraded from ticker/search metadata and ThemeMiner supply-chain mapping. ThemeMiner links it to 智慧電網, 變壓器與UPS. Official filing/profile extraction is still pending for this market.",
+      "profile_quality": "market_metadata_profile",
+      "profile_evidence_quality": "yahoo_search_plus_graph",
+      "official_metadata": {
+        "source": "pending_official_market_parser"
+      },
+      "updated_at": "2026-05-23",
+      "upgrade_batch": {
+        "markets": [
+          "CN",
+          "HK",
+          "JP",
+          "KR"
+        ],
+        "shard": "",
+        "output": "thememiner/data/profile_upgrades/official_rest.json"
+      }
+    },
+    {
+      "symbol": "600150.SS",
+      "name": "China CSSC Holdings Limited",
+      "market": "CN",
+      "region": "China A",
+      "exchange": "SHH",
+      "raw_industry": null,
+      "website": null,
+      "company_name": null,
+      "sector": "Industrials / Aerospace & Defense",
+      "specializations": [
+        "軍工/國防",
+        "無人機"
+      ],
+      "products": [],
+      "platforms": [
+        "軍工/國防",
+        "無人機"
+      ],
+      "constraints": [
+        "auto profile: verify product purity, customer exposure, and revenue mix before trading",
+        "verify official filings/product pages for revenue mix"
+      ],
+      "risk_flags": [
+        "auto profile: concept fit may be broad until upgraded with official sources",
+        "auto-upgraded profile: product purity can still be broad"
+      ],
+      "bottleneck_profile": {},
+      "supply_chain_profile": {
+        "layers": [],
+        "products": [],
+        "upstream_concepts": [],
+        "downstream_concepts": [],
+        "matched_rules": []
+      },
+      "concept_exposures": [
+        {
+          "concept_id": "defense",
+          "role": "core_follower",
+          "weight": 0.5,
+          "path": "China CSSC Holdings Limited metadata + exchange/supply-chain mapping -> 軍工/國防 exposure candidate"
+        },
+        {
+          "concept_id": "drone",
+          "role": "core_follower",
+          "weight": 0.5,
+          "path": "China CSSC Holdings Limited metadata + exchange/supply-chain mapping -> 無人機 exposure candidate"
+        }
+      ],
+      "source_refs": [
+        {
+          "title": "Yahoo Finance search metadata for 600150.SS",
+          "url": "https://finance.yahoo.com/quote/600150.SS"
+        }
+      ],
+      "primary_business": "China CSSC Holdings Limited is upgraded from ticker/search metadata and ThemeMiner supply-chain mapping. ThemeMiner links it to 軍工/國防, 無人機. Official filing/profile extraction is still pending for this market.",
+      "profile_quality": "market_metadata_profile",
+      "profile_evidence_quality": "yahoo_search_plus_graph",
+      "official_metadata": {
+        "source": "pending_official_market_parser"
+      },
+      "updated_at": "2026-05-23",
+      "upgrade_batch": {
+        "markets": [
+          "CN",
+          "HK",
+          "JP",
+          "KR"
+        ],
+        "shard": "",
+        "output": "thememiner/data/profile_upgrades/official_rest.json"
+      }
+    },
+    {
+      "symbol": "600183.SS",
+      "name": "Shengyi Technology Co.,Ltd.",
+      "market": "CN",
+      "region": "China A",
+      "exchange": "SHH",
+      "raw_industry": null,
+      "website": null,
+      "company_name": null,
+      "sector": "Technology / Electronic Components",
+      "specializations": [
+        "PCB-材料設備"
+      ],
+      "products": [],
+      "platforms": [
+        "PCB-材料設備"
+      ],
+      "constraints": [
+        "auto profile: verify product purity, customer exposure, and revenue mix before trading",
+        "verify official filings/product pages for revenue mix"
+      ],
+      "risk_flags": [
+        "auto profile: concept fit may be broad until upgraded with official sources",
+        "auto-upgraded profile: product purity can still be broad"
+      ],
+      "bottleneck_profile": {},
+      "supply_chain_profile": {
+        "layers": [],
+        "products": [],
+        "upstream_concepts": [],
+        "downstream_concepts": [],
+        "matched_rules": []
+      },
+      "concept_exposures": [
+        {
+          "concept_id": "pcb_material_equipment",
+          "role": "core_follower",
+          "weight": 0.5,
+          "path": "Shengyi Technology Co.,Ltd. metadata + exchange/supply-chain mapping -> PCB-材料設備 exposure candidate"
+        }
+      ],
+      "source_refs": [
+        {
+          "title": "Yahoo Finance search metadata for 600183.SS",
+          "url": "https://finance.yahoo.com/quote/600183.SS"
+        }
+      ],
+      "primary_business": "Shengyi Technology Co.,Ltd. is upgraded from ticker/search metadata and ThemeMiner supply-chain mapping. ThemeMiner links it to PCB-材料設備. Official filing/profile extraction is still pending for this market.",
+      "profile_quality": "market_metadata_profile",
+      "profile_evidence_quality": "yahoo_search_plus_graph",
+      "official_metadata": {
+        "source": "pending_official_market_parser"
+      },
+      "updated_at": "2026-05-23",
+      "upgrade_batch": {
+        "markets": [
+          "CN",
+          "HK",
+          "JP",
+          "KR"
+        ],
+        "shard": "",
+        "output": "thememiner/data/profile_upgrades/official_rest.json"
+      }
+    },
+    {
+      "symbol": "600406.SS",
+      "name": "NARI Technology Co., Ltd.",
+      "market": "CN",
+      "region": "China A",
+      "exchange": "SHH",
+      "raw_industry": null,
+      "website": null,
+      "company_name": null,
+      "sector": "Industrials / Specialty Industrial Machinery",
+      "specializations": [
+        "智慧電網",
+        "變壓器與UPS"
+      ],
+      "products": [],
+      "platforms": [
+        "智慧電網",
+        "變壓器與UPS"
+      ],
+      "constraints": [
+        "auto profile: verify product purity, customer exposure, and revenue mix before trading",
+        "verify official filings/product pages for revenue mix"
+      ],
+      "risk_flags": [
+        "auto profile: concept fit may be broad until upgraded with official sources",
+        "auto-upgraded profile: product purity can still be broad"
+      ],
+      "bottleneck_profile": {},
+      "supply_chain_profile": {
+        "layers": [],
+        "products": [],
+        "upstream_concepts": [],
+        "downstream_concepts": [],
+        "matched_rules": []
+      },
+      "concept_exposures": [
+        {
+          "concept_id": "smart_grid",
+          "role": "regional_leader",
+          "weight": 0.5,
+          "path": "NARI Technology Co., Ltd. metadata + exchange/supply-chain mapping -> 智慧電網 exposure candidate"
+        },
+        {
+          "concept_id": "transformer_ups",
+          "role": "regional_leader",
+          "weight": 0.5,
+          "path": "NARI Technology Co., Ltd. metadata + exchange/supply-chain mapping -> 變壓器與UPS exposure candidate"
+        }
+      ],
+      "source_refs": [
+        {
+          "title": "Yahoo Finance search metadata for 600406.SS",
+          "url": "https://finance.yahoo.com/quote/600406.SS"
+        }
+      ],
+      "primary_business": "NARI Technology Co., Ltd. is upgraded from ticker/search metadata and ThemeMiner supply-chain mapping. ThemeMiner links it to 智慧電網, 變壓器與UPS. Official filing/profile extraction is still pending for this market.",
+      "profile_quality": "market_metadata_profile",
+      "profile_evidence_quality": "yahoo_search_plus_graph",
+      "official_metadata": {
+        "source": "pending_official_market_parser"
+      },
+      "updated_at": "2026-05-23",
+      "upgrade_batch": {
+        "markets": [
+          "CN",
+          "HK",
+          "JP",
+          "KR"
+        ],
+        "shard": "",
+        "output": "thememiner/data/profile_upgrades/official_rest.json"
+      }
+    },
+    {
+      "symbol": "600563.SS",
+      "name": "Xiamen Faratronic Co., Ltd.",
+      "market": "CN",
+      "region": "China A",
+      "exchange": "SHH",
+      "raw_industry": null,
+      "website": null,
+      "company_name": null,
+      "sector": "Technology / Electronic Components",
+      "specializations": [
+        "薄膜電容",
+        "被動元件"
+      ],
+      "products": [],
+      "platforms": [
+        "薄膜電容",
+        "被動元件"
+      ],
+      "constraints": [
+        "auto profile: verify product purity, customer exposure, and revenue mix before trading",
+        "verify official filings/product pages for revenue mix"
+      ],
+      "risk_flags": [
+        "auto profile: concept fit may be broad until upgraded with official sources",
+        "auto-upgraded profile: product purity can still be broad"
+      ],
+      "bottleneck_profile": {},
+      "supply_chain_profile": {
+        "layers": [],
+        "products": [],
+        "upstream_concepts": [],
+        "downstream_concepts": [],
+        "matched_rules": []
+      },
+      "concept_exposures": [
+        {
+          "concept_id": "film_capacitor",
+          "role": "regional_follower",
+          "weight": 0.5,
+          "path": "Xiamen Faratronic Co., Ltd. metadata + exchange/supply-chain mapping -> 薄膜電容 exposure candidate"
+        },
+        {
+          "concept_id": "passive_components",
+          "role": "regional_follower",
+          "weight": 0.5,
+          "path": "Xiamen Faratronic Co., Ltd. metadata + exchange/supply-chain mapping -> 被動元件 exposure candidate"
+        }
+      ],
+      "source_refs": [
+        {
+          "title": "Yahoo Finance search metadata for 600563.SS",
+          "url": "https://finance.yahoo.com/quote/600563.SS"
+        }
+      ],
+      "primary_business": "Xiamen Faratronic Co., Ltd. is upgraded from ticker/search metadata and ThemeMiner supply-chain mapping. ThemeMiner links it to 薄膜電容, 被動元件. Official filing/profile extraction is still pending for this market.",
+      "profile_quality": "market_metadata_profile",
+      "profile_evidence_quality": "yahoo_search_plus_graph",
+      "official_metadata": {
+        "source": "pending_official_market_parser"
+      },
+      "updated_at": "2026-05-23",
+      "upgrade_batch": {
+        "markets": [
+          "CN",
+          "HK",
+          "JP",
+          "KR"
+        ],
+        "shard": "",
+        "output": "thememiner/data/profile_upgrades/official_rest.json"
+      }
+    },
+    {
+      "symbol": "600760.SS",
+      "name": "AVIC Shenyang Aircraft Company Limited",
+      "market": "CN",
+      "region": "China A",
+      "exchange": "SHH",
+      "raw_industry": null,
+      "website": null,
+      "company_name": null,
+      "sector": "Industrials / Aerospace & Defense",
+      "specializations": [
+        "軍工/國防"
+      ],
+      "products": [],
+      "platforms": [
+        "軍工/國防"
+      ],
+      "constraints": [
+        "auto profile: verify product purity, customer exposure, and revenue mix before trading",
+        "verify official filings/product pages for revenue mix"
+      ],
+      "risk_flags": [
+        "auto profile: concept fit may be broad until upgraded with official sources",
+        "auto-upgraded profile: product purity can still be broad"
+      ],
+      "bottleneck_profile": {},
+      "supply_chain_profile": {
+        "layers": [],
+        "products": [],
+        "upstream_concepts": [],
+        "downstream_concepts": [],
+        "matched_rules": []
+      },
+      "concept_exposures": [
+        {
+          "concept_id": "defense",
+          "role": "regional_leader",
+          "weight": 0.5,
+          "path": "AVIC Shenyang Aircraft Company Limited metadata + exchange/supply-chain mapping -> 軍工/國防 exposure candidate"
+        }
+      ],
+      "source_refs": [
+        {
+          "title": "Yahoo Finance search metadata for 600760.SS",
+          "url": "https://finance.yahoo.com/quote/600760.SS"
+        }
+      ],
+      "primary_business": "AVIC Shenyang Aircraft Company Limited is upgraded from ticker/search metadata and ThemeMiner supply-chain mapping. ThemeMiner links it to 軍工/國防. Official filing/profile extraction is still pending for this market.",
+      "profile_quality": "market_metadata_profile",
+      "profile_evidence_quality": "yahoo_search_plus_graph",
+      "official_metadata": {
+        "source": "pending_official_market_parser"
+      },
+      "updated_at": "2026-05-23",
+      "upgrade_batch": {
+        "markets": [
+          "CN",
+          "HK",
+          "JP",
+          "KR"
+        ],
+        "shard": "",
+        "output": "thememiner/data/profile_upgrades/official_rest.json"
+      }
+    },
+    {
+      "symbol": "600938.SS",
+      "name": "CNOOC Limited",
+      "market": "CN",
+      "region": "China A",
+      "exchange": "SHH",
+      "raw_industry": null,
+      "website": null,
+      "company_name": null,
+      "sector": "Energy / Oil & Gas E&P",
+      "specializations": [
+        "化學工業",
+        "油氣/LNG"
+      ],
+      "products": [],
+      "platforms": [
+        "化學工業",
+        "油氣/LNG"
+      ],
+      "constraints": [
+        "auto profile: verify product purity, customer exposure, and revenue mix before trading",
+        "verify official filings/product pages for revenue mix"
+      ],
+      "risk_flags": [
+        "auto profile: concept fit may be broad until upgraded with official sources",
+        "auto-upgraded profile: product purity can still be broad"
+      ],
+      "bottleneck_profile": {},
+      "supply_chain_profile": {
+        "layers": [],
+        "products": [],
+        "upstream_concepts": [],
+        "downstream_concepts": [],
+        "matched_rules": []
+      },
+      "concept_exposures": [
+        {
+          "concept_id": "chemicals",
+          "role": "core_follower",
+          "weight": 0.5,
+          "path": "CNOOC Limited metadata + exchange/supply-chain mapping -> 化學工業 exposure candidate"
+        },
+        {
+          "concept_id": "oil_lng",
+          "role": "core_follower",
+          "weight": 0.5,
+          "path": "CNOOC Limited metadata + exchange/supply-chain mapping -> 油氣/LNG exposure candidate"
+        }
+      ],
+      "source_refs": [
+        {
+          "title": "Yahoo Finance search metadata for 600938.SS",
+          "url": "https://finance.yahoo.com/quote/600938.SS"
+        }
+      ],
+      "primary_business": "CNOOC Limited is upgraded from ticker/search metadata and ThemeMiner supply-chain mapping. ThemeMiner links it to 化學工業, 油氣/LNG. Official filing/profile extraction is still pending for this market.",
+      "profile_quality": "market_metadata_profile",
+      "profile_evidence_quality": "yahoo_search_plus_graph",
+      "official_metadata": {
+        "source": "pending_official_market_parser"
+      },
+      "updated_at": "2026-05-23",
+      "upgrade_batch": {
+        "markets": [
+          "CN",
+          "HK",
+          "JP",
+          "KR"
+        ],
+        "shard": "",
+        "output": "thememiner/data/profile_upgrades/official_rest.json"
+      }
+    },
+    {
+      "symbol": "601138.SS",
+      "name": "Foxconn Industrial Internet Co., Ltd.",
+      "market": "CN",
+      "region": "China A",
+      "exchange": "SHH",
+      "raw_industry": null,
+      "website": null,
+      "company_name": null,
+      "sector": "Technology / Communication Equipment",
+      "specializations": [
+        "EMS",
+        "GB200"
+      ],
+      "products": [],
+      "platforms": [
+        "EMS",
+        "GB200"
+      ],
+      "constraints": [
+        "auto profile: verify product purity, customer exposure, and revenue mix before trading",
+        "verify official filings/product pages for revenue mix"
+      ],
+      "risk_flags": [
+        "auto profile: concept fit may be broad until upgraded with official sources",
+        "auto-upgraded profile: product purity can still be broad"
+      ],
+      "bottleneck_profile": {},
+      "supply_chain_profile": {
+        "layers": [],
+        "products": [],
+        "upstream_concepts": [],
+        "downstream_concepts": [],
+        "matched_rules": []
+      },
+      "concept_exposures": [
+        {
+          "concept_id": "ems",
+          "role": "core_follower",
+          "weight": 0.5,
+          "path": "Foxconn Industrial Internet Co., Ltd. metadata + exchange/supply-chain mapping -> EMS exposure candidate"
+        },
+        {
+          "concept_id": "gb200",
+          "role": "core_follower",
+          "weight": 0.5,
+          "path": "Foxconn Industrial Internet Co., Ltd. metadata + exchange/supply-chain mapping -> GB200 exposure candidate"
+        }
+      ],
+      "source_refs": [
+        {
+          "title": "Yahoo Finance search metadata for 601138.SS",
+          "url": "https://finance.yahoo.com/quote/601138.SS"
+        }
+      ],
+      "primary_business": "Foxconn Industrial Internet Co., Ltd. is upgraded from ticker/search metadata and ThemeMiner supply-chain mapping. ThemeMiner links it to EMS, GB200. Official filing/profile extraction is still pending for this market.",
+      "profile_quality": "market_metadata_profile",
+      "profile_evidence_quality": "yahoo_search_plus_graph",
+      "official_metadata": {
+        "source": "pending_official_market_parser"
+      },
+      "updated_at": "2026-05-23",
+      "upgrade_batch": {
+        "markets": [
+          "CN",
+          "HK",
+          "JP",
+          "KR"
+        ],
+        "shard": "",
+        "output": "thememiner/data/profile_upgrades/official_rest.json"
+      }
+    },
+    {
+      "symbol": "601179.SS",
+      "name": "China XD Electric Co., Ltd",
+      "market": "CN",
+      "region": "China A",
+      "exchange": "SHH",
+      "raw_industry": null,
+      "website": null,
+      "company_name": null,
+      "sector": "Industrials / Electrical Equipment & Parts",
+      "specializations": [
+        "智慧電網",
+        "變壓器與UPS"
+      ],
+      "products": [],
+      "platforms": [
+        "智慧電網",
+        "變壓器與UPS"
+      ],
+      "constraints": [
+        "auto profile: verify product purity, customer exposure, and revenue mix before trading",
+        "verify official filings/product pages for revenue mix"
+      ],
+      "risk_flags": [
+        "auto profile: concept fit may be broad until upgraded with official sources",
+        "auto-upgraded profile: product purity can still be broad"
+      ],
+      "bottleneck_profile": {},
+      "supply_chain_profile": {
+        "layers": [],
+        "products": [],
+        "upstream_concepts": [],
+        "downstream_concepts": [],
+        "matched_rules": []
+      },
+      "concept_exposures": [
+        {
+          "concept_id": "smart_grid",
+          "role": "laggard_watch",
+          "weight": 0.5,
+          "path": "China XD Electric Co., Ltd metadata + exchange/supply-chain mapping -> 智慧電網 exposure candidate"
+        },
+        {
+          "concept_id": "transformer_ups",
+          "role": "laggard_watch",
+          "weight": 0.5,
+          "path": "China XD Electric Co., Ltd metadata + exchange/supply-chain mapping -> 變壓器與UPS exposure candidate"
+        }
+      ],
+      "source_refs": [
+        {
+          "title": "Yahoo Finance search metadata for 601179.SS",
+          "url": "https://finance.yahoo.com/quote/601179.SS"
+        }
+      ],
+      "primary_business": "China XD Electric Co., Ltd is upgraded from ticker/search metadata and ThemeMiner supply-chain mapping. ThemeMiner links it to 智慧電網, 變壓器與UPS. Official filing/profile extraction is still pending for this market.",
+      "profile_quality": "market_metadata_profile",
+      "profile_evidence_quality": "yahoo_search_plus_graph",
+      "official_metadata": {
+        "source": "pending_official_market_parser"
+      },
+      "updated_at": "2026-05-23",
+      "upgrade_batch": {
+        "markets": [
+          "CN",
+          "HK",
+          "JP",
+          "KR"
+        ],
+        "shard": "",
+        "output": "thememiner/data/profile_upgrades/official_rest.json"
+      }
+    },
+    {
+      "symbol": "601318.SS",
+      "name": "Ping An Insurance (Group) Company of China, Ltd.",
+      "market": "CN",
+      "region": "China A",
+      "exchange": "SHH",
+      "raw_industry": null,
+      "website": null,
+      "company_name": null,
+      "sector": "Financial Services / Insurance—Life",
+      "specializations": [
+        "銀行",
+        "金控",
+        "保險"
+      ],
+      "products": [],
+      "platforms": [
+        "銀行",
+        "金控",
+        "保險"
+      ],
+      "constraints": [
+        "auto profile: verify product purity, customer exposure, and revenue mix before trading",
+        "verify official filings/product pages for revenue mix"
+      ],
+      "risk_flags": [
+        "auto profile: concept fit may be broad until upgraded with official sources",
+        "auto-upgraded profile: product purity can still be broad"
+      ],
+      "bottleneck_profile": {},
+      "supply_chain_profile": {
+        "layers": [],
+        "products": [],
+        "upstream_concepts": [],
+        "downstream_concepts": [],
+        "matched_rules": []
+      },
+      "concept_exposures": [
+        {
+          "concept_id": "banks",
+          "role": "regional_leader",
+          "weight": 0.5,
+          "path": "Ping An Insurance (Group) Company of China, Ltd. metadata + exchange/supply-chain mapping -> 銀行 exposure candidate"
+        },
+        {
+          "concept_id": "financial_holding",
+          "role": "regional_leader",
+          "weight": 0.5,
+          "path": "Ping An Insurance (Group) Company of China, Ltd. metadata + exchange/supply-chain mapping -> 金控 exposure candidate"
+        },
+        {
+          "concept_id": "insurance",
+          "role": "regional_leader",
+          "weight": 0.5,
+          "path": "Ping An Insurance (Group) Company of China, Ltd. metadata + exchange/supply-chain mapping -> 保險 exposure candidate"
+        }
+      ],
+      "source_refs": [
+        {
+          "title": "Yahoo Finance search metadata for 601318.SS",
+          "url": "https://finance.yahoo.com/quote/601318.SS"
+        }
+      ],
+      "primary_business": "Ping An Insurance (Group) Company of China, Ltd. is upgraded from ticker/search metadata and ThemeMiner supply-chain mapping. ThemeMiner links it to 銀行, 金控, 保險. Official filing/profile extraction is still pending for this market.",
+      "profile_quality": "market_metadata_profile",
+      "profile_evidence_quality": "yahoo_search_plus_graph",
+      "official_metadata": {
+        "source": "pending_official_market_parser"
+      },
+      "updated_at": "2026-05-23",
+      "upgrade_batch": {
+        "markets": [
+          "CN",
+          "HK",
+          "JP",
+          "KR"
+        ],
+        "shard": "",
+        "output": "thememiner/data/profile_upgrades/official_rest.json"
+      }
+    },
+    {
+      "symbol": "601857.SS",
+      "name": "PetroChina Company Limited",
+      "market": "CN",
+      "region": "China A",
+      "exchange": "SHH",
+      "raw_industry": null,
+      "website": null,
+      "company_name": null,
+      "sector": "Energy / Oil & Gas Integrated",
+      "specializations": [
+        "化學工業",
+        "油氣/LNG"
+      ],
+      "products": [],
+      "platforms": [
+        "化學工業",
+        "油氣/LNG"
+      ],
+      "constraints": [
+        "auto profile: verify product purity, customer exposure, and revenue mix before trading",
+        "verify official filings/product pages for revenue mix"
+      ],
+      "risk_flags": [
+        "auto profile: concept fit may be broad until upgraded with official sources",
+        "auto-upgraded profile: product purity can still be broad"
+      ],
+      "bottleneck_profile": {},
+      "supply_chain_profile": {
+        "layers": [],
+        "products": [],
+        "upstream_concepts": [],
+        "downstream_concepts": [],
+        "matched_rules": []
+      },
+      "concept_exposures": [
+        {
+          "concept_id": "chemicals",
+          "role": "laggard_watch",
+          "weight": 0.5,
+          "path": "PetroChina Company Limited metadata + exchange/supply-chain mapping -> 化學工業 exposure candidate"
+        },
+        {
+          "concept_id": "oil_lng",
+          "role": "laggard_watch",
+          "weight": 0.5,
+          "path": "PetroChina Company Limited metadata + exchange/supply-chain mapping -> 油氣/LNG exposure candidate"
+        }
+      ],
+      "source_refs": [
+        {
+          "title": "Yahoo Finance search metadata for 601857.SS",
+          "url": "https://finance.yahoo.com/quote/601857.SS"
+        }
+      ],
+      "primary_business": "PetroChina Company Limited is upgraded from ticker/search metadata and ThemeMiner supply-chain mapping. ThemeMiner links it to 化學工業, 油氣/LNG. Official filing/profile extraction is still pending for this market.",
+      "profile_quality": "market_metadata_profile",
+      "profile_evidence_quality": "yahoo_search_plus_graph",
+      "official_metadata": {
+        "source": "pending_official_market_parser"
+      },
+      "updated_at": "2026-05-23",
+      "upgrade_batch": {
+        "markets": [
+          "CN",
+          "HK",
+          "JP",
+          "KR"
+        ],
+        "shard": "",
+        "output": "thememiner/data/profile_upgrades/official_rest.json"
+      }
+    },
+    {
+      "symbol": "601899.SS",
+      "name": "Zijin Mining Group Company Limited",
+      "market": "CN",
+      "region": "China A",
+      "exchange": "SHH",
+      "raw_industry": null,
+      "website": null,
+      "company_name": null,
+      "sector": "Basic Materials / Gold",
+      "specializations": [
+        "銅/銅箔",
+        "黃金"
+      ],
+      "products": [],
+      "platforms": [
+        "銅/銅箔",
+        "黃金"
+      ],
+      "constraints": [
+        "auto profile: verify product purity, customer exposure, and revenue mix before trading",
+        "verify official filings/product pages for revenue mix"
+      ],
+      "risk_flags": [
+        "auto profile: concept fit may be broad until upgraded with official sources",
+        "auto-upgraded profile: product purity can still be broad"
+      ],
+      "bottleneck_profile": {},
+      "supply_chain_profile": {
+        "layers": [],
+        "products": [],
+        "upstream_concepts": [],
+        "downstream_concepts": [],
+        "matched_rules": []
+      },
+      "concept_exposures": [
+        {
+          "concept_id": "copper",
+          "role": "regional_leader",
+          "weight": 0.5,
+          "path": "Zijin Mining Group Company Limited metadata + exchange/supply-chain mapping -> 銅/銅箔 exposure candidate"
+        },
+        {
+          "concept_id": "gold",
+          "role": "regional_leader",
+          "weight": 0.5,
+          "path": "Zijin Mining Group Company Limited metadata + exchange/supply-chain mapping -> 黃金 exposure candidate"
+        }
+      ],
+      "source_refs": [
+        {
+          "title": "Yahoo Finance search metadata for 601899.SS",
+          "url": "https://finance.yahoo.com/quote/601899.SS"
+        }
+      ],
+      "primary_business": "Zijin Mining Group Company Limited is upgraded from ticker/search metadata and ThemeMiner supply-chain mapping. ThemeMiner links it to 銅/銅箔, 黃金. Official filing/profile extraction is still pending for this market.",
+      "profile_quality": "market_metadata_profile",
+      "profile_evidence_quality": "yahoo_search_plus_graph",
+      "official_metadata": {
+        "source": "pending_official_market_parser"
+      },
+      "updated_at": "2026-05-23",
+      "upgrade_batch": {
+        "markets": [
+          "CN",
+          "HK",
+          "JP",
+          "KR"
+        ],
+        "shard": "",
+        "output": "thememiner/data/profile_upgrades/official_rest.json"
+      }
+    },
+    {
+      "symbol": "601919.SS",
+      "name": "COSCO SHIPPING Holdings Co., Ltd.",
+      "market": "CN",
+      "region": "China A",
+      "exchange": "SHH",
+      "raw_industry": null,
+      "website": null,
+      "company_name": null,
+      "sector": "Industrials / Marine Shipping",
+      "specializations": [
+        "物流",
+        "航運"
+      ],
+      "products": [],
+      "platforms": [
+        "物流",
+        "航運"
+      ],
+      "constraints": [
+        "auto profile: verify product purity, customer exposure, and revenue mix before trading",
+        "verify official filings/product pages for revenue mix"
+      ],
+      "risk_flags": [
+        "auto profile: concept fit may be broad until upgraded with official sources",
+        "auto-upgraded profile: product purity can still be broad"
+      ],
+      "bottleneck_profile": {},
+      "supply_chain_profile": {
+        "layers": [],
+        "products": [],
+        "upstream_concepts": [],
+        "downstream_concepts": [],
+        "matched_rules": []
+      },
+      "concept_exposures": [
+        {
+          "concept_id": "logistics",
+          "role": "regional_leader",
+          "weight": 0.5,
+          "path": "COSCO SHIPPING Holdings Co., Ltd. metadata + exchange/supply-chain mapping -> 物流 exposure candidate"
+        },
+        {
+          "concept_id": "shipping",
+          "role": "regional_leader",
+          "weight": 0.5,
+          "path": "COSCO SHIPPING Holdings Co., Ltd. metadata + exchange/supply-chain mapping -> 航運 exposure candidate"
+        }
+      ],
+      "source_refs": [
+        {
+          "title": "Yahoo Finance search metadata for 601919.SS",
+          "url": "https://finance.yahoo.com/quote/601919.SS"
+        }
+      ],
+      "primary_business": "COSCO SHIPPING Holdings Co., Ltd. is upgraded from ticker/search metadata and ThemeMiner supply-chain mapping. ThemeMiner links it to 物流, 航運. Official filing/profile extraction is still pending for this market.",
+      "profile_quality": "market_metadata_profile",
+      "profile_evidence_quality": "yahoo_search_plus_graph",
+      "official_metadata": {
+        "source": "pending_official_market_parser"
+      },
+      "updated_at": "2026-05-23",
+      "upgrade_batch": {
+        "markets": [
+          "CN",
+          "HK",
+          "JP",
+          "KR"
+        ],
+        "shard": "",
+        "output": "thememiner/data/profile_upgrades/official_rest.json"
+      }
+    },
+    {
+      "symbol": "603228.SS",
+      "name": "Shenzhen Kinwong Electronic Co., Ltd.",
+      "market": "CN",
+      "region": "China A",
+      "exchange": "SHH",
+      "raw_industry": null,
+      "website": null,
+      "company_name": null,
+      "sector": "Technology / Electronic Components",
+      "specializations": [
+        "ABF",
+        "PCB-製造",
+        "PCB-材料設備"
+      ],
+      "products": [],
+      "platforms": [
+        "ABF",
+        "PCB-製造",
+        "PCB-材料設備"
+      ],
+      "constraints": [
+        "auto profile: verify product purity, customer exposure, and revenue mix before trading",
+        "verify official filings/product pages for revenue mix"
+      ],
+      "risk_flags": [
+        "auto profile: concept fit may be broad until upgraded with official sources",
+        "auto-upgraded profile: product purity can still be broad"
+      ],
+      "bottleneck_profile": {},
+      "supply_chain_profile": {
+        "layers": [],
+        "products": [],
+        "upstream_concepts": [],
+        "downstream_concepts": [],
+        "matched_rules": []
+      },
+      "concept_exposures": [
+        {
+          "concept_id": "abf_substrate",
+          "role": "laggard_watch",
+          "weight": 0.5,
+          "path": "Shenzhen Kinwong Electronic Co., Ltd. metadata + exchange/supply-chain mapping -> ABF exposure candidate"
+        },
+        {
+          "concept_id": "pcb_manufacturing",
+          "role": "laggard_watch",
+          "weight": 0.5,
+          "path": "Shenzhen Kinwong Electronic Co., Ltd. metadata + exchange/supply-chain mapping -> PCB-製造 exposure candidate"
+        },
+        {
+          "concept_id": "pcb_material_equipment",
+          "role": "laggard_watch",
+          "weight": 0.5,
+          "path": "Shenzhen Kinwong Electronic Co., Ltd. metadata + exchange/supply-chain mapping -> PCB-材料設備 exposure candidate"
+        }
+      ],
+      "source_refs": [
+        {
+          "title": "Yahoo Finance search metadata for 603228.SS",
+          "url": "https://finance.yahoo.com/quote/603228.SS"
+        }
+      ],
+      "primary_business": "Shenzhen Kinwong Electronic Co., Ltd. is upgraded from ticker/search metadata and ThemeMiner supply-chain mapping. ThemeMiner links it to ABF, PCB-製造, PCB-材料設備. Official filing/profile extraction is still pending for this market.",
+      "profile_quality": "market_metadata_profile",
+      "profile_evidence_quality": "yahoo_search_plus_graph",
+      "official_metadata": {
+        "source": "pending_official_market_parser"
+      },
+      "updated_at": "2026-05-23",
+      "upgrade_batch": {
+        "markets": [
+          "CN",
+          "HK",
+          "JP",
+          "KR"
+        ],
+        "shard": "",
+        "output": "thememiner/data/profile_upgrades/official_rest.json"
+      }
+    },
+    {
+      "symbol": "603259.SS",
+      "name": "WuXi AppTec Co., Ltd.",
+      "market": "CN",
+      "region": "China A",
+      "exchange": "SHH",
+      "raw_industry": null,
+      "website": null,
+      "company_name": null,
+      "sector": "Healthcare / Diagnostics & Research",
+      "specializations": [
+        "CDMO/CRO",
+        "GLP-1/減重藥",
+        "新藥"
+      ],
+      "products": [],
+      "platforms": [
+        "CDMO/CRO",
+        "GLP-1/減重藥",
+        "新藥"
+      ],
+      "constraints": [
+        "auto profile: verify product purity, customer exposure, and revenue mix before trading",
+        "verify official filings/product pages for revenue mix"
+      ],
+      "risk_flags": [
+        "auto profile: concept fit may be broad until upgraded with official sources",
+        "auto-upgraded profile: product purity can still be broad"
+      ],
+      "bottleneck_profile": {},
+      "supply_chain_profile": {
+        "layers": [],
+        "products": [],
+        "upstream_concepts": [],
+        "downstream_concepts": [],
+        "matched_rules": []
+      },
+      "concept_exposures": [
+        {
+          "concept_id": "cdmo_cro",
+          "role": "core_follower",
+          "weight": 0.5,
+          "path": "WuXi AppTec Co., Ltd. metadata + exchange/supply-chain mapping -> CDMO/CRO exposure candidate"
+        },
+        {
+          "concept_id": "glp1_obesity",
+          "role": "core_follower",
+          "weight": 0.5,
+          "path": "WuXi AppTec Co., Ltd. metadata + exchange/supply-chain mapping -> GLP-1/減重藥 exposure candidate"
+        },
+        {
+          "concept_id": "new_drug",
+          "role": "core_follower",
+          "weight": 0.5,
+          "path": "WuXi AppTec Co., Ltd. metadata + exchange/supply-chain mapping -> 新藥 exposure candidate"
+        }
+      ],
+      "source_refs": [
+        {
+          "title": "Yahoo Finance search metadata for 603259.SS",
+          "url": "https://finance.yahoo.com/quote/603259.SS"
+        }
+      ],
+      "primary_business": "WuXi AppTec Co., Ltd. is upgraded from ticker/search metadata and ThemeMiner supply-chain mapping. ThemeMiner links it to CDMO/CRO, GLP-1/減重藥, 新藥. Official filing/profile extraction is still pending for this market.",
+      "profile_quality": "market_metadata_profile",
+      "profile_evidence_quality": "yahoo_search_plus_graph",
+      "official_metadata": {
+        "source": "pending_official_market_parser"
+      },
+      "updated_at": "2026-05-23",
+      "upgrade_batch": {
+        "markets": [
+          "CN",
+          "HK",
+          "JP",
+          "KR"
+        ],
+        "shard": "",
+        "output": "thememiner/data/profile_upgrades/official_rest.json"
+      }
+    },
+    {
+      "symbol": "603678.SS",
+      "name": "Fujian Torch Electron Technology Co., Ltd.",
+      "market": "CN",
+      "region": "China A",
+      "exchange": "SHH",
+      "raw_industry": null,
+      "website": null,
+      "company_name": null,
+      "sector": "Technology / Electronic Components",
+      "specializations": [
+        "軍工/國防",
+        "高壓MLCC",
+        "被動元件"
+      ],
+      "products": [],
+      "platforms": [
+        "軍工/國防",
+        "高壓MLCC",
+        "被動元件"
+      ],
+      "constraints": [
+        "auto profile: verify product purity, customer exposure, and revenue mix before trading",
+        "verify official filings/product pages for revenue mix"
+      ],
+      "risk_flags": [
+        "auto profile: concept fit may be broad until upgraded with official sources",
+        "auto-upgraded profile: product purity can still be broad"
+      ],
+      "bottleneck_profile": {},
+      "supply_chain_profile": {
+        "layers": [],
+        "products": [],
+        "upstream_concepts": [],
+        "downstream_concepts": [],
+        "matched_rules": []
+      },
+      "concept_exposures": [
+        {
+          "concept_id": "defense",
+          "role": "laggard_watch",
+          "weight": 0.5,
+          "path": "Fujian Torch Electron Technology Co., Ltd. metadata + exchange/supply-chain mapping -> 軍工/國防 exposure candidate"
+        },
+        {
+          "concept_id": "high_voltage_mlcc",
+          "role": "laggard_watch",
+          "weight": 0.5,
+          "path": "Fujian Torch Electron Technology Co., Ltd. metadata + exchange/supply-chain mapping -> 高壓MLCC exposure candidate"
+        },
+        {
+          "concept_id": "passive_components",
+          "role": "laggard_watch",
+          "weight": 0.5,
+          "path": "Fujian Torch Electron Technology Co., Ltd. metadata + exchange/supply-chain mapping -> 被動元件 exposure candidate"
+        }
+      ],
+      "source_refs": [
+        {
+          "title": "Yahoo Finance search metadata for 603678.SS",
+          "url": "https://finance.yahoo.com/quote/603678.SS"
+        }
+      ],
+      "primary_business": "Fujian Torch Electron Technology Co., Ltd. is upgraded from ticker/search metadata and ThemeMiner supply-chain mapping. ThemeMiner links it to 軍工/國防, 高壓MLCC, 被動元件. Official filing/profile extraction is still pending for this market.",
+      "profile_quality": "market_metadata_profile",
+      "profile_evidence_quality": "yahoo_search_plus_graph",
+      "official_metadata": {
+        "source": "pending_official_market_parser"
+      },
+      "updated_at": "2026-05-23",
+      "upgrade_batch": {
+        "markets": [
+          "CN",
+          "HK",
+          "JP",
+          "KR"
+        ],
+        "shard": "",
+        "output": "thememiner/data/profile_upgrades/official_rest.json"
+      }
+    },
+    {
+      "symbol": "603986.SS",
+      "name": "GigaDevice Semiconductor Inc.",
+      "market": "CN",
+      "region": "China A",
+      "exchange": "SHH",
+      "raw_industry": null,
+      "website": null,
+      "company_name": null,
+      "sector": "Technology / Semiconductors",
+      "specializations": [
+        "IC-DRAM製造",
+        "記憶體IC設計"
+      ],
+      "products": [],
+      "platforms": [
+        "IC-DRAM製造",
+        "記憶體IC設計"
+      ],
+      "constraints": [
+        "auto profile: verify product purity, customer exposure, and revenue mix before trading",
+        "verify official filings/product pages for revenue mix"
+      ],
+      "risk_flags": [
+        "auto profile: concept fit may be broad until upgraded with official sources",
+        "auto-upgraded profile: product purity can still be broad"
+      ],
+      "bottleneck_profile": {},
+      "supply_chain_profile": {
+        "layers": [],
+        "products": [],
+        "upstream_concepts": [],
+        "downstream_concepts": [],
+        "matched_rules": []
+      },
+      "concept_exposures": [
+        {
+          "concept_id": "dram_manufacturing",
+          "role": "laggard_watch",
+          "weight": 0.5,
+          "path": "GigaDevice Semiconductor Inc. metadata + exchange/supply-chain mapping -> IC-DRAM製造 exposure candidate"
+        },
+        {
+          "concept_id": "memory_ic_design",
+          "role": "laggard_watch",
+          "weight": 0.5,
+          "path": "GigaDevice Semiconductor Inc. metadata + exchange/supply-chain mapping -> 記憶體IC設計 exposure candidate"
+        }
+      ],
+      "source_refs": [
+        {
+          "title": "Yahoo Finance search metadata for 603986.SS",
+          "url": "https://finance.yahoo.com/quote/603986.SS"
+        }
+      ],
+      "primary_business": "GigaDevice Semiconductor Inc. is upgraded from ticker/search metadata and ThemeMiner supply-chain mapping. ThemeMiner links it to IC-DRAM製造, 記憶體IC設計. Official filing/profile extraction is still pending for this market.",
+      "profile_quality": "market_metadata_profile",
+      "profile_evidence_quality": "yahoo_search_plus_graph",
+      "official_metadata": {
+        "source": "pending_official_market_parser"
+      },
+      "updated_at": "2026-05-23",
+      "upgrade_batch": {
+        "markets": [
+          "CN",
+          "HK",
+          "JP",
+          "KR"
+        ],
+        "shard": "",
+        "output": "thememiner/data/profile_upgrades/official_rest.json"
+      }
+    },
+    {
+      "symbol": "603989.SS",
+      "name": "Hunan Aihua Group Co., Ltd",
+      "market": "CN",
+      "region": "China A",
+      "exchange": "SHH",
+      "raw_industry": null,
+      "website": null,
+      "company_name": null,
+      "sector": "Technology / Electronic Components",
+      "specializations": [
+        "固態鋁電容/SP-Cap",
+        "被動元件",
+        "牛角/大型鋁電容"
+      ],
+      "products": [],
+      "platforms": [
+        "固態鋁電容/SP-Cap",
+        "被動元件",
+        "牛角/大型鋁電容"
+      ],
+      "constraints": [
+        "auto profile: verify product purity, customer exposure, and revenue mix before trading",
+        "verify official filings/product pages for revenue mix"
+      ],
+      "risk_flags": [
+        "auto profile: concept fit may be broad until upgraded with official sources",
+        "auto-upgraded profile: product purity can still be broad"
+      ],
+      "bottleneck_profile": {},
+      "supply_chain_profile": {
+        "layers": [],
+        "products": [],
+        "upstream_concepts": [],
+        "downstream_concepts": [],
+        "matched_rules": []
+      },
+      "concept_exposures": [
+        {
+          "concept_id": "aluminum_polymer_cap",
+          "role": "laggard_watch",
+          "weight": 0.5,
+          "path": "Hunan Aihua Group Co., Ltd metadata + exchange/supply-chain mapping -> 固態鋁電容/SP-Cap exposure candidate"
+        },
+        {
+          "concept_id": "passive_components",
+          "role": "laggard_watch",
+          "weight": 0.5,
+          "path": "Hunan Aihua Group Co., Ltd metadata + exchange/supply-chain mapping -> 被動元件 exposure candidate"
+        },
+        {
+          "concept_id": "snap_in_capacitor",
+          "role": "laggard_watch",
+          "weight": 0.5,
+          "path": "Hunan Aihua Group Co., Ltd metadata + exchange/supply-chain mapping -> 牛角/大型鋁電容 exposure candidate"
+        }
+      ],
+      "source_refs": [
+        {
+          "title": "Yahoo Finance search metadata for 603989.SS",
+          "url": "https://finance.yahoo.com/quote/603989.SS"
+        }
+      ],
+      "primary_business": "Hunan Aihua Group Co., Ltd is upgraded from ticker/search metadata and ThemeMiner supply-chain mapping. ThemeMiner links it to 固態鋁電容/SP-Cap, 被動元件, 牛角/大型鋁電容. Official filing/profile extraction is still pending for this market.",
+      "profile_quality": "market_metadata_profile",
+      "profile_evidence_quality": "yahoo_search_plus_graph",
+      "official_metadata": {
+        "source": "pending_official_market_parser"
+      },
+      "updated_at": "2026-05-23",
+      "upgrade_batch": {
+        "markets": [
+          "CN",
+          "HK",
+          "JP",
+          "KR"
+        ],
+        "shard": "",
+        "output": "thememiner/data/profile_upgrades/official_rest.json"
+      }
+    },
+    {
+      "symbol": "603993.SS",
+      "name": "CMOC Group Limited",
+      "market": "CN",
+      "region": "China A",
+      "exchange": "SHH",
+      "raw_industry": null,
+      "website": null,
+      "company_name": null,
+      "sector": "Basic Materials / Other Industrial Metals & Mining",
+      "specializations": [
+        "銅/銅箔",
+        "金屬製品",
+        "電線電纜"
+      ],
+      "products": [],
+      "platforms": [
+        "銅/銅箔",
+        "金屬製品",
+        "電線電纜"
+      ],
+      "constraints": [
+        "auto profile: verify product purity, customer exposure, and revenue mix before trading",
+        "verify official filings/product pages for revenue mix"
+      ],
+      "risk_flags": [
+        "auto profile: concept fit may be broad until upgraded with official sources",
+        "auto-upgraded profile: product purity can still be broad"
+      ],
+      "bottleneck_profile": {},
+      "supply_chain_profile": {
+        "layers": [],
+        "products": [],
+        "upstream_concepts": [],
+        "downstream_concepts": [],
+        "matched_rules": []
+      },
+      "concept_exposures": [
+        {
+          "concept_id": "copper",
+          "role": "regional_leader",
+          "weight": 0.5,
+          "path": "CMOC Group Limited metadata + exchange/supply-chain mapping -> 銅/銅箔 exposure candidate"
+        },
+        {
+          "concept_id": "metal_parts",
+          "role": "regional_leader",
+          "weight": 0.5,
+          "path": "CMOC Group Limited metadata + exchange/supply-chain mapping -> 金屬製品 exposure candidate"
+        },
+        {
+          "concept_id": "wire_cable",
+          "role": "regional_leader",
+          "weight": 0.5,
+          "path": "CMOC Group Limited metadata + exchange/supply-chain mapping -> 電線電纜 exposure candidate"
+        }
+      ],
+      "source_refs": [
+        {
+          "title": "Yahoo Finance search metadata for 603993.SS",
+          "url": "https://finance.yahoo.com/quote/603993.SS"
+        }
+      ],
+      "primary_business": "CMOC Group Limited is upgraded from ticker/search metadata and ThemeMiner supply-chain mapping. ThemeMiner links it to 銅/銅箔, 金屬製品, 電線電纜. Official filing/profile extraction is still pending for this market.",
+      "profile_quality": "market_metadata_profile",
+      "profile_evidence_quality": "yahoo_search_plus_graph",
+      "official_metadata": {
+        "source": "pending_official_market_parser"
+      },
+      "updated_at": "2026-05-23",
+      "upgrade_batch": {
+        "markets": [
+          "CN",
+          "HK",
+          "JP",
+          "KR"
+        ],
+        "shard": "",
+        "output": "thememiner/data/profile_upgrades/official_rest.json"
+      }
+    },
+    {
+      "symbol": "6501.T",
+      "name": "Hitachi, Ltd.",
+      "market": "JP",
+      "region": "Japan",
+      "exchange": "JPX",
+      "raw_industry": null,
+      "website": null,
+      "company_name": null,
+      "sector": "Industrials / Conglomerates",
+      "specializations": [
+        "電機",
+        "工業電腦",
+        "智慧電網"
+      ],
+      "products": [],
+      "platforms": [
+        "電機",
+        "工業電腦",
+        "智慧電網"
+      ],
+      "constraints": [
+        "auto profile: verify product purity, customer exposure, and revenue mix before trading",
+        "verify official filings/product pages for revenue mix"
+      ],
+      "risk_flags": [
+        "auto profile: concept fit may be broad until upgraded with official sources",
+        "auto-upgraded profile: product purity can still be broad"
+      ],
+      "bottleneck_profile": {},
+      "supply_chain_profile": {
+        "layers": [],
+        "products": [],
+        "upstream_concepts": [],
+        "downstream_concepts": [],
+        "matched_rules": []
+      },
+      "concept_exposures": [
+        {
+          "concept_id": "electric_machinery",
+          "role": "regional_leader",
+          "weight": 0.5,
+          "path": "Hitachi, Ltd. metadata + exchange/supply-chain mapping -> 電機 exposure candidate"
+        },
+        {
+          "concept_id": "industrial_pc",
+          "role": "regional_leader",
+          "weight": 0.5,
+          "path": "Hitachi, Ltd. metadata + exchange/supply-chain mapping -> 工業電腦 exposure candidate"
+        },
+        {
+          "concept_id": "smart_grid",
+          "role": "regional_leader",
+          "weight": 0.5,
+          "path": "Hitachi, Ltd. metadata + exchange/supply-chain mapping -> 智慧電網 exposure candidate"
+        }
+      ],
+      "source_refs": [
+        {
+          "title": "Yahoo Finance search metadata for 6501.T",
+          "url": "https://finance.yahoo.com/quote/6501.T"
+        }
+      ],
+      "primary_business": "Hitachi, Ltd. is upgraded from ticker/search metadata and ThemeMiner supply-chain mapping. ThemeMiner links it to 電機, 工業電腦, 智慧電網. Official filing/profile extraction is still pending for this market.",
+      "profile_quality": "market_metadata_profile",
+      "profile_evidence_quality": "yahoo_search_plus_graph",
+      "official_metadata": {
+        "source": "pending_official_market_parser"
+      },
+      "updated_at": "2026-05-23",
+      "upgrade_batch": {
+        "markets": [
+          "CN",
+          "HK",
+          "JP",
+          "KR"
+        ],
+        "shard": "",
+        "output": "thememiner/data/profile_upgrades/official_rest.json"
+      }
+    },
+    {
+      "symbol": "6503.T",
+      "name": "Mitsubishi Electric Corporation",
+      "market": "JP",
+      "region": "Japan",
+      "exchange": "JPX",
+      "raw_industry": null,
+      "website": null,
+      "company_name": null,
+      "sector": "Industrials / Electrical Equipment & Parts",
+      "specializations": [
+        "電機",
+        "智慧電網",
+        "變壓器與UPS"
+      ],
+      "products": [],
+      "platforms": [
+        "電機",
+        "智慧電網",
+        "變壓器與UPS"
+      ],
+      "constraints": [
+        "auto profile: verify product purity, customer exposure, and revenue mix before trading",
+        "verify official filings/product pages for revenue mix"
+      ],
+      "risk_flags": [
+        "auto profile: concept fit may be broad until upgraded with official sources",
+        "auto-upgraded profile: product purity can still be broad"
+      ],
+      "bottleneck_profile": {},
+      "supply_chain_profile": {
+        "layers": [],
+        "products": [],
+        "upstream_concepts": [],
+        "downstream_concepts": [],
+        "matched_rules": []
+      },
+      "concept_exposures": [
+        {
+          "concept_id": "electric_machinery",
+          "role": "regional_leader",
+          "weight": 0.5,
+          "path": "Mitsubishi Electric Corporation metadata + exchange/supply-chain mapping -> 電機 exposure candidate"
+        },
+        {
+          "concept_id": "smart_grid",
+          "role": "regional_leader",
+          "weight": 0.5,
+          "path": "Mitsubishi Electric Corporation metadata + exchange/supply-chain mapping -> 智慧電網 exposure candidate"
+        },
+        {
+          "concept_id": "transformer_ups",
+          "role": "regional_leader",
+          "weight": 0.5,
+          "path": "Mitsubishi Electric Corporation metadata + exchange/supply-chain mapping -> 變壓器與UPS exposure candidate"
+        }
+      ],
+      "source_refs": [
+        {
+          "title": "Yahoo Finance search metadata for 6503.T",
+          "url": "https://finance.yahoo.com/quote/6503.T"
+        }
+      ],
+      "primary_business": "Mitsubishi Electric Corporation is upgraded from ticker/search metadata and ThemeMiner supply-chain mapping. ThemeMiner links it to 電機, 智慧電網, 變壓器與UPS. Official filing/profile extraction is still pending for this market.",
+      "profile_quality": "market_metadata_profile",
+      "profile_evidence_quality": "yahoo_search_plus_graph",
+      "official_metadata": {
+        "source": "pending_official_market_parser"
+      },
+      "updated_at": "2026-05-23",
+      "upgrade_batch": {
+        "markets": [
+          "CN",
+          "HK",
+          "JP",
+          "KR"
+        ],
+        "shard": "",
+        "output": "thememiner/data/profile_upgrades/official_rest.json"
+      }
+    },
+    {
+      "symbol": "6504.T",
+      "name": "Fuji Electric Co., Ltd.",
+      "market": "JP",
+      "region": "Japan",
+      "exchange": "JPX",
+      "raw_industry": null,
+      "website": null,
+      "company_name": null,
+      "sector": "Industrials / Electrical Equipment & Parts",
+      "specializations": [
+        "智慧電網",
+        "變壓器與UPS"
+      ],
+      "products": [],
+      "platforms": [
+        "智慧電網",
+        "變壓器與UPS"
+      ],
+      "constraints": [
+        "auto profile: verify product purity, customer exposure, and revenue mix before trading",
+        "verify official filings/product pages for revenue mix"
+      ],
+      "risk_flags": [
+        "auto profile: concept fit may be broad until upgraded with official sources",
+        "auto-upgraded profile: product purity can still be broad"
+      ],
+      "bottleneck_profile": {},
+      "supply_chain_profile": {
+        "layers": [],
+        "products": [],
+        "upstream_concepts": [],
+        "downstream_concepts": [],
+        "matched_rules": []
+      },
+      "concept_exposures": [
+        {
+          "concept_id": "smart_grid",
+          "role": "regional_leader",
+          "weight": 0.5,
+          "path": "Fuji Electric Co., Ltd. metadata + exchange/supply-chain mapping -> 智慧電網 exposure candidate"
+        },
+        {
+          "concept_id": "transformer_ups",
+          "role": "regional_leader",
+          "weight": 0.5,
+          "path": "Fuji Electric Co., Ltd. metadata + exchange/supply-chain mapping -> 變壓器與UPS exposure candidate"
+        }
+      ],
+      "source_refs": [
+        {
+          "title": "Yahoo Finance search metadata for 6504.T",
+          "url": "https://finance.yahoo.com/quote/6504.T"
+        }
+      ],
+      "primary_business": "Fuji Electric Co., Ltd. is upgraded from ticker/search metadata and ThemeMiner supply-chain mapping. ThemeMiner links it to 智慧電網, 變壓器與UPS. Official filing/profile extraction is still pending for this market.",
+      "profile_quality": "market_metadata_profile",
+      "profile_evidence_quality": "yahoo_search_plus_graph",
+      "official_metadata": {
+        "source": "pending_official_market_parser"
+      },
+      "updated_at": "2026-05-23",
+      "upgrade_batch": {
+        "markets": [
+          "CN",
+          "HK",
+          "JP",
+          "KR"
+        ],
+        "shard": "",
+        "output": "thememiner/data/profile_upgrades/official_rest.json"
+      }
+    },
+    {
+      "symbol": "688008.SS",
+      "name": "Montage Technology Co., Ltd.",
+      "market": "CN",
+      "region": "China A",
+      "exchange": "SHH",
+      "raw_industry": null,
+      "website": null,
+      "company_name": null,
+      "sector": "Technology / Semiconductors",
+      "specializations": [
+        "HBM",
+        "記憶體IC設計"
+      ],
+      "products": [],
+      "platforms": [
+        "HBM",
+        "記憶體IC設計"
+      ],
+      "constraints": [
+        "auto profile: verify product purity, customer exposure, and revenue mix before trading",
+        "verify official filings/product pages for revenue mix"
+      ],
+      "risk_flags": [
+        "auto profile: concept fit may be broad until upgraded with official sources",
+        "auto-upgraded profile: product purity can still be broad"
+      ],
+      "bottleneck_profile": {},
+      "supply_chain_profile": {
+        "layers": [],
+        "products": [],
+        "upstream_concepts": [],
+        "downstream_concepts": [],
+        "matched_rules": []
+      },
+      "concept_exposures": [
+        {
+          "concept_id": "hbm",
+          "role": "core_follower",
+          "weight": 0.5,
+          "path": "Montage Technology Co., Ltd. metadata + exchange/supply-chain mapping -> HBM exposure candidate"
+        },
+        {
+          "concept_id": "memory_ic_design",
+          "role": "core_follower",
+          "weight": 0.5,
+          "path": "Montage Technology Co., Ltd. metadata + exchange/supply-chain mapping -> 記憶體IC設計 exposure candidate"
+        }
+      ],
+      "source_refs": [
+        {
+          "title": "Yahoo Finance search metadata for 688008.SS",
+          "url": "https://finance.yahoo.com/quote/688008.SS"
+        }
+      ],
+      "primary_business": "Montage Technology Co., Ltd. is upgraded from ticker/search metadata and ThemeMiner supply-chain mapping. ThemeMiner links it to HBM, 記憶體IC設計. Official filing/profile extraction is still pending for this market.",
+      "profile_quality": "market_metadata_profile",
+      "profile_evidence_quality": "yahoo_search_plus_graph",
+      "official_metadata": {
+        "source": "pending_official_market_parser"
+      },
+      "updated_at": "2026-05-23",
+      "upgrade_batch": {
+        "markets": [
+          "CN",
+          "HK",
+          "JP",
+          "KR"
+        ],
+        "shard": "",
+        "output": "thememiner/data/profile_upgrades/official_rest.json"
+      }
+    },
+    {
+      "symbol": "688525.SS",
+      "name": "BIWIN Storage Technology Co., Ltd.",
+      "market": "CN",
+      "region": "China A",
+      "exchange": "SHH",
+      "raw_industry": null,
+      "website": null,
+      "company_name": null,
+      "sector": "Technology / Semiconductors",
+      "specializations": [
+        "IC-DRAM製造",
+        "HBM",
+        "Legacy記憶體",
+        "記憶體IC設計"
+      ],
+      "products": [],
+      "platforms": [
+        "IC-DRAM製造",
+        "HBM",
+        "Legacy記憶體",
+        "記憶體IC設計"
+      ],
+      "constraints": [
+        "auto profile: verify product purity, customer exposure, and revenue mix before trading",
+        "verify official filings/product pages for revenue mix"
+      ],
+      "risk_flags": [
+        "auto profile: concept fit may be broad until upgraded with official sources",
+        "auto-upgraded profile: product purity can still be broad"
+      ],
+      "bottleneck_profile": {},
+      "supply_chain_profile": {
+        "layers": [],
+        "products": [],
+        "upstream_concepts": [],
+        "downstream_concepts": [],
+        "matched_rules": []
+      },
+      "concept_exposures": [
+        {
+          "concept_id": "dram_manufacturing",
+          "role": "high_beta_leader",
+          "weight": 0.5,
+          "path": "BIWIN Storage Technology Co., Ltd. metadata + exchange/supply-chain mapping -> IC-DRAM製造 exposure candidate"
+        },
+        {
+          "concept_id": "hbm",
+          "role": "high_beta_leader",
+          "weight": 0.5,
+          "path": "BIWIN Storage Technology Co., Ltd. metadata + exchange/supply-chain mapping -> HBM exposure candidate"
+        },
+        {
+          "concept_id": "legacy_memory",
+          "role": "high_beta_leader",
+          "weight": 0.5,
+          "path": "BIWIN Storage Technology Co., Ltd. metadata + exchange/supply-chain mapping -> Legacy記憶體 exposure candidate"
+        },
+        {
+          "concept_id": "memory_ic_design",
+          "role": "high_beta_leader",
+          "weight": 0.5,
+          "path": "BIWIN Storage Technology Co., Ltd. metadata + exchange/supply-chain mapping -> 記憶體IC設計 exposure candidate"
+        }
+      ],
+      "source_refs": [
+        {
+          "title": "Yahoo Finance search metadata for 688525.SS",
+          "url": "https://finance.yahoo.com/quote/688525.SS"
+        }
+      ],
+      "primary_business": "BIWIN Storage Technology Co., Ltd. is upgraded from ticker/search metadata and ThemeMiner supply-chain mapping. ThemeMiner links it to IC-DRAM製造, HBM, Legacy記憶體, 記憶體IC設計. Official filing/profile extraction is still pending for this market.",
+      "profile_quality": "market_metadata_profile",
+      "profile_evidence_quality": "yahoo_search_plus_graph",
+      "official_metadata": {
+        "source": "pending_official_market_parser"
+      },
+      "updated_at": "2026-05-23",
+      "upgrade_batch": {
+        "markets": [
+          "CN",
+          "HK",
+          "JP",
+          "KR"
+        ],
+        "shard": "",
+        "output": "thememiner/data/profile_upgrades/official_rest.json"
+      }
+    },
+    {
+      "symbol": "6971.T",
+      "name": "Kyocera Corporation",
+      "market": "JP",
+      "region": "Japan",
+      "exchange": "JPX",
+      "raw_industry": null,
+      "website": null,
+      "company_name": null,
+      "sector": "Industrials / Conglomerates",
+      "specializations": [
+        "玻璃陶瓷",
+        "被動元件",
+        "半導體元件"
+      ],
+      "products": [],
+      "platforms": [
+        "玻璃陶瓷",
+        "被動元件",
+        "半導體元件"
+      ],
+      "constraints": [
+        "auto profile: verify product purity, customer exposure, and revenue mix before trading",
+        "verify official filings/product pages for revenue mix"
+      ],
+      "risk_flags": [
+        "auto profile: concept fit may be broad until upgraded with official sources",
+        "auto-upgraded profile: product purity can still be broad"
+      ],
+      "bottleneck_profile": {},
+      "supply_chain_profile": {
+        "layers": [],
+        "products": [],
+        "upstream_concepts": [],
+        "downstream_concepts": [],
+        "matched_rules": []
+      },
+      "concept_exposures": [
+        {
+          "concept_id": "glass_ceramics",
+          "role": "regional_follower",
+          "weight": 0.5,
+          "path": "Kyocera Corporation metadata + exchange/supply-chain mapping -> 玻璃陶瓷 exposure candidate"
+        },
+        {
+          "concept_id": "passive_components",
+          "role": "regional_follower",
+          "weight": 0.5,
+          "path": "Kyocera Corporation metadata + exchange/supply-chain mapping -> 被動元件 exposure candidate"
+        },
+        {
+          "concept_id": "semiconductor_components",
+          "role": "regional_follower",
+          "weight": 0.5,
+          "path": "Kyocera Corporation metadata + exchange/supply-chain mapping -> 半導體元件 exposure candidate"
+        }
+      ],
+      "source_refs": [
+        {
+          "title": "Yahoo Finance search metadata for 6971.T",
+          "url": "https://finance.yahoo.com/quote/6971.T"
+        }
+      ],
+      "primary_business": "Kyocera Corporation is upgraded from ticker/search metadata and ThemeMiner supply-chain mapping. ThemeMiner links it to 玻璃陶瓷, 被動元件, 半導體元件. Official filing/profile extraction is still pending for this market.",
+      "profile_quality": "market_metadata_profile",
+      "profile_evidence_quality": "yahoo_search_plus_graph",
+      "official_metadata": {
+        "source": "pending_official_market_parser"
+      },
+      "updated_at": "2026-05-23",
+      "upgrade_batch": {
+        "markets": [
+          "CN",
+          "HK",
+          "JP",
+          "KR"
+        ],
+        "shard": "",
+        "output": "thememiner/data/profile_upgrades/official_rest.json"
+      }
+    },
+    {
+      "symbol": "6996.T",
+      "name": "Nichicon Corporation",
+      "market": "JP",
+      "region": "Japan",
+      "exchange": "JPX",
+      "raw_industry": null,
+      "website": null,
+      "company_name": null,
+      "sector": "Technology / Electronic Components",
+      "specializations": [
+        "固態鋁電容/SP-Cap",
+        "薄膜電容",
+        "被動元件",
+        "牛角/大型鋁電容"
+      ],
+      "products": [],
+      "platforms": [
+        "固態鋁電容/SP-Cap",
+        "薄膜電容",
+        "被動元件",
+        "牛角/大型鋁電容"
+      ],
+      "constraints": [
+        "auto profile: verify product purity, customer exposure, and revenue mix before trading",
+        "verify official filings/product pages for revenue mix"
+      ],
+      "risk_flags": [
+        "auto profile: concept fit may be broad until upgraded with official sources",
+        "auto-upgraded profile: product purity can still be broad"
+      ],
+      "bottleneck_profile": {},
+      "supply_chain_profile": {
+        "layers": [],
+        "products": [],
+        "upstream_concepts": [],
+        "downstream_concepts": [],
+        "matched_rules": []
+      },
+      "concept_exposures": [
+        {
+          "concept_id": "aluminum_polymer_cap",
+          "role": "regional_follower",
+          "weight": 0.5,
+          "path": "Nichicon Corporation metadata + exchange/supply-chain mapping -> 固態鋁電容/SP-Cap exposure candidate"
+        },
+        {
+          "concept_id": "film_capacitor",
+          "role": "regional_follower",
+          "weight": 0.5,
+          "path": "Nichicon Corporation metadata + exchange/supply-chain mapping -> 薄膜電容 exposure candidate"
+        },
+        {
+          "concept_id": "passive_components",
+          "role": "regional_follower",
+          "weight": 0.5,
+          "path": "Nichicon Corporation metadata + exchange/supply-chain mapping -> 被動元件 exposure candidate"
+        },
+        {
+          "concept_id": "snap_in_capacitor",
+          "role": "regional_follower",
+          "weight": 0.5,
+          "path": "Nichicon Corporation metadata + exchange/supply-chain mapping -> 牛角/大型鋁電容 exposure candidate"
+        }
+      ],
+      "source_refs": [
+        {
+          "title": "Yahoo Finance search metadata for 6996.T",
+          "url": "https://finance.yahoo.com/quote/6996.T"
+        }
+      ],
+      "primary_business": "Nichicon Corporation is upgraded from ticker/search metadata and ThemeMiner supply-chain mapping. ThemeMiner links it to 固態鋁電容/SP-Cap, 薄膜電容, 被動元件, 牛角/大型鋁電容. Official filing/profile extraction is still pending for this market.",
+      "profile_quality": "market_metadata_profile",
+      "profile_evidence_quality": "yahoo_search_plus_graph",
+      "official_metadata": {
+        "source": "pending_official_market_parser"
+      },
+      "updated_at": "2026-05-23",
+      "upgrade_batch": {
+        "markets": [
+          "CN",
+          "HK",
+          "JP",
+          "KR"
+        ],
+        "shard": "",
+        "output": "thememiner/data/profile_upgrades/official_rest.json"
+      }
+    },
+    {
+      "symbol": "7011.T",
+      "name": "Mitsubishi Heavy Industries, Ltd.",
+      "market": "JP",
+      "region": "Japan",
+      "exchange": "JPX",
+      "raw_industry": null,
+      "website": null,
+      "company_name": null,
+      "sector": "Industrials / Specialty Industrial Machinery",
+      "specializations": [
+        "軍工/國防"
+      ],
+      "products": [],
+      "platforms": [
+        "軍工/國防"
+      ],
+      "constraints": [
+        "auto profile: verify product purity, customer exposure, and revenue mix before trading",
+        "verify official filings/product pages for revenue mix"
+      ],
+      "risk_flags": [
+        "auto profile: concept fit may be broad until upgraded with official sources",
+        "auto-upgraded profile: product purity can still be broad"
+      ],
+      "bottleneck_profile": {},
+      "supply_chain_profile": {
+        "layers": [],
+        "products": [],
+        "upstream_concepts": [],
+        "downstream_concepts": [],
+        "matched_rules": []
+      },
+      "concept_exposures": [
+        {
+          "concept_id": "defense",
+          "role": "regional_leader",
+          "weight": 0.5,
+          "path": "Mitsubishi Heavy Industries, Ltd. metadata + exchange/supply-chain mapping -> 軍工/國防 exposure candidate"
+        }
+      ],
+      "source_refs": [
+        {
+          "title": "Yahoo Finance search metadata for 7011.T",
+          "url": "https://finance.yahoo.com/quote/7011.T"
+        }
+      ],
+      "primary_business": "Mitsubishi Heavy Industries, Ltd. is upgraded from ticker/search metadata and ThemeMiner supply-chain mapping. ThemeMiner links it to 軍工/國防. Official filing/profile extraction is still pending for this market.",
+      "profile_quality": "market_metadata_profile",
+      "profile_evidence_quality": "yahoo_search_plus_graph",
+      "official_metadata": {
+        "source": "pending_official_market_parser"
+      },
+      "updated_at": "2026-05-23",
+      "upgrade_batch": {
+        "markets": [
+          "CN",
+          "HK",
+          "JP",
+          "KR"
+        ],
+        "shard": "",
+        "output": "thememiner/data/profile_upgrades/official_rest.json"
+      }
+    },
+    {
+      "symbol": "7012.T",
+      "name": "Kawasaki Heavy Industries, Ltd.",
+      "market": "JP",
+      "region": "Japan",
+      "exchange": "JPX",
+      "raw_industry": null,
+      "website": null,
+      "company_name": null,
+      "sector": "Industrials / Specialty Industrial Machinery",
+      "specializations": [
+        "軍工/國防",
+        "無人機"
+      ],
+      "products": [],
+      "platforms": [
+        "軍工/國防",
+        "無人機"
+      ],
+      "constraints": [
+        "auto profile: verify product purity, customer exposure, and revenue mix before trading",
+        "verify official filings/product pages for revenue mix"
+      ],
+      "risk_flags": [
+        "auto profile: concept fit may be broad until upgraded with official sources",
+        "auto-upgraded profile: product purity can still be broad"
+      ],
+      "bottleneck_profile": {},
+      "supply_chain_profile": {
+        "layers": [],
+        "products": [],
+        "upstream_concepts": [],
+        "downstream_concepts": [],
+        "matched_rules": []
+      },
+      "concept_exposures": [
+        {
+          "concept_id": "defense",
+          "role": "regional_leader",
+          "weight": 0.5,
+          "path": "Kawasaki Heavy Industries, Ltd. metadata + exchange/supply-chain mapping -> 軍工/國防 exposure candidate"
+        },
+        {
+          "concept_id": "drone",
+          "role": "regional_leader",
+          "weight": 0.5,
+          "path": "Kawasaki Heavy Industries, Ltd. metadata + exchange/supply-chain mapping -> 無人機 exposure candidate"
+        }
+      ],
+      "source_refs": [
+        {
+          "title": "Yahoo Finance search metadata for 7012.T",
+          "url": "https://finance.yahoo.com/quote/7012.T"
+        }
+      ],
+      "primary_business": "Kawasaki Heavy Industries, Ltd. is upgraded from ticker/search metadata and ThemeMiner supply-chain mapping. ThemeMiner links it to 軍工/國防, 無人機. Official filing/profile extraction is still pending for this market.",
+      "profile_quality": "market_metadata_profile",
+      "profile_evidence_quality": "yahoo_search_plus_graph",
+      "official_metadata": {
+        "source": "pending_official_market_parser"
+      },
+      "updated_at": "2026-05-23",
+      "upgrade_batch": {
+        "markets": [
+          "CN",
+          "HK",
+          "JP",
+          "KR"
+        ],
+        "shard": "",
+        "output": "thememiner/data/profile_upgrades/official_rest.json"
+      }
+    },
+    {
+      "symbol": "7013.T",
+      "name": "IHI Corporation",
+      "market": "JP",
+      "region": "Japan",
+      "exchange": "JPX",
+      "raw_industry": null,
+      "website": null,
+      "company_name": null,
+      "sector": "Industrials / Specialty Industrial Machinery",
+      "specializations": [
+        "軍工/國防",
+        "無人機"
+      ],
+      "products": [],
+      "platforms": [
+        "軍工/國防",
+        "無人機"
+      ],
+      "constraints": [
+        "auto profile: verify product purity, customer exposure, and revenue mix before trading",
+        "verify official filings/product pages for revenue mix"
+      ],
+      "risk_flags": [
+        "auto profile: concept fit may be broad until upgraded with official sources",
+        "auto-upgraded profile: product purity can still be broad"
+      ],
+      "bottleneck_profile": {},
+      "supply_chain_profile": {
+        "layers": [],
+        "products": [],
+        "upstream_concepts": [],
+        "downstream_concepts": [],
+        "matched_rules": []
+      },
+      "concept_exposures": [
+        {
+          "concept_id": "defense",
+          "role": "core_follower",
+          "weight": 0.5,
+          "path": "IHI Corporation metadata + exchange/supply-chain mapping -> 軍工/國防 exposure candidate"
+        },
+        {
+          "concept_id": "drone",
+          "role": "core_follower",
+          "weight": 0.5,
+          "path": "IHI Corporation metadata + exchange/supply-chain mapping -> 無人機 exposure candidate"
+        }
+      ],
+      "source_refs": [
+        {
+          "title": "Yahoo Finance search metadata for 7013.T",
+          "url": "https://finance.yahoo.com/quote/7013.T"
+        }
+      ],
+      "primary_business": "IHI Corporation is upgraded from ticker/search metadata and ThemeMiner supply-chain mapping. ThemeMiner links it to 軍工/國防, 無人機. Official filing/profile extraction is still pending for this market.",
+      "profile_quality": "market_metadata_profile",
+      "profile_evidence_quality": "yahoo_search_plus_graph",
+      "official_metadata": {
+        "source": "pending_official_market_parser"
+      },
+      "updated_at": "2026-05-23",
+      "upgrade_batch": {
+        "markets": [
+          "CN",
+          "HK",
+          "JP",
+          "KR"
+        ],
+        "shard": "",
+        "output": "thememiner/data/profile_upgrades/official_rest.json"
+      }
+    },
+    {
+      "symbol": "8306.T",
+      "name": "Mitsubishi UFJ Financial Group, Inc.",
+      "market": "JP",
+      "region": "Japan",
+      "exchange": "JPX",
+      "raw_industry": null,
+      "website": null,
+      "company_name": null,
+      "sector": "Financial Services / Banks—Diversified",
+      "specializations": [
+        "銀行"
+      ],
+      "products": [],
+      "platforms": [
+        "銀行"
+      ],
+      "constraints": [
+        "auto profile: verify product purity, customer exposure, and revenue mix before trading",
+        "verify official filings/product pages for revenue mix"
+      ],
+      "risk_flags": [
+        "auto profile: concept fit may be broad until upgraded with official sources",
+        "auto-upgraded profile: product purity can still be broad"
+      ],
+      "bottleneck_profile": {},
+      "supply_chain_profile": {
+        "layers": [],
+        "products": [],
+        "upstream_concepts": [],
+        "downstream_concepts": [],
+        "matched_rules": []
+      },
+      "concept_exposures": [
+        {
+          "concept_id": "banks",
+          "role": "regional_leader",
+          "weight": 0.5,
+          "path": "Mitsubishi UFJ Financial Group, Inc. metadata + exchange/supply-chain mapping -> 銀行 exposure candidate"
+        }
+      ],
+      "source_refs": [
+        {
+          "title": "Yahoo Finance search metadata for 8306.T",
+          "url": "https://finance.yahoo.com/quote/8306.T"
+        }
+      ],
+      "primary_business": "Mitsubishi UFJ Financial Group, Inc. is upgraded from ticker/search metadata and ThemeMiner supply-chain mapping. ThemeMiner links it to 銀行. Official filing/profile extraction is still pending for this market.",
+      "profile_quality": "market_metadata_profile",
+      "profile_evidence_quality": "yahoo_search_plus_graph",
+      "official_metadata": {
+        "source": "pending_official_market_parser"
+      },
+      "updated_at": "2026-05-23",
+      "upgrade_batch": {
+        "markets": [
+          "CN",
+          "HK",
+          "JP",
+          "KR"
+        ],
+        "shard": "",
+        "output": "thememiner/data/profile_upgrades/official_rest.json"
+      }
+    },
+    {
+      "symbol": "8316.T",
+      "name": "Sumitomo Mitsui Financial Group, Inc.",
+      "market": "JP",
+      "region": "Japan",
+      "exchange": "JPX",
+      "raw_industry": null,
+      "website": null,
+      "company_name": null,
+      "sector": "Financial Services / Banks—Diversified",
+      "specializations": [
+        "銀行",
+        "金控",
+        "保險"
+      ],
+      "products": [],
+      "platforms": [
+        "銀行",
+        "金控",
+        "保險"
+      ],
+      "constraints": [
+        "auto profile: verify product purity, customer exposure, and revenue mix before trading",
+        "verify official filings/product pages for revenue mix"
+      ],
+      "risk_flags": [
+        "auto profile: concept fit may be broad until upgraded with official sources",
+        "auto-upgraded profile: product purity can still be broad"
+      ],
+      "bottleneck_profile": {},
+      "supply_chain_profile": {
+        "layers": [],
+        "products": [],
+        "upstream_concepts": [],
+        "downstream_concepts": [],
+        "matched_rules": []
+      },
+      "concept_exposures": [
+        {
+          "concept_id": "banks",
+          "role": "regional_leader",
+          "weight": 0.5,
+          "path": "Sumitomo Mitsui Financial Group, Inc. metadata + exchange/supply-chain mapping -> 銀行 exposure candidate"
+        },
+        {
+          "concept_id": "financial_holding",
+          "role": "regional_leader",
+          "weight": 0.5,
+          "path": "Sumitomo Mitsui Financial Group, Inc. metadata + exchange/supply-chain mapping -> 金控 exposure candidate"
+        },
+        {
+          "concept_id": "insurance",
+          "role": "regional_leader",
+          "weight": 0.5,
+          "path": "Sumitomo Mitsui Financial Group, Inc. metadata + exchange/supply-chain mapping -> 保險 exposure candidate"
+        }
+      ],
+      "source_refs": [
+        {
+          "title": "Yahoo Finance search metadata for 8316.T",
+          "url": "https://finance.yahoo.com/quote/8316.T"
+        }
+      ],
+      "primary_business": "Sumitomo Mitsui Financial Group, Inc. is upgraded from ticker/search metadata and ThemeMiner supply-chain mapping. ThemeMiner links it to 銀行, 金控, 保險. Official filing/profile extraction is still pending for this market.",
+      "profile_quality": "market_metadata_profile",
+      "profile_evidence_quality": "yahoo_search_plus_graph",
+      "official_metadata": {
+        "source": "pending_official_market_parser"
+      },
+      "updated_at": "2026-05-23",
+      "upgrade_batch": {
+        "markets": [
+          "CN",
+          "HK",
+          "JP",
+          "KR"
+        ],
+        "shard": "",
+        "output": "thememiner/data/profile_upgrades/official_rest.json"
+      }
+    },
+    {
+      "symbol": "8411.T",
+      "name": "Mizuho Financial Group, Inc.",
+      "market": "JP",
+      "region": "Japan",
+      "exchange": "JPX",
+      "raw_industry": null,
+      "website": null,
+      "company_name": null,
+      "sector": "Financial Services / Banks—Regional",
+      "specializations": [
+        "銀行",
+        "金控",
+        "保險"
+      ],
+      "products": [],
+      "platforms": [
+        "銀行",
+        "金控",
+        "保險"
+      ],
+      "constraints": [
+        "auto profile: verify product purity, customer exposure, and revenue mix before trading",
+        "verify official filings/product pages for revenue mix"
+      ],
+      "risk_flags": [
+        "auto profile: concept fit may be broad until upgraded with official sources",
+        "auto-upgraded profile: product purity can still be broad"
+      ],
+      "bottleneck_profile": {},
+      "supply_chain_profile": {
+        "layers": [],
+        "products": [],
+        "upstream_concepts": [],
+        "downstream_concepts": [],
+        "matched_rules": []
+      },
+      "concept_exposures": [
+        {
+          "concept_id": "banks",
+          "role": "core_follower",
+          "weight": 0.5,
+          "path": "Mizuho Financial Group, Inc. metadata + exchange/supply-chain mapping -> 銀行 exposure candidate"
+        },
+        {
+          "concept_id": "financial_holding",
+          "role": "core_follower",
+          "weight": 0.5,
+          "path": "Mizuho Financial Group, Inc. metadata + exchange/supply-chain mapping -> 金控 exposure candidate"
+        },
+        {
+          "concept_id": "insurance",
+          "role": "core_follower",
+          "weight": 0.5,
+          "path": "Mizuho Financial Group, Inc. metadata + exchange/supply-chain mapping -> 保險 exposure candidate"
+        }
+      ],
+      "source_refs": [
+        {
+          "title": "Yahoo Finance search metadata for 8411.T",
+          "url": "https://finance.yahoo.com/quote/8411.T"
+        }
+      ],
+      "primary_business": "Mizuho Financial Group, Inc. is upgraded from ticker/search metadata and ThemeMiner supply-chain mapping. ThemeMiner links it to 銀行, 金控, 保險. Official filing/profile extraction is still pending for this market.",
+      "profile_quality": "market_metadata_profile",
+      "profile_evidence_quality": "yahoo_search_plus_graph",
+      "official_metadata": {
+        "source": "pending_official_market_parser"
+      },
+      "updated_at": "2026-05-23",
+      "upgrade_batch": {
+        "markets": [
+          "CN",
+          "HK",
+          "JP",
+          "KR"
+        ],
+        "shard": "",
+        "output": "thememiner/data/profile_upgrades/official_rest.json"
+      }
+    },
+    {
+      "symbol": "9101.T",
+      "name": "Nippon Yusen Kabushiki Kaisha",
+      "market": "JP",
+      "region": "Japan",
+      "exchange": "JPX",
+      "raw_industry": null,
+      "website": null,
+      "company_name": null,
+      "sector": "Industrials / Marine Shipping",
+      "specializations": [
+        "航運"
+      ],
+      "products": [],
+      "platforms": [
+        "航運"
+      ],
+      "constraints": [
+        "auto profile: verify product purity, customer exposure, and revenue mix before trading",
+        "verify official filings/product pages for revenue mix"
+      ],
+      "risk_flags": [
+        "auto profile: concept fit may be broad until upgraded with official sources",
+        "auto-upgraded profile: product purity can still be broad"
+      ],
+      "bottleneck_profile": {},
+      "supply_chain_profile": {
+        "layers": [],
+        "products": [],
+        "upstream_concepts": [],
+        "downstream_concepts": [],
+        "matched_rules": []
+      },
+      "concept_exposures": [
+        {
+          "concept_id": "shipping",
+          "role": "regional_leader",
+          "weight": 0.5,
+          "path": "Nippon Yusen Kabushiki Kaisha metadata + exchange/supply-chain mapping -> 航運 exposure candidate"
+        }
+      ],
+      "source_refs": [
+        {
+          "title": "Yahoo Finance search metadata for 9101.T",
+          "url": "https://finance.yahoo.com/quote/9101.T"
+        }
+      ],
+      "primary_business": "Nippon Yusen Kabushiki Kaisha is upgraded from ticker/search metadata and ThemeMiner supply-chain mapping. ThemeMiner links it to 航運. Official filing/profile extraction is still pending for this market.",
+      "profile_quality": "market_metadata_profile",
+      "profile_evidence_quality": "yahoo_search_plus_graph",
+      "official_metadata": {
+        "source": "pending_official_market_parser"
+      },
+      "updated_at": "2026-05-23",
+      "upgrade_batch": {
+        "markets": [
+          "CN",
+          "HK",
+          "JP",
+          "KR"
+        ],
+        "shard": "",
+        "output": "thememiner/data/profile_upgrades/official_rest.json"
+      }
+    },
+    {
+      "symbol": "9104.T",
+      "name": "Mitsui O.S.K. Lines, Ltd.",
+      "market": "JP",
+      "region": "Japan",
+      "exchange": "JPX",
+      "raw_industry": null,
+      "website": null,
+      "company_name": null,
+      "sector": "Industrials / Marine Shipping",
+      "specializations": [
+        "物流",
+        "航運"
+      ],
+      "products": [],
+      "platforms": [
+        "物流",
+        "航運"
+      ],
+      "constraints": [
+        "auto profile: verify product purity, customer exposure, and revenue mix before trading",
+        "verify official filings/product pages for revenue mix"
+      ],
+      "risk_flags": [
+        "auto profile: concept fit may be broad until upgraded with official sources",
+        "auto-upgraded profile: product purity can still be broad"
+      ],
+      "bottleneck_profile": {},
+      "supply_chain_profile": {
+        "layers": [],
+        "products": [],
+        "upstream_concepts": [],
+        "downstream_concepts": [],
+        "matched_rules": []
+      },
+      "concept_exposures": [
+        {
+          "concept_id": "logistics",
+          "role": "regional_leader",
+          "weight": 0.5,
+          "path": "Mitsui O.S.K. Lines, Ltd. metadata + exchange/supply-chain mapping -> 物流 exposure candidate"
+        },
+        {
+          "concept_id": "shipping",
+          "role": "regional_leader",
+          "weight": 0.5,
+          "path": "Mitsui O.S.K. Lines, Ltd. metadata + exchange/supply-chain mapping -> 航運 exposure candidate"
+        }
+      ],
+      "source_refs": [
+        {
+          "title": "Yahoo Finance search metadata for 9104.T",
+          "url": "https://finance.yahoo.com/quote/9104.T"
+        }
+      ],
+      "primary_business": "Mitsui O.S.K. Lines, Ltd. is upgraded from ticker/search metadata and ThemeMiner supply-chain mapping. ThemeMiner links it to 物流, 航運. Official filing/profile extraction is still pending for this market.",
+      "profile_quality": "market_metadata_profile",
+      "profile_evidence_quality": "yahoo_search_plus_graph",
+      "official_metadata": {
+        "source": "pending_official_market_parser"
+      },
+      "updated_at": "2026-05-23",
+      "upgrade_batch": {
+        "markets": [
+          "CN",
+          "HK",
+          "JP",
+          "KR"
+        ],
+        "shard": "",
+        "output": "thememiner/data/profile_upgrades/official_rest.json"
+      }
+    },
+    {
+      "symbol": "9107.T",
+      "name": "Kawasaki Kisen Kaisha, Ltd.",
+      "market": "JP",
+      "region": "Japan",
+      "exchange": "JPX",
+      "raw_industry": null,
+      "website": null,
+      "company_name": null,
+      "sector": "Industrials / Marine Shipping",
+      "specializations": [
+        "物流",
+        "航運"
+      ],
+      "products": [],
+      "platforms": [
+        "物流",
+        "航運"
+      ],
+      "constraints": [
+        "auto profile: verify product purity, customer exposure, and revenue mix before trading",
+        "verify official filings/product pages for revenue mix"
+      ],
+      "risk_flags": [
+        "auto profile: concept fit may be broad until upgraded with official sources",
+        "auto-upgraded profile: product purity can still be broad"
+      ],
+      "bottleneck_profile": {},
+      "supply_chain_profile": {
+        "layers": [],
+        "products": [],
+        "upstream_concepts": [],
+        "downstream_concepts": [],
+        "matched_rules": []
+      },
+      "concept_exposures": [
+        {
+          "concept_id": "logistics",
+          "role": "regional_leader",
+          "weight": 0.5,
+          "path": "Kawasaki Kisen Kaisha, Ltd. metadata + exchange/supply-chain mapping -> 物流 exposure candidate"
+        },
+        {
+          "concept_id": "shipping",
+          "role": "regional_leader",
+          "weight": 0.5,
+          "path": "Kawasaki Kisen Kaisha, Ltd. metadata + exchange/supply-chain mapping -> 航運 exposure candidate"
+        }
+      ],
+      "source_refs": [
+        {
+          "title": "Yahoo Finance search metadata for 9107.T",
+          "url": "https://finance.yahoo.com/quote/9107.T"
+        }
+      ],
+      "primary_business": "Kawasaki Kisen Kaisha, Ltd. is upgraded from ticker/search metadata and ThemeMiner supply-chain mapping. ThemeMiner links it to 物流, 航運. Official filing/profile extraction is still pending for this market.",
+      "profile_quality": "market_metadata_profile",
+      "profile_evidence_quality": "yahoo_search_plus_graph",
+      "official_metadata": {
+        "source": "pending_official_market_parser"
+      },
+      "updated_at": "2026-05-23",
+      "upgrade_batch": {
+        "markets": [
+          "CN",
+          "HK",
+          "JP",
+          "KR"
+        ],
+        "shard": "",
+        "output": "thememiner/data/profile_upgrades/official_rest.json"
+      }
+    }
+  ]
+}

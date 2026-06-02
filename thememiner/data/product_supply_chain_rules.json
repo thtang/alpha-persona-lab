@@ -1,0 +1,439 @@
+{
+  "schema_version": "thememiner_product_supply_chain_rules_v1",
+  "updated_at": "2026-06-01",
+  "description": "Keyword and industry rules for broad-universe discovery. These rules map company names, industries, and product metadata into fine concepts and supply-chain layers. Curated profiles can override these mappings.",
+  "rules": [
+    {
+      "concept_id": "ai_agent_apps",
+      "layer": "software.agentic_workflow",
+      "products": ["AI agent software", "workflow agent", "Copilot", "enterprise AI assistant"],
+      "keywords_any": ["AI agent", "agentic AI", "Copilot", "Agentforce", "Now Assist", "AIP", "workflow agent", "AI assistant", "AI workflow", "自動化代理", "AI代理"],
+      "upstream_concepts": ["cloud_ai", "ai_data_platform"],
+      "downstream_concepts": ["enterprise_saas_workflow", "system_integration", "cybersecurity"]
+    },
+    {
+      "concept_id": "enterprise_saas_workflow",
+      "layer": "software.enterprise_saas.workflow",
+      "products": ["enterprise SaaS", "CRM", "ERP", "ITSM", "collaboration software", "workflow platform"],
+      "keywords_any": ["enterprise SaaS", "CRM", "ERP", "ITSM", "workflow automation", "collaboration software", "business applications", "ServiceNow", "Salesforce", "Atlassian", "UiPath", "企業軟體", "工作流"],
+      "upstream_concepts": ["cloud_ai", "ai_data_platform"],
+      "downstream_concepts": ["system_integration", "ai_agent_apps"]
+    },
+    {
+      "concept_id": "ai_data_platform",
+      "layer": "software.data_platform.ai_readiness",
+      "products": ["data cloud", "lakehouse", "data warehouse", "vector database", "search platform", "AI data governance"],
+      "keywords_any": ["data cloud", "lakehouse", "data warehouse", "vector search", "vector database", "RAG", "data governance", "Snowflake", "MongoDB", "Elastic", "Databricks", "資料平台", "資料治理"],
+      "upstream_concepts": ["cloud_ai", "enterprise_ssd", "hdd_cold_storage"],
+      "downstream_concepts": ["ai_agent_apps", "enterprise_saas_workflow", "observability_devops"]
+    },
+    {
+      "concept_id": "observability_devops",
+      "layer": "software.devops.observability",
+      "products": ["observability", "APM", "log analytics", "DevOps", "CI/CD", "LLM observability"],
+      "keywords_any": ["observability", "APM", "application performance monitoring", "log analytics", "DevOps", "CI/CD", "LLM observability", "Datadog", "GitLab", "Elastic", "監控", "可觀測性"],
+      "upstream_concepts": ["cloud_ai", "ai_data_platform"],
+      "downstream_concepts": ["cybersecurity", "enterprise_saas_workflow"]
+    },
+    {
+      "concept_id": "cloud_security_sase",
+      "layer": "software.security.sase_cnapp",
+      "products": ["SASE", "CNAPP", "zero trust network access", "cloud workload protection", "secure web gateway"],
+      "keywords_any": ["SASE", "CNAPP", "zero trust", "cloud security", "secure web gateway", "ZTNA", "Cloudflare", "Zscaler", "Palo Alto", "Fortinet", "雲端資安", "零信任"],
+      "upstream_concepts": ["cloud_ai", "networking", "identity_security"],
+      "downstream_concepts": ["system_integration", "cybersecurity"]
+    },
+    {
+      "concept_id": "endpoint_xdr_security",
+      "layer": "software.security.endpoint_xdr",
+      "products": ["endpoint security", "EDR", "XDR", "threat intelligence", "managed detection"],
+      "keywords_any": ["endpoint security", "EDR", "XDR", "threat intelligence", "managed detection", "CrowdStrike", "Falcon", "Palo Alto Cortex", "endpoint protection", "端點資安"],
+      "upstream_concepts": ["cloud_ai", "identity_security"],
+      "downstream_concepts": ["system_integration", "cybersecurity"]
+    },
+    {
+      "concept_id": "identity_security",
+      "layer": "software.security.identity",
+      "products": ["IAM", "SSO", "identity access management", "privileged access", "identity governance"],
+      "keywords_any": ["identity security", "IAM", "SSO", "MFA", "privileged access", "identity governance", "Okta", "CyberArk", "identity access", "身份安全"],
+      "upstream_concepts": ["cloud_ai"],
+      "downstream_concepts": ["cloud_security_sase", "cybersecurity", "enterprise_saas_workflow"]
+    },
+    {
+      "concept_id": "ai_application_software",
+      "layer": "software.ai_applications.vertical_productivity",
+      "products": ["creative AI software", "productivity AI", "vertical AI app", "AI education app", "AI commerce app"],
+      "keywords_any": ["generative AI application", "creative software", "productivity AI", "AI education", "AI commerce", "Adobe Firefly", "Duolingo Max", "AppLovin AI", "AI app", "AI應用"],
+      "upstream_concepts": ["cloud_ai", "ai_data_platform"],
+      "downstream_concepts": ["ecommerce", "gaming", "enterprise_saas_workflow"]
+    },
+    {
+      "concept_id": "fintech_payments_software",
+      "layer": "software.fintech.payments",
+      "products": ["payments software", "merchant software", "digital wallet", "fintech platform"],
+      "keywords_any": ["payments", "merchant software", "digital wallet", "fintech", "checkout", "Shopify Payments", "Intuit", "online payments", "支付", "金融科技"],
+      "upstream_concepts": ["cloud_ai", "cybersecurity"],
+      "downstream_concepts": ["ecommerce", "financial_holding", "banks"]
+    },
+    {
+      "concept_id": "high_voltage_mlcc",
+      "layer": "electronics_upstream.passive.mlcc",
+      "products": ["MLCC", "ceramic capacitors", "high-reliability capacitors"],
+      "keywords_any": ["MLCC", "ceramic capacitor", "ceramic capacitors", "multilayer ceramic", "積層陶瓷", "陶瓷電容", "信昌電", "華新科", "Murata", "Taiyo Yuden"],
+      "upstream_concepts": ["silver", "glass_ceramics", "chemicals"],
+      "downstream_concepts": ["ai_capex", "power_supply", "auto_parts", "communication_equipment"]
+    },
+    {
+      "concept_id": "aluminum_polymer_cap",
+      "layer": "electronics_upstream.passive.polymer_aluminum",
+      "products": ["conductive polymer capacitor", "solid aluminum capacitor", "hybrid capacitor", "SP-Cap"],
+      "keywords_any": ["polymer capacitor", "solid capacitor", "conductive polymer", "SP-Cap", "POSCAP", "aluminum polymer", "固態電容", "固態鋁電容", "鈺邦"],
+      "upstream_concepts": ["aluminum_polymer_cap", "chemicals"],
+      "downstream_concepts": ["power_supply", "networking", "ai_capex"]
+    },
+    {
+      "concept_id": "snap_in_capacitor",
+      "layer": "electronics_upstream.passive.large_aluminum",
+      "products": ["large aluminum electrolytic capacitor", "snap-in capacitor", "screw terminal capacitor"],
+      "keywords_any": ["snap-in", "screw terminal", "large aluminum", "aluminum electrolytic", "電解電容", "牛角", "大型鋁電容", "Nippon Chemi-Con", "Nichicon", "Aihua", "江海"],
+      "upstream_concepts": ["chemicals", "metal_parts"],
+      "downstream_concepts": ["power_supply", "transformer_ups", "ev"]
+    },
+    {
+      "concept_id": "film_capacitor",
+      "layer": "electronics_upstream.passive.film_capacitor",
+      "products": ["film capacitor", "DC-link capacitor", "power capacitor"],
+      "keywords_any": ["film capacitor", "power capacitor", "DC-link", "DC link", "薄膜電容", "法拉電子", "Faratronic"],
+      "upstream_concepts": ["plastics", "chemicals", "metal_parts"],
+      "downstream_concepts": ["ev", "solar", "wind_power", "power_supply"]
+    },
+    {
+      "concept_id": "chip_resistor",
+      "layer": "electronics_upstream.passive.resistor",
+      "products": ["chip resistor", "precision resistor", "current-sense resistor", "shunt resistor"],
+      "keywords_any": ["resistor", "resistors", "shunt", "current sense", "foil resistor", "chip resistor", "電阻", "Vishay", "大毅", "風華"],
+      "upstream_concepts": ["metal_parts", "chemicals"],
+      "downstream_concepts": ["power_supply", "auto_parts", "industrial_pc"]
+    },
+    {
+      "concept_id": "inductor_choke",
+      "layer": "electronics_upstream.passive.inductor",
+      "products": ["inductor", "choke", "magnetic component", "power inductor"],
+      "keywords_any": ["inductor", "inductors", "choke", "magnetic component", "magnetics", "電感", "順絡", "麥捷", "TDK"],
+      "upstream_concepts": ["metal_parts", "chemicals"],
+      "downstream_concepts": ["power_supply", "communication_equipment", "auto_parts"]
+    },
+    {
+      "concept_id": "passive_components",
+      "layer": "electronics_upstream.passive.broad",
+      "products": ["passive components", "capacitors", "resistors", "inductors"],
+      "keywords_any": ["passive component", "passive components", "electronic components", "capacitor", "capacitors", "resistor", "resistors", "inductor", "inductors", "被動元件", "電子元件"],
+      "upstream_concepts": ["chemicals", "metal_parts"],
+      "downstream_concepts": ["ai_capex", "auto_parts", "consumer_electronics", "industrial_pc"]
+    },
+    {
+      "concept_id": "semiconductor_components",
+      "layer": "electronics_upstream.discrete_semiconductor",
+      "products": ["MOSFET", "diode", "rectifier", "discrete semiconductor", "power discrete"],
+      "keywords_any": ["discrete semiconductor", "MOSFET", "rectifier", "diode", "diodes", "power semiconductor", "功率半導體", "半導體元件"],
+      "upstream_concepts": ["wafer_materials", "foundry"],
+      "downstream_concepts": ["hvdc_power_semiconductor", "power_supply", "ev"]
+    },
+    {
+      "concept_id": "semicap_equipment",
+      "layer": "electronics_upstream.semiconductor.equipment",
+      "products": ["semiconductor equipment", "probe card", "wafer probe", "test and inspection", "metrology"],
+      "keywords_any": ["Semiconductor Equipment", "Semiconductor Equipment & Materials", "semiconductor equipment", "wafer probe", "probe card", "test equipment", "metrology", "inspection", "deposition", "etch", "lithography", "FormFactor", "MKS Instruments", "Onto Innovation"],
+      "upstream_concepts": ["wafer_materials", "precision_sensing"],
+      "downstream_concepts": ["foundry", "hbm", "semiconductor_components", "ai_foundry_capacity"]
+    },
+    {
+      "concept_id": "hvdc_power_semiconductor",
+      "layer": "electronics_upstream.power_semiconductor.hvdc",
+      "products": ["SiC", "GaN", "power MOSFET", "800V HVDC power devices"],
+      "keywords_any": ["SiC", "GaN", "silicon carbide", "gallium nitride", "power MOSFET", "800V", "HVDC", "power module"],
+      "upstream_concepts": ["wafer_materials", "semicap_equipment"],
+      "downstream_concepts": ["power_supply", "transformer_ups", "ev", "ai_capex"]
+    },
+    {
+      "concept_id": "ic_design",
+      "layer": "electronics_upstream.semiconductor.design",
+      "products": ["fabless IC", "SoC", "ASIC", "controller IC"],
+      "keywords_any": ["fabless", "IC design", "semiconductor design", "chip design", "SoC", "ASIC", "controller", "integrated circuit design", "IC設計"],
+      "upstream_concepts": ["ip_asic"],
+      "downstream_concepts": ["foundry", "ic_packaging_testing", "consumer_electronics", "ai_pc"]
+    },
+    {
+      "concept_id": "foundry",
+      "layer": "electronics_upstream.semiconductor.foundry",
+      "products": ["wafer foundry", "semiconductor manufacturing services"],
+      "keywords_any": ["foundry", "wafer foundry", "semiconductor manufacturing", "晶圓代工", "代工"],
+      "upstream_concepts": ["wafer_materials", "semicap_equipment", "chemicals"],
+      "downstream_concepts": ["ic_packaging_testing", "hbm", "ip_asic"]
+    },
+    {
+      "concept_id": "dram_manufacturing",
+      "layer": "electronics_upstream.memory.dram",
+      "products": ["DRAM", "NAND", "memory chips"],
+      "keywords_any": ["DRAM", "NAND", "memory chip", "memory semiconductor", "memory products", "記憶體", "南亞科", "華邦電", "Micron", "SK Hynix"],
+      "upstream_concepts": ["wafer_materials", "semicap_equipment"],
+      "downstream_concepts": ["hbm", "ai_pc", "ai_capex"]
+    },
+    {
+      "concept_id": "hbm",
+      "layer": "electronics_upstream.memory.hbm",
+      "products": ["HBM", "high bandwidth memory"],
+      "keywords_any": ["HBM", "high bandwidth memory", "AI memory", "高頻寬記憶體"],
+      "upstream_concepts": ["dram_manufacturing", "ic_packaging_testing"],
+      "downstream_concepts": ["gpu_accelerator", "ai_capex"]
+    },
+    {
+      "concept_id": "pcb_manufacturing",
+      "layer": "electronics_midstream.pcb.fabrication",
+      "products": ["PCB", "HDI", "server PCB"],
+      "keywords_any": ["PCB", "printed circuit", "circuit board", "HDI", "印刷電路板", "電路板"],
+      "upstream_concepts": ["pcb_material_equipment", "copper"],
+      "downstream_concepts": ["ems", "ai_capex", "consumer_electronics"]
+    },
+    {
+      "concept_id": "pcb_material_equipment",
+      "layer": "electronics_upstream.pcb.material",
+      "products": ["CCL", "copper clad laminate", "glass cloth", "PCB materials"],
+      "keywords_any": ["CCL", "copper clad", "copper clad laminate", "laminate", "PCB material", "glass cloth", "玻纖布", "銅箔基板"],
+      "upstream_concepts": ["copper", "glass_ceramics", "chemicals"],
+      "downstream_concepts": ["pcb_manufacturing", "abf_substrate"]
+    },
+    {
+      "concept_id": "abf_substrate",
+      "layer": "electronics_upstream.substrate.abf",
+      "products": ["ABF substrate", "IC substrate", "package substrate"],
+      "keywords_any": ["ABF", "IC substrate", "package substrate", "substrate", "載板", "IC載板"],
+      "upstream_concepts": ["pcb_material_equipment", "chemicals"],
+      "downstream_concepts": ["ic_packaging_testing", "gpu_accelerator", "ai_capex"]
+    },
+    {
+      "concept_id": "cpo_optical",
+      "layer": "electronics_midstream.optical.transceiver",
+      "products": ["optical transceiver", "CPO", "800G", "1.6T"],
+      "keywords_any": ["optical transceiver", "optical module", "CPO", "co-packaged optics", "800G", "1.6T", "optoelectronics", "optical networking", "Applied Optoelectronics", "Lumentum", "Coherent", "光通訊", "光模組"],
+      "upstream_concepts": ["inp_photonics", "silicon_photonics", "specialty_glass_fiber"],
+      "downstream_concepts": ["networking", "ai_capex", "cloud_ai"]
+    },
+    {
+      "concept_id": "inp_photonics",
+      "layer": "electronics_upstream.photonics.inp",
+      "products": ["InP wafer", "InP laser", "EML", "CW laser"],
+      "keywords_any": ["InP", "indium phosphide", "III-V", "compound semiconductor substrate", "optoelectronic substrate", "EML", "DFB laser", "AXT", "磷化銦", "外延"],
+      "upstream_concepts": ["wafer_materials", "epitaxy_equipment"],
+      "downstream_concepts": ["laser_capacity", "cpo_optical"]
+    },
+    {
+      "concept_id": "silicon_photonics",
+      "layer": "electronics_upstream.photonics.siph",
+      "products": ["silicon photonics", "PIC", "optical engine"],
+      "keywords_any": ["silicon photonics", "SiPh", "photonic integrated", "optical engine", "矽光子"],
+      "upstream_concepts": ["soi_wafer", "foundry"],
+      "downstream_concepts": ["cpo_optical", "networking"]
+    },
+    {
+      "concept_id": "power_supply",
+      "layer": "electronics_midstream.power_supply",
+      "products": ["power supply", "UPS", "BBU", "power module"],
+      "keywords_any": ["power supply", "UPS", "BBU", "power module", "Electrical Equipment & Parts", "Vertiv", "data center power", "critical power", "電源供應", "電源"],
+      "upstream_concepts": ["hvdc_power_semiconductor", "passive_components", "transformer_ups"],
+      "downstream_concepts": ["ai_capex", "industrial_pc", "networking"]
+    },
+    {
+      "concept_id": "communication_equipment",
+      "layer": "electronics_midstream.communication_equipment",
+      "products": ["network equipment", "optical networking", "telecom equipment", "communication equipment"],
+      "keywords_any": ["Communication Equipment", "communication equipment", "network equipment", "telecom equipment", "optical networking", "wireless equipment"],
+      "upstream_concepts": ["cpo_optical", "semiconductor_components", "passive_components"],
+      "downstream_concepts": ["networking", "cloud_ai", "ai_capex"]
+    },
+    {
+      "concept_id": "thermal_components",
+      "layer": "electronics_midstream.thermal",
+      "products": ["liquid cooling", "cold plate", "heat sink", "thermal module"],
+      "keywords_any": ["thermal", "cooling", "liquid cooling", "cold plate", "heat sink", "散熱", "水冷"],
+      "upstream_concepts": ["metal_parts", "chemicals"],
+      "downstream_concepts": ["gb200", "gb300", "ai_capex"]
+    },
+    {
+      "concept_id": "smart_grid",
+      "layer": "traditional.electrical.grid",
+      "products": ["grid equipment", "switchgear", "power grid", "automation"],
+      "keywords_any": ["smart grid", "grid", "switchgear", "substation", "electrification", "GE Vernova", "grid equipment", "電網", "開關設備"],
+      "upstream_concepts": ["copper", "transformer_ups"],
+      "downstream_concepts": ["ai_capex", "wind_power", "solar"]
+    },
+    {
+      "concept_id": "transformer_ups",
+      "layer": "traditional.electrical.transformer",
+      "products": ["transformer", "UPS", "power conversion"],
+      "keywords_any": ["transformer", "UPS", "power conversion", "electrical equipment", "Specialty Industrial Machinery", "Electrical Equipment & Parts", "變壓器", "重電"],
+      "upstream_concepts": ["copper", "steel"],
+      "downstream_concepts": ["smart_grid", "ai_capex", "industrial_pc"]
+    },
+    {
+      "concept_id": "copper",
+      "layer": "materials.metal.copper",
+      "products": ["copper", "copper concentrate", "copper foil"],
+      "keywords_any": ["copper", "copper mining", "copper foil", "銅", "銅箔"],
+      "upstream_concepts": ["copper"],
+      "downstream_concepts": ["wire_cable", "pcb_material_equipment", "smart_grid"]
+    },
+    {
+      "concept_id": "shipping",
+      "layer": "transport.shipping",
+      "products": ["container shipping", "bulk shipping", "marine transportation"],
+      "keywords_any": ["shipping", "marine shipping", "container", "bulk carrier", "freight", "航運", "海運"],
+      "upstream_concepts": ["oil_lng"],
+      "downstream_concepts": ["logistics"]
+    },
+    {
+      "concept_id": "cdmo_cro",
+      "layer": "healthcare.services.cdmo_cro",
+      "products": ["CDMO", "CRO", "contract research", "contract manufacturing"],
+      "keywords_any": ["CDMO", "CRO", "contract development", "contract manufacturing", "contract research", "clinical research", "藥明", "保瑞"],
+      "upstream_concepts": ["new_drug"],
+      "downstream_concepts": ["new_drug", "glp1_obesity"]
+    },
+    {
+      "concept_id": "glp1_obesity",
+      "layer": "healthcare.drug.glp1",
+      "products": ["GLP-1", "obesity drug", "diabetes drug"],
+      "keywords_any": ["GLP-1", "obesity", "diabetes", "weight loss", "減重", "糖尿病"],
+      "upstream_concepts": ["new_drug", "cdmo_cro"],
+      "downstream_concepts": ["healthcare_services"]
+    },
+    {
+      "concept_id": "banks",
+      "layer": "financials.bank",
+      "products": ["commercial banking", "retail banking", "investment banking"],
+      "keywords_any": ["bank", "banking", "bancorp", "銀行"],
+      "upstream_concepts": ["banks"],
+      "downstream_concepts": ["financial_holding", "insurance"]
+    },
+    {
+      "concept_id": "insurance",
+      "layer": "financials.insurance",
+      "products": ["life insurance", "property insurance", "reinsurance"],
+      "keywords_any": ["insurance", "reinsurance", "保險", "壽險"],
+      "upstream_concepts": ["banks"],
+      "downstream_concepts": ["financial_holding"]
+    },
+    {
+      "concept_id": "defense",
+      "layer": "industrial.defense",
+      "products": ["aerospace", "defense systems", "missiles", "military platforms"],
+      "keywords_any": ["defense", "aerospace", "missile", "military", "航太", "軍工", "國防"],
+      "upstream_concepts": ["semiconductor_components", "metal_parts"],
+      "downstream_concepts": ["drone"]
+    },
+    {
+      "concept_id": "agentic_ai_infrastructure",
+      "layer": "global.ai.agentic.system",
+      "products": ["agentic AI infrastructure", "workflow orchestration infrastructure", "AI agent runtime"],
+      "keywords_any": ["agentic AI", "AI agent", "agentic computing", "autonomous agents", "workflow orchestration", "tool execution", "context retention"],
+      "upstream_concepts": ["ai_capex", "cloud_ai"],
+      "downstream_concepts": ["agentic_cpu_rack", "host_dram", "enterprise_ssd", "memory_interface", "high_speed_connector"]
+    },
+    {
+      "concept_id": "agentic_cpu_rack",
+      "layer": "global.ai.agentic.cpu_rack",
+      "products": ["server CPU", "high-core-count CPU", "agentic CPU rack", "orchestration CPU"],
+      "keywords_any": ["server CPU", "data center CPU", "EPYC", "Xeon", "Neoverse", "high core count", "CPU rack", "orchestration CPU", "Graviton"],
+      "upstream_concepts": ["foundry", "ic_design", "ip_asic"],
+      "downstream_concepts": ["host_dram", "cpu_socket", "memory_interface", "server_pcb_abf", "passive_components"]
+    },
+    {
+      "concept_id": "host_dram",
+      "layer": "global.ai.agentic.host_memory",
+      "products": ["host DRAM", "server DRAM", "DDR5 RDIMM", "CXL memory"],
+      "keywords_any": ["host DRAM", "server DRAM", "DDR5", "RDIMM", "CXL memory", "persistent memory", "memory module"],
+      "upstream_concepts": ["dram_manufacturing", "memory_ic_design"],
+      "downstream_concepts": ["agentic_cpu_rack", "kv_cache_memory", "cloud_ai"]
+    },
+    {
+      "concept_id": "kv_cache_memory",
+      "layer": "global.ai.agentic.kv_cache",
+      "products": ["KV cache", "RAG cache", "vector database storage", "context cache"],
+      "keywords_any": ["KV cache", "KV-cache", "RAG", "retrieval augmented generation", "vector database", "context window", "long context", "agent memory"],
+      "upstream_concepts": ["host_dram", "enterprise_ssd", "hdd_cold_storage"],
+      "downstream_concepts": ["agentic_ai_infrastructure", "cloud_ai"]
+    },
+    {
+      "concept_id": "enterprise_ssd",
+      "layer": "global.ai.agentic.essd",
+      "products": ["enterprise SSD", "NVMe SSD", "SSD controller", "NAND storage"],
+      "keywords_any": ["enterprise SSD", "eSSD", "NVMe", "SSD controller", "NAND controller", "AI storage", "high performance storage"],
+      "upstream_concepts": ["memory_ic_design", "dram_manufacturing"],
+      "downstream_concepts": ["kv_cache_memory", "cloud_ai", "agentic_ai_infrastructure"]
+    },
+    {
+      "concept_id": "hdd_cold_storage",
+      "layer": "global.ai.agentic.cold_storage",
+      "products": ["HDD", "nearline HDD", "cold storage", "data lake storage"],
+      "keywords_any": ["HDD", "hard disk drive", "nearline", "cold storage", "data lake", "long-term storage", "Seagate", "Western Digital"],
+      "upstream_concepts": ["metal_parts", "electronics_components"],
+      "downstream_concepts": ["kv_cache_memory", "cloud_ai"]
+    },
+    {
+      "concept_id": "memory_interface",
+      "layer": "global.ai.agentic.memory_interface",
+      "products": ["memory controller", "CXL", "retimer", "DDR interface"],
+      "keywords_any": ["memory interface", "memory controller", "CXL", "retimer", "DDR5 interface", "PCIe retimer", "server interface"],
+      "upstream_concepts": ["ic_design", "ip_asic"],
+      "downstream_concepts": ["agentic_cpu_rack", "host_dram", "server_pcb_abf"]
+    },
+    {
+      "concept_id": "cpu_socket",
+      "layer": "global.ai.agentic.cpu_socket",
+      "products": ["CPU socket", "test socket", "server socket", "LGA socket"],
+      "keywords_any": ["CPU socket", "server socket", "test socket", "LGA socket", "socket connector", "socket", "測試座", "嘉澤", "穎崴"],
+      "upstream_concepts": ["connectors", "metal_parts"],
+      "downstream_concepts": ["agentic_cpu_rack", "server_pcb_abf"]
+    },
+    {
+      "concept_id": "high_speed_connector",
+      "layer": "global.ai.agentic.interconnect",
+      "products": ["high-speed connector", "cable assembly", "backplane connector", "server interconnect"],
+      "keywords_any": ["high-speed connector", "interconnect", "cable assembly", "backplane", "server cable", "connector", "貿聯", "信邦"],
+      "upstream_concepts": ["connectors", "wire_cable"],
+      "downstream_concepts": ["agentic_cpu_rack", "networking", "cpo_optical"]
+    },
+    {
+      "concept_id": "server_pcb_abf",
+      "layer": "global.ai.agentic.server_pcb_abf",
+      "products": ["AI server PCB", "high-layer PCB", "advanced substrate", "ABF substrate"],
+      "keywords_any": ["server PCB", "AI server PCB", "high-layer PCB", "HDI PCB", "ABF substrate", "advanced substrate", "CCL", "TTM Technologies", "台光電", "金像電"],
+      "upstream_concepts": ["pcb_manufacturing", "pcb_material_equipment", "abf_substrate", "copper"],
+      "downstream_concepts": ["agentic_cpu_rack", "gpu_accelerator", "tpu_cloud"]
+    },
+    {
+      "concept_id": "ai_test_probe_interface",
+      "layer": "global.ai.agentic.test_probe",
+      "products": ["probe card", "wafer probe", "test interface", "test socket", "handler"],
+      "keywords_any": ["probe card", "wafer probe", "test interface", "test socket", "handler", "semiconductor test", "FormFactor", "Teradyne", "旺矽", "精測", "雍智"],
+      "upstream_concepts": ["semicap_equipment", "precision_sensing"],
+      "downstream_concepts": ["hbm", "ai_foundry_capacity", "silicon_photonics", "agentic_cpu_rack"]
+    },
+    {
+      "concept_id": "precision_timing",
+      "layer": "global.ai.agentic.timing",
+      "products": ["precision timing", "clock generator", "oscillator", "MEMS timing"],
+      "keywords_any": ["precision timing", "clock generator", "oscillator", "MEMS timing", "SiTime", "data center timing", "network timing"],
+      "upstream_concepts": ["semiconductor_components"],
+      "downstream_concepts": ["networking", "agentic_cpu_rack", "cloud_ai"]
+    },
+    {
+      "concept_id": "oil_lng",
+      "layer": "energy.oil_lng",
+      "products": ["oil", "natural gas", "LNG", "refining"],
+      "keywords_any": ["oil", "natural gas", "LNG", "petroleum", "energy", "天然氣", "石油"],
+      "upstream_concepts": ["oil_lng"],
+      "downstream_concepts": ["chemicals", "shipping"]
+    }
+  ]
+}

@@ -1,0 +1,459 @@
+{
+  "schema_version": "company_thesis_overrides_v1",
+  "description": "Curated thesis cards for high-priority names whose raw exchange/profile mapping is too broad for trade reasoning. These overrides are merged on top of generated ThemeMiner company thesis cards.",
+  "updated_at": "2026-05-24",
+  "overrides": {
+    "2313.TW": {
+      "name": "華通",
+      "thesis_label": "AI server HDI / high-layer PCB / optical-module PCB",
+      "primary_business": "華通是台灣 PCB 與 HDI 板廠，核心不是被動元件，而是高密度互連板、高層板與通訊/伺服器相關 PCB。用在 AI 供應鏈時，重點應放在 AI server 主板、OAM/加速卡板、高速網通與 800G/1.6T 光模組 PCB 的規格升級。",
+      "business_segments": [
+        "HDI PCB",
+        "high-layer PCB",
+        "AI server PCB",
+        "optical-module PCB",
+        "high-speed networking PCB",
+        "mobile/device PCB",
+        "LEO satellite / communication board exposure"
+      ],
+      "ai_chain_position": "AI server 與光通訊升級會拉高 PCB 層數、線寬線距與訊號完整性要求；華通比較像 AI 算力硬體第二層瓶頸的 PCB/HDI 受益者，不應被粗略歸為被動元件或電子通路。",
+      "non_ai_chain_position": "手機、通訊、衛星與消費電子 PCB 仍會影響營收與估值；需要用法說/財報確認 AI server 與高階通訊占比。",
+      "catalysts": [
+        "AI server high-layer PCB mix upgrade",
+        "800G/1.6T optical module PCB demand",
+        "OAM / accelerator card board complexity",
+        "PCB/CCL/ABF 題材擴散",
+        "台系 PCB 族群量價同步時的補漲"
+      ],
+      "leader_indicators": [
+        "2383.TW 台光電",
+        "6274.TWO 台燿",
+        "8046.TW 南電",
+        "TTMI TTM Technologies",
+        "4062.T Ibiden",
+        "4979.TWO 華星光",
+        "AAOI Applied Optoelectronics"
+      ],
+      "peer_symbols": [
+        "8046.TW",
+        "2383.TW",
+        "6274.TWO",
+        "TTMI",
+        "002463.SZ",
+        "603228.SS"
+      ],
+      "risks": [
+        "AI server/光通訊占比需要法說驗證",
+        "手機與消費電子循環可能稀釋 AI 純度",
+        "短線若跳空或爆量黑 K，laggard 優勢會快速消失",
+        "上游 CCL/ABF 轉弱時，PCB 擴散可能中斷"
+      ],
+      "source_quality": "curated_needs_financial_verification"
+    },
+    "3533.TW": {
+      "name": "嘉澤",
+      "thesis_label": "CPU socket / high-speed connector / server platform transition",
+      "primary_business": "嘉澤是 CPU socket 與高階連接器廠，AI server 論述下的關鍵不是泛 PCB，而是伺服器平台升級、CPU socket 腳位/ASP 提升，以及 rack-scale 系統中高可靠連接器內容增加。",
+      "business_segments": [
+        "CPU sockets",
+        "server socket",
+        "high-speed connector",
+        "platform connector",
+        "AI server motherboard interconnect"
+      ],
+      "ai_chain_position": "Agentic AI / CPU rack 敘事會讓 CPU socket、伺服器平台連接器與高速互連內容增加；嘉澤是台股 CPU socket 純度較高的觀察點。",
+      "non_ai_chain_position": "也受 PC/server 平台循環、Intel/AMD/ARM 平台節奏與客戶拉貨時點影響。",
+      "catalysts": [
+        "CPU rack and agentic AI server platform refresh",
+        "higher pin-count socket ASP",
+        "server connector content growth",
+        "美股 interconnect leader 續強"
+      ],
+      "leader_indicators": [
+        "APH Amphenol",
+        "TEL TE Connectivity",
+        "AMD",
+        "INTC",
+        "ARM",
+        "2382.TW 廣達",
+        "6669.TW 緯穎"
+      ],
+      "peer_symbols": [
+        "APH",
+        "TEL",
+        "2355.TW",
+        "3023.TW",
+        "2328.TW"
+      ],
+      "risks": [
+        "平台週期 timing 不連續",
+        "高價股流動性與籌碼波動放大",
+        "若無法站回 20 日線，可能只是反彈不是轉強",
+        "估值已反映部分 CPU socket 純度"
+      ],
+      "source_quality": "curated_needs_financial_verification"
+    },
+    "2421.TW": {
+      "name": "建準",
+      "thesis_label": "AI server thermal / fan tray / cooling module",
+      "primary_business": "建準是風扇、散熱模組與馬達廠，AI server 題材中應歸在散熱/風扇/機櫃熱管理，而不是 PCB 或電子通路。它的交易價值來自 GB200/GB300/Vera Rubin 功耗上升後，風扇與散熱需求擴散到第二線 thermal names。",
+      "business_segments": [
+        "DC fan",
+        "server fan",
+        "fan tray",
+        "thermal module",
+        "motor",
+        "AI server cooling"
+      ],
+      "ai_chain_position": "AI rack 功率密度上升讓風扇、fan tray、液冷周邊與熱管理需求一起擴散；建準是散熱題材中的 follower，不是 PCB/被動元件股。",
+      "non_ai_chain_position": "工業、車用、消費電子與傳統散熱需求仍影響營收；需要看伺服器散熱占比與毛利改善。",
+      "catalysts": [
+        "GB200/GB300 rack thermal demand",
+        "Vera Rubin platform cooling complexity",
+        "台股散熱 leader 續強後的二線補漲",
+        "量增站上均線時確認 diffusion"
+      ],
+      "leader_indicators": [
+        "VRT Vertiv",
+        "3017.TW 奇鋐",
+        "3324.TWO 雙鴻",
+        "2308.TW 台達電",
+        "NVDA",
+        "2382.TW 廣達"
+      ],
+      "peer_symbols": [
+        "3017.TW",
+        "3324.TWO",
+        "2308.TW",
+        "VRT",
+        "AOSL"
+      ],
+      "risks": [
+        "若 leader 散熱股轉弱，二線補漲容易失效",
+        "自動映射曾把建準誤掛到 PCB/被動元件，推薦時需強制校正 business fit",
+        "高成交爆量後可能進入短線過熱",
+        "伺服器散熱收入占比需法說驗證"
+      ],
+      "source_quality": "curated_needs_financial_verification"
+    },
+    "8046.TW": {
+      "name": "南電",
+      "thesis_label": "ABF substrate / high-end IC substrate",
+      "primary_business": "南電是 IC 載板與 PCB 廠，AI server 的重點在 ABF 載板、高階封裝周邊與伺服器/網通板材需求，而不是一般 PCB 廣義同族群。",
+      "business_segments": [
+        "ABF substrate",
+        "IC substrate",
+        "BT substrate",
+        "PCB",
+        "server substrate"
+      ],
+      "ai_chain_position": "AI ASIC/GPU/CPU 封裝與高階伺服器平台升級會拉動 ABF/IC substrate 需求，是 PCB/載板鏈的核心觀察股。",
+      "non_ai_chain_position": "PC、手機與傳統載板循環仍影響稼動率與毛利。",
+      "catalysts": [
+        "ABF inventory normalization",
+        "AI ASIC and advanced package substrate demand",
+        "台光電/台燿/欣興/景碩等載板鏈強度擴散"
+      ],
+      "leader_indicators": [
+        "4062.T Ibiden",
+        "2383.TW 台光電",
+        "6274.TWO 台燿",
+        "3037.TW 欣興",
+        "3189.TW 景碩"
+      ],
+      "risks": [
+        "ABF 週期復甦若不如預期，估值修復會中斷",
+        "AI 載板占比與稼動率需要財報驗證"
+      ],
+      "source_quality": "curated_needs_financial_verification"
+    },
+    "FORM": {
+      "thesis_label": "photonic / compound-semiconductor wafer test gate",
+      "ai_chain_position": "AI optical and compound-semiconductor ramps eventually need wafer-level test and probe cards; FORM is a picks-and-shovels test bottleneck candidate rather than a direct optical component stock.",
+      "catalysts": [
+        "SiPh/InP/compound semiconductor ramp",
+        "photonic test throughput becoming a shipment gate",
+        "semicap and probe-card capex cycle recovery"
+      ],
+      "leader_indicators": [
+        "COHR Coherent",
+        "LITE Lumentum",
+        "AAOI Applied Optoelectronics",
+        "TER Teradyne",
+        "NVDA"
+      ],
+      "risks": [
+        "photonic test is only part of diversified test revenue",
+        "semicap capex cycle can dominate short-term price",
+        "options leverage is dangerous if IV is elevated"
+      ],
+      "source_quality": "curated_needs_financial_verification"
+    },
+    "TTMI": {
+      "thesis_label": "US high-layer PCB / defense electronics / AI server PCB",
+      "ai_chain_position": "AI server and networking systems raise PCB layer count, material requirement, and signal-integrity constraints; TTMI is a US PCB peer for Taiwan high-layer PCB names.",
+      "catalysts": [
+        "AI server PCB mix upgrade",
+        "defense/aerospace electronics demand floor",
+        "US PCB peer confirmation for TW PCB laggards"
+      ],
+      "leader_indicators": [
+        "2313.TW 華通",
+        "2383.TW 台光電",
+        "6274.TWO 台燿",
+        "8046.TW 南電"
+      ],
+      "risks": [
+        "defense and industrial mix can obscure AI purity",
+        "earnings gaps can quickly make it overheated"
+      ],
+      "source_quality": "curated_needs_financial_verification"
+    },
+    "VSH": {
+      "thesis_label": "passive components / resistors / capacitors / diodes",
+      "primary_business": "Vishay Intertechnology 是全球被動元件與分立半導體供應商，產品包含電阻、電容、電感、二極體、MOSFET 與光電元件。它是美股被動元件/分立元件擴散的重要指標，不該漏出被動元件圖譜。",
+      "business_segments": [
+        "resistors",
+        "capacitors",
+        "inductors",
+        "diodes",
+        "MOSFETs",
+        "optoelectronics",
+        "passive components"
+      ],
+      "ai_chain_position": "AI server 電源、板端供電與高壓/高可靠元件需求會帶動被動元件與分立元件；VSH 可作為美股 passive/discrete breadth 指標。",
+      "non_ai_chain_position": "汽車、工業、消費電子與傳統庫存循環仍是主要波動源。",
+      "catalysts": [
+        "passive component price-up cycle",
+        "AI server board power content growth",
+        "Vishay/AVX/KEMET/Murata/Yageo global passive basket strength"
+      ],
+      "leader_indicators": [
+        "2327.TW 國巨",
+        "6981.T Murata",
+        "6762.T TDK",
+        "VPG Vishay Precision",
+        "6449.TWO 鈺邦",
+        "2472.TW 立隆電"
+      ],
+      "peer_symbols": [
+        "VPG",
+        "2327.TW",
+        "6981.T",
+        "6762.T",
+        "6449.TWO",
+        "2472.TW"
+      ],
+      "risks": [
+        "industrial/auto downturn can offset AI demand",
+        "若漲價只停留在亞洲供應鏈，VSH 的股價確認可能落後或失真",
+        "短線大漲後不再是 clean laggard"
+      ],
+      "source_quality": "curated_needs_financial_verification"
+    },
+    "VPG": {
+      "thesis_label": "precision sensors / resistive foil / measurement components",
+      "ai_chain_position": "AI infrastructure is a secondary driver through precision power, test and industrial sensing; VPG is better treated as precision measurement/passive-adjacent peer, not pure MLCC.",
+      "leader_indicators": [
+        "VSH Vishay Intertechnology",
+        "2327.TW 國巨",
+        "6981.T Murata"
+      ],
+      "risks": [
+        "precision sensor cycle can diverge from passive component cycle",
+        "small-cap liquidity and sharp post-earnings moves"
+      ],
+      "source_quality": "curated_needs_financial_verification"
+    },
+    "SITM": {
+      "thesis_label": "precision timing / MEMS oscillator / AI data-center timing",
+      "ai_chain_position": "AI data centers need low-jitter timing across networking, accelerators and high-speed interconnect; SiTime is a US precision-timing leader rather than a broad semiconductor peer.",
+      "leader_indicators": [
+        "MRVL Marvell",
+        "AVGO Broadcom",
+        "AMD",
+        "NVDA"
+      ],
+      "risks": [
+        "valuation sensitivity",
+        "timing content can be hard to isolate from broad semiconductor beta"
+      ],
+      "source_quality": "curated_needs_financial_verification"
+    },
+    "AAOI": {
+      "thesis_label": "optical transceiver / laser module / AI data-center optics",
+      "ai_chain_position": "AI cluster scale-out increases 800G/1.6T optical demand; AAOI is a high-beta optical transceiver/module name used as a leader signal for photonics diffusion.",
+      "leader_indicators": [
+        "COHR Coherent",
+        "LITE Lumentum",
+        "AXTI AXT",
+        "4979.TWO 華星光",
+        "3450.TW 聯鈞"
+      ],
+      "risks": [
+        "high beta and gap risk",
+        "customer concentration",
+        "price may already discount near-term optical excitement"
+      ],
+      "source_quality": "curated_needs_financial_verification"
+    },
+    "AXTI": {
+      "thesis_label": "InP/GaAs substrate / compound semiconductor materials",
+      "ai_chain_position": "InP/GaAs substrates sit upstream of lasers and photonic components; AXTI is a material chokepoint candidate for AI optical buildout.",
+      "leader_indicators": [
+        "COHR Coherent",
+        "LITE Lumentum",
+        "AAOI Applied Optoelectronics"
+      ],
+      "risks": [
+        "substrate demand can lag optical module orders",
+        "small-cap volatility and supply/customer concentration"
+      ],
+      "source_quality": "curated_needs_financial_verification"
+    },
+    "MSFT": {
+      "thesis_label": "enterprise AI platform / Copilot / Azure cloud",
+      "ai_chain_position": "MSFT is the software-side leader signal: Azure AI consumes hardware capex, while Copilot/GitHub/Dynamics test whether agentic AI becomes paid enterprise workflow software.",
+      "catalysts": ["Copilot paid-seat expansion", "Azure AI workload growth", "GitHub Copilot and enterprise agent adoption"],
+      "leader_indicators": ["MSFT Azure/Copilot metrics", "ORCL OCI AI cloud", "NOW ServiceNow", "SNOW Snowflake", "NVDA AI capex"],
+      "peer_symbols": ["ORCL", "NOW", "CRM", "SNOW", "GOOGL"],
+      "risks": ["mega-cap beta may lag high-growth SaaS", "AI capex can pressure margins", "regulatory overhang"],
+      "source_quality": "curated_needs_financial_verification"
+    },
+    "ORCL": {
+      "thesis_label": "AI cloud / database gravity / enterprise applications",
+      "ai_chain_position": "ORCL connects AI cloud capacity scarcity with enterprise database gravity; watch it as a bridge between infrastructure capex and software/data-platform monetization.",
+      "catalysts": ["OCI AI cloud backlog", "database/cloud migration", "large AI infrastructure contracts"],
+      "leader_indicators": ["MSFT", "GOOGL", "SNOW", "NVDA", "AVGO"],
+      "peer_symbols": ["MSFT", "GOOGL", "SNOW", "MDB", "CRM"],
+      "risks": ["capex-heavy AI cloud buildout", "cloud competition", "large deal timing can make numbers lumpy"],
+      "source_quality": "curated_needs_financial_verification"
+    },
+    "NOW": {
+      "thesis_label": "agentic enterprise workflow leader",
+      "ai_chain_position": "NOW is one of the cleanest public-market reads on AI agents moving from demos into actual enterprise workflow execution.",
+      "catalysts": ["Now Assist/AI Agent adoption", "workflow platform consolidation", "enterprise IT automation spend"],
+      "leader_indicators": ["MSFT Copilot", "CRM Agentforce", "PLTR AIP", "DDOG cloud workload trend"],
+      "peer_symbols": ["CRM", "MSFT", "TEAM", "PATH", "PLTR"],
+      "risks": ["premium valuation", "AI attach-rate proof required", "enterprise budget digestion"],
+      "source_quality": "curated_needs_financial_verification"
+    },
+    "CRM": {
+      "thesis_label": "CRM workflow / Agentforce / customer data cloud",
+      "ai_chain_position": "CRM is a customer-facing AI agent and enterprise workflow proxy; it works best when Agentforce/Data Cloud adoption is confirmed by billings and revenue acceleration.",
+      "catalysts": ["Agentforce adoption", "Data Cloud expansion", "margin discipline plus revenue reacceleration"],
+      "leader_indicators": ["NOW", "MSFT", "SNOW", "PLTR"],
+      "peer_symbols": ["NOW", "MSFT", "SNOW", "TEAM", "PATH"],
+      "risks": ["AI narrative may outrun customer adoption", "large CRM base can slow growth", "competition from Microsoft"],
+      "source_quality": "curated_needs_financial_verification"
+    },
+    "SNOW": {
+      "thesis_label": "AI data platform / governed data cloud",
+      "ai_chain_position": "SNOW is the laggard-style software read-through for agentic AI: models and agents need governed enterprise data before they can execute useful work.",
+      "catalysts": ["Cortex AI workload growth", "data cloud consumption stabilization", "enterprise AI data governance spend"],
+      "leader_indicators": ["MSFT", "ORCL", "MDB", "ESTC", "PLTR"],
+      "peer_symbols": ["MDB", "ESTC", "ORCL", "PLTR", "DDOG"],
+      "risks": ["consumption optimization", "Databricks/hyperscaler competition", "AI workloads may not offset core warehouse slowdown quickly"],
+      "source_quality": "curated_needs_financial_verification"
+    },
+    "PLTR": {
+      "thesis_label": "operational AI / AIP / ontology layer",
+      "ai_chain_position": "PLTR is the high-beta proof point that AI software can become an operating layer for defense and commercial workflows, not just a chat interface.",
+      "catalysts": ["AIP commercial growth", "government/defense AI demand", "ontology-driven operational deployments"],
+      "leader_indicators": ["NOW", "MSFT", "CRM", "defense AI spending"],
+      "peer_symbols": ["NOW", "CRM", "MSFT", "SNOW"],
+      "risks": ["very high valuation", "headline volatility", "commercial growth must remain exceptional"],
+      "source_quality": "curated_needs_financial_verification"
+    },
+    "DDOG": {
+      "thesis_label": "observability / DevOps / LLM monitoring",
+      "ai_chain_position": "DDOG is the reliability layer for cloud and AI applications; more agents, APIs, and microservices create more telemetry, security, and cost-control demand.",
+      "catalysts": ["cloud workload growth", "LLM observability adoption", "DevSecOps consolidation"],
+      "leader_indicators": ["MSFT Azure", "NET", "ESTC", "GTLB", "SNOW"],
+      "peer_symbols": ["ESTC", "GTLB", "NET", "TEAM"],
+      "risks": ["usage-based slowdown", "cloud cost optimization", "competitive bundling by hyperscalers"],
+      "source_quality": "curated_needs_financial_verification"
+    },
+    "NET": {
+      "thesis_label": "edge cloud / SASE / AI traffic gateway",
+      "ai_chain_position": "NET links cloud security with AI traffic/API growth; it can lead if the market rotates from hardware capex into edge software, SASE, and inference gateways.",
+      "catalysts": ["Cloudflare One enterprise adoption", "Workers/R2 developer growth", "AI Gateway and API security demand"],
+      "leader_indicators": ["ZS", "PANW", "CRWD", "DDOG", "MSFT"],
+      "peer_symbols": ["ZS", "PANW", "FTNT", "DDOG"],
+      "risks": ["valuation sensitivity", "SASE competition", "edge AI monetization still early"],
+      "source_quality": "curated_needs_financial_verification"
+    },
+    "CRWD": {
+      "thesis_label": "endpoint/XDR platform / security AI",
+      "ai_chain_position": "CRWD is the endpoint/XDR leader signal; if cyber software rotates, it should confirm with module expansion and relative strength versus PANW/ZS/NET.",
+      "catalysts": ["Falcon module expansion", "AI-driven SOC automation", "endpoint/XDR security budget recovery"],
+      "leader_indicators": ["PANW", "ZS", "NET", "OKTA", "HACK cyber ETF"],
+      "peer_symbols": ["PANW", "ZS", "NET", "FTNT", "OKTA"],
+      "risks": ["trust/execution after outages", "premium valuation", "security platform competition"],
+      "source_quality": "curated_needs_financial_verification"
+    },
+    "PANW": {
+      "thesis_label": "security platformization / CNAPP / SASE",
+      "ai_chain_position": "PANW is the broad cybersecurity platform read-through; it validates whether enterprises consolidate network, cloud, endpoint and SOC automation spend into fewer platforms.",
+      "catalysts": ["Prisma Cloud/SASE demand", "Cortex automation", "platformization billings recovery"],
+      "leader_indicators": ["CRWD", "ZS", "NET", "FTNT"],
+      "peer_symbols": ["CRWD", "ZS", "NET", "FTNT"],
+      "risks": ["billings transition volatility", "large-company growth deceleration", "platformization discounting"],
+      "source_quality": "curated_needs_financial_verification"
+    },
+    "ZS": {
+      "thesis_label": "zero trust / SASE pure play",
+      "ai_chain_position": "ZS is a pure SASE/zero-trust proxy; it should benefit when cloud apps, identity-aware access, and distributed enterprise security become the rotation focus.",
+      "catalysts": ["large zero-trust deployments", "data protection and private access growth", "cyber software breadth"],
+      "leader_indicators": ["NET", "PANW", "CRWD", "OKTA"],
+      "peer_symbols": ["NET", "PANW", "CRWD", "FTNT", "OKTA"],
+      "risks": ["large deal lumpiness", "competition from platform vendors", "high valuation"],
+      "source_quality": "curated_needs_financial_verification"
+    },
+    "MDB": {
+      "thesis_label": "operational database / vector search / AI app backend",
+      "ai_chain_position": "MDB is an AI app backend proxy: agentic applications need state, document data, search and vector retrieval, not only data warehouses.",
+      "catalysts": ["Atlas consumption recovery", "vector search adoption", "AI application backend workloads"],
+      "leader_indicators": ["SNOW", "ESTC", "MSFT", "ORCL"],
+      "peer_symbols": ["SNOW", "ESTC", "ORCL", "DDOG"],
+      "risks": ["database migration cycles are slow", "consumption volatility", "hyperscaler/database competition"],
+      "source_quality": "curated_needs_financial_verification"
+    },
+    "ESTC": {
+      "thesis_label": "search / vector retrieval / observability-security bridge",
+      "ai_chain_position": "ESTC sits at the overlap of AI search, RAG/vector retrieval, observability and security analytics; useful as a smaller software laggard signal after SNOW/DDOG/NET move.",
+      "catalysts": ["AI search/vector use cases", "observability recovery", "security analytics adoption"],
+      "leader_indicators": ["SNOW", "MDB", "DDOG", "NET"],
+      "peer_symbols": ["SNOW", "MDB", "DDOG", "GTLB"],
+      "risks": ["open-source/hyperscaler competition", "cloud consumption sensitivity", "AI search demand can be hard to isolate"],
+      "source_quality": "curated_needs_financial_verification"
+    },
+    "6214.TW": {
+      "thesis_label": "Taiwan system integration / enterprise cloud-AI implementation",
+      "ai_chain_position": "精誠是台股軟體/SI 核心節點；若美股 NOW/MSFT/SNOW/CRWD 帶出軟體輪動，台灣可能先看 SI、雲端與資安服務量價確認。",
+      "catalysts": ["企業 AI/雲端專案", "資安服務需求", "台股軟體族群補漲"],
+      "leader_indicators": ["NOW", "MSFT", "SNOW", "CRWD", "6689.TW 伊雲谷"],
+      "peer_symbols": ["6689.TW", "3029.TW", "6811.TWO", "6752.TWO"],
+      "risks": ["專案制收入波動", "不是純 SaaS", "題材需搭配成交量與月營收"],
+      "source_quality": "curated_needs_financial_verification"
+    },
+    "3029.TW": {
+      "thesis_label": "Taiwan cybersecurity/cloud distribution proxy",
+      "ai_chain_position": "零壹是台股資安/雲端通路代理節點；美股資安若轉強，它可作為台灣資安題材擴散觀察股。",
+      "catalysts": ["美股資安股轉強", "台灣資安政策/預算", "代理產品出貨與營收確認"],
+      "leader_indicators": ["CRWD", "PANW", "ZS", "NET", "6214.TW 精誠"],
+      "peer_symbols": ["6214.TW", "7765.TW", "8272.TWO", "6689.TW"],
+      "risks": ["通路毛利薄", "跟隨題材而非全球平台龍頭", "需量價與營收確認"],
+      "source_quality": "curated_needs_financial_verification"
+    },
+    "6689.TW": {
+      "thesis_label": "Taiwan cloud-AI implementation / AWS ecosystem proxy",
+      "ai_chain_position": "伊雲谷是台股雲端/AI 實施代理；若美股 cloud AI 與 data platform 輪動，台股可用它觀察雲端專案與企業 AI adoption 的擴散。",
+      "catalysts": ["雲端遷移/AI 專案", "AWS 生態需求", "台股軟體族群補漲"],
+      "leader_indicators": ["MSFT", "ORCL", "SNOW", "DDOG", "6214.TW 精誠"],
+      "peer_symbols": ["6214.TW", "6811.TWO", "6752.TWO", "3029.TW"],
+      "risks": ["雲端成本優化壓力", "專案與代管收入節奏", "流動性與題材輪動風險"],
+      "source_quality": "curated_needs_financial_verification"
+    }
+  }
+}

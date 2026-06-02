@@ -1,0 +1,1174 @@
+{
+  "built_at": "2026-05-23T12:42:56.618545+00:00",
+  "history_dir": "lagradar/data/history/yahoo_1d",
+  "lookbacks": [
+    5,
+    10,
+    20,
+    40
+  ],
+  "horizons": [
+    5,
+    10,
+    20,
+    40
+  ],
+  "leader_threshold_pct": 5.0,
+  "gap_threshold_pct": 5.0,
+  "turn_threshold_pct": -100.0,
+  "cost_bps": 15.0,
+  "round_trip_cost_pct": 0.3,
+  "include_event_members": false,
+  "summary_count": 192,
+  "event_count": 110454,
+  "availability": {
+    "0005.HK": {
+      "symbol": "0005.HK",
+      "status": "ok",
+      "row_count": 4933,
+      "first_date": "2006-05-22",
+      "last_date": "2026-05-22"
+    },
+    "000630.SZ": {
+      "symbol": "000630.SZ",
+      "status": "ok",
+      "row_count": 4864,
+      "first_date": "2006-05-22",
+      "last_date": "2026-05-22"
+    },
+    "000636.SZ": {
+      "symbol": "000636.SZ",
+      "status": "ok",
+      "row_count": 4864,
+      "first_date": "2006-05-22",
+      "last_date": "2026-05-22"
+    },
+    "000660.KS": {
+      "symbol": "000660.KS",
+      "status": "ok",
+      "row_count": 4938,
+      "first_date": "2006-05-22",
+      "last_date": "2026-05-22"
+    },
+    "000768.SZ": {
+      "symbol": "000768.SZ",
+      "status": "ok",
+      "row_count": 4864,
+      "first_date": "2006-05-22",
+      "last_date": "2026-05-22"
+    },
+    "000977.SZ": {
+      "symbol": "000977.SZ",
+      "status": "ok",
+      "row_count": 4864,
+      "first_date": "2006-05-22",
+      "last_date": "2026-05-22"
+    },
+    "002028.SZ": {
+      "symbol": "002028.SZ",
+      "status": "ok",
+      "row_count": 4864,
+      "first_date": "2006-05-22",
+      "last_date": "2026-05-22"
+    },
+    "002138.SZ": {
+      "symbol": "002138.SZ",
+      "status": "ok",
+      "row_count": 4603,
+      "first_date": "2007-06-13",
+      "last_date": "2026-05-22"
+    },
+    "002281.SZ": {
+      "symbol": "002281.SZ",
+      "status": "ok",
+      "row_count": 4064,
+      "first_date": "2009-08-21",
+      "last_date": "2026-05-22"
+    },
+    "002463.SZ": {
+      "symbol": "002463.SZ",
+      "status": "ok",
+      "row_count": 3822,
+      "first_date": "2010-08-18",
+      "last_date": "2026-05-22"
+    },
+    "002916.SZ": {
+      "symbol": "002916.SZ",
+      "status": "ok",
+      "row_count": 2043,
+      "first_date": "2017-12-13",
+      "last_date": "2026-05-22"
+    },
+    "005930.KS": {
+      "symbol": "005930.KS",
+      "status": "ok",
+      "row_count": 4938,
+      "first_date": "2006-05-22",
+      "last_date": "2026-05-22"
+    },
+    "012450.KS": {
+      "symbol": "012450.KS",
+      "status": "ok",
+      "row_count": 4938,
+      "first_date": "2006-05-22",
+      "last_date": "2026-05-22"
+    },
+    "0386.HK": {
+      "symbol": "0386.HK",
+      "status": "ok",
+      "row_count": 4933,
+      "first_date": "2006-05-22",
+      "last_date": "2026-05-22"
+    },
+    "047810.KS": {
+      "symbol": "047810.KS",
+      "status": "ok",
+      "row_count": 3658,
+      "first_date": "2011-06-30",
+      "last_date": "2026-05-22"
+    },
+    "068270.KS": {
+      "symbol": "068270.KS",
+      "status": "ok",
+      "row_count": 4938,
+      "first_date": "2006-05-22",
+      "last_date": "2026-05-22"
+    },
+    "0857.HK": {
+      "symbol": "0857.HK",
+      "status": "ok",
+      "row_count": 4933,
+      "first_date": "2006-05-22",
+      "last_date": "2026-05-22"
+    },
+    "0883.HK": {
+      "symbol": "0883.HK",
+      "status": "ok",
+      "row_count": 4933,
+      "first_date": "2006-05-22",
+      "last_date": "2026-05-22"
+    },
+    "0992.HK": {
+      "symbol": "0992.HK",
+      "status": "ok",
+      "row_count": 4933,
+      "first_date": "2006-05-22",
+      "last_date": "2026-05-22"
+    },
+    "1299.HK": {
+      "symbol": "1299.HK",
+      "status": "ok",
+      "row_count": 3832,
+      "first_date": "2010-10-29",
+      "last_date": "2026-05-22"
+    },
+    "1301.TW": {
+      "symbol": "1301.TW",
+      "status": "ok",
+      "row_count": 4904,
+      "first_date": "2006-05-22",
+      "last_date": "2026-05-22"
+    },
+    "1326.TW": {
+      "symbol": "1326.TW",
+      "status": "ok",
+      "row_count": 4904,
+      "first_date": "2006-05-22",
+      "last_date": "2026-05-22"
+    },
+    "1503.TW": {
+      "symbol": "1503.TW",
+      "status": "ok",
+      "row_count": 4904,
+      "first_date": "2006-05-22",
+      "last_date": "2026-05-22"
+    },
+    "1513.TW": {
+      "symbol": "1513.TW",
+      "status": "ok",
+      "row_count": 4904,
+      "first_date": "2006-05-22",
+      "last_date": "2026-05-22"
+    },
+    "1514.TW": {
+      "symbol": "1514.TW",
+      "status": "ok",
+      "row_count": 4904,
+      "first_date": "2006-05-22",
+      "last_date": "2026-05-22"
+    },
+    "1605.T": {
+      "symbol": "1605.T",
+      "status": "ok",
+      "row_count": 4919,
+      "first_date": "2006-05-22",
+      "last_date": "2026-05-22"
+    },
+    "1605.TW": {
+      "symbol": "1605.TW",
+      "status": "ok",
+      "row_count": 4904,
+      "first_date": "2006-05-22",
+      "last_date": "2026-05-22"
+    },
+    "1609.TW": {
+      "symbol": "1609.TW",
+      "status": "ok",
+      "row_count": 4904,
+      "first_date": "2006-05-22",
+      "last_date": "2026-05-22"
+    },
+    "1795.TW": {
+      "symbol": "1795.TW",
+      "status": "ok",
+      "row_count": 4510,
+      "first_date": "2007-12-21",
+      "last_date": "2026-05-22"
+    },
+    "1919.HK": {
+      "symbol": "1919.HK",
+      "status": "ok",
+      "row_count": 4933,
+      "first_date": "2006-05-22",
+      "last_date": "2026-05-22"
+    },
+    "2002.TW": {
+      "symbol": "2002.TW",
+      "status": "ok",
+      "row_count": 4904,
+      "first_date": "2006-05-22",
+      "last_date": "2026-05-22"
+    },
+    "2014.TW": {
+      "symbol": "2014.TW",
+      "status": "ok",
+      "row_count": 4904,
+      "first_date": "2006-05-22",
+      "last_date": "2026-05-22"
+    },
+    "207940.KS": {
+      "symbol": "207940.KS",
+      "status": "ok",
+      "row_count": 2331,
+      "first_date": "2016-11-11",
+      "last_date": "2026-05-22"
+    },
+    "2208.TW": {
+      "symbol": "2208.TW",
+      "status": "ok",
+      "row_count": 4260,
+      "first_date": "2008-12-22",
+      "last_date": "2026-05-22"
+    },
+    "2269.HK": {
+      "symbol": "2269.HK",
+      "status": "ok",
+      "row_count": 2202,
+      "first_date": "2017-06-13",
+      "last_date": "2026-05-22"
+    },
+    "2308.TW": {
+      "symbol": "2308.TW",
+      "status": "ok",
+      "row_count": 4904,
+      "first_date": "2006-05-22",
+      "last_date": "2026-05-22"
+    },
+    "2313.TW": {
+      "symbol": "2313.TW",
+      "status": "ok",
+      "row_count": 4904,
+      "first_date": "2006-05-22",
+      "last_date": "2026-05-22"
+    },
+    "2327.TW": {
+      "symbol": "2327.TW",
+      "status": "ok",
+      "row_count": 4904,
+      "first_date": "2006-05-22",
+      "last_date": "2026-05-22"
+    },
+    "2337.TW": {
+      "symbol": "2337.TW",
+      "status": "ok",
+      "row_count": 4904,
+      "first_date": "2006-05-22",
+      "last_date": "2026-05-22"
+    },
+    "2344.TW": {
+      "symbol": "2344.TW",
+      "status": "ok",
+      "row_count": 4904,
+      "first_date": "2006-05-22",
+      "last_date": "2026-05-22"
+    },
+    "2356.TW": {
+      "symbol": "2356.TW",
+      "status": "ok",
+      "row_count": 4904,
+      "first_date": "2006-05-22",
+      "last_date": "2026-05-22"
+    },
+    "2359.HK": {
+      "symbol": "2359.HK",
+      "status": "ok",
+      "row_count": 1827,
+      "first_date": "2018-12-13",
+      "last_date": "2026-05-22"
+    },
+    "2368.TW": {
+      "symbol": "2368.TW",
+      "status": "ok",
+      "row_count": 4904,
+      "first_date": "2006-05-22",
+      "last_date": "2026-05-22"
+    },
+    "2375.TW": {
+      "symbol": "2375.TW",
+      "status": "ok",
+      "row_count": 4904,
+      "first_date": "2006-05-22",
+      "last_date": "2026-05-22"
+    },
+    "2376.TW": {
+      "symbol": "2376.TW",
+      "status": "ok",
+      "row_count": 4904,
+      "first_date": "2006-05-22",
+      "last_date": "2026-05-22"
+    },
+    "2383.TW": {
+      "symbol": "2383.TW",
+      "status": "ok",
+      "row_count": 4904,
+      "first_date": "2006-05-22",
+      "last_date": "2026-05-22"
+    },
+    "2408.TW": {
+      "symbol": "2408.TW",
+      "status": "ok",
+      "row_count": 4904,
+      "first_date": "2006-05-22",
+      "last_date": "2026-05-22"
+    },
+    "2421.TW": {
+      "symbol": "2421.TW",
+      "status": "ok",
+      "row_count": 4904,
+      "first_date": "2006-05-22",
+      "last_date": "2026-05-22"
+    },
+    "2478.TW": {
+      "symbol": "2478.TW",
+      "status": "ok",
+      "row_count": 4904,
+      "first_date": "2006-05-22",
+      "last_date": "2026-05-22"
+    },
+    "2492.TW": {
+      "symbol": "2492.TW",
+      "status": "ok",
+      "row_count": 4904,
+      "first_date": "2006-05-22",
+      "last_date": "2026-05-22"
+    },
+    "2603.TW": {
+      "symbol": "2603.TW",
+      "status": "ok",
+      "row_count": 4904,
+      "first_date": "2006-05-22",
+      "last_date": "2026-05-22"
+    },
+    "2609.TW": {
+      "symbol": "2609.TW",
+      "status": "ok",
+      "row_count": 4904,
+      "first_date": "2006-05-22",
+      "last_date": "2026-05-22"
+    },
+    "2615.TW": {
+      "symbol": "2615.TW",
+      "status": "ok",
+      "row_count": 4904,
+      "first_date": "2006-05-22",
+      "last_date": "2026-05-22"
+    },
+    "2617.TW": {
+      "symbol": "2617.TW",
+      "status": "ok",
+      "row_count": 4904,
+      "first_date": "2006-05-22",
+      "last_date": "2026-05-22"
+    },
+    "2634.TW": {
+      "symbol": "2634.TW",
+      "status": "ok",
+      "row_count": 2816,
+      "first_date": "2014-08-25",
+      "last_date": "2026-05-22"
+    },
+    "2881.TW": {
+      "symbol": "2881.TW",
+      "status": "ok",
+      "row_count": 4904,
+      "first_date": "2006-05-22",
+      "last_date": "2026-05-22"
+    },
+    "2882.TW": {
+      "symbol": "2882.TW",
+      "status": "ok",
+      "row_count": 4904,
+      "first_date": "2006-05-22",
+      "last_date": "2026-05-22"
+    },
+    "2886.TW": {
+      "symbol": "2886.TW",
+      "status": "ok",
+      "row_count": 4904,
+      "first_date": "2006-05-22",
+      "last_date": "2026-05-22"
+    },
+    "2891.TW": {
+      "symbol": "2891.TW",
+      "status": "ok",
+      "row_count": 4904,
+      "first_date": "2006-05-22",
+      "last_date": "2026-05-22"
+    },
+    "2899.HK": {
+      "symbol": "2899.HK",
+      "status": "ok",
+      "row_count": 4933,
+      "first_date": "2006-05-22",
+      "last_date": "2026-05-22"
+    },
+    "300308.SZ": {
+      "symbol": "300308.SZ",
+      "status": "ok",
+      "row_count": 3427,
+      "first_date": "2012-04-10",
+      "last_date": "2026-05-22"
+    },
+    "300408.SZ": {
+      "symbol": "300408.SZ",
+      "status": "ok",
+      "row_count": 2783,
+      "first_date": "2014-12-03",
+      "last_date": "2026-05-22"
+    },
+    "300502.SZ": {
+      "symbol": "300502.SZ",
+      "status": "ok",
+      "row_count": 2480,
+      "first_date": "2016-03-03",
+      "last_date": "2026-05-22"
+    },
+    "300548.SZ": {
+      "symbol": "300548.SZ",
+      "status": "ok",
+      "row_count": 2332,
+      "first_date": "2016-10-12",
+      "last_date": "2026-05-22"
+    },
+    "300759.SZ": {
+      "symbol": "300759.SZ",
+      "status": "ok",
+      "row_count": 1769,
+      "first_date": "2019-01-28",
+      "last_date": "2026-05-22"
+    },
+    "301308.SZ": {
+      "symbol": "301308.SZ",
+      "status": "ok",
+      "row_count": 917,
+      "first_date": "2022-08-05",
+      "last_date": "2026-05-22"
+    },
+    "3017.TW": {
+      "symbol": "3017.TW",
+      "status": "ok",
+      "row_count": 4904,
+      "first_date": "2006-05-22",
+      "last_date": "2026-05-22"
+    },
+    "3026.TW": {
+      "symbol": "3026.TW",
+      "status": "ok",
+      "row_count": 4904,
+      "first_date": "2006-05-22",
+      "last_date": "2026-05-22"
+    },
+    "3037.TW": {
+      "symbol": "3037.TW",
+      "status": "ok",
+      "row_count": 4904,
+      "first_date": "2006-05-22",
+      "last_date": "2026-05-22"
+    },
+    "3081.TWO": {
+      "symbol": "3081.TWO",
+      "status": "ok",
+      "row_count": 2885,
+      "first_date": "2014-07-15",
+      "last_date": "2026-05-22"
+    },
+    "3189.TW": {
+      "symbol": "3189.TW",
+      "status": "ok",
+      "row_count": 4904,
+      "first_date": "2006-05-22",
+      "last_date": "2026-05-22"
+    },
+    "3231.TW": {
+      "symbol": "3231.TW",
+      "status": "ok",
+      "row_count": 4904,
+      "first_date": "2006-05-22",
+      "last_date": "2026-05-22"
+    },
+    "3260.TWO": {
+      "symbol": "3260.TWO",
+      "status": "ok",
+      "row_count": 4503,
+      "first_date": "2007-12-31",
+      "last_date": "2026-05-22"
+    },
+    "3324.TWO": {
+      "symbol": "3324.TWO",
+      "status": "ok",
+      "row_count": 4503,
+      "first_date": "2007-12-31",
+      "last_date": "2026-05-22"
+    },
+    "3363.TWO": {
+      "symbol": "3363.TWO",
+      "status": "ok",
+      "row_count": 4504,
+      "first_date": "2007-12-31",
+      "last_date": "2026-05-22"
+    },
+    "4062.T": {
+      "symbol": "4062.T",
+      "status": "ok",
+      "row_count": 4919,
+      "first_date": "2006-05-22",
+      "last_date": "2026-05-22"
+    },
+    "4063.T": {
+      "symbol": "4063.T",
+      "status": "ok",
+      "row_count": 4919,
+      "first_date": "2006-05-22",
+      "last_date": "2026-05-22"
+    },
+    "4502.T": {
+      "symbol": "4502.T",
+      "status": "ok",
+      "row_count": 4919,
+      "first_date": "2006-05-22",
+      "last_date": "2026-05-22"
+    },
+    "4519.T": {
+      "symbol": "4519.T",
+      "status": "ok",
+      "row_count": 4919,
+      "first_date": "2006-05-22",
+      "last_date": "2026-05-22"
+    },
+    "4568.T": {
+      "symbol": "4568.T",
+      "status": "ok",
+      "row_count": 4919,
+      "first_date": "2006-05-22",
+      "last_date": "2026-05-22"
+    },
+    "4908.TWO": {
+      "symbol": "4908.TWO",
+      "status": "ok",
+      "row_count": 4503,
+      "first_date": "2007-12-31",
+      "last_date": "2026-05-22"
+    },
+    "4979.TWO": {
+      "symbol": "4979.TWO",
+      "status": "ok",
+      "row_count": 3521,
+      "first_date": "2011-12-12",
+      "last_date": "2026-05-22"
+    },
+    "5020.T": {
+      "symbol": "5020.T",
+      "status": "ok",
+      "row_count": 4919,
+      "first_date": "2006-05-22",
+      "last_date": "2026-05-22"
+    },
+    "5711.T": {
+      "symbol": "5711.T",
+      "status": "ok",
+      "row_count": 4919,
+      "first_date": "2006-05-22",
+      "last_date": "2026-05-22"
+    },
+    "5713.T": {
+      "symbol": "5713.T",
+      "status": "ok",
+      "row_count": 4919,
+      "first_date": "2006-05-22",
+      "last_date": "2026-05-22"
+    },
+    "5801.T": {
+      "symbol": "5801.T",
+      "status": "ok",
+      "row_count": 4919,
+      "first_date": "2006-05-22",
+      "last_date": "2026-05-22"
+    },
+    "5803.T": {
+      "symbol": "5803.T",
+      "status": "ok",
+      "row_count": 4919,
+      "first_date": "2006-05-22",
+      "last_date": "2026-05-22"
+    },
+    "600026.SS": {
+      "symbol": "600026.SS",
+      "status": "ok",
+      "row_count": 4864,
+      "first_date": "2006-05-22",
+      "last_date": "2026-05-22"
+    },
+    "600036.SS": {
+      "symbol": "600036.SS",
+      "status": "ok",
+      "row_count": 4864,
+      "first_date": "2006-05-22",
+      "last_date": "2026-05-22"
+    },
+    "600089.SS": {
+      "symbol": "600089.SS",
+      "status": "ok",
+      "row_count": 4864,
+      "first_date": "2006-05-22",
+      "last_date": "2026-05-22"
+    },
+    "600150.SS": {
+      "symbol": "600150.SS",
+      "status": "ok",
+      "row_count": 4864,
+      "first_date": "2006-05-22",
+      "last_date": "2026-05-22"
+    },
+    "600183.SS": {
+      "symbol": "600183.SS",
+      "status": "ok",
+      "row_count": 4864,
+      "first_date": "2006-05-22",
+      "last_date": "2026-05-22"
+    },
+    "600406.SS": {
+      "symbol": "600406.SS",
+      "status": "ok",
+      "row_count": 4864,
+      "first_date": "2006-05-22",
+      "last_date": "2026-05-22"
+    },
+    "600760.SS": {
+      "symbol": "600760.SS",
+      "status": "ok",
+      "row_count": 4864,
+      "first_date": "2006-05-22",
+      "last_date": "2026-05-22"
+    },
+    "600938.SS": {
+      "symbol": "600938.SS",
+      "status": "ok",
+      "row_count": 989,
+      "first_date": "2022-04-21",
+      "last_date": "2026-05-22"
+    },
+    "601138.SS": {
+      "symbol": "601138.SS",
+      "status": "ok",
+      "row_count": 1923,
+      "first_date": "2018-06-13",
+      "last_date": "2026-05-22"
+    },
+    "601179.SS": {
+      "symbol": "601179.SS",
+      "status": "ok",
+      "row_count": 3957,
+      "first_date": "2010-01-28",
+      "last_date": "2026-05-22"
+    },
+    "601318.SS": {
+      "symbol": "601318.SS",
+      "status": "ok",
+      "row_count": 4674,
+      "first_date": "2007-03-01",
+      "last_date": "2026-05-22"
+    },
+    "601857.SS": {
+      "symbol": "601857.SS",
+      "status": "ok",
+      "row_count": 4505,
+      "first_date": "2007-11-05",
+      "last_date": "2026-05-22"
+    },
+    "601899.SS": {
+      "symbol": "601899.SS",
+      "status": "ok",
+      "row_count": 4389,
+      "first_date": "2008-04-25",
+      "last_date": "2026-05-22"
+    },
+    "601919.SS": {
+      "symbol": "601919.SS",
+      "status": "ok",
+      "row_count": 4594,
+      "first_date": "2007-06-26",
+      "last_date": "2026-05-22"
+    },
+    "603228.SS": {
+      "symbol": "603228.SS",
+      "status": "ok",
+      "row_count": 2270,
+      "first_date": "2017-01-09",
+      "last_date": "2026-05-22"
+    },
+    "603259.SS": {
+      "symbol": "603259.SS",
+      "status": "ok",
+      "row_count": 1949,
+      "first_date": "2018-05-08",
+      "last_date": "2026-05-22"
+    },
+    "603986.SS": {
+      "symbol": "603986.SS",
+      "status": "ok",
+      "row_count": 2364,
+      "first_date": "2016-08-18",
+      "last_date": "2026-05-22"
+    },
+    "603993.SS": {
+      "symbol": "603993.SS",
+      "status": "ok",
+      "row_count": 3305,
+      "first_date": "2012-10-09",
+      "last_date": "2026-05-22"
+    },
+    "6274.TWO": {
+      "symbol": "6274.TWO",
+      "status": "ok",
+      "row_count": 4503,
+      "first_date": "2007-12-31",
+      "last_date": "2026-05-22"
+    },
+    "6442.TW": {
+      "symbol": "6442.TW",
+      "status": "ok",
+      "row_count": 2969,
+      "first_date": "2014-03-17",
+      "last_date": "2026-05-22"
+    },
+    "6446.TW": {
+      "symbol": "6446.TW",
+      "status": "ok",
+      "row_count": 2973,
+      "first_date": "2014-03-11",
+      "last_date": "2026-05-22"
+    },
+    "6472.TW": {
+      "symbol": "6472.TW",
+      "status": "ok",
+      "row_count": 2639,
+      "first_date": "2014-10-03",
+      "last_date": "2026-05-22"
+    },
+    "6501.T": {
+      "symbol": "6501.T",
+      "status": "ok",
+      "row_count": 4919,
+      "first_date": "2006-05-22",
+      "last_date": "2026-05-22"
+    },
+    "6503.T": {
+      "symbol": "6503.T",
+      "status": "ok",
+      "row_count": 4919,
+      "first_date": "2006-05-22",
+      "last_date": "2026-05-22"
+    },
+    "6504.T": {
+      "symbol": "6504.T",
+      "status": "ok",
+      "row_count": 4919,
+      "first_date": "2006-05-22",
+      "last_date": "2026-05-22"
+    },
+    "6505.TW": {
+      "symbol": "6505.TW",
+      "status": "ok",
+      "row_count": 4904,
+      "first_date": "2006-05-22",
+      "last_date": "2026-05-22"
+    },
+    "6762.T": {
+      "symbol": "6762.T",
+      "status": "ok",
+      "row_count": 4919,
+      "first_date": "2006-05-22",
+      "last_date": "2026-05-22"
+    },
+    "688008.SS": {
+      "symbol": "688008.SS",
+      "status": "ok",
+      "row_count": 1656,
+      "first_date": "2019-07-22",
+      "last_date": "2026-05-22"
+    },
+    "688525.SS": {
+      "symbol": "688525.SS",
+      "status": "ok",
+      "row_count": 818,
+      "first_date": "2022-12-30",
+      "last_date": "2026-05-22"
+    },
+    "7011.T": {
+      "symbol": "7011.T",
+      "status": "ok",
+      "row_count": 4919,
+      "first_date": "2006-05-22",
+      "last_date": "2026-05-22"
+    },
+    "7012.T": {
+      "symbol": "7012.T",
+      "status": "ok",
+      "row_count": 4919,
+      "first_date": "2006-05-22",
+      "last_date": "2026-05-22"
+    },
+    "7013.T": {
+      "symbol": "7013.T",
+      "status": "ok",
+      "row_count": 4919,
+      "first_date": "2006-05-22",
+      "last_date": "2026-05-22"
+    },
+    "8046.TW": {
+      "symbol": "8046.TW",
+      "status": "ok",
+      "row_count": 4904,
+      "first_date": "2006-05-22",
+      "last_date": "2026-05-22"
+    },
+    "8299.TWO": {
+      "symbol": "8299.TWO",
+      "status": "ok",
+      "row_count": 4503,
+      "first_date": "2007-12-31",
+      "last_date": "2026-05-22"
+    },
+    "8306.T": {
+      "symbol": "8306.T",
+      "status": "ok",
+      "row_count": 4919,
+      "first_date": "2006-05-22",
+      "last_date": "2026-05-22"
+    },
+    "8316.T": {
+      "symbol": "8316.T",
+      "status": "ok",
+      "row_count": 4919,
+      "first_date": "2006-05-22",
+      "last_date": "2026-05-22"
+    },
+    "8411.T": {
+      "symbol": "8411.T",
+      "status": "ok",
+      "row_count": 4919,
+      "first_date": "2006-05-22",
+      "last_date": "2026-05-22"
+    },
+    "9101.T": {
+      "symbol": "9101.T",
+      "status": "ok",
+      "row_count": 4919,
+      "first_date": "2006-05-22",
+      "last_date": "2026-05-22"
+    },
+    "9104.T": {
+      "symbol": "9104.T",
+      "status": "ok",
+      "row_count": 4919,
+      "first_date": "2006-05-22",
+      "last_date": "2026-05-22"
+    },
+    "9107.T": {
+      "symbol": "9107.T",
+      "status": "ok",
+      "row_count": 4919,
+      "first_date": "2006-05-22",
+      "last_date": "2026-05-22"
+    },
+    "AAOI": {
+      "symbol": "AAOI",
+      "status": "ok",
+      "row_count": 3183,
+      "first_date": "2013-09-26",
+      "last_date": "2026-05-22"
+    },
+    "BAC": {
+      "symbol": "BAC",
+      "status": "ok",
+      "row_count": 5032,
+      "first_date": "2006-05-23",
+      "last_date": "2026-05-22"
+    },
+    "COHR": {
+      "symbol": "COHR",
+      "status": "ok",
+      "row_count": 5032,
+      "first_date": "2006-05-23",
+      "last_date": "2026-05-22"
+    },
+    "COPX": {
+      "symbol": "COPX",
+      "status": "ok",
+      "row_count": 4049,
+      "first_date": "2010-04-20",
+      "last_date": "2026-05-22"
+    },
+    "CVX": {
+      "symbol": "CVX",
+      "status": "ok",
+      "row_count": 5032,
+      "first_date": "2006-05-23",
+      "last_date": "2026-05-22"
+    },
+    "DAC": {
+      "symbol": "DAC",
+      "status": "ok",
+      "row_count": 4931,
+      "first_date": "2006-10-16",
+      "last_date": "2026-05-22"
+    },
+    "DELL": {
+      "symbol": "DELL",
+      "status": "ok",
+      "row_count": 2455,
+      "first_date": "2016-08-17",
+      "last_date": "2026-05-22"
+    },
+    "ETN": {
+      "symbol": "ETN",
+      "status": "ok",
+      "row_count": 5032,
+      "first_date": "2006-05-23",
+      "last_date": "2026-05-22"
+    },
+    "FCX": {
+      "symbol": "FCX",
+      "status": "ok",
+      "row_count": 5032,
+      "first_date": "2006-05-23",
+      "last_date": "2026-05-22"
+    },
+    "GD": {
+      "symbol": "GD",
+      "status": "ok",
+      "row_count": 5032,
+      "first_date": "2006-05-23",
+      "last_date": "2026-05-22"
+    },
+    "GEV": {
+      "symbol": "GEV",
+      "status": "ok",
+      "row_count": 541,
+      "first_date": "2024-03-27",
+      "last_date": "2026-05-22"
+    },
+    "GLW": {
+      "symbol": "GLW",
+      "status": "ok",
+      "row_count": 5032,
+      "first_date": "2006-05-23",
+      "last_date": "2026-05-22"
+    },
+    "HUBB": {
+      "symbol": "HUBB",
+      "status": "ok",
+      "row_count": 5032,
+      "first_date": "2006-05-23",
+      "last_date": "2026-05-22"
+    },
+    "IBB": {
+      "symbol": "IBB",
+      "status": "ok",
+      "row_count": 5032,
+      "first_date": "2006-05-23",
+      "last_date": "2026-05-22"
+    },
+    "JPM": {
+      "symbol": "JPM",
+      "status": "ok",
+      "row_count": 5032,
+      "first_date": "2006-05-23",
+      "last_date": "2026-05-22"
+    },
+    "KRE": {
+      "symbol": "KRE",
+      "status": "ok",
+      "row_count": 5011,
+      "first_date": "2006-06-22",
+      "last_date": "2026-05-22"
+    },
+    "LITE": {
+      "symbol": "LITE",
+      "status": "ok",
+      "row_count": 2725,
+      "first_date": "2015-07-23",
+      "last_date": "2026-05-22"
+    },
+    "LLY": {
+      "symbol": "LLY",
+      "status": "ok",
+      "row_count": 5032,
+      "first_date": "2006-05-23",
+      "last_date": "2026-05-22"
+    },
+    "LMT": {
+      "symbol": "LMT",
+      "status": "ok",
+      "row_count": 5032,
+      "first_date": "2006-05-23",
+      "last_date": "2026-05-22"
+    },
+    "LNG": {
+      "symbol": "LNG",
+      "status": "ok",
+      "row_count": 5032,
+      "first_date": "2006-05-23",
+      "last_date": "2026-05-22"
+    },
+    "MRAAY": {
+      "symbol": "MRAAY",
+      "status": "ok",
+      "row_count": 4111,
+      "first_date": "2010-01-20",
+      "last_date": "2026-05-22"
+    },
+    "MU": {
+      "symbol": "MU",
+      "status": "ok",
+      "row_count": 5032,
+      "first_date": "2006-05-23",
+      "last_date": "2026-05-22"
+    },
+    "NOC": {
+      "symbol": "NOC",
+      "status": "ok",
+      "row_count": 5032,
+      "first_date": "2006-05-23",
+      "last_date": "2026-05-22"
+    },
+    "NVDA": {
+      "symbol": "NVDA",
+      "status": "ok",
+      "row_count": 5032,
+      "first_date": "2006-05-23",
+      "last_date": "2026-05-22"
+    },
+    "NVO": {
+      "symbol": "NVO",
+      "status": "ok",
+      "row_count": 5032,
+      "first_date": "2006-05-23",
+      "last_date": "2026-05-22"
+    },
+    "RTX": {
+      "symbol": "RTX",
+      "status": "ok",
+      "row_count": 5032,
+      "first_date": "2006-05-23",
+      "last_date": "2026-05-22"
+    },
+    "SBLK": {
+      "symbol": "SBLK",
+      "status": "ok",
+      "row_count": 4647,
+      "first_date": "2007-12-03",
+      "last_date": "2026-05-22"
+    },
+    "SCCO": {
+      "symbol": "SCCO",
+      "status": "ok",
+      "row_count": 5032,
+      "first_date": "2006-05-23",
+      "last_date": "2026-05-22"
+    },
+    "SMCI": {
+      "symbol": "SMCI",
+      "status": "ok",
+      "row_count": 4819,
+      "first_date": "2007-03-29",
+      "last_date": "2026-05-22"
+    },
+    "STNG": {
+      "symbol": "STNG",
+      "status": "ok",
+      "row_count": 4062,
+      "first_date": "2010-03-31",
+      "last_date": "2026-05-22"
+    },
+    "STX": {
+      "symbol": "STX",
+      "status": "ok",
+      "row_count": 5032,
+      "first_date": "2006-05-23",
+      "last_date": "2026-05-22"
+    },
+    "TTDKY": {
+      "symbol": "TTDKY",
+      "status": "ok",
+      "row_count": 5032,
+      "first_date": "2006-05-23",
+      "last_date": "2026-05-22"
+    },
+    "VRT": {
+      "symbol": "VRT",
+      "status": "ok",
+      "row_count": 1962,
+      "first_date": "2018-08-02",
+      "last_date": "2026-05-22"
+    },
+    "WDC": {
+      "symbol": "WDC",
+      "status": "ok",
+      "row_count": 5032,
+      "first_date": "2006-05-23",
+      "last_date": "2026-05-22"
+    },
+    "XLE": {
+      "symbol": "XLE",
+      "status": "ok",
+      "row_count": 5032,
+      "first_date": "2006-05-23",
+      "last_date": "2026-05-22"
+    },
+    "XOM": {
+      "symbol": "XOM",
+      "status": "ok",
+      "row_count": 5032,
+      "first_date": "2006-05-23",
+      "last_date": "2026-05-22"
+    },
+    "ZIM": {
+      "symbol": "ZIM",
+      "status": "ok",
+      "row_count": 1336,
+      "first_date": "2021-01-28",
+      "last_date": "2026-05-22"
+    }
+  }
+}

@@ -1,0 +1,1828 @@
+{
+  "schema_version": "thememiner_company_profiles_v1",
+  "updated_at": "2026-05-24",
+  "description": "Company-level product, role, and evidence metadata. This layer keeps the graph from treating every stock in a concept as interchangeable.",
+  "profiles": [
+    {
+      "symbol": "NVDA",
+      "name": "Nvidia",
+      "market": "US",
+      "region": "US",
+      "sector": "AI accelerator / full-stack AI infrastructure",
+      "primary_business": "GPU accelerators, AI networking, rack-scale systems, software stack, and reference architectures for AI factories.",
+      "specializations": ["GB200/GB300 rack systems", "Vera Rubin platform", "NVLink / Spectrum-X / silicon photonics", "800 VDC AI data-center reference architecture"],
+      "platforms": ["Blackwell", "GB300", "Vera Rubin", "800 VDC AI racks", "AI factory"],
+      "constraints": ["advanced-node wafer capacity", "CoWoS / advanced packaging capacity", "HBM supply", "optical and power-delivery bottlenecks"],
+      "risk_flags": ["leader valuation already prices high expectations", "export controls", "CSP custom ASIC substitution risk"],
+      "concept_exposures": [
+        {"concept_id": "ai_capex", "role": "global_leader", "weight": 0.95, "path": "AI model revenue and inference demand -> GPU/rack capex persistence -> global hardware supply-chain validation"},
+        {"concept_id": "gpu_accelerator", "role": "global_leader", "weight": 1.0, "path": "AI model monetization -> GPU/rack demand -> accelerator leader signal for global supply chain"},
+        {"concept_id": "gb300", "role": "global_leader", "weight": 0.95, "path": "GB300/Rubin rack ramp -> ODM, thermal, power, passive-component content uplift"},
+        {"concept_id": "vera_rubin", "role": "global_leader", "weight": 0.95, "path": "Vera Rubin platform -> higher rack power and board-level component specs"},
+        {"concept_id": "hvdc_power_semiconductor", "role": "architecture_driver", "weight": 0.85, "path": "NVIDIA 800 VDC reference architecture -> higher-voltage power conversion and power semiconductor demand"},
+        {"concept_id": "laser_capacity", "role": "architecture_driver", "weight": 0.75, "path": "AI cluster scale-up/networking -> optical link and laser capacity constraint"}
+      ],
+      "source_refs": [
+        {"title": "NVIDIA Vera Rubin Opens Agentic AI Frontier", "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Vera-Rubin-Opens-Agentic-AI-Frontier/default.aspx"},
+        {"title": "NVIDIA 800 VDC Architecture", "url": "https://www.nvidia.com/en-us/data-center/technologies/800-vdc-architecture/"},
+        {"title": "Gooaye EP664 local ASR", "url": "/Users/thtang/Documents/alpha-persona-lab/gooaye/data/transcripts/EP664.md"}
+      ]
+    },
+    {
+      "symbol": "GOOGL",
+      "name": "Alphabet",
+      "market": "US",
+      "region": "US",
+      "sector": "Cloud / custom AI ASIC",
+      "primary_business": "Google Cloud and internal AI infrastructure, with TPU as the most mature hyperscaler-owned AI ASIC platform.",
+      "specializations": ["Google TPU", "AI Hypercomputer", "Google Cloud TPU capacity", "custom AI silicon"],
+      "platforms": ["TPU Cloud", "Gemini", "AI Hypercomputer"],
+      "constraints": ["TPU rack supply chain", "HBM and advanced packaging", "data-center power"],
+      "risk_flags": ["TPU economics are indirect for public shareholders", "custom ASIC mix can pressure merchant GPU multiples"],
+      "concept_exposures": [
+        {"concept_id": "tpu_cloud", "role": "global_leader", "weight": 1.0, "path": "Google TPU capacity buildout -> ASIC server/rack supply chain -> Taiwan ODM/IP/advanced packaging diffusion"},
+        {"concept_id": "ai_capex", "role": "csp_capex_leader", "weight": 0.9, "path": "CSP capex acceleration -> server, power, optical, memory, passive-component demand"},
+        {"concept_id": "ip_asic", "role": "demand_driver", "weight": 0.85, "path": "Hyperscaler custom silicon -> ASIC design/IP and packaging ecosystem"}
+      ],
+      "source_refs": [
+        {"title": "TrendForce: 2026 CSP CapEx and Google TPU ASIC deployment", "url": "https://www.trendforce.com/presscenter/news/20260225-12934.html"},
+        {"title": "TrendForce: Google optical interconnect and TPU architecture", "url": "https://www.trendforce.com/presscenter/news/20260210-12919.html"}
+      ]
+    },
+    {
+      "symbol": "TXN",
+      "name": "Texas Instruments",
+      "market": "US",
+      "region": "US",
+      "sector": "Analog / power semiconductors",
+      "primary_business": "Analog and embedded semiconductor supplier; in this graph it is a global architecture signal for 800 VDC AI data-center power conversion with NVIDIA.",
+      "specializations": ["800 VDC AI data-center power architecture", "power management", "analog IC", "embedded processing"],
+      "platforms": ["NVIDIA 800 VDC reference design", "AI data-center power"],
+      "constraints": ["architecture adoption timing", "competition from Infineon/ST/ON/Navitas/Wolfspeed", "analog cycle"],
+      "risk_flags": ["large diversified analog business dilutes pure AI read-through", "architecture signal may lead revenue by several quarters"],
+      "concept_exposures": [
+        {"concept_id": "hvdc_power_semiconductor", "role": "global_architecture_signal", "weight": 0.85, "path": "TI 800 VDC with NVIDIA -> validates high-voltage AI power conversion chain"},
+        {"concept_id": "semiconductor_components", "role": "global_leader", "weight": 0.7, "path": "data-center power conversion -> analog/power semiconductor demand"}
+      ],
+      "source_refs": [
+        {"title": "TI unveils complete 800 VDC power architecture with NVIDIA", "url": "https://www.ti.com/about-ti/newsroom/news-releases/2026/2026-03-16-ti-unveils-complete-800-vdc-power-architecture-for-future-generation-ai-data-centers-with-nvidia.html?HQS=multi-tech-data-gridtogate_dce_nvidiagtc-bhp-pr-null-wwe"}
+      ]
+    },
+    {
+      "symbol": "VRT",
+      "name": "Vertiv",
+      "market": "US",
+      "region": "US",
+      "sector": "Critical digital infrastructure / data-center power and cooling",
+      "primary_business": "Power, cooling, integrated rack, monitoring, and services for data centers, communication networks, and industrial critical infrastructure.",
+      "specializations": ["UPS and power distribution", "liquid cooling / thermal management", "AI data-center infrastructure", "integrated rack systems"],
+      "platforms": ["AI data centers", "high-density racks", "cloud-to-edge digital infrastructure", "liquid cooling"],
+      "constraints": ["data-center buildout timing", "supply-chain execution", "margin sensitivity to project mix", "competition from Eaton/Schneider/Delta"],
+      "risk_flags": ["AI-infrastructure leader can become crowded", "project timing can create quarterly volatility"],
+      "bottleneck_profile": {"layer": "Layer 6 - Data-center power and thermal infrastructure", "scarcity": "high", "substitutability": "medium", "discovery_state": "visible_infrastructure_leader", "score": 3.7, "reason": "High-density AI racks need power conversion, UPS, thermal systems, and service integration; Vertiv is a visible leader rather than a hidden laggard."},
+      "concept_exposures": [
+        {"concept_id": "power_supply", "role": "global_leader", "weight": 0.86, "path": "AI rack power density -> UPS/power distribution demand -> Vertiv data-center power systems"},
+        {"concept_id": "thermal_components", "role": "global_leader", "weight": 0.86, "path": "GPU rack heat density -> liquid cooling and thermal management capex"},
+        {"concept_id": "smart_grid", "role": "data_center_infrastructure_proxy", "weight": 0.58, "path": "data-center load growth -> critical infrastructure power chain"},
+        {"concept_id": "transformer_ups", "role": "ups_leader", "weight": 0.72, "path": "AI campus power buildout -> UPS and power conditioning demand"},
+        {"concept_id": "gb200", "role": "rack_infrastructure_follower", "weight": 0.62, "path": "GB200 rack density -> power/cooling infrastructure uplift"},
+        {"concept_id": "gb300", "role": "rack_infrastructure_follower", "weight": 0.62, "path": "GB300 ramp -> higher-density power and cooling requirements"},
+        {"concept_id": "vera_rubin", "role": "rack_infrastructure_follower", "weight": 0.58, "path": "Rubin/Vera Rubin rack roadmap -> future power and thermal spec step-up"},
+        {"concept_id": "hvdc_power_semiconductor", "role": "architecture_readthrough", "weight": 0.52, "path": "800V/HVDC data-center power architecture -> infrastructure integration demand"}
+      ],
+      "source_refs": [
+        {"title": "Vertiv investor relations overview", "url": "https://investors.vertiv.com/overview/default.aspx"},
+        {"title": "Vertiv about us / AI infrastructure portfolio", "url": "https://www.vertiv.com/en-us/about/about-us/"}
+      ]
+    },
+    {
+      "symbol": "GEV",
+      "name": "GE Vernova",
+      "market": "US",
+      "region": "US",
+      "sector": "Power generation / grid electrification / wind",
+      "primary_business": "Energy equipment and services company across Power, Wind, and Electrification, including gas, nuclear, hydro, wind turbines, grid solutions, power conversion, and grid software.",
+      "specializations": ["gas turbines and power services", "grid solutions", "power conversion", "onshore/offshore wind", "electrification software"],
+      "platforms": ["utility grid modernization", "data-center power demand", "renewable integration", "large installed power base"],
+      "constraints": ["turbine backlog lead times", "grid interconnection bottlenecks", "wind project execution", "policy and permitting"],
+      "risk_flags": ["data-center AI demand is only one driver", "wind profitability can dilute grid/power strength"],
+      "bottleneck_profile": {"layer": "Layer 0 - Grid and generation capacity", "scarcity": "high", "substitutability": "medium-low", "discovery_state": "visible_power_leader", "score": 3.5, "reason": "AI data centers ultimately need generation and grid equipment; GE Vernova is a large-cap infrastructure leader, not a hidden small-cap bottleneck."},
+      "concept_exposures": [
+        {"concept_id": "smart_grid", "role": "global_leader", "weight": 0.82, "path": "AI/data-center load growth -> grid modernization and power equipment demand"},
+        {"concept_id": "transformer_ups", "role": "grid_power_leader", "weight": 0.68, "path": "utility and data-center electrification -> grid equipment and power conversion backlog"},
+        {"concept_id": "wind_power", "role": "global_leader", "weight": 0.62, "path": "renewable integration and electrification -> wind and grid solution demand"}
+      ],
+      "source_refs": [
+        {"title": "GE Vernova investor overview", "url": "https://www.gevernova.com/investors"},
+        {"title": "GE Vernova businesses: Power, Wind, Electrification", "url": "https://careers.gevernova.com/our-businesses"}
+      ]
+    },
+    {
+      "symbol": "VSH",
+      "name": "Vishay Intertechnology",
+      "market": "US",
+      "region": "US",
+      "sector": "Discrete semiconductors / passive components",
+      "primary_business": "Broad electronic component supplier producing discrete semiconductors and passive components, including diodes, rectifiers, MOSFETs, optoelectronics, resistors, inductors, and capacitors.",
+      "specializations": ["MOSFETs and diodes", "resistors", "inductors", "capacitors", "optoelectronic components"],
+      "platforms": ["industrial electronics", "automotive", "power supplies", "AI server power/passive component basket"],
+      "constraints": ["broad cyclical component demand", "inventory cycle", "pricing discipline", "AI exposure purity"],
+      "risk_flags": ["not a pure AI component name", "broad industrial/auto cycle can dominate price action"],
+      "bottleneck_profile": {"layer": "Layer 6/7 - Broad passive and discrete components", "scarcity": "medium", "substitutability": "medium", "discovery_state": "component_basket_laggard", "score": 3.1, "reason": "Useful broad read-through for passive/discrete shortages, but less chokepoint-pure than high-voltage MLCC, SP-Cap, or InP substrate suppliers."},
+      "concept_exposures": [
+        {"concept_id": "passive_components", "role": "global_broad_component_supplier", "weight": 0.78, "path": "AI server/passive component tightness -> broad resistors/inductors/capacitors read-through"},
+        {"concept_id": "chip_resistor", "role": "global_broad_component_supplier", "weight": 0.82, "path": "precision/current-sense resistor demand -> Vishay resistor franchise read-through"},
+        {"concept_id": "inductor_choke", "role": "global_broad_component_supplier", "weight": 0.68, "path": "higher power-density electronics -> inductor and magnetic component demand"},
+        {"concept_id": "film_capacitor", "role": "global_broad_component_supplier", "weight": 0.55, "path": "power electronics and industrial demand -> film capacitor read-through"},
+        {"concept_id": "tantalum_capacitor", "role": "global_broad_component_supplier", "weight": 0.62, "path": "high-reliability power decoupling -> tantalum/polymer capacitor read-through"},
+        {"concept_id": "semiconductor_components", "role": "global_broad_component_supplier", "weight": 0.75, "path": "power and discrete semiconductor demand -> Vishay discrete component basket"},
+        {"concept_id": "hvdc_power_semiconductor", "role": "power_component_follower", "weight": 0.58, "path": "higher-voltage AI rack power architecture -> MOSFET/diode/passive component demand"}
+      ],
+      "source_refs": [
+        {"title": "Vishay Intertechnology investor relations overview", "url": "https://ir.vishay.com/"}
+      ]
+    },
+    {
+      "symbol": "VPG",
+      "name": "Vishay Precision Group",
+      "market": "US",
+      "region": "US",
+      "sector": "Precision sensing / measurement systems",
+      "primary_business": "Precision measurement and sensing technology supplier focused on foil resistors, strain gages, load cells, force/weight sensors, weighing systems, and industrial measurement systems.",
+      "specializations": ["precision foil resistors", "strain gages", "load cells", "force and weighing sensors", "measurement systems"],
+      "platforms": ["industrial automation", "precision test and measurement", "robotics/force sensing optionality", "process control"],
+      "constraints": ["industrial capex cycle", "niche market liquidity", "customer qualification", "measurement systems execution"],
+      "risk_flags": ["AI/robotics linkage is optionality rather than current confirmed core revenue", "small-cap liquidity and narrative risk"],
+      "bottleneck_profile": {"layer": "Layer 9 - Precision sensing and measurement", "scarcity": "medium", "substitutability": "medium", "discovery_state": "niche_optional_laggard", "score": 3.0, "reason": "Potential force/measurement node for robotics and industrial automation; weaker direct AI data-center bottleneck than VSH/VRT/FORM."},
+      "concept_exposures": [
+        {"concept_id": "precision_sensing", "role": "niche_leader", "weight": 0.86, "path": "automation/robotics/process-control demand -> precision strain, force, and weighing sensors"},
+        {"concept_id": "chip_resistor", "role": "precision_resistor_supplier", "weight": 0.62, "path": "precision foil resistor lineage -> specialized resistor and measurement-component exposure"},
+        {"concept_id": "passive_components", "role": "precision_resistor_supplier", "weight": 0.48, "path": "precision foil resistor lineage -> specialized passive component exposure"}
+      ],
+      "source_refs": [
+        {"title": "VPG investor overview", "url": "https://ir.vpgsensors.com/overview-section/why-vpg/default.aspx"},
+        {"title": "VPG 2025 10-K business description", "url": "https://www.sec.gov/Archives/edgar/data/1487952/000143774926005982/vpg20251231_10k.htm"}
+      ]
+    },
+    {
+      "symbol": "TSM",
+      "name": "TSMC ADR",
+      "market": "US",
+      "region": "Taiwan ADR",
+      "sector": "Foundry / advanced packaging",
+      "primary_business": "US-listed ADR proxy for 台積電; use as US-session leader signal for Taiwan foundry and advanced packaging read-through.",
+      "specializations": ["advanced-node foundry", "CoWoS", "AI accelerator manufacturing", "US-session Taiwan proxy"],
+      "platforms": ["NVIDIA GPU", "AMD accelerator", "Google TPU ecosystem", "custom ASICs"],
+      "constraints": ["same operating constraints as 2330.TW", "ADR FX and US-session sentiment"],
+      "risk_flags": ["ADR can move on US risk appetite and FX, not only Taiwan fundamentals"],
+      "concept_exposures": [
+        {"concept_id": "ai_capex", "role": "us_session_proxy", "weight": 0.8, "path": "US AI capex strength -> TSM ADR leadership -> next Taiwan-session foundry/CoWoS read-through"},
+        {"concept_id": "ai_foundry_capacity", "role": "us_session_proxy", "weight": 0.9, "path": "US ADR move -> next Taiwan session read-through for foundry/CoWoS bottleneck"},
+        {"concept_id": "foundry", "role": "global_leader", "weight": 0.9, "path": "leading-edge AI chips -> TSMC manufacturing demand"}
+      ],
+      "source_refs": [
+        {"title": "TrendForce: CSP CapEx and ASIC server growth", "url": "https://www.trendforce.com/presscenter/news/20260225-12934.html"}
+      ]
+    },
+    {
+      "symbol": "TSLA",
+      "name": "Tesla",
+      "market": "US",
+      "region": "US",
+      "sector": "EV / AI compute user",
+      "primary_business": "EVs, autonomy, robotics, energy storage, and xAI-linked large-scale AI compute demand signal through Colossus-style infrastructure.",
+      "specializations": ["AI training cluster demand", "autonomy", "robotics", "energy storage"],
+      "platforms": ["xAI Colossus", "Tesla FSD", "Optimus"],
+      "constraints": ["AI compute monetization uncertainty", "EV margin cyclicality", "capital intensity"],
+      "risk_flags": ["not a direct component supplier", "AI cluster economics may not fully accrue to TSLA holders"],
+      "concept_exposures": [
+        {"concept_id": "ai_capex", "role": "demand_signal", "weight": 0.65, "path": "Colossus-scale compute ROI signal -> validates external AI compute rental economics -> hardware capex confidence"},
+        {"concept_id": "gpu_accelerator", "role": "large_compute_buyer", "weight": 0.55, "path": "AI training/inference demand -> GPU cluster demand"}
+      ],
+      "source_refs": [
+        {"title": "Gooaye EP664 local ASR", "url": "/Users/thtang/Documents/alpha-persona-lab/gooaye/data/transcripts/EP664.md"}
+      ]
+    },
+    {
+      "symbol": "AVGO",
+      "name": "Broadcom",
+      "market": "US",
+      "region": "US",
+      "sector": "Custom ASIC / networking silicon",
+      "primary_business": "Custom AI ASICs, networking silicon, switch chips, and connectivity used by hyperscalers.",
+      "specializations": ["custom AI ASIC", "Google TPU partnership", "networking switch silicon", "optical/DSP connectivity"],
+      "platforms": ["Google TPU ecosystem", "hyperscaler ASIC programs"],
+      "constraints": ["customer concentration", "ASIC program timing", "advanced packaging and HBM availability"],
+      "risk_flags": ["high expectations after custom ASIC rerating", "customer program lumpiness"],
+      "bottleneck_profile": {"layer": "Layer 4 - Switch ASIC / SiPh system platform", "scarcity": "high", "substitutability": "medium-low", "discovery_state": "visible_platform_leader", "score": 3.7, "reason": "Broadcom is both a custom ASIC leader and CPO switch platform signal, but it is already institutionally discovered."},
+      "concept_exposures": [
+        {"concept_id": "ai_capex", "role": "global_leader", "weight": 0.85, "path": "CSP custom ASIC capex -> Broadcom ASIC/networking demand -> non-NVIDIA AI hardware validation"},
+        {"concept_id": "tpu_cloud", "role": "global_leader", "weight": 0.9, "path": "Google/Broadcom TPU roadmap -> custom ASIC supply chain validation"},
+        {"concept_id": "ip_asic", "role": "global_leader", "weight": 0.95, "path": "Hyperscaler ASIC awards -> Taiwan ASIC design and packaging peer rerating"},
+        {"concept_id": "networking", "role": "global_leader", "weight": 0.8, "path": "AI cluster scale-out -> switching/networking silicon demand"},
+        {"concept_id": "cpo_optical", "role": "platform_leader", "weight": 0.75, "path": "switch ASIC bandwidth/power pressure -> CPO optical I/O architecture signal"},
+        {"concept_id": "silicon_photonics", "role": "platform_leader", "weight": 0.72, "path": "CPO switch platform -> SiPh optical engine and packaging ecosystem"}
+      ],
+      "source_refs": [
+        {"title": "TrendForce: Google TPU leads ASIC deployment", "url": "https://www.trendforce.com/presscenter/news/20260225-12934.html"}
+      ]
+    },
+    {
+      "symbol": "AMD",
+      "name": "AMD",
+      "market": "US",
+      "region": "US",
+      "sector": "GPU / CPU / adaptive compute",
+      "primary_business": "AI accelerators, CPUs, GPUs, and adaptive compute serving data centers, PCs, and embedded markets.",
+      "specializations": ["Instinct AI accelerators", "EPYC CPUs", "AI PC", "HBM-dependent accelerator BOM"],
+      "platforms": ["MI accelerator roadmap", "EPYC", "AI PC"],
+      "constraints": ["HBM supply", "software ecosystem", "merchant GPU competition"],
+      "risk_flags": ["leader/follower status depends on accelerator share gains", "custom ASIC competition"],
+      "concept_exposures": [
+        {"concept_id": "ai_capex", "role": "global_follower", "weight": 0.7, "path": "AI hardware capex persistence -> accelerator alternatives and CPU/GPU platform demand"},
+        {"concept_id": "gpu_accelerator", "role": "global_follower", "weight": 0.8, "path": "AI accelerator cycle -> HBM, foundry, packaging and server supply chain demand"},
+        {"concept_id": "hbm", "role": "demand_driver", "weight": 0.75, "path": "AI accelerator BOM -> HBM and memory bandwidth demand"}
+      ],
+      "source_refs": [
+        {"title": "Gooaye EP664 local ASR", "url": "/Users/thtang/Documents/alpha-persona-lab/gooaye/data/transcripts/EP664.md"}
+      ]
+    },
+    {
+      "symbol": "INTC",
+      "name": "Intel",
+      "market": "US",
+      "region": "US",
+      "sector": "IDM / foundry / CPU",
+      "primary_business": "CPU, data-center silicon, foundry services, and edge/PC platforms; mostly a secondary AI compute read-through versus GPU/TPU leaders.",
+      "specializations": ["x86 CPU", "foundry ambition", "AI PC", "legacy data-center CPU"],
+      "platforms": ["Intel Foundry", "Xeon", "AI PC"],
+      "constraints": ["process roadmap execution", "AI accelerator competitiveness", "foundry customer proof"],
+      "risk_flags": ["turnaround risk", "may lag AI leaders without confirmed share gains"],
+      "concept_exposures": [
+        {"concept_id": "gpu_accelerator", "role": "turnaround_follower", "weight": 0.45, "path": "AI hardware cycle can lift sentiment, but direct accelerator proof is weaker"},
+        {"concept_id": "foundry", "role": "turnaround_follower", "weight": 0.55, "path": "Advanced-node capacity scarcity -> foundry optionality if execution improves"}
+      ],
+      "source_refs": [
+        {"title": "Gooaye EP664 local ASR", "url": "/Users/thtang/Documents/alpha-persona-lab/gooaye/data/transcripts/EP664.md"}
+      ]
+    },
+    {
+      "symbol": "2330.TW",
+      "name": "台積電",
+      "market": "TW",
+      "region": "Taiwan",
+      "sector": "Foundry / advanced packaging",
+      "primary_business": "Global leading foundry and advanced packaging capacity provider; strategic bottleneck for GPU, TPU, ASIC, CPU, and HBM-adjacent packaging demand.",
+      "specializations": ["advanced-node foundry", "CoWoS", "advanced packaging", "AI accelerator supply bottleneck"],
+      "platforms": ["NVIDIA GPU", "AMD accelerator", "Google TPU ecosystem", "custom ASICs", "AI foundry capacity"],
+      "constraints": ["advanced-node allocation", "CoWoS capacity", "power/water/geopolitics"],
+      "risk_flags": ["cycle valuation risk", "geopolitical risk", "capex timing"],
+      "concept_exposures": [
+        {"concept_id": "ai_capex", "role": "global_bottleneck", "weight": 0.9, "path": "GPU/TPU/ASIC capex persistence -> advanced-node wafer and CoWoS demand -> Taiwan foundry bottleneck"},
+        {"concept_id": "ai_foundry_capacity", "role": "global_bottleneck", "weight": 1.0, "path": "AI chip demand -> advanced-node wafer and CoWoS allocation -> final capacity gatekeeper"},
+        {"concept_id": "foundry", "role": "global_leader", "weight": 1.0, "path": "GPU/TPU/ASIC/CPU all compete for leading-edge foundry"},
+        {"concept_id": "cowos", "role": "global_leader", "weight": 0.9, "path": "AI accelerator packaging bottleneck -> CoWoS capacity pricing and allocation"}
+      ],
+      "source_refs": [
+        {"title": "TrendForce: CSP CapEx and ASIC server growth", "url": "https://www.trendforce.com/presscenter/news/20260225-12934.html"},
+        {"title": "Gooaye EP664 local ASR", "url": "/Users/thtang/Documents/alpha-persona-lab/gooaye/data/transcripts/EP664.md"}
+      ]
+    },
+    {
+      "symbol": "2382.TW",
+      "name": "廣達",
+      "market": "TW",
+      "region": "Taiwan",
+      "sector": "AI server ODM",
+      "primary_business": "Server and notebook ODM with high exposure to AI server rack and hyperscaler infrastructure programs.",
+      "specializations": ["AI server ODM", "rack integration", "NVIDIA and CSP server programs", "L6-L11 system assembly"],
+      "platforms": ["GB300", "Vera Rubin", "Google TPU-related server ecosystem"],
+      "constraints": ["ODM gross margin", "customer allocation", "component shortages"],
+      "risk_flags": ["high revenue growth can still carry thin margins", "customer mix uncertainty"],
+      "concept_exposures": [
+        {"concept_id": "ai_capex", "role": "core_follower", "weight": 0.85, "path": "CSP/GPU capex -> rack/server ODM order visibility"},
+        {"concept_id": "ems", "role": "regional_leader", "weight": 0.9, "path": "AI rack demand -> ODM build and integration capacity"},
+        {"concept_id": "tpu_cloud", "role": "supply_chain_follower", "weight": 0.65, "path": "Google TPU buildout -> Taiwan server ODM potential read-through"}
+      ],
+      "source_refs": [
+        {"title": "TrendForce: Google TPU leads ASIC server shipment mix", "url": "https://www.trendforce.com/presscenter/news/20260225-12934.html"}
+      ]
+    },
+    {
+      "symbol": "6669.TW",
+      "name": "緯穎",
+      "market": "TW",
+      "region": "Taiwan",
+      "sector": "Hyperscale AI infrastructure ODM",
+      "primary_business": "Data-center and AI infrastructure provider focused on hyperscale cloud service providers and rack-scale system integration.",
+      "specializations": ["hyperscaler AI infrastructure", "liquid-cooled rack integration", "L10/L11 rack delivery", "Vera Rubin NVL72 showcase"],
+      "platforms": ["NVIDIA Vera Rubin", "AI infrastructure integration", "hyperscale CSP"],
+      "constraints": ["customer concentration", "margin pressure during product transitions", "rack power/thermal complexity"],
+      "risk_flags": ["single-customer perception risk", "high unit price volatility"],
+      "concept_exposures": [
+        {"concept_id": "ai_capex", "role": "core_follower", "weight": 0.9, "path": "Hyperscaler capex -> AI factory rack integration -> Wiwynn order visibility"},
+        {"concept_id": "vera_rubin", "role": "regional_leader", "weight": 0.85, "path": "Vera Rubin platform showcase -> next-gen rack integration signal"},
+        {"concept_id": "ems", "role": "regional_leader", "weight": 0.9, "path": "AI server demand -> L10/L11 high-volume rack build"}
+      ],
+      "source_refs": [
+        {"title": "Wiwynn AI Infrastructure Integration", "url": "https://www.wiwynn.com/solutions/ai-infrastructure-integration"},
+        {"title": "Wiwynn showcases NVIDIA Vera Rubin NVL72 AI Factory Infrastructure", "url": "https://www.prnewswire.com/news-releases/wiwynn-showcases-nvidia-vera-rubin-nvl72-ai-factory-infrastructure-at-nvidia-gtc-2026-302714206.html"}
+      ]
+    },
+    {
+      "symbol": "2327.TW",
+      "name": "國巨",
+      "market": "TW",
+      "region": "Taiwan",
+      "sector": "Passive components / MLCC / polymer capacitors",
+      "primary_business": "Global passive-component leader spanning MLCC, chip resistors, inductors, KEMET polymer/tantalum/aluminum capacitors, Pulse components, and sensors.",
+      "specializations": ["MLCC", "high-voltage MLCC", "KEMET polymer capacitors", "tantalum capacitors", "AI hardware passive-component BOM"],
+      "platforms": ["AI server MLCC", "KEMET KO-CAP", "server power decoupling"],
+      "constraints": ["high-grade MLCC capacity", "precious metal cost", "consumer MLCC demand mix"],
+      "risk_flags": ["first-line name can become crowded quickly", "price-hike durability needs order and earnings confirmation"],
+      "concept_exposures": [
+        {"concept_id": "passive_components", "role": "regional_leader", "weight": 1.0, "path": "AI server power density -> more high-grade passives per board -> first-line Taiwan MLCC leader"},
+        {"concept_id": "high_voltage_mlcc", "role": "regional_leader", "weight": 0.9, "path": "AI server high-voltage decoupling -> high-capacitance/high-reliability MLCC demand"},
+        {"concept_id": "aluminum_polymer_cap", "role": "portfolio_leader", "weight": 0.75, "path": "KEMET polymer and tantalum product line -> server power and high-ripple-current applications"}
+      ],
+      "source_refs": [
+        {"title": "KEMET AI applications", "url": "https://www.kemet.com/en/us/applications/ai.html"},
+        {"title": "YAGEO 2025 annual report", "url": "https://yageogroup.com/content/Resource%2520Library/Financial/yageo_2025-annual-report_25052810_107.pdf"},
+        {"title": "Panasonic and KEMET price hike news", "url": "https://www.nstock.tw/news/article_c?id=20260520-067006700000"}
+      ]
+    },
+    {
+      "symbol": "2492.TW",
+      "name": "華新科",
+      "market": "TW",
+      "region": "Taiwan",
+      "sector": "Passive components / MLCC",
+      "primary_business": "Passive-component maker focused on MLCC, chip resistors, RF components, and related components.",
+      "specializations": ["MLCC", "resistors", "AI/automotive/industrial passive demand"],
+      "platforms": ["AI server passive components", "automotive electronics"],
+      "constraints": ["product mix vs Japanese/Korean leaders", "pricing cycle", "end-market inventory"],
+      "risk_flags": ["more cyclical than pure high-end shortage names", "needs proof of high-end mix improvement"],
+      "concept_exposures": [
+        {"concept_id": "passive_components", "role": "core_follower", "weight": 0.85, "path": "MLCC price-hike cycle -> Taiwan second leader catch-up"},
+        {"concept_id": "high_voltage_mlcc", "role": "follower", "weight": 0.7, "path": "AI/industrial MLCC tightness -> higher ASP mix if qualification holds"}
+      ],
+      "source_refs": [
+        {"title": "Passive component price hike news", "url": "https://www.taiwannews.com.tw/news/6367220"}
+      ]
+    },
+    {
+      "symbol": "2472.TW",
+      "name": "立隆電",
+      "market": "TW",
+      "region": "Taiwan",
+      "sector": "Aluminum electrolytic / polymer capacitor",
+      "primary_business": "Aluminum electrolytic capacitor maker with radial, snap-in, SMD/V-chip, polymer, and hybrid capacitor product lines.",
+      "specializations": ["aluminum electrolytic capacitors", "hybrid polymer capacitors", "snap-in capacitors", "board-level power capacitors"],
+      "platforms": ["AI server board power", "Vera Rubin power delivery", "server/industrial power"],
+      "constraints": ["qualification cycle", "capacity and cash-flow scaling", "high-reliability product mix"],
+      "risk_flags": ["AI purity must be verified by order mix", "small-cap volatility", "single-platform rumor risk"],
+      "concept_exposures": [
+        {"concept_id": "aluminum_polymer_cap", "role": "core_follower", "weight": 0.85, "path": "AI rack board power -> higher-ripple polymer/hybrid aluminum cap demand"},
+        {"concept_id": "snap_in_capacitor", "role": "core_follower", "weight": 0.75, "path": "rack/server power density -> large aluminum electrolytic/snap-in demand"},
+        {"concept_id": "vera_rubin", "role": "supply_chain_watch", "weight": 0.65, "path": "Vera Rubin power architecture -> board-side capacitor spec upgrade"}
+      ],
+      "source_refs": [
+        {"title": "NVIDIA Vera Rubin technical platform", "url": "https://developer.nvidia.com/blog/nvidia-vera-rubin-pod-seven-chips-five-rack-scale-systems-one-ai-supercomputer/"},
+        {"title": "Gooaye EP664 local ASR", "url": "/Users/thtang/Documents/alpha-persona-lab/gooaye/data/transcripts/EP664.md"}
+      ]
+    },
+    {
+      "symbol": "6449.TW",
+      "name": "鈺邦",
+      "market": "TW",
+      "region": "Taiwan",
+      "sector": "Conductive polymer solid capacitor",
+      "primary_business": "Conductive polymer solid capacitor specialist producing coiled solid-state capacitors, V-Chip, chip-type CAP, SMLC, and hybrid products.",
+      "specializations": ["V-Chip wound solid capacitor", "chip-type polymer CAP", "conductive polymer material", "AI server / power / automotive growth markets"],
+      "platforms": ["AI server power delivery", "GPU/CPU decoupling", "networking switch power", "server power"],
+      "constraints": ["high-temperature/high-reliability qualification", "Panasonic SP-Cap benchmark and competition", "small capital base vs demand spike"],
+      "risk_flags": ["already widely discovered by market", "law of small numbers creates sharp drawdowns", "must validate revenue and customer qualification"],
+      "concept_exposures": [
+        {"concept_id": "aluminum_polymer_cap", "role": "pure_play", "weight": 0.98, "path": "SP-Cap/polymer aluminum shortage -> Taiwan pure-play solid capacitor substitution candidate"},
+        {"concept_id": "passive_components", "role": "high_beta_follower", "weight": 0.75, "path": "passive component price hike -> high-beta specialty capacitor leg"},
+        {"concept_id": "vera_rubin", "role": "spec_upgrade_watch", "weight": 0.55, "path": "next-gen AI board power density -> higher-reliability capacitor qualification watch"}
+      ],
+      "source_refs": [
+        {"title": "APAQ 112 annual report", "url": "https://www.apaq.com.tw/Templates/att/112-Annual-report.pdf?lng=en"},
+        {"title": "Panasonic SP-Cap product lineup and AI server application note", "url": "https://industrial.panasonic.com/tw/products/pt/sp-cap/lineup"},
+        {"title": "Passive price hike news mentioning SP-Cap use cases", "url": "https://www.nstock.tw/news/article_c?id=20260520-067006700000"}
+      ]
+    },
+    {
+      "symbol": "2375.TW",
+      "name": "凱美",
+      "market": "TW",
+      "region": "Taiwan",
+      "sector": "Aluminum electrolytic / passive components",
+      "primary_business": "Jamicon/Teapo group passive-component maker with aluminum electrolytic capacitors, MLCC, polymer capacitors, and broad passive exposure.",
+      "specializations": ["aluminum electrolytic capacitors", "snap-in capacitors", "polymer capacitors", "MLCC"],
+      "platforms": ["server power", "industrial power", "AI passive components"],
+      "constraints": ["AI-grade revenue mix", "legacy consumer/industrial mix", "capacity utilization"],
+      "risk_flags": ["broad passive name can be pulled by low-quality speculation", "must separate AI-grade demand from general price hike"],
+      "concept_exposures": [
+        {"concept_id": "snap_in_capacitor", "role": "laggard_watch", "weight": 0.85, "path": "large power modules and AI rack power -> snap-in/large aluminum electrolytic demand"},
+        {"concept_id": "aluminum_polymer_cap", "role": "follower", "weight": 0.65, "path": "SP-Cap/polymer pricing -> related aluminum capacitor sentiment"},
+        {"concept_id": "passive_components", "role": "high_beta_follower", "weight": 0.8, "path": "passive-component cycle -> second-line Taiwan catch-up"}
+      ],
+      "source_refs": [
+        {"title": "Jamicon annual report", "url": "https://jamicon.teapo.com/upload/ShareholderMeeting/202212140958141.pdf"},
+        {"title": "Jamicon product guide with snap-in type code", "url": "https://jamicon.msk.ru/files/pdf/jamicon_capacitors_parts_number_system_2019.pdf"}
+      ]
+    },
+    {
+      "symbol": "3090.TW",
+      "name": "日電貿",
+      "market": "TW",
+      "region": "Taiwan",
+      "sector": "Passive component distributor",
+      "primary_business": "Electronics component distributor with exposure to high-end passive components and Panasonic-related component supply.",
+      "specializations": ["passive-component agency", "SP-Cap distribution read-through", "customer/channel inventory signal"],
+      "platforms": ["Panasonic SP-Cap", "AI server passive demand"],
+      "constraints": ["distribution margin pass-through", "agency rights and allocation", "inventory timing"],
+      "risk_flags": ["thin distributor margins", "price hikes do not necessarily translate one-for-one to profit"],
+      "concept_exposures": [
+        {"concept_id": "passive_component_distribution", "role": "channel_signal", "weight": 0.95, "path": "Panasonic/SP-Cap allocation and price hikes -> distributor revenue/margin sentiment"},
+        {"concept_id": "aluminum_polymer_cap", "role": "distributor_follower", "weight": 0.8, "path": "SP-Cap shortage -> channel availability and allocation signal"}
+      ],
+      "source_refs": [
+        {"title": "UDN passive component price hike notes 日電貿 exposure", "url": "https://money.udn.com/money/story/5607/9515424?from=edn_related_storybottom"},
+        {"title": "Taiwan News passive component price-rise article", "url": "https://www.taiwannews.com.tw/news/6367220"}
+      ]
+    },
+    {
+      "symbol": "3036.TW",
+      "name": "文曄",
+      "market": "TW",
+      "region": "Taiwan",
+      "sector": "Electronics / semiconductor distribution",
+      "primary_business": "Large electronics and semiconductor distributor with broad component-channel exposure rather than a single passive-component product moat.",
+      "specializations": ["semiconductor distribution", "electronics components", "channel inventory signal"],
+      "platforms": ["AI server component channel", "IC and passive distribution"],
+      "constraints": ["margin dilution", "working capital", "broad mix reduces purity"],
+      "risk_flags": ["less pure SP-Cap read-through than specialized distributors", "large-cap distributor beta may lag specialty names"],
+      "concept_exposures": [
+        {"concept_id": "electronics_distribution", "role": "broad_channel_proxy", "weight": 0.7, "path": "AI supply-chain component allocation -> distributor inventory/order signal"},
+        {"concept_id": "passive_component_distribution", "role": "broad_channel_proxy", "weight": 0.45, "path": "passive price hikes -> limited broad-distributor read-through"}
+      ],
+      "source_refs": [
+        {"title": "Gooaye EP664 local ASR", "url": "/Users/thtang/Documents/alpha-persona-lab/gooaye/data/transcripts/EP664.md"}
+      ]
+    },
+    {
+      "symbol": "6752.T",
+      "name": "Panasonic Holdings",
+      "market": "JP",
+      "region": "Japan",
+      "sector": "Electronics / batteries / components",
+      "primary_business": "Electronics conglomerate whose SP-Cap conductive polymer aluminum capacitors act as a benchmark product in high-load AI server and networking applications.",
+      "specializations": ["SP-Cap", "conductive polymer aluminum electrolytic capacitors", "high-load AI server capacitors"],
+      "platforms": ["AI servers", "switches", "routers", "base stations"],
+      "constraints": ["capacity allocation", "raw material cost", "large conglomerate dilution of component signal"],
+      "risk_flags": ["stock is not a pure passive-component play", "price hikes may be small relative to group revenue"],
+      "concept_exposures": [
+        {"concept_id": "aluminum_polymer_cap", "role": "global_product_benchmark", "weight": 0.95, "path": "SP-Cap price/availability -> global polymer aluminum capacitor bottleneck signal"},
+        {"concept_id": "passive_components", "role": "global_leader", "weight": 0.6, "path": "high-end passive product pricing -> broader passive-component sentiment"}
+      ],
+      "source_refs": [
+        {"title": "Panasonic SP-Cap lineup", "url": "https://industrial.panasonic.com/tw/products/pt/sp-cap/lineup"},
+        {"title": "UDN passive component price hike article", "url": "https://money.udn.com/money/story/5607/9515424?from=edn_related_storybottom"}
+      ]
+    },
+    {
+      "symbol": "MRAAY",
+      "name": "Murata Manufacturing ADR",
+      "market": "US",
+      "region": "Japan ADR",
+      "sector": "Passive components / MLCC / RF modules",
+      "primary_business": "US ADR proxy for Murata, a global passive-component leader in ceramic capacitors, inductors, filters, sensors, RF modules, and power-related components.",
+      "specializations": ["MLCC", "high-voltage MLCC", "inductors", "RF filters/modules", "sensors"],
+      "platforms": ["AI server MLCC", "automotive electronics", "smartphones", "industrial electronics"],
+      "constraints": ["high-end MLCC capacity", "yen/ADR translation", "consumer electronics cycle"],
+      "risk_flags": ["ADR liquidity can be thinner than local listing", "large leader may move before laggards"],
+      "concept_exposures": [
+        {"concept_id": "passive_components", "role": "global_leader", "weight": 0.95, "path": "global passive-component cycle -> Murata ADR leader signal -> Taiwan/China peer diffusion"},
+        {"concept_id": "high_voltage_mlcc", "role": "global_leader", "weight": 0.9, "path": "AI server high-voltage MLCC demand -> Japanese MLCC leader confirmation"},
+        {"concept_id": "inductor_choke", "role": "global_leader", "weight": 0.72, "path": "power-density and RF component demand -> inductor/magnetic component read-through"}
+      ],
+      "source_refs": [
+        {"title": "Murata products", "url": "https://www.murata.com/en-global/products"}
+      ]
+    },
+    {
+      "symbol": "TTDKY",
+      "name": "TDK ADR",
+      "market": "US",
+      "region": "Japan ADR",
+      "sector": "Passive components / magnetic components / batteries",
+      "primary_business": "US ADR proxy for TDK, spanning passive components, magnetic application products, sensors, power supplies, and energy application products.",
+      "specializations": ["MLCC", "inductors", "magnetic components", "sensors", "rechargeable batteries"],
+      "platforms": ["AI server power chain", "automotive electronics", "industrial electronics", "battery devices"],
+      "constraints": ["product-mix dilution", "battery cycle", "ADR/local price translation"],
+      "risk_flags": ["not a pure MLCC stock", "battery and sensor cycles can dominate passive read-through"],
+      "concept_exposures": [
+        {"concept_id": "passive_components", "role": "global_leader", "weight": 0.88, "path": "global passive-component cycle -> TDK ADR leader signal"},
+        {"concept_id": "high_voltage_mlcc", "role": "global_leader", "weight": 0.82, "path": "AI server and automotive MLCC demand -> Japanese leader confirmation"},
+        {"concept_id": "inductor_choke", "role": "global_leader", "weight": 0.86, "path": "higher power density -> inductor and magnetic component demand"}
+      ],
+      "source_refs": [
+        {"title": "TDK products", "url": "https://www.tdk.com/en/products/index.html"}
+      ]
+    },
+    {
+      "symbol": "6762.T",
+      "name": "TDK",
+      "market": "JP",
+      "region": "Japan",
+      "sector": "Passive components / magnetic components / batteries",
+      "primary_business": "Japan-listed TDK, a global electronic components supplier across passive components, magnetic products, sensors, power supplies, and batteries.",
+      "specializations": ["MLCC", "inductors", "magnetic components", "sensors", "rechargeable batteries"],
+      "platforms": ["AI server power chain", "automotive electronics", "industrial electronics"],
+      "constraints": ["product-mix dilution", "battery cycle", "Japan FX and index flows"],
+      "risk_flags": ["not a pure passive-component stock", "large leader may be more confirmation than laggard"],
+      "concept_exposures": [
+        {"concept_id": "passive_components", "role": "regional_leader", "weight": 0.9, "path": "Japan passive leader strength -> Taiwan/China passive diffusion"},
+        {"concept_id": "high_voltage_mlcc", "role": "regional_leader", "weight": 0.82, "path": "high-reliability MLCC demand -> Japan MLCC leader signal"},
+        {"concept_id": "inductor_choke", "role": "regional_leader", "weight": 0.86, "path": "AI rack/auto power density -> magnetic component demand"}
+      ],
+      "source_refs": [
+        {"title": "TDK products", "url": "https://www.tdk.com/en/products/index.html"}
+      ]
+    },
+    {
+      "symbol": "6981.T",
+      "name": "Murata",
+      "market": "JP",
+      "region": "Japan",
+      "sector": "Passive components / MLCC / RF modules",
+      "primary_business": "Japan-listed Murata, a global passive-component leader in ceramic capacitors, inductors, filters, sensors, and RF modules.",
+      "specializations": ["MLCC", "high-voltage MLCC", "inductors", "RF filters/modules", "sensors"],
+      "platforms": ["AI server MLCC", "automotive electronics", "smartphones", "industrial electronics"],
+      "constraints": ["high-end MLCC capacity", "consumer electronics cycle", "yen sensitivity"],
+      "risk_flags": ["large global leader can be early but less asymmetric", "consumer mix can dilute AI signal"],
+      "concept_exposures": [
+        {"concept_id": "passive_components", "role": "regional_leader", "weight": 0.95, "path": "Japan passive leader move -> global/Taiwan passive-component confirmation"},
+        {"concept_id": "high_voltage_mlcc", "role": "regional_leader", "weight": 0.9, "path": "high-voltage MLCC demand -> Japanese MLCC leader signal"},
+        {"concept_id": "inductor_choke", "role": "regional_leader", "weight": 0.72, "path": "AI/auto electronics content -> inductor and magnetic component demand"}
+      ],
+      "source_refs": [
+        {"title": "Murata products", "url": "https://www.murata.com/en-global/products"}
+      ]
+    },
+    {
+      "symbol": "6976.T",
+      "name": "Taiyo Yuden",
+      "market": "JP",
+      "region": "Japan",
+      "sector": "Passive components / MLCC / inductors",
+      "primary_business": "Japanese passive-component supplier focused on ceramic capacitors, inductors, communication devices, and related electronic components.",
+      "specializations": ["MLCC", "high-capacitance ceramic capacitors", "inductors", "communication components"],
+      "platforms": ["AI server MLCC", "automotive electronics", "smartphones", "industrial devices"],
+      "constraints": ["MLCC pricing cycle", "consumer electronics exposure", "capacity mix"],
+      "risk_flags": ["more cyclical than pure AI shortage names", "needs confirmation that AI/auto mix offsets consumer softness"],
+      "concept_exposures": [
+        {"concept_id": "passive_components", "role": "regional_leader", "weight": 0.82, "path": "Japan MLCC/inductor peer move -> Taiwan passive diffusion"},
+        {"concept_id": "high_voltage_mlcc", "role": "regional_follower", "weight": 0.76, "path": "high-capacitance ceramic capacitor demand -> AI/auto MLCC read-through"},
+        {"concept_id": "inductor_choke", "role": "regional_follower", "weight": 0.68, "path": "power and communication device demand -> inductor component read-through"}
+      ],
+      "source_refs": [
+        {"title": "Taiyo Yuden product information", "url": "https://www.yuden.co.jp/ut/product/"}
+      ]
+    },
+    {
+      "symbol": "6997.T",
+      "name": "Nippon Chemi-Con",
+      "market": "JP",
+      "region": "Japan",
+      "sector": "Aluminum electrolytic capacitors",
+      "primary_business": "Japanese aluminum electrolytic capacitor specialist and global reference for large aluminum capacitor and power-electronics demand.",
+      "specializations": ["aluminum electrolytic capacitors", "conductive polymer hybrid capacitors", "snap-in and screw terminal capacitors"],
+      "platforms": ["data-center power", "industrial power", "automotive electronics"],
+      "constraints": ["raw material cost", "capacity and qualification", "Japan cyclicality"],
+      "risk_flags": ["global leader can reprice before Taiwan followers", "large rally can reduce laggard edge"],
+      "concept_exposures": [
+        {"concept_id": "aluminum_polymer_cap", "role": "regional_leader", "weight": 0.9, "path": "Japan aluminum/polymer cap leader move -> Taiwan specialty capacitor diffusion"},
+        {"concept_id": "snap_in_capacitor", "role": "regional_leader", "weight": 0.8, "path": "large aluminum cap tightness -> snap-in / screw terminal peer signal"}
+      ],
+      "source_refs": [
+        {"title": "Nippon Chemi-Con company/products", "url": "https://www.chemi-con.co.jp/en/products/"}
+      ]
+    },
+    {
+      "symbol": "002484.SZ",
+      "name": "江海股份",
+      "market": "CN",
+      "region": "China A",
+      "sector": "Aluminum capacitors / film capacitors",
+      "primary_business": "China capacitor supplier with aluminum electrolytic, film, and energy-storage capacitor exposure; useful A-share confirmation for aluminum-cap shortage themes.",
+      "specializations": ["aluminum electrolytic capacitors", "film capacitors", "power electronics capacitors", "industrial and new-energy applications"],
+      "platforms": ["AI server power read-through", "industrial power", "new energy"],
+      "constraints": ["A-share sentiment and policy beta", "AI-server purity must be validated", "commodity/raw material cost"],
+      "risk_flags": ["can lead Taiwan through sentiment rather than identical product mix", "A-share limit-up behavior can overstate durability"],
+      "concept_exposures": [
+        {"concept_id": "aluminum_polymer_cap", "role": "china_leader_signal", "weight": 0.75, "path": "A-share aluminum capacitor leader strength -> cross-market diffusion into Taiwan capacitor names"},
+        {"concept_id": "snap_in_capacitor", "role": "china_leader_signal", "weight": 0.75, "path": "large-cap power applications -> snap-in/large capacitor shortage confirmation"}
+      ],
+      "source_refs": [
+        {"title": "Gooaye EP664 local ASR", "url": "/Users/thtang/Documents/alpha-persona-lab/gooaye/data/transcripts/EP664.md"}
+      ]
+    },
+    {
+      "symbol": "6435.TWO",
+      "name": "大中",
+      "market": "TW",
+      "region": "Taiwan",
+      "sector": "Power semiconductor / MOSFET",
+      "primary_business": "Power semiconductor supplier focused on MOSFET and discrete power devices; AI relevance comes from 48V/800V rack power conversion rather than GPUs directly.",
+      "specializations": ["MOSFET", "power IC/discrete", "server power conversion", "industrial power"],
+      "platforms": ["800 VDC AI rack power", "server power supply", "HVDC conversion"],
+      "constraints": ["qualification into high-voltage AI power chain", "competition from global SiC/GaN/MOSFET leaders", "legacy PC/consumer drag"],
+      "risk_flags": ["theme is architectural, not always current revenue", "small-cap volatility"],
+      "concept_exposures": [
+        {"concept_id": "hvdc_power_semiconductor", "role": "laggard_watch", "weight": 0.85, "path": "800 VDC rack architecture -> higher-value power conversion devices -> Taiwan MOSFET catch-up"},
+        {"concept_id": "semiconductor_components", "role": "power_discrete_follower", "weight": 0.65, "path": "data-center power density -> discrete power semiconductor demand"}
+      ],
+      "source_refs": [
+        {"title": "TI 800 VDC with NVIDIA", "url": "https://www.ti.com/about-ti/newsroom/news-releases/2026/2026-03-16-ti-unveils-complete-800-vdc-power-architecture-for-future-generation-ai-data-centers-with-nvidia.html?HQS=multi-tech-data-gridtogate_dce_nvidiagtc-bhp-pr-null-wwe"},
+        {"title": "NVIDIA 800 VDC Architecture", "url": "https://www.nvidia.com/en-us/data-center/technologies/800-vdc-architecture/"}
+      ]
+    },
+    {
+      "symbol": "8261.TW",
+      "name": "富鼎",
+      "market": "TW",
+      "region": "Taiwan",
+      "sector": "Power semiconductor / MOSFET",
+      "primary_business": "Power semiconductor and MOSFET supplier with potential leverage to higher-voltage AI server and industrial power conversion.",
+      "specializations": ["power MOSFET", "power IC", "server/industrial power conversion"],
+      "platforms": ["800 VDC AI rack", "power supply", "industrial power"],
+      "constraints": ["AI server qualification", "global competition", "pricing cyclicality"],
+      "risk_flags": ["not a direct NVIDIA supplier proof by default", "needs revenue/order validation"],
+      "concept_exposures": [
+        {"concept_id": "hvdc_power_semiconductor", "role": "laggard_watch", "weight": 0.8, "path": "AI rack voltage migration -> MOSFET/power device content and spec uplift"},
+        {"concept_id": "semiconductor_components", "role": "power_discrete_follower", "weight": 0.65, "path": "server power conversion demand -> discrete semiconductor peer diffusion"}
+      ],
+      "source_refs": [
+        {"title": "NVIDIA 800 VDC Architecture", "url": "https://www.nvidia.com/en-us/data-center/technologies/800-vdc-architecture/"},
+        {"title": "TI 800 VDC with NVIDIA", "url": "https://www.ti.com/about-ti/newsroom/news-releases/2026/2026-03-16-ti-unveils-complete-800-vdc-power-architecture-for-future-generation-ai-data-centers-with-nvidia.html?HQS=multi-tech-data-gridtogate_dce_nvidiagtc-bhp-pr-null-wwe"}
+      ]
+    },
+    {
+      "symbol": "4979.TWO",
+      "name": "華星光",
+      "market": "TW",
+      "region": "Taiwan",
+      "sector": "Optical communications",
+      "primary_business": "Optical communication component/module supplier; AI relevance comes from 800G/1.6T data-center optical transceiver and laser supply tightness.",
+      "specializations": ["optical transceiver components", "800G/1.6T optical", "data-center optical modules"],
+      "platforms": ["AI data-center networking", "CPO/optical interconnect"],
+      "constraints": ["customer certification", "laser/optical component supply", "China/US peer pricing"],
+      "risk_flags": ["high-beta optical names can be news-sensitive", "customer concentration"],
+      "bottleneck_profile": {"layer": "Layer 7/8 - Optical module/component", "scarcity": "medium-high", "substitutability": "medium", "discovery_state": "taiwan_core_follower", "score": 3.3, "reason": "A Taiwan optical follower tied to module/component capacity, less upstream than InP or fiber-array chokepoints."},
+      "concept_exposures": [
+        {"concept_id": "cpo_optical", "role": "core_follower", "weight": 0.8, "path": "AI cluster network bandwidth -> optical transceiver/component demand"},
+        {"concept_id": "laser_capacity", "role": "follower", "weight": 0.65, "path": "laser capacity tightness -> optical component allocation read-through"}
+      ],
+      "source_refs": [
+        {"title": "TrendForce optical transceiver share over 60% by 2026", "url": "https://www.trendforce.com/presscenter/news/20260210-12919.html"}
+      ]
+    },
+    {
+      "symbol": "3450.TW",
+      "name": "聯鈞",
+      "market": "TW",
+      "region": "Taiwan",
+      "sector": "Optoelectronic components",
+      "primary_business": "Optoelectronic component and optical communication supplier; positioned as a Taiwan optical laggard/follower when CPO and laser constraints reprice.",
+      "specializations": ["optical communication components", "laser/photonic packaging read-through", "data-center optical supply chain"],
+      "platforms": ["800G/1.6T optical", "CPO", "AI data-center interconnect"],
+      "constraints": ["qualification and product mix", "global optical leader moves", "customer concentration"],
+      "risk_flags": ["may lag for valid product-mix reasons", "needs volume and margin confirmation"],
+      "bottleneck_profile": {"layer": "Layer 2/7 - Laser/optical component follower", "scarcity": "medium-high", "substitutability": "medium", "discovery_state": "taiwan_laggard_watch", "score": 3.5, "reason": "Potential Taiwan catch-up if laser and optical component capacity, not just modules, becomes the bottleneck."},
+      "concept_exposures": [
+        {"concept_id": "laser_capacity", "role": "laggard_watch", "weight": 0.75, "path": "AI optical laser capacity squeeze -> Taiwan optical component catch-up"},
+        {"concept_id": "inp_photonics", "role": "device_follower", "weight": 0.62, "path": "InP laser/material tightness -> Taiwan optoelectronic component read-through"},
+        {"concept_id": "cpo_optical", "role": "laggard_watch", "weight": 0.7, "path": "800G/CPO leader strength -> second-line optical follower screening"}
+      ],
+      "source_refs": [
+        {"title": "TrendForce Google optical interconnect architecture", "url": "https://www.trendforce.com/presscenter/news/20260210-12919.html"}
+      ]
+    },
+    {
+      "symbol": "COHR",
+      "name": "Coherent",
+      "market": "US",
+      "region": "US",
+      "sector": "Optical components / compound semiconductors",
+      "primary_business": "Optical materials, lasers, transceivers, and compound-semiconductor components for datacom, telecom, industrial, and AI optical-networking applications.",
+      "specializations": ["InP lasers", "EML/CW laser sources", "800G/1.6T optical components", "compound semiconductor materials"],
+      "platforms": ["AI data-center optical I/O", "pluggable optics", "future CPO light-source supply"],
+      "constraints": ["InP wafer and epitaxy capacity", "hyperscaler qualification", "optical cycle inventory"],
+      "risk_flags": ["already a visible optical leader", "high expectations can compress laggard edge"],
+      "bottleneck_profile": {"layer": "Layer 2 - InP light sources", "scarcity": "high", "substitutability": "medium-low", "discovery_state": "visible_leader", "score": 4.0, "reason": "Light-source capacity is a gate for 800G/1.6T and CPO migration, but COHR is already widely watched."},
+      "concept_exposures": [
+        {"concept_id": "cpo_optical", "role": "global_leader", "weight": 0.85, "path": "AI cluster bandwidth growth -> 800G/1.6T optics -> Coherent optical component demand"},
+        {"concept_id": "laser_capacity", "role": "global_leader", "weight": 0.85, "path": "CPO/pluggable optical transition -> laser-source allocation bottleneck"},
+        {"concept_id": "inp_photonics", "role": "global_leader", "weight": 0.8, "path": "InP material and laser die constraints -> vertically integrated optical supplier leverage"}
+      ],
+      "source_refs": [
+        {"title": "ForcedAlpha CPO supply-chain map", "url": "https://forcedalpha.com/research/photonics/"},
+        {"title": "CPO package layer map", "url": "https://leonardo-boquillon.com/photonic-cop-supply-chain"}
+      ]
+    },
+    {
+      "symbol": "LITE",
+      "name": "Lumentum",
+      "market": "US",
+      "region": "US",
+      "sector": "Optical components / lasers",
+      "primary_business": "Optical and photonic products including telecom/datacom lasers, optical components, and modules used in high-speed networks.",
+      "specializations": ["EML laser sources", "datacom optical components", "CW laser transition watch"],
+      "platforms": ["800G/1.6T optical", "AI data-center interconnect", "CPO light-source migration"],
+      "constraints": ["laser capacity", "customer program timing", "inventory cycle"],
+      "risk_flags": ["large optical beta", "transition from pluggable to CPO can reshuffle winners"],
+      "bottleneck_profile": {"layer": "Layer 2 - Light sources", "scarcity": "high", "substitutability": "medium", "discovery_state": "visible_leader", "score": 3.8, "reason": "Laser-source supply is scarce, but current-cycle leaders can be crowded before CPO enablers catch up."},
+      "concept_exposures": [
+        {"concept_id": "cpo_optical", "role": "global_leader", "weight": 0.8, "path": "AI data-center optical upgrade -> high-speed optical component demand"},
+        {"concept_id": "laser_capacity", "role": "global_leader", "weight": 0.85, "path": "laser availability -> 800G/1.6T transceiver and CPO ramp"},
+        {"concept_id": "inp_photonics", "role": "leader_signal", "weight": 0.75, "path": "InP laser demand -> merchant optical component leader signal"}
+      ],
+      "source_refs": [
+        {"title": "ForcedAlpha CPO supply-chain map", "url": "https://forcedalpha.com/research/photonics/"},
+        {"title": "CPO package layer map", "url": "https://leonardo-boquillon.com/photonic-cop-supply-chain"}
+      ]
+    },
+    {
+      "symbol": "AAOI",
+      "name": "Applied Optoelectronics",
+      "market": "US",
+      "region": "US",
+      "sector": "Optical transceivers",
+      "primary_business": "Vertically integrated optical transceiver and laser supplier with high beta to data-center optical demand.",
+      "specializations": ["800G optical modules", "laser/transceiver integration", "datacenter optical networking"],
+      "platforms": ["AI data-center pluggable optics", "800G/1.6T transition"],
+      "constraints": ["customer concentration", "InP/laser material availability", "module pricing"],
+      "risk_flags": ["high-beta price action can overheat fast", "gross margin sensitive to optical cycle"],
+      "bottleneck_profile": {"layer": "Layer 8 - Module integration", "scarcity": "medium-high", "substitutability": "medium", "discovery_state": "high_beta_visible", "score": 3.5, "reason": "Good current-cycle confirmation node, less hidden than upstream substrates or micro-optics."},
+      "concept_exposures": [
+        {"concept_id": "cpo_optical", "role": "high_beta_leader", "weight": 0.75, "path": "US optical leader strength -> Asia optical follower diffusion"},
+        {"concept_id": "inp_photonics", "role": "downstream_confirmation", "weight": 0.65, "path": "InP laser/substrate shortage -> transceiver margin and supply read-through"}
+      ],
+      "source_refs": [
+        {"title": "ForcedAlpha AXTI optical precedent", "url": "https://forcedalpha.com/research/photonics/"}
+      ]
+    },
+    {
+      "symbol": "AXTI",
+      "name": "AXT",
+      "market": "US",
+      "region": "US",
+      "sector": "Compound semiconductor substrates",
+      "primary_business": "Compound semiconductor substrate supplier including indium phosphide, gallium arsenide, and germanium wafers.",
+      "specializations": ["InP substrates", "GaAs substrates", "compound semiconductor wafers"],
+      "platforms": ["800G/1.6T optical components", "InP photonics", "datacom lasers"],
+      "constraints": ["crystal growth capacity", "multi-quarter qualification", "China manufacturing/geopolitics"],
+      "risk_flags": ["small-cap volatility", "commodity material cycle", "customer qualification timing"],
+      "bottleneck_profile": {"layer": "Layer 1 - InP substrates", "scarcity": "critical", "substitutability": "low", "discovery_state": "still_specialized", "score": 4.8, "reason": "InP substrate availability can gate laser/transceiver output; few qualified suppliers and long capacity lead times."},
+      "concept_exposures": [
+        {"concept_id": "inp_photonics", "role": "substrate_bottleneck", "weight": 0.98, "path": "InP wafer shortage -> laser die and transceiver capacity gate -> AI optical I/O bottleneck"},
+        {"concept_id": "wafer_materials", "role": "material_bottleneck", "weight": 0.8, "path": "compound semiconductor substrate capacity -> downstream photonics output"}
+      ],
+      "source_refs": [
+        {"title": "ForcedAlpha CPO supply-chain map", "url": "https://forcedalpha.com/research/photonics/"}
+      ]
+    },
+    {
+      "symbol": "TSEM",
+      "name": "Tower Semiconductor",
+      "market": "US",
+      "region": "Israel ADR",
+      "sector": "Specialty foundry / silicon photonics",
+      "primary_business": "Specialty analog and mixed-signal foundry with silicon-photonics platform exposure.",
+      "specializations": ["silicon photonics foundry", "analog/mixed-signal foundry", "specialty process platforms"],
+      "platforms": ["SiPh optical engines", "CPO foundry ecosystem"],
+      "constraints": ["foundry slot allocation", "customer tapeout timing", "SiPh qualification"],
+      "risk_flags": ["not a pure SiPh company", "specialty foundry cycle can dominate near-term stock"],
+      "bottleneck_profile": {"layer": "Layer 3 - SiPh foundry", "scarcity": "high", "substitutability": "medium-low", "discovery_state": "specialty_visible", "score": 4.2, "reason": "Open-access SiPh capacity can bottleneck external CPO designs that do not use an internal captive fab."},
+      "concept_exposures": [
+        {"concept_id": "silicon_photonics", "role": "foundry_gatekeeper", "weight": 0.92, "path": "CPO architecture -> SiPh PIC foundry capacity -> optical-engine supply"},
+        {"concept_id": "foundry", "role": "specialty_foundry", "weight": 0.7, "path": "specialty process capacity -> optical/analog supply chain"}
+      ],
+      "source_refs": [
+        {"title": "ForcedAlpha CPO supply-chain map", "url": "https://forcedalpha.com/research/photonics/"},
+        {"title": "CPO package layer map", "url": "https://leonardo-boquillon.com/photonic-cop-supply-chain"}
+      ]
+    },
+    {
+      "symbol": "HIMX",
+      "name": "Himax Technologies",
+      "market": "US",
+      "region": "Taiwan ADR",
+      "sector": "Display IC / micro-optics",
+      "primary_business": "Display imaging semiconductor supplier with micro-optics and lens-array optionality for optical interconnect packaging.",
+      "specializations": ["micro-lens arrays", "optical coupling", "display driver IC"],
+      "platforms": ["CPO fiber coupling", "TSMC photonic packaging read-through", "AI optical I/O"],
+      "constraints": ["program qualification", "small optical revenue base vs legacy display IC", "precision alignment yield"],
+      "risk_flags": ["optical thesis can be diluted by display-cycle results", "verify actual shipment/revenue ramp"],
+      "bottleneck_profile": {"layer": "Layer 4 - Micro-optics/fiber coupling", "scarcity": "high", "substitutability": "low-medium", "discovery_state": "emerging", "score": 4.4, "reason": "Sub-micron optical coupling can become a hidden gate when CPO moves from demos to volume packaging."},
+      "concept_exposures": [
+        {"concept_id": "specialty_glass_fiber", "role": "micro_optics_gate", "weight": 0.9, "path": "CPO optical engine -> micro-lens/fiber coupling precision -> package-level yield gate"},
+        {"concept_id": "silicon_photonics", "role": "packaging_follower", "weight": 0.75, "path": "SiPh chiplet packaging -> micro-optics interface demand"}
+      ],
+      "source_refs": [
+        {"title": "ForcedAlpha CPO supply-chain map", "url": "https://forcedalpha.com/research/photonics/"}
+      ]
+    },
+    {
+      "symbol": "POET",
+      "name": "POET Technologies",
+      "market": "US",
+      "region": "Canada",
+      "sector": "Optical interposer / photonic packaging",
+      "primary_business": "Optical interposer platform company targeting compact photonic integration for high-speed optical modules and CPO-like architectures.",
+      "specializations": ["optical interposer", "photonic packaging", "800G/1.6T optical engines"],
+      "platforms": ["CPO/optical engine packaging", "AI optical interconnect"],
+      "constraints": ["pre-scale revenue", "customer qualification", "manufacturing ramp"],
+      "risk_flags": ["early-stage execution risk", "high valuation sensitivity to orders"],
+      "bottleneck_profile": {"layer": "Layer 5 - Optical interposer", "scarcity": "high", "substitutability": "medium-low", "discovery_state": "early_high_beta", "score": 4.0, "reason": "If optical interposer becomes a packaging standard, downstream value gated can be large; execution proof still needed."},
+      "concept_exposures": [
+        {"concept_id": "optical_interposer_packaging", "role": "platform_bottleneck", "weight": 0.92, "path": "CPO module integration -> optical interposer architecture -> high-asymmetry packaging node"},
+        {"concept_id": "silicon_photonics", "role": "platform_follower", "weight": 0.7, "path": "SiPh/CPO adoption -> photonic interposer demand"}
+      ],
+      "source_refs": [
+        {"title": "ForcedAlpha CPO supply-chain map", "url": "https://forcedalpha.com/research/photonics/"}
+      ]
+    },
+    {
+      "symbol": "FORM",
+      "name": "FormFactor",
+      "market": "US",
+      "region": "US",
+      "sector": "Semiconductor test / probe cards",
+      "primary_business": "Semiconductor test and probe-card supplier; photonic wafer-level test is a hidden throughput gate for compound semiconductor and SiPh devices.",
+      "specializations": ["probe cards", "wafer-level test", "compound semiconductor / photonic test"],
+      "platforms": ["InP wafer test", "SiPh wafer test", "AI photonics quality gate"],
+      "constraints": ["test capacity", "customer adoption", "semicap cycle"],
+      "risk_flags": ["photonic test is only one part of diversified test revenue", "capex cycle exposure"],
+      "bottleneck_profile": {"layer": "Layer 9 - Photonic wafer test", "scarcity": "medium-high", "substitutability": "medium-low", "discovery_state": "underappreciated", "score": 3.9, "reason": "No optical component ships without yield/test; test can throttle ramp even when material is available."},
+      "concept_exposures": [
+        {"concept_id": "silicon_photonics", "role": "test_gate", "weight": 0.75, "path": "SiPh/InP wafer output -> wafer-level photonic test -> yield and shipment gate"},
+        {"concept_id": "semicap_equipment", "role": "test_equipment", "weight": 0.7, "path": "compound semiconductor ramp -> specialized test demand"}
+      ],
+      "source_refs": [
+        {"title": "ForcedAlpha CPO supply-chain map", "url": "https://forcedalpha.com/research/photonics/"}
+      ]
+    },
+    {
+      "symbol": "VECO",
+      "name": "Veeco Instruments",
+      "market": "US",
+      "region": "US",
+      "sector": "Compound semiconductor equipment",
+      "primary_business": "Process equipment supplier for compound semiconductors and advanced materials, including deposition and epitaxy-related systems.",
+      "specializations": ["MOCVD/epitaxy-related equipment", "compound semiconductor equipment", "laser/photonic material process tools"],
+      "platforms": ["III-V photonics", "InP/GaAs optical devices", "AI optical component capacity expansion"],
+      "constraints": ["capex order timing", "customer concentration", "equipment cycle"],
+      "risk_flags": ["equipment demand can lag shortage signal", "broad end-market exposure"],
+      "bottleneck_profile": {"layer": "Layer 1.5 - III-V epitaxy capacity", "scarcity": "medium-high", "substitutability": "medium", "discovery_state": "tooling_laggard", "score": 3.6, "reason": "When InP/GaAs laser capacity is short, epitaxy/deposition tools become the capacity-expansion picks-and-shovels."},
+      "concept_exposures": [
+        {"concept_id": "epitaxy_equipment", "role": "capacity_expansion_tool", "weight": 0.85, "path": "InP/laser capacity shortage -> MOCVD/epitaxy tool demand for supply expansion"},
+        {"concept_id": "semicap_equipment", "role": "equipment_follower", "weight": 0.65, "path": "compound semiconductor capex -> specialized equipment demand"}
+      ],
+      "source_refs": [
+        {"title": "CPO package layer map", "url": "https://leonardo-boquillon.com/photonic-cop-supply-chain"}
+      ]
+    },
+    {
+      "symbol": "GLW",
+      "name": "Corning",
+      "market": "US",
+      "region": "US",
+      "sector": "Specialty glass / optical fiber",
+      "primary_business": "Specialty glass, optical fiber/cable, and materials supplier; AI optical relevance comes from fiber, glass, and precision optical material demand.",
+      "specializations": ["optical fiber", "specialty glass", "data-center fiber/cable"],
+      "platforms": ["AI data-center interconnect", "fiber-dense campus networking"],
+      "constraints": ["large diversified revenue base", "telecom inventory", "fiber pricing"],
+      "risk_flags": ["less pure CPO exposure", "moves can be driven by display/glass cycles"],
+      "bottleneck_profile": {"layer": "Layer 4/8 - Fiber and specialty glass", "scarcity": "medium", "substitutability": "medium", "discovery_state": "large_cap_proxy", "score": 3.0, "reason": "Useful physical-infrastructure confirmation node; not as asymmetric as small upstream photonics suppliers."},
+      "concept_exposures": [
+        {"concept_id": "specialty_glass_fiber", "role": "global_material_proxy", "weight": 0.75, "path": "AI campus networking -> specialty fiber/glass demand"},
+        {"concept_id": "cpo_optical", "role": "large_cap_proxy", "weight": 0.55, "path": "optical interconnect growth -> fiber/glass ecosystem read-through"}
+      ],
+      "source_refs": [
+        {"title": "Knowledge at Wharton AI supply-chain bottleneck framing", "url": "https://knowledge.wharton.upenn.edu/article/ais-supply-chain-problem/"}
+      ]
+    },
+    {
+      "symbol": "5802.T",
+      "name": "Sumitomo Electric Industries",
+      "market": "JP",
+      "region": "Japan",
+      "sector": "Wire/cable / compound semiconductor materials",
+      "primary_business": "Japanese supplier across wire/cable, optical fiber, and compound-semiconductor materials including InP-related photonics materials.",
+      "specializations": ["InP substrate/epitaxy read-through", "optical fiber/cable", "data-center connectivity"],
+      "platforms": ["InP photonics", "AI data-center optical networking", "Japanese materials chain"],
+      "constraints": ["conglomerate dilution", "capacity disclosure opacity", "FX and Japan cyclicality"],
+      "risk_flags": ["not a pure InP play", "large business mix can mute bottleneck upside"],
+      "bottleneck_profile": {"layer": "Layer 1 - InP/fiber materials", "scarcity": "high", "substitutability": "low-medium", "discovery_state": "japan_materials_proxy", "score": 3.8, "reason": "Japan materials suppliers are key upstream confirmation for InP and fiber bottlenecks, but stock purity is diluted."},
+      "concept_exposures": [
+        {"concept_id": "inp_photonics", "role": "regional_material_leader", "weight": 0.8, "path": "InP material tightness -> Japan compound-material supplier signal"},
+        {"concept_id": "specialty_glass_fiber", "role": "regional_leader", "weight": 0.75, "path": "AI optical networking -> fiber/cable material demand"}
+      ],
+      "source_refs": [
+        {"title": "CPO package layer map", "url": "https://leonardo-boquillon.com/photonic-cop-supply-chain"}
+      ]
+    },
+    {
+      "symbol": "5803.T",
+      "name": "Fujikura",
+      "market": "JP",
+      "region": "Japan",
+      "sector": "Optical fiber / wiring systems",
+      "primary_business": "Japanese cable and fiber supplier with high visibility to data-center optical connectivity and AI infrastructure wiring density.",
+      "specializations": ["optical fiber", "fiber cable", "high-density data-center interconnect"],
+      "platforms": ["AI data-center networking", "800G/1.6T optical buildout"],
+      "constraints": ["Japan leader already widely discovered", "fiber capacity/pricing", "telecom cycle"],
+      "risk_flags": ["leader can be overextended before Taiwan followers move", "not all fiber demand is AI CPO"],
+      "bottleneck_profile": {"layer": "Layer 8 - Fiber connectivity", "scarcity": "medium-high", "substitutability": "medium", "discovery_state": "regional_visible_leader", "score": 3.5, "reason": "A clean Japan leader signal for optical/fiber diffusion, but less hidden than upstream InP/SOI nodes."},
+      "concept_exposures": [
+        {"concept_id": "specialty_glass_fiber", "role": "regional_leader", "weight": 0.82, "path": "AI optical campus buildout -> Japanese fiber/cable leader strength -> Taiwan optical follower signal"},
+        {"concept_id": "cpo_optical", "role": "regional_leader", "weight": 0.72, "path": "optical interconnect adoption -> high-density connectivity demand"}
+      ],
+      "source_refs": [
+        {"title": "ForcedAlpha CPO supply-chain map", "url": "https://forcedalpha.com/research/photonics/"}
+      ]
+    },
+    {
+      "symbol": "4063.T",
+      "name": "Shin-Etsu Chemical",
+      "market": "JP",
+      "region": "Japan",
+      "sector": "Semiconductor materials / wafers",
+      "primary_business": "Global semiconductor materials supplier including silicon wafers and chemicals; useful read-through for SiPh/SOI substrate tightness but not a pure CPO stock.",
+      "specializations": ["silicon wafers", "semiconductor materials", "SiPh substrate read-through"],
+      "platforms": ["silicon photonics", "advanced semiconductor materials"],
+      "constraints": ["large diversified chemical/materials business", "SOI exposure may be indirect"],
+      "risk_flags": ["moves may reflect general semiconductor cycle more than CPO bottleneck"],
+      "bottleneck_profile": {"layer": "Layer 1 - Si/SOI substrate proxy", "scarcity": "medium", "substitutability": "medium-low", "discovery_state": "large_cap_materials_proxy", "score": 3.2, "reason": "A broad material proxy for SiPh substrate demand; needs confirmation from SOI-specific sources."},
+      "concept_exposures": [
+        {"concept_id": "soi_wafer", "role": "materials_proxy", "weight": 0.65, "path": "SiPh chiplet demand -> SOI/silicon wafer material read-through"},
+        {"concept_id": "wafer_materials", "role": "global_material_leader", "weight": 0.75, "path": "semiconductor wafer demand -> Japanese material leader signal"}
+      ],
+      "source_refs": [
+        {"title": "CPO package layer map", "url": "https://leonardo-boquillon.com/photonic-cop-supply-chain"}
+      ]
+    },
+    {
+      "symbol": "3436.T",
+      "name": "SUMCO",
+      "market": "JP",
+      "region": "Japan",
+      "sector": "Silicon wafers",
+      "primary_business": "Silicon wafer producer; in this graph it acts as a broad substrate proxy for SiPh and semiconductor wafer-cycle confirmation.",
+      "specializations": ["silicon wafers", "300mm wafers", "SiPh substrate proxy"],
+      "platforms": ["silicon photonics", "semiconductor wafer supply"],
+      "constraints": ["wafer cycle", "not SOI pure play", "Japan FX/cycle"],
+      "risk_flags": ["broad wafer proxy can lag specific CPO bottlenecks"],
+      "bottleneck_profile": {"layer": "Layer 1 - silicon substrate proxy", "scarcity": "medium", "substitutability": "medium", "discovery_state": "cyclical_proxy", "score": 2.8, "reason": "Useful as a substrate-cycle confirmation node, but not the cleanest bottleneck exposure."},
+      "concept_exposures": [
+        {"concept_id": "soi_wafer", "role": "materials_proxy", "weight": 0.55, "path": "SiPh substrate demand -> silicon wafer supply-chain sentiment"},
+        {"concept_id": "wafer_materials", "role": "regional_material_leader", "weight": 0.75, "path": "semiconductor wafer cycle -> Japan substrate peer signal"}
+      ],
+      "source_refs": [
+        {"title": "CPO package layer map", "url": "https://leonardo-boquillon.com/photonic-cop-supply-chain"}
+      ]
+    },
+    {
+      "symbol": "3081.TWO",
+      "name": "聯亞",
+      "market": "TW",
+      "region": "Taiwan",
+      "sector": "III-V epitaxy / optical components",
+      "primary_business": "Taiwan III-V epitaxy and optoelectronic supplier; AI relevance comes from InP/GaAs epitaxy, lasers, and optical communication component bottlenecks.",
+      "specializations": ["III-V epitaxy", "InP/GaAs optical components", "laser/photodiode supply chain"],
+      "platforms": ["800G/1.6T optical", "CPO light-source chain", "AI data-center optical I/O"],
+      "constraints": ["customer qualification", "capacity/yield", "volatile small-cap optical cycle"],
+      "risk_flags": ["needs product mix and order validation", "can trade on rumor rather than revenue"],
+      "bottleneck_profile": {"layer": "Layer 1.5/2 - III-V epitaxy and light-source chain", "scarcity": "high", "substitutability": "low-medium", "discovery_state": "taiwan_laggard_watch", "score": 4.2, "reason": "Taiwan III-V epitaxy is a plausible second/third-layer beneficiary if InP and laser capacity becomes the bottleneck."},
+      "concept_exposures": [
+        {"concept_id": "inp_photonics", "role": "taiwan_bottleneck_candidate", "weight": 0.9, "path": "InP/III-V optical shortage -> Taiwan epitaxy and laser-chain catch-up"},
+        {"concept_id": "laser_capacity", "role": "laggard_watch", "weight": 0.82, "path": "laser capacity tightness -> upstream epitaxy/optical component demand"},
+        {"concept_id": "cpo_optical", "role": "laggard_watch", "weight": 0.75, "path": "CPO/800G leader strength -> Taiwan III-V follower screening"}
+      ],
+      "source_refs": [
+        {"title": "ForcedAlpha CPO supply-chain map", "url": "https://forcedalpha.com/research/photonics/"}
+      ]
+    },
+    {
+      "symbol": "3363.TWO",
+      "name": "上詮",
+      "market": "TW",
+      "region": "Taiwan",
+      "sector": "Optical fiber array / connectivity",
+      "primary_business": "Optical communication component supplier with fiber-array and passive optical connectivity exposure.",
+      "specializations": ["fiber array unit", "optical coupling", "CPO/MCM optical interface read-through"],
+      "platforms": ["CPO fiber coupling", "AI optical modules", "data-center optical interconnect"],
+      "constraints": ["qualification", "precision alignment yield", "AI customer concentration"],
+      "risk_flags": ["small-cap optical volatility", "needs order/ASP verification"],
+      "bottleneck_profile": {"layer": "Layer 4 - Fiber array / optical coupling", "scarcity": "high", "substitutability": "low-medium", "discovery_state": "taiwan_emerging", "score": 4.3, "reason": "Fiber-array coupling can be a hidden physical interface bottleneck in CPO modules."},
+      "concept_exposures": [
+        {"concept_id": "specialty_glass_fiber", "role": "fiber_coupling_candidate", "weight": 0.92, "path": "CPO module packaging -> fiber array / coupling precision -> Taiwan optical interface beneficiary"},
+        {"concept_id": "cpo_optical", "role": "laggard_watch", "weight": 0.78, "path": "CPO leader strength -> fiber-array component catch-up"}
+      ],
+      "source_refs": [
+        {"title": "ForcedAlpha CPO supply-chain map", "url": "https://forcedalpha.com/research/photonics/"}
+      ]
+    },
+    {
+      "symbol": "6442.TW",
+      "name": "光聖",
+      "market": "TW",
+      "region": "Taiwan",
+      "sector": "Optical communications",
+      "primary_business": "Optical communication component and module supplier; used as Taiwan regional leader confirmation for optical/CPO diffusion.",
+      "specializations": ["optical communication modules", "data-center optical components", "fiber connectivity"],
+      "platforms": ["800G/1.6T optical", "AI data-center networking"],
+      "constraints": ["customer certification", "capacity", "optical cycle"],
+      "risk_flags": ["can become leader/crowded before second-line laggards", "requires volume confirmation"],
+      "bottleneck_profile": {"layer": "Layer 7/8 - Optical assembly/module", "scarcity": "medium-high", "substitutability": "medium", "discovery_state": "taiwan_visible_leader", "score": 3.5, "reason": "Good Taiwan optical breadth/leader signal; less hidden than InP/FAU upstream nodes."},
+      "concept_exposures": [
+        {"concept_id": "cpo_optical", "role": "regional_leader", "weight": 0.85, "path": "Taiwan optical leader strength -> confirms local diffusion"},
+        {"concept_id": "specialty_glass_fiber", "role": "regional_follower", "weight": 0.62, "path": "AI optical connectivity -> fiber/component read-through"}
+      ],
+      "source_refs": [
+        {"title": "TrendForce optical interconnect architecture", "url": "https://www.trendforce.com/presscenter/news/20260210-12919.html"}
+      ]
+    },
+    {
+      "symbol": "4908.TWO",
+      "name": "前鼎",
+      "market": "TW",
+      "region": "Taiwan",
+      "sector": "Optical transceiver/module",
+      "primary_business": "Optical communication module supplier; high-beta Taiwan optical breadth signal rather than a confirmed upstream bottleneck.",
+      "specializations": ["optical transceivers", "communication modules", "data-center optical read-through"],
+      "platforms": ["800G/1.6T optical", "AI data-center networking"],
+      "constraints": ["product generation mix", "customer qualification", "module pricing"],
+      "risk_flags": ["high-beta optical trading", "must verify AI-grade mix"],
+      "bottleneck_profile": {"layer": "Layer 8 - Module integration", "scarcity": "medium", "substitutability": "medium-high", "discovery_state": "high_beta_taiwan", "score": 2.9, "reason": "Good breadth/confirmation node, but lower bottleneck asymmetry than substrate, laser, or fiber-coupling suppliers."},
+      "concept_exposures": [
+        {"concept_id": "cpo_optical", "role": "high_beta_leader", "weight": 0.65, "path": "Taiwan optical momentum -> high-beta module follower/leader signal"},
+        {"concept_id": "networking", "role": "optical_module_proxy", "weight": 0.55, "path": "AI networking upgrade -> optical module demand"}
+      ],
+      "source_refs": [
+        {"title": "TrendForce optical interconnect architecture", "url": "https://www.trendforce.com/presscenter/news/20260210-12919.html"}
+      ]
+    },
+    {
+      "symbol": "300308.SZ",
+      "name": "中際旭創",
+      "market": "CN",
+      "region": "China A",
+      "sector": "Optical transceivers",
+      "primary_business": "China optical transceiver leader and global data-center optical module supplier, useful as A-share leader confirmation for optical diffusion.",
+      "specializations": ["800G optical modules", "data-center optical transceivers", "AI optical networking"],
+      "platforms": ["800G/1.6T AI data-center modules", "hyperscaler optical networking"],
+      "constraints": ["export/customer risk", "module ASP cycle", "A-share crowding"],
+      "risk_flags": ["leader can be priced before laggards", "policy/geopolitical risk"],
+      "bottleneck_profile": {"layer": "Layer 8 - Module integration", "scarcity": "medium-high", "substitutability": "medium", "discovery_state": "china_visible_leader", "score": 3.3, "reason": "A-share leader signal for optical module demand; not the most hidden upstream chokepoint."},
+      "concept_exposures": [
+        {"concept_id": "cpo_optical", "role": "regional_leader", "weight": 0.9, "path": "China optical leader strength -> Taiwan/CN second-line optical diffusion"},
+        {"concept_id": "laser_capacity", "role": "downstream_confirmation", "weight": 0.62, "path": "laser/substrate tightness -> module supply and pricing confirmation"}
+      ],
+      "source_refs": [
+        {"title": "TrendForce optical transceiver AI demand", "url": "https://www.trendforce.com/presscenter/news/20260210-12919.html"}
+      ]
+    },
+    {
+      "symbol": "300502.SZ",
+      "name": "新易盛",
+      "market": "CN",
+      "region": "China A",
+      "sector": "Optical transceivers",
+      "primary_business": "China optical transceiver supplier with high exposure to data-center and AI optical module demand.",
+      "specializations": ["high-speed optical transceivers", "800G modules", "data-center optical"],
+      "platforms": ["AI data-center networking", "800G/1.6T optical modules"],
+      "constraints": ["module competition", "customer mix", "A-share crowding"],
+      "risk_flags": ["can overheat with optical leader basket", "geopolitical/customer risk"],
+      "bottleneck_profile": {"layer": "Layer 8 - Module integration", "scarcity": "medium-high", "substitutability": "medium", "discovery_state": "china_visible_leader", "score": 3.3, "reason": "A-share optical leader confirmation node; use as leader indicator for Taiwan second-line laggards."},
+      "concept_exposures": [
+        {"concept_id": "cpo_optical", "role": "regional_leader", "weight": 0.9, "path": "China optical leader strength -> cross-market optical diffusion signal"},
+        {"concept_id": "laser_capacity", "role": "downstream_confirmation", "weight": 0.62, "path": "laser/component availability -> high-speed module shipment confirmation"}
+      ],
+      "source_refs": [
+        {"title": "TrendForce optical transceiver AI demand", "url": "https://www.trendforce.com/presscenter/news/20260210-12919.html"}
+      ]
+    },
+    {
+      "symbol": "002281.SZ",
+      "name": "光迅科技",
+      "market": "CN",
+      "region": "China A",
+      "sector": "Optical components/modules",
+      "primary_business": "Optical device and module supplier; China second-line optical node for component breadth and InP/optical device diffusion.",
+      "specializations": ["optical devices", "transceiver modules", "photonic components"],
+      "platforms": ["AI optical networking", "800G/1.6T optical"],
+      "constraints": ["state/telecom mix vs AI datacenter", "qualification", "A-share volatility"],
+      "risk_flags": ["AI purity lower than top transceiver leaders", "policy/telecom mix can dilute signal"],
+      "bottleneck_profile": {"layer": "Layer 2/7 - Optical devices and assembly", "scarcity": "medium", "substitutability": "medium", "discovery_state": "china_laggard_watch", "score": 3.1, "reason": "Useful breadth node if optical device demand spreads beyond first-line China leaders."},
+      "concept_exposures": [
+        {"concept_id": "cpo_optical", "role": "laggard_watch", "weight": 0.75, "path": "first-line China optical leader strength -> second-line device/module catch-up"},
+        {"concept_id": "inp_photonics", "role": "device_follower", "weight": 0.62, "path": "InP/laser device tightness -> optical device supplier sentiment"}
+      ],
+      "source_refs": [
+        {"title": "ForcedAlpha CPO supply-chain map", "url": "https://forcedalpha.com/research/photonics/"}
+      ]
+    },
+    {
+      "symbol": "300548.SZ",
+      "name": "博創科技",
+      "market": "CN",
+      "region": "China A",
+      "sector": "Optical components/modules",
+      "primary_business": "Optical communication component and module company; second-line China optical diffusion candidate.",
+      "specializations": ["optical modules", "photonic components", "data-center optical"],
+      "platforms": ["800G/1.6T optical", "AI data-center networking"],
+      "constraints": ["customer mix", "small-cap liquidity", "module ASP"],
+      "risk_flags": ["second-line quality varies", "needs volume/revenue confirmation"],
+      "bottleneck_profile": {"layer": "Layer 7/8 - Optical module assembly", "scarcity": "medium", "substitutability": "medium", "discovery_state": "china_laggard_watch", "score": 3.0, "reason": "Potential catch-up node after leader basket confirms; lower chokepoint purity than upstream material/tooling."},
+      "concept_exposures": [
+        {"concept_id": "cpo_optical", "role": "laggard_watch", "weight": 0.72, "path": "China optical leader strength -> second-line module/component diffusion"},
+        {"concept_id": "silicon_photonics", "role": "follower", "weight": 0.55, "path": "SiPh/CPO sentiment -> optical component basket catch-up"}
+      ],
+      "source_refs": [
+        {"title": "ForcedAlpha CPO supply-chain map", "url": "https://forcedalpha.com/research/photonics/"}
+      ]
+    },
+    {
+      "symbol": "ARM",
+      "name": "Arm Holdings",
+      "market": "US",
+      "region": "UK ADR",
+      "sector": "CPU IP / data-center compute",
+      "primary_business": "CPU instruction-set and processor IP supplier; Neoverse-class cores are a key route for hyperscaler custom CPUs and agentic orchestration compute.",
+      "specializations": ["Neoverse data-center CPU IP", "custom silicon IP", "low-power high-core-count CPU designs"],
+      "platforms": ["hyperscaler custom CPU", "cloud CPU", "agentic CPU rack"],
+      "constraints": ["royalty model timing", "customer in-house design cycles", "valuation crowding"],
+      "risk_flags": ["benefits through IP and royalties rather than direct server shipments", "already widely recognized as AI CPU beneficiary"],
+      "bottleneck_profile": {"layer": "Layer 1 - CPU architecture IP", "scarcity": "medium-high", "substitutability": "medium", "discovery_state": "visible_leader", "score": 3.6, "reason": "Agentic CPU rack demand can raise the value of energy-efficient CPU IP, especially in hyperscaler custom silicon."},
+      "concept_exposures": [
+        {"concept_id": "agentic_cpu_rack", "role": "global_leader", "weight": 0.82, "path": "agentic workflow concurrency -> high-core-count cloud CPU demand -> Arm Neoverse/custom CPU IP"},
+        {"concept_id": "ip_asic", "role": "platform_ip", "weight": 0.72, "path": "hyperscaler custom silicon -> CPU/IP licensing leverage"}
+      ],
+      "source_refs": [
+        {"title": "Agentic AI investment conclusion", "url": "/Users/thtang/Downloads/agentic_ai_investment_conclusion.md"},
+        {"title": "Morgan Stanley podcast: AI's Shift From Thinking to Taking Action", "url": "https://www.morganstanley.com/insights/podcasts/thoughts-on-the-market/agentic-ai-supply-chain-market-shawn-kim"}
+      ]
+    },
+    {
+      "symbol": "MU",
+      "name": "Micron",
+      "market": "US",
+      "region": "US",
+      "sector": "Memory",
+      "primary_business": "Memory manufacturer spanning DRAM, HBM, NAND, and data-center storage products.",
+      "specializations": ["HBM", "server DRAM", "NAND", "enterprise SSD"],
+      "platforms": ["AI accelerator HBM", "host DRAM for CPU orchestration", "KV-cache/RAG storage"],
+      "constraints": ["memory cycle", "HBM qualification", "capex discipline"],
+      "risk_flags": ["memory names can become crowded late-cycle", "pricing and LTA visibility must be verified"],
+      "bottleneck_profile": {"layer": "Layer 3 - Memory capacity", "scarcity": "high", "substitutability": "medium", "discovery_state": "visible_leader", "score": 4.0, "reason": "Agentic AI expands the memory thesis from HBM into host DRAM, persistent context, and eSSD."},
+      "concept_exposures": [
+        {"concept_id": "hbm", "role": "global_leader", "weight": 0.86, "path": "AI accelerator buildout -> HBM demand"},
+        {"concept_id": "host_dram", "role": "global_leader", "weight": 0.82, "path": "agentic CPU orchestration -> host DRAM and context memory demand"},
+        {"concept_id": "enterprise_ssd", "role": "storage_follower", "weight": 0.58, "path": "RAG/KV-cache offload -> NAND/eSSD demand"}
+      ],
+      "source_refs": [
+        {"title": "Agentic AI investment conclusion", "url": "/Users/thtang/Downloads/agentic_ai_investment_conclusion.md"}
+      ]
+    },
+    {
+      "symbol": "STX",
+      "name": "Seagate",
+      "market": "US",
+      "region": "US",
+      "sector": "Storage",
+      "primary_business": "Hard-disk drive supplier focused on mass-capacity nearline storage for cloud and enterprise data centers.",
+      "specializations": ["nearline HDD", "mass-capacity cloud storage", "cold data storage"],
+      "platforms": ["cloud data lakes", "agent memory archives", "RAG corpus storage"],
+      "constraints": ["cloud capex timing", "HDD pricing cycle", "SSD substitution risk"],
+      "risk_flags": ["HDD link is lower-frequency than DRAM/eSSD", "benefit depends on sustained data-retention growth"],
+      "bottleneck_profile": {"layer": "Layer 5 - Cold context/data storage", "scarcity": "medium", "substitutability": "medium", "discovery_state": "second_layer_follower", "score": 3.2, "reason": "Long-running agents create more retrievable context and data lake demand, where low-cost HDD remains relevant."},
+      "concept_exposures": [
+        {"concept_id": "hdd_cold_storage", "role": "core_follower", "weight": 0.72, "path": "agentic long-term memory/RAG corpora -> cloud nearline HDD demand"},
+        {"concept_id": "kv_cache_memory", "role": "cold_context_storage", "weight": 0.5, "path": "persistent agent state -> cold data retention layer"}
+      ],
+      "source_refs": [
+        {"title": "Agentic AI investment conclusion", "url": "/Users/thtang/Downloads/agentic_ai_investment_conclusion.md"}
+      ]
+    },
+    {
+      "symbol": "WDC",
+      "name": "Western Digital",
+      "market": "US",
+      "region": "US",
+      "sector": "Storage",
+      "primary_business": "Storage supplier with HDD and NAND/SSD exposure, including cloud nearline storage and enterprise SSD demand.",
+      "specializations": ["nearline HDD", "NAND", "enterprise SSD"],
+      "platforms": ["cloud storage", "agentic RAG storage", "AI data lakes"],
+      "constraints": ["NAND/HDD pricing cycles", "enterprise SSD qualification", "cloud inventory"],
+      "risk_flags": ["mixed storage exposure can dilute pure eSSD read-through", "cyclical pricing risk"],
+      "bottleneck_profile": {"layer": "Layer 4/5 - eSSD and cold storage", "scarcity": "medium", "substitutability": "medium", "discovery_state": "second_layer_follower", "score": 3.3, "reason": "Agentic workloads can lift both fast retrieval storage and low-cost context retention."},
+      "concept_exposures": [
+        {"concept_id": "enterprise_ssd", "role": "core_follower", "weight": 0.68, "path": "RAG/KV-cache offload -> enterprise SSD demand"},
+        {"concept_id": "hdd_cold_storage", "role": "core_follower", "weight": 0.62, "path": "agentic long-term context -> nearline/cold storage demand"}
+      ],
+      "source_refs": [
+        {"title": "Agentic AI investment conclusion", "url": "/Users/thtang/Downloads/agentic_ai_investment_conclusion.md"}
+      ]
+    },
+    {
+      "symbol": "TER",
+      "name": "Teradyne",
+      "market": "US",
+      "region": "US",
+      "sector": "Semiconductor test",
+      "primary_business": "Automated test equipment supplier for semiconductors and systems, with leverage to AI chip test complexity.",
+      "specializations": ["semiconductor ATE", "system test", "advanced package test"],
+      "platforms": ["AI accelerator test", "HBM/advanced package test", "custom ASIC test"],
+      "constraints": ["semicap cycle", "customer capex timing", "ATE competition"],
+      "risk_flags": ["less hidden than smaller probe-card names", "order lumpiness"],
+      "bottleneck_profile": {"layer": "Layer 9 - AI chip test capacity", "scarcity": "medium-high", "substitutability": "medium", "discovery_state": "visible_test_beneficiary", "score": 3.6, "reason": "More expensive AI silicon and chiplet packages increase the value of reliable test capacity."},
+      "concept_exposures": [
+        {"concept_id": "ai_test_probe_interface", "role": "global_follower", "weight": 0.72, "path": "AI chip complexity -> longer test time and more ATE demand"},
+        {"concept_id": "semicap_equipment", "role": "global_follower", "weight": 0.65, "path": "advanced packaging and HBM growth -> test equipment cycle"}
+      ],
+      "source_refs": [
+        {"title": "Agentic AI investment conclusion", "url": "/Users/thtang/Downloads/agentic_ai_investment_conclusion.md"}
+      ]
+    },
+    {
+      "symbol": "ON",
+      "name": "ON Semiconductor",
+      "market": "US",
+      "region": "US",
+      "sector": "Power semiconductors",
+      "primary_business": "Power and sensing semiconductor supplier with MOSFET, SiC, image sensing, and power-management exposure.",
+      "specializations": ["power MOSFET", "SiC", "power management", "sensors"],
+      "platforms": ["AI data-center power conversion", "industrial power", "automotive electrification"],
+      "constraints": ["auto/industrial cycle", "SiC pricing", "AI purity"],
+      "risk_flags": ["not a pure agentic CPU rack supplier", "auto cycle can dominate stock behavior"],
+      "bottleneck_profile": {"layer": "Layer 7 - Power conversion semiconductors", "scarcity": "medium", "substitutability": "medium", "discovery_state": "power_follower", "score": 3.0, "reason": "Higher rack density can support power semiconductor demand, but the direct agentic AI link is weaker than CPU/memory/socket/test."},
+      "concept_exposures": [
+        {"concept_id": "hvdc_power_semiconductor", "role": "core_follower", "weight": 0.62, "path": "AI rack power density -> power MOSFET/SiC demand"},
+        {"concept_id": "semiconductor_components", "role": "broad_power", "weight": 0.55, "path": "data-center and industrial power electronics -> discrete/power semiconductor read-through"}
+      ],
+      "source_refs": [
+        {"title": "Agentic AI investment conclusion", "url": "/Users/thtang/Downloads/agentic_ai_investment_conclusion.md"}
+      ]
+    },
+    {
+      "symbol": "SITM",
+      "name": "SiTime",
+      "market": "US",
+      "region": "US",
+      "sector": "Precision timing",
+      "primary_business": "MEMS timing and precision clock supplier for data-center, networking, communications, automotive, and industrial systems.",
+      "specializations": ["MEMS oscillators", "precision clocking", "network timing", "data-center timing"],
+      "platforms": ["AI data-center networking", "high-speed interconnect", "edge/cloud timing"],
+      "constraints": ["valuation", "customer qualification", "cyclical communications demand"],
+      "risk_flags": ["timing link is a third-layer bottleneck and needs order confirmation", "small-cap/high-beta behavior"],
+      "bottleneck_profile": {"layer": "Layer 8 - Precision timing for networks and servers", "scarcity": "medium", "substitutability": "medium-low", "discovery_state": "underappreciated_optional", "score": 3.2, "reason": "As AI racks, optical links, and networking speed rise, low-jitter timing becomes more important but needs evidence of design-win pull-through."},
+      "concept_exposures": [
+        {"concept_id": "precision_timing", "role": "laggard_watch", "weight": 0.72, "path": "AI data movement and high-speed networking -> precision timing demand"},
+        {"concept_id": "networking", "role": "component_follower", "weight": 0.55, "path": "data-center networking expansion -> timing component content"}
+      ],
+      "source_refs": [
+        {"title": "Agentic AI investment conclusion", "url": "/Users/thtang/Downloads/agentic_ai_investment_conclusion.md"}
+      ]
+    },
+    {
+      "symbol": "TTMI",
+      "name": "TTM Technologies",
+      "market": "US",
+      "region": "US",
+      "sector": "PCB / aerospace-defense electronics",
+      "primary_business": "Printed circuit board and RF/specialty electronics manufacturer serving aerospace/defense, data-center, networking, and industrial markets.",
+      "specializations": ["high-layer PCB", "HDI PCB", "RF/microwave assemblies", "defense electronics"],
+      "platforms": ["AI server PCB", "networking systems", "aerospace/defense electronics"],
+      "constraints": ["program mix", "defense timing", "PCB margin cycle"],
+      "risk_flags": ["AI server exposure must be separated from defense/industrial drivers", "can gap on earnings and become extended"],
+      "bottleneck_profile": {"layer": "Layer 6 - Server PCB and high-density interconnect", "scarcity": "medium-high", "substitutability": "medium", "discovery_state": "us_pcb_follower", "score": 3.4, "reason": "Agentic CPU/GPU racks raise PCB layer count, signal integrity, and substrate/interconnect content."},
+      "concept_exposures": [
+        {"concept_id": "server_pcb_abf", "role": "core_follower", "weight": 0.72, "path": "CPU/GPU rack buildout -> high-layer server PCB demand"},
+        {"concept_id": "pcb_manufacturing", "role": "global_follower", "weight": 0.68, "path": "AI infrastructure hardware -> PCB manufacturing breadth"},
+        {"concept_id": "defense", "role": "secondary_driver", "weight": 0.5, "path": "aerospace/defense electronics -> non-AI demand floor"}
+      ],
+      "source_refs": [
+        {"title": "Agentic AI investment conclusion", "url": "/Users/thtang/Downloads/agentic_ai_investment_conclusion.md"}
+      ]
+    },
+    {
+      "symbol": "APH",
+      "name": "Amphenol",
+      "market": "US",
+      "region": "US",
+      "sector": "Interconnect",
+      "primary_business": "Connector, interconnect, sensor, and cable assembly supplier with broad data-center, industrial, defense, automotive, and communications exposure.",
+      "specializations": ["high-speed connectors", "cable assemblies", "backplane/interconnect systems", "sensors"],
+      "platforms": ["AI server interconnect", "data-center networking", "industrial/defense connectivity"],
+      "constraints": ["valuation", "broad end-market mix", "M&A integration"],
+      "risk_flags": ["large diversified compounder may not offer pure laggard torque", "AI content is one driver among many"],
+      "bottleneck_profile": {"layer": "Layer 6 - High-speed interconnect", "scarcity": "medium-high", "substitutability": "medium", "discovery_state": "visible_quality_leader", "score": 3.5, "reason": "Agentic CPU/GPU rack density lifts connector and cable content across servers and networking."},
+      "concept_exposures": [
+        {"concept_id": "high_speed_connector", "role": "global_leader", "weight": 0.78, "path": "rack-scale AI systems -> high-speed connector and cable assembly content"},
+        {"concept_id": "connectors", "role": "global_leader", "weight": 0.72, "path": "data-center and industrial electronics -> connector demand"}
+      ],
+      "source_refs": [
+        {"title": "Agentic AI investment conclusion", "url": "/Users/thtang/Downloads/agentic_ai_investment_conclusion.md"}
+      ]
+    },
+    {
+      "symbol": "TEL",
+      "name": "TE Connectivity",
+      "market": "US",
+      "region": "US",
+      "sector": "Interconnect",
+      "primary_business": "Connectivity and sensor supplier across transportation, industrial, communications, and data infrastructure markets.",
+      "specializations": ["connectors", "sensors", "cable assemblies", "industrial connectivity"],
+      "platforms": ["data-center connectivity", "industrial automation", "automotive electrification"],
+      "constraints": ["auto/industrial cycle", "AI purity", "margin mix"],
+      "risk_flags": ["less pure AI server connector exposure than specialized suppliers", "cyclical end markets can dominate"],
+      "bottleneck_profile": {"layer": "Layer 6 - Connectivity and cabling", "scarcity": "medium", "substitutability": "medium", "discovery_state": "broad_connector_follower", "score": 3.1, "reason": "Useful broad connector read-through for data-center and industrial connectivity, but less pure than focused CPU/socket/high-speed names."},
+      "concept_exposures": [
+        {"concept_id": "high_speed_connector", "role": "global_follower", "weight": 0.65, "path": "agentic rack-scale systems -> connector and cable content"},
+        {"concept_id": "connectors", "role": "global_follower", "weight": 0.72, "path": "electronics content growth -> connectivity demand"}
+      ],
+      "source_refs": [
+        {"title": "Agentic AI investment conclusion", "url": "/Users/thtang/Downloads/agentic_ai_investment_conclusion.md"}
+      ]
+    },
+    {
+      "symbol": "3533.TW",
+      "name": "嘉澤",
+      "market": "TW",
+      "region": "Taiwan",
+      "sector": "CPU socket / connector",
+      "primary_business": "Taiwan socket and connector supplier with exposure to server CPU socket, high-speed connectors, and platform transitions.",
+      "specializations": ["CPU sockets", "server connectors", "high-speed interconnect"],
+      "platforms": ["agentic CPU rack", "server platform refresh", "AI server motherboard"],
+      "constraints": ["Intel/AMD platform timing", "customer qualification", "connector ASP cycle"],
+      "risk_flags": ["platform-cycle lumpiness", "already recognized Taiwan socket name"],
+      "bottleneck_profile": {"layer": "Layer 6 - CPU socket", "scarcity": "medium-high", "substitutability": "medium-low", "discovery_state": "taiwan_core_follower", "score": 3.8, "reason": "Morgan Stanley's CPU/socket angle maps directly to server CPU socket and platform connector content."},
+      "concept_exposures": [
+        {"concept_id": "cpu_socket", "role": "core_follower", "weight": 0.82, "path": "agentic CPU rack proliferation -> more server CPU sockets and platform connectors"},
+        {"concept_id": "high_speed_connector", "role": "core_follower", "weight": 0.65, "path": "rack-scale servers -> high-speed connector content"}
+      ],
+      "source_refs": [
+        {"title": "Agentic AI investment conclusion", "url": "/Users/thtang/Downloads/agentic_ai_investment_conclusion.md"}
+      ]
+    },
+    {
+      "symbol": "3665.TW",
+      "name": "貿聯-KY",
+      "market": "TW",
+      "region": "Taiwan",
+      "sector": "High-speed cable / interconnect",
+      "primary_business": "Interconnect and cable-assembly supplier serving data-center, industrial, semiconductor equipment, automotive/EV, and electrical applications.",
+      "specializations": ["high-speed cable assemblies", "wire harnesses", "server and data-center interconnect", "industrial and semiconductor-equipment cables"],
+      "platforms": ["agentic CPU/GPU rack", "AI server cabling", "semiconductor equipment", "EV/industrial power"],
+      "constraints": ["customer qualification", "cable ASP and mix", "AI server platform timing"],
+      "risk_flags": ["AI server cable exposure must be separated from EV/industrial cycles", "lower-profile laggard needs revenue/order confirmation"],
+      "bottleneck_profile": {"layer": "Layer 6 - Rack cable and interconnect", "scarcity": "medium-high", "substitutability": "medium", "discovery_state": "taiwan_interconnect_laggard", "score": 3.6, "reason": "Agentic CPU/GPU rack density raises high-speed cable, power cable, and interconnect content; cable qualification can become a practical throughput gate."},
+      "concept_exposures": [
+        {"concept_id": "high_speed_connector", "role": "core_follower", "weight": 0.74, "path": "rack-scale AI systems -> high-speed cable assembly and interconnect content"},
+        {"concept_id": "agentic_cpu_rack", "role": "interconnect_follower", "weight": 0.62, "path": "agentic CPU/GPU rack proliferation -> more rack cabling and signal/power interconnect"},
+        {"concept_id": "wire_cable", "role": "industrial_cable", "weight": 0.55, "path": "AI data-center and equipment capex -> industrial cable and harness demand"}
+      ],
+      "source_refs": [
+        {"title": "Agentic AI investment conclusion", "url": "/Users/thtang/Downloads/agentic_ai_investment_conclusion.md"}
+      ]
+    },
+    {
+      "symbol": "6223.TWO",
+      "name": "旺矽",
+      "market": "TW",
+      "region": "Taiwan",
+      "sector": "Probe card / test interface",
+      "primary_business": "Probe-card and testing-interface supplier for semiconductor wafer test, with leverage to advanced logic, AI ASIC, HBM, and packaging complexity.",
+      "specializations": ["probe card", "wafer test", "test interface"],
+      "platforms": ["AI chip wafer test", "HBM/advanced package test", "custom ASIC qualification"],
+      "constraints": ["customer qualification", "capacity", "semicap cycle"],
+      "risk_flags": ["stock can rerate ahead of fundamentals", "requires revenue/order confirmation"],
+      "bottleneck_profile": {"layer": "Layer 9 - Probe card and wafer test", "scarcity": "medium-high", "substitutability": "medium-low", "discovery_state": "taiwan_core_test_node", "score": 3.9, "reason": "AI silicon and advanced packaging raise test intensity; probe card capacity can throttle yield ramp."},
+      "concept_exposures": [
+        {"concept_id": "ai_test_probe_interface", "role": "core_follower", "weight": 0.82, "path": "AI ASIC/HBM/chiplet complexity -> probe card and wafer-test demand"},
+        {"concept_id": "semicap_equipment", "role": "test_interface", "weight": 0.7, "path": "advanced-node ramp -> semiconductor test interface cycle"}
+      ],
+      "source_refs": [
+        {"title": "Agentic AI investment conclusion", "url": "/Users/thtang/Downloads/agentic_ai_investment_conclusion.md"}
+      ]
+    },
+    {
+      "symbol": "6515.TW",
+      "name": "穎崴",
+      "market": "TW",
+      "region": "Taiwan",
+      "sector": "Test socket / interface",
+      "primary_business": "Semiconductor test interface and test socket supplier for high-performance chips and advanced packages.",
+      "specializations": ["test sockets", "burn-in sockets", "probe/test interface"],
+      "platforms": ["AI accelerator test", "CPU/GPU/ASIC test", "advanced package qualification"],
+      "constraints": ["customer mix", "qualification cycle", "capacity expansion"],
+      "risk_flags": ["high multiple and order visibility sensitivity", "test interface demand can be lumpy"],
+      "bottleneck_profile": {"layer": "Layer 9 - Test socket/interface", "scarcity": "medium-high", "substitutability": "medium-low", "discovery_state": "taiwan_core_test_node", "score": 3.8, "reason": "Agentic CPU/GPU/ASIC growth raises socket and interface content for high-end chip testing."},
+      "concept_exposures": [
+        {"concept_id": "cpu_socket", "role": "test_socket_follower", "weight": 0.72, "path": "high-core CPU and AI ASIC complexity -> socket/test interface demand"},
+        {"concept_id": "ai_test_probe_interface", "role": "core_follower", "weight": 0.78, "path": "advanced package test intensity -> test socket/interface demand"}
+      ],
+      "source_refs": [
+        {"title": "Agentic AI investment conclusion", "url": "/Users/thtang/Downloads/agentic_ai_investment_conclusion.md"}
+      ]
+    },
+    {
+      "symbol": "8046.TW",
+      "name": "南電",
+      "market": "TW",
+      "region": "Taiwan",
+      "sector": "IC substrate / ABF / PCB",
+      "primary_business": "Nan Ya Printed Circuit Board manufactures and sells printed circuit boards and IC substrate products, including conventional PCB, HDI, rigid-flex, ABF substrate, and PP substrate.",
+      "specializations": ["ABF substrate", "IC substrate", "HDI PCB", "rigid-flex PCB", "conventional PCB", "PP substrate"],
+      "platforms": ["AI/HPC package substrate", "GPU/ASIC substrate", "server and networking PCB", "high-end electronics interconnect"],
+      "constraints": ["ABF substrate demand cycle", "customer qualification", "high-end substrate yield", "material and capacity planning"],
+      "risk_flags": ["ABF cycle can swing sharply", "AI/HPC substrate purity must be separated from consumer PCB demand", "competition with Ibiden, Shinko, Unimicron, Kinsus and China PCB/IC-substrate peers"],
+      "bottleneck_profile": {"layer": "Layer 5 - ABF / IC substrate and high-end PCB", "scarcity": "medium-high", "substitutability": "medium-low", "discovery_state": "taiwan_abf_core_node", "score": 3.7, "reason": "AI accelerators, ASICs, CPUs, and high-end networking chips need advanced package substrates; ABF/IC substrate qualification and yield can become a physical throughput gate."},
+      "concept_exposures": [
+        {"concept_id": "abf_substrate", "role": "core_follower", "weight": 0.86, "path": "AI/HPC package substrate demand -> ABF substrate capacity and qualification -> 南電"},
+        {"concept_id": "server_pcb_abf", "role": "core_follower", "weight": 0.76, "path": "agentic AI rack and accelerator boards -> high-end PCB/ABF substrate content"},
+        {"concept_id": "pcb_manufacturing", "role": "taiwan_core_supplier", "weight": 0.72, "path": "electronics interconnect demand -> PCB/HDI/rigid-flex manufacturing"},
+        {"concept_id": "pcb_material_equipment", "role": "downstream_substrate_customer", "weight": 0.45, "path": "BT/ABF/PP material and equipment chain -> substrate manufacturing throughput"}
+      ],
+      "source_refs": [
+        {"title": "Nan Ya PCB official company overview", "url": "https://www.nanyapcb.com.tw/nypcb/english/AboutNanYaPCB/CompanyProfile/Company"}
+      ]
+    },
+    {
+      "symbol": "8299.TWO",
+      "name": "群聯",
+      "market": "TW",
+      "region": "Taiwan",
+      "sector": "NAND controller / storage",
+      "primary_business": "NAND flash controller, storage module, and SSD solution supplier with leverage to enterprise SSD and AI storage architectures.",
+      "specializations": ["NAND controller", "SSD controller", "storage modules", "enterprise storage"],
+      "platforms": ["enterprise SSD", "AI storage", "RAG/KV-cache storage"],
+      "constraints": ["NAND pricing", "controller competition", "enterprise qualification"],
+      "risk_flags": ["consumer/storage cycle can dilute AI storage thesis", "requires enterprise SSD traction confirmation"],
+      "bottleneck_profile": {"layer": "Layer 4 - eSSD/controller", "scarcity": "medium", "substitutability": "medium", "discovery_state": "taiwan_storage_follower", "score": 3.4, "reason": "Agentic AI persistent memory and retrieval can lift enterprise SSD/controller demand beyond HBM."},
+      "concept_exposures": [
+        {"concept_id": "enterprise_ssd", "role": "core_follower", "weight": 0.75, "path": "RAG/KV-cache offload -> enterprise SSD controller demand"},
+        {"concept_id": "memory_ic_design", "role": "storage_controller", "weight": 0.68, "path": "AI storage architecture -> NAND controller and SSD firmware value"}
+      ],
+      "source_refs": [
+        {"title": "Agentic AI investment conclusion", "url": "/Users/thtang/Downloads/agentic_ai_investment_conclusion.md"}
+      ]
+    },
+    {
+      "symbol": "MSFT",
+      "name": "Microsoft",
+      "market": "US",
+      "region": "US",
+      "sector": "Hyperscale cloud / enterprise software / AI agents",
+      "primary_business": "Microsoft sells Azure cloud infrastructure, Microsoft 365, Dynamics, security, developer tools, and Copilot/agentic AI software across enterprise workflows.",
+      "specializations": ["Azure cloud", "Microsoft 365 Copilot", "GitHub developer workflow", "enterprise security", "Dynamics business applications"],
+      "platforms": ["Azure AI", "Microsoft 365", "Copilot Studio", "GitHub Copilot", "Entra"],
+      "constraints": ["GPU/accelerator capacity", "enterprise AI adoption pace", "cloud gross margin", "regulatory scrutiny"],
+      "risk_flags": ["mega-cap valuation can lag small software beta", "AI monetization must offset capex intensity"],
+      "bottleneck_profile": {"layer": "Software Layer 1 - enterprise AI platform", "scarcity": "medium", "substitutability": "medium-low", "discovery_state": "global_software_leader", "score": 4.1, "reason": "Microsoft is a broad leader signal for enterprise AI software adoption and Azure consumption."},
+      "concept_exposures": [
+        {"concept_id": "cloud_ai", "role": "global_leader", "weight": 0.92, "path": "enterprise AI workload demand -> Azure AI consumption -> software/cloud leader validation"},
+        {"concept_id": "ai_agent_apps", "role": "global_leader", "weight": 0.86, "path": "Copilot and workflow agents -> enterprise seat expansion and productivity software rerating"},
+        {"concept_id": "enterprise_saas_workflow", "role": "platform_leader", "weight": 0.82, "path": "Microsoft 365/Dynamics workflow base -> AI attach rate -> SaaS multiple support"},
+        {"concept_id": "ai_data_platform", "role": "data_platform", "weight": 0.58, "path": "Azure Fabric and enterprise data estate -> AI data preparation and governance"}
+      ],
+      "source_refs": [
+        {"title": "Microsoft official investor relations", "url": "https://www.microsoft.com/en-us/investor"}
+      ]
+    },
+    {
+      "symbol": "ORCL",
+      "name": "Oracle",
+      "market": "US",
+      "region": "US",
+      "sector": "Cloud infrastructure / database / enterprise software",
+      "primary_business": "Oracle provides cloud infrastructure, autonomous database, enterprise applications, and database technology used by enterprises and AI workloads.",
+      "specializations": ["Oracle Cloud Infrastructure", "database", "autonomous database", "ERP/HCM applications", "AI cloud capacity"],
+      "platforms": ["OCI", "Oracle Database", "Fusion Cloud Applications", "Exadata"],
+      "constraints": ["data-center capacity buildout", "GPU/accelerator allocation", "cloud competition", "large-contract timing"],
+      "risk_flags": ["AI cloud narrative is capex-heavy", "database/app growth can decouple from AI infrastructure excitement"],
+      "bottleneck_profile": {"layer": "Software Layer 1 - AI cloud/database", "scarcity": "medium-high", "substitutability": "medium", "discovery_state": "ai_cloud_leader_signal", "score": 4.0, "reason": "OCI and database workloads connect AI cloud capex to enterprise data gravity."},
+      "concept_exposures": [
+        {"concept_id": "cloud_ai", "role": "cloud_leader", "weight": 0.88, "path": "AI training/inference demand -> OCI capacity absorption -> cloud AI revenue signal"},
+        {"concept_id": "ai_data_platform", "role": "database_platform", "weight": 0.84, "path": "enterprise data gravity -> database/cloud data services -> AI workload stickiness"},
+        {"concept_id": "enterprise_saas_workflow", "role": "application_platform", "weight": 0.62, "path": "ERP/HCM installed base -> AI features and cloud migration"},
+        {"concept_id": "tpu_cloud", "role": "ai_cloud_peer", "weight": 0.45, "path": "custom AI cloud and hyperscaler capacity scarcity -> non-GPU cloud alternatives"}
+      ],
+      "source_refs": [
+        {"title": "Oracle official investor relations", "url": "https://investor.oracle.com/"}
+      ]
+    },
+    {
+      "symbol": "NOW",
+      "name": "ServiceNow",
+      "market": "US",
+      "region": "US",
+      "sector": "Enterprise workflow automation / agentic AI apps",
+      "primary_business": "ServiceNow provides a cloud platform for IT, employee, customer, security, and industry workflows, increasingly embedding generative AI agents into enterprise processes.",
+      "specializations": ["ITSM", "ITOM", "workflow automation", "Now Assist", "enterprise AI agents"],
+      "platforms": ["Now Platform", "Now Assist", "AI Agent Studio", "ITSM/CSM/HRSD"],
+      "constraints": ["large enterprise budget cycles", "AI seat monetization", "platform consolidation competition"],
+      "risk_flags": ["premium multiple", "AI agent narrative requires attach-rate proof"],
+      "bottleneck_profile": {"layer": "Software Layer 2 - workflow control plane", "scarcity": "medium", "substitutability": "medium-low", "discovery_state": "agentic_workflow_leader", "score": 4.0, "reason": "ServiceNow is a clean leader signal for enterprises moving from chatbots to workflow-executing agents."},
+      "concept_exposures": [
+        {"concept_id": "ai_agent_apps", "role": "global_leader", "weight": 0.94, "path": "agentic AI adoption -> enterprise workflow execution -> ServiceNow AI module demand"},
+        {"concept_id": "enterprise_saas_workflow", "role": "workflow_platform", "weight": 0.9, "path": "IT/customer/employee workflow digitization -> platform consolidation"},
+        {"concept_id": "cloud_ai", "role": "ai_saas_consumer", "weight": 0.58, "path": "cloud AI model capability -> embedded Now Assist features"}
+      ],
+      "source_refs": [
+        {"title": "ServiceNow official investor relations", "url": "https://investors.servicenow.com/"}
+      ]
+    },
+    {
+      "symbol": "CRM",
+      "name": "Salesforce",
+      "market": "US",
+      "region": "US",
+      "sector": "CRM / enterprise SaaS / AI agents",
+      "primary_business": "Salesforce provides CRM, sales, service, marketing, data cloud, integration, and AI agent software for customer-facing enterprise workflows.",
+      "specializations": ["CRM", "Agentforce", "Data Cloud", "MuleSoft", "Slack"],
+      "platforms": ["Salesforce Platform", "Agentforce", "Data Cloud", "Slack", "MuleSoft"],
+      "constraints": ["enterprise seat growth", "AI agent adoption", "sales execution", "competition from Microsoft and vertical SaaS"],
+      "risk_flags": ["AI agent adoption can be slower than demos imply", "multiple depends on margin discipline and revenue acceleration"],
+      "bottleneck_profile": {"layer": "Software Layer 2 - customer workflow agents", "scarcity": "medium", "substitutability": "medium", "discovery_state": "agentic_crm_leader", "score": 3.8, "reason": "Salesforce is a leader signal for customer-service and sales agents becoming paid enterprise software."},
+      "concept_exposures": [
+        {"concept_id": "ai_agent_apps", "role": "application_leader", "weight": 0.88, "path": "sales/service automation -> Agentforce adoption -> AI app revenue signal"},
+        {"concept_id": "enterprise_saas_workflow", "role": "crm_platform", "weight": 0.86, "path": "CRM workflow base -> data and AI module attach"},
+        {"concept_id": "ai_data_platform", "role": "customer_data_platform", "weight": 0.62, "path": "Data Cloud -> customer context layer for AI agents"}
+      ],
+      "source_refs": [
+        {"title": "Salesforce official investor relations", "url": "https://investor.salesforce.com/"}
+      ]
+    },
+    {
+      "symbol": "SNOW",
+      "name": "Snowflake",
+      "market": "US",
+      "region": "US",
+      "sector": "Data cloud / AI data platform",
+      "primary_business": "Snowflake offers a data cloud for data warehousing, lakehouse, sharing, governance, and AI/ML workloads, positioning as a neutral enterprise data layer.",
+      "specializations": ["data warehouse", "lakehouse", "data sharing", "governance", "Cortex AI"],
+      "platforms": ["Snowflake Data Cloud", "Snowpark", "Cortex AI", "Marketplace"],
+      "constraints": ["cloud consumption optimization", "competition from Databricks/hyperscalers", "AI workload monetization"],
+      "risk_flags": ["consumption model can slow suddenly", "AI narrative must translate to durable workload growth"],
+      "bottleneck_profile": {"layer": "Software Layer 1.5 - AI data readiness", "scarcity": "medium-high", "substitutability": "medium", "discovery_state": "data_platform_leader", "score": 4.1, "reason": "Agentic AI needs governed enterprise data; Snowflake is a high-beta data-platform signal."},
+      "concept_exposures": [
+        {"concept_id": "ai_data_platform", "role": "global_leader", "weight": 0.95, "path": "enterprise data preparation and governance -> AI app deployment -> Snowflake consumption"},
+        {"concept_id": "cloud_ai", "role": "ai_data_layer", "weight": 0.72, "path": "cloud AI workloads -> data cloud query/compute demand"},
+        {"concept_id": "ai_agent_apps", "role": "agent_context_layer", "weight": 0.52, "path": "AI agents need trusted data context -> governed data cloud adoption"}
+      ],
+      "source_refs": [
+        {"title": "Snowflake official investor relations", "url": "https://investors.snowflake.com/"}
+      ]
+    },
+    {
+      "symbol": "PLTR",
+      "name": "Palantir",
+      "market": "US",
+      "region": "US",
+      "sector": "Operational AI platform / defense and commercial software",
+      "primary_business": "Palantir sells data integration, ontology, analytics, and AI operating platforms for government, defense, and commercial operations.",
+      "specializations": ["AIP", "ontology", "defense AI", "operational decision software", "data integration"],
+      "platforms": ["Foundry", "Gotham", "AIP", "Apollo"],
+      "constraints": ["government contract timing", "commercial expansion durability", "valuation sensitivity"],
+      "risk_flags": ["very high multiple", "headline-driven price swings", "requires sustained commercial growth"],
+      "bottleneck_profile": {"layer": "Software Layer 2 - operational AI decision layer", "scarcity": "medium", "substitutability": "medium", "discovery_state": "high_beta_agentic_ai_leader", "score": 4.0, "reason": "Palantir is a high-beta leader signal for AI moving from model demos into operating workflows."},
+      "concept_exposures": [
+        {"concept_id": "ai_agent_apps", "role": "application_leader", "weight": 0.9, "path": "enterprise/government AI workflows -> AIP deployment -> operational AI software demand"},
+        {"concept_id": "ai_data_platform", "role": "ontology_data_layer", "weight": 0.78, "path": "messy enterprise data -> ontology/integration -> decision AI"},
+        {"concept_id": "enterprise_saas_workflow", "role": "workflow_platform", "weight": 0.58, "path": "operational workflows -> software platform expansion"},
+        {"concept_id": "defense", "role": "defense_ai_signal", "weight": 0.5, "path": "defense digitization and AI targeting/logistics -> Gotham/AIP demand"}
+      ],
+      "source_refs": [
+        {"title": "Palantir official investor relations", "url": "https://investors.palantir.com/"}
+      ]
+    },
+    {
+      "symbol": "DDOG",
+      "name": "Datadog",
+      "market": "US",
+      "region": "US",
+      "sector": "Observability / DevOps / cloud monitoring",
+      "primary_business": "Datadog provides observability, application performance monitoring, log management, security monitoring, and cloud infrastructure analytics.",
+      "specializations": ["APM", "logs", "infrastructure monitoring", "cloud security", "LLM observability"],
+      "platforms": ["Datadog Observability Cloud", "Cloud SIEM", "Cloud Security Management", "LLM Observability"],
+      "constraints": ["cloud workload growth", "customer optimization cycles", "competitive bundling"],
+      "risk_flags": ["usage-based revenue can slow", "DevOps budgets are cyclical"],
+      "bottleneck_profile": {"layer": "Software Layer 1.7 - AI app reliability/observability", "scarcity": "medium", "substitutability": "medium", "discovery_state": "observability_leader", "score": 3.8, "reason": "More AI agents and cloud services raise monitoring, tracing, security, and cost-control needs."},
+      "concept_exposures": [
+        {"concept_id": "observability_devops", "role": "global_leader", "weight": 0.95, "path": "cloud and AI app complexity -> telemetry/log/APM demand -> observability leader signal"},
+        {"concept_id": "cloud_ai", "role": "cloud_workload_derivative", "weight": 0.62, "path": "AI workload deployment -> cloud monitoring and cost optimization"},
+        {"concept_id": "cybersecurity", "role": "security_adjacent", "weight": 0.45, "path": "runtime/cloud telemetry -> security monitoring expansion"}
+      ],
+      "source_refs": [
+        {"title": "Datadog official investor relations", "url": "https://investors.datadoghq.com/"}
+      ]
+    },
+    {
+      "symbol": "NET",
+      "name": "Cloudflare",
+      "market": "US",
+      "region": "US",
+      "sector": "Edge cloud / zero-trust security / developer platform",
+      "primary_business": "Cloudflare operates a global edge network providing CDN, DDoS protection, zero-trust security, SASE, developer compute, and AI inference-related edge services.",
+      "specializations": ["edge network", "Zero Trust", "SASE", "DDoS/WAF", "Workers developer platform"],
+      "platforms": ["Cloudflare One", "Workers", "R2", "WAF", "AI Gateway"],
+      "constraints": ["enterprise sales execution", "edge AI monetization", "SASE competition", "network capex"],
+      "risk_flags": ["high valuation beta", "platform breadth can obscure which product drives upside"],
+      "bottleneck_profile": {"layer": "Software Layer 1.6 - edge/security control plane", "scarcity": "medium", "substitutability": "medium", "discovery_state": "edge_security_ai_leader", "score": 3.9, "reason": "AI apps increase edge traffic, API protection, SASE, and inference gateway needs."},
+      "concept_exposures": [
+        {"concept_id": "cloud_security_sase", "role": "platform_leader", "weight": 0.9, "path": "remote/cloud access complexity -> Zero Trust/SASE demand -> Cloudflare One"},
+        {"concept_id": "cloud_ai", "role": "edge_ai_platform", "weight": 0.68, "path": "AI app traffic and APIs -> edge compute and AI gateway demand"},
+        {"concept_id": "networking", "role": "edge_network", "weight": 0.55, "path": "global traffic growth -> edge network utilization"}
+      ],
+      "source_refs": [
+        {"title": "Cloudflare official investor relations", "url": "https://cloudflare.net/"}
+      ]
+    },
+    {
+      "symbol": "CRWD",
+      "name": "CrowdStrike",
+      "market": "US",
+      "region": "US",
+      "sector": "Endpoint security / XDR / cloud security",
+      "primary_business": "CrowdStrike provides cloud-native endpoint protection, XDR, identity protection, cloud security, threat intelligence, and security operations automation.",
+      "specializations": ["Falcon platform", "EDR/XDR", "identity protection", "cloud security", "security AI"],
+      "platforms": ["Falcon", "Charlotte AI", "Falcon Cloud Security", "Identity Protection"],
+      "constraints": ["security incident trust", "module consolidation", "competitive pricing", "enterprise refresh cycles"],
+      "risk_flags": ["execution and reputation matter more after outages", "premium multiple requires platform expansion"],
+      "bottleneck_profile": {"layer": "Software Layer 2 - endpoint/XDR defense", "scarcity": "medium-high", "substitutability": "medium-low", "discovery_state": "endpoint_security_leader", "score": 4.0, "reason": "AI-driven attacks and enterprise endpoints make endpoint telemetry and XDR a core security control plane."},
+      "concept_exposures": [
+        {"concept_id": "endpoint_xdr_security", "role": "global_leader", "weight": 0.96, "path": "endpoint telemetry + AI threats -> XDR and managed detection demand"},
+        {"concept_id": "cybersecurity", "role": "security_leader", "weight": 0.9, "path": "security consolidation -> Falcon platform module attach"},
+        {"concept_id": "cloud_security_sase", "role": "cloud_security_expansion", "weight": 0.55, "path": "workloads shift to cloud -> cloud workload protection module growth"},
+        {"concept_id": "ai_agent_apps", "role": "security_ai_agent", "weight": 0.36, "path": "SOC automation -> security AI assistant/agent adoption"}
+      ],
+      "source_refs": [
+        {"title": "CrowdStrike official investor relations", "url": "https://ir.crowdstrike.com/"}
+      ]
+    },
+    {
+      "symbol": "PANW",
+      "name": "Palo Alto Networks",
+      "market": "US",
+      "region": "US",
+      "sector": "Cybersecurity platform / cloud security / SASE",
+      "primary_business": "Palo Alto Networks sells network security, SASE, cloud security, SOC automation, and endpoint security across its platform portfolio.",
+      "specializations": ["NGFW", "Prisma Cloud", "Prisma SASE", "Cortex XDR/XSIAM", "security platformization"],
+      "platforms": ["Strata", "Prisma", "Cortex"],
+      "constraints": ["platformization transition", "billing growth timing", "security budget cycles"],
+      "risk_flags": ["large platform transitions can pressure billings", "competition from pure-play SASE and endpoint vendors"],
+      "bottleneck_profile": {"layer": "Software Layer 2 - security platform consolidation", "scarcity": "medium-high", "substitutability": "medium", "discovery_state": "security_platform_leader", "score": 3.9, "reason": "Security spend may consolidate around platforms that cover cloud, network, endpoint, and SOC automation."},
+      "concept_exposures": [
+        {"concept_id": "cloud_security_sase", "role": "global_leader", "weight": 0.9, "path": "cloud migration and distributed users -> SASE/CNAPP demand"},
+        {"concept_id": "endpoint_xdr_security", "role": "xdr_platform", "weight": 0.68, "path": "SOC automation and XDR consolidation -> Cortex adoption"},
+        {"concept_id": "cybersecurity", "role": "platform_leader", "weight": 0.92, "path": "security platformization -> broad cyber leader signal"}
+      ],
+      "source_refs": [
+        {"title": "Palo Alto Networks official investor relations", "url": "https://investors.paloaltonetworks.com/"}
+      ]
+    },
+    {
+      "symbol": "ZS",
+      "name": "Zscaler",
+      "market": "US",
+      "region": "US",
+      "sector": "Zero-trust security / SASE",
+      "primary_business": "Zscaler provides cloud-delivered zero-trust security, secure web gateway, private access, digital experience, and data protection services.",
+      "specializations": ["SASE", "zero trust", "secure web gateway", "private access", "data protection"],
+      "platforms": ["Zscaler Internet Access", "Zscaler Private Access", "Zero Trust Exchange"],
+      "constraints": ["large deal cycles", "competition from Palo Alto, Cloudflare, Fortinet", "network/security budget consolidation"],
+      "risk_flags": ["high valuation beta", "billings can be volatile"],
+      "bottleneck_profile": {"layer": "Software Layer 2 - cloud access control", "scarcity": "medium", "substitutability": "medium", "discovery_state": "sase_pureplay_leader", "score": 3.7, "reason": "Distributed work and cloud apps pull security from perimeter boxes toward cloud-delivered zero trust."},
+      "concept_exposures": [
+        {"concept_id": "cloud_security_sase", "role": "pureplay_leader", "weight": 0.95, "path": "cloud apps + distributed users -> secure access service edge demand"},
+        {"concept_id": "identity_security", "role": "access_control_adjacent", "weight": 0.55, "path": "identity-aware access -> zero trust policy enforcement"},
+        {"concept_id": "cybersecurity", "role": "security_leader", "weight": 0.82, "path": "cyber budget allocation -> SASE/security platform growth"}
+      ],
+      "source_refs": [
+        {"title": "Zscaler official investor relations", "url": "https://ir.zscaler.com/"}
+      ]
+    },
+    {
+      "symbol": "MDB",
+      "name": "MongoDB",
+      "market": "US",
+      "region": "US",
+      "sector": "Operational database / AI data platform",
+      "primary_business": "MongoDB provides a developer-oriented document database and Atlas cloud platform used for operational applications, search, vector search, and AI app backends.",
+      "specializations": ["document database", "Atlas cloud", "vector search", "developer data platform", "operational workloads"],
+      "platforms": ["MongoDB Atlas", "Atlas Vector Search", "Search", "Enterprise Advanced"],
+      "constraints": ["developer platform competition", "cloud consumption cycles", "application workload growth"],
+      "risk_flags": ["database migration cycles are slow", "AI app exposure needs workload proof"],
+      "bottleneck_profile": {"layer": "Software Layer 1.5 - operational AI app data", "scarcity": "medium", "substitutability": "medium", "discovery_state": "operational_database_laggard_signal", "score": 3.6, "reason": "AI apps still need operational databases for state, personalization, search, and app data."},
+      "concept_exposures": [
+        {"concept_id": "ai_data_platform", "role": "operational_database", "weight": 0.86, "path": "AI apps and vector search -> operational data platform usage"},
+        {"concept_id": "cloud_ai", "role": "developer_platform", "weight": 0.58, "path": "cloud-native app growth -> Atlas consumption"},
+        {"concept_id": "enterprise_saas_workflow", "role": "app_backend", "weight": 0.42, "path": "enterprise app modernization -> MongoDB workloads"}
+      ],
+      "source_refs": [
+        {"title": "MongoDB official investor relations", "url": "https://investors.mongodb.com/"}
+      ]
+    },
+    {
+      "symbol": "ESTC",
+      "name": "Elastic",
+      "market": "US",
+      "region": "US",
+      "sector": "Search / observability / security analytics",
+      "primary_business": "Elastic provides search, vector search, observability, and security analytics built around the Elasticsearch platform.",
+      "specializations": ["search", "vector search", "observability", "security analytics", "log analytics"],
+      "platforms": ["Elastic Search", "Elastic Observability", "Elastic Security", "Elasticsearch"],
+      "constraints": ["open-source competition", "cloud marketplace growth", "large customer expansion"],
+      "risk_flags": ["search/observability budgets can be optimized", "AI search demand must sustain consumption"],
+      "bottleneck_profile": {"layer": "Software Layer 1.5 - search and telemetry data", "scarcity": "medium", "substitutability": "medium", "discovery_state": "search_observability_bridge", "score": 3.5, "reason": "AI retrieval, search relevance, logs, and security telemetry overlap in Elastic's platform."},
+      "concept_exposures": [
+        {"concept_id": "ai_data_platform", "role": "search_vector_layer", "weight": 0.76, "path": "RAG/search workloads -> vector and search platform demand"},
+        {"concept_id": "observability_devops", "role": "observability_platform", "weight": 0.72, "path": "cloud app complexity -> log and telemetry analysis"},
+        {"concept_id": "cybersecurity", "role": "security_analytics", "weight": 0.55, "path": "security telemetry -> SIEM/search analytics"}
+      ],
+      "source_refs": [
+        {"title": "Elastic official investor relations", "url": "https://ir.elastic.co/"}
+      ]
+    },
+    {
+      "symbol": "6214.TW",
+      "name": "精誠",
+      "market": "TW",
+      "region": "Taiwan",
+      "sector": "IT services / system integration / enterprise software",
+      "primary_business": "精誠是台灣大型資訊服務與系統整合商，提供企業 IT 服務、雲端、資安、資料平台與產業解決方案。",
+      "specializations": ["system integration", "cloud services", "cybersecurity services", "data/AI solutions", "enterprise software"],
+      "platforms": ["enterprise IT projects", "cloud migration", "data analytics", "managed services"],
+      "constraints": ["project timing", "public/enterprise budget cycles", "service gross margin"],
+      "risk_flags": ["不是純軟體 SaaS，營收與專案交付節奏影響大", "台股題材熱度可能落後美股 SaaS"],
+      "bottleneck_profile": {"layer": "Taiwan software layer - enterprise digitalization", "scarcity": "medium", "substitutability": "medium", "discovery_state": "taiwan_si_core_node", "score": 3.2, "reason": "若美股軟體/AI 應用擴散到台股，精誠是台灣 SI/企業 IT 的核心對照節點。"},
+      "concept_exposures": [
+        {"concept_id": "system_integration", "role": "taiwan_core_supplier", "weight": 0.88, "path": "enterprise AI/cloud adoption -> system integration projects -> 精誠"},
+        {"concept_id": "cloud_ai", "role": "cloud_service_follower", "weight": 0.62, "path": "AI/cloud platform adoption -> local implementation and managed services"},
+        {"concept_id": "cybersecurity", "role": "security_service_adjacent", "weight": 0.42, "path": "digitalization -> security integration demand"}
+      ],
+      "source_refs": [
+        {"title": "Systex official company information", "url": "https://www.systex.com/"}
+      ]
+    },
+    {
+      "symbol": "3029.TW",
+      "name": "零壹",
+      "market": "TW",
+      "region": "Taiwan",
+      "sector": "Cybersecurity / cloud infrastructure distribution",
+      "primary_business": "零壹代理與整合資安、雲端、資料保護與資訊基礎架構產品，是台灣資安與雲端通路/整合節點。",
+      "specializations": ["cybersecurity distribution", "cloud infrastructure", "data protection", "network security"],
+      "platforms": ["security vendor channels", "enterprise IT distribution", "cloud/security integration"],
+      "constraints": ["vendor mix", "enterprise IT spending", "gross margin of distribution model"],
+      "risk_flags": ["通路毛利薄，題材傳導需要成交量與營收確認", "若美股資安只漲龍頭平台，台股通路可能滯後"],
+      "bottleneck_profile": {"layer": "Taiwan software layer - security distribution", "scarcity": "medium", "substitutability": "medium", "discovery_state": "taiwan_cybersecurity_proxy", "score": 3.1, "reason": "台股資安題材常透過代理/整合商先反映，零壹可作為資安擴散的量價觀察點。"},
+      "concept_exposures": [
+        {"concept_id": "cybersecurity", "role": "taiwan_proxy", "weight": 0.82, "path": "US cyber leader strength -> Taiwan security budget/topic heat -> 零壹"},
+        {"concept_id": "cloud_security_sase", "role": "channel_follower", "weight": 0.65, "path": "SASE/CNAPP adoption -> vendor channel demand"},
+        {"concept_id": "system_integration", "role": "integration_channel", "weight": 0.45, "path": "security/cloud products -> local deployment and support"}
+      ],
+      "source_refs": [
+        {"title": "Zero One Technology official site", "url": "https://www.zerone.com.tw/"}
+      ]
+    },
+    {
+      "symbol": "6689.TW",
+      "name": "伊雲谷",
+      "market": "TW",
+      "region": "Taiwan",
+      "sector": "Cloud services / AWS ecosystem / enterprise AI implementation",
+      "primary_business": "伊雲谷是雲端服務與數位轉型服務商，提供雲端顧問、遷移、資料、AI 與代管服務，與 AWS 生態關聯度高。",
+      "specializations": ["cloud migration", "managed cloud", "data/AI services", "AWS ecosystem", "enterprise digital transformation"],
+      "platforms": ["AWS cloud services", "managed services", "data and AI projects"],
+      "constraints": ["cloud spending optimization", "customer project timing", "AWS partner economics"],
+      "risk_flags": ["營收可能受雲端用量優化影響", "台股流動性與題材輪動影響大"],
+      "bottleneck_profile": {"layer": "Taiwan software layer - cloud implementation", "scarcity": "medium", "substitutability": "medium", "discovery_state": "taiwan_cloud_ai_proxy", "score": 3.2, "reason": "美股雲端/AI 軟體上漲若往台股擴散，伊雲谷是雲端實施與 AI 專案的直接觀察節點。"},
+      "concept_exposures": [
+        {"concept_id": "cloud_ai", "role": "taiwan_cloud_proxy", "weight": 0.82, "path": "global cloud AI spend -> local cloud migration/AI services -> 伊雲谷"},
+        {"concept_id": "ai_data_platform", "role": "data_service_follower", "weight": 0.55, "path": "AI adoption -> data platform and migration projects"},
+        {"concept_id": "system_integration", "role": "cloud_integrator", "weight": 0.58, "path": "enterprise cloud adoption -> integration and managed services"}
+      ],
+      "source_refs": [
+        {"title": "eCloudvalley official site", "url": "https://www.ecloudvalley.com/"}
+      ]
+    }
+  ]
+}

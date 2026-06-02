@@ -22,7 +22,7 @@
 <br>
 
 <p>
-  目前包含 <code>gooaye</code> 股癌 Podcast、<code>yutinghao</code> 游庭皓的財經皓角、<code>zhezhe</code> 郭哲榮分析師 / 摩爾證券投顧。<br>
+  目前包含 <code>gooaye</code> 股癌 Podcast、<code>yutinghao</code> 游庭皓的財經皓角、<code>zhezhe</code> 郭哲榮分析師 / 摩爾證券投顧、<code>thememiner</code> 即時細粒度跨市場題材挖掘，以及 <code>lagradar</code> 美日台中跨市場題材傳導雷達。<br>
   股癌 659 集逐字稿；財經皓角 82 篇逐字稿、61 篇筆記、459 篇官方公開文章；哲哲 565 篇 ASR 逐字稿、SoundOn metadata、20 篇 UDN 公開文章。<br>
   不是復讀語錄，是把創作者的判斷方式接上 market context、結構化資料和可更新 scripts。
 </p>
@@ -30,6 +30,7 @@
 <p>
   <a href="#效果示例">看效果</a> ·
   <a href="#安裝">安裝</a> ·
+  <a href="#clone-後快速復現">復現</a> ·
   <a href="#手機版安裝-lightweight-instructions">手機版</a> ·
   <a href="#使用範例">使用範例</a> ·
   <a href="#更新資料">更新資料</a> ·
@@ -100,6 +101,69 @@ yutinghao ❯ 很多人一開始買股票，只有下跌才虧錢。
 
 這不是語錄搜尋器。`gooaye` 會把股癌的部位、追高、停損和生活 QA 框架拿來判斷你的問題；`yutinghao` 會把財經皓角的宏觀 regime、資金流、產業鏈和笑話類比拿來重建推理；`zhezhe` 會把郭哲榮公開語料裡的大盤方向、主流族群、權值股、績效敘事與風控語氣拆成可查證的分析框架。
 
+## 即時細粒度 ThemeMiner
+
+`thememiner` 是 `lagradar` 的上游感測器，用來維護細粒度題材庫和跨市場股票關聯圖。每次使用 skill 時，都會先刷新題材庫、新聞證據、價格異動與 US/JP/TW/CN/HK/KR 股票關聯，再把高分題材丟給 `lagradar` 做 lead-lag、補漲和風控驗證。
+
+```bash
+python3 thememiner/scripts/update_theme_graph.py --refresh-prices --refresh-news
+python3 thememiner/scripts/query_theme_graph.py --top 20
+python3 thememiner/scripts/query_theme_graph.py --concept hbm
+python3 thememiner/scripts/build_theme_graph_html.py
+open thememiner/output/theme_graph.html
+```
+
+輸出會落在 [`thememiner/output`](thememiner/output)，核心資料包含 [`thememiner/data/fine_theme_taxonomy_seed.json`](thememiner/data/fine_theme_taxonomy_seed.json)、[`thememiner/data/cross_market_watchlist_seed.json`](thememiner/data/cross_market_watchlist_seed.json) 和 [`thememiner/data/company_profiles_seed.json`](thememiner/data/company_profiles_seed.json)。`company_profiles_seed.json` 會記錄公司主業、專業項目、平台/客戶路徑、約束、風險與 source，讓 graph edge 能說清楚「為什麼這家公司屬於這個題材」。AI 光子鏈另外有 `bottleneck_profile`：缺貨層級、稀缺度、替代難度、發現狀態與 bottleneck score，用來找 InP、矽光子、SOI、外延設備、特殊玻纖、CPO 這種第二/第三層瓶頸。
+
+## 跨市場 Laggard Radar
+
+`lagradar` 是一個新的交易研究 persona，用來捕捉美、日、台、中/港、韓之間的中期題材擴散。它不是只看電子業；seed graph 也涵蓋銅與工業金屬、能源、航運、軍工航太、醫藥/CDMO、金融利率等非電子題材。核心是找 `improving laggard`：leader shock 已驗證、關係圖說得通、候選股仍有 lag gap，且 3/5/10 日、量價、突破、籌碼或資金流開始確認，同時避開過熱高潮。
+
+候選股會讀取 ThemeMiner 的公司 profile，因此輸出除了價格/量能，也會附上 business、specialization、relation path 和 bottleneck layer；缺少 profile 的股票只能視為低信心概念連結。
+
+```bash
+python3 lagradar/scripts/scan_laggards.py
+python3 lagradar/scripts/query_laggards.py --top 15
+python3 lagradar/scripts/query_laggards.py --theme pcb
+```
+
+輸出會落在 [`lagradar/output`](lagradar/output)，設計細節見 [`lagradar/README.md`](lagradar/README.md)，完整方法論見 [`lagradar/references/methodology.md`](lagradar/references/methodology.md)。
+
+## 底層抓取 Runtime
+
+ThemeMiner / Lagradar 可以選配 [Scrapling](https://github.com/D4Vinci/Scrapling) 來提升公開網頁抓取品質。Scrapling 支援 adaptive selector、HTTP fetcher、stealth browser fetcher、dynamic browser fetcher 和 spider crawl，適合用在公司官網、交易所公司頁、新聞頁、供應鏈資料頁這類容易改版或有動態內容的來源。
+
+本 repo 使用專案內 `.venv`，避免污染系統 Python。Scrapling 需要 Python 3.10+：
+
+```bash
+python3.12 -m venv .venv
+.venv/bin/python -m pip install -r requirements-scraping.txt
+.venv/bin/scrapling install
+.venv/bin/python scripts/scrapling_smoke.py
+```
+
+如果本機預設 `python3` 低於 3.10，請改用 Codex bundled Python 或其他 Python 3.10+。目前底層腳本仍能用原本的 `urllib` / Yahoo cache 跑；接入 Scrapling 時優先用於「官方公司 profile 升級、動態頁、容易改版的 selector」，不要拿來無限制重爬來源站。
+
+建立 profile 補強隊列，或抓取少量高優先級 source evidence：
+
+```bash
+.venv/bin/python thememiner/scripts/scrapling_source_fetcher.py --no-fetch
+.venv/bin/python thememiner/scripts/scrapling_source_fetcher.py --limit 40
+```
+
+輸出會落在 `thememiner/output/profile_upgrade_queue.json`、`thememiner/output/source_pages/`、`thememiner/output/company_source_evidence.jsonl` 和 `thememiner/output/source_fetch_report.md`。`upgrade_company_profiles_official.py` 會讀取 `company_source_evidence.jsonl`，把高品質 source evidence 掛回 profile 的 source refs 和 official metadata。
+
+全量補強時用 shard 避免單一程序慢站點拖死，也避免多 worker 寫同一個 evidence 檔：
+
+```bash
+.venv/bin/python thememiner/scripts/scrapling_source_fetcher.py --limit 0 --stream-evidence --shard 0/6 --queue-output thememiner/output/profile_upgrade_queue.shard0of6.json --evidence-output thememiner/output/company_source_evidence.shard0of6.jsonl --report-output thememiner/output/source_fetch_report.shard0of6.md
+.venv/bin/python thememiner/scripts/merge_source_evidence.py --inputs 'thememiner/output/company_source_evidence.shard*of6.jsonl'
+.venv/bin/python thememiner/scripts/upgrade_company_profiles_official.py --include-curated --source-evidence thememiner/output/company_source_evidence.jsonl --shard 0/6 --output thememiner/data/profile_upgrades/source_evidence_full_shard0of6.json
+.venv/bin/python thememiner/scripts/merge_company_profile_shards.py --base thememiner/data/company_profiles_autofill.json --shards 'thememiner/data/profile_upgrades/source_evidence_full_shard*of6.json' --output thememiner/data/company_profiles_official_autofill.json
+python3 thememiner/scripts/update_theme_graph.py --auto-profiles thememiner/data/company_profiles_official_autofill.json
+python3 thememiner/scripts/build_theme_graph_html.py
+```
+
 ## 安裝
 
 先安裝支援 Skills 的桌面 App，再直接用自然語言安裝。Codex 和 Claude Desktop 都先走這條；如果安裝器不支援 multi-skill repo 的子資料夾，再用手動 symlink。
@@ -117,6 +181,8 @@ yutinghao ❯ 很多人一開始買股票，只有下跌才虧錢。
 請從 https://github.com/thtang/alpha-persona-lab 安裝 gooaye skill
 請從 https://github.com/thtang/alpha-persona-lab 安裝 yutinghao skill
 請從 https://github.com/thtang/alpha-persona-lab 安裝 zhezhe skill
+請從 https://github.com/thtang/alpha-persona-lab 安裝 thememiner skill
+請從 https://github.com/thtang/alpha-persona-lab 安裝 lagradar skill
 ```
 
 安裝後重開 Codex session，或重新載入 skills。之後可用：
@@ -125,6 +191,8 @@ yutinghao ❯ 很多人一開始買股票，只有下跌才虧錢。
 $gooaye ...
 $yutinghao ...
 $zhezhe ...
+$thememiner ...
+$lagradar ...
 ```
 
 如果自然語言安裝沒有正確抓到子資料夾，改用下面的手動 symlink。
@@ -137,6 +205,8 @@ Claude Desktop App 也可以直接用自然語言要求下載安裝：
 請從 https://github.com/thtang/alpha-persona-lab 安裝 gooaye skill
 請從 https://github.com/thtang/alpha-persona-lab 安裝 yutinghao skill
 請從 https://github.com/thtang/alpha-persona-lab 安裝 zhezhe skill
+請從 https://github.com/thtang/alpha-persona-lab 安裝 thememiner skill
+請從 https://github.com/thtang/alpha-persona-lab 安裝 lagradar skill
 ```
 
 安裝後重開 Claude Desktop，或重新載入 skills。之後可用：
@@ -145,6 +215,8 @@ Claude Desktop App 也可以直接用自然語言要求下載安裝：
 $gooaye ...
 $yutinghao ...
 $zhezhe ...
+$thememiner ...
+$lagradar ...
 ```
 
 如果 App 安裝器沒有正確處理 multi-skill repo 的子資料夾，改用下面的手動 symlink。
@@ -187,6 +259,18 @@ git clone https://github.com/thtang/alpha-persona-lab.git
 cd alpha-persona-lab
 ```
 
+最快的安裝方式是直接跑 repo 內的 installer：
+
+```bash
+# 安裝到 Codex
+bash scripts/install-skills.sh --codex
+
+# 或同時安裝到 Codex + Claude
+bash scripts/install-skills.sh --all-targets
+```
+
+installer 會把五個 skill 以 symlink 掛到本機 skills folder。之後只要在 repo 內 `git pull`，下次開新 session 就會讀到新版 skill 與資料。
+
 #### Codex
 
 推薦用 symlink，之後在 repo 裡 `git pull` 就能更新 skill：
@@ -196,6 +280,8 @@ mkdir -p ~/.codex/skills
 ln -sfn "$PWD/gooaye" ~/.codex/skills/gooaye
 ln -sfn "$PWD/yutinghao" ~/.codex/skills/yutinghao
 ln -sfn "$PWD/zhezhe" ~/.codex/skills/zhezhe
+ln -sfn "$PWD/thememiner" ~/.codex/skills/thememiner
+ln -sfn "$PWD/lagradar" ~/.codex/skills/lagradar
 ```
 
 重開 Codex session，或重新載入 skills。
@@ -207,6 +293,8 @@ mkdir -p ~/.claude/skills
 ln -sfn "$PWD/gooaye" ~/.claude/skills/gooaye
 ln -sfn "$PWD/yutinghao" ~/.claude/skills/yutinghao
 ln -sfn "$PWD/zhezhe" ~/.claude/skills/zhezhe
+ln -sfn "$PWD/thememiner" ~/.claude/skills/thememiner
+ln -sfn "$PWD/lagradar" ~/.claude/skills/lagradar
 ```
 
 重開 Claude Desktop / Claude Code，或重新載入 skills。
@@ -218,12 +306,76 @@ mkdir -p ~/.claude/skills ~/.codex/skills
 cp -R gooaye ~/.claude/skills/gooaye
 cp -R yutinghao ~/.claude/skills/yutinghao
 cp -R zhezhe ~/.claude/skills/zhezhe
+cp -R thememiner ~/.claude/skills/thememiner
+cp -R lagradar ~/.claude/skills/lagradar
 cp -R gooaye ~/.codex/skills/gooaye
 cp -R yutinghao ~/.codex/skills/yutinghao
 cp -R zhezhe ~/.codex/skills/zhezhe
+cp -R thememiner ~/.codex/skills/thememiner
+cp -R lagradar ~/.codex/skills/lagradar
 ```
 
 複製安裝的缺點是之後 repo 更新時要重新複製一次。
+
+## Clone 後快速復現
+
+這個 repo 是 multi-skill bundle。別的帳號 clone 後，最小復現流程如下：
+
+```bash
+git clone https://github.com/thtang/alpha-persona-lab.git
+cd alpha-persona-lab
+bash scripts/install-skills.sh --codex
+bash scripts/bootstrap-theme-stack.sh
+```
+
+`bootstrap-theme-stack.sh` 會用 repo 內已提交的 seed/profile/output snapshot 重建 ThemeMiner 與 Lagradar：
+
+- `thememiner/output/theme_graph.html`
+- `lagradar/output/lagradar_theme_graph.html`
+- `lagradar/output/laggard_candidates.json`
+
+預設模式是 light bootstrap：用已提交的 ThemeMiner graph snapshot 重建 HTML，並更新 Lagradar 的候選輸出。這是為了讓另一個帳號 clone 後能快速復現。
+
+如果要重新計算 ThemeMiner 底層 graph：
+
+```bash
+bash scripts/bootstrap-theme-stack.sh --rebuild-graph
+```
+
+如果要刷新即時價格、新聞與 laggard history：
+
+```bash
+bash scripts/bootstrap-theme-stack.sh --fresh
+```
+
+如果要重掃 US / TW / TPEX 股票 universe，並用可用的 agent provider 做語義判斷：
+
+```bash
+bash scripts/bootstrap-theme-stack.sh --discover --fresh --agent-mode auto --agent-workers 2
+```
+
+如果要完全不限制 discovered stocks / price symbols，跑全量重建：
+
+```bash
+bash scripts/bootstrap-theme-stack.sh --full --fresh --agent-mode auto --agent-workers 2
+```
+
+如果要重建 20 年題材擴散回測，需要先安裝 Python 依賴：
+
+```bash
+python3 -m venv .venv
+.venv/bin/python -m pip install -r requirements.txt
+PYTHON=.venv/bin/python bash scripts/bootstrap-theme-stack.sh --backtest
+```
+
+Scrapling 是選配抓取 runtime，只在需要補官方公司 profile、source evidence 或動態頁時安裝：
+
+```bash
+.venv/bin/python -m pip install -r requirements-scraping.txt
+.venv/bin/scrapling install
+```
+
+資料策略是：可直接使用的 seed/profile/HTML/report 會跟 repo 一起提交；音訊、ASR 暫存、cache、logs、20 年 history raw cache 會被 `.gitignore` 排除。這樣 clone 後能先復現核心 skill，想追最新資料再跑 refresh。
 
 ## 使用範例
 
@@ -345,6 +497,26 @@ python3 yutinghao/scripts/sync_daily_sources.py --force-check
 python3 zhezhe/scripts/sync_daily_sources.py --force-check
 ```
 
+### ThemeMiner + Lagradar
+
+`thememiner` 和 `lagradar` 是一組上下游 skill：ThemeMiner 更新題材庫、公司 business profile、跨市場股票關聯圖；Lagradar 讀 ThemeMiner 的 graph 和 thesis cards，產生題材擴散分數、leader/laggard、觸發與失效條件。
+
+手動更新：
+
+```bash
+python3 thememiner/scripts/update_theme_graph.py --refresh-prices --refresh-news --max-discovered 0
+python3 thememiner/scripts/build_company_thesis_cards.py --agent-mode auto --agent-workers 2
+python3 thememiner/scripts/build_theme_graph_html.py
+python3 lagradar/scripts/scan_laggards.py --refresh-history
+python3 lagradar/scripts/build_lagradar_html.py
+```
+
+或直接用 repo 級 bootstrap：
+
+```bash
+bash scripts/bootstrap-theme-stack.sh --fresh
+```
+
 ## Market Context
 
 三個 skill 都使用 episode-date market context 輔助理解，不把歷史逐字稿當成即時建議。
@@ -388,6 +560,22 @@ alpha-persona-lab/
     data/
     references/
     scripts/
+  thememiner/
+    SKILL.md
+    agents/openai.yaml
+    data/
+    output/
+    scripts/
+  lagradar/
+    SKILL.md
+    agents/openai.yaml
+    data/
+    output/
+    references/
+    scripts/
+  scripts/
+    install-skills.sh
+    bootstrap-theme-stack.sh
 ```
 
 ## 常用指令
@@ -408,6 +596,15 @@ python3 -m json.tool yutinghao/data/market_context/episode_asset_context_manifes
 python3 zhezhe/scripts/search_corpus.py 國巨 被動元件 --kind metadata --kind transcript --limit 20
 python3 zhezhe/scripts/search_corpus.py 台股 季線 風險 --kind article --limit 20
 python3 -m json.tool zhezhe/data/distilled/asset_memory.json
+
+# ThemeMiner
+python3 thememiner/scripts/query_theme_graph.py --top 20
+python3 thememiner/scripts/query_theme_graph.py --concept cpo
+python3 thememiner/scripts/audit_graph_coverage.py
+
+# Lagradar
+python3 lagradar/scripts/query_laggards.py --top 15
+python3 lagradar/scripts/select_trade_candidates.py --top 10
 ```
 
 ## Notes
