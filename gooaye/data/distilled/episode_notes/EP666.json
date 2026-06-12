@@ -1,0 +1,352 @@
+{
+  "schema_version": "v2",
+  "episode": 666,
+  "date": "2026-05-30",
+  "episode_archetype": {
+    "primary": "market_commentary",
+    "secondary": [
+      "industry_supply_chain",
+      "qa_heavy",
+      "philosophy"
+    ]
+  },
+  "segment_breakdown": {
+    "market_pct": 58,
+    "qa_pct": 22,
+    "life_or_aside_pct": 12,
+    "ads_pct": 4,
+    "principles_pct": 6
+  },
+  "market_regime": {
+    "phase_label": "多頭百花齊放",
+    "narrative": "週末 ASR 集；手動對齊 2026-05-29：^TWII 收 44732.94，QQQ 收 738.31，SOXX 收 569.08，IGV 收 101.66，軟體股明顯表態。",
+    "geopolitical_factors": [
+      "美國AI資本支出",
+      "台灣AI供應鏈"
+    ],
+    "regime_tags": [
+      "AI多頭",
+      "族群輪動",
+      "題材擴散"
+    ]
+  },
+  "topics": [
+    "被動元件",
+    "日本被動元件",
+    "軟體股",
+    "IGV",
+    "Salesforce",
+    "ServiceNow",
+    "Snowflake",
+    "AI應用層"
+  ],
+  "host_state": {
+    "leverage_state": "自述約九成資金在處置股，其中許多為20分鐘處置；券商額度限制讓部位無法繼續放大。",
+    "disclosed_positions": [
+      {
+        "asset": "台股處置股/被動元件相關",
+        "stance": "重倉被鎖住，無法靈活換股或加槓桿",
+        "reasoning": "逐字稿提到90%資金在處置股，券商不放額度。"
+      },
+      {
+        "asset": "被動元件",
+        "stance": "仍看強，但尋找更缺、討論度不足的旁支",
+        "reasoning": "逐字稿提到高階MLCC、鋁電容、牛角電容、電感/電阻。"
+      }
+    ],
+    "self_critique": [
+      {
+        "target": "未能因看對而更暴力放大部位",
+        "assessment": "把券商額度限制視為老天幫忙風控。",
+        "tone": "self_deprecating"
+      }
+    ],
+    "personal_arc_markers": [
+      {
+        "event": "內觀/儀式感與生活記憶點",
+        "impact_on_trades": "提醒不要只追求資產增長而失去生活感受",
+        "domain": "health"
+      }
+    ]
+  },
+  "investment_logic": [
+    {
+      "claim": "被動元件從成本驅動轉成需求驅動，且公司派開始改口，代表市場派可能領先公司派。",
+      "trigger": "公司法說從保守轉樂觀、國際同業同步噴出時",
+      "is_conditional": false,
+      "condition": null,
+      "action_bias": "scale-in",
+      "risk_control": "越熱越要找更缺且討論度不足的產品，而不是只追 MLCC。",
+      "risk_control_type": "position-size",
+      "evidence": "EP666 2026-05-30 摘述：成本驅動轉需求驅動，公司派開始改口。",
+      "source_type": "host_framework",
+      "confidence": "high"
+    },
+    {
+      "claim": "軟體股開始用財報和買回證明 AI 是加分項，不是被取代扣分項。",
+      "trigger": "IGV 表態、CRM/NOW/SNOW/OKTA 等財報或買回帶動時",
+      "is_conditional": false,
+      "condition": null,
+      "action_bias": "rotate",
+      "risk_control": "不要喊破喉嚨說市場錯；看到表態後找有效率加碼點。",
+      "risk_control_type": "time-bound",
+      "evidence": "EP666 摘述：Salesforce買回、ServiceNow/Snowflake/Okta成績好。",
+      "source_type": "host_framework",
+      "confidence": "high"
+    },
+    {
+      "claim": "AI 應用層的勝負不只看模型誰強，還看誰掌握專有資料、部署能力、商務能力與可問責性。",
+      "trigger": "AI infra 走到 application/deployment 階段時",
+      "is_conditional": false,
+      "condition": null,
+      "action_bias": "rotate",
+      "risk_control": "區分通用模型、資料擁有者與企業部署商，不把軟體股視為同質。",
+      "risk_control_type": "diversify",
+      "evidence": "EP666 摘述：資料、業務能力與可問責性是部署優勢。",
+      "source_type": "host_framework",
+      "confidence": "high"
+    },
+    {
+      "claim": "高檔多頭可以 cherry picking，但需接受處置與融資限制，別因想多賺而搬更多錢。",
+      "trigger": "熱門股被關、融資增加快速、資金仍充沛時",
+      "is_conditional": false,
+      "condition": null,
+      "action_bias": "hold",
+      "risk_control": "把外部限制視為風控，避免在最後回檔吐回過多。",
+      "risk_control_type": "liquidity",
+      "evidence": "EP666 摘述：90%資金在處置股，券商額度限制像封控。",
+      "source_type": "host_framework",
+      "confidence": "medium"
+    }
+  ],
+  "trade_observations": [
+    {
+      "asset_or_sector": "被動元件",
+      "asset_symbol": null,
+      "asset_type": "sector",
+      "view": {
+        "short_term": "bullish",
+        "medium_term": "bullish",
+        "long_term": "unstated"
+      },
+      "primary_horizon": "swing",
+      "reasoning": "日本被動元件與台股同步強；需求驅動漲價、MLCC外的鋁電容/牛角電容更缺。",
+      "industry_nodes": [
+        "MLCC",
+        "鋁電容",
+        "牛角電容",
+        "電感",
+        "電阻"
+      ],
+      "catalyst_anchor": null,
+      "consensus_level": "crowded",
+      "market_alignment": "週末 ASR 集；手動對齊 2026-05-29：^TWII 收 44732.94，QQQ 收 738.31，SOXX 收 569.08，IGV 收 101.66，軟體股明顯表態。",
+      "tone": "serious"
+    },
+    {
+      "asset_or_sector": "軟體股/IGV",
+      "asset_symbol": "IGV",
+      "asset_type": "sector",
+      "view": {
+        "short_term": "bullish",
+        "medium_term": "bullish",
+        "long_term": "unstated"
+      },
+      "primary_horizon": "swing",
+      "reasoning": "IGV 拉出表態，資金可能從硬體/老AI輪到軟體與AI application。",
+      "industry_nodes": [
+        "software ETF",
+        "AI application",
+        "SaaS"
+      ],
+      "catalyst_anchor": null,
+      "consensus_level": "overlooked",
+      "market_alignment": "週末 ASR 集；手動對齊 2026-05-29：^TWII 收 44732.94，QQQ 收 738.31，SOXX 收 569.08，IGV 收 101.66，軟體股明顯表態。",
+      "tone": "serious"
+    },
+    {
+      "asset_or_sector": "Salesforce",
+      "asset_symbol": "CRM",
+      "asset_type": "stock",
+      "view": {
+        "short_term": "bullish",
+        "medium_term": "conditional",
+        "long_term": "unstated"
+      },
+      "primary_horizon": "swing",
+      "reasoning": "公司以大額買回與財報態度對抗 AI 取代軟體敘事。",
+      "industry_nodes": [
+        "buyback",
+        "SaaS",
+        "AI productivity"
+      ],
+      "catalyst_anchor": null,
+      "consensus_level": "contrarian",
+      "market_alignment": "週末 ASR 集；手動對齊 2026-05-29：^TWII 收 44732.94，QQQ 收 738.31，SOXX 收 569.08，IGV 收 101.66，軟體股明顯表態。",
+      "tone": "serious"
+    },
+    {
+      "asset_or_sector": "ServiceNow",
+      "asset_symbol": "NOW",
+      "asset_type": "stock",
+      "view": {
+        "short_term": "bullish",
+        "medium_term": "bullish",
+        "long_term": "unstated"
+      },
+      "primary_horizon": "medium-term",
+      "reasoning": "管理層強調 AI 是順風，企業部署與可問責性可成競爭力。",
+      "industry_nodes": [
+        "workflow software",
+        "enterprise AI",
+        "deployment"
+      ],
+      "catalyst_anchor": null,
+      "consensus_level": "consensus",
+      "market_alignment": "週末 ASR 集；手動對齊 2026-05-29：^TWII 收 44732.94，QQQ 收 738.31，SOXX 收 569.08，IGV 收 101.66，軟體股明顯表態。",
+      "tone": "serious"
+    },
+    {
+      "asset_or_sector": "Snowflake/Okta",
+      "asset_symbol": "SNOW",
+      "asset_type": "stock",
+      "view": {
+        "short_term": "bullish",
+        "medium_term": "conditional",
+        "long_term": "unstated"
+      },
+      "primary_horizon": "swing",
+      "reasoning": "財報成績讓市場重新思考軟體股不是 AI 的受害者。",
+      "industry_nodes": [
+        "data platform",
+        "identity",
+        "AI application"
+      ],
+      "catalyst_anchor": null,
+      "consensus_level": "overlooked",
+      "market_alignment": "週末 ASR 集；手動對齊 2026-05-29：^TWII 收 44732.94，QQQ 收 738.31，SOXX 收 569.08，IGV 收 101.66，軟體股明顯表態。",
+      "tone": "serious"
+    },
+    {
+      "asset_or_sector": "記憶體/Micron 擴產解讀",
+      "asset_symbol": "MU",
+      "asset_type": "stock",
+      "view": {
+        "short_term": "conditional",
+        "medium_term": "bullish",
+        "long_term": "unstated"
+      },
+      "primary_horizon": "medium-term",
+      "reasoning": "擴產不等於利空；需看產品線、時間點與是否為已超缺市場。",
+      "industry_nodes": [
+        "DRAM",
+        "niche market",
+        "capacity expansion"
+      ],
+      "catalyst_anchor": null,
+      "consensus_level": "crowded",
+      "market_alignment": "週末 ASR 集；手動對齊 2026-05-29：^TWII 收 44732.94，QQQ 收 738.31，SOXX 收 569.08，IGV 收 101.66，軟體股明顯表態。",
+      "tone": "serious"
+    }
+  ],
+  "qa_views": [
+    {
+      "category": "investment_operation",
+      "question_theme": "華新科/光頡擴產後為何仍噴",
+      "viewpoint": "擴產不等於利空，要看是初期供需轉換還是末段超缺後大擴產。",
+      "principle": "產品線、時間點、產能用途決定擴產訊號是利多還是警訊。",
+      "tone": "serious",
+      "evidence": "EP666 QA：華新科/光頡擴產與被動族群續噴。",
+      "asker_persona": "聽眾"
+    },
+    {
+      "category": "career",
+      "question_theme": "九成台股且無人生目標",
+      "viewpoint": "投資賺錢後仍要處理生活目標，不能只靠資產增長填補空洞。",
+      "principle": "工作與旅行選擇要回到自身狀態，而非單純逃離。",
+      "tone": "serious",
+      "evidence": "EP666 QA：聽眾九成台股、槓桿1.2倍、想辭職旅行。",
+      "asker_persona": "聽眾"
+    },
+    {
+      "category": "investment_operation",
+      "question_theme": "只給股票代碼 vs 方法論",
+      "viewpoint": "重點不是給四個數字，而是讓聽眾學會自己解決方法論。",
+      "principle": "投資教育應教釣魚，不只給魚。",
+      "tone": "serious",
+      "evidence": "EP666 摘述：不要只給魚，要讓人學會釣魚。",
+      "asker_persona": "聽眾"
+    }
+  ],
+  "catalysts": [],
+  "narrative_threads": [],
+  "view_changes": [],
+  "principles": [
+    {
+      "principle": "市場派有時會走在公司派前面；公司接到單前，買方可能已知道你會被下單。",
+      "explanation": "將節目中的市場觀察轉成可重複使用的交易/研究規則。",
+      "category": "contrarian",
+      "evidence": "EP666 摘述：甲方知道、乙方還不相信。"
+    },
+    {
+      "principle": "找到房間裡的大象：最高毛利、最缺、最少被討論的節點。",
+      "explanation": "將節目中的市場觀察轉成可重複使用的交易/研究規則。",
+      "category": "entry_discipline",
+      "evidence": "EP666 摘述：MLCC之外的鋁電容/牛角電容更缺。"
+    },
+    {
+      "principle": "不要花太多心力證明市場錯，看到資金表態後找最有效率的加碼點。",
+      "explanation": "將節目中的市場觀察轉成可重複使用的交易/研究規則。",
+      "category": "sentiment_reading",
+      "evidence": "EP666 摘述：IGV表態與軟體股輪動。"
+    },
+    {
+      "principle": "AI application 的護城河可能在專有資料、業務部署與責任承擔。",
+      "explanation": "將節目中的市場觀察轉成可重複使用的交易/研究規則。",
+      "category": "longterm_outlook",
+      "evidence": "EP666 摘述：資料與商務能力成為鑑別度。"
+    }
+  ],
+  "mantras_or_catchphrases": [
+    "且戰且走",
+    "看對就放大，但接受外部風控",
+    "不要只要魚，要學釣魚"
+  ],
+  "warnings": [
+    {
+      "type": "anti_pattern",
+      "target": "融資快速增加",
+      "warning": "熱門股不斷處置、融資快速上升時，盤面雖強但最後回檔可能吐很多。",
+      "evidence": "EP666 摘述：多頭健康但融資增加速度快。"
+    },
+    {
+      "type": "rumor_debunk",
+      "target": "看到擴產就放空",
+      "warning": "擴產是利空或利多取決於產品線、需求階段與完成時間。",
+      "evidence": "EP666 QA：美光與被動元件擴產解讀。"
+    }
+  ],
+  "references": [
+    {
+      "type": "podcast_or_video",
+      "name": "AI 軟體財報表態",
+      "description": "節目提及 Salesforce、ServiceNow、Snowflake、Okta 近期成績。"
+    }
+  ],
+  "non_tradeable_insights": [
+    {
+      "domain": "tech_industry",
+      "insight": "AI 從 infra 走到 application 時，掌握資料與負責落地的人會捕捉更多價值。",
+      "evidence": "EP666 軟體發布會心得。"
+    },
+    {
+      "domain": "personal_finance",
+      "insight": "資產增長不等於生活有記憶點；高強度交易之外仍要有生活儀式。",
+      "evidence": "EP666 開場內觀/生活記憶點。"
+    }
+  ],
+  "open_questions": [
+    "EP666 為 SoundOn ASR fallback，重要逐字引用需等 canonical transcript 或人工校對。",
+    "EP666 的 episode_market_context 尚未由 align_market_context 自動輸出，已用 2026-05-29 手動市場對齊補充。"
+  ]
+}

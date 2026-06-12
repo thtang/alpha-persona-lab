@@ -54,7 +54,7 @@ THEME_TO_CONCEPTS = {
     ],
     "power_grid_transformer": ["smart_grid", "transformer_ups"],
     "memory_hbm": ["hbm", "dram_manufacturing", "memory_ic_design", "legacy_memory"],
-    "ai_server_power_thermal": ["gb200", "gb300", "vera_rubin", "thermal_components", "power_supply", "ems", "hvdc_power_semiconductor"],
+    "ai_server_power_thermal": ["gb200", "gb300", "vera_rubin", "thermal_components", "power_supply", "ems"],
     "pcb_abf_ccl": ["pcb_manufacturing", "pcb_material_equipment", "abf_substrate"],
     "optical_800g_cpo": ["cpo_optical", "laser_capacity", "inp_photonics", "silicon_photonics", "specialty_glass_fiber", "networking"],
     "ai_photonics_bottleneck_stack": [

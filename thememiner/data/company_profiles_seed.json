@@ -87,12 +87,53 @@
         {"concept_id": "transformer_ups", "role": "ups_leader", "weight": 0.72, "path": "AI campus power buildout -> UPS and power conditioning demand"},
         {"concept_id": "gb200", "role": "rack_infrastructure_follower", "weight": 0.62, "path": "GB200 rack density -> power/cooling infrastructure uplift"},
         {"concept_id": "gb300", "role": "rack_infrastructure_follower", "weight": 0.62, "path": "GB300 ramp -> higher-density power and cooling requirements"},
-        {"concept_id": "vera_rubin", "role": "rack_infrastructure_follower", "weight": 0.58, "path": "Rubin/Vera Rubin rack roadmap -> future power and thermal spec step-up"},
-        {"concept_id": "hvdc_power_semiconductor", "role": "architecture_readthrough", "weight": 0.52, "path": "800V/HVDC data-center power architecture -> infrastructure integration demand"}
+        {"concept_id": "vera_rubin", "role": "rack_infrastructure_follower", "weight": 0.58, "path": "Rubin/Vera Rubin rack roadmap -> future power and thermal spec step-up"}
       ],
       "source_refs": [
         {"title": "Vertiv investor relations overview", "url": "https://investors.vertiv.com/overview/default.aspx"},
         {"title": "Vertiv about us / AI infrastructure portfolio", "url": "https://www.vertiv.com/en-us/about/about-us/"}
+      ]
+    },
+    {
+      "symbol": "DELL",
+      "name": "Dell Technologies",
+      "market": "US",
+      "region": "US",
+      "sector": "Server / storage / enterprise infrastructure",
+      "primary_business": "Dell Technologies provides servers, storage, PCs, services, and enterprise infrastructure. In AI infrastructure it is a server/system platform and rack integration signal, not a power semiconductor supplier.",
+      "specializations": ["AI servers", "enterprise servers", "storage", "rack-scale systems", "PCs"],
+      "platforms": ["AI Factory with NVIDIA", "PowerEdge servers", "enterprise storage", "hyperscale/enterprise AI infrastructure"],
+      "concepts": ["ems", "gb200", "gb300", "ai_capex", "enterprise_ssd"],
+      "constraints": ["server order timing", "margin mix", "GPU allocation", "enterprise IT spending"],
+      "risk_flags": ["do not classify Dell as HVDC power semiconductor; it is downstream system hardware", "AI server revenue can be margin-dilutive"],
+      "concept_exposures": [
+        {"concept_id": "ems", "role": "server_system_platform", "weight": 0.72, "path": "AI server demand -> system/rack platform delivery -> Dell"},
+        {"concept_id": "gb200", "role": "ai_server_platform", "weight": 0.58, "path": "NVIDIA platform cycle -> enterprise AI server demand"},
+        {"concept_id": "ai_capex", "role": "downstream_system_signal", "weight": 0.55, "path": "enterprise/CSP AI capex -> server and storage orders"}
+      ],
+      "source_refs": [
+        {"title": "Dell investor relations", "url": "https://investors.delltechnologies.com/"}
+      ]
+    },
+    {
+      "symbol": "0992.HK",
+      "name": "聯想集團",
+      "market": "HK",
+      "region": "Hong Kong",
+      "sector": "PC / server / enterprise infrastructure",
+      "primary_business": "聯想集團是 PC、伺服器、基礎設施方案與企業服務公司；AI 題材中屬於 downstream server/PC/platform，不是 HVDC 功率半導體供應商。",
+      "specializations": ["PC", "server", "AI server platform", "enterprise infrastructure"],
+      "platforms": ["Lenovo Infrastructure Solutions", "AI PC", "enterprise AI servers"],
+      "concepts": ["ems", "gb200", "gb300", "notebook_pc", "ai_pc"],
+      "constraints": ["PC cycle", "server margin", "AI server order visibility"],
+      "risk_flags": ["不要把聯想歸到 HVDC 功率半導體；它是 downstream system/platform", "港股 beta 與 PC 週期可能主導股價"],
+      "concept_exposures": [
+        {"concept_id": "ems", "role": "server_system_follower", "weight": 0.62, "path": "AI server demand -> infrastructure solution/platform build -> Lenovo"},
+        {"concept_id": "ai_pc", "role": "ai_pc_leader", "weight": 0.58, "path": "AI PC replacement cycle -> Lenovo PC exposure"},
+        {"concept_id": "gb200", "role": "server_platform_readthrough", "weight": 0.42, "path": "NVIDIA AI platform demand -> downstream server platform sentiment"}
+      ],
+      "source_refs": [
+        {"title": "Lenovo investor relations", "url": "https://investor.lenovo.com/"}
       ]
     },
     {
@@ -640,10 +681,12 @@
       "primary_business": "Power semiconductor supplier focused on MOSFET and discrete power devices; AI relevance comes from 48V/800V rack power conversion rather than GPUs directly.",
       "specializations": ["MOSFET", "power IC/discrete", "server power conversion", "industrial power"],
       "platforms": ["800 VDC AI rack power", "server power supply", "HVDC conversion"],
+      "concepts": ["hvdc_power_semiconductor", "power_discrete_semiconductor", "semiconductor_components"],
       "constraints": ["qualification into high-voltage AI power chain", "competition from global SiC/GaN/MOSFET leaders", "legacy PC/consumer drag"],
       "risk_flags": ["theme is architectural, not always current revenue", "small-cap volatility"],
       "concept_exposures": [
         {"concept_id": "hvdc_power_semiconductor", "role": "laggard_watch", "weight": 0.85, "path": "800 VDC rack architecture -> higher-value power conversion devices -> Taiwan MOSFET catch-up"},
+        {"concept_id": "power_discrete_semiconductor", "role": "mosfet_follower", "weight": 0.82, "path": "server/industrial power conversion -> MOSFET and discrete power device demand"},
         {"concept_id": "semiconductor_components", "role": "power_discrete_follower", "weight": 0.65, "path": "data-center power density -> discrete power semiconductor demand"}
       ],
       "source_refs": [
@@ -660,15 +703,158 @@
       "primary_business": "Power semiconductor and MOSFET supplier with potential leverage to higher-voltage AI server and industrial power conversion.",
       "specializations": ["power MOSFET", "power IC", "server/industrial power conversion"],
       "platforms": ["800 VDC AI rack", "power supply", "industrial power"],
+      "concepts": ["hvdc_power_semiconductor", "power_discrete_semiconductor", "semiconductor_components"],
       "constraints": ["AI server qualification", "global competition", "pricing cyclicality"],
       "risk_flags": ["not a direct NVIDIA supplier proof by default", "needs revenue/order validation"],
       "concept_exposures": [
         {"concept_id": "hvdc_power_semiconductor", "role": "laggard_watch", "weight": 0.8, "path": "AI rack voltage migration -> MOSFET/power device content and spec uplift"},
+        {"concept_id": "power_discrete_semiconductor", "role": "mosfet_follower", "weight": 0.78, "path": "server and industrial power conversion -> MOSFET/power IC demand"},
         {"concept_id": "semiconductor_components", "role": "power_discrete_follower", "weight": 0.65, "path": "server power conversion demand -> discrete semiconductor peer diffusion"}
       ],
       "source_refs": [
         {"title": "NVIDIA 800 VDC Architecture", "url": "https://www.nvidia.com/en-us/data-center/technologies/800-vdc-architecture/"},
         {"title": "TI 800 VDC with NVIDIA", "url": "https://www.ti.com/about-ti/newsroom/news-releases/2026/2026-03-16-ti-unveils-complete-800-vdc-power-architecture-for-future-generation-ai-data-centers-with-nvidia.html?HQS=multi-tech-data-gridtogate_dce_nvidiagtc-bhp-pr-null-wwe"}
+      ]
+    },
+    {
+      "symbol": "2481.TW",
+      "name": "強茂",
+      "market": "TW",
+      "region": "Taiwan",
+      "sector": "Power discrete semiconductor / rectifier / diode",
+      "primary_business": "強茂是功率分立元件廠，產品重心在二極體、整流器、橋式整流器、TVS/保護元件與 MOSFET 等 discrete power devices；更適合歸在功率分立元件，而不是 AI server 電源或散熱。",
+      "specializations": ["diode", "rectifier", "bridge rectifier", "TVS/protection devices", "MOSFET"],
+      "platforms": ["industrial power", "automotive electronics", "power supply", "consumer electronics"],
+      "concepts": ["power_discrete_semiconductor", "semiconductor_components"],
+      "constraints": ["industrial/auto cycle", "pricing and inventory cycle", "AI rack purity must be validated"],
+      "risk_flags": ["若只跟隨功率股題材而無訂單驗證，容易變成後段補漲", "二極體/整流器與 800V HVDC MOSFET/SiC 不是同一個純度"],
+      "concept_exposures": [
+        {"concept_id": "power_discrete_semiconductor", "role": "taiwan_discrete_leader", "weight": 0.82, "path": "power conversion demand -> rectifier/diode/MOSFET discrete content -> 強茂"},
+        {"concept_id": "semiconductor_components", "role": "discrete_component_supplier", "weight": 0.7, "path": "industrial/auto/power supply cycle -> discrete semiconductor breadth"}
+      ],
+      "source_refs": [
+        {"title": "PANJIT official site", "url": "https://www.panjit.com.tw/"}
+      ]
+    },
+    {
+      "symbol": "6415.TW",
+      "name": "矽力-KY",
+      "market": "TW",
+      "region": "Taiwan",
+      "sector": "Power management IC / analog IC",
+      "primary_business": "矽力-KY 是類比與電源管理 IC 廠，核心是 PMIC、DC-DC、buck/boost、voltage regulator 等，不是 MOSFET/SiC/GaN 分立元件。",
+      "specializations": ["PMIC", "DC-DC converter", "buck/boost regulator", "analog power IC"],
+      "platforms": ["consumer electronics", "industrial", "automotive", "server power management"],
+      "concepts": ["power_management_ic", "ic_design", "semiconductor_components"],
+      "constraints": ["consumer/industrial analog cycle", "pricing pressure", "AI server content needs revenue validation"],
+      "risk_flags": ["PMIC 反彈可能跟類比庫存循環，不一定是 HVDC 功率半導體", "高估值股對財報修正敏感"],
+      "concept_exposures": [
+        {"concept_id": "power_management_ic", "role": "pmic_leader", "weight": 0.86, "path": "device/server power rails -> PMIC/DC-DC content -> 矽力-KY"},
+        {"concept_id": "ic_design", "role": "analog_ic_design", "weight": 0.55, "path": "analog IC cycle -> Taiwan IC design sentiment"}
+      ],
+      "source_refs": [
+        {"title": "Silergy official site", "url": "https://www.silergy.com/"}
+      ]
+    },
+    {
+      "symbol": "6719.TW",
+      "name": "力智",
+      "market": "TW",
+      "region": "Taiwan",
+      "sector": "Power management IC / multiphase power",
+      "primary_business": "力智是電源管理與類比 IC 廠，產品重心在多相電源控制、DC-DC、電源轉換與運算平台供電控制；應歸在 PMIC/電源管理 IC。",
+      "specializations": ["power management IC", "multiphase controller", "DC-DC converter", "voltage regulator"],
+      "platforms": ["PC/CPU/GPU power rails", "server power management", "consumer electronics"],
+      "concepts": ["power_management_ic", "ic_design", "semiconductor_components"],
+      "constraints": ["platform socket cycle", "customer qualification", "inventory and pricing cycle"],
+      "risk_flags": ["容易被誤掛到 broad semiconductor；需要用 PMIC/多相供電同業比較", "短線題材需看量價轉強"],
+      "concept_exposures": [
+        {"concept_id": "power_management_ic", "role": "pmic_follower", "weight": 0.82, "path": "higher CPU/GPU/server power complexity -> multiphase PMIC demand -> 力智"},
+        {"concept_id": "ic_design", "role": "analog_ic_design", "weight": 0.52, "path": "Taiwan analog IC design cycle -> 力智"}
+      ],
+      "source_refs": [
+        {"title": "uPI Semiconductor official site", "url": "https://www.upi-semi.com/"}
+      ]
+    },
+    {
+      "symbol": "3317.TWO",
+      "name": "尼克森",
+      "market": "TW",
+      "region": "Taiwan",
+      "sector": "Power discrete semiconductor / MOSFET",
+      "primary_business": "尼克森是 MOSFET 與功率分立元件供應商，交易上應放在 power discrete/MOSFET peer group，而不是泛半導體。",
+      "specializations": ["MOSFET", "power discrete", "power semiconductor"],
+      "platforms": ["power supply", "consumer/industrial power", "PC/server power conversion"],
+      "concepts": ["power_discrete_semiconductor", "semiconductor_components"],
+      "constraints": ["MOSFET price cycle", "customer qualification", "global discrete competition"],
+      "risk_flags": ["若沒有放量站回均線，只是 sleeping laggard", "AI HVDC 純度需法說或產品驗證"],
+      "concept_exposures": [
+        {"concept_id": "power_discrete_semiconductor", "role": "mosfet_follower", "weight": 0.78, "path": "power supply and server power conversion -> MOSFET content -> 尼克森"},
+        {"concept_id": "semiconductor_components", "role": "discrete_component_supplier", "weight": 0.62, "path": "discrete semiconductor cycle -> MOSFET peer diffusion"}
+      ],
+      "source_refs": [
+        {"title": "NIKO-SEM official site", "url": "https://www.niko-sem.com/"}
+      ]
+    },
+    {
+      "symbol": "5299.TWO",
+      "name": "杰力",
+      "market": "TW",
+      "region": "Taiwan",
+      "sector": "Power MOSFET / power IC",
+      "primary_business": "杰力是功率半導體設計公司，產品以 MOSFET、power IC 和電源控制相關元件為主，屬於功率分立/電源管理交界。",
+      "specializations": ["MOSFET", "power IC", "power management"],
+      "platforms": ["power supply", "consumer/industrial electronics", "server power read-through"],
+      "concepts": ["power_discrete_semiconductor", "power_management_ic", "semiconductor_components"],
+      "constraints": ["design-win timing", "MOSFET/PMIC pricing cycle", "small-cap liquidity"],
+      "risk_flags": ["若只跟隨題材無營收驗證，波動會很大", "需區分 MOSFET 與 PMIC 兩條同業比較線"],
+      "concept_exposures": [
+        {"concept_id": "power_discrete_semiconductor", "role": "mosfet_follower", "weight": 0.74, "path": "server/industrial power conversion -> MOSFET demand -> 杰力"},
+        {"concept_id": "power_management_ic", "role": "power_ic_follower", "weight": 0.66, "path": "power rails complexity -> power IC demand -> 杰力"}
+      ],
+      "source_refs": [
+        {"title": "JoulWatt / JoulWatt Taiwan public company materials", "url": "https://www.joulwatt.com/"}
+      ]
+    },
+    {
+      "symbol": "3707.TWO",
+      "name": "漢磊",
+      "market": "TW",
+      "region": "Taiwan",
+      "sector": "Compound semiconductor / SiC / GaN foundry",
+      "primary_business": "漢磊是化合物半導體與特殊製程代工/製造節點，SiC/GaN 題材純度高於一般功率 IC，但短線常受車用與功率週期影響。",
+      "specializations": ["SiC", "GaN", "compound semiconductor", "epitaxy/foundry"],
+      "platforms": ["EV power", "industrial power", "AI data-center power read-through"],
+      "concepts": ["hvdc_power_semiconductor", "power_discrete_semiconductor", "foundry", "wafer_materials"],
+      "constraints": ["SiC/GaN utilization", "EV/industrial demand cycle", "customer qualification"],
+      "risk_flags": ["SiC/GaN 敘事常先漲題材，後續必須看稼動率與毛利", "AI data-center 連結目前屬 read-through，不等於直接供應"],
+      "concept_exposures": [
+        {"concept_id": "hvdc_power_semiconductor", "role": "sic_gan_follower", "weight": 0.72, "path": "800VDC / high-voltage power architecture -> SiC/GaN demand read-through -> 漢磊"},
+        {"concept_id": "power_discrete_semiconductor", "role": "compound_power_supplier", "weight": 0.68, "path": "high-voltage power devices -> compound semiconductor manufacturing -> 漢磊"},
+        {"concept_id": "foundry", "role": "specialty_foundry", "weight": 0.45, "path": "specialty power process demand -> foundry utilization"}
+      ],
+      "source_refs": [
+        {"title": "Episil official site", "url": "https://www.episil.com/"}
+      ]
+    },
+    {
+      "symbol": "8081.TW",
+      "name": "致新",
+      "market": "TW",
+      "region": "Taiwan",
+      "sector": "Power management IC / analog IC",
+      "primary_business": "致新是類比與電源管理 IC 供應商，產品包含電源管理、顯示/驅動與混合訊號相關 IC；在功率題材中屬 PMIC/類比 IC，不是 MOSFET/SiC。",
+      "specializations": ["power management IC", "analog IC", "mixed-signal IC", "display/power control"],
+      "platforms": ["consumer electronics", "display", "PC/server power rails"],
+      "concepts": ["power_management_ic", "ic_design", "semiconductor_components"],
+      "constraints": ["consumer/display cycle", "analog inventory cycle", "AI server content visibility"],
+      "risk_flags": ["若只是類比庫存回補，不該和 HVDC MOSFET 混為一談", "需量價確認才是 improving laggard"],
+      "concept_exposures": [
+        {"concept_id": "power_management_ic", "role": "pmic_follower", "weight": 0.76, "path": "power rail complexity -> PMIC/analog power control demand -> 致新"},
+        {"concept_id": "ic_design", "role": "analog_ic_design", "weight": 0.55, "path": "Taiwan analog IC design cycle -> 致新"}
+      ],
+      "source_refs": [
+        {"title": "Global Mixed-mode Technology official site", "url": "https://www.gmt.com.tw/"}
       ]
     },
     {
@@ -1801,6 +1987,50 @@
       ],
       "source_refs": [
         {"title": "Zero One Technology official site", "url": "https://www.zerone.com.tw/"}
+      ]
+    },
+    {
+      "symbol": "2421.TW",
+      "name": "建準",
+      "market": "TW",
+      "region": "Taiwan",
+      "sector": "Thermal components / fan / motor",
+      "primary_business": "建準是風扇、散熱模組與馬達廠，AI server 題材中屬於散熱/風扇/機櫃熱管理，不是 HVDC 功率半導體、PCB 或電子通路。",
+      "specializations": ["DC fan", "server fan", "fan tray", "thermal module", "motor"],
+      "platforms": ["AI server cooling", "GB200/GB300 thermal read-through", "industrial and consumer cooling"],
+      "concepts": ["thermal_components", "gb200", "gb300", "vera_rubin"],
+      "constraints": ["AI server revenue mix", "fan/tray qualification", "thermal leader breadth"],
+      "risk_flags": ["不要把建準歸到 HVDC 功率半導體；它是散熱 follower", "若奇鋐/雙鴻/VRT 轉弱，二線散熱補漲會失效"],
+      "bottleneck_profile": {"layer": "Layer 6 - Thermal/fan subsystem", "scarcity": "medium", "substitutability": "medium", "discovery_state": "taiwan_second_line_thermal", "score": 3.2, "reason": "AI rack power density raises fan and thermal subsystem demand, but 建準 is not a power semiconductor supplier."},
+      "concept_exposures": [
+        {"concept_id": "thermal_components", "role": "second_line_thermal_follower", "weight": 0.82, "path": "AI rack heat density -> fan tray/thermal module demand -> 建準"},
+        {"concept_id": "gb200", "role": "thermal_readthrough", "weight": 0.58, "path": "GB200/GB300 rack thermal complexity -> second-line fan/thermal names"},
+        {"concept_id": "gb300", "role": "thermal_readthrough", "weight": 0.55, "path": "GB300 ramp -> higher thermal subsystem demand"},
+        {"concept_id": "vera_rubin", "role": "future_thermal_readthrough", "weight": 0.45, "path": "Rubin/Vera Rubin roadmap -> future rack power density"}
+      ],
+      "source_refs": [
+        {"title": "SUNON official site", "url": "https://www.sunon.com/"}
+      ]
+    },
+    {
+      "symbol": "2376.TW",
+      "name": "技嘉",
+      "market": "TW",
+      "region": "Taiwan",
+      "sector": "Motherboard / graphics card / server hardware",
+      "primary_business": "技嘉是主機板、顯示卡、伺服器與邊緣運算硬體公司，AI server 題材中屬於板卡/伺服器平台與系統硬體，不是功率半導體元件供應商。",
+      "specializations": ["motherboard", "graphics card", "AI server hardware", "edge/server platform"],
+      "platforms": ["AI server systems", "GPU server platforms", "PC gaming hardware"],
+      "concepts": ["motherboard", "ems", "gb200", "gb300", "industrial_pc"],
+      "constraints": ["GPU/server platform allocation", "PC and gaming cycle", "server margin mix"],
+      "risk_flags": ["不要把技嘉歸到 HVDC 功率半導體；它是板卡/伺服器硬體", "AI server 題材需要看伺服器營收與訂單能見度"],
+      "concept_exposures": [
+        {"concept_id": "motherboard", "role": "board_platform_supplier", "weight": 0.78, "path": "AI/PC/server platform demand -> motherboard and board-level hardware -> 技嘉"},
+        {"concept_id": "ems", "role": "server_hardware_follower", "weight": 0.55, "path": "AI server demand -> system hardware build -> 技嘉"},
+        {"concept_id": "gb200", "role": "server_platform_readthrough", "weight": 0.48, "path": "NVIDIA platform cycle -> server/board hardware sentiment"}
+      ],
+      "source_refs": [
+        {"title": "GIGABYTE official site", "url": "https://www.gigabyte.com/"}
       ]
     },
     {

@@ -137,7 +137,23 @@
       "products": ["MOSFET", "diode", "rectifier", "discrete semiconductor", "power discrete"],
       "keywords_any": ["discrete semiconductor", "MOSFET", "rectifier", "diode", "diodes", "power semiconductor", "功率半導體", "半導體元件"],
       "upstream_concepts": ["wafer_materials", "foundry"],
-      "downstream_concepts": ["hvdc_power_semiconductor", "power_supply", "ev"]
+      "downstream_concepts": ["power_discrete_semiconductor", "hvdc_power_semiconductor", "power_supply", "ev"]
+    },
+    {
+      "concept_id": "power_discrete_semiconductor",
+      "layer": "electronics_upstream.power_semiconductor.discrete",
+      "products": ["power MOSFET", "IGBT", "diode", "rectifier", "Schottky diode", "TVS diode"],
+      "keywords_any": ["power MOSFET", "MOSFET", "IGBT", "power discrete", "discrete power", "rectifier", "Schottky", "TVS diode", "bridge rectifier", "功率MOSFET", "功率元件", "整流二極體", "蕭特基"],
+      "upstream_concepts": ["wafer_materials", "foundry"],
+      "downstream_concepts": ["power_supply", "hvdc_power_semiconductor", "ev", "industrial_pc"]
+    },
+    {
+      "concept_id": "power_management_ic",
+      "layer": "electronics_upstream.power_semiconductor.pmic",
+      "products": ["PMIC", "DC-DC converter", "buck converter", "voltage regulator", "power controller"],
+      "keywords_any": ["PMIC", "power management IC", "power management", "DC-DC", "DCDC", "buck converter", "boost converter", "voltage regulator", "power controller", "電源管理IC", "電源管理", "穩壓器"],
+      "upstream_concepts": ["ic_design", "foundry"],
+      "downstream_concepts": ["power_supply", "ai_capex", "consumer_electronics", "auto_parts"]
     },
     {
       "concept_id": "semicap_equipment",
@@ -150,9 +166,9 @@
     {
       "concept_id": "hvdc_power_semiconductor",
       "layer": "electronics_upstream.power_semiconductor.hvdc",
-      "products": ["SiC", "GaN", "power MOSFET", "800V HVDC power devices"],
-      "keywords_any": ["SiC", "GaN", "silicon carbide", "gallium nitride", "power MOSFET", "800V", "HVDC", "power module"],
-      "upstream_concepts": ["wafer_materials", "semicap_equipment"],
+      "products": ["SiC power device", "GaN power device", "high-voltage MOSFET", "IGBT", "800VDC power semiconductor"],
+      "keywords_any": ["SiC", "GaN", "silicon carbide", "gallium nitride", "power MOSFET", "high-voltage MOSFET", "IGBT", "800VDC", "800 VDC", "HVDC power semiconductor", "HVDC power device", "AI rack power semiconductor", "高壓MOSFET", "碳化矽", "氮化鎵"],
+      "upstream_concepts": ["wafer_materials", "semicap_equipment", "power_discrete_semiconductor", "power_management_ic"],
       "downstream_concepts": ["power_supply", "transformer_ups", "ev", "ai_capex"]
     },
     {
@@ -240,7 +256,7 @@
       "layer": "electronics_midstream.power_supply",
       "products": ["power supply", "UPS", "BBU", "power module"],
       "keywords_any": ["power supply", "UPS", "BBU", "power module", "Electrical Equipment & Parts", "Vertiv", "data center power", "critical power", "電源供應", "電源"],
-      "upstream_concepts": ["hvdc_power_semiconductor", "passive_components", "transformer_ups"],
+      "upstream_concepts": ["hvdc_power_semiconductor", "power_discrete_semiconductor", "power_management_ic", "passive_components", "transformer_ups"],
       "downstream_concepts": ["ai_capex", "industrial_pc", "networking"]
     },
     {

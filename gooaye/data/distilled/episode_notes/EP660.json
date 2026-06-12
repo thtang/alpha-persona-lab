@@ -1,0 +1,216 @@
+{
+  "schema_version": "v2",
+  "episode": 660,
+  "date": "2026-05-09",
+  "episode_archetype": {
+    "primary": "market_commentary",
+    "secondary": [
+      "industry_supply_chain",
+      "qa_heavy"
+    ]
+  },
+  "segment_breakdown": {
+    "market_pct": 52,
+    "qa_pct": 24,
+    "life_or_aside_pct": 14,
+    "ads_pct": 5,
+    "principles_pct": 9
+  },
+  "market_regime": {
+    "phase_label": "台股高檔輪動",
+    "narrative": "^TWII 收 41603.9414、1日 -0.79%、20日 19.34%；2330.TW 收 2290.0、1日 -0.87%、20日 17.14%；QQQ 收 711.23、1日 2.34%、20日 16.39%；SOXX 收 520.3、1日 5.67%、20日 34.58%。",
+    "geopolitical_factors": [
+      "美國AI資本支出",
+      "台灣AI供應鏈"
+    ],
+    "regime_tags": [
+      "AI多頭",
+      "族群輪動",
+      "題材擴散"
+    ]
+  },
+  "topics": [
+    "台股42000點",
+    "成熟製程",
+    "被動元件",
+    "融資額度",
+    "處置股",
+    "消費電子補庫存",
+    "育兒邊界"
+  ],
+  "host_state": {
+    "leverage_state": "高位行情下仍討論槓桿與額度限制，傾向承認外部風控可避免過度放大。",
+    "disclosed_positions": [
+      {
+        "asset": "台股處置股/AI供應鏈",
+        "stance": "偏多但受處置與券商額度限制",
+        "reasoning": "metadata summary 指出高位難降槓桿、融資額度收緊與處置機制。"
+      }
+    ],
+    "self_critique": [
+      {
+        "target": "高位加槓桿衝動",
+        "assessment": "行情太熱時，外部限制反而像風控。",
+        "tone": "warning"
+      }
+    ],
+    "personal_arc_markers": [
+      {
+        "event": "育兒邊界感",
+        "impact_on_trades": "生活段提醒資源分配與紀律",
+        "domain": "family"
+      }
+    ]
+  },
+  "investment_logic": [
+    {
+      "claim": "台股高檔時最難的是降槓桿，外部融資額度與處置制度有時會替投資人做風控。",
+      "trigger": "市場創高且熱門股連續處置時",
+      "is_conditional": false,
+      "condition": null,
+      "action_bias": "size-down",
+      "risk_control": "不要把可借額度當成必須用滿；維持可調整流動性。",
+      "risk_control_type": "position-size",
+      "evidence": "EP660 2026-05-09 摘述：台股42000點與融資額度收緊。",
+      "source_type": "host_framework",
+      "confidence": "medium"
+    },
+    {
+      "claim": "成熟製程與消費電子補貨要分辨是短線拉貨還是真實需求復甦。",
+      "trigger": "legacy 晶圓代工或消費電子股補漲時",
+      "is_conditional": false,
+      "condition": null,
+      "action_bias": "wait",
+      "risk_control": "用訂單、稼動率與報價確認，不只看股價補漲。",
+      "risk_control_type": "time-bound",
+      "evidence": "EP660 2026-05-09 摘述：成熟製程與消費電子補貨循環。",
+      "source_type": "host_framework",
+      "confidence": "medium"
+    }
+  ],
+  "trade_observations": [
+    {
+      "asset_or_sector": "成熟製程/Legacy 代工",
+      "asset_symbol": null,
+      "asset_type": "sector",
+      "view": {
+        "short_term": "conditional",
+        "medium_term": "conditional",
+        "long_term": "unstated"
+      },
+      "primary_horizon": "medium-term",
+      "reasoning": "台積電釋出部分 legacy 供給後，成熟製程補庫存開始被市場重估。",
+      "industry_nodes": [
+        "legacy wafer",
+        "consumer restock",
+        "foundry"
+      ],
+      "catalyst_anchor": null,
+      "consensus_level": "overlooked",
+      "market_alignment": "^TWII 收 41603.9414、1日 -0.79%、20日 19.34%；2330.TW 收 2290.0、1日 -0.87%、20日 17.14%；QQQ 收 711.23、1日 2.34%、20日 16.39%；SOXX 收 520.3、1日 5.67%、20日 34.58%。",
+      "tone": "serious"
+    },
+    {
+      "asset_or_sector": "被動元件",
+      "asset_symbol": null,
+      "asset_type": "sector",
+      "view": {
+        "short_term": "bullish",
+        "medium_term": "conditional",
+        "long_term": "unstated"
+      },
+      "primary_horizon": "swing",
+      "reasoning": "被動元件全面噴發，但高檔需要區分真正供需與跟風雜魚。",
+      "industry_nodes": [
+        "MLCC",
+        "鋁電容",
+        "電阻",
+        "電感"
+      ],
+      "catalyst_anchor": null,
+      "consensus_level": "crowded",
+      "market_alignment": "^TWII 收 41603.9414、1日 -0.79%、20日 19.34%；2330.TW 收 2290.0、1日 -0.87%、20日 17.14%；QQQ 收 711.23、1日 2.34%、20日 16.39%；SOXX 收 520.3、1日 5.67%、20日 34.58%。",
+      "tone": "serious"
+    },
+    {
+      "asset_or_sector": "台股大盤",
+      "asset_symbol": "^TWII",
+      "asset_type": "index",
+      "view": {
+        "short_term": "conditional",
+        "medium_term": "bullish",
+        "long_term": "unstated"
+      },
+      "primary_horizon": "swing",
+      "reasoning": "指數高檔但資金輪動快速，處置股與融資政策成為交易摩擦。",
+      "industry_nodes": [
+        "leverage",
+        "disposition",
+        "liquidity"
+      ],
+      "catalyst_anchor": null,
+      "consensus_level": "crowded",
+      "market_alignment": "^TWII 收 41603.9414、1日 -0.79%、20日 19.34%；2330.TW 收 2290.0、1日 -0.87%、20日 17.14%；QQQ 收 711.23、1日 2.34%、20日 16.39%；SOXX 收 520.3、1日 5.67%、20日 34.58%。",
+      "tone": "serious"
+    }
+  ],
+  "qa_views": [
+    {
+      "category": "family",
+      "question_theme": "育兒購物邊界",
+      "viewpoint": "陪伴孩子成長要設邊界，不是資源越多越好。",
+      "principle": "家庭決策也需要紀律，不能把短線情緒當長期安排。",
+      "tone": "serious",
+      "evidence": "EP660 摘述：陪伴小孩成長與購物邊界。",
+      "asker_persona": "聽眾"
+    },
+    {
+      "category": "relationships",
+      "question_theme": "原生家庭吵架影響",
+      "viewpoint": "原生家庭經驗會影響心理與親密關係，需意識到模式。",
+      "principle": "先辨識情緒來源，再選擇互動方式。",
+      "tone": "serious",
+      "evidence": "EP660 摘述：原生家庭吵架對心理影響。",
+      "asker_persona": "聽眾"
+    }
+  ],
+  "catalysts": [],
+  "narrative_threads": [],
+  "view_changes": [],
+  "principles": [
+    {
+      "principle": "高檔行情的風險不是看錯，而是看對後槓桿越滾越大。",
+      "explanation": "將節目中的市場觀察轉成可重複使用的交易/研究規則。",
+      "category": "risk_management",
+      "evidence": "EP660 摘述：高位難降槓桿與融資限制。"
+    },
+    {
+      "principle": "補庫存行情要用供需資料驗證，不能只靠股價噴出。",
+      "explanation": "將節目中的市場觀察轉成可重複使用的交易/研究規則。",
+      "category": "entry_discipline",
+      "evidence": "EP660 摘述：成熟製程與消費電子補貨。"
+    }
+  ],
+  "mantras_or_catchphrases": [
+    "且戰且走",
+    "看對就放大，但接受外部風控",
+    "不要只要魚，要學釣魚"
+  ],
+  "warnings": [
+    {
+      "type": "anti_pattern",
+      "target": "熱門股追高",
+      "warning": "被處置且籌碼稀薄時，想跑跑不掉、想追追不到。",
+      "evidence": "EP660 摘述：處置股機制與流動性限制。"
+    }
+  ],
+  "references": [],
+  "non_tradeable_insights": [
+    {
+      "domain": "personal_finance",
+      "insight": "睡眠與身體狀態會影響決策品質，健康也是投資風控。",
+      "evidence": "EP660 贊助段與風險控管類比。"
+    }
+  ],
+  "open_questions": []
+}

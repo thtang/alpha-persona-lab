@@ -1,0 +1,225 @@
+{
+  "schema_version": "v2",
+  "episode": 664,
+  "date": "2026-05-23",
+  "episode_archetype": {
+    "primary": "industry_supply_chain",
+    "secondary": [
+      "market_commentary",
+      "lifestyle"
+    ]
+  },
+  "segment_breakdown": {
+    "market_pct": 62,
+    "qa_pct": 7,
+    "life_or_aside_pct": 23,
+    "ads_pct": 4,
+    "principles_pct": 4
+  },
+  "market_regime": {
+    "phase_label": "算力軍備競賽",
+    "narrative": "^TWII 收 42267.9688、1日 2.17%、20日 12.07%；2330.TW 收 2255.0、1日 1.12%、20日 8.41%；QQQ 收 717.54、1日 0.42%、20日 8.08%；SOXX 收 537.33、1日 2.41%、20日 16.41%。",
+    "geopolitical_factors": [
+      "美國AI資本支出",
+      "台灣AI供應鏈"
+    ],
+    "regime_tags": [
+      "AI多頭",
+      "族群輪動",
+      "題材擴散"
+    ]
+  },
+  "topics": [
+    "AI算力",
+    "Anthropic",
+    "xAI Colossus",
+    "Google TPU Cloud",
+    "被動元件",
+    "Power柜",
+    "光通訊",
+    "紅酒投資"
+  ],
+  "host_state": {
+    "leverage_state": null,
+    "disclosed_positions": [
+      {
+        "asset": "AI硬體/被動元件",
+        "stance": "看多算力軍備競賽延伸，但提醒雜魚跟風",
+        "reasoning": "metadata summary 指出 Anthropic、Colossus、Google TPU 與被動元件。"
+      }
+    ],
+    "self_critique": [
+      {
+        "target": "題材切換速度",
+        "assessment": "承認資金會在光通、被動元件、power 等節點輪動。",
+        "tone": "serious"
+      }
+    ],
+    "personal_arc_markers": [
+      {
+        "event": "紅酒投資與餐廳酒單研究",
+        "impact_on_trades": "用稀缺性與折價尋找非股票機會",
+        "domain": "hobbies"
+      }
+    ]
+  },
+  "investment_logic": [
+    {
+      "claim": "AI 模型商開始證明能賺錢，算力 capex 不會收，反而會向 TPU、Neo Cloud、零組件擴散。",
+      "trigger": "Anthropic 轉獲利、Colossus 出租回本、Google TPU 外銷時",
+      "is_conditional": false,
+      "condition": null,
+      "action_bias": "rotate",
+      "risk_control": "不要只追第一層 GPU，往第二/三層瓶頸找。",
+      "risk_control_type": "diversify",
+      "evidence": "EP664 2026-05-23 摘述：AI硬體軍備競賽與TPU Cloud。",
+      "source_type": "host_framework",
+      "confidence": "high"
+    },
+    {
+      "claim": "被動元件已全面噴射，下一步要找更缺且市場討論不足的 power/功率節點。",
+      "trigger": "MLCC 已被市場注意、其他電源零組件仍低討論時",
+      "is_conditional": false,
+      "condition": null,
+      "action_bias": "scale-in",
+      "risk_control": "產品純度與缺貨程度比廣義概念更重要。",
+      "risk_control_type": "position-size",
+      "evidence": "EP664 摘述：被動元件噴射但 Power 柜是下一個金礦。",
+      "source_type": "host_framework",
+      "confidence": "medium"
+    }
+  ],
+  "trade_observations": [
+    {
+      "asset_or_sector": "Google TPU Cloud/ASIC",
+      "asset_symbol": null,
+      "asset_type": "theme",
+      "view": {
+        "short_term": "bullish",
+        "medium_term": "bullish",
+        "long_term": "bullish"
+      },
+      "primary_horizon": "medium-term",
+      "reasoning": "Google 與 Blackstone 合作 TPU Cloud 被視為 AI 算力外銷與 ASIC 供應鏈催化。",
+      "industry_nodes": [
+        "TPU",
+        "ASIC",
+        "neocloud",
+        "Blackstone"
+      ],
+      "catalyst_anchor": null,
+      "consensus_level": "overlooked",
+      "market_alignment": "^TWII 收 42267.9688、1日 2.17%、20日 12.07%；2330.TW 收 2255.0、1日 1.12%、20日 8.41%；QQQ 收 717.54、1日 0.42%、20日 8.08%；SOXX 收 537.33、1日 2.41%、20日 16.41%。",
+      "tone": "serious"
+    },
+    {
+      "asset_or_sector": "被動元件",
+      "asset_symbol": null,
+      "asset_type": "sector",
+      "view": {
+        "short_term": "bullish",
+        "medium_term": "bullish",
+        "long_term": "unstated"
+      },
+      "primary_horizon": "swing",
+      "reasoning": "AI server 用量推升 MLCC、鋁電容、牛角電容與通路需求，但需避免雜魚。",
+      "industry_nodes": [
+        "MLCC",
+        "aluminum capacitor",
+        "channel"
+      ],
+      "catalyst_anchor": null,
+      "consensus_level": "crowded",
+      "market_alignment": "^TWII 收 42267.9688、1日 2.17%、20日 12.07%；2330.TW 收 2255.0、1日 1.12%、20日 8.41%；QQQ 收 717.54、1日 0.42%、20日 8.08%；SOXX 收 537.33、1日 2.41%、20日 16.41%。",
+      "tone": "serious"
+    },
+    {
+      "asset_or_sector": "功率/Power 柜",
+      "asset_symbol": null,
+      "asset_type": "theme",
+      "view": {
+        "short_term": "conditional",
+        "medium_term": "bullish",
+        "long_term": "unstated"
+      },
+      "primary_horizon": "medium-term",
+      "reasoning": "機櫃功耗提升後，隔壁 power 柜和功率元件可能成為下一層瓶頸。",
+      "industry_nodes": [
+        "power cabinet",
+        "HVDC",
+        "power semiconductor"
+      ],
+      "catalyst_anchor": null,
+      "consensus_level": "overlooked",
+      "market_alignment": "^TWII 收 42267.9688、1日 2.17%、20日 12.07%；2330.TW 收 2255.0、1日 1.12%、20日 8.41%；QQQ 收 717.54、1日 0.42%、20日 8.08%；SOXX 收 537.33、1日 2.41%、20日 16.41%。",
+      "tone": "serious"
+    },
+    {
+      "asset_or_sector": "光通訊/雷射產能",
+      "asset_symbol": null,
+      "asset_type": "sector",
+      "view": {
+        "short_term": "conditional",
+        "medium_term": "bullish",
+        "long_term": "unstated"
+      },
+      "primary_horizon": "medium-term",
+      "reasoning": "NVIDIA 包雷射產能的敘事指向上游稀缺資源控制。",
+      "industry_nodes": [
+        "laser",
+        "optical communication",
+        "capacity"
+      ],
+      "catalyst_anchor": null,
+      "consensus_level": "crowded",
+      "market_alignment": "^TWII 收 42267.9688、1日 2.17%、20日 12.07%；2330.TW 收 2255.0、1日 1.12%、20日 8.41%；QQQ 收 717.54、1日 0.42%、20日 8.08%；SOXX 收 537.33、1日 2.41%、20日 16.41%。",
+      "tone": "serious"
+    }
+  ],
+  "qa_views": [],
+  "catalysts": [],
+  "narrative_threads": [],
+  "view_changes": [],
+  "principles": [
+    {
+      "principle": "AI 投資不要只看第一層 GPU，真正超額可能在下一個供應鏈瓶頸。",
+      "explanation": "將節目中的市場觀察轉成可重複使用的交易/研究規則。",
+      "category": "contrarian",
+      "evidence": "EP664 摘述：Power柜與零組件瓶頸。"
+    },
+    {
+      "principle": "模型商盈利是硬體投資續強的需求端證據。",
+      "explanation": "將節目中的市場觀察轉成可重複使用的交易/研究規則。",
+      "category": "sentiment_reading",
+      "evidence": "EP664 摘述：Anthropic轉獲利與Colossus出租。"
+    }
+  ],
+  "mantras_or_catchphrases": [
+    "且戰且走",
+    "看對就放大，但接受外部風控",
+    "不要只要魚，要學釣魚"
+  ],
+  "warnings": [
+    {
+      "type": "anti_pattern",
+      "target": "雜魚跟風",
+      "warning": "族群全面噴射時，低純度標的也會跟漲，但回檔時殺傷更大。",
+      "evidence": "EP664 摘述：被動元件要留意雜魚跟風。"
+    }
+  ],
+  "references": [
+    {
+      "type": "report",
+      "name": "Google/Blackstone TPU Cloud 市場消息",
+      "description": "節目中作為算力外銷催化事件引用。"
+    }
+  ],
+  "non_tradeable_insights": [
+    {
+      "domain": "personal_finance",
+      "insight": "紅酒投資同樣需要判斷折價、酒源與市場週期。",
+      "evidence": "EP664 摘述：紅酒市場 2022 年後價格修正。"
+    }
+  ],
+  "open_questions": []
+}

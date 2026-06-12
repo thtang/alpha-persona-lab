@@ -1,5 +1,5 @@
 {
-  "built_at": "2026-06-01T11:27:49.273272+00:00",
+  "built_at": "2026-06-12T07:01:58.517489+00:00",
   "profiles": [
     {
       "symbol": "0005.HK",
@@ -1372,38 +1372,34 @@
     },
     {
       "symbol": "0992.HK",
-      "name": "Lenovo Group Limited",
+      "name": "聯想集團",
       "market": "HK",
       "region": "Hong Kong",
       "exchange": "HKG",
       "raw_industry": null,
       "website": null,
       "company_name": null,
-      "sector": "Technology / Computer Hardware",
+      "sector": "PC / server / enterprise infrastructure",
       "specializations": [
-        "EMS",
-        "GB200",
-        "GB300",
-        "HVDC功率半導體",
-        "電源供應器",
-        "散熱零組件",
-        "Vera Rubin"
+        "PC",
+        "server",
+        "AI server platform",
+        "enterprise infrastructure"
       ],
       "products": [],
       "platforms": [
-        "EMS",
-        "GB200",
-        "GB300",
-        "HVDC功率半導體",
-        "電源供應器"
+        "Lenovo Infrastructure Solutions",
+        "AI PC",
+        "enterprise AI servers"
       ],
       "constraints": [
-        "auto profile: verify product purity, customer exposure, and revenue mix before trading",
-        "verify official filings/product pages for revenue mix"
+        "PC cycle",
+        "server margin",
+        "AI server order visibility"
       ],
       "risk_flags": [
-        "auto profile: concept fit may be broad until upgraded with official sources",
-        "auto-upgraded profile: product purity can still be broad"
+        "不要把聯想歸到 HVDC 功率半導體；它是 downstream system/platform",
+        "港股 beta 與 PC 週期可能主導股價"
       ],
       "bottleneck_profile": {},
       "supply_chain_profile": {
@@ -1416,54 +1412,34 @@
       "concept_exposures": [
         {
           "concept_id": "ems",
-          "role": "laggard_watch",
-          "weight": 0.5,
-          "path": "Lenovo Group Limited metadata + exchange/supply-chain mapping -> EMS exposure candidate"
+          "role": "server_system_follower",
+          "weight": 0.62,
+          "path": "AI server demand -> infrastructure solution/platform build -> Lenovo"
+        },
+        {
+          "concept_id": "ai_pc",
+          "role": "ai_pc_leader",
+          "weight": 0.58,
+          "path": "AI PC replacement cycle -> Lenovo PC exposure"
         },
         {
           "concept_id": "gb200",
-          "role": "laggard_watch",
-          "weight": 0.5,
-          "path": "Lenovo Group Limited metadata + exchange/supply-chain mapping -> GB200 exposure candidate"
-        },
-        {
-          "concept_id": "gb300",
-          "role": "laggard_watch",
-          "weight": 0.5,
-          "path": "Lenovo Group Limited metadata + exchange/supply-chain mapping -> GB300 exposure candidate"
-        },
-        {
-          "concept_id": "hvdc_power_semiconductor",
-          "role": "laggard_watch",
-          "weight": 0.5,
-          "path": "Lenovo Group Limited metadata + exchange/supply-chain mapping -> HVDC功率半導體 exposure candidate"
-        },
-        {
-          "concept_id": "power_supply",
-          "role": "laggard_watch",
-          "weight": 0.5,
-          "path": "Lenovo Group Limited metadata + exchange/supply-chain mapping -> 電源供應器 exposure candidate"
-        },
-        {
-          "concept_id": "thermal_components",
-          "role": "laggard_watch",
-          "weight": 0.5,
-          "path": "Lenovo Group Limited metadata + exchange/supply-chain mapping -> 散熱零組件 exposure candidate"
-        },
-        {
-          "concept_id": "vera_rubin",
-          "role": "laggard_watch",
-          "weight": 0.5,
-          "path": "Lenovo Group Limited metadata + exchange/supply-chain mapping -> Vera Rubin exposure candidate"
+          "role": "server_platform_readthrough",
+          "weight": 0.42,
+          "path": "NVIDIA AI platform demand -> downstream server platform sentiment"
         }
       ],
       "source_refs": [
+        {
+          "title": "Lenovo investor relations",
+          "url": "https://investor.lenovo.com/"
+        },
         {
           "title": "Yahoo Finance search metadata for 0992.HK",
           "url": "https://finance.yahoo.com/quote/0992.HK"
         }
       ],
-      "primary_business": "Lenovo Group Limited is upgraded from ticker/search metadata and ThemeMiner supply-chain mapping. ThemeMiner links it to EMS, GB200, GB300, HVDC功率半導體, 電源供應器, 散熱零組件, Vera Rubin. Official filing/profile extraction is still pending for this market.",
+      "primary_business": "聯想集團是 PC、伺服器、基礎設施方案與企業服務公司；AI 題材中屬於 downstream server/PC/platform，不是 HVDC 功率半導體供應商。",
       "profile_quality": "market_metadata_profile",
       "profile_evidence_quality": "yahoo_search_plus_graph",
       "official_metadata": {
@@ -1481,13 +1457,18 @@
         "output": "thememiner/data/profile_upgrades/official_rest.json"
       },
       "concepts_from_profile": [
+        "ai_pc",
         "ems",
         "gb200",
         "gb300",
-        "hvdc_power_semiconductor",
-        "power_supply",
-        "thermal_components",
-        "vera_rubin"
+        "notebook_pc"
+      ],
+      "concepts": [
+        "ems",
+        "gb200",
+        "gb300",
+        "notebook_pc",
+        "ai_pc"
       ]
     },
     {
@@ -37402,41 +37383,34 @@
     },
     {
       "symbol": "2376.TW",
-      "name": "Giga-Byte Technology Co., Ltd.",
+      "name": "技嘉",
       "market": "TW",
       "region": "Taiwan",
       "exchange": "TWSE",
       "raw_industry": "25",
       "website": "http://www.gigabyte.com",
       "company_name": "技嘉科技股份有限公司",
-      "sector": "Technology / Computer Hardware",
+      "sector": "Motherboard / graphics card / server hardware",
       "specializations": [
-        "EMS",
-        "GB200",
-        "GB300",
-        "HVDC功率半導體",
-        "工業電腦",
-        "主機板",
-        "筆記型電腦",
-        "電腦周邊",
-        "電源供應器",
-        "散熱零組件"
+        "motherboard",
+        "graphics card",
+        "AI server hardware",
+        "edge/server platform"
       ],
       "products": [],
       "platforms": [
-        "EMS",
-        "GB200",
-        "GB300",
-        "HVDC功率半導體",
-        "工業電腦"
+        "AI server systems",
+        "GPU server platforms",
+        "PC gaming hardware"
       ],
       "constraints": [
-        "auto profile: verify product purity, customer exposure, and revenue mix before trading",
-        "verify official filings/product pages for revenue mix"
+        "GPU/server platform allocation",
+        "PC and gaming cycle",
+        "server margin mix"
       ],
       "risk_flags": [
-        "auto profile: concept fit may be broad until upgraded with official sources",
-        "auto-upgraded profile: product purity can still be broad"
+        "不要把技嘉歸到 HVDC 功率半導體；它是板卡/伺服器硬體",
+        "AI server 題材需要看伺服器營收與訂單能見度"
       ],
       "bottleneck_profile": {},
       "supply_chain_profile": {
@@ -37448,73 +37422,29 @@
       },
       "concept_exposures": [
         {
+          "concept_id": "motherboard",
+          "role": "board_platform_supplier",
+          "weight": 0.78,
+          "path": "AI/PC/server platform demand -> motherboard and board-level hardware -> 技嘉"
+        },
+        {
           "concept_id": "ems",
-          "role": "laggard_watch",
-          "weight": 0.5,
-          "path": "Giga-Byte Technology Co., Ltd. metadata + exchange/supply-chain mapping -> EMS exposure candidate"
+          "role": "server_hardware_follower",
+          "weight": 0.55,
+          "path": "AI server demand -> system hardware build -> 技嘉"
         },
         {
           "concept_id": "gb200",
-          "role": "laggard_watch",
-          "weight": 0.5,
-          "path": "Giga-Byte Technology Co., Ltd. metadata + exchange/supply-chain mapping -> GB200 exposure candidate"
-        },
-        {
-          "concept_id": "gb300",
-          "role": "laggard_watch",
-          "weight": 0.5,
-          "path": "Giga-Byte Technology Co., Ltd. metadata + exchange/supply-chain mapping -> GB300 exposure candidate"
-        },
-        {
-          "concept_id": "hvdc_power_semiconductor",
-          "role": "laggard_watch",
-          "weight": 0.5,
-          "path": "Giga-Byte Technology Co., Ltd. metadata + exchange/supply-chain mapping -> HVDC功率半導體 exposure candidate"
-        },
-        {
-          "concept_id": "industrial_pc",
-          "role": "laggard_watch",
-          "weight": 0.5,
-          "path": "Giga-Byte Technology Co., Ltd. metadata + exchange/supply-chain mapping -> 工業電腦 exposure candidate"
-        },
-        {
-          "concept_id": "motherboard",
-          "role": "laggard_watch",
-          "weight": 0.5,
-          "path": "Giga-Byte Technology Co., Ltd. metadata + exchange/supply-chain mapping -> 主機板 exposure candidate"
-        },
-        {
-          "concept_id": "notebook_pc",
-          "role": "laggard_watch",
-          "weight": 0.5,
-          "path": "Giga-Byte Technology Co., Ltd. metadata + exchange/supply-chain mapping -> 筆記型電腦 exposure candidate"
-        },
-        {
-          "concept_id": "pc_peripherals",
-          "role": "laggard_watch",
-          "weight": 0.5,
-          "path": "Giga-Byte Technology Co., Ltd. metadata + exchange/supply-chain mapping -> 電腦周邊 exposure candidate"
-        },
-        {
-          "concept_id": "power_supply",
-          "role": "laggard_watch",
-          "weight": 0.5,
-          "path": "Giga-Byte Technology Co., Ltd. metadata + exchange/supply-chain mapping -> 電源供應器 exposure candidate"
-        },
-        {
-          "concept_id": "thermal_components",
-          "role": "laggard_watch",
-          "weight": 0.5,
-          "path": "Giga-Byte Technology Co., Ltd. metadata + exchange/supply-chain mapping -> 散熱零組件 exposure candidate"
-        },
-        {
-          "concept_id": "vera_rubin",
-          "role": "laggard_watch",
-          "weight": 0.5,
-          "path": "Giga-Byte Technology Co., Ltd. metadata + exchange/supply-chain mapping -> Vera Rubin exposure candidate"
+          "role": "server_platform_readthrough",
+          "weight": 0.48,
+          "path": "NVIDIA platform cycle -> server/board hardware sentiment"
         }
       ],
       "source_refs": [
+        {
+          "title": "GIGABYTE official site",
+          "url": "https://www.gigabyte.com/"
+        },
         {
           "title": "Yahoo Finance search metadata for 2376.TW",
           "url": "https://finance.yahoo.com/quote/2376.TW"
@@ -37528,7 +37458,7 @@
           "url": "http://www.gigabyte.com"
         }
       ],
-      "primary_business": "Giga-Byte Technology Co., Ltd. is matched to official Taiwan exchange listing metadata for 技嘉科技股份有限公司. ThemeMiner links it to EMS, GB200, GB300, HVDC功率半導體, 工業電腦, 主機板, 筆記型電腦, 電腦周邊. Use the cited exchange listing and company website to verify product mix and customer exposure.",
+      "primary_business": "技嘉是主機板、顯示卡、伺服器與邊緣運算硬體公司，AI server 題材中屬於板卡/伺服器平台與系統硬體，不是功率半導體元件供應商。",
       "profile_quality": "official_tw_exchange_profile",
       "profile_evidence_quality": "twse_tpex_listing_plus_graph",
       "official_metadata": {
@@ -37560,14 +37490,15 @@
         "ems",
         "gb200",
         "gb300",
-        "hvdc_power_semiconductor",
         "industrial_pc",
+        "motherboard"
+      ],
+      "concepts": [
         "motherboard",
-        "notebook_pc",
-        "pc_peripherals",
-        "power_supply",
-        "thermal_components",
-        "vera_rubin"
+        "ems",
+        "gb200",
+        "gb300",
+        "industrial_pc"
       ]
     },
     {
@@ -41455,27 +41386,20 @@
     },
     {
       "symbol": "2421.TW",
-      "name": "Sunonwealth Electric Machine Industry Co., Ltd.",
+      "name": "建準",
       "market": "TW",
       "region": "Taiwan",
       "exchange": "TWSE",
       "raw_industry": "28",
       "website": "www.sunon.com",
       "company_name": "建準電機工業股份有限公司",
-      "sector": "Industrials / Specialty Industrial Machinery",
+      "sector": "Thermal components / fan / motor",
       "specializations": [
-        "連接元件",
-        "電子元件通路",
-        "EMS",
-        "GB200",
-        "GB300",
-        "HVDC功率半導體",
-        "被動元件",
-        "PCB-製造",
-        "電源供應器",
-        "散熱零組件",
-        "HDI",
-        "PCB"
+        "DC fan",
+        "server fan",
+        "fan tray",
+        "thermal module",
+        "motor"
       ],
       "products": [
         "HDI",
@@ -41487,21 +41411,27 @@
         "server PCB"
       ],
       "platforms": [
-        "連接元件",
-        "電子元件通路",
-        "EMS",
-        "GB200",
-        "GB300"
+        "AI server cooling",
+        "GB200/GB300 thermal read-through",
+        "industrial and consumer cooling"
       ],
       "constraints": [
-        "auto profile: verify product purity, customer exposure, and revenue mix before trading",
-        "verify official filings/product pages for revenue mix"
+        "AI server revenue mix",
+        "fan/tray qualification",
+        "thermal leader breadth"
       ],
       "risk_flags": [
-        "auto profile: concept fit may be broad until upgraded with official sources",
-        "auto-upgraded profile: product purity can still be broad"
+        "不要把建準歸到 HVDC 功率半導體；它是散熱 follower",
+        "若奇鋐/雙鴻/VRT 轉弱，二線散熱補漲會失效"
       ],
-      "bottleneck_profile": {},
+      "bottleneck_profile": {
+        "layer": "Layer 6 - Thermal/fan subsystem",
+        "scarcity": "medium",
+        "substitutability": "medium",
+        "discovery_state": "taiwan_second_line_thermal",
+        "score": 3.2,
+        "reason": "AI rack power density raises fan and thermal subsystem demand, but 建準 is not a power semiconductor supplier."
+      },
       "supply_chain_profile": {
         "layers": [
           "electronics_midstream.pcb.fabrication",
@@ -41533,73 +41463,35 @@
       },
       "concept_exposures": [
         {
-          "concept_id": "connectors",
-          "role": "laggard_watch",
-          "weight": 0.5,
-          "path": "Sunonwealth Electric Machine Industry Co., Ltd. metadata + exchange/supply-chain mapping -> 連接元件 exposure candidate"
-        },
-        {
-          "concept_id": "electronics_distribution",
-          "role": "laggard_watch",
-          "weight": 0.5,
-          "path": "Sunonwealth Electric Machine Industry Co., Ltd. metadata + exchange/supply-chain mapping -> 電子元件通路 exposure candidate"
-        },
-        {
-          "concept_id": "ems",
-          "role": "laggard_watch",
-          "weight": 0.5,
-          "path": "Sunonwealth Electric Machine Industry Co., Ltd. metadata + exchange/supply-chain mapping -> EMS exposure candidate"
+          "concept_id": "thermal_components",
+          "role": "second_line_thermal_follower",
+          "weight": 0.82,
+          "path": "AI rack heat density -> fan tray/thermal module demand -> 建準"
         },
         {
           "concept_id": "gb200",
-          "role": "laggard_watch",
-          "weight": 0.5,
-          "path": "Sunonwealth Electric Machine Industry Co., Ltd. metadata + exchange/supply-chain mapping -> GB200 exposure candidate"
+          "role": "thermal_readthrough",
+          "weight": 0.58,
+          "path": "GB200/GB300 rack thermal complexity -> second-line fan/thermal names"
         },
         {
           "concept_id": "gb300",
-          "role": "laggard_watch",
-          "weight": 0.5,
-          "path": "Sunonwealth Electric Machine Industry Co., Ltd. metadata + exchange/supply-chain mapping -> GB300 exposure candidate"
-        },
-        {
-          "concept_id": "hvdc_power_semiconductor",
-          "role": "laggard_watch",
-          "weight": 0.5,
-          "path": "Sunonwealth Electric Machine Industry Co., Ltd. metadata + exchange/supply-chain mapping -> HVDC功率半導體 exposure candidate"
-        },
-        {
-          "concept_id": "passive_components",
-          "role": "laggard_watch",
-          "weight": 0.5,
-          "path": "Sunonwealth Electric Machine Industry Co., Ltd. metadata + exchange/supply-chain mapping -> 被動元件 exposure candidate"
-        },
-        {
-          "concept_id": "pcb_manufacturing",
-          "role": "laggard_watch",
-          "weight": 0.5,
-          "path": "Sunonwealth Electric Machine Industry Co., Ltd. metadata + exchange/supply-chain mapping -> PCB-製造 exposure candidate"
-        },
-        {
-          "concept_id": "power_supply",
-          "role": "laggard_watch",
-          "weight": 0.5,
-          "path": "Sunonwealth Electric Machine Industry Co., Ltd. metadata + exchange/supply-chain mapping -> 電源供應器 exposure candidate"
-        },
-        {
-          "concept_id": "thermal_components",
-          "role": "laggard_watch",
-          "weight": 0.5,
-          "path": "Sunonwealth Electric Machine Industry Co., Ltd. metadata + exchange/supply-chain mapping -> 散熱零組件 exposure candidate"
+          "role": "thermal_readthrough",
+          "weight": 0.55,
+          "path": "GB300 ramp -> higher thermal subsystem demand"
         },
         {
           "concept_id": "vera_rubin",
-          "role": "laggard_watch",
-          "weight": 0.5,
-          "path": "Sunonwealth Electric Machine Industry Co., Ltd. metadata + exchange/supply-chain mapping -> Vera Rubin exposure candidate"
+          "role": "future_thermal_readthrough",
+          "weight": 0.45,
+          "path": "Rubin/Vera Rubin roadmap -> future rack power density"
         }
       ],
       "source_refs": [
+        {
+          "title": "SUNON official site",
+          "url": "https://www.sunon.com/"
+        },
         {
           "title": "Yahoo Finance search metadata for 2421.TW",
           "url": "https://finance.yahoo.com/quote/2421.TW"
@@ -41613,7 +41505,7 @@
           "url": "www.sunon.com"
         }
       ],
-      "primary_business": "Sunonwealth Electric Machine Industry Co., Ltd. is matched to official Taiwan exchange listing metadata for 建準電機工業股份有限公司. ThemeMiner links it to 連接元件, 電子元件通路, EMS, GB200, GB300, HVDC功率半導體, 被動元件, PCB-製造. Product/supply-chain clues in ThemeMiner: HDI, PCB, capacitors, inductors, passive components, resistors, server PCB. Use the cited exchange listing and company website to verify product mix and customer exposure.",
+      "primary_business": "建準是風扇、散熱模組與馬達廠，AI server 題材中屬於散熱/風扇/機櫃熱管理，不是 HVDC 功率半導體、PCB 或電子通路。",
       "profile_quality": "official_tw_exchange_profile",
       "profile_evidence_quality": "twse_tpex_listing_plus_graph",
       "official_metadata": {
@@ -41642,16 +41534,15 @@
         "output": "thememiner/data/profile_upgrades/official_tw_2.json"
       },
       "concepts_from_profile": [
-        "connectors",
-        "electronics_distribution",
-        "ems",
         "gb200",
         "gb300",
-        "hvdc_power_semiconductor",
-        "passive_components",
-        "pcb_manufacturing",
-        "power_supply",
         "thermal_components",
+        "vera_rubin"
+      ],
+      "concepts": [
+        "thermal_components",
+        "gb200",
+        "gb300",
         "vera_rubin"
       ]
     },
@@ -47489,27 +47380,20 @@
     },
     {
       "symbol": "2481.TW",
-      "name": "PANJIT International Inc.",
+      "name": "強茂",
       "market": "TW",
       "region": "Taiwan",
       "exchange": "TWSE",
       "raw_industry": "24",
       "website": "www.panjit.com.tw",
       "company_name": "強茂股份有限公司",
-      "sector": "Technology / Semiconductor Equipment & Materials",
+      "sector": "Power discrete semiconductor / rectifier / diode",
       "specializations": [
-        "IC-代工",
-        "IC-設計",
-        "IC-封測",
-        "IC-半導體設備",
-        "半導體元件",
-        "晶圓材料",
-        "ASIC",
-        "MOSFET",
-        "SoC",
-        "controller IC",
         "diode",
-        "discrete semiconductor"
+        "rectifier",
+        "bridge rectifier",
+        "TVS/protection devices",
+        "MOSFET"
       ],
       "products": [
         "ASIC",
@@ -47530,19 +47414,19 @@
         "wafer probe"
       ],
       "platforms": [
-        "IC-代工",
-        "IC-設計",
-        "IC-封測",
-        "IC-半導體設備",
-        "半導體元件"
+        "industrial power",
+        "automotive electronics",
+        "power supply",
+        "consumer electronics"
       ],
       "constraints": [
-        "auto profile: verify product purity, customer exposure, and revenue mix before trading",
-        "verify official filings/product pages for revenue mix"
+        "industrial/auto cycle",
+        "pricing and inventory cycle",
+        "AI rack purity must be validated"
       ],
       "risk_flags": [
-        "auto profile: concept fit may be broad until upgraded with official sources",
-        "auto-upgraded profile: product purity can still be broad"
+        "若只跟隨功率股題材而無訂單驗證，容易變成後段補漲",
+        "二極體/整流器與 800V HVDC MOSFET/SiC 不是同一個純度"
       ],
       "bottleneck_profile": {},
       "supply_chain_profile": {
@@ -47595,43 +47479,23 @@
       },
       "concept_exposures": [
         {
-          "concept_id": "foundry",
-          "role": "auto_mapped",
-          "weight": 0.5,
-          "path": "PANJIT International Inc. metadata + exchange/supply-chain mapping -> IC-代工 exposure candidate"
-        },
-        {
-          "concept_id": "ic_design",
-          "role": "auto_mapped",
-          "weight": 0.5,
-          "path": "PANJIT International Inc. metadata + exchange/supply-chain mapping -> IC-設計 exposure candidate"
-        },
-        {
-          "concept_id": "ic_packaging_testing",
-          "role": "auto_mapped",
-          "weight": 0.5,
-          "path": "PANJIT International Inc. metadata + exchange/supply-chain mapping -> IC-封測 exposure candidate"
-        },
-        {
-          "concept_id": "semicap_equipment",
-          "role": "auto_mapped",
-          "weight": 0.5,
-          "path": "PANJIT International Inc. metadata + exchange/supply-chain mapping -> IC-半導體設備 exposure candidate"
+          "concept_id": "power_discrete_semiconductor",
+          "role": "taiwan_discrete_leader",
+          "weight": 0.82,
+          "path": "power conversion demand -> rectifier/diode/MOSFET discrete content -> 強茂"
         },
         {
           "concept_id": "semiconductor_components",
-          "role": "auto_mapped",
-          "weight": 0.5,
-          "path": "PANJIT International Inc. metadata + exchange/supply-chain mapping -> 半導體元件 exposure candidate"
-        },
-        {
-          "concept_id": "wafer_materials",
-          "role": "auto_mapped",
-          "weight": 0.5,
-          "path": "PANJIT International Inc. metadata + exchange/supply-chain mapping -> 晶圓材料 exposure candidate"
+          "role": "discrete_component_supplier",
+          "weight": 0.7,
+          "path": "industrial/auto/power supply cycle -> discrete semiconductor breadth"
         }
       ],
       "source_refs": [
+        {
+          "title": "PANJIT official site",
+          "url": "https://www.panjit.com.tw/"
+        },
         {
           "title": "Yahoo Finance search metadata for 2481.TW",
           "url": "https://finance.yahoo.com/quote/2481.TW"
@@ -47645,7 +47509,7 @@
           "url": "www.panjit.com.tw"
         }
       ],
-      "primary_business": "PANJIT International Inc. is matched to official Taiwan exchange listing metadata for 強茂股份有限公司. ThemeMiner links it to IC-代工, IC-設計, IC-封測, IC-半導體設備, 半導體元件, 晶圓材料, ASIC, MOSFET. Product/supply-chain clues in ThemeMiner: ASIC, MOSFET, SoC, controller IC, diode, discrete semiconductor, fabless IC, metrology, power discrete, probe card. Use the cited exchange listing and company website to verify product mix and customer exposure.",
+      "primary_business": "強茂是功率分立元件廠，產品重心在二極體、整流器、橋式整流器、TVS/保護元件與 MOSFET 等 discrete power devices；更適合歸在功率分立元件，而不是 AI server 電源或散熱。",
       "profile_quality": "official_tw_exchange_profile",
       "profile_evidence_quality": "twse_tpex_listing_plus_graph",
       "official_metadata": {
@@ -47675,12 +47539,12 @@
         "output": "thememiner/data/profile_upgrades/official_tw_1.json"
       },
       "concepts_from_profile": [
-        "foundry",
-        "ic_design",
-        "ic_packaging_testing",
-        "semicap_equipment",
-        "semiconductor_components",
-        "wafer_materials"
+        "power_discrete_semiconductor",
+        "semiconductor_components"
+      ],
+      "concepts": [
+        "power_discrete_semiconductor",
+        "semiconductor_components"
       ]
     },
     {
@@ -83919,27 +83783,18 @@
     },
     {
       "symbol": "3317.TWO",
-      "name": "Niko Semiconductor Co., Ltd.",
+      "name": "尼克森",
       "market": "TW",
-      "region": "Taiwan OTC",
+      "region": "Taiwan",
       "exchange": "TPEx",
       "raw_industry": "24",
       "website": "www.niko-sem.com",
       "company_name": "尼克森微電子股份有限公司",
-      "sector": "Technology / Semiconductors",
+      "sector": "Power discrete semiconductor / MOSFET",
       "specializations": [
-        "IC-代工",
-        "IC-設計",
-        "IC-封測",
-        "IC-半導體設備",
-        "半導體元件",
-        "晶圓材料",
-        "ASIC",
         "MOSFET",
-        "SoC",
-        "controller IC",
-        "diode",
-        "discrete semiconductor"
+        "power discrete",
+        "power semiconductor"
       ],
       "products": [
         "ASIC",
@@ -83960,19 +83815,18 @@
         "wafer probe"
       ],
       "platforms": [
-        "IC-代工",
-        "IC-設計",
-        "IC-封測",
-        "IC-半導體設備",
-        "半導體元件"
+        "power supply",
+        "consumer/industrial power",
+        "PC/server power conversion"
       ],
       "constraints": [
-        "auto profile: verify product purity, customer exposure, and revenue mix before trading",
-        "verify official filings/product pages for revenue mix"
+        "MOSFET price cycle",
+        "customer qualification",
+        "global discrete competition"
       ],
       "risk_flags": [
-        "auto profile: concept fit may be broad until upgraded with official sources",
-        "auto-upgraded profile: product purity can still be broad"
+        "若沒有放量站回均線，只是 sleeping laggard",
+        "AI HVDC 純度需法說或產品驗證"
       ],
       "bottleneck_profile": {},
       "supply_chain_profile": {
@@ -84025,43 +83879,23 @@
       },
       "concept_exposures": [
         {
-          "concept_id": "foundry",
-          "role": "auto_mapped",
-          "weight": 0.5,
-          "path": "Niko Semiconductor Co., Ltd. metadata + exchange/supply-chain mapping -> IC-代工 exposure candidate"
-        },
-        {
-          "concept_id": "ic_design",
-          "role": "auto_mapped",
-          "weight": 0.5,
-          "path": "Niko Semiconductor Co., Ltd. metadata + exchange/supply-chain mapping -> IC-設計 exposure candidate"
-        },
-        {
-          "concept_id": "ic_packaging_testing",
-          "role": "auto_mapped",
-          "weight": 0.5,
-          "path": "Niko Semiconductor Co., Ltd. metadata + exchange/supply-chain mapping -> IC-封測 exposure candidate"
-        },
-        {
-          "concept_id": "semicap_equipment",
-          "role": "auto_mapped",
-          "weight": 0.5,
-          "path": "Niko Semiconductor Co., Ltd. metadata + exchange/supply-chain mapping -> IC-半導體設備 exposure candidate"
+          "concept_id": "power_discrete_semiconductor",
+          "role": "mosfet_follower",
+          "weight": 0.78,
+          "path": "power supply and server power conversion -> MOSFET content -> 尼克森"
         },
         {
           "concept_id": "semiconductor_components",
-          "role": "auto_mapped",
-          "weight": 0.5,
-          "path": "Niko Semiconductor Co., Ltd. metadata + exchange/supply-chain mapping -> 半導體元件 exposure candidate"
-        },
-        {
-          "concept_id": "wafer_materials",
-          "role": "auto_mapped",
-          "weight": 0.5,
-          "path": "Niko Semiconductor Co., Ltd. metadata + exchange/supply-chain mapping -> 晶圓材料 exposure candidate"
+          "role": "discrete_component_supplier",
+          "weight": 0.62,
+          "path": "discrete semiconductor cycle -> MOSFET peer diffusion"
         }
       ],
       "source_refs": [
+        {
+          "title": "NIKO-SEM official site",
+          "url": "https://www.niko-sem.com/"
+        },
         {
           "title": "Yahoo Finance search metadata for 3317.TWO",
           "url": "https://finance.yahoo.com/quote/3317.TWO"
@@ -84075,7 +83909,7 @@
           "url": "www.niko-sem.com"
         }
       ],
-      "primary_business": "Niko Semiconductor Co., Ltd. is matched to official Taiwan exchange listing metadata for 尼克森微電子股份有限公司. ThemeMiner links it to IC-代工, IC-設計, IC-封測, IC-半導體設備, 半導體元件, 晶圓材料, ASIC, MOSFET. Product/supply-chain clues in ThemeMiner: ASIC, MOSFET, SoC, controller IC, diode, discrete semiconductor, fabless IC, metrology, power discrete, probe card. Use the cited exchange listing and company website to verify product mix and customer exposure.",
+      "primary_business": "尼克森是 MOSFET 與功率分立元件供應商，交易上應放在 power discrete/MOSFET peer group，而不是泛半導體。",
       "profile_quality": "official_tw_exchange_profile",
       "profile_evidence_quality": "twse_tpex_listing_plus_graph",
       "official_metadata": {
@@ -84105,12 +83939,12 @@
         "output": "thememiner/data/profile_upgrades/official_tw_0.json"
       },
       "concepts_from_profile": [
-        "foundry",
-        "ic_design",
-        "ic_packaging_testing",
-        "semicap_equipment",
-        "semiconductor_components",
-        "wafer_materials"
+        "power_discrete_semiconductor",
+        "semiconductor_components"
+      ],
+      "concepts": [
+        "power_discrete_semiconductor",
+        "semiconductor_components"
       ]
     },
     {
@@ -103938,27 +103772,19 @@
     },
     {
       "symbol": "3707.TWO",
-      "name": "Episil Technologies Inc.",
+      "name": "漢磊",
       "market": "TW",
-      "region": "Taiwan OTC",
+      "region": "Taiwan",
       "exchange": "TPEx",
       "raw_industry": "24",
       "website": "https://www.episil.com",
       "company_name": "漢磊科技股份有限公司",
-      "sector": "Technology / Semiconductors",
+      "sector": "Compound semiconductor / SiC / GaN foundry",
       "specializations": [
-        "IC-代工",
-        "IC-設計",
-        "IC-封測",
-        "IC-半導體設備",
-        "半導體元件",
-        "晶圓材料",
-        "ASIC",
-        "MOSFET",
-        "SoC",
-        "controller IC",
-        "diode",
-        "discrete semiconductor"
+        "SiC",
+        "GaN",
+        "compound semiconductor",
+        "epitaxy/foundry"
       ],
       "products": [
         "ASIC",
@@ -103979,19 +103805,18 @@
         "wafer probe"
       ],
       "platforms": [
-        "IC-代工",
-        "IC-設計",
-        "IC-封測",
-        "IC-半導體設備",
-        "半導體元件"
+        "EV power",
+        "industrial power",
+        "AI data-center power read-through"
       ],
       "constraints": [
-        "auto profile: verify product purity, customer exposure, and revenue mix before trading",
-        "verify official filings/product pages for revenue mix"
+        "SiC/GaN utilization",
+        "EV/industrial demand cycle",
+        "customer qualification"
       ],
       "risk_flags": [
-        "auto profile: concept fit may be broad until upgraded with official sources",
-        "auto-upgraded profile: product purity can still be broad"
+        "SiC/GaN 敘事常先漲題材，後續必須看稼動率與毛利",
+        "AI data-center 連結目前屬 read-through，不等於直接供應"
       ],
       "bottleneck_profile": {},
       "supply_chain_profile": {
@@ -104044,43 +103869,29 @@
       },
       "concept_exposures": [
         {
+          "concept_id": "hvdc_power_semiconductor",
+          "role": "sic_gan_follower",
+          "weight": 0.72,
+          "path": "800VDC / high-voltage power architecture -> SiC/GaN demand read-through -> 漢磊"
+        },
+        {
+          "concept_id": "power_discrete_semiconductor",
+          "role": "compound_power_supplier",
+          "weight": 0.68,
+          "path": "high-voltage power devices -> compound semiconductor manufacturing -> 漢磊"
+        },
+        {
           "concept_id": "foundry",
-          "role": "auto_mapped",
-          "weight": 0.5,
-          "path": "Episil Technologies Inc. metadata + exchange/supply-chain mapping -> IC-代工 exposure candidate"
-        },
-        {
-          "concept_id": "ic_design",
-          "role": "auto_mapped",
-          "weight": 0.5,
-          "path": "Episil Technologies Inc. metadata + exchange/supply-chain mapping -> IC-設計 exposure candidate"
-        },
-        {
-          "concept_id": "ic_packaging_testing",
-          "role": "auto_mapped",
-          "weight": 0.5,
-          "path": "Episil Technologies Inc. metadata + exchange/supply-chain mapping -> IC-封測 exposure candidate"
-        },
-        {
-          "concept_id": "semicap_equipment",
-          "role": "auto_mapped",
-          "weight": 0.5,
-          "path": "Episil Technologies Inc. metadata + exchange/supply-chain mapping -> IC-半導體設備 exposure candidate"
-        },
-        {
-          "concept_id": "semiconductor_components",
-          "role": "auto_mapped",
-          "weight": 0.5,
-          "path": "Episil Technologies Inc. metadata + exchange/supply-chain mapping -> 半導體元件 exposure candidate"
-        },
-        {
-          "concept_id": "wafer_materials",
-          "role": "auto_mapped",
-          "weight": 0.5,
-          "path": "Episil Technologies Inc. metadata + exchange/supply-chain mapping -> 晶圓材料 exposure candidate"
+          "role": "specialty_foundry",
+          "weight": 0.45,
+          "path": "specialty power process demand -> foundry utilization"
         }
       ],
       "source_refs": [
+        {
+          "title": "Episil official site",
+          "url": "https://www.episil.com/"
+        },
         {
           "title": "Yahoo Finance search metadata for 3707.TWO",
           "url": "https://finance.yahoo.com/quote/3707.TWO"
@@ -104094,7 +103905,7 @@
           "url": "https://www.episil.com"
         }
       ],
-      "primary_business": "Episil Technologies Inc. is matched to official Taiwan exchange listing metadata for 漢磊科技股份有限公司. ThemeMiner links it to IC-代工, IC-設計, IC-封測, IC-半導體設備, 半導體元件, 晶圓材料, ASIC, MOSFET. Product/supply-chain clues in ThemeMiner: ASIC, MOSFET, SoC, controller IC, diode, discrete semiconductor, fabless IC, metrology, power discrete, probe card. Use the cited exchange listing and company website to verify product mix and customer exposure.",
+      "primary_business": "漢磊是化合物半導體與特殊製程代工/製造節點，SiC/GaN 題材純度高於一般功率 IC，但短線常受車用與功率週期影響。",
       "profile_quality": "official_tw_exchange_profile",
       "profile_evidence_quality": "twse_tpex_listing_plus_graph",
       "official_metadata": {
@@ -104125,10 +103936,14 @@
       },
       "concepts_from_profile": [
         "foundry",
-        "ic_design",
-        "ic_packaging_testing",
-        "semicap_equipment",
-        "semiconductor_components",
+        "hvdc_power_semiconductor",
+        "power_discrete_semiconductor",
+        "wafer_materials"
+      ],
+      "concepts": [
+        "hvdc_power_semiconductor",
+        "power_discrete_semiconductor",
+        "foundry",
         "wafer_materials"
       ]
     },
@@ -135704,27 +135519,18 @@
     },
     {
       "symbol": "5299.TWO",
-      "name": "Excelliance MOS Corporation",
+      "name": "杰力",
       "market": "TW",
-      "region": "Taiwan OTC",
+      "region": "Taiwan",
       "exchange": "TPEx",
       "raw_industry": "24",
       "website": "http://www.excelliancemos.com",
       "company_name": "杰力科技股份有限公司",
-      "sector": "Technology / Semiconductors",
+      "sector": "Power MOSFET / power IC",
       "specializations": [
-        "IC-代工",
-        "IC-設計",
-        "IC-封測",
-        "IC-半導體設備",
-        "半導體元件",
-        "晶圓材料",
-        "ASIC",
         "MOSFET",
-        "SoC",
-        "controller IC",
-        "diode",
-        "discrete semiconductor"
+        "power IC",
+        "power management"
       ],
       "products": [
         "ASIC",
@@ -135745,19 +135551,18 @@
         "wafer probe"
       ],
       "platforms": [
-        "IC-代工",
-        "IC-設計",
-        "IC-封測",
-        "IC-半導體設備",
-        "半導體元件"
+        "power supply",
+        "consumer/industrial electronics",
+        "server power read-through"
       ],
       "constraints": [
-        "auto profile: verify product purity, customer exposure, and revenue mix before trading",
-        "verify official filings/product pages for revenue mix"
+        "design-win timing",
+        "MOSFET/PMIC pricing cycle",
+        "small-cap liquidity"
       ],
       "risk_flags": [
-        "auto profile: concept fit may be broad until upgraded with official sources",
-        "auto-upgraded profile: product purity can still be broad"
+        "若只跟隨題材無營收驗證，波動會很大",
+        "需區分 MOSFET 與 PMIC 兩條同業比較線"
       ],
       "bottleneck_profile": {},
       "supply_chain_profile": {
@@ -135810,43 +135615,23 @@
       },
       "concept_exposures": [
         {
-          "concept_id": "foundry",
-          "role": "auto_mapped",
-          "weight": 0.5,
-          "path": "Excelliance MOS Corporation metadata + exchange/supply-chain mapping -> IC-代工 exposure candidate"
+          "concept_id": "power_discrete_semiconductor",
+          "role": "mosfet_follower",
+          "weight": 0.74,
+          "path": "server/industrial power conversion -> MOSFET demand -> 杰力"
         },
         {
-          "concept_id": "ic_design",
-          "role": "auto_mapped",
-          "weight": 0.5,
-          "path": "Excelliance MOS Corporation metadata + exchange/supply-chain mapping -> IC-設計 exposure candidate"
-        },
-        {
-          "concept_id": "ic_packaging_testing",
-          "role": "auto_mapped",
-          "weight": 0.5,
-          "path": "Excelliance MOS Corporation metadata + exchange/supply-chain mapping -> IC-封測 exposure candidate"
-        },
-        {
-          "concept_id": "semicap_equipment",
-          "role": "auto_mapped",
-          "weight": 0.5,
-          "path": "Excelliance MOS Corporation metadata + exchange/supply-chain mapping -> IC-半導體設備 exposure candidate"
-        },
-        {
-          "concept_id": "semiconductor_components",
-          "role": "auto_mapped",
-          "weight": 0.5,
-          "path": "Excelliance MOS Corporation metadata + exchange/supply-chain mapping -> 半導體元件 exposure candidate"
-        },
-        {
-          "concept_id": "wafer_materials",
-          "role": "auto_mapped",
-          "weight": 0.5,
-          "path": "Excelliance MOS Corporation metadata + exchange/supply-chain mapping -> 晶圓材料 exposure candidate"
+          "concept_id": "power_management_ic",
+          "role": "power_ic_follower",
+          "weight": 0.66,
+          "path": "power rails complexity -> power IC demand -> 杰力"
         }
       ],
       "source_refs": [
+        {
+          "title": "JoulWatt / JoulWatt Taiwan public company materials",
+          "url": "https://www.joulwatt.com/"
+        },
         {
           "title": "Yahoo Finance search metadata for 5299.TWO",
           "url": "https://finance.yahoo.com/quote/5299.TWO"
@@ -135860,7 +135645,7 @@
           "url": "http://www.excelliancemos.com"
         }
       ],
-      "primary_business": "Excelliance MOS Corporation is matched to official Taiwan exchange listing metadata for 杰力科技股份有限公司. ThemeMiner links it to IC-代工, IC-設計, IC-封測, IC-半導體設備, 半導體元件, 晶圓材料, ASIC, MOSFET. Product/supply-chain clues in ThemeMiner: ASIC, MOSFET, SoC, controller IC, diode, discrete semiconductor, fabless IC, metrology, power discrete, probe card. Use the cited exchange listing and company website to verify product mix and customer exposure.",
+      "primary_business": "杰力是功率半導體設計公司，產品以 MOSFET、power IC 和電源控制相關元件為主，屬於功率分立/電源管理交界。",
       "profile_quality": "official_tw_exchange_profile",
       "profile_evidence_quality": "twse_tpex_listing_plus_graph",
       "official_metadata": {
@@ -135890,12 +135675,14 @@
         "output": "thememiner/data/profile_upgrades/official_tw_2.json"
       },
       "concepts_from_profile": [
-        "foundry",
-        "ic_design",
-        "ic_packaging_testing",
-        "semicap_equipment",
-        "semiconductor_components",
-        "wafer_materials"
+        "power_discrete_semiconductor",
+        "power_management_ic",
+        "semiconductor_components"
+      ],
+      "concepts": [
+        "power_discrete_semiconductor",
+        "power_management_ic",
+        "semiconductor_components"
       ]
     },
     {
@@ -170374,27 +170161,19 @@
     },
     {
       "symbol": "6415.TW",
-      "name": "Silergy Corp.",
+      "name": "矽力-KY",
       "market": "TW",
       "region": "Taiwan",
       "exchange": "TWSE",
       "raw_industry": "24",
       "website": "https://www.silergy.com/zh",
       "company_name": "矽力杰股份有限公司",
-      "sector": "Technology / Semiconductors",
+      "sector": "Power management IC / analog IC",
       "specializations": [
-        "IC-代工",
-        "IC-設計",
-        "IC-封測",
-        "IC-半導體設備",
-        "半導體元件",
-        "晶圓材料",
-        "ASIC",
-        "MOSFET",
-        "SoC",
-        "controller IC",
-        "diode",
-        "discrete semiconductor"
+        "PMIC",
+        "DC-DC converter",
+        "buck/boost regulator",
+        "analog power IC"
       ],
       "products": [
         "ASIC",
@@ -170415,19 +170194,19 @@
         "wafer probe"
       ],
       "platforms": [
-        "IC-代工",
-        "IC-設計",
-        "IC-封測",
-        "IC-半導體設備",
-        "半導體元件"
+        "consumer electronics",
+        "industrial",
+        "automotive",
+        "server power management"
       ],
       "constraints": [
-        "auto profile: verify product purity, customer exposure, and revenue mix before trading",
-        "verify official filings/product pages for revenue mix"
+        "consumer/industrial analog cycle",
+        "pricing pressure",
+        "AI server content needs revenue validation"
       ],
       "risk_flags": [
-        "auto profile: concept fit may be broad until upgraded with official sources",
-        "auto-upgraded profile: product purity can still be broad"
+        "PMIC 反彈可能跟類比庫存循環，不一定是 HVDC 功率半導體",
+        "高估值股對財報修正敏感"
       ],
       "bottleneck_profile": {},
       "supply_chain_profile": {
@@ -170480,43 +170259,23 @@
       },
       "concept_exposures": [
         {
-          "concept_id": "foundry",
-          "role": "auto_mapped",
-          "weight": 0.5,
-          "path": "Silergy Corp. metadata + exchange/supply-chain mapping -> IC-代工 exposure candidate"
+          "concept_id": "power_management_ic",
+          "role": "pmic_leader",
+          "weight": 0.86,
+          "path": "device/server power rails -> PMIC/DC-DC content -> 矽力-KY"
         },
         {
           "concept_id": "ic_design",
-          "role": "auto_mapped",
-          "weight": 0.5,
-          "path": "Silergy Corp. metadata + exchange/supply-chain mapping -> IC-設計 exposure candidate"
-        },
-        {
-          "concept_id": "ic_packaging_testing",
-          "role": "auto_mapped",
-          "weight": 0.5,
-          "path": "Silergy Corp. metadata + exchange/supply-chain mapping -> IC-封測 exposure candidate"
-        },
-        {
-          "concept_id": "semicap_equipment",
-          "role": "auto_mapped",
-          "weight": 0.5,
-          "path": "Silergy Corp. metadata + exchange/supply-chain mapping -> IC-半導體設備 exposure candidate"
-        },
-        {
-          "concept_id": "semiconductor_components",
-          "role": "auto_mapped",
-          "weight": 0.5,
-          "path": "Silergy Corp. metadata + exchange/supply-chain mapping -> 半導體元件 exposure candidate"
-        },
-        {
-          "concept_id": "wafer_materials",
-          "role": "auto_mapped",
-          "weight": 0.5,
-          "path": "Silergy Corp. metadata + exchange/supply-chain mapping -> 晶圓材料 exposure candidate"
+          "role": "analog_ic_design",
+          "weight": 0.55,
+          "path": "analog IC cycle -> Taiwan IC design sentiment"
         }
       ],
       "source_refs": [
+        {
+          "title": "Silergy official site",
+          "url": "https://www.silergy.com/"
+        },
         {
           "title": "Yahoo Finance search metadata for 6415.TW",
           "url": "https://finance.yahoo.com/quote/6415.TW"
@@ -170530,7 +170289,7 @@
           "url": "https://www.silergy.com/zh"
         }
       ],
-      "primary_business": "Silergy Corp. is matched to official Taiwan exchange listing metadata for 矽力杰股份有限公司. ThemeMiner links it to IC-代工, IC-設計, IC-封測, IC-半導體設備, 半導體元件, 晶圓材料, ASIC, MOSFET. Product/supply-chain clues in ThemeMiner: ASIC, MOSFET, SoC, controller IC, diode, discrete semiconductor, fabless IC, metrology, power discrete, probe card. Use the cited exchange listing and company website to verify product mix and customer exposure.",
+      "primary_business": "矽力-KY 是類比與電源管理 IC 廠，核心是 PMIC、DC-DC、buck/boost、voltage regulator 等，不是 MOSFET/SiC/GaN 分立元件。",
       "profile_quality": "official_tw_exchange_profile",
       "profile_evidence_quality": "twse_tpex_listing_plus_graph",
       "official_metadata": {
@@ -170560,12 +170319,14 @@
         "output": "thememiner/data/profile_upgrades/official_tw_0.json"
       },
       "concepts_from_profile": [
-        "foundry",
         "ic_design",
-        "ic_packaging_testing",
-        "semicap_equipment",
-        "semiconductor_components",
-        "wafer_materials"
+        "power_management_ic",
+        "semiconductor_components"
+      ],
+      "concepts": [
+        "power_management_ic",
+        "ic_design",
+        "semiconductor_components"
       ]
     },
     {
@@ -189424,27 +189185,19 @@
     },
     {
       "symbol": "6719.TW",
-      "name": "uPI Semiconductor Corp.",
+      "name": "力智",
       "market": "TW",
       "region": "Taiwan",
       "exchange": "TWSE",
       "raw_industry": "24",
       "website": "www.upi-semi.com",
       "company_name": "力智電子股份有限公司",
-      "sector": "Technology / Semiconductors",
+      "sector": "Power management IC / multiphase power",
       "specializations": [
-        "IC-代工",
-        "IC-設計",
-        "IC-封測",
-        "IC-半導體設備",
-        "半導體元件",
-        "晶圓材料",
-        "ASIC",
-        "MOSFET",
-        "SoC",
-        "controller IC",
-        "diode",
-        "discrete semiconductor"
+        "power management IC",
+        "multiphase controller",
+        "DC-DC converter",
+        "voltage regulator"
       ],
       "products": [
         "ASIC",
@@ -189465,19 +189218,18 @@
         "wafer probe"
       ],
       "platforms": [
-        "IC-代工",
-        "IC-設計",
-        "IC-封測",
-        "IC-半導體設備",
-        "半導體元件"
+        "PC/CPU/GPU power rails",
+        "server power management",
+        "consumer electronics"
       ],
       "constraints": [
-        "auto profile: verify product purity, customer exposure, and revenue mix before trading",
-        "verify official filings/product pages for revenue mix"
+        "platform socket cycle",
+        "customer qualification",
+        "inventory and pricing cycle"
       ],
       "risk_flags": [
-        "auto profile: concept fit may be broad until upgraded with official sources",
-        "auto-upgraded profile: product purity can still be broad"
+        "容易被誤掛到 broad semiconductor；需要用 PMIC/多相供電同業比較",
+        "短線題材需看量價轉強"
       ],
       "bottleneck_profile": {},
       "supply_chain_profile": {
@@ -189530,43 +189282,23 @@
       },
       "concept_exposures": [
         {
-          "concept_id": "foundry",
-          "role": "auto_mapped",
-          "weight": 0.5,
-          "path": "uPI Semiconductor Corp. metadata + exchange/supply-chain mapping -> IC-代工 exposure candidate"
+          "concept_id": "power_management_ic",
+          "role": "pmic_follower",
+          "weight": 0.82,
+          "path": "higher CPU/GPU/server power complexity -> multiphase PMIC demand -> 力智"
         },
         {
           "concept_id": "ic_design",
-          "role": "auto_mapped",
-          "weight": 0.5,
-          "path": "uPI Semiconductor Corp. metadata + exchange/supply-chain mapping -> IC-設計 exposure candidate"
-        },
-        {
-          "concept_id": "ic_packaging_testing",
-          "role": "auto_mapped",
-          "weight": 0.5,
-          "path": "uPI Semiconductor Corp. metadata + exchange/supply-chain mapping -> IC-封測 exposure candidate"
-        },
-        {
-          "concept_id": "semicap_equipment",
-          "role": "auto_mapped",
-          "weight": 0.5,
-          "path": "uPI Semiconductor Corp. metadata + exchange/supply-chain mapping -> IC-半導體設備 exposure candidate"
-        },
-        {
-          "concept_id": "semiconductor_components",
-          "role": "auto_mapped",
-          "weight": 0.5,
-          "path": "uPI Semiconductor Corp. metadata + exchange/supply-chain mapping -> 半導體元件 exposure candidate"
-        },
-        {
-          "concept_id": "wafer_materials",
-          "role": "auto_mapped",
-          "weight": 0.5,
-          "path": "uPI Semiconductor Corp. metadata + exchange/supply-chain mapping -> 晶圓材料 exposure candidate"
+          "role": "analog_ic_design",
+          "weight": 0.52,
+          "path": "Taiwan analog IC design cycle -> 力智"
         }
       ],
       "source_refs": [
+        {
+          "title": "uPI Semiconductor official site",
+          "url": "https://www.upi-semi.com/"
+        },
         {
           "title": "Yahoo Finance search metadata for 6719.TW",
           "url": "https://finance.yahoo.com/quote/6719.TW"
@@ -189580,7 +189312,7 @@
           "url": "www.upi-semi.com"
         }
       ],
-      "primary_business": "uPI Semiconductor Corp. is matched to official Taiwan exchange listing metadata for 力智電子股份有限公司. ThemeMiner links it to IC-代工, IC-設計, IC-封測, IC-半導體設備, 半導體元件, 晶圓材料, ASIC, MOSFET. Product/supply-chain clues in ThemeMiner: ASIC, MOSFET, SoC, controller IC, diode, discrete semiconductor, fabless IC, metrology, power discrete, probe card. Use the cited exchange listing and company website to verify product mix and customer exposure.",
+      "primary_business": "力智是電源管理與類比 IC 廠，產品重心在多相電源控制、DC-DC、電源轉換與運算平台供電控制；應歸在 PMIC/電源管理 IC。",
       "profile_quality": "official_tw_exchange_profile",
       "profile_evidence_quality": "twse_tpex_listing_plus_graph",
       "official_metadata": {
@@ -189610,12 +189342,14 @@
         "output": "thememiner/data/profile_upgrades/official_tw_1.json"
       },
       "concepts_from_profile": [
-        "foundry",
         "ic_design",
-        "ic_packaging_testing",
-        "semicap_equipment",
-        "semiconductor_components",
-        "wafer_materials"
+        "power_management_ic",
+        "semiconductor_components"
+      ],
+      "concepts": [
+        "power_management_ic",
+        "ic_design",
+        "semiconductor_components"
       ]
     },
     {
@@ -218252,27 +217986,19 @@
     },
     {
       "symbol": "8081.TW",
-      "name": "Global Mixed-Mode Technology Inc.",
+      "name": "致新",
       "market": "TW",
       "region": "Taiwan",
       "exchange": "TWSE",
       "raw_industry": "24",
       "website": "http://www.gmt.com.tw",
       "company_name": "致新科技股份有限公司",
-      "sector": "Technology / Semiconductors",
+      "sector": "Power management IC / analog IC",
       "specializations": [
-        "IC-代工",
-        "IC-設計",
-        "IC-封測",
-        "IC-半導體設備",
-        "半導體元件",
-        "晶圓材料",
-        "ASIC",
-        "MOSFET",
-        "SoC",
-        "controller IC",
-        "diode",
-        "discrete semiconductor"
+        "power management IC",
+        "analog IC",
+        "mixed-signal IC",
+        "display/power control"
       ],
       "products": [
         "ASIC",
@@ -218293,19 +218019,18 @@
         "wafer probe"
       ],
       "platforms": [
-        "IC-代工",
-        "IC-設計",
-        "IC-封測",
-        "IC-半導體設備",
-        "半導體元件"
+        "consumer electronics",
+        "display",
+        "PC/server power rails"
       ],
       "constraints": [
-        "auto profile: verify product purity, customer exposure, and revenue mix before trading",
-        "verify official filings/product pages for revenue mix"
+        "consumer/display cycle",
+        "analog inventory cycle",
+        "AI server content visibility"
       ],
       "risk_flags": [
-        "auto profile: concept fit may be broad until upgraded with official sources",
-        "auto-upgraded profile: product purity can still be broad"
+        "若只是類比庫存回補，不該和 HVDC MOSFET 混為一談",
+        "需量價確認才是 improving laggard"
       ],
       "bottleneck_profile": {},
       "supply_chain_profile": {
@@ -218358,43 +218083,23 @@
       },
       "concept_exposures": [
         {
-          "concept_id": "foundry",
-          "role": "auto_mapped",
-          "weight": 0.5,
-          "path": "Global Mixed-Mode Technology Inc. metadata + exchange/supply-chain mapping -> IC-代工 exposure candidate"
+          "concept_id": "power_management_ic",
+          "role": "pmic_follower",
+          "weight": 0.76,
+          "path": "power rail complexity -> PMIC/analog power control demand -> 致新"
         },
         {
           "concept_id": "ic_design",
-          "role": "auto_mapped",
-          "weight": 0.5,
-          "path": "Global Mixed-Mode Technology Inc. metadata + exchange/supply-chain mapping -> IC-設計 exposure candidate"
-        },
-        {
-          "concept_id": "ic_packaging_testing",
-          "role": "auto_mapped",
-          "weight": 0.5,
-          "path": "Global Mixed-Mode Technology Inc. metadata + exchange/supply-chain mapping -> IC-封測 exposure candidate"
-        },
-        {
-          "concept_id": "semicap_equipment",
-          "role": "auto_mapped",
-          "weight": 0.5,
-          "path": "Global Mixed-Mode Technology Inc. metadata + exchange/supply-chain mapping -> IC-半導體設備 exposure candidate"
-        },
-        {
-          "concept_id": "semiconductor_components",
-          "role": "auto_mapped",
-          "weight": 0.5,
-          "path": "Global Mixed-Mode Technology Inc. metadata + exchange/supply-chain mapping -> 半導體元件 exposure candidate"
-        },
-        {
-          "concept_id": "wafer_materials",
-          "role": "auto_mapped",
-          "weight": 0.5,
-          "path": "Global Mixed-Mode Technology Inc. metadata + exchange/supply-chain mapping -> 晶圓材料 exposure candidate"
+          "role": "analog_ic_design",
+          "weight": 0.55,
+          "path": "Taiwan analog IC design cycle -> 致新"
         }
       ],
       "source_refs": [
+        {
+          "title": "Global Mixed-mode Technology official site",
+          "url": "https://www.gmt.com.tw/"
+        },
         {
           "title": "Yahoo Finance search metadata for 8081.TW",
           "url": "https://finance.yahoo.com/quote/8081.TW"
@@ -218408,7 +218113,7 @@
           "url": "http://www.gmt.com.tw"
         }
       ],
-      "primary_business": "Global Mixed-Mode Technology Inc. is matched to official Taiwan exchange listing metadata for 致新科技股份有限公司. ThemeMiner links it to IC-代工, IC-設計, IC-封測, IC-半導體設備, 半導體元件, 晶圓材料, ASIC, MOSFET. Product/supply-chain clues in ThemeMiner: ASIC, MOSFET, SoC, controller IC, diode, discrete semiconductor, fabless IC, metrology, power discrete, probe card. Use the cited exchange listing and company website to verify product mix and customer exposure.",
+      "primary_business": "致新是類比與電源管理 IC 供應商，產品包含電源管理、顯示/驅動與混合訊號相關 IC；在功率題材中屬 PMIC/類比 IC，不是 MOSFET/SiC。",
       "profile_quality": "official_tw_exchange_profile",
       "profile_evidence_quality": "twse_tpex_listing_plus_graph",
       "official_metadata": {
@@ -218438,12 +218143,14 @@
         "output": "thememiner/data/profile_upgrades/official_tw_3.json"
       },
       "concepts_from_profile": [
-        "foundry",
         "ic_design",
-        "ic_packaging_testing",
-        "semicap_equipment",
-        "semiconductor_components",
-        "wafer_materials"
+        "power_management_ic",
+        "semiconductor_components"
+      ],
+      "concepts": [
+        "power_management_ic",
+        "ic_design",
+        "semiconductor_components"
       ]
     },
     {
@@ -247794,38 +247501,37 @@
     },
     {
       "symbol": "DELL",
-      "name": "Dell Technologies Inc.",
+      "name": "Dell Technologies",
       "market": "US",
       "region": "US",
       "exchange": "NYQ",
       "raw_industry": null,
       "website": null,
       "company_name": null,
-      "sector": "SEC SIC 3571 - Electronic Computers",
+      "sector": "Server / storage / enterprise infrastructure",
       "specializations": [
-        "EMS",
-        "GB200",
-        "GB300",
-        "HVDC功率半導體",
-        "電源供應器",
-        "散熱零組件",
-        "Vera Rubin"
+        "AI servers",
+        "enterprise servers",
+        "storage",
+        "rack-scale systems",
+        "PCs"
       ],
       "products": [],
       "platforms": [
-        "EMS",
-        "GB200",
-        "GB300",
-        "HVDC功率半導體",
-        "電源供應器"
+        "AI Factory with NVIDIA",
+        "PowerEdge servers",
+        "enterprise storage",
+        "hyperscale/enterprise AI infrastructure"
       ],
       "constraints": [
-        "auto profile: verify product purity, customer exposure, and revenue mix before trading",
-        "verify official filings/product pages for revenue mix"
+        "server order timing",
+        "margin mix",
+        "GPU allocation",
+        "enterprise IT spending"
       ],
       "risk_flags": [
-        "auto profile: concept fit may be broad until upgraded with official sources",
-        "auto-upgraded profile: product purity can still be broad"
+        "do not classify Dell as HVDC power semiconductor; it is downstream system hardware",
+        "AI server revenue can be margin-dilutive"
       ],
       "bottleneck_profile": {},
       "supply_chain_profile": {
@@ -247838,48 +247544,28 @@
       "concept_exposures": [
         {
           "concept_id": "ems",
-          "role": "global_leader",
-          "weight": 0.5,
-          "path": "Dell Technologies Inc. metadata + exchange/supply-chain mapping -> EMS exposure candidate"
+          "role": "server_system_platform",
+          "weight": 0.72,
+          "path": "AI server demand -> system/rack platform delivery -> Dell"
         },
         {
           "concept_id": "gb200",
-          "role": "global_leader",
-          "weight": 0.5,
-          "path": "Dell Technologies Inc. metadata + exchange/supply-chain mapping -> GB200 exposure candidate"
+          "role": "ai_server_platform",
+          "weight": 0.58,
+          "path": "NVIDIA platform cycle -> enterprise AI server demand"
         },
         {
-          "concept_id": "gb300",
-          "role": "global_leader",
-          "weight": 0.5,
-          "path": "Dell Technologies Inc. metadata + exchange/supply-chain mapping -> GB300 exposure candidate"
-        },
-        {
-          "concept_id": "hvdc_power_semiconductor",
-          "role": "global_leader",
-          "weight": 0.5,
-          "path": "Dell Technologies Inc. metadata + exchange/supply-chain mapping -> HVDC功率半導體 exposure candidate"
-        },
-        {
-          "concept_id": "power_supply",
-          "role": "global_leader",
-          "weight": 0.5,
-          "path": "Dell Technologies Inc. metadata + exchange/supply-chain mapping -> 電源供應器 exposure candidate"
-        },
-        {
-          "concept_id": "thermal_components",
-          "role": "global_leader",
-          "weight": 0.5,
-          "path": "Dell Technologies Inc. metadata + exchange/supply-chain mapping -> 散熱零組件 exposure candidate"
-        },
-        {
-          "concept_id": "vera_rubin",
-          "role": "global_leader",
-          "weight": 0.5,
-          "path": "Dell Technologies Inc. metadata + exchange/supply-chain mapping -> Vera Rubin exposure candidate"
+          "concept_id": "ai_capex",
+          "role": "downstream_system_signal",
+          "weight": 0.55,
+          "path": "enterprise/CSP AI capex -> server and storage orders"
         }
       ],
       "source_refs": [
+        {
+          "title": "Dell investor relations",
+          "url": "https://investors.delltechnologies.com/"
+        },
         {
           "title": "Yahoo Finance search metadata for DELL",
           "url": "https://finance.yahoo.com/quote/DELL"
@@ -247897,7 +247583,7 @@
           "url": "https://www.sec.gov/Archives/edgar/data/1571996/000157199626000008/dell-20260130.htm"
         }
       ],
-      "primary_business": "Dell Technologies Inc. is matched to official SEC company metadata classified as Electronic Computers. ThemeMiner links it to EMS, GB200, GB300, HVDC功率半導體, 電源供應器, 散熱零組件, Vera Rubin. Use the cited SEC filings and company materials to verify segment and revenue purity.",
+      "primary_business": "Dell Technologies provides servers, storage, PCs, services, and enterprise infrastructure. In AI infrastructure it is a server/system platform and rack integration signal, not a power semiconductor supplier.",
       "profile_quality": "official_sec_profile",
       "profile_evidence_quality": "sec_company_submissions",
       "official_metadata": {
@@ -247929,13 +247615,18 @@
         "output": "thememiner/data/profile_upgrades/official_us.json"
       },
       "concepts_from_profile": [
+        "ai_capex",
+        "ems",
+        "enterprise_ssd",
+        "gb200",
+        "gb300"
+      ],
+      "concepts": [
         "ems",
         "gb200",
         "gb300",
-        "hvdc_power_semiconductor",
-        "power_supply",
-        "thermal_components",
-        "vera_rubin"
+        "ai_capex",
+        "enterprise_ssd"
       ]
     },
     {
@@ -298569,12 +298260,6 @@
           "role": "rack_infrastructure_follower",
           "weight": 0.58,
           "path": "Rubin/Vera Rubin rack roadmap -> future power and thermal spec step-up"
-        },
-        {
-          "concept_id": "hvdc_power_semiconductor",
-          "role": "architecture_readthrough",
-          "weight": 0.52,
-          "path": "800V/HVDC data-center power architecture -> infrastructure integration demand"
         }
       ],
       "source_refs": [
@@ -298590,7 +298275,6 @@
       "concepts_from_profile": [
         "gb200",
         "gb300",
-        "hvdc_power_semiconductor",
         "power_supply",
         "smart_grid",
         "thermal_components",
@@ -300245,6 +299929,11 @@
         "server power supply",
         "HVDC conversion"
       ],
+      "concepts": [
+        "hvdc_power_semiconductor",
+        "power_discrete_semiconductor",
+        "semiconductor_components"
+      ],
       "constraints": [
         "qualification into high-voltage AI power chain",
         "competition from global SiC/GaN/MOSFET leaders",
@@ -300260,6 +299949,12 @@
           "role": "laggard_watch",
           "weight": 0.85,
           "path": "800 VDC rack architecture -> higher-value power conversion devices -> Taiwan MOSFET catch-up"
+        },
+        {
+          "concept_id": "power_discrete_semiconductor",
+          "role": "mosfet_follower",
+          "weight": 0.82,
+          "path": "server/industrial power conversion -> MOSFET and discrete power device demand"
         },
         {
           "concept_id": "semiconductor_components",
@@ -300280,6 +299975,7 @@
       ],
       "concepts_from_profile": [
         "hvdc_power_semiconductor",
+        "power_discrete_semiconductor",
         "semiconductor_components"
       ]
     },
@@ -300300,6 +299996,11 @@
         "power supply",
         "industrial power"
       ],
+      "concepts": [
+        "hvdc_power_semiconductor",
+        "power_discrete_semiconductor",
+        "semiconductor_components"
+      ],
       "constraints": [
         "AI server qualification",
         "global competition",
@@ -300315,6 +300016,12 @@
           "role": "laggard_watch",
           "weight": 0.8,
           "path": "AI rack voltage migration -> MOSFET/power device content and spec uplift"
+        },
+        {
+          "concept_id": "power_discrete_semiconductor",
+          "role": "mosfet_follower",
+          "weight": 0.78,
+          "path": "server and industrial power conversion -> MOSFET/power IC demand"
         },
         {
           "concept_id": "semiconductor_components",
@@ -300335,6 +300042,7 @@
       ],
       "concepts_from_profile": [
         "hvdc_power_semiconductor",
+        "power_discrete_semiconductor",
         "semiconductor_components"
       ]
     },
