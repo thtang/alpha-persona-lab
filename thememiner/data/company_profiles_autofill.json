@@ -1,27 +1,23 @@
 {
   "schema_version": "thememiner_company_profiles_official_autofill_v1",
-  "updated_at": "2026-05-23",
+  "updated_at": "2026-06-16",
   "description": "Merged auto profiles plus official-source profile upgrade shards. Curated seed profiles still override this file in update_theme_graph.py.",
   "base": "thememiner/data/company_profiles_autofill.json",
   "shards": {
-    "thememiner/data/profile_upgrades/official_rest.json": 74,
-    "thememiner/data/profile_upgrades/official_tw_0.json": 462,
-    "thememiner/data/profile_upgrades/official_tw_1.json": 462,
-    "thememiner/data/profile_upgrades/official_tw_2.json": 461,
-    "thememiner/data/profile_upgrades/official_tw_3.json": 461,
-    "thememiner/data/profile_upgrades/official_us.json": 370
+    "/tmp/thememiner_missing_profiles_20260616.json": 26
   },
-  "profile_count": 2291,
+  "profile_count": 2317,
   "quality_counts": {
     "market_metadata_profile": 94,
+    "auto_yahoo_search": 27,
     "official_tw_exchange_profile": 1846,
-    "auto_yahoo_search": 1,
     "official_sec_profile": 350
   },
   "evidence_counts": {
     "yahoo_search_plus_graph": 94,
+    "yahoo_search_metadata": 26,
     "twse_tpex_listing_plus_graph": 1846,
-    "yahoo_search_metadata": 1,
+    "exchange_rule_metadata": 1,
     "sec_company_submissions": 350
   },
   "profiles": [
@@ -663,6 +659,84 @@
       }
     },
     {
+      "symbol": "002230.SZ",
+      "name": "iFLYTEK CO.,LTD",
+      "market": "CN",
+      "region": "China A",
+      "exchange": "SHZ",
+      "raw_industry": null,
+      "website": null,
+      "company_name": null,
+      "sector": "Technology / Software—Application",
+      "primary_business": "iFLYTEK CO.,LTD operates in Technology / Software—Application. ThemeMiner maps it to AI Agent應用/工作流 / AI應用軟體/創作工具 / 雲端/AI軟體 for cross-market theme diffusion work. This profile is synthesized from public ticker/search metadata, exchange listing fields, and local supply-chain rules; upgrade with filings/product pages before using it as a high-conviction single-name thesis.",
+      "specializations": [
+        "AI Agent應用/工作流",
+        "AI應用軟體/創作工具",
+        "雲端/AI軟體"
+      ],
+      "products": [],
+      "platforms": [
+        "AI Agent應用/工作流",
+        "AI應用軟體/創作工具",
+        "雲端/AI軟體"
+      ],
+      "supply_chain_profile": {},
+      "constraints": [
+        "auto profile: verify product purity, customer exposure, and revenue mix before trading"
+      ],
+      "risk_flags": [
+        "auto profile: concept fit may be broad until upgraded with official sources"
+      ],
+      "profile_quality": "auto_yahoo_search",
+      "profile_evidence_quality": "yahoo_search_metadata",
+      "concept_exposures": [
+        {
+          "concept_id": "ai_agent_apps",
+          "role": "auto_mapped",
+          "weight": 0.5,
+          "path": "iFLYTEK CO.,LTD metadata + exchange/supply-chain mapping -> AI Agent應用/工作流 exposure candidate"
+        },
+        {
+          "concept_id": "ai_application_software",
+          "role": "auto_mapped",
+          "weight": 0.5,
+          "path": "iFLYTEK CO.,LTD metadata + exchange/supply-chain mapping -> AI應用軟體/創作工具 exposure candidate"
+        },
+        {
+          "concept_id": "cloud_ai",
+          "role": "auto_mapped",
+          "weight": 0.5,
+          "path": "iFLYTEK CO.,LTD metadata + exchange/supply-chain mapping -> 雲端/AI軟體 exposure candidate"
+        }
+      ],
+      "source_refs": [
+        {
+          "title": "Yahoo Finance search metadata for 002230.SZ",
+          "url": "https://finance.yahoo.com/quote/002230.SZ"
+        }
+      ],
+      "quote_metadata": {
+        "exchange": "SHZ",
+        "quoteType": "EQUITY",
+        "longname": "iFLYTEK CO.,LTD",
+        "shortname": "IFLYTEK CO LTD",
+        "sector": "Technology",
+        "sectorDisp": "Technology",
+        "industry": "Software—Application",
+        "industryDisp": "Software—Application",
+        "exchDisp": "Shenzhen"
+      },
+      "autofill_inputs": {
+        "has_yahoo_search_quote": true,
+        "has_exchange_listing": false,
+        "has_official_website": false,
+        "has_supply_chain_rules": false,
+        "discovery_score": null,
+        "discovery_sources": [],
+        "match_reasons": []
+      }
+    },
+    {
       "symbol": "002463.SZ",
       "name": "Wus Printed Circuit (Kunshan) Co., Ltd.",
       "market": "CN",
@@ -1182,6 +1256,92 @@
       }
     },
     {
+      "symbol": "0700.HK",
+      "name": "Tencent Holdings Limited",
+      "market": "HK",
+      "region": "Hong Kong",
+      "exchange": "HKG",
+      "raw_industry": null,
+      "website": null,
+      "company_name": null,
+      "sector": "Communication Services / Internet Content & Information",
+      "primary_business": "Tencent Holdings Limited operates in Communication Services / Internet Content & Information. ThemeMiner maps it to AI應用軟體/創作工具 / 雲端/AI軟體 / 金融科技/支付軟體 / 遊戲 for cross-market theme diffusion work. This profile is synthesized from public ticker/search metadata, exchange listing fields, and local supply-chain rules; upgrade with filings/product pages before using it as a high-conviction single-name thesis.",
+      "specializations": [
+        "AI應用軟體/創作工具",
+        "雲端/AI軟體",
+        "金融科技/支付軟體",
+        "遊戲"
+      ],
+      "products": [],
+      "platforms": [
+        "AI應用軟體/創作工具",
+        "雲端/AI軟體",
+        "金融科技/支付軟體",
+        "遊戲"
+      ],
+      "supply_chain_profile": {},
+      "constraints": [
+        "auto profile: verify product purity, customer exposure, and revenue mix before trading"
+      ],
+      "risk_flags": [
+        "auto profile: concept fit may be broad until upgraded with official sources"
+      ],
+      "profile_quality": "auto_yahoo_search",
+      "profile_evidence_quality": "yahoo_search_metadata",
+      "concept_exposures": [
+        {
+          "concept_id": "ai_application_software",
+          "role": "auto_mapped",
+          "weight": 0.5,
+          "path": "Tencent Holdings Limited metadata + exchange/supply-chain mapping -> AI應用軟體/創作工具 exposure candidate"
+        },
+        {
+          "concept_id": "cloud_ai",
+          "role": "auto_mapped",
+          "weight": 0.5,
+          "path": "Tencent Holdings Limited metadata + exchange/supply-chain mapping -> 雲端/AI軟體 exposure candidate"
+        },
+        {
+          "concept_id": "fintech_payments_software",
+          "role": "auto_mapped",
+          "weight": 0.5,
+          "path": "Tencent Holdings Limited metadata + exchange/supply-chain mapping -> 金融科技/支付軟體 exposure candidate"
+        },
+        {
+          "concept_id": "gaming",
+          "role": "auto_mapped",
+          "weight": 0.5,
+          "path": "Tencent Holdings Limited metadata + exchange/supply-chain mapping -> 遊戲 exposure candidate"
+        }
+      ],
+      "source_refs": [
+        {
+          "title": "Yahoo Finance search metadata for 0700.HK",
+          "url": "https://finance.yahoo.com/quote/0700.HK"
+        }
+      ],
+      "quote_metadata": {
+        "exchange": "HKG",
+        "quoteType": "EQUITY",
+        "longname": "Tencent Holdings Limited",
+        "shortname": "TENCENT",
+        "sector": "Communication Services",
+        "sectorDisp": "Communication Services",
+        "industry": "Internet Content & Information",
+        "industryDisp": "Internet Content & Information",
+        "exchDisp": "Hong Kong"
+      },
+      "autofill_inputs": {
+        "has_yahoo_search_quote": true,
+        "has_exchange_listing": false,
+        "has_official_website": false,
+        "has_supply_chain_rules": false,
+        "discovery_score": null,
+        "discovery_sources": [],
+        "match_reasons": []
+      }
+    },
+    {
       "symbol": "0857.HK",
       "name": "PetroChina Company Limited",
       "market": "HK",
@@ -1428,6 +1588,76 @@
         ],
         "shard": "",
         "output": "thememiner/data/profile_upgrades/official_rest.json"
+      }
+    },
+    {
+      "symbol": "1024.HK",
+      "name": "Kuaishou Technology",
+      "market": "HK",
+      "region": "Hong Kong",
+      "exchange": "HKG",
+      "raw_industry": null,
+      "website": null,
+      "company_name": null,
+      "sector": "Communication Services / Internet Content & Information",
+      "primary_business": "Kuaishou Technology operates in Communication Services / Internet Content & Information. ThemeMiner maps it to AI應用軟體/創作工具 / 電商 for cross-market theme diffusion work. This profile is synthesized from public ticker/search metadata, exchange listing fields, and local supply-chain rules; upgrade with filings/product pages before using it as a high-conviction single-name thesis.",
+      "specializations": [
+        "AI應用軟體/創作工具",
+        "電商"
+      ],
+      "products": [],
+      "platforms": [
+        "AI應用軟體/創作工具",
+        "電商"
+      ],
+      "supply_chain_profile": {},
+      "constraints": [
+        "auto profile: verify product purity, customer exposure, and revenue mix before trading"
+      ],
+      "risk_flags": [
+        "auto profile: concept fit may be broad until upgraded with official sources"
+      ],
+      "profile_quality": "auto_yahoo_search",
+      "profile_evidence_quality": "yahoo_search_metadata",
+      "concept_exposures": [
+        {
+          "concept_id": "ai_application_software",
+          "role": "auto_mapped",
+          "weight": 0.5,
+          "path": "Kuaishou Technology metadata + exchange/supply-chain mapping -> AI應用軟體/創作工具 exposure candidate"
+        },
+        {
+          "concept_id": "ecommerce",
+          "role": "auto_mapped",
+          "weight": 0.5,
+          "path": "Kuaishou Technology metadata + exchange/supply-chain mapping -> 電商 exposure candidate"
+        }
+      ],
+      "source_refs": [
+        {
+          "title": "Yahoo Finance search metadata for 1024.HK",
+          "url": "https://finance.yahoo.com/quote/1024.HK"
+        }
+      ],
+      "quote_metadata": {
+        "exchange": "HKG",
+        "quoteType": "EQUITY",
+        "longname": "Kuaishou Technology",
+        "shortname": "KUAISHOU-W",
+        "sector": "Communication Services",
+        "sectorDisp": "Communication Services",
+        "industry": "Internet Content & Information",
+        "industryDisp": "Internet Content & Information",
+        "exchDisp": "Hong Kong"
+      },
+      "autofill_inputs": {
+        "has_yahoo_search_quote": true,
+        "has_exchange_listing": false,
+        "has_official_website": false,
+        "has_supply_chain_rules": false,
+        "discovery_score": null,
+        "discovery_sources": [],
+        "match_reasons": []
       }
     },
     {
@@ -62492,6 +62722,84 @@
       }
     },
     {
+      "symbol": "300454.SZ",
+      "name": "Sangfor Technologies Inc.",
+      "market": "CN",
+      "region": "China A",
+      "exchange": "SHZ",
+      "raw_industry": null,
+      "website": null,
+      "company_name": null,
+      "sector": "Technology / Software—Infrastructure",
+      "primary_business": "Sangfor Technologies Inc. operates in Technology / Software—Infrastructure. ThemeMiner maps it to 雲端資安/SASE/CNAPP / 資安 / 系統整合 for cross-market theme diffusion work. This profile is synthesized from public ticker/search metadata, exchange listing fields, and local supply-chain rules; upgrade with filings/product pages before using it as a high-conviction single-name thesis.",
+      "specializations": [
+        "雲端資安/SASE/CNAPP",
+        "資安",
+        "系統整合"
+      ],
+      "products": [],
+      "platforms": [
+        "雲端資安/SASE/CNAPP",
+        "資安",
+        "系統整合"
+      ],
+      "supply_chain_profile": {},
+      "constraints": [
+        "auto profile: verify product purity, customer exposure, and revenue mix before trading"
+      ],
+      "risk_flags": [
+        "auto profile: concept fit may be broad until upgraded with official sources"
+      ],
+      "profile_quality": "auto_yahoo_search",
+      "profile_evidence_quality": "yahoo_search_metadata",
+      "concept_exposures": [
+        {
+          "concept_id": "cloud_security_sase",
+          "role": "auto_mapped",
+          "weight": 0.5,
+          "path": "Sangfor Technologies Inc. metadata + exchange/supply-chain mapping -> 雲端資安/SASE/CNAPP exposure candidate"
+        },
+        {
+          "concept_id": "cybersecurity",
+          "role": "auto_mapped",
+          "weight": 0.5,
+          "path": "Sangfor Technologies Inc. metadata + exchange/supply-chain mapping -> 資安 exposure candidate"
+        },
+        {
+          "concept_id": "system_integration",
+          "role": "auto_mapped",
+          "weight": 0.5,
+          "path": "Sangfor Technologies Inc. metadata + exchange/supply-chain mapping -> 系統整合 exposure candidate"
+        }
+      ],
+      "source_refs": [
+        {
+          "title": "Yahoo Finance search metadata for 300454.SZ",
+          "url": "https://finance.yahoo.com/quote/300454.SZ"
+        }
+      ],
+      "quote_metadata": {
+        "exchange": "SHZ",
+        "quoteType": "EQUITY",
+        "longname": "Sangfor Technologies Inc.",
+        "shortname": "SANGFOR TECHNOLOGIES INC",
+        "sector": "Technology",
+        "sectorDisp": "Technology",
+        "industry": "Software—Infrastructure",
+        "industryDisp": "Software—Infrastructure",
+        "exchDisp": "Shenzhen"
+      },
+      "autofill_inputs": {
+        "has_yahoo_search_quote": true,
+        "has_exchange_listing": false,
+        "has_official_website": false,
+        "has_supply_chain_rules": false,
+        "discovery_score": null,
+        "discovery_sources": [],
+        "match_reasons": []
+      }
+    },
+    {
       "symbol": "3005.TW",
       "name": "Getac Holdings Corporation",
       "market": "TW",
@@ -98710,6 +99018,84 @@
       }
     },
     {
+      "symbol": "3690.HK",
+      "name": "Meituan",
+      "market": "HK",
+      "region": "Hong Kong",
+      "exchange": "HKG",
+      "raw_industry": null,
+      "website": null,
+      "company_name": null,
+      "sector": "Consumer Cyclical / Internet Retail",
+      "primary_business": "Meituan operates in Consumer Cyclical / Internet Retail. ThemeMiner maps it to AI應用軟體/創作工具 / 電商 / 金融科技/支付軟體 for cross-market theme diffusion work. This profile is synthesized from public ticker/search metadata, exchange listing fields, and local supply-chain rules; upgrade with filings/product pages before using it as a high-conviction single-name thesis.",
+      "specializations": [
+        "AI應用軟體/創作工具",
+        "電商",
+        "金融科技/支付軟體"
+      ],
+      "products": [],
+      "platforms": [
+        "AI應用軟體/創作工具",
+        "電商",
+        "金融科技/支付軟體"
+      ],
+      "supply_chain_profile": {},
+      "constraints": [
+        "auto profile: verify product purity, customer exposure, and revenue mix before trading"
+      ],
+      "risk_flags": [
+        "auto profile: concept fit may be broad until upgraded with official sources"
+      ],
+      "profile_quality": "auto_yahoo_search",
+      "profile_evidence_quality": "yahoo_search_metadata",
+      "concept_exposures": [
+        {
+          "concept_id": "ai_application_software",
+          "role": "auto_mapped",
+          "weight": 0.5,
+          "path": "Meituan metadata + exchange/supply-chain mapping -> AI應用軟體/創作工具 exposure candidate"
+        },
+        {
+          "concept_id": "ecommerce",
+          "role": "auto_mapped",
+          "weight": 0.5,
+          "path": "Meituan metadata + exchange/supply-chain mapping -> 電商 exposure candidate"
+        },
+        {
+          "concept_id": "fintech_payments_software",
+          "role": "auto_mapped",
+          "weight": 0.5,
+          "path": "Meituan metadata + exchange/supply-chain mapping -> 金融科技/支付軟體 exposure candidate"
+        }
+      ],
+      "source_refs": [
+        {
+          "title": "Yahoo Finance search metadata for 3690.HK",
+          "url": "https://finance.yahoo.com/quote/3690.HK"
+        }
+      ],
+      "quote_metadata": {
+        "exchange": "HKG",
+        "quoteType": "EQUITY",
+        "longname": "Meituan",
+        "shortname": "MEITUAN-W",
+        "sector": "Consumer Cyclical",
+        "sectorDisp": "Consumer Cyclical",
+        "industry": "Internet Retail",
+        "industryDisp": "Internet Retail",
+        "exchDisp": "Hong Kong"
+      },
+      "autofill_inputs": {
+        "has_yahoo_search_quote": true,
+        "has_exchange_listing": false,
+        "has_official_website": false,
+        "has_supply_chain_rules": false,
+        "discovery_score": null,
+        "discovery_sources": [],
+        "match_reasons": []
+      }
+    },
+    {
       "symbol": "3691.TWO",
       "name": "Giga Solar Materials Corp.",
       "market": "TW",
@@ -99037,6 +99423,84 @@
         ],
         "shard": "2/4",
         "output": "thememiner/data/profile_upgrades/official_tw_2.json"
+      }
+    },
+    {
+      "symbol": "3697.T",
+      "name": "SHIFT Inc.",
+      "market": "JP",
+      "region": "Japan",
+      "exchange": "JPX",
+      "raw_industry": null,
+      "website": null,
+      "company_name": null,
+      "sector": "Technology / Software—Application",
+      "primary_business": "SHIFT Inc. operates in Technology / Software—Application. ThemeMiner maps it to 企業SaaS/工作流 / Observability/DevOps / 系統整合 for cross-market theme diffusion work. This profile is synthesized from public ticker/search metadata, exchange listing fields, and local supply-chain rules; upgrade with filings/product pages before using it as a high-conviction single-name thesis.",
+      "specializations": [
+        "企業SaaS/工作流",
+        "Observability/DevOps",
+        "系統整合"
+      ],
+      "products": [],
+      "platforms": [
+        "企業SaaS/工作流",
+        "Observability/DevOps",
+        "系統整合"
+      ],
+      "supply_chain_profile": {},
+      "constraints": [
+        "auto profile: verify product purity, customer exposure, and revenue mix before trading"
+      ],
+      "risk_flags": [
+        "auto profile: concept fit may be broad until upgraded with official sources"
+      ],
+      "profile_quality": "auto_yahoo_search",
+      "profile_evidence_quality": "yahoo_search_metadata",
+      "concept_exposures": [
+        {
+          "concept_id": "enterprise_saas_workflow",
+          "role": "auto_mapped",
+          "weight": 0.5,
+          "path": "SHIFT Inc. metadata + exchange/supply-chain mapping -> 企業SaaS/工作流 exposure candidate"
+        },
+        {
+          "concept_id": "observability_devops",
+          "role": "auto_mapped",
+          "weight": 0.5,
+          "path": "SHIFT Inc. metadata + exchange/supply-chain mapping -> Observability/DevOps exposure candidate"
+        },
+        {
+          "concept_id": "system_integration",
+          "role": "auto_mapped",
+          "weight": 0.5,
+          "path": "SHIFT Inc. metadata + exchange/supply-chain mapping -> 系統整合 exposure candidate"
+        }
+      ],
+      "source_refs": [
+        {
+          "title": "Yahoo Finance search metadata for 3697.T",
+          "url": "https://finance.yahoo.com/quote/3697.T"
+        }
+      ],
+      "quote_metadata": {
+        "exchange": "JPX",
+        "quoteType": "EQUITY",
+        "longname": "SHIFT Inc.",
+        "shortname": "SHIFT INC",
+        "sector": "Technology",
+        "sectorDisp": "Technology",
+        "industry": "Software—Application",
+        "industryDisp": "Software—Application",
+        "exchDisp": "Tokyo Stock Exchange"
+      },
+      "autofill_inputs": {
+        "has_yahoo_search_quote": true,
+        "has_exchange_listing": false,
+        "has_official_website": false,
+        "has_supply_chain_rules": false,
+        "discovery_score": null,
+        "discovery_sources": [],
+        "match_reasons": []
       }
     },
     {
@@ -115019,6 +115483,76 @@
       }
     },
     {
+      "symbol": "4684.T",
+      "name": "OBIC Co.,Ltd.",
+      "market": "JP",
+      "region": "Japan",
+      "exchange": "JPX",
+      "raw_industry": null,
+      "website": null,
+      "company_name": null,
+      "sector": "Technology / Software—Application",
+      "primary_business": "OBIC Co.,Ltd. operates in Technology / Software—Application. ThemeMiner maps it to 企業SaaS/工作流 / 系統整合 for cross-market theme diffusion work. This profile is synthesized from public ticker/search metadata, exchange listing fields, and local supply-chain rules; upgrade with filings/product pages before using it as a high-conviction single-name thesis.",
+      "specializations": [
+        "企業SaaS/工作流",
+        "系統整合"
+      ],
+      "products": [],
+      "platforms": [
+        "企業SaaS/工作流",
+        "系統整合"
+      ],
+      "supply_chain_profile": {},
+      "constraints": [
+        "auto profile: verify product purity, customer exposure, and revenue mix before trading"
+      ],
+      "risk_flags": [
+        "auto profile: concept fit may be broad until upgraded with official sources"
+      ],
+      "profile_quality": "auto_yahoo_search",
+      "profile_evidence_quality": "yahoo_search_metadata",
+      "concept_exposures": [
+        {
+          "concept_id": "enterprise_saas_workflow",
+          "role": "auto_mapped",
+          "weight": 0.5,
+          "path": "OBIC Co.,Ltd. metadata + exchange/supply-chain mapping -> 企業SaaS/工作流 exposure candidate"
+        },
+        {
+          "concept_id": "system_integration",
+          "role": "auto_mapped",
+          "weight": 0.5,
+          "path": "OBIC Co.,Ltd. metadata + exchange/supply-chain mapping -> 系統整合 exposure candidate"
+        }
+      ],
+      "source_refs": [
+        {
+          "title": "Yahoo Finance search metadata for 4684.T",
+          "url": "https://finance.yahoo.com/quote/4684.T"
+        }
+      ],
+      "quote_metadata": {
+        "exchange": "JPX",
+        "quoteType": "EQUITY",
+        "longname": "OBIC Co.,Ltd.",
+        "shortname": "OBIC CO LTD",
+        "sector": "Technology",
+        "sectorDisp": "Technology",
+        "industry": "Software—Application",
+        "industryDisp": "Software—Application",
+        "exchDisp": "Tokyo Stock Exchange"
+      },
+      "autofill_inputs": {
+        "has_yahoo_search_quote": true,
+        "has_exchange_listing": false,
+        "has_official_website": false,
+        "has_supply_chain_rules": false,
+        "discovery_score": null,
+        "discovery_sources": [],
+        "match_reasons": []
+      }
+    },
+    {
       "symbol": "4702.TWO",
       "name": "Allied Industrial Corp., Ltd.",
       "market": "TW",
@@ -117502,6 +118036,84 @@
         ],
         "shard": "0/4",
         "output": "thememiner/data/profile_upgrades/official_tw_0.json"
+      }
+    },
+    {
+      "symbol": "4751.T",
+      "name": "CyberAgent, Inc.",
+      "market": "JP",
+      "region": "Japan",
+      "exchange": "JPX",
+      "raw_industry": null,
+      "website": null,
+      "company_name": null,
+      "sector": "Communication Services / Advertising Agencies",
+      "primary_business": "CyberAgent, Inc. operates in Communication Services / Advertising Agencies. ThemeMiner maps it to AI應用軟體/創作工具 / 電商 / 遊戲 for cross-market theme diffusion work. This profile is synthesized from public ticker/search metadata, exchange listing fields, and local supply-chain rules; upgrade with filings/product pages before using it as a high-conviction single-name thesis.",
+      "specializations": [
+        "AI應用軟體/創作工具",
+        "電商",
+        "遊戲"
+      ],
+      "products": [],
+      "platforms": [
+        "AI應用軟體/創作工具",
+        "電商",
+        "遊戲"
+      ],
+      "supply_chain_profile": {},
+      "constraints": [
+        "auto profile: verify product purity, customer exposure, and revenue mix before trading"
+      ],
+      "risk_flags": [
+        "auto profile: concept fit may be broad until upgraded with official sources"
+      ],
+      "profile_quality": "auto_yahoo_search",
+      "profile_evidence_quality": "yahoo_search_metadata",
+      "concept_exposures": [
+        {
+          "concept_id": "ai_application_software",
+          "role": "auto_mapped",
+          "weight": 0.5,
+          "path": "CyberAgent, Inc. metadata + exchange/supply-chain mapping -> AI應用軟體/創作工具 exposure candidate"
+        },
+        {
+          "concept_id": "ecommerce",
+          "role": "auto_mapped",
+          "weight": 0.5,
+          "path": "CyberAgent, Inc. metadata + exchange/supply-chain mapping -> 電商 exposure candidate"
+        },
+        {
+          "concept_id": "gaming",
+          "role": "auto_mapped",
+          "weight": 0.5,
+          "path": "CyberAgent, Inc. metadata + exchange/supply-chain mapping -> 遊戲 exposure candidate"
+        }
+      ],
+      "source_refs": [
+        {
+          "title": "Yahoo Finance search metadata for 4751.T",
+          "url": "https://finance.yahoo.com/quote/4751.T"
+        }
+      ],
+      "quote_metadata": {
+        "exchange": "JPX",
+        "quoteType": "EQUITY",
+        "longname": "CyberAgent, Inc.",
+        "shortname": "CYBER AGENT",
+        "sector": "Communication Services",
+        "sectorDisp": "Communication Services",
+        "industry": "Advertising Agencies",
+        "industryDisp": "Advertising Agencies",
+        "exchDisp": "Tokyo Stock Exchange"
+      },
+      "autofill_inputs": {
+        "has_yahoo_search_quote": true,
+        "has_exchange_listing": false,
+        "has_official_website": false,
+        "has_supply_chain_rules": false,
+        "discovery_score": null,
+        "discovery_sources": [],
+        "match_reasons": []
       }
     },
     {
@@ -141949,6 +142561,84 @@
         ],
         "shard": "",
         "output": "thememiner/data/profile_upgrades/official_rest.json"
+      }
+    },
+    {
+      "symbol": "600588.SS",
+      "name": "Yonyou Network Technology Co.,Ltd.",
+      "market": "CN",
+      "region": "China A",
+      "exchange": "SHH",
+      "raw_industry": null,
+      "website": null,
+      "company_name": null,
+      "sector": "Technology / Software—Application",
+      "primary_business": "Yonyou Network Technology Co.,Ltd. operates in Technology / Software—Application. ThemeMiner maps it to 雲端/AI軟體 / 企業SaaS/工作流 / 系統整合 for cross-market theme diffusion work. This profile is synthesized from public ticker/search metadata, exchange listing fields, and local supply-chain rules; upgrade with filings/product pages before using it as a high-conviction single-name thesis.",
+      "specializations": [
+        "雲端/AI軟體",
+        "企業SaaS/工作流",
+        "系統整合"
+      ],
+      "products": [],
+      "platforms": [
+        "雲端/AI軟體",
+        "企業SaaS/工作流",
+        "系統整合"
+      ],
+      "supply_chain_profile": {},
+      "constraints": [
+        "auto profile: verify product purity, customer exposure, and revenue mix before trading"
+      ],
+      "risk_flags": [
+        "auto profile: concept fit may be broad until upgraded with official sources"
+      ],
+      "profile_quality": "auto_yahoo_search",
+      "profile_evidence_quality": "yahoo_search_metadata",
+      "concept_exposures": [
+        {
+          "concept_id": "cloud_ai",
+          "role": "auto_mapped",
+          "weight": 0.5,
+          "path": "Yonyou Network Technology Co.,Ltd. metadata + exchange/supply-chain mapping -> 雲端/AI軟體 exposure candidate"
+        },
+        {
+          "concept_id": "enterprise_saas_workflow",
+          "role": "auto_mapped",
+          "weight": 0.5,
+          "path": "Yonyou Network Technology Co.,Ltd. metadata + exchange/supply-chain mapping -> 企業SaaS/工作流 exposure candidate"
+        },
+        {
+          "concept_id": "system_integration",
+          "role": "auto_mapped",
+          "weight": 0.5,
+          "path": "Yonyou Network Technology Co.,Ltd. metadata + exchange/supply-chain mapping -> 系統整合 exposure candidate"
+        }
+      ],
+      "source_refs": [
+        {
+          "title": "Yahoo Finance search metadata for 600588.SS",
+          "url": "https://finance.yahoo.com/quote/600588.SS"
+        }
+      ],
+      "quote_metadata": {
+        "exchange": "SHH",
+        "quoteType": "EQUITY",
+        "longname": "Yonyou Network Technology Co.,Ltd.",
+        "shortname": "YONYOU NETWORK TECHNOLOGY CO LT",
+        "sector": "Technology",
+        "sectorDisp": "Technology",
+        "industry": "Software—Application",
+        "industryDisp": "Software—Application",
+        "exchDisp": "Shanghai"
+      },
+      "autofill_inputs": {
+        "has_yahoo_search_quote": true,
+        "has_exchange_listing": false,
+        "has_official_website": false,
+        "has_supply_chain_rules": false,
+        "discovery_score": null,
+        "discovery_sources": [],
+        "match_reasons": []
       }
     },
     {
@@ -180644,6 +181334,92 @@
       }
     },
     {
+      "symbol": "6701.T",
+      "name": "NEC Corporation",
+      "market": "JP",
+      "region": "Japan",
+      "exchange": "JPX",
+      "raw_industry": null,
+      "website": null,
+      "company_name": null,
+      "sector": "Technology / Information Technology Services",
+      "primary_business": "NEC Corporation operates in Technology / Information Technology Services. ThemeMiner maps it to AI資料平台/湖倉 / 通訊設備 / 資安 / 系統整合 for cross-market theme diffusion work. This profile is synthesized from public ticker/search metadata, exchange listing fields, and local supply-chain rules; upgrade with filings/product pages before using it as a high-conviction single-name thesis.",
+      "specializations": [
+        "AI資料平台/湖倉",
+        "通訊設備",
+        "資安",
+        "系統整合"
+      ],
+      "products": [],
+      "platforms": [
+        "AI資料平台/湖倉",
+        "通訊設備",
+        "資安",
+        "系統整合"
+      ],
+      "supply_chain_profile": {},
+      "constraints": [
+        "auto profile: verify product purity, customer exposure, and revenue mix before trading"
+      ],
+      "risk_flags": [
+        "auto profile: concept fit may be broad until upgraded with official sources"
+      ],
+      "profile_quality": "auto_yahoo_search",
+      "profile_evidence_quality": "yahoo_search_metadata",
+      "concept_exposures": [
+        {
+          "concept_id": "ai_data_platform",
+          "role": "auto_mapped",
+          "weight": 0.5,
+          "path": "NEC Corporation metadata + exchange/supply-chain mapping -> AI資料平台/湖倉 exposure candidate"
+        },
+        {
+          "concept_id": "communication_equipment",
+          "role": "auto_mapped",
+          "weight": 0.5,
+          "path": "NEC Corporation metadata + exchange/supply-chain mapping -> 通訊設備 exposure candidate"
+        },
+        {
+          "concept_id": "cybersecurity",
+          "role": "auto_mapped",
+          "weight": 0.5,
+          "path": "NEC Corporation metadata + exchange/supply-chain mapping -> 資安 exposure candidate"
+        },
+        {
+          "concept_id": "system_integration",
+          "role": "auto_mapped",
+          "weight": 0.5,
+          "path": "NEC Corporation metadata + exchange/supply-chain mapping -> 系統整合 exposure candidate"
+        }
+      ],
+      "source_refs": [
+        {
+          "title": "Yahoo Finance search metadata for 6701.T",
+          "url": "https://finance.yahoo.com/quote/6701.T"
+        }
+      ],
+      "quote_metadata": {
+        "exchange": "JPX",
+        "quoteType": "EQUITY",
+        "longname": "NEC Corporation",
+        "shortname": "NEC CORP",
+        "sector": "Technology",
+        "sectorDisp": "Technology",
+        "industry": "Information Technology Services",
+        "industryDisp": "Information Technology Services",
+        "exchDisp": "Tokyo Stock Exchange"
+      },
+      "autofill_inputs": {
+        "has_yahoo_search_quote": true,
+        "has_exchange_listing": false,
+        "has_official_website": false,
+        "has_supply_chain_rules": false,
+        "discovery_score": null,
+        "discovery_sources": [],
+        "match_reasons": []
+      }
+    },
+    {
       "symbol": "6703.TWO",
       "name": "Shiny Brands Group Co., Ltd.",
       "market": "TW",
@@ -183077,6 +183853,84 @@
         ],
         "shard": "3/4",
         "output": "thememiner/data/profile_upgrades/official_tw_3.json"
+      }
+    },
+    {
+      "symbol": "6741.TW",
+      "name": "91APP, Inc.",
+      "market": "TW",
+      "region": "Taiwan",
+      "exchange": "TWO",
+      "raw_industry": null,
+      "website": null,
+      "company_name": null,
+      "sector": "Technology / Software—Infrastructure",
+      "primary_business": "91APP, Inc. operates in Technology / Software—Infrastructure. ThemeMiner maps it to AI應用軟體/創作工具 / 電商 / 金融科技/支付軟體 for cross-market theme diffusion work. This profile is synthesized from public ticker/search metadata, exchange listing fields, and local supply-chain rules; upgrade with filings/product pages before using it as a high-conviction single-name thesis.",
+      "specializations": [
+        "AI應用軟體/創作工具",
+        "電商",
+        "金融科技/支付軟體"
+      ],
+      "products": [],
+      "platforms": [
+        "AI應用軟體/創作工具",
+        "電商",
+        "金融科技/支付軟體"
+      ],
+      "supply_chain_profile": {},
+      "constraints": [
+        "auto profile: verify product purity, customer exposure, and revenue mix before trading"
+      ],
+      "risk_flags": [
+        "auto profile: concept fit may be broad until upgraded with official sources"
+      ],
+      "profile_quality": "auto_yahoo_search",
+      "profile_evidence_quality": "yahoo_search_metadata",
+      "concept_exposures": [
+        {
+          "concept_id": "ai_application_software",
+          "role": "auto_mapped",
+          "weight": 0.5,
+          "path": "91APP, Inc. metadata + exchange/supply-chain mapping -> AI應用軟體/創作工具 exposure candidate"
+        },
+        {
+          "concept_id": "ecommerce",
+          "role": "auto_mapped",
+          "weight": 0.5,
+          "path": "91APP, Inc. metadata + exchange/supply-chain mapping -> 電商 exposure candidate"
+        },
+        {
+          "concept_id": "fintech_payments_software",
+          "role": "auto_mapped",
+          "weight": 0.5,
+          "path": "91APP, Inc. metadata + exchange/supply-chain mapping -> 金融科技/支付軟體 exposure candidate"
+        }
+      ],
+      "source_refs": [
+        {
+          "title": "Yahoo Finance search metadata for 6741.TW",
+          "url": "https://finance.yahoo.com/quote/6741.TW"
+        }
+      ],
+      "quote_metadata": {
+        "exchange": "TWO",
+        "quoteType": "EQUITY",
+        "longname": "91APP, Inc.",
+        "shortname": "91APP INC",
+        "sector": "Technology",
+        "sectorDisp": "Technology",
+        "industry": "Software—Infrastructure",
+        "industryDisp": "Software—Infrastructure",
+        "exchDisp": "Taipei"
+      },
+      "autofill_inputs": {
+        "has_yahoo_search_quote": true,
+        "has_exchange_listing": false,
+        "has_official_website": false,
+        "has_supply_chain_rules": false,
+        "discovery_score": null,
+        "discovery_sources": [],
+        "match_reasons": []
       }
     },
     {
@@ -190751,6 +191605,84 @@
         ],
         "shard": "",
         "output": "thememiner/data/profile_upgrades/official_rest.json"
+      }
+    },
+    {
+      "symbol": "688111.SS",
+      "name": "Beijing Kingsoft Office Software, Inc.",
+      "market": "CN",
+      "region": "China A",
+      "exchange": "SHH",
+      "raw_industry": null,
+      "website": null,
+      "company_name": null,
+      "sector": "Technology / Software—Application",
+      "primary_business": "Beijing Kingsoft Office Software, Inc. operates in Technology / Software—Application. ThemeMiner maps it to AI應用軟體/創作工具 / 雲端/AI軟體 / 企業SaaS/工作流 for cross-market theme diffusion work. This profile is synthesized from public ticker/search metadata, exchange listing fields, and local supply-chain rules; upgrade with filings/product pages before using it as a high-conviction single-name thesis.",
+      "specializations": [
+        "AI應用軟體/創作工具",
+        "雲端/AI軟體",
+        "企業SaaS/工作流"
+      ],
+      "products": [],
+      "platforms": [
+        "AI應用軟體/創作工具",
+        "雲端/AI軟體",
+        "企業SaaS/工作流"
+      ],
+      "supply_chain_profile": {},
+      "constraints": [
+        "auto profile: verify product purity, customer exposure, and revenue mix before trading"
+      ],
+      "risk_flags": [
+        "auto profile: concept fit may be broad until upgraded with official sources"
+      ],
+      "profile_quality": "auto_yahoo_search",
+      "profile_evidence_quality": "yahoo_search_metadata",
+      "concept_exposures": [
+        {
+          "concept_id": "ai_application_software",
+          "role": "auto_mapped",
+          "weight": 0.5,
+          "path": "Beijing Kingsoft Office Software, Inc. metadata + exchange/supply-chain mapping -> AI應用軟體/創作工具 exposure candidate"
+        },
+        {
+          "concept_id": "cloud_ai",
+          "role": "auto_mapped",
+          "weight": 0.5,
+          "path": "Beijing Kingsoft Office Software, Inc. metadata + exchange/supply-chain mapping -> 雲端/AI軟體 exposure candidate"
+        },
+        {
+          "concept_id": "enterprise_saas_workflow",
+          "role": "auto_mapped",
+          "weight": 0.5,
+          "path": "Beijing Kingsoft Office Software, Inc. metadata + exchange/supply-chain mapping -> 企業SaaS/工作流 exposure candidate"
+        }
+      ],
+      "source_refs": [
+        {
+          "title": "Yahoo Finance search metadata for 688111.SS",
+          "url": "https://finance.yahoo.com/quote/688111.SS"
+        }
+      ],
+      "quote_metadata": {
+        "exchange": "SHH",
+        "quoteType": "EQUITY",
+        "longname": "Beijing Kingsoft Office Software, Inc.",
+        "shortname": "BEIJING KINGSOFT OFFICE SOFTWAR",
+        "sector": "Technology",
+        "sectorDisp": "Technology",
+        "industry": "Software—Application",
+        "industryDisp": "Software—Application",
+        "exchDisp": "Shanghai"
+      },
+      "autofill_inputs": {
+        "has_yahoo_search_quote": true,
+        "has_exchange_listing": false,
+        "has_official_website": false,
+        "has_supply_chain_rules": false,
+        "discovery_score": null,
+        "discovery_sources": [],
+        "match_reasons": []
       }
     },
     {
@@ -222117,6 +223049,74 @@
       }
     },
     {
+      "symbol": "9613.T",
+      "name": "NTT DATA Group",
+      "market": "JP",
+      "region": "Japan",
+      "exchange": null,
+      "raw_industry": null,
+      "website": null,
+      "company_name": null,
+      "sector": "雲端/AI軟體 / 企業SaaS/工作流",
+      "primary_business": "NTT DATA Group operates in 雲端/AI軟體 / 企業SaaS/工作流. ThemeMiner maps it to 雲端/AI軟體 / 企業SaaS/工作流 / 系統整合 for cross-market theme diffusion work. This profile is synthesized from public ticker/search metadata, exchange listing fields, and local supply-chain rules; upgrade with filings/product pages before using it as a high-conviction single-name thesis.",
+      "specializations": [
+        "雲端/AI軟體",
+        "企業SaaS/工作流",
+        "系統整合"
+      ],
+      "products": [],
+      "platforms": [
+        "雲端/AI軟體",
+        "企業SaaS/工作流",
+        "系統整合"
+      ],
+      "supply_chain_profile": {},
+      "constraints": [
+        "auto profile: verify product purity, customer exposure, and revenue mix before trading"
+      ],
+      "risk_flags": [
+        "auto profile: concept fit may be broad until upgraded with official sources"
+      ],
+      "profile_quality": "auto_yahoo_search",
+      "profile_evidence_quality": "exchange_rule_metadata",
+      "concept_exposures": [
+        {
+          "concept_id": "cloud_ai",
+          "role": "auto_mapped",
+          "weight": 0.5,
+          "path": "NTT DATA Group metadata + exchange/supply-chain mapping -> 雲端/AI軟體 exposure candidate"
+        },
+        {
+          "concept_id": "enterprise_saas_workflow",
+          "role": "auto_mapped",
+          "weight": 0.5,
+          "path": "NTT DATA Group metadata + exchange/supply-chain mapping -> 企業SaaS/工作流 exposure candidate"
+        },
+        {
+          "concept_id": "system_integration",
+          "role": "auto_mapped",
+          "weight": 0.5,
+          "path": "NTT DATA Group metadata + exchange/supply-chain mapping -> 系統整合 exposure candidate"
+        }
+      ],
+      "source_refs": [
+        {
+          "title": "Yahoo Finance search metadata for 9613.T",
+          "url": "https://finance.yahoo.com/quote/9613.T"
+        }
+      ],
+      "quote_metadata": {},
+      "autofill_inputs": {
+        "has_yahoo_search_quote": false,
+        "has_exchange_listing": false,
+        "has_official_website": false,
+        "has_supply_chain_rules": false,
+        "discovery_score": null,
+        "discovery_sources": [],
+        "match_reasons": []
+      }
+    },
+    {
       "symbol": "9802.TW",
       "name": "Fulgent Sun International (Holding) Co., Ltd.",
       "market": "TW",
@@ -222204,6 +223204,92 @@
         ],
         "shard": "0/4",
         "output": "thememiner/data/profile_upgrades/official_tw_0.json"
+      }
+    },
+    {
+      "symbol": "9888.HK",
+      "name": "Baidu, Inc.",
+      "market": "HK",
+      "region": "Hong Kong",
+      "exchange": "HKG",
+      "raw_industry": null,
+      "website": null,
+      "company_name": null,
+      "sector": "Communication Services / Internet Content & Information",
+      "primary_business": "Baidu, Inc. operates in Communication Services / Internet Content & Information. ThemeMiner maps it to AI Agent應用/工作流 / AI應用軟體/創作工具 / 自動駕駛/ADAS / 雲端/AI軟體 for cross-market theme diffusion work. This profile is synthesized from public ticker/search metadata, exchange listing fields, and local supply-chain rules; upgrade with filings/product pages before using it as a high-conviction single-name thesis.",
+      "specializations": [
+        "AI Agent應用/工作流",
+        "AI應用軟體/創作工具",
+        "自動駕駛/ADAS",
+        "雲端/AI軟體"
+      ],
+      "products": [],
+      "platforms": [
+        "AI Agent應用/工作流",
+        "AI應用軟體/創作工具",
+        "自動駕駛/ADAS",
+        "雲端/AI軟體"
+      ],
+      "supply_chain_profile": {},
+      "constraints": [
+        "auto profile: verify product purity, customer exposure, and revenue mix before trading"
+      ],
+      "risk_flags": [
+        "auto profile: concept fit may be broad until upgraded with official sources"
+      ],
+      "profile_quality": "auto_yahoo_search",
+      "profile_evidence_quality": "yahoo_search_metadata",
+      "concept_exposures": [
+        {
+          "concept_id": "ai_agent_apps",
+          "role": "auto_mapped",
+          "weight": 0.5,
+          "path": "Baidu, Inc. metadata + exchange/supply-chain mapping -> AI Agent應用/工作流 exposure candidate"
+        },
+        {
+          "concept_id": "ai_application_software",
+          "role": "auto_mapped",
+          "weight": 0.5,
+          "path": "Baidu, Inc. metadata + exchange/supply-chain mapping -> AI應用軟體/創作工具 exposure candidate"
+        },
+        {
+          "concept_id": "autonomous_driving",
+          "role": "auto_mapped",
+          "weight": 0.5,
+          "path": "Baidu, Inc. metadata + exchange/supply-chain mapping -> 自動駕駛/ADAS exposure candidate"
+        },
+        {
+          "concept_id": "cloud_ai",
+          "role": "auto_mapped",
+          "weight": 0.5,
+          "path": "Baidu, Inc. metadata + exchange/supply-chain mapping -> 雲端/AI軟體 exposure candidate"
+        }
+      ],
+      "source_refs": [
+        {
+          "title": "Yahoo Finance search metadata for 9888.HK",
+          "url": "https://finance.yahoo.com/quote/9888.HK"
+        }
+      ],
+      "quote_metadata": {
+        "exchange": "HKG",
+        "quoteType": "EQUITY",
+        "longname": "Baidu, Inc.",
+        "shortname": "BIDU-SW",
+        "sector": "Communication Services",
+        "sectorDisp": "Communication Services",
+        "industry": "Internet Content & Information",
+        "industryDisp": "Internet Content & Information",
+        "exchDisp": "Hong Kong"
+      },
+      "autofill_inputs": {
+        "has_yahoo_search_quote": true,
+        "has_exchange_listing": false,
+        "has_official_website": false,
+        "has_supply_chain_rules": false,
+        "discovery_score": null,
+        "discovery_sources": [],
+        "match_reasons": []
       }
     },
     {
@@ -224706,6 +225792,92 @@
       }
     },
     {
+      "symbol": "9988.HK",
+      "name": "Alibaba Group Holding Limited",
+      "market": "HK",
+      "region": "Hong Kong",
+      "exchange": "HKG",
+      "raw_industry": null,
+      "website": null,
+      "company_name": null,
+      "sector": "Consumer Cyclical / Internet Retail",
+      "primary_business": "Alibaba Group Holding Limited operates in Consumer Cyclical / Internet Retail. ThemeMiner maps it to AI Agent應用/工作流 / AI資料平台/湖倉 / 雲端/AI軟體 / 電商 for cross-market theme diffusion work. This profile is synthesized from public ticker/search metadata, exchange listing fields, and local supply-chain rules; upgrade with filings/product pages before using it as a high-conviction single-name thesis.",
+      "specializations": [
+        "AI Agent應用/工作流",
+        "AI資料平台/湖倉",
+        "雲端/AI軟體",
+        "電商"
+      ],
+      "products": [],
+      "platforms": [
+        "AI Agent應用/工作流",
+        "AI資料平台/湖倉",
+        "雲端/AI軟體",
+        "電商"
+      ],
+      "supply_chain_profile": {},
+      "constraints": [
+        "auto profile: verify product purity, customer exposure, and revenue mix before trading"
+      ],
+      "risk_flags": [
+        "auto profile: concept fit may be broad until upgraded with official sources"
+      ],
+      "profile_quality": "auto_yahoo_search",
+      "profile_evidence_quality": "yahoo_search_metadata",
+      "concept_exposures": [
+        {
+          "concept_id": "ai_agent_apps",
+          "role": "auto_mapped",
+          "weight": 0.5,
+          "path": "Alibaba Group Holding Limited metadata + exchange/supply-chain mapping -> AI Agent應用/工作流 exposure candidate"
+        },
+        {
+          "concept_id": "ai_data_platform",
+          "role": "auto_mapped",
+          "weight": 0.5,
+          "path": "Alibaba Group Holding Limited metadata + exchange/supply-chain mapping -> AI資料平台/湖倉 exposure candidate"
+        },
+        {
+          "concept_id": "cloud_ai",
+          "role": "auto_mapped",
+          "weight": 0.5,
+          "path": "Alibaba Group Holding Limited metadata + exchange/supply-chain mapping -> 雲端/AI軟體 exposure candidate"
+        },
+        {
+          "concept_id": "ecommerce",
+          "role": "auto_mapped",
+          "weight": 0.5,
+          "path": "Alibaba Group Holding Limited metadata + exchange/supply-chain mapping -> 電商 exposure candidate"
+        }
+      ],
+      "source_refs": [
+        {
+          "title": "Yahoo Finance search metadata for 9988.HK",
+          "url": "https://finance.yahoo.com/quote/9988.HK"
+        }
+      ],
+      "quote_metadata": {
+        "exchange": "HKG",
+        "quoteType": "EQUITY",
+        "longname": "Alibaba Group Holding Limited",
+        "shortname": "BABA-W",
+        "sector": "Consumer Cyclical",
+        "sectorDisp": "Consumer Cyclical",
+        "industry": "Internet Retail",
+        "industryDisp": "Internet Retail",
+        "exchDisp": "Hong Kong"
+      },
+      "autofill_inputs": {
+        "has_yahoo_search_quote": true,
+        "has_exchange_listing": false,
+        "has_official_website": false,
+        "has_supply_chain_rules": false,
+        "discovery_score": null,
+        "discovery_sources": [],
+        "match_reasons": []
+      }
+    },
+    {
       "symbol": "ABCB",
       "name": "Ameris Bancorp",
       "market": "US",
@@ -225218,6 +226390,84 @@
         ],
         "shard": "",
         "output": "thememiner/data/profile_upgrades/official_us.json"
+      }
+    },
+    {
+      "symbol": "ADBE",
+      "name": "Adobe Inc.",
+      "market": "US",
+      "region": "US",
+      "exchange": "NMS",
+      "raw_industry": null,
+      "website": null,
+      "company_name": null,
+      "sector": "Technology / Software—Application",
+      "primary_business": "Adobe Inc. operates in Technology / Software—Application. ThemeMiner maps it to AI應用軟體/創作工具 / 雲端/AI軟體 / 企業SaaS/工作流 for cross-market theme diffusion work. This profile is synthesized from public ticker/search metadata, exchange listing fields, and local supply-chain rules; upgrade with filings/product pages before using it as a high-conviction single-name thesis.",
+      "specializations": [
+        "AI應用軟體/創作工具",
+        "雲端/AI軟體",
+        "企業SaaS/工作流"
+      ],
+      "products": [],
+      "platforms": [
+        "AI應用軟體/創作工具",
+        "雲端/AI軟體",
+        "企業SaaS/工作流"
+      ],
+      "supply_chain_profile": {},
+      "constraints": [
+        "auto profile: verify product purity, customer exposure, and revenue mix before trading"
+      ],
+      "risk_flags": [
+        "auto profile: concept fit may be broad until upgraded with official sources"
+      ],
+      "profile_quality": "auto_yahoo_search",
+      "profile_evidence_quality": "yahoo_search_metadata",
+      "concept_exposures": [
+        {
+          "concept_id": "ai_application_software",
+          "role": "auto_mapped",
+          "weight": 0.5,
+          "path": "Adobe Inc. metadata + exchange/supply-chain mapping -> AI應用軟體/創作工具 exposure candidate"
+        },
+        {
+          "concept_id": "cloud_ai",
+          "role": "auto_mapped",
+          "weight": 0.5,
+          "path": "Adobe Inc. metadata + exchange/supply-chain mapping -> 雲端/AI軟體 exposure candidate"
+        },
+        {
+          "concept_id": "enterprise_saas_workflow",
+          "role": "auto_mapped",
+          "weight": 0.5,
+          "path": "Adobe Inc. metadata + exchange/supply-chain mapping -> 企業SaaS/工作流 exposure candidate"
+        }
+      ],
+      "source_refs": [
+        {
+          "title": "Yahoo Finance search metadata for ADBE",
+          "url": "https://finance.yahoo.com/quote/ADBE"
+        }
+      ],
+      "quote_metadata": {
+        "exchange": "NMS",
+        "quoteType": "EQUITY",
+        "longname": "Adobe Inc.",
+        "shortname": "Adobe Inc.",
+        "sector": "Technology",
+        "sectorDisp": "Technology",
+        "industry": "Software—Application",
+        "industryDisp": "Software—Application",
+        "exchDisp": "NASDAQ"
+      },
+      "autofill_inputs": {
+        "has_yahoo_search_quote": true,
+        "has_exchange_listing": false,
+        "has_official_website": false,
+        "has_supply_chain_rules": false,
+        "discovery_score": null,
+        "discovery_sources": [],
+        "match_reasons": []
       }
     },
     {
@@ -227022,6 +228272,84 @@
         ],
         "shard": "",
         "output": "thememiner/data/profile_upgrades/official_us.json"
+      }
+    },
+    {
+      "symbol": "APP",
+      "name": "AppLovin Corporation",
+      "market": "US",
+      "region": "US",
+      "exchange": "NMS",
+      "raw_industry": null,
+      "website": null,
+      "company_name": null,
+      "sector": "Communication Services / Advertising Agencies",
+      "primary_business": "AppLovin Corporation operates in Communication Services / Advertising Agencies. ThemeMiner maps it to AI應用軟體/創作工具 / 電商 / 遊戲 for cross-market theme diffusion work. This profile is synthesized from public ticker/search metadata, exchange listing fields, and local supply-chain rules; upgrade with filings/product pages before using it as a high-conviction single-name thesis.",
+      "specializations": [
+        "AI應用軟體/創作工具",
+        "電商",
+        "遊戲"
+      ],
+      "products": [],
+      "platforms": [
+        "AI應用軟體/創作工具",
+        "電商",
+        "遊戲"
+      ],
+      "supply_chain_profile": {},
+      "constraints": [
+        "auto profile: verify product purity, customer exposure, and revenue mix before trading"
+      ],
+      "risk_flags": [
+        "auto profile: concept fit may be broad until upgraded with official sources"
+      ],
+      "profile_quality": "auto_yahoo_search",
+      "profile_evidence_quality": "yahoo_search_metadata",
+      "concept_exposures": [
+        {
+          "concept_id": "ai_application_software",
+          "role": "auto_mapped",
+          "weight": 0.5,
+          "path": "AppLovin Corporation metadata + exchange/supply-chain mapping -> AI應用軟體/創作工具 exposure candidate"
+        },
+        {
+          "concept_id": "ecommerce",
+          "role": "auto_mapped",
+          "weight": 0.5,
+          "path": "AppLovin Corporation metadata + exchange/supply-chain mapping -> 電商 exposure candidate"
+        },
+        {
+          "concept_id": "gaming",
+          "role": "auto_mapped",
+          "weight": 0.5,
+          "path": "AppLovin Corporation metadata + exchange/supply-chain mapping -> 遊戲 exposure candidate"
+        }
+      ],
+      "source_refs": [
+        {
+          "title": "Yahoo Finance search metadata for APP",
+          "url": "https://finance.yahoo.com/quote/APP"
+        }
+      ],
+      "quote_metadata": {
+        "exchange": "NMS",
+        "quoteType": "EQUITY",
+        "longname": "AppLovin Corporation",
+        "shortname": "Applovin Corporation",
+        "sector": "Communication Services",
+        "sectorDisp": "Communication Services",
+        "industry": "Advertising Agencies",
+        "industryDisp": "Advertising Agencies",
+        "exchDisp": "NASDAQ"
+      },
+      "autofill_inputs": {
+        "has_yahoo_search_quote": true,
+        "has_exchange_listing": false,
+        "has_official_website": false,
+        "has_supply_chain_rules": false,
+        "discovery_score": null,
+        "discovery_sources": [],
+        "match_reasons": []
       }
     },
     {
@@ -240253,6 +241581,76 @@
       }
     },
     {
+      "symbol": "DUOL",
+      "name": "Duolingo, Inc.",
+      "market": "US",
+      "region": "US",
+      "exchange": "NMS",
+      "raw_industry": null,
+      "website": null,
+      "company_name": null,
+      "sector": "Technology / Software—Application",
+      "primary_business": "Duolingo, Inc. operates in Technology / Software—Application. ThemeMiner maps it to AI應用軟體/創作工具 / 電商 for cross-market theme diffusion work. This profile is synthesized from public ticker/search metadata, exchange listing fields, and local supply-chain rules; upgrade with filings/product pages before using it as a high-conviction single-name thesis.",
+      "specializations": [
+        "AI應用軟體/創作工具",
+        "電商"
+      ],
+      "products": [],
+      "platforms": [
+        "AI應用軟體/創作工具",
+        "電商"
+      ],
+      "supply_chain_profile": {},
+      "constraints": [
+        "auto profile: verify product purity, customer exposure, and revenue mix before trading"
+      ],
+      "risk_flags": [
+        "auto profile: concept fit may be broad until upgraded with official sources"
+      ],
+      "profile_quality": "auto_yahoo_search",
+      "profile_evidence_quality": "yahoo_search_metadata",
+      "concept_exposures": [
+        {
+          "concept_id": "ai_application_software",
+          "role": "auto_mapped",
+          "weight": 0.5,
+          "path": "Duolingo, Inc. metadata + exchange/supply-chain mapping -> AI應用軟體/創作工具 exposure candidate"
+        },
+        {
+          "concept_id": "ecommerce",
+          "role": "auto_mapped",
+          "weight": 0.5,
+          "path": "Duolingo, Inc. metadata + exchange/supply-chain mapping -> 電商 exposure candidate"
+        }
+      ],
+      "source_refs": [
+        {
+          "title": "Yahoo Finance search metadata for DUOL",
+          "url": "https://finance.yahoo.com/quote/DUOL"
+        }
+      ],
+      "quote_metadata": {
+        "exchange": "NMS",
+        "quoteType": "EQUITY",
+        "longname": "Duolingo, Inc.",
+        "shortname": "Duolingo, Inc.",
+        "sector": "Technology",
+        "sectorDisp": "Technology",
+        "industry": "Software—Application",
+        "industryDisp": "Software—Application",
+        "exchDisp": "NASDAQ"
+      },
+      "autofill_inputs": {
+        "has_yahoo_search_quote": true,
+        "has_exchange_listing": false,
+        "has_official_website": false,
+        "has_supply_chain_rules": false,
+        "discovery_score": null,
+        "discovery_sources": [],
+        "match_reasons": []
+      }
+    },
+    {
       "symbol": "DVN",
       "name": "DEVON ENERGY CORP/DE",
       "market": "US",
@@ -249314,6 +250712,84 @@
       }
     },
     {
+      "symbol": "FTNT",
+      "name": "Fortinet, Inc.",
+      "market": "US",
+      "region": "US",
+      "exchange": "NMS",
+      "raw_industry": null,
+      "website": null,
+      "company_name": null,
+      "sector": "Technology / Software—Infrastructure",
+      "primary_business": "Fortinet, Inc. operates in Technology / Software—Infrastructure. ThemeMiner maps it to 雲端資安/SASE/CNAPP / 資安 / 網通 for cross-market theme diffusion work. This profile is synthesized from public ticker/search metadata, exchange listing fields, and local supply-chain rules; upgrade with filings/product pages before using it as a high-conviction single-name thesis.",
+      "specializations": [
+        "雲端資安/SASE/CNAPP",
+        "資安",
+        "網通"
+      ],
+      "products": [],
+      "platforms": [
+        "雲端資安/SASE/CNAPP",
+        "資安",
+        "網通"
+      ],
+      "supply_chain_profile": {},
+      "constraints": [
+        "auto profile: verify product purity, customer exposure, and revenue mix before trading"
+      ],
+      "risk_flags": [
+        "auto profile: concept fit may be broad until upgraded with official sources"
+      ],
+      "profile_quality": "auto_yahoo_search",
+      "profile_evidence_quality": "yahoo_search_metadata",
+      "concept_exposures": [
+        {
+          "concept_id": "cloud_security_sase",
+          "role": "auto_mapped",
+          "weight": 0.5,
+          "path": "Fortinet, Inc. metadata + exchange/supply-chain mapping -> 雲端資安/SASE/CNAPP exposure candidate"
+        },
+        {
+          "concept_id": "cybersecurity",
+          "role": "auto_mapped",
+          "weight": 0.5,
+          "path": "Fortinet, Inc. metadata + exchange/supply-chain mapping -> 資安 exposure candidate"
+        },
+        {
+          "concept_id": "networking",
+          "role": "auto_mapped",
+          "weight": 0.5,
+          "path": "Fortinet, Inc. metadata + exchange/supply-chain mapping -> 網通 exposure candidate"
+        }
+      ],
+      "source_refs": [
+        {
+          "title": "Yahoo Finance search metadata for FTNT",
+          "url": "https://finance.yahoo.com/quote/FTNT"
+        }
+      ],
+      "quote_metadata": {
+        "exchange": "NMS",
+        "quoteType": "EQUITY",
+        "longname": "Fortinet, Inc.",
+        "shortname": "Fortinet, Inc.",
+        "sector": "Technology",
+        "sectorDisp": "Technology",
+        "industry": "Software—Infrastructure",
+        "industryDisp": "Software—Infrastructure",
+        "exchDisp": "NASDAQ"
+      },
+      "autofill_inputs": {
+        "has_yahoo_search_quote": true,
+        "has_exchange_listing": false,
+        "has_official_website": false,
+        "has_supply_chain_rules": false,
+        "discovery_score": null,
+        "discovery_sources": [],
+        "match_reasons": []
+      }
+    },
+    {
       "symbol": "GABC",
       "name": "GERMAN AMERICAN BANCORP, INC.",
       "market": "US",
@@ -252012,6 +253488,84 @@
         ],
         "shard": "",
         "output": "thememiner/data/profile_upgrades/official_us.json"
+      }
+    },
+    {
+      "symbol": "GTLB",
+      "name": "GitLab Inc.",
+      "market": "US",
+      "region": "US",
+      "exchange": "NMS",
+      "raw_industry": null,
+      "website": null,
+      "company_name": null,
+      "sector": "Technology / Software—Infrastructure",
+      "primary_business": "GitLab Inc. operates in Technology / Software—Infrastructure. ThemeMiner maps it to 資安 / 企業SaaS/工作流 / Observability/DevOps for cross-market theme diffusion work. This profile is synthesized from public ticker/search metadata, exchange listing fields, and local supply-chain rules; upgrade with filings/product pages before using it as a high-conviction single-name thesis.",
+      "specializations": [
+        "資安",
+        "企業SaaS/工作流",
+        "Observability/DevOps"
+      ],
+      "products": [],
+      "platforms": [
+        "資安",
+        "企業SaaS/工作流",
+        "Observability/DevOps"
+      ],
+      "supply_chain_profile": {},
+      "constraints": [
+        "auto profile: verify product purity, customer exposure, and revenue mix before trading"
+      ],
+      "risk_flags": [
+        "auto profile: concept fit may be broad until upgraded with official sources"
+      ],
+      "profile_quality": "auto_yahoo_search",
+      "profile_evidence_quality": "yahoo_search_metadata",
+      "concept_exposures": [
+        {
+          "concept_id": "cybersecurity",
+          "role": "auto_mapped",
+          "weight": 0.5,
+          "path": "GitLab Inc. metadata + exchange/supply-chain mapping -> 資安 exposure candidate"
+        },
+        {
+          "concept_id": "enterprise_saas_workflow",
+          "role": "auto_mapped",
+          "weight": 0.5,
+          "path": "GitLab Inc. metadata + exchange/supply-chain mapping -> 企業SaaS/工作流 exposure candidate"
+        },
+        {
+          "concept_id": "observability_devops",
+          "role": "auto_mapped",
+          "weight": 0.5,
+          "path": "GitLab Inc. metadata + exchange/supply-chain mapping -> Observability/DevOps exposure candidate"
+        }
+      ],
+      "source_refs": [
+        {
+          "title": "Yahoo Finance search metadata for GTLB",
+          "url": "https://finance.yahoo.com/quote/GTLB"
+        }
+      ],
+      "quote_metadata": {
+        "exchange": "NMS",
+        "quoteType": "EQUITY",
+        "longname": "GitLab Inc.",
+        "shortname": "GitLab Inc.",
+        "sector": "Technology",
+        "sectorDisp": "Technology",
+        "industry": "Software—Infrastructure",
+        "industryDisp": "Software—Infrastructure",
+        "exchDisp": "NASDAQ"
+      },
+      "autofill_inputs": {
+        "has_yahoo_search_quote": true,
+        "has_exchange_listing": false,
+        "has_official_website": false,
+        "has_supply_chain_rules": false,
+        "discovery_score": null,
+        "discovery_sources": [],
+        "match_reasons": []
       }
     },
     {
@@ -256670,6 +258224,84 @@
         ],
         "shard": "",
         "output": "thememiner/data/profile_upgrades/official_us.json"
+      }
+    },
+    {
+      "symbol": "INTU",
+      "name": "Intuit Inc.",
+      "market": "US",
+      "region": "US",
+      "exchange": "NMS",
+      "raw_industry": null,
+      "website": null,
+      "company_name": null,
+      "sector": "Technology / Software—Application",
+      "primary_business": "Intuit Inc. operates in Technology / Software—Application. ThemeMiner maps it to AI應用軟體/創作工具 / 企業SaaS/工作流 / 金融科技/支付軟體 for cross-market theme diffusion work. This profile is synthesized from public ticker/search metadata, exchange listing fields, and local supply-chain rules; upgrade with filings/product pages before using it as a high-conviction single-name thesis.",
+      "specializations": [
+        "AI應用軟體/創作工具",
+        "企業SaaS/工作流",
+        "金融科技/支付軟體"
+      ],
+      "products": [],
+      "platforms": [
+        "AI應用軟體/創作工具",
+        "企業SaaS/工作流",
+        "金融科技/支付軟體"
+      ],
+      "supply_chain_profile": {},
+      "constraints": [
+        "auto profile: verify product purity, customer exposure, and revenue mix before trading"
+      ],
+      "risk_flags": [
+        "auto profile: concept fit may be broad until upgraded with official sources"
+      ],
+      "profile_quality": "auto_yahoo_search",
+      "profile_evidence_quality": "yahoo_search_metadata",
+      "concept_exposures": [
+        {
+          "concept_id": "ai_application_software",
+          "role": "auto_mapped",
+          "weight": 0.5,
+          "path": "Intuit Inc. metadata + exchange/supply-chain mapping -> AI應用軟體/創作工具 exposure candidate"
+        },
+        {
+          "concept_id": "enterprise_saas_workflow",
+          "role": "auto_mapped",
+          "weight": 0.5,
+          "path": "Intuit Inc. metadata + exchange/supply-chain mapping -> 企業SaaS/工作流 exposure candidate"
+        },
+        {
+          "concept_id": "fintech_payments_software",
+          "role": "auto_mapped",
+          "weight": 0.5,
+          "path": "Intuit Inc. metadata + exchange/supply-chain mapping -> 金融科技/支付軟體 exposure candidate"
+        }
+      ],
+      "source_refs": [
+        {
+          "title": "Yahoo Finance search metadata for INTU",
+          "url": "https://finance.yahoo.com/quote/INTU"
+        }
+      ],
+      "quote_metadata": {
+        "exchange": "NMS",
+        "quoteType": "EQUITY",
+        "longname": "Intuit Inc.",
+        "shortname": "Intuit Inc.",
+        "sector": "Technology",
+        "sectorDisp": "Technology",
+        "industry": "Software—Application",
+        "industryDisp": "Software—Application",
+        "exchDisp": "NASDAQ"
+      },
+      "autofill_inputs": {
+        "has_yahoo_search_quote": true,
+        "has_exchange_listing": false,
+        "has_official_website": false,
+        "has_supply_chain_rules": false,
+        "discovery_score": null,
+        "discovery_sources": [],
+        "match_reasons": []
       }
     },
     {
@@ -269273,6 +270905,84 @@
       }
     },
     {
+      "symbol": "OKTA",
+      "name": "Okta, Inc.",
+      "market": "US",
+      "region": "US",
+      "exchange": "NMS",
+      "raw_industry": null,
+      "website": null,
+      "company_name": null,
+      "sector": "Technology / Software—Infrastructure",
+      "primary_business": "Okta, Inc. operates in Technology / Software—Infrastructure. ThemeMiner maps it to 資安 / 企業SaaS/工作流 / 身份安全/IAM for cross-market theme diffusion work. This profile is synthesized from public ticker/search metadata, exchange listing fields, and local supply-chain rules; upgrade with filings/product pages before using it as a high-conviction single-name thesis.",
+      "specializations": [
+        "資安",
+        "企業SaaS/工作流",
+        "身份安全/IAM"
+      ],
+      "products": [],
+      "platforms": [
+        "資安",
+        "企業SaaS/工作流",
+        "身份安全/IAM"
+      ],
+      "supply_chain_profile": {},
+      "constraints": [
+        "auto profile: verify product purity, customer exposure, and revenue mix before trading"
+      ],
+      "risk_flags": [
+        "auto profile: concept fit may be broad until upgraded with official sources"
+      ],
+      "profile_quality": "auto_yahoo_search",
+      "profile_evidence_quality": "yahoo_search_metadata",
+      "concept_exposures": [
+        {
+          "concept_id": "cybersecurity",
+          "role": "auto_mapped",
+          "weight": 0.5,
+          "path": "Okta, Inc. metadata + exchange/supply-chain mapping -> 資安 exposure candidate"
+        },
+        {
+          "concept_id": "enterprise_saas_workflow",
+          "role": "auto_mapped",
+          "weight": 0.5,
+          "path": "Okta, Inc. metadata + exchange/supply-chain mapping -> 企業SaaS/工作流 exposure candidate"
+        },
+        {
+          "concept_id": "identity_security",
+          "role": "auto_mapped",
+          "weight": 0.5,
+          "path": "Okta, Inc. metadata + exchange/supply-chain mapping -> 身份安全/IAM exposure candidate"
+        }
+      ],
+      "source_refs": [
+        {
+          "title": "Yahoo Finance search metadata for OKTA",
+          "url": "https://finance.yahoo.com/quote/OKTA"
+        }
+      ],
+      "quote_metadata": {
+        "exchange": "NMS",
+        "quoteType": "EQUITY",
+        "longname": "Okta, Inc.",
+        "shortname": "Okta, Inc.",
+        "sector": "Technology",
+        "sectorDisp": "Technology",
+        "industry": "Software—Infrastructure",
+        "industryDisp": "Software—Infrastructure",
+        "exchDisp": "NASDAQ"
+      },
+      "autofill_inputs": {
+        "has_yahoo_search_quote": true,
+        "has_exchange_listing": false,
+        "has_official_website": false,
+        "has_supply_chain_rules": false,
+        "discovery_score": null,
+        "discovery_sources": [],
+        "match_reasons": []
+      }
+    },
+    {
       "symbol": "OMSE",
       "name": "OMS Energy Technologies Inc.",
       "market": "US",
@@ -270673,6 +272383,76 @@
         ],
         "shard": "",
         "output": "thememiner/data/profile_upgrades/official_us.json"
+      }
+    },
+    {
+      "symbol": "PATH",
+      "name": "UiPath, Inc.",
+      "market": "US",
+      "region": "US",
+      "exchange": "NYQ",
+      "raw_industry": null,
+      "website": null,
+      "company_name": null,
+      "sector": "Technology / Software—Infrastructure",
+      "primary_business": "UiPath, Inc. operates in Technology / Software—Infrastructure. ThemeMiner maps it to AI Agent應用/工作流 / 企業SaaS/工作流 for cross-market theme diffusion work. This profile is synthesized from public ticker/search metadata, exchange listing fields, and local supply-chain rules; upgrade with filings/product pages before using it as a high-conviction single-name thesis.",
+      "specializations": [
+        "AI Agent應用/工作流",
+        "企業SaaS/工作流"
+      ],
+      "products": [],
+      "platforms": [
+        "AI Agent應用/工作流",
+        "企業SaaS/工作流"
+      ],
+      "supply_chain_profile": {},
+      "constraints": [
+        "auto profile: verify product purity, customer exposure, and revenue mix before trading"
+      ],
+      "risk_flags": [
+        "auto profile: concept fit may be broad until upgraded with official sources"
+      ],
+      "profile_quality": "auto_yahoo_search",
+      "profile_evidence_quality": "yahoo_search_metadata",
+      "concept_exposures": [
+        {
+          "concept_id": "ai_agent_apps",
+          "role": "auto_mapped",
+          "weight": 0.5,
+          "path": "UiPath, Inc. metadata + exchange/supply-chain mapping -> AI Agent應用/工作流 exposure candidate"
+        },
+        {
+          "concept_id": "enterprise_saas_workflow",
+          "role": "auto_mapped",
+          "weight": 0.5,
+          "path": "UiPath, Inc. metadata + exchange/supply-chain mapping -> 企業SaaS/工作流 exposure candidate"
+        }
+      ],
+      "source_refs": [
+        {
+          "title": "Yahoo Finance search metadata for PATH",
+          "url": "https://finance.yahoo.com/quote/PATH"
+        }
+      ],
+      "quote_metadata": {
+        "exchange": "NYQ",
+        "quoteType": "EQUITY",
+        "longname": "UiPath, Inc.",
+        "shortname": "UiPath, Inc.",
+        "sector": "Technology",
+        "sectorDisp": "Technology",
+        "industry": "Software—Infrastructure",
+        "industryDisp": "Software—Infrastructure",
+        "exchDisp": "NYSE"
+      },
+      "autofill_inputs": {
+        "has_yahoo_search_quote": true,
+        "has_exchange_listing": false,
+        "has_official_website": false,
+        "has_supply_chain_rules": false,
+        "discovery_score": null,
+        "discovery_sources": [],
+        "match_reasons": []
       }
     },
     {
@@ -276476,6 +278256,84 @@
       }
     },
     {
+      "symbol": "SHOP",
+      "name": "Shopify Inc.",
+      "market": "US",
+      "region": "Canada",
+      "exchange": "NMS",
+      "raw_industry": null,
+      "website": null,
+      "company_name": null,
+      "sector": "Technology / Software—Application",
+      "primary_business": "Shopify Inc. operates in Technology / Software—Application. ThemeMiner maps it to AI應用軟體/創作工具 / 電商 / 金融科技/支付軟體 for cross-market theme diffusion work. This profile is synthesized from public ticker/search metadata, exchange listing fields, and local supply-chain rules; upgrade with filings/product pages before using it as a high-conviction single-name thesis.",
+      "specializations": [
+        "AI應用軟體/創作工具",
+        "電商",
+        "金融科技/支付軟體"
+      ],
+      "products": [],
+      "platforms": [
+        "AI應用軟體/創作工具",
+        "電商",
+        "金融科技/支付軟體"
+      ],
+      "supply_chain_profile": {},
+      "constraints": [
+        "auto profile: verify product purity, customer exposure, and revenue mix before trading"
+      ],
+      "risk_flags": [
+        "auto profile: concept fit may be broad until upgraded with official sources"
+      ],
+      "profile_quality": "auto_yahoo_search",
+      "profile_evidence_quality": "yahoo_search_metadata",
+      "concept_exposures": [
+        {
+          "concept_id": "ai_application_software",
+          "role": "auto_mapped",
+          "weight": 0.5,
+          "path": "Shopify Inc. metadata + exchange/supply-chain mapping -> AI應用軟體/創作工具 exposure candidate"
+        },
+        {
+          "concept_id": "ecommerce",
+          "role": "auto_mapped",
+          "weight": 0.5,
+          "path": "Shopify Inc. metadata + exchange/supply-chain mapping -> 電商 exposure candidate"
+        },
+        {
+          "concept_id": "fintech_payments_software",
+          "role": "auto_mapped",
+          "weight": 0.5,
+          "path": "Shopify Inc. metadata + exchange/supply-chain mapping -> 金融科技/支付軟體 exposure candidate"
+        }
+      ],
+      "source_refs": [
+        {
+          "title": "Yahoo Finance search metadata for SHOP",
+          "url": "https://finance.yahoo.com/quote/SHOP"
+        }
+      ],
+      "quote_metadata": {
+        "exchange": "NMS",
+        "quoteType": "EQUITY",
+        "longname": "Shopify Inc.",
+        "shortname": "Shopify Inc.",
+        "sector": "Technology",
+        "sectorDisp": "Technology",
+        "industry": "Software—Application",
+        "industryDisp": "Software—Application",
+        "exchDisp": "NASDAQ"
+      },
+      "autofill_inputs": {
+        "has_yahoo_search_quote": true,
+        "has_exchange_listing": false,
+        "has_official_website": false,
+        "has_supply_chain_rules": false,
+        "discovery_score": null,
+        "discovery_sources": [],
+        "match_reasons": []
+      }
+    },
+    {
       "symbol": "SIGI",
       "name": "SELECTIVE INSURANCE GROUP INC",
       "market": "US",
@@ -279942,6 +281800,84 @@
       }
     },
     {
+      "symbol": "TEAM",
+      "name": "Atlassian Corporation",
+      "market": "US",
+      "region": "Australia ADR",
+      "exchange": "NMS",
+      "raw_industry": null,
+      "website": null,
+      "company_name": null,
+      "sector": "Technology / Software—Application",
+      "primary_business": "Atlassian Corporation operates in Technology / Software—Application. ThemeMiner maps it to AI Agent應用/工作流 / 企業SaaS/工作流 / Observability/DevOps for cross-market theme diffusion work. This profile is synthesized from public ticker/search metadata, exchange listing fields, and local supply-chain rules; upgrade with filings/product pages before using it as a high-conviction single-name thesis.",
+      "specializations": [
+        "AI Agent應用/工作流",
+        "企業SaaS/工作流",
+        "Observability/DevOps"
+      ],
+      "products": [],
+      "platforms": [
+        "AI Agent應用/工作流",
+        "企業SaaS/工作流",
+        "Observability/DevOps"
+      ],
+      "supply_chain_profile": {},
+      "constraints": [
+        "auto profile: verify product purity, customer exposure, and revenue mix before trading"
+      ],
+      "risk_flags": [
+        "auto profile: concept fit may be broad until upgraded with official sources"
+      ],
+      "profile_quality": "auto_yahoo_search",
+      "profile_evidence_quality": "yahoo_search_metadata",
+      "concept_exposures": [
+        {
+          "concept_id": "ai_agent_apps",
+          "role": "auto_mapped",
+          "weight": 0.5,
+          "path": "Atlassian Corporation metadata + exchange/supply-chain mapping -> AI Agent應用/工作流 exposure candidate"
+        },
+        {
+          "concept_id": "enterprise_saas_workflow",
+          "role": "auto_mapped",
+          "weight": 0.5,
+          "path": "Atlassian Corporation metadata + exchange/supply-chain mapping -> 企業SaaS/工作流 exposure candidate"
+        },
+        {
+          "concept_id": "observability_devops",
+          "role": "auto_mapped",
+          "weight": 0.5,
+          "path": "Atlassian Corporation metadata + exchange/supply-chain mapping -> Observability/DevOps exposure candidate"
+        }
+      ],
+      "source_refs": [
+        {
+          "title": "Yahoo Finance search metadata for TEAM",
+          "url": "https://finance.yahoo.com/quote/TEAM"
+        }
+      ],
+      "quote_metadata": {
+        "exchange": "NMS",
+        "quoteType": "EQUITY",
+        "longname": "Atlassian Corporation",
+        "shortname": "Atlassian Corporation",
+        "sector": "Technology",
+        "sectorDisp": "Technology",
+        "industry": "Software—Application",
+        "industryDisp": "Software—Application",
+        "exchDisp": "NASDAQ"
+      },
+      "autofill_inputs": {
+        "has_yahoo_search_quote": true,
+        "has_exchange_listing": false,
+        "has_official_website": false,
+        "has_supply_chain_rules": false,
+        "discovery_score": null,
+        "discovery_sources": [],
+        "match_reasons": []
+      }
+    },
+    {
       "symbol": "TEN",
       "name": "TSAKOS ENERGY NAVIGATION LTD",
       "market": "US",
@@ -282538,6 +284474,76 @@
         ],
         "shard": "",
         "output": "thememiner/data/profile_upgrades/official_us.json"
+      }
+    },
+    {
+      "symbol": "U",
+      "name": "Unity Software Inc.",
+      "market": "US",
+      "region": "US",
+      "exchange": "NYQ",
+      "raw_industry": null,
+      "website": null,
+      "company_name": null,
+      "sector": "Technology / Software—Application",
+      "primary_business": "Unity Software Inc. operates in Technology / Software—Application. ThemeMiner maps it to AI應用軟體/創作工具 / 遊戲 for cross-market theme diffusion work. This profile is synthesized from public ticker/search metadata, exchange listing fields, and local supply-chain rules; upgrade with filings/product pages before using it as a high-conviction single-name thesis.",
+      "specializations": [
+        "AI應用軟體/創作工具",
+        "遊戲"
+      ],
+      "products": [],
+      "platforms": [
+        "AI應用軟體/創作工具",
+        "遊戲"
+      ],
+      "supply_chain_profile": {},
+      "constraints": [
+        "auto profile: verify product purity, customer exposure, and revenue mix before trading"
+      ],
+      "risk_flags": [
+        "auto profile: concept fit may be broad until upgraded with official sources"
+      ],
+      "profile_quality": "auto_yahoo_search",
+      "profile_evidence_quality": "yahoo_search_metadata",
+      "concept_exposures": [
+        {
+          "concept_id": "ai_application_software",
+          "role": "auto_mapped",
+          "weight": 0.5,
+          "path": "Unity Software Inc. metadata + exchange/supply-chain mapping -> AI應用軟體/創作工具 exposure candidate"
+        },
+        {
+          "concept_id": "gaming",
+          "role": "auto_mapped",
+          "weight": 0.5,
+          "path": "Unity Software Inc. metadata + exchange/supply-chain mapping -> 遊戲 exposure candidate"
+        }
+      ],
+      "source_refs": [
+        {
+          "title": "Yahoo Finance search metadata for U",
+          "url": "https://finance.yahoo.com/quote/U"
+        }
+      ],
+      "quote_metadata": {
+        "exchange": "NYQ",
+        "quoteType": "EQUITY",
+        "longname": "Unity Software Inc.",
+        "shortname": "Unity Software Inc.",
+        "sector": "Technology",
+        "sectorDisp": "Technology",
+        "industry": "Software—Application",
+        "industryDisp": "Software—Application",
+        "exchDisp": "NYSE"
+      },
+      "autofill_inputs": {
+        "has_yahoo_search_quote": true,
+        "has_exchange_listing": false,
+        "has_official_website": false,
+        "has_supply_chain_rules": false,
+        "discovery_score": null,
+        "discovery_sources": [],
+        "match_reasons": []
       }
     },
     {

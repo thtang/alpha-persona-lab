@@ -1,6 +1,6 @@
 {
   "schema_version": "thememiner_company_profiles_v1",
-  "updated_at": "2026-05-24",
+  "updated_at": "2026-06-16",
   "description": "Company-level product, role, and evidence metadata. This layer keeps the graph from treating every stock in a concept as interchangeable.",
   "profiles": [
     {
@@ -266,6 +266,30 @@
       ],
       "source_refs": [
         {"title": "TrendForce: Google TPU leads ASIC deployment", "url": "https://www.trendforce.com/presscenter/news/20260225-12934.html"}
+      ]
+    },
+    {
+      "symbol": "MRVL",
+      "name": "Marvell Technology",
+      "market": "US",
+      "region": "US",
+      "sector": "AI networking / custom silicon / electro-optics",
+      "primary_business": "Data-infrastructure semiconductor supplier focused on custom silicon, high-speed interconnect, optical DSP/electro-optics, Ethernet switching/connectivity, storage controllers, and cloud/AI data-center networking.",
+      "specializations": ["custom cloud ASIC", "AI data-center interconnect", "Ethernet switching/connectivity", "optical DSP / electro-optics", "storage controllers"],
+      "platforms": ["hyperscaler custom silicon programs", "AI cluster scale-out networking", "800G/1.6T optical interconnect", "data-center storage and switching"],
+      "constraints": ["hyperscaler program timing", "advanced packaging and HBM ecosystem dependencies", "optical DSP/electro-optics qualification", "telecom/storage cycle mix"],
+      "risk_flags": ["large-cap leader already visible after AI networking rerating", "customer concentration and ASIC program lumpiness", "telecom/storage weakness can dilute pure AI read-through"],
+      "bottleneck_profile": {"layer": "Layer 4 - AI networking / custom silicon / optical DSP", "scarcity": "high", "substitutability": "medium-low", "discovery_state": "visible_platform_leader", "score": 3.8, "reason": "AI clusters increasingly bottleneck on scale-out networking, custom silicon, and electro-optical I/O; Marvell is a platform leader but already institutionally discovered."},
+      "concept_exposures": [
+        {"concept_id": "ip_asic", "role": "global_leader", "weight": 0.88, "path": "hyperscaler custom silicon programs -> Marvell ASIC/connectivity demand -> custom AI hardware validation"},
+        {"concept_id": "networking", "role": "global_leader", "weight": 0.86, "path": "AI cluster scale-out -> Ethernet switching/connectivity and high-speed interconnect demand"},
+        {"concept_id": "cpo_optical", "role": "platform_leader", "weight": 0.74, "path": "AI bandwidth and power pressure -> optical DSP/electro-optics/CPO architecture signal"},
+        {"concept_id": "silicon_photonics", "role": "platform_leader", "weight": 0.68, "path": "electro-optical I/O roadmap -> SiPh/optical engine and packaging ecosystem read-through"},
+        {"concept_id": "semiconductor_components", "role": "data_infrastructure_semiconductor", "weight": 0.55, "path": "cloud/AI data infrastructure -> broad mixed-signal and connectivity silicon demand"}
+      ],
+      "source_refs": [
+        {"title": "Marvell products", "url": "https://www.marvell.com/products.html"},
+        {"title": "Marvell OFC 2026 AI data-center connectivity release", "url": "https://investor.marvell.com/news-events/press-releases/detail/1014/marvell-to-showcase-industry-leading-end-to-end-connectivity-solutions-for-ai-data-center-infrastructure-at-ofc-2026"}
       ]
     },
     {

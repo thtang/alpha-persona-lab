@@ -463,6 +463,32 @@ $zhezhe 用他的公開語料拆解「風險控制」到底是什麼訊號
 
 ## 更新資料
 
+### 每日自動更新 Scheduler
+
+macOS 可以用 repo 內的 launchd 安裝腳本每天自動刷新資料庫。預設每天本機時間 07:30 跑一次，`--workers 3` 會讓 Gooaye / Yutinghao / Zhezhe source sync 並行，ThemeMiner 則透過 `run_codex_agent_refresh.py` 啟動多個本機 Codex agent 做 discovery、source evidence shard、profile upgrade 和 thesis cards。
+
+```bash
+scripts/install-daily-scheduler.sh --hour 7 --minute 30 --workers 3
+```
+
+手動試跑同一套 supervisor：
+
+```bash
+scripts/daily_update.py --jobs all --workers 3 --theme-profile codex
+```
+
+如果只想做較輕量的價格/新聞/laggard 更新，不跑 source evidence shard：
+
+```bash
+scripts/install-daily-scheduler.sh --theme-profile light --workers 2
+```
+
+排程輸出會寫到 `logs/daily_update/`，最新狀態在 `.runtime/daily_update/latest_run.json`。解除排程：
+
+```bash
+scripts/install-daily-scheduler.sh --uninstall
+```
+
 ### Gooaye
 
 逐字稿來源是 `https://whatmkreallysaid.com/`。`gooaye` skill 觸發時會先做每日同步檢查。

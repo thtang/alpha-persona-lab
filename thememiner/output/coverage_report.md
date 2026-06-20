@@ -1,109 +1,82 @@
 # ThemeMiner Coverage Audit
 
-Generated at: 2026-06-14T06:38:28.320414+00:00
+Generated at: 2026-06-16T13:56:32.725097+00:00
 
 ## Summary
 
-- Stocks: 2402
-- Concept-stock edges: 6682
-- Price-correlation edges: 5185
-- Product nodes: 604
+- Stocks: 2403
+- Concept-stock edges: 6687
+- Price-correlation edges: 5194
+- Product nodes: 609
 - Supply-layer nodes: 56
 - Concept supply-chain edges: 279
-- Product-stock edges: 15820
-- Layer-stock edges: 2493
-- Same-product peer edges: 9711
-- Same-layer peer edges: 1997
-- Profile status: {'profiled': 84, 'fallback_from_concepts': 26, 'official_sec_profile': 350, 'market_metadata_profile': 94, 'official_tw_exchange_profile': 1846, 'auto_yahoo_search': 1, 'discovered_exchange_rules': 1}
-- Profile quality: {'curated': 84, 'fallback': 26, 'official_sec_profile': 350, 'market_metadata_profile': 94, 'official_tw_exchange_profile': 1846, 'auto_yahoo_search': 1, 'discovered_exchange_rules': 1}
-- Usable business profiles with source refs: 2376 / 2402
-- Markets: {'US': 428, 'JP': 37, 'KR': 6, 'TW': 1872, 'CN': 44, 'HK': 15}
+- Product-stock edges: 15837
+- Layer-stock edges: 2496
+- Same-product peer edges: 9718
+- Same-layer peer edges: 1999
+- Profile status: {'profiled': 85, 'auto_yahoo_search': 27, 'official_sec_profile': 350, 'market_metadata_profile': 94, 'official_tw_exchange_profile': 1846, 'discovered_exchange_rules': 1}
+- Profile quality: {'curated': 85, 'auto_yahoo_search': 27, 'official_sec_profile': 350, 'market_metadata_profile': 94, 'official_tw_exchange_profile': 1846, 'discovered_exchange_rules': 1}
+- Usable business profiles with source refs: 2403 / 2403
+- Markets: {'US': 429, 'JP': 37, 'KR': 6, 'TW': 1872, 'CN': 44, 'HK': 15}
 
 ## Node Types
 
-stock=2402, product=604, concept=156, supply_layer=56, category=8
+stock=2403, product=609, concept=156, supply_layer=56, category=8
 
 ## Edge Types
 
-same_concept_cross_market=36021, product_stock=15820, same_product_peer=9711, concept_stock=6682, stock_downstream_concept=6183, price_correlation=5185, upstream_concept_stock=4130, layer_stock=2493, same_supply_layer_peer=1997, concept_supply_chain=279, product_concept=223, category_concept=156, layer_concept=56
+same_concept_cross_market=36334, product_stock=15837, same_product_peer=9718, concept_stock=6687, stock_downstream_concept=6191, price_correlation=5194, upstream_concept_stock=4136, layer_stock=2496, same_supply_layer_peer=1999, concept_supply_chain=279, product_concept=223, category_concept=156, layer_concept=56
 
 ## Top Theme Coverage
 
 | Theme | Score | Stocks | Curated/Profiled | Usable Business Profiles | Products | Layers | Up | Down | Corr Edges |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 晶片電阻 `chip_resistor` | 72.8 | 5 | 3 (60%) | 5 (100%) | 4 | 1 | 2 | 3 | 1 |
-| 外延/MOCVD設備 `epitaxy_equipment` | 69.9 | 1 | 1 (100%) | 1 (100%) | 0 | 0 | 0 | 1 | 0 |
-| 鉭電容 `tantalum_capacitor` | 64.7 | 2 | 2 (100%) | 2 (100%) | 0 | 0 | 0 | 0 | 0 |
-| 固態鋁電容/SP-Cap `aluminum_polymer_cap` | 57.5 | 10 | 8 (80%) | 10 (100%) | 4 | 1 | 2 | 4 | 11 |
-| KV Cache/RAG記憶體 `kv_cache_memory` | 53.7 | 4 | 3 (75%) | 4 (100%) | 4 | 1 | 6 | 2 | 3 |
-| HDD冷資料/長期記憶 `hdd_cold_storage` | 53.5 | 3 | 2 (67%) | 3 (100%) | 4 | 1 | 1 | 4 | 1 |
-| 高壓MLCC `high_voltage_mlcc` | 53.5 | 12 | 7 (58%) | 12 (100%) | 3 | 1 | 3 | 4 | 28 |
-| IC-製造 `ic_manufacturing` | 53.0 | 1 | 1 (100%) | 1 (100%) | 0 | 0 | 0 | 0 | 0 |
-| 精密感測/量測 `precision_sensing` | 51.1 | 1 | 1 (100%) | 1 (100%) | 0 | 0 | 0 | 2 | 0 |
-| 銀行 `banks` | 50.3 | 186 | 0 (0%) | 186 (100%) | 3 | 1 | 2 | 4 | 90 |
-| 薄膜電容 `film_capacitor` | 48.9 | 3 | 1 (33%) | 3 (100%) | 3 | 1 | 3 | 4 | 0 |
-| 電感/扼流圈 `inductor_choke` | 48.4 | 8 | 6 (75%) | 8 (100%) | 4 | 1 | 2 | 3 | 11 |
-| IC-DRAM製造 `dram_manufacturing` | 47.6 | 9 | 1 (11%) | 9 (100%) | 3 | 1 | 2 | 6 | 20 |
-| 企業級SSD/eSSD `enterprise_ssd` | 47.4 | 6 | 4 (67%) | 6 (100%) | 4 | 1 | 3 | 5 | 4 |
-| Agentic AI系統級基建 `agentic_ai_infrastructure` | 46.3 | 2 | 1 (50%) | 2 (100%) | 3 | 1 | 4 | 5 | 0 |
-| 保險 `insurance` | 43.0 | 71 | 0 (0%) | 71 (100%) | 3 | 1 | 2 | 1 | 90 |
-| PCB-材料設備 `pcb_material_equipment` | 43.0 | 9 | 0 (0%) | 9 (100%) | 4 | 1 | 4 | 5 | 7 |
-| AI測試/Probe Card/Interface `ai_test_probe_interface` | 41.4 | 10 | 4 (40%) | 10 (100%) | 5 | 1 | 2 | 4 | 4 |
-| 金控 `financial_holding` | 41.1 | 46 | 0 (0%) | 46 (100%) | 0 | 0 | 3 | 0 | 90 |
-| 手機製造 `smartphone_manufacturing` | 40.2 | 1 | 0 (0%) | 1 (100%) | 0 | 0 | 0 | 0 | 0 |
-| HBM `hbm` | 39.4 | 12 | 4 (33%) | 12 (100%) | 2 | 1 | 6 | 2 | 22 |
-| ABF `abf_substrate` | 38.0 | 7 | 0 (0%) | 7 (100%) | 3 | 1 | 3 | 4 | 7 |
-| Host DRAM/上下文記憶 `host_dram` | 37.9 | 2 | 1 (50%) | 2 (100%) | 4 | 1 | 5 | 4 | 0 |
-| 航運 `shipping` | 37.7 | 50 | 0 (0%) | 50 (100%) | 3 | 1 | 2 | 1 | 90 |
-| 玻璃陶瓷 `glass_ceramics` | 37.4 | 9 | 1 (11%) | 9 (100%) | 0 | 0 | 0 | 2 | 2 |
-| 被動元件 `passive_components` | 36.9 | 230 | 16 (7%) | 230 (100%) | 4 | 1 | 3 | 6 | 90 |
-| 物流 `logistics` | 36.3 | 39 | 0 (0%) | 39 (100%) | 0 | 0 | 1 | 0 | 90 |
-| GLP-1/減重藥 `glp1_obesity` | 36.0 | 11 | 0 (0%) | 11 (100%) | 3 | 1 | 3 | 1 | 5 |
-| AI PC `ai_pc` | 35.8 | 5 | 2 (40%) | 5 (100%) | 0 | 0 | 2 | 0 | 1 |
-| 無人機 `drone` | 35.3 | 10 | 0 (0%) | 10 (100%) | 0 | 0 | 1 | 0 | 6 |
-| 軍工/國防 `defense` | 35.1 | 29 | 2 (7%) | 29 (100%) | 4 | 1 | 2 | 1 | 33 |
-| CPU Socket/測試座/插槽 `cpu_socket` | 35.0 | 5 | 3 (60%) | 5 (100%) | 4 | 1 | 3 | 2 | 0 |
-| 金屬製品 `metal_parts` | 35.0 | 57 | 0 (0%) | 57 (100%) | 0 | 0 | 0 | 9 | 90 |
-| Endpoint/XDR資安 `endpoint_xdr_security` | 34.7 | 4 | 2 (50%) | 4 (100%) | 5 | 1 | 2 | 2 | 1 |
-| GPU加速器 `gpu_accelerator` | 34.5 | 7 | 4 (57%) | 7 (100%) | 0 | 0 | 3 | 0 | 5 |
-| 新藥 `new_drug` | 34.4 | 166 | 0 (0%) | 166 (100%) | 0 | 0 | 1 | 2 | 90 |
-| CDMO/CRO `cdmo_cro` | 34.3 | 165 | 0 (0%) | 165 (100%) | 4 | 1 | 1 | 3 | 90 |
-| 證券 `securities` | 34.3 | 41 | 0 (0%) | 41 (100%) | 0 | 0 | 0 | 0 | 90 |
-| 高速連接器/線纜 `high_speed_connector` | 33.8 | 6 | 4 (67%) | 6 (100%) | 4 | 1 | 3 | 3 | 1 |
-| 雲端資安/SASE/CNAPP `cloud_security_sase` | 33.5 | 8 | 4 (50%) | 6 (75%) | 5 | 1 | 4 | 2 | 13 |
-| 營建 `construction` | 33.0 | 87 | 0 (0%) | 87 (100%) | 0 | 0 | 0 | 0 | 90 |
-| 化學工業 `chemicals` | 33.0 | 54 | 1 (2%) | 54 (100%) | 0 | 0 | 1 | 11 | 45 |
-| 資安 `cybersecurity` | 32.6 | 56 | 6 (11%) | 51 (91%) | 0 | 0 | 5 | 1 | 90 |
-| 二次電池 `battery_secondary` | 32.3 | 3 | 3 (100%) | 3 (100%) | 0 | 0 | 0 | 0 | 2 |
-| 功率分立元件/MOSFET `power_discrete_semiconductor` | 31.8 | 6 | 2 (33%) | 6 (100%) | 6 | 1 | 3 | 6 | 7 |
+| 晶片電阻 `chip_resistor` | 80.4 | 5 | 3 (60%) | 5 (100%) | 4 | 1 | 2 | 3 | 2 |
+| 高壓MLCC `high_voltage_mlcc` | 76.6 | 12 | 7 (58%) | 12 (100%) | 3 | 1 | 3 | 4 | 30 |
+| HDD冷資料/長期記憶 `hdd_cold_storage` | 75.1 | 3 | 2 (67%) | 3 (100%) | 4 | 1 | 1 | 4 | 1 |
+| KV Cache/RAG記憶體 `kv_cache_memory` | 71.8 | 4 | 3 (75%) | 4 (100%) | 4 | 1 | 6 | 2 | 3 |
+| 外延/MOCVD設備 `epitaxy_equipment` | 71.1 | 1 | 1 (100%) | 1 (100%) | 0 | 0 | 0 | 1 | 0 |
+| 企業級SSD/eSSD `enterprise_ssd` | 68.5 | 6 | 4 (67%) | 6 (100%) | 4 | 1 | 3 | 5 | 3 |
+| 鉭電容 `tantalum_capacitor` | 68.5 | 2 | 2 (100%) | 2 (100%) | 0 | 0 | 0 | 0 | 0 |
+| IC-DRAM製造 `dram_manufacturing` | 67.1 | 9 | 1 (11%) | 9 (100%) | 3 | 1 | 2 | 6 | 23 |
+| Agentic AI系統級基建 `agentic_ai_infrastructure` | 63.0 | 2 | 1 (50%) | 2 (100%) | 3 | 1 | 4 | 5 | 0 |
+| 精密感測/量測 `precision_sensing` | 62.6 | 1 | 1 (100%) | 1 (100%) | 0 | 0 | 0 | 2 | 0 |
+| 固態鋁電容/SP-Cap `aluminum_polymer_cap` | 61.0 | 10 | 8 (80%) | 10 (100%) | 4 | 1 | 2 | 4 | 11 |
+| HBM `hbm` | 56.5 | 12 | 4 (33%) | 12 (100%) | 2 | 1 | 6 | 2 | 25 |
+| 薄膜電容 `film_capacitor` | 56.4 | 3 | 1 (33%) | 3 (100%) | 3 | 1 | 3 | 4 | 0 |
+| 電感/扼流圈 `inductor_choke` | 54.5 | 8 | 6 (75%) | 8 (100%) | 4 | 1 | 2 | 3 | 9 |
+| IC-製造 `ic_manufacturing` | 53.5 | 1 | 1 (100%) | 1 (100%) | 0 | 0 | 0 | 0 | 0 |
+| 手機製造 `smartphone_manufacturing` | 53.5 | 1 | 0 (0%) | 1 (100%) | 0 | 0 | 0 | 0 | 0 |
+| SOI晶圓 `soi_wafer` | 52.8 | 2 | 2 (100%) | 2 (100%) | 0 | 0 | 0 | 1 | 1 |
+| Host DRAM/上下文記憶 `host_dram` | 51.1 | 2 | 1 (50%) | 2 (100%) | 4 | 1 | 5 | 4 | 0 |
+| 記憶體IC設計 `memory_ic_design` | 50.5 | 8 | 2 (25%) | 8 (100%) | 0 | 0 | 0 | 2 | 11 |
+| 矽光子/SiPh `silicon_photonics` | 50.2 | 7 | 7 (100%) | 7 (100%) | 3 | 1 | 3 | 3 | 4 |
+| CPU Socket/測試座/插槽 `cpu_socket` | 49.7 | 5 | 3 (60%) | 5 (100%) | 4 | 1 | 3 | 2 | 1 |
+| AI PC `ai_pc` | 49.3 | 5 | 2 (40%) | 5 (100%) | 0 | 0 | 2 | 0 | 1 |
+| AI測試/Probe Card/Interface `ai_test_probe_interface` | 48.9 | 10 | 4 (40%) | 10 (100%) | 5 | 1 | 2 | 4 | 4 |
+| PCB-材料設備 `pcb_material_equipment` | 48.4 | 9 | 0 (0%) | 9 (100%) | 4 | 1 | 4 | 5 | 7 |
+| 銀行 `banks` | 47.3 | 186 | 0 (0%) | 186 (100%) | 3 | 1 | 2 | 4 | 90 |
+| Legacy記憶體 `legacy_memory` | 45.9 | 3 | 0 (0%) | 3 (100%) | 0 | 0 | 0 | 0 | 1 |
+| IP/ASIC `ip_asic` | 45.0 | 10 | 5 (50%) | 10 (100%) | 0 | 0 | 1 | 3 | 7 |
+| 無人機 `drone` | 44.5 | 10 | 0 (0%) | 10 (100%) | 0 | 0 | 1 | 0 | 5 |
+| 保險 `insurance` | 44.4 | 71 | 0 (0%) | 71 (100%) | 3 | 1 | 2 | 1 | 90 |
+| HVDC功率半導體 `hvdc_power_semiconductor` | 43.9 | 7 | 6 (86%) | 7 (100%) | 5 | 1 | 6 | 5 | 7 |
+| 金控 `financial_holding` | 43.8 | 46 | 0 (0%) | 46 (100%) | 0 | 0 | 3 | 0 | 90 |
+| InP磷化銦光子 `inp_photonics` | 43.1 | 9 | 8 (89%) | 9 (100%) | 4 | 1 | 2 | 3 | 11 |
+| 二次電池 `battery_secondary` | 42.5 | 3 | 3 (100%) | 3 (100%) | 0 | 0 | 0 | 0 | 2 |
+| ABF `abf_substrate` | 42.3 | 7 | 0 (0%) | 7 (100%) | 3 | 1 | 3 | 4 | 7 |
+| CoWoS `cowos` | 41.7 | 5 | 2 (40%) | 5 (100%) | 0 | 0 | 0 | 0 | 3 |
+| 被動元件 `passive_components` | 40.9 | 230 | 16 (7%) | 230 (100%) | 4 | 1 | 3 | 6 | 90 |
+| 玻璃陶瓷 `glass_ceramics` | 40.6 | 9 | 1 (11%) | 9 (100%) | 0 | 0 | 0 | 2 | 3 |
+| GPU加速器 `gpu_accelerator` | 39.7 | 7 | 4 (57%) | 7 (100%) | 0 | 0 | 3 | 0 | 5 |
+| 銅/銅箔 `copper` | 39.7 | 32 | 0 (0%) | 32 (100%) | 3 | 1 | 1 | 9 | 90 |
+| 電源管理IC/PMIC `power_management_ic` | 39.1 | 4 | 0 (0%) | 4 (100%) | 5 | 1 | 2 | 6 | 5 |
+| 紙業 `paper` | 39.0 | 7 | 0 (0%) | 7 (100%) | 0 | 0 | 0 | 0 | 9 |
+| 金屬製品 `metal_parts` | 38.6 | 57 | 0 (0%) | 57 (100%) | 0 | 0 | 0 | 9 | 90 |
+| 軍工/國防 `defense` | 38.4 | 29 | 2 (7%) | 29 (100%) | 4 | 1 | 2 | 1 | 32 |
+| CPO/光通訊 `cpo_optical` | 38.0 | 18 | 18 (100%) | 18 (100%) | 4 | 1 | 6 | 4 | 42 |
+| CPU-Memory Interface/CXL `memory_interface` | 37.6 | 1 | 0 (0%) | 1 (100%) | 4 | 1 | 4 | 3 | 0 |
 
 ## Missing Business/Profile Refs
 
-| Symbol | Market | Status | Concepts | Business |
-|---|---|---|---|---|
-| 002230.SZ | CN | fallback_from_concepts | ai_agent_apps, ai_application_software, cloud_ai | 科大訊飛 is tracked as a AI Agent應用/工作流 / AI應用軟體/創作工具 / 雲端/AI軟體 theme node. Full company profile pending. |
-| 300454.SZ | CN | fallback_from_concepts | cloud_security_sase, cybersecurity, system_integration | 深信服 is tracked as a 雲端資安/SASE/CNAPP / 資安 / 系統整合 theme node. Full company profile pending. |
-| 600588.SS | CN | fallback_from_concepts | cloud_ai, enterprise_saas_workflow, system_integration | 用友網絡 is tracked as a 雲端/AI軟體 / 企業SaaS/工作流 / 系統整合 theme node. Full company profile pending. |
-| 688111.SS | CN | fallback_from_concepts | ai_application_software, cloud_ai, enterprise_saas_workflow | 金山辦公 is tracked as a AI應用軟體/創作工具 / 雲端/AI軟體 / 企業SaaS/工作流 theme node. Full company profile pending. |
-| 0700.HK | HK | fallback_from_concepts | ai_application_software, cloud_ai, fintech_payments_software, gaming | Tencent is tracked as a AI應用軟體/創作工具 / 雲端/AI軟體 / 金融科技/支付軟體 / 遊戲 theme node. Full company profile pending. |
-| 1024.HK | HK | fallback_from_concepts | ai_application_software, ecommerce | Kuaishou is tracked as a AI應用軟體/創作工具 / 電商 theme node. Full company profile pending. |
-| 3690.HK | HK | fallback_from_concepts | ai_application_software, ecommerce, fintech_payments_software | Meituan is tracked as a AI應用軟體/創作工具 / 電商 / 金融科技/支付軟體 theme node. Full company profile pending. |
-| 9888.HK | HK | fallback_from_concepts | ai_agent_apps, ai_application_software, autonomous_driving, cloud_ai | Baidu is tracked as a AI Agent應用/工作流 / AI應用軟體/創作工具 / 自動駕駛/ADAS / 雲端/AI軟體 theme node. Full company profile pending. |
-| 9988.HK | HK | fallback_from_concepts | ai_agent_apps, ai_data_platform, cloud_ai, ecommerce | Alibaba is tracked as a AI Agent應用/工作流 / AI資料平台/湖倉 / 雲端/AI軟體 / 電商 theme node. Full company profile pending. |
-| 3697.T | JP | fallback_from_concepts | enterprise_saas_workflow, observability_devops, system_integration | SHIFT is tracked as a 企業SaaS/工作流 / Observability/DevOps / 系統整合 theme node. Full company profile pending. |
-| 4684.T | JP | fallback_from_concepts | enterprise_saas_workflow, system_integration | OBIC is tracked as a 企業SaaS/工作流 / 系統整合 theme node. Full company profile pending. |
-| 4751.T | JP | fallback_from_concepts | ai_application_software, ecommerce, gaming | CyberAgent is tracked as a AI應用軟體/創作工具 / 電商 / 遊戲 theme node. Full company profile pending. |
-| 6701.T | JP | fallback_from_concepts | ai_data_platform, communication_equipment, cybersecurity, system_integration | NEC is tracked as a AI資料平台/湖倉 / 通訊設備 / 資安 / 系統整合 theme node. Full company profile pending. |
-| 9613.T | JP | fallback_from_concepts | cloud_ai, enterprise_saas_workflow, system_integration | NTT DATA Group is tracked as a 雲端/AI軟體 / 企業SaaS/工作流 / 系統整合 theme node. Full company profile pending. |
-| 6741.TW | TW | fallback_from_concepts | ai_application_software, ecommerce, fintech_payments_software | 91APP-KY is tracked as a AI應用軟體/創作工具 / 電商 / 金融科技/支付軟體 theme node. Full company profile pending. |
-| ADBE | US | fallback_from_concepts | ai_application_software, cloud_ai, enterprise_saas_workflow | Adobe is tracked as a AI應用軟體/創作工具 / 雲端/AI軟體 / 企業SaaS/工作流 theme node. Full company profile pending. |
-| APP | US | fallback_from_concepts | ai_application_software, ecommerce, gaming | AppLovin is tracked as a AI應用軟體/創作工具 / 電商 / 遊戲 theme node. Full company profile pending. |
-| DUOL | US | fallback_from_concepts | ai_application_software, ecommerce | Duolingo is tracked as a AI應用軟體/創作工具 / 電商 theme node. Full company profile pending. |
-| FTNT | US | fallback_from_concepts | cloud_security_sase, cybersecurity, networking | Fortinet is tracked as a 雲端資安/SASE/CNAPP / 資安 / 網通 theme node. Full company profile pending. |
-| GTLB | US | fallback_from_concepts | cybersecurity, enterprise_saas_workflow, observability_devops | GitLab is tracked as a 資安 / 企業SaaS/工作流 / Observability/DevOps theme node. Full company profile pending. |
-| INTU | US | fallback_from_concepts | ai_application_software, enterprise_saas_workflow, fintech_payments_software | Intuit is tracked as a AI應用軟體/創作工具 / 企業SaaS/工作流 / 金融科技/支付軟體 theme node. Full company profile pending. |
-| OKTA | US | fallback_from_concepts | cybersecurity, enterprise_saas_workflow, identity_security | Okta is tracked as a 資安 / 企業SaaS/工作流 / 身份安全/IAM theme node. Full company profile pending. |
-| PATH | US | fallback_from_concepts | ai_agent_apps, enterprise_saas_workflow | UiPath is tracked as a AI Agent應用/工作流 / 企業SaaS/工作流 theme node. Full company profile pending. |
-| SHOP | US | fallback_from_concepts | ai_application_software, ecommerce, fintech_payments_software | Shopify is tracked as a AI應用軟體/創作工具 / 電商 / 金融科技/支付軟體 theme node. Full company profile pending. |
-| TEAM | US | fallback_from_concepts | ai_agent_apps, enterprise_saas_workflow, observability_devops | Atlassian is tracked as a AI Agent應用/工作流 / 企業SaaS/工作流 / Observability/DevOps theme node. Full company profile pending. |
-| U | US | fallback_from_concepts | ai_application_software, gaming | Unity Software is tracked as a AI應用軟體/創作工具 / 遊戲 theme node. Full company profile pending. |
+- All stocks have a business profile and at least one source ref.

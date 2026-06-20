@@ -1,7 +1,7 @@
 {
   "schema_version": "company_thesis_overrides_v1",
   "description": "Curated thesis cards for high-priority names whose raw exchange/profile mapping is too broad for trade reasoning. These overrides are merged on top of generated ThemeMiner company thesis cards.",
-  "updated_at": "2026-05-24",
+  "updated_at": "2026-06-16",
   "overrides": {
     "2313.TW": {
       "name": "華通",
@@ -262,6 +262,56 @@
       "risks": [
         "precision sensor cycle can diverge from passive component cycle",
         "small-cap liquidity and sharp post-earnings moves"
+      ],
+      "source_quality": "curated_needs_financial_verification"
+    },
+    "MRVL": {
+      "name": "Marvell Technology",
+      "thesis_label": "AI networking / custom silicon / optical DSP",
+      "primary_business": "Marvell is a data-infrastructure semiconductor company spanning custom cloud ASIC, high-speed interconnect, Ethernet switching/connectivity, optical DSP/electro-optics, and storage/data-center silicon.",
+      "business_segments": [
+        "custom cloud ASIC",
+        "AI data-center interconnect",
+        "Ethernet switching/connectivity",
+        "optical DSP / electro-optics",
+        "storage controller and data infrastructure silicon"
+      ],
+      "ai_chain_position": "AI clusters need scale-out networking, custom accelerator/ASIC programs, and optical/electrical interconnect. MRVL is a visible platform leader that should lead or validate second-layer names such as precision timing, optical components, SiPh/CPO packaging, high-speed PCB, and AI networking components.",
+      "non_ai_chain_position": "Carrier, enterprise networking, storage and automotive cycles can dilute pure AI read-through; short-term stock behavior can be dominated by hyperscaler design-win timing and valuation.",
+      "catalysts": [
+        "custom cloud ASIC design wins",
+        "AI scale-out networking and Ethernet fabric demand",
+        "800G/1.6T optical DSP/electro-optics ramp",
+        "CPO and silicon photonics architecture validation",
+        "hyperscaler AI capex continuation"
+      ],
+      "leader_indicators": [
+        "AVGO Broadcom",
+        "NVDA Nvidia",
+        "AMD",
+        "COHR Coherent",
+        "LITE Lumentum",
+        "SITM SiTime",
+        "TER Teradyne",
+        "FORM FormFactor"
+      ],
+      "peer_symbols": [
+        "AVGO",
+        "NVDA",
+        "AMD",
+        "COHR",
+        "LITE",
+        "SITM",
+        "CRDO",
+        "ANET",
+        "FORM",
+        "TER"
+      ],
+      "risks": [
+        "already a discovered AI infrastructure leader after large rerating",
+        "option IV can be elevated after gap moves",
+        "custom ASIC revenue is program-lumpy and customer-concentrated",
+        "telecom/storage weakness can offset AI networking strength"
       ],
       "source_quality": "curated_needs_financial_verification"
     },
