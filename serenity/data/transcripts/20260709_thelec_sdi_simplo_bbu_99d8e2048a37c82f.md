@@ -1,0 +1,200 @@
+---
+id: 20260709_thelec_sdi_simplo_bbu_99d8e2048a37c82f
+author: Serenity / @aleabitoreddit research corpus
+source_name: thelec_sdi_simplo_bbu
+source_kind: trade_media
+evidence_strength: medium
+url: https://www.thelec.net/news/articleView.html?idxno=11952
+fetched_at: 2026-07-09T23:30:04+00:00
+content_hash: 99d8e2048a37c82f
+match_authority: serenity_recall_hint
+---
+
+# Serenity Source Transcript
+
+> This is a local, transcript-like extraction of a public source page used for recall. Social/KOL content is a weak lead until confirmed by official, filing, price/volume, or trade-media evidence.
+
+## Matched Concepts
+
+- `data_center_bbu` AI資料中心BBU (terms: BBU, backup power, battery backup)
+- `high_power_cylindrical_battery` 高功率圓柱電池 (terms: NCA, cylindrical, silicon-carbon)
+- `hvdc_power_semiconductor` HVDC功率半導體 (terms: GaN)
+
+## Matched Companies
+
+- `000660.KS` SK Hynix (terms: SK Hynix)
+- `005930.KS` Samsung Electronics (terms: Samsung Electronics)
+- `6121.TWO` 新普 (terms: Simplo, Trend Power)
+- `D` DOMINION ENERGY, INC (terms: D)
+- `U` Unity Software Inc. (terms: U)
+- `INTC` Intel (terms: Intel)
+- `6752.T` Panasonic Holdings (terms: Panasonic)
+- `006400.KS` Samsung SDI (terms: Samsung SDI)
+- `009150.KS` Samsung Electro-Mechanics (terms: Samsung Electro-Mechanics)
+
+## Extracted Text
+
+Samsung SDI Supplies AI Data Center Battery Cells to Taiwan's Simplo Technology 
+ --> 
+ 주요서비스 바로가기 
+ 본문 바로가기 
+ 매체정보 바로가기 
+ 로그인 바로가기 
+ 기사검색 바로가기 
+ Login 
+ Join 
+ Mobile 
+ UPDATE : 2026-07-09 14:55 (Thurs) 
+ KOREAN 
+ 기사검색 
+ Latest Stories 
+ Engineering 
+ Semiconductor 
+ Display Panel 
+ Battery 
+ Supply Chain 
+ Defense·Energy 
+ Biotech 
+ IT·Gaming 
+ Telecom 
+ 이전 기사보기 
+ 다음 기사보기 
+ Samsung SDI Supplies AI Data Center Battery Cells to Taiwan's Simplo Technology 
+ Character Size Settings
+ 가
+ 가
+ The body content of the article will be changed to this letter size.
+ 스크롤 이동 상태바 
+ Battery 
+ Samsung SDI Supplies AI Data Center Battery Cells to Taiwan's Simplo Technology
+ Orders for High-Power Cylindrical Cells Rise as AI Infrastructure Spending Accelerates
+ EunGyu Kim 
+ Published 2026.07.05 10:55
+ Reply 0
+ Character Size Settings
+ 가
+ 가
+ The body content of the article will be changed to this letter size.
+ 이 기사를 공유합니다
+ Battery Backup Units (BBUs) installed inside data center server racks use cylindrical battery cells. Rising demand for the market is driving increased demand for Samsung SDI's high-power cylindrical cells. 
+ Samsung SDI has supplied hundreds of millions of battery cells for artificial intelligence data centers to Taiwan's Simplo Technology Co., Ltd., with annual orders expected to have a meaningful impact on its small battery business as demand continues to increase.
+ High output is the key requirement for data center batteries. Samsung SDI's cells use nickel-cobalt-aluminum (NCA) chemistry to deliver high power output and fast-charging performance.
+ According to industry sources on July 3, Samsung SDI is supplying battery cells to Simplo Technology. As demand from data centers has increased, production of Samsung SDI's cylindrical cells has also risen sharply. Samsung SDI supplies the cells to Simplo, which assembles them into battery packs such as Battery Backup Units (BBUs) before delivering the finished products to North American technology companies including Amazon and Meta.
+ Simplo, a publicly listed Taiwanese company, initially focused on battery packs for consumer electronics including laptops, smartphones and tablets. It later expanded into electric vehicles, electric bicycles and energy storage systems (ESS). In 2014, it spun off Trend Power to expand its data center battery and ESS businesses. Since 2019, Trend Power has produced BBUs for data centers and supplied them to large cloud service providers.
+ "Trend Power, Simplo's lithium-ion battery manufacturing subsidiary, receives Samsung SDI's cells and builds them into modules and packs before they are ultimately installed as BBUs for US technology companies and other end customers," an industry source said. "Simplo has preferred Samsung SDI's products since the days when the two companies worked together on notebook battery supplies."
+ A Samsung SDI official said production of cylindrical batteries and factory utilization rates have increased as BBU demand rises alongside expanding investment in data centers, but declined to identify specific customers. Simplo did not comment on whether it conducts business with Samsung SDI.
+ Simplo's preference for Samsung SDI reflects not only their long-standing business relationship but also Samsung SDI's technology tailored to data center requirements and US policies aimed at excluding Chinese-made batteries.
+ AI servers operate multiple graphics processing units (GPUs) simultaneously, drawing large amounts of power over short periods. This can cause voltage fluctuations. Major cloud operators have increasingly adopted BBUs installed in each server rack to compensate for sudden power shortages and stabilize voltage. BBUs also provide immediate backup power during outages to prevent server data loss. Because they are installed inside densely packed server racks, the batteries must be compact while capable of delivering high current instantly.
+ Samsung SDI's cylindrical cells for BBUs combine high-nickel NCA cathode materials with silicon-carbon composite (SCN) anodes to provide high capacity and fast charging. Nickel improves energy density, cobalt enhances stability and aluminum boosts power output. Lithium iron phosphate (LFP) cells offer lower energy density in the same cylindrical form factor. Their lower operating voltage of 3.2 volts, compared with 3.6 to 3.7 volts for NCA cells, also results in weaker peak power output, making them less suitable for BBU applications.
+ Panasonic, Samsung SDI's main rival in the BBU market, has also seen strong growth in data center battery cell sales. Industry sources said both companies are experiencing supply shortages for BBU cells.
+ Panasonic, which competes with Samsung SDI for leadership in the BBU market, is also seeing strong growth in sales of battery cells for data centers. Both companies are reportedly facing supply shortages for BBU cells. 
+ The United States has tightened restrictions on the use of Chinese-made batteries across industries. After the US Department of Defense updated its "1260H List" of Chinese military companies, US companies have faced difficulties conducting direct business with listed Chinese companies since June 30. Several Chinese battery manufacturers are included on the list.
+ Major technology companies are approaching battery suppliers in South Korea, China and Japan to secure batteries for data centers. Industry sources said they are seeking to exclude Chinese-made cells from US data centers while placing greater emphasis on reliability and maintenance guarantees than on price. Samsung SDI manufactures cylindrical cells suitable for BBUs at its Cheonan plant in South Korea and its Malaysian facility to meet demand for non-China battery supplies.
+ Samsung SDI is also strengthening its position in the market for data center uninterruptible power supply (UPS) systems. The company holds the leading market share in high-power UPS batteries. Unlike BBUs, UPS systems use prismatic cells rather than cylindrical cells. UPS systems supply power to entire facilities from dedicated installations rather than individual server racks. Because they must withstand both power outages and sudden load changes, battery lifespan is as important as output. Samsung SDI uses lithium manganese oxide (LMO) chemistry in its UPS cells to achieve service life of up to 15 years. The company has supplied UPS cells to Schneider Electric for more than a decade.
+ Samsung SDI is also expanding its business in containerized ESS for utility and commercial applications installed outside data centers. These systems improve the quality of electricity supplied by power plants serving data centers while supporting stable power delivery. Its flagship product is the Samsung Battery Box (SBB), which integrates batteries with safety and thermal management systems inside a 20-foot container that can be deployed immediately after connection to the power grid.
+ The company has launched the NCA-based SBB 1.5 and SBB 1.7, as well as the LFP-based SBB 2.0. It has secured a series of SBB orders since the second half of last year. In December last year, Samsung SDI signed a contract worth more than 2 trillion won to supply SBB 2.0 products to a major US energy company. In March, it won another 1.5 trillion won contract to supply SBB 1.5, SBB 1.7 and SBB 2.0 systems to another major US energy company.
+ Samsung SDI is targeting a return to quarterly profitability this year. Higher utilization at its electric vehicle battery production lines in Hungary has been accompanied by rising utilization of its cylindrical battery lines driven by increasing shipments for AI data centers. Securities firms forecast second-quarter revenue of 3.641 trillion won, up 2% from the previous quarter, and operating profit of 21.2 billion won, marking a return to profitability.
+ EunGyu Kim 
+ giddk1206@thelec.kr 
+ View other news 
+ Copyright © The Elec Inc. No unauthorized transfer and redistribution 
+ Comments
+ Name 
+ Password 
+ Enter comments 
+ 0 / 400 
+ Submit 
+ Sort the comments.
+ Newest 
+ Recommended 
+ Top Comments 
+ Best comment
+ Best comment 
+ It is automatically exposed by adding up the number of replies and recommendations.
+ close 
+ 더보기 
+ Delete comments
+ Deleted comments cannot be recovered.
+ Do you still want to delete it?
+ Password 
+  Delete 
+ Modify the comments
+ You can modify comments only within 1 minute after writing.
+ Text 
+ / 400 
+ Password 
+  Modify 
+ My comment
+ close 
+ Most Read 
+ 1
+ Canada Set to Select Submarine Supplier as Hanwha Ocean Makes Final Push
+ 2
+ LG Display Says AI-Driven Manufacturing and R&D Save More Than 200 Billion Won Annually
+ 3
+ Samsung Electro-Mechanics to Invest 23 Trillion Won in Sejong and Busan Through 2040
+ 4
+ Samsung SDI Supplies AI Data Center Battery Cells to Taiwan's Simplo Technology
+ 5
+ Samsung SDI to Invest 25 Trillion Won in Next-Generation Battery Production in Ulsan and Cheonan
+ 6
+ High-Purity CO2 Supply Tightens for Advanced Semiconductor Cleaning
+ 7
+ Samsung, SK to Invest 800 Trillion Won in Four Semiconductor Fabs in Southwest Korea
+ 8
+ ​Samsung Reaffirms 1.4nm Mass Production in 2029, Sets SF1.4+ for 2030
+ 9
+ US Media: Samsung and Anthropic Discuss Collaboration on 2nm AI Chips and Advanced Packaging
+ 10
+ HKC Lists on Shenzhen Main Board, Eyeing OLED Investments
+ Editor’s Picks 
+ Innox Advanced Materials Advances Domestic Build-up Film Development
+ Samsung Electronics Posts Record 89.4 Trillion Won Operating Profit in Second Quarter
+ Samsung Electronics Delays Mass Production of CXL 3.1 Memory Modules
+ Is Meta's Cloud Plan Really a Sign of an AI Semiconductor Investment Bubble?
+ Samsung SDI Supplies AI Data Center Battery Cells to Taiwan's Simplo Technology
+ More Stories 
+ TeraView to Supply Automotive Paint Inspection System Through Doolim-Yaskawa Partnership
+ SK Group Chairman Chey Tae-won to Attend SK hynix Nasdaq ADR Listing Ceremony
+ Neosem Wins 8.6 Billion Won Memory Tester Order From Samsung Electronics
+ TLB to Invest 133.1 Billion Won in Vietnam Plant After 95% Rights Offering Take-up
+ ICD Wins 29.6 Billion Won Display Equipment Order From BOE
+ About Company 
+ Submit 
+ Advertise 
+ Terms of Use 
+ Privacy Policy 
+ Juvenile Protection Policy 
+ Copyright Policy 
+ No Unauthorized Email Collection 
+ Corp. Name : The Elec, Inc 
+ Address : 13F, Songam Building, 709 Eonju-ro, Gangnam-gu, Seoul, Republic of Korea
+ Phone : +82-2-2658-4707
+ Fax : +82-2-2659-4707
+ Publication Name : THE ELEC, Korea Electronics Industry Media
+ Registration No : 서울 아 05435
+ Date of Registration : 2018-10-15
+ Date of Publication : 2018-10-15
+ Publisher : JY HAN 
+ Editor-in-Chief : JY JANG
+ Juvenile Protection Manager. Name : Stan Lee
+ THE ELEC, Korea Electronics Industry Media Prohibiting unauthorized duplication,publishing,modification and distribution the material on this Site for any purpose.
+ C o pyright © 2026 THE ELEC, Korea Electronics Industry Media. All rights reserved. mail to powerusr@thelec.kr
+ 모바일버전 
+ The Elec Inc. 
+ All News 
+ Latest Stories 
+ All 
+ Engineering 
+ Semiconductor 
+ Display Panel 
+ Battery 
+ Supply Chain 
+ Defense·Energy 
+ Biotech 
+ Product 
+ Finance 
+ IT·Gaming 
+ All 
+ Telecom 
+ Y Insight

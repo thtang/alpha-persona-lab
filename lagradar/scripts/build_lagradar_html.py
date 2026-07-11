@@ -598,7 +598,6 @@ def build_html(payload: dict[str, Any]) -> str:
     const DATA = {data};
     const themeScores = (DATA.theme_scores || []).slice().sort((a, b) => (b.theme_heat || 0) - (a.theme_heat || 0));
     const candidates = DATA.candidates || [];
-    const companyMetrics = DATA.company_metrics || [];
     const seedThemes = DATA.seed?.themes || [];
     const themeToConcepts = DATA.theme_to_concepts || {{}};
     const graph = DATA.thememiner?.graph || {{nodes: [], edges: []}};
@@ -612,7 +611,6 @@ def build_html(payload: dict[str, Any]) -> str:
     const stockBySymbol = new Map((graph.nodes || []).filter(node => node.type === "stock").map(node => [node.symbol, node]));
     const conceptEdges = (graph.edges || []).filter(edge => edge.type === "concept_stock");
     const seedByTheme = new Map(seedThemes.map(theme => [theme.theme_id, theme]));
-    const metricByThemeSymbol = new Map(companyMetrics.map(row => [`${{row.theme_id}}::${{row.symbol}}`, row]));
     const candidatesByTheme = new Map();
     for (const row of candidates) {{
       if (!candidatesByTheme.has(row.theme_id)) candidatesByTheme.set(row.theme_id, []);
@@ -1089,16 +1087,12 @@ def main() -> int:
     payload = {
         "theme_scores": read_json(lagradar_dir / "theme_scores.json"),
         "candidates": read_json(lagradar_dir / "laggard_candidates.json"),
-        "company_metrics": read_jsonl(lagradar_dir / "company_metrics.jsonl"),
         "lagradar_manifest": read_json(lagradar_dir / "build_manifest.json"),
         "seed": seed,
         "theme_to_concepts": dynamic_theme_to_concepts,
         "thememiner": {
             "graph": read_json(thememiner_dir / "cross_market_stock_graph.json"),
-            "library": read_json(thememiner_dir / "theme_library.json"),
             "manifest": read_json(thememiner_dir / "update_manifest.json"),
-            "relation_index": read_optional_json(thememiner_dir / "relation_index.json", {}),
-            "company_profiles": read_optional_json(thememiner_dir / "company_profiles.json", {"profiles": []}),
         },
     }
     html = build_html(payload)

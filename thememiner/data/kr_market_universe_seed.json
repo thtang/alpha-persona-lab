@@ -1,0 +1,474 @@
+{
+  "schema_version": "thememiner_kr_market_universe_seed_v1",
+  "updated_at": "2026-07-08",
+  "description": "Curated Yahoo-compatible Korea market proxies and KOSPI/KOSDAQ bellwethers for ThemeMiner discovery. This seed bridges Korea into the same cross-market price/graph/leader-laggard pipeline when a stable broad KRX listing API is not available.",
+  "nodes": [
+    {
+      "symbol": "^KS11",
+      "name": "KOSPI Composite",
+      "market": "KR",
+      "region": "Korea",
+      "exchange": "Korea Exchange Index",
+      "raw_industry": "Korea large-cap market index; memory, HBM, electronics, battery, auto, banks, defense and shipping bellwether",
+      "concept_hints": ["hbm", "dram_manufacturing", "semiconductor_components", "battery_secondary", "auto", "banks", "defense", "shipping"]
+    },
+    {
+      "symbol": "^KQ11",
+      "name": "KOSDAQ Composite",
+      "market": "KR",
+      "region": "Korea",
+      "exchange": "Korea Exchange Index",
+      "raw_industry": "Korea growth market index; biotech, gaming, battery materials, semiconductor equipment and small-cap technology",
+      "concept_hints": ["new_drug", "cdmo_cro", "gaming", "battery_secondary", "semicap_equipment", "semiconductor_components"]
+    },
+    {
+      "symbol": "EWY",
+      "name": "iShares MSCI South Korea ETF",
+      "market": "US",
+      "region": "Korea ETF",
+      "exchange": "NYSE Arca",
+      "raw_industry": "Korea country ETF proxy for cross-market leader and risk appetite",
+      "concept_hints": ["hbm", "dram_manufacturing", "semiconductor_components", "battery_secondary", "auto", "banks"]
+    },
+    {
+      "symbol": "005930.KS",
+      "name": "Samsung Electronics",
+      "market": "KR",
+      "region": "Korea",
+      "exchange": "KOSPI",
+      "raw_industry": "Memory semiconductor HBM DRAM NAND foundry smartphone OLED consumer electronics",
+      "website": "https://www.samsung.com/global/ir/",
+      "concept_hints": ["hbm", "dram_manufacturing", "host_dram", "legacy_memory", "foundry", "ic_manufacturing", "smartphone_manufacturing", "lcd_components"]
+    },
+    {
+      "symbol": "000660.KS",
+      "name": "SK Hynix",
+      "market": "KR",
+      "region": "Korea",
+      "exchange": "KOSPI",
+      "raw_industry": "HBM DRAM NAND memory semiconductor AI memory high bandwidth memory",
+      "website": "https://www.skhynix.com/",
+      "concept_hints": ["hbm", "dram_manufacturing", "host_dram", "kv_cache_memory", "legacy_memory"]
+    },
+    {
+      "symbol": "009150.KS",
+      "name": "Samsung Electro-Mechanics",
+      "market": "KR",
+      "region": "Korea",
+      "exchange": "KOSPI",
+      "raw_industry": "MLCC multilayer ceramic capacitor camera module package substrate electronic components",
+      "website": "https://www.samsungsem.com/",
+      "concept_hints": ["passive_components", "high_voltage_mlcc", "semiconductor_components", "abf_substrate", "optical_lens"]
+    },
+    {
+      "symbol": "011070.KS",
+      "name": "LG Innotek",
+      "market": "KR",
+      "region": "Korea",
+      "exchange": "KOSPI",
+      "raw_industry": "camera module optical lens semiconductor substrate automotive electronics communication module",
+      "website": "https://www.lginnotek.com/",
+      "concept_hints": ["optical_lens", "semiconductor_components", "abf_substrate", "auto_parts", "communication_equipment", "led_opto"]
+    },
+    {
+      "symbol": "006400.KS",
+      "name": "Samsung SDI",
+      "market": "KR",
+      "region": "Korea",
+      "exchange": "KOSPI",
+      "raw_industry": "rechargeable battery cylindrical battery ESS BBU data center backup battery",
+      "website": "https://www.samsungsdi.com/",
+      "concept_hints": ["data_center_bbu", "high_power_cylindrical_battery", "battery_secondary"]
+    },
+    {
+      "symbol": "373220.KS",
+      "name": "LG Energy Solution",
+      "market": "KR",
+      "region": "Korea",
+      "exchange": "KOSPI",
+      "raw_industry": "lithium battery cell cylindrical battery ESS EV battery data center backup battery",
+      "website": "https://www.lgensol.com/",
+      "concept_hints": ["data_center_bbu", "high_power_cylindrical_battery", "battery_secondary", "ev"]
+    },
+    {
+      "symbol": "042700.KS",
+      "name": "Hanmi Semiconductor",
+      "market": "KR",
+      "region": "Korea",
+      "exchange": "KOSPI",
+      "raw_industry": "semiconductor equipment HBM TC bonder advanced packaging micro saw",
+      "website": "https://www.hanmisemi.com/",
+      "concept_hints": ["hbm", "semicap_equipment", "ic_packaging_testing", "foplp"]
+    },
+    {
+      "symbol": "108320.KQ",
+      "name": "LX Semicon",
+      "market": "KR",
+      "region": "Korea",
+      "exchange": "KOSDAQ",
+      "raw_industry": "display driver IC OLED LCD semiconductor fabless automotive display",
+      "website": "https://www.lxsemicon.com/",
+      "concept_hints": ["ic_design", "lcd_components", "lcd_tft", "led_opto", "auto_parts"]
+    },
+    {
+      "symbol": "039030.KQ",
+      "name": "EO Technics",
+      "market": "KR",
+      "region": "Korea",
+      "exchange": "KOSDAQ",
+      "raw_industry": "semiconductor laser equipment laser marker laser annealing display equipment",
+      "website": "https://www.eotechnics.com/",
+      "concept_hints": ["semicap_equipment", "laser_capacity", "led_opto", "lcd_components"]
+    },
+    {
+      "symbol": "140860.KQ",
+      "name": "Park Systems",
+      "market": "KR",
+      "region": "Korea",
+      "exchange": "KOSDAQ",
+      "raw_industry": "atomic force microscope semiconductor metrology inspection equipment",
+      "website": "https://www.parksystems.com/",
+      "concept_hints": ["semicap_equipment"]
+    },
+    {
+      "symbol": "240810.KQ",
+      "name": "Wonik IPS",
+      "market": "KR",
+      "region": "Korea",
+      "exchange": "KOSDAQ",
+      "raw_industry": "semiconductor equipment deposition CVD ALD display equipment",
+      "website": "https://www.ips.co.kr/",
+      "concept_hints": ["semicap_equipment", "lcd_components"]
+    },
+    {
+      "symbol": "086520.KQ",
+      "name": "Ecopro",
+      "market": "KR",
+      "region": "Korea",
+      "exchange": "KOSDAQ",
+      "raw_industry": "battery cathode materials environmental materials lithium battery supply chain",
+      "website": "https://www.ecopro.co.kr/",
+      "concept_hints": ["battery_secondary", "chemicals"]
+    },
+    {
+      "symbol": "247540.KQ",
+      "name": "Ecopro BM",
+      "market": "KR",
+      "region": "Korea",
+      "exchange": "KOSDAQ",
+      "raw_industry": "lithium battery cathode material high nickel cathode EV battery",
+      "website": "https://www.ecoprobm.co.kr/",
+      "concept_hints": ["battery_secondary", "ev", "chemicals"]
+    },
+    {
+      "symbol": "003670.KS",
+      "name": "POSCO Future M",
+      "market": "KR",
+      "region": "Korea",
+      "exchange": "KOSPI",
+      "raw_industry": "battery materials cathode anode lithium secondary battery materials",
+      "website": "https://www.poscofuturem.com/",
+      "concept_hints": ["battery_secondary", "chemicals", "ev"]
+    },
+    {
+      "symbol": "051910.KS",
+      "name": "LG Chem",
+      "market": "KR",
+      "region": "Korea",
+      "exchange": "KOSPI",
+      "raw_industry": "chemicals battery materials petrochemicals life sciences",
+      "website": "https://www.lgchem.com/",
+      "concept_hints": ["chemicals", "battery_secondary", "new_drug"]
+    },
+    {
+      "symbol": "010130.KS",
+      "name": "Korea Zinc",
+      "market": "KR",
+      "region": "Korea",
+      "exchange": "KOSPI",
+      "raw_industry": "zinc lead copper nonferrous metals smelting battery recycling",
+      "website": "https://www.koreazinc.co.kr/",
+      "concept_hints": ["metal_parts", "copper", "battery_secondary"]
+    },
+    {
+      "symbol": "005490.KS",
+      "name": "POSCO Holdings",
+      "market": "KR",
+      "region": "Korea",
+      "exchange": "KOSPI",
+      "raw_industry": "steel lithium battery materials industrial metals",
+      "website": "https://www.posco-inc.com/",
+      "concept_hints": ["steel", "metal_parts", "battery_secondary"]
+    },
+    {
+      "symbol": "010120.KS",
+      "name": "LS Electric",
+      "market": "KR",
+      "region": "Korea",
+      "exchange": "KOSPI",
+      "raw_industry": "smart grid switchgear power equipment transformer automation HVDC",
+      "website": "https://www.lselectric.co.kr/",
+      "concept_hints": ["smart_grid", "transformer_ups", "electric_machinery", "power_supply"]
+    },
+    {
+      "symbol": "267260.KS",
+      "name": "HD Hyundai Electric",
+      "market": "KR",
+      "region": "Korea",
+      "exchange": "KOSPI",
+      "raw_industry": "transformer switchgear power distribution electrical equipment grid",
+      "website": "https://www.hd-hyundaielectric.com/",
+      "concept_hints": ["transformer_ups", "smart_grid", "electric_machinery", "power_supply"]
+    },
+    {
+      "symbol": "034020.KS",
+      "name": "Doosan Enerbility",
+      "market": "KR",
+      "region": "Korea",
+      "exchange": "KOSPI",
+      "raw_industry": "power plant nuclear turbine energy infrastructure wind power",
+      "website": "https://www.doosanenerbility.com/",
+      "concept_hints": ["smart_grid", "electric_machinery", "wind_power"]
+    },
+    {
+      "symbol": "064350.KS",
+      "name": "Hyundai Rotem",
+      "market": "KR",
+      "region": "Korea",
+      "exchange": "KOSPI",
+      "raw_industry": "defense ground weapon systems railway hydrogen mobility",
+      "website": "https://www.hyundai-rotem.co.kr/",
+      "concept_hints": ["defense", "auto", "humanoid_robot"]
+    },
+    {
+      "symbol": "012450.KS",
+      "name": "Hanwha Aerospace",
+      "market": "KR",
+      "region": "Korea",
+      "exchange": "KOSPI",
+      "raw_industry": "aerospace defense engines artillery military systems",
+      "website": "https://www.hanwhaaerospace.com/",
+      "concept_hints": ["defense"]
+    },
+    {
+      "symbol": "079550.KS",
+      "name": "LIG Nex1",
+      "market": "KR",
+      "region": "Korea",
+      "exchange": "KOSPI",
+      "raw_industry": "defense missiles radar avionics military electronics",
+      "website": "https://www.lignex1.com/",
+      "concept_hints": ["defense", "communication_equipment"]
+    },
+    {
+      "symbol": "272210.KS",
+      "name": "Hanwha Systems",
+      "market": "KR",
+      "region": "Korea",
+      "exchange": "KOSPI",
+      "raw_industry": "defense electronics radar ICT system integration aerospace",
+      "website": "https://www.hanwhasystems.com/",
+      "concept_hints": ["defense", "system_integration", "communication_equipment"]
+    },
+    {
+      "symbol": "329180.KS",
+      "name": "HD Hyundai Heavy Industries",
+      "market": "KR",
+      "region": "Korea",
+      "exchange": "KOSPI",
+      "raw_industry": "shipbuilding naval defense offshore LNG carrier",
+      "website": "https://www.hhi.co.kr/",
+      "concept_hints": ["shipping", "defense", "oil_lng"]
+    },
+    {
+      "symbol": "011200.KS",
+      "name": "HMM",
+      "market": "KR",
+      "region": "Korea",
+      "exchange": "KOSPI",
+      "raw_industry": "container shipping marine transportation logistics",
+      "website": "https://www.hmm21.com/",
+      "concept_hints": ["shipping", "logistics"]
+    },
+    {
+      "symbol": "005380.KS",
+      "name": "Hyundai Motor",
+      "market": "KR",
+      "region": "Korea",
+      "exchange": "KOSPI",
+      "raw_industry": "automobile electric vehicle autonomous driving robotics hydrogen",
+      "website": "https://www.hyundai.com/",
+      "concept_hints": ["auto", "ev", "autonomous_driving", "humanoid_robot"]
+    },
+    {
+      "symbol": "000270.KS",
+      "name": "Kia",
+      "market": "KR",
+      "region": "Korea",
+      "exchange": "KOSPI",
+      "raw_industry": "automobile electric vehicle automotive manufacturing",
+      "website": "https://worldwide.kia.com/",
+      "concept_hints": ["auto", "ev"]
+    },
+    {
+      "symbol": "012330.KS",
+      "name": "Hyundai Mobis",
+      "market": "KR",
+      "region": "Korea",
+      "exchange": "KOSPI",
+      "raw_industry": "automotive parts EV modules autonomous driving components",
+      "website": "https://www.mobis.co.kr/",
+      "concept_hints": ["auto_parts", "ev", "autonomous_driving"]
+    },
+    {
+      "symbol": "066570.KS",
+      "name": "LG Electronics",
+      "market": "KR",
+      "region": "Korea",
+      "exchange": "KOSPI",
+      "raw_industry": "consumer electronics appliances EV components HVAC display IT devices",
+      "website": "https://www.lge.co.kr/",
+      "concept_hints": ["consumer_electronics", "auto_parts", "lcd_components", "power_supply"]
+    },
+    {
+      "symbol": "034220.KS",
+      "name": "LG Display",
+      "market": "KR",
+      "region": "Korea",
+      "exchange": "KOSPI",
+      "raw_industry": "OLED LCD display panel automotive display IT display",
+      "website": "https://www.lgdisplay.com/",
+      "concept_hints": ["lcd_tft", "lcd_components", "led_opto", "auto_parts"]
+    },
+    {
+      "symbol": "068270.KS",
+      "name": "Celltrion",
+      "market": "KR",
+      "region": "Korea",
+      "exchange": "KOSPI",
+      "raw_industry": "biopharmaceutical biosimilar biologics contract manufacturing healthcare",
+      "website": "https://www.celltrion.com/",
+      "concept_hints": ["new_drug", "cdmo_cro", "healthcare_services"]
+    },
+    {
+      "symbol": "207940.KS",
+      "name": "Samsung Biologics",
+      "market": "KR",
+      "region": "Korea",
+      "exchange": "KOSPI",
+      "raw_industry": "biologics CDMO contract development manufacturing organization biopharma",
+      "website": "https://samsungbiologics.com/",
+      "concept_hints": ["cdmo_cro", "new_drug"]
+    },
+    {
+      "symbol": "326030.KQ",
+      "name": "SK Biopharmaceuticals",
+      "market": "KR",
+      "region": "Korea",
+      "exchange": "KOSDAQ",
+      "raw_industry": "new drug CNS epilepsy pharmaceutical biotech",
+      "website": "https://www.skbp.com/",
+      "concept_hints": ["new_drug"]
+    },
+    {
+      "symbol": "259960.KQ",
+      "name": "Krafton",
+      "market": "KR",
+      "region": "Korea",
+      "exchange": "KOSDAQ",
+      "raw_industry": "gaming online game PUBG AI software entertainment",
+      "website": "https://www.krafton.com/",
+      "concept_hints": ["gaming", "ai_application_software"]
+    },
+    {
+      "symbol": "112040.KQ",
+      "name": "Wemade",
+      "market": "KR",
+      "region": "Korea",
+      "exchange": "KOSDAQ",
+      "raw_industry": "online games blockchain game entertainment software",
+      "website": "https://www.wemade.com/",
+      "concept_hints": ["gaming", "ecommerce"]
+    },
+    {
+      "symbol": "035420.KS",
+      "name": "NAVER",
+      "market": "KR",
+      "region": "Korea",
+      "exchange": "KOSPI",
+      "raw_industry": "internet platform search ecommerce cloud AI data platform fintech",
+      "website": "https://www.navercorp.com/",
+      "concept_hints": ["cloud_ai", "ai_data_platform", "ecommerce", "fintech_payments_software", "ai_application_software"]
+    },
+    {
+      "symbol": "035720.KS",
+      "name": "Kakao",
+      "market": "KR",
+      "region": "Korea",
+      "exchange": "KOSPI",
+      "raw_industry": "messaging internet platform fintech ecommerce mobility gaming AI services",
+      "website": "https://www.kakaocorp.com/",
+      "concept_hints": ["ecommerce", "fintech_payments_software", "ai_application_software", "gaming"]
+    },
+    {
+      "symbol": "032830.KS",
+      "name": "Samsung Life Insurance",
+      "market": "KR",
+      "region": "Korea",
+      "exchange": "KOSPI",
+      "raw_industry": "life insurance financial services rates sensitive",
+      "website": "https://www.samsunglife.com/",
+      "concept_hints": ["insurance", "financial_holding"]
+    },
+    {
+      "symbol": "055550.KS",
+      "name": "Shinhan Financial Group",
+      "market": "KR",
+      "region": "Korea",
+      "exchange": "KOSPI",
+      "raw_industry": "banking financial holding securities insurance",
+      "website": "https://www.shinhangroup.com/",
+      "concept_hints": ["banks", "financial_holding", "securities", "insurance"]
+    },
+    {
+      "symbol": "086790.KS",
+      "name": "Hana Financial Group",
+      "market": "KR",
+      "region": "Korea",
+      "exchange": "KOSPI",
+      "raw_industry": "banking financial holding securities insurance",
+      "website": "https://www.hanafn.com/",
+      "concept_hints": ["banks", "financial_holding", "securities", "insurance"]
+    },
+    {
+      "symbol": "105560.KS",
+      "name": "KB Financial Group",
+      "market": "KR",
+      "region": "Korea",
+      "exchange": "KOSPI",
+      "raw_industry": "banking financial holding insurance securities",
+      "website": "https://www.kbfg.com/",
+      "concept_hints": ["banks", "financial_holding", "insurance", "securities"]
+    },
+    {
+      "symbol": "017670.KS",
+      "name": "SK Telecom",
+      "market": "KR",
+      "region": "Korea",
+      "exchange": "KOSPI",
+      "raw_industry": "telecom AI data center cloud communication network",
+      "website": "https://www.sktelecom.com/",
+      "concept_hints": ["communication_equipment", "cloud_ai", "ai_data_platform"]
+    },
+    {
+      "symbol": "030200.KS",
+      "name": "KT",
+      "market": "KR",
+      "region": "Korea",
+      "exchange": "KOSPI",
+      "raw_industry": "telecom broadband cloud data center AI network",
+      "website": "https://corp.kt.com/",
+      "concept_hints": ["communication_equipment", "cloud_ai", "system_integration"]
+    }
+  ]
+}

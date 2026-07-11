@@ -161,6 +161,7 @@ def corpus_jobs(args: argparse.Namespace) -> list[Job]:
     jobs.append(Job("gooaye_sources", [python, "gooaye/scripts/sync_daily_sources.py", *common_flags]))
     jobs.append(Job("yutinghao_sources", [python, "yutinghao/scripts/sync_daily_sources.py", *common_flags]))
     jobs.append(Job("zhezhe_sources", [python, "zhezhe/scripts/sync_daily_sources.py", *common_flags]))
+    jobs.append(Job("serenity_sources", [python, "serenity/scripts/update_serenity_knowledge.py"], required=False))
     return jobs
 
 

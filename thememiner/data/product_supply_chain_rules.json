@@ -254,10 +254,26 @@
     {
       "concept_id": "power_supply",
       "layer": "electronics_midstream.power_supply",
-      "products": ["power supply", "UPS", "BBU", "power module"],
-      "keywords_any": ["power supply", "UPS", "BBU", "power module", "Electrical Equipment & Parts", "Vertiv", "data center power", "critical power", "電源供應", "電源"],
+      "products": ["power supply", "UPS", "power module"],
+      "keywords_any": ["power supply", "UPS", "power module", "Electrical Equipment & Parts", "Vertiv", "data center power", "critical power", "電源供應", "電源"],
       "upstream_concepts": ["hvdc_power_semiconductor", "power_discrete_semiconductor", "power_management_ic", "passive_components", "transformer_ups"],
       "downstream_concepts": ["ai_capex", "industrial_pc", "networking"]
+    },
+    {
+      "concept_id": "data_center_bbu",
+      "layer": "electronics_midstream.datacenter_battery_backup",
+      "products": ["battery backup unit", "rack-level BBU", "server rack backup battery", "BBU module", "BBU pack"],
+      "keywords_any": ["BBU", "battery backup unit", "rack-level BBU", "server rack battery", "data center backup battery", "Simplo", "Trend Power", "Samsung SDI", "Panasonic", "資料中心備援電池", "機櫃備援電池"],
+      "upstream_concepts": ["high_power_cylindrical_battery", "battery_secondary", "power_discrete_semiconductor", "power_management_ic", "passive_components"],
+      "downstream_concepts": ["ai_capex", "power_supply", "transformer_ups", "cloud_ai", "ems"]
+    },
+    {
+      "concept_id": "high_power_cylindrical_battery",
+      "layer": "electronics_midstream.datacenter_bbu_cell",
+      "products": ["21700 cylindrical battery", "high-power cylindrical cell", "NCA cylindrical cell", "tabless cylindrical battery", "silicon-carbon anode cell"],
+      "keywords_any": ["high-power cylindrical cell", "21700", "40V3", "NCA cylindrical", "tabless battery", "silicon-carbon anode", "Samsung SDI 40V3", "Panasonic BBU cell", "高功率圓柱電池", "圓柱電池"],
+      "upstream_concepts": ["battery_secondary", "chemicals"],
+      "downstream_concepts": ["data_center_bbu", "ai_capex", "power_supply"]
     },
     {
       "concept_id": "communication_equipment",

@@ -1,0 +1,20 @@
+---
+video_id: AYLlUiWCntE
+playlist_index: 370
+title: "震撼NFT界的Moonbirds月鳥！"
+url: https://www.youtube.com/watch?v=AYLlUiWCntE
+duration_string: 8:06
+subtitle_language: zh
+subtitle_file: data/subtitles/370-AYLlUiWCntE-震撼NFT界的Moonbirds月鳥！.zh.vtt
+topic_tags: ["macro", "trading"]
+---
+
+# 震撼NFT界的Moonbirds月鳥！
+
+最近最火红的NFT项目是什么必须要拿出来讨论 Out of Control 一个猫头鹰形象的全新NFT项目叫做Moonbirds 在公售之后就引发了一个暴动 在OpenSea的地板价FloorPrice已经好几天都超过30多个Eth 要知道它刚开始的公售价格是2.5个Eth 所以涨了快要15倍 之前Sandbox还用350亿买了一只鸟 HELLO 我是Bonnie 介绍Moonbirds之前必须要先介绍一下它的团队叫做Prove 这个团队它做出来的第一个NFT叫做Prove Collective Prove Collective它是一个类似会员制的社团 总共1000个NFT 在去年12月上线公开市场之后 价格就从1.99个Eth直接飙升到100个Eth 为什么这些人想要参加这个社团成为他的会员呢 你就想像这个社团发了1000张的会员卡 这个会员卡的效期是3年 有这个会员卡的人就可以加入他们私人的Discord 就是Discord的社群频道 这个社群频道里面呢就会不定时的发新的NFT项目的分析啦 告诉这些会员呢哪一些新的NFT项目很值得注意 或者是让你用免费或者是很低的价格 Mint到新的NFT项目 Prove他推荐的项目啊 或者是他们Mint的这些项目 有一点点像是有被这个团队加持 那这个NFT的项目价值通常都会涨非常多 就表示他很有权威啦 好啦那这时候就问啦 Prove Collective它跟Moonbirds到底有什么关系对不对 因为他们是同一个项目方创造出来的 而且Prove Collective它的拥有者 你可以直接免费Mint两个Moonbirds Moonbirds它总共有1万个 其中呢2000个发给这些Prove Collective拥有者 7875个公开拍卖在市场上拍卖 剩下的125个就是团队他们自己预留的 Moonbirds它的风格有点像是CryptoPunks的这种像素风格 而且它选择猫头鹰是因为猫头鹰给人感觉 很聪明很睿智的感觉 不过这个团队说他叫它Moonbirds 而不是叫它Moon Owl 是因为想要开放一个更多的可能性 可能之后呢会有不同的birds I don't know 而且这个NFT项目啊 它短短花了4天 市值就突破了2亿美元
+
+那项目它为什么可以这么成功呢 先帮大家整理一下重点 Prove Collective它的项目方呢 就是一个知名的NFT Podcast节目主持人 这个节目叫做Prove 讲一下这个主持人的背景 他叫做Kevin Rose 他以前是讲一个财经的频道 但是之后讲一讲觉得 哦NFT这个东西实在是太有趣了 开始讲NFT 那他的节目就叫做Prove 这个节目呢邀请过NFT领域的很多大咖上节目 比如说像是艺术家Beeple Sandbox的Sebastian V Friends的GaryVee 就是IG上面常常出现 讲话超级激动 振奋人心的那个GaryVee Artblocks的Eric 这些人都当过他节目的来宾 这样就可以看到其实 Kevin Rose 在NFT这个行业的人脉 跟影响力都非常的强 如果你说Prove Collective 它就是一个入场卷 那Moonbirds就是这一个群组里面的 一种身份象征吧 Moonbirds它的拥有者呢 你同样可以去Prove私有的Discord频道 看它一些发行的分析啦 或者一些资讯 当然你如果是Prove Collective的拥有者 你在这一个群组里面 你可以看到的东西更多 但是Moonbirds 你可以看到其中一部分 这种感觉 但是你要想 Prove Collective它的价格是100个Eth Moonbirds它现在是30多 20多 就是在这边浮动 所以值不值得呢 你决定了 Moonbirds的拥有者 它如果在这一个Discord频道 就代表它可以跟Prove的创办人 还有Prove Collective的这些拥有者 直接的交流 它可以参与Moonbirds有关的各种空投 或者是实体的活动 参与未来的一些Prove的专案 跟其他的项目比较不一样的是 Prove它专注于 怎么让大家长期持有这个Moonbirds 它不太像是其他的NFT项目 会倾向于希望大家 把他们的NFT一直换手 因为换手呢 总交易量是不是就会冲高 让大家就会有一个感觉 就说这个NFT的项目好像很强啊 很火很红 因为很多NFT二级市场或者是之后的交易啊 它都可以抽一个%数 所以当然是交易的越频繁 我这个项目方可以拿到的钱是越多的 但是你要知道Prove Collective 这一个团队他们要的不是这个
+
+它要大家长期持有 它不要你卖 那请问这个项目要用什么样的incentive 要怎么让大家不会价格一涨就赶快脱手 对不对 在Moonbirds里面呢 有一个很创新的玩法 叫做Nesting 竹巢 其实它就有点像是持有赚古席的意思啦 就是你长期握着 然后它就会定时的给你一些利息 或者是一些benefit 一些incentives 那因为它是鸟 所以它就把这个动作 整个动作改成叫做Nesting 竹巢很有创意对不对 在这个竹巢的机制里呢 你如果持有这一只鸟的时间越长 你的等级就会越高 那等级越高呢 你能获得的空头跟奖励也就越多 这样子的做法就会鼓励持有的人 长期持有 这有点像是可以赚古席的意思 而且是越来越多 那NFT呢 这个市场已经变成 有点像是项目泛滥的市场 参差不齐了好的坏的各种充斥 但是呢 Moonbirds它作为Prove这个团队 推出来的第一个PFP 大头罩NFT呢 项目本身又有竹巢这样子的 创新商业模式 再加上这一个项目方 本身的背景就很强 所以Moonbirds它可以爆红 完全不是运气 这个NFT已经不是像是 随便一个大家讨论一下爆红 一下又跌下来的一个NFT项目 它感觉会在这个NFT的领域 很久很长 好我们来统整一下Moonbirds的负能 你有了这只鸟 你就可以加入Discord的专属群组 你可以得到之后 Moonbirds相关的项目参与的铸造权 你可以参与他们的社群啊 或者是参与他们的聚会 之后呢 Prove这一个团队也会开始进攻元宇宙 等于是他们会自己开始做一个自己的元宇宙 叫做Project High Rise 那你有Moonbirds的话呢 之后这个世界的土地铸造权就可以让你确保 确保说你可以买到这个土地的意思 你不用去跟别人抢 最后呢就是这个Nesting的机制 竹巢机制 持有Moonbirds的时间越长 你的奖励就会越高 越高级你就能解锁更多的奖励 更多的Benefit 你如果去看Moonbirds背后的这个团队啊 他们在YouTube上面的影片也好啦 或者是他们公开讲 对于这个项目的想法也好 你就会知道他们不是一个 只专注于短期利益的一个团队 他们是真的想要经营一个长期 很有凝聚力的一个社群 宁愿现在少赚一点钱 因为他们其实是不缺钱的 他背后的investors 超级多 都很大咖 你懂吗 OK 好 那这个Moonbirds的项目呢
+
+我觉得是真的很值得持 持续关注 如果最近呢 我们又看到一些很好的项目 再来跟大家分享 订阅开启小铃铛 我们下一次见哦 拜

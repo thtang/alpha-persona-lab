@@ -1,0 +1,67 @@
+{
+  "schema_version": "thememiner_semantic_retrieval_config_v1",
+  "default_backend": "auto",
+  "recommended_models": {
+    "embedding": {
+      "daily": "mlx-community/Qwen3-Embedding-0.6B-4bit-DWQ",
+      "offline_batch": "mlx-community/Qwen3-Embedding-4B-4bit-DWQ"
+    },
+    "reranker": {
+      "daily": "mlx-community/Qwen3-Reranker-0.6B-4bit-DWQ",
+      "offline_batch": "mlx-community/Qwen3-Reranker-4B-4bit-DWQ"
+    }
+  },
+  "embedding_backend": {
+    "providers": [
+      "mlx-local",
+      "mlx-http",
+      "lexical"
+    ],
+    "endpoint_env": "THEMEMINER_EMBEDDING_BASE_URL",
+    "default_endpoint": "http://127.0.0.1:8080/v1/embeddings",
+    "daily_model": "mlx-community/Qwen3-Embedding-0.6B-4bit-DWQ",
+    "offline_model": "mlx-community/Qwen3-Embedding-4B-4bit-DWQ",
+    "batch_size": 16,
+    "timeout_seconds": 45,
+    "max_tokens": 768,
+    "pooling": "last",
+    "cache_dir": "thememiner/output/cache/semantic_embeddings",
+    "embedding_weight": 0.72,
+    "lexical_weight": 0.28,
+    "cosine_floor": 0.25,
+    "cosine_ceiling": 0.8,
+    "notes": [
+      "Run build_semantic_relation_index.py with --backend mlx-local to load the MLX model in-process.",
+      "Run with --backend mlx-http when a local adapter exposes the OpenAI /v1/embeddings response shape.",
+      "Set THEMEMINER_EMBEDDING_BACKEND=mlx-local or THEMEMINER_USE_LOCAL_EMBEDDINGS=1 to let --backend auto use local embeddings.",
+      "Lexical scoring remains enabled as fallback and as an explanation signal."
+    ]
+  },
+  "reranker_backend": {
+    "status": "planned",
+    "daily_model": "mlx-community/Qwen3-Reranker-0.6B-4bit-DWQ",
+    "offline_model": "mlx-community/Qwen3-Reranker-4B-4bit-DWQ",
+    "intended_use": "Rerank the top ambiguous stock-theme edges after embedding recall, not every graph edge."
+  },
+  "hardware_policy": {
+    "apple_silicon_16gb": {
+      "daily_embedding": "0.6B",
+      "daily_reranker": "0.6B",
+      "offline_embedding": "4B",
+      "offline_reranker": "4B_optional",
+      "notes": [
+        "Use 0.6B models during interactive refreshes.",
+        "Use 4B models only for offline rebuilds or small rerank batches.",
+        "Keep lexical fallback enabled so graph refreshes are reproducible without model downloads."
+      ]
+    }
+  },
+  "authority_order": [
+    "manual_override",
+    "agent_verified",
+    "profile_supported",
+    "semantic_supported",
+    "needs_review",
+    "fallback_recall_only"
+  ]
+}

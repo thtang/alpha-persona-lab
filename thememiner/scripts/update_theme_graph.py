@@ -93,6 +93,22 @@ def write_jsonl(path: Path, rows: list[dict[str, Any]]) -> None:
             handle.write(json.dumps(row, ensure_ascii=False, sort_keys=True) + "\n")
 
 
+def read_jsonl(path: Path) -> list[dict[str, Any]]:
+    if not path.exists():
+        return []
+    rows: list[dict[str, Any]] = []
+    with path.open("r", encoding="utf-8") as handle:
+        for line in handle:
+            line = line.strip()
+            if not line:
+                continue
+            try:
+                rows.append(json.loads(line))
+            except json.JSONDecodeError:
+                continue
+    return rows
+
+
 def clamp(value: float, low: float, high: float) -> float:
     return max(low, min(high, value))
 
@@ -739,6 +755,38 @@ def fetch_news(concept: dict[str, Any], cache_dir: Path, *, refresh: bool, limit
     return rows[:limit]
 
 
+def load_external_evidence(paths: list[str], concepts: dict[str, dict[str, Any]]) -> list[dict[str, Any]]:
+    rows: list[dict[str, Any]] = []
+    for value in paths:
+        path = Path(value)
+        if not path.exists():
+            continue
+        for row in read_jsonl(path):
+            concept_id = row.get("concept_id")
+            if concept_id not in concepts:
+                continue
+            title = row.get("title") or row.get("text") or ""
+            rows.append(
+                {
+                    "concept_id": concept_id,
+                    "concept_label": row.get("concept_label") or concepts[concept_id]["label"],
+                    "title": title,
+                    "source": row.get("source") or f"external:{path.name}",
+                    "url": row.get("url") or "",
+                    "published_at": row.get("published_at"),
+                    "external_evidence_path": str(path),
+                    "evidence_tier": row.get("evidence_tier"),
+                    "evidence_kind": row.get("evidence_kind", "external"),
+                    "post_id": row.get("post_id"),
+                    "transcript_id": row.get("transcript_id"),
+                    "match_authority": row.get("match_authority"),
+                    "matched_terms": row.get("matched_terms", []),
+                    "evidence_policy": row.get("evidence_policy"),
+                }
+            )
+    return rows
+
+
 def compute_concept_scores(
     concepts: dict[str, dict[str, Any]],
     watchlist: dict[str, dict[str, Any]],
@@ -1360,7 +1408,15 @@ def main() -> int:
     parser.add_argument("--refresh-news", action="store_true")
     parser.add_argument("--max-concepts", type=int, default=0, help="0 means all concepts")
     parser.add_argument("--news-per-query", type=int, default=6)
+    parser.add_argument(
+        "--external-evidence",
+        action="append",
+        default=[],
+        help="Extra JSONL evidence rows to merge into concept news evidence. Repeat for multiple files.",
+    )
     args = parser.parse_args()
+    if not args.external_evidence:
+        args.external_evidence = ["serenity/data/graph_inputs/theme_evidence.jsonl"]
 
     output_dir = Path(args.output_dir)
     taxonomy = read_json(Path(args.taxonomy))
@@ -1415,6 +1471,8 @@ def main() -> int:
     news_rows: list[dict[str, Any]] = []
     for concept in concept_items:
         news_rows.extend(fetch_news(concept, output_dir / "cache" / "news", refresh=args.refresh_news, limit=args.news_per_query))
+    external_news_rows = load_external_evidence(args.external_evidence, concepts)
+    news_rows.extend(external_news_rows)
 
     theme_rows = compute_concept_scores(concepts, watchlist, stock_rows, news_rows)
     graph = build_graph(theme_rows, watchlist, stock_rows, history_rows, supply_chain_rules)
@@ -1462,6 +1520,8 @@ def main() -> int:
             "stock_error_count": sum(1 for row in stock_rows.values() if row.get("error") and not row.get("price_skipped")),
             "news_row_count": len(news_rows),
             "news_error_count": sum(1 for row in news_rows if row.get("error")),
+            "external_evidence_paths": args.external_evidence,
+            "external_evidence_count": len(external_news_rows),
             "graph_node_count": len(graph["nodes"]),
             "graph_edge_count": len(graph["edges"]),
             "correlation_edge_count": graph.get("correlation_edge_count", 0),

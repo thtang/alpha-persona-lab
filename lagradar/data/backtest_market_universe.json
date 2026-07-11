@@ -1,6 +1,6 @@
 {
   "schema_version": "lagradar_backtest_universe_v1",
-  "updated_at": "2026-05-23",
+  "updated_at": "2026-07-08",
   "description": "Market, sector, commodity, rates, and FX proxies used as controls or leaders for 20-year cross-market theme diffusion backtests. Theme stock nodes are loaded from cross_market_theme_seed.json.",
   "markets": [
     {"symbol": "SPY", "name": "SPDR S&P 500 ETF", "market": "US", "kind": "market_index", "region": "US"},
@@ -18,7 +18,10 @@
     {"symbol": "^N225", "name": "Nikkei 225", "market": "JP", "kind": "market_index", "region": "Japan"},
     {"symbol": "^HSI", "name": "Hang Seng Index", "market": "HK", "kind": "market_index", "region": "Hong Kong"},
     {"symbol": "000001.SS", "name": "SSE Composite", "market": "CN", "kind": "market_index", "region": "China A"},
-    {"symbol": "^KS11", "name": "KOSPI Composite", "market": "KR", "kind": "market_index", "region": "Korea"}
+    {"symbol": "^KS11", "name": "KOSPI Composite", "market": "KR", "kind": "market_index", "region": "Korea"},
+    {"symbol": "^KQ11", "name": "KOSDAQ Composite", "market": "KR", "kind": "market_index", "region": "Korea"},
+    {"symbol": "102110.KS", "name": "KODEX 200", "market": "KR", "kind": "country_etf", "region": "Korea"},
+    {"symbol": "229200.KS", "name": "KODEX KOSDAQ 150", "market": "KR", "kind": "country_etf", "region": "Korea"}
   ],
   "sectors": [
     {"symbol": "XLK", "name": "Technology Select Sector SPDR", "market": "US", "kind": "sector_etf", "sector": "technology"},
@@ -34,7 +37,8 @@
     {"symbol": "ITA", "name": "iShares U.S. Aerospace & Defense ETF", "market": "US", "kind": "sector_etf", "sector": "defense"},
     {"symbol": "PPA", "name": "Invesco Aerospace & Defense ETF", "market": "US", "kind": "sector_etf", "sector": "defense"},
     {"symbol": "SEA", "name": "U.S. Global Sea to Sky Cargo ETF", "market": "US", "kind": "sector_etf", "sector": "shipping"},
-    {"symbol": "COPX", "name": "Global X Copper Miners ETF", "market": "US", "kind": "sector_etf", "sector": "copper"}
+    {"symbol": "COPX", "name": "Global X Copper Miners ETF", "market": "US", "kind": "sector_etf", "sector": "copper"},
+    {"symbol": "091160.KS", "name": "KODEX Semiconductor", "market": "KR", "kind": "sector_etf", "sector": "semiconductors"}
   ],
   "macro": [
     {"symbol": "DX-Y.NYB", "name": "US Dollar Index", "kind": "fx_index"},

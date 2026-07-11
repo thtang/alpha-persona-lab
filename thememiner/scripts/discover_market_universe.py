@@ -32,6 +32,7 @@ OTHER_LISTED_URL = "https://www.nasdaqtrader.com/dynamic/SymDir/otherlisted.txt"
 NASDAQ_SCREENER_URL = "https://api.nasdaq.com/api/screener/stocks?tableonly=true&limit=25&download=true"
 TWSE_COMPANY_URL = "https://openapi.twse.com.tw/v1/opendata/t187ap03_L"
 TPEX_COMPANY_URL = "https://www.tpex.org.tw/openapi/v1/mopsfin_t187ap03_O"
+KR_MARKET_UNIVERSE_SEED = Path("thememiner/data/kr_market_universe_seed.json")
 
 US_EXCLUDE_NAME_TERMS = (
     " acquisition corp",
@@ -301,6 +302,36 @@ def fetch_tpex_universe() -> list[dict[str, Any]]:
     return rows
 
 
+def fetch_kr_seed_universe(path: Path = KR_MARKET_UNIVERSE_SEED) -> list[dict[str, Any]]:
+    """Load the curated Korea universe used when a stable broad KRX API is unavailable.
+
+    The seed is deliberately explicit about Yahoo-compatible tickers and concept
+    hints so Korea can participate in the same price, graph, and lead-lag
+    pipelines as US/JP/TW/CN/HK names.
+    """
+
+    if not path.exists():
+        return []
+    payload = read_json(path)
+    rows: list[dict[str, Any]] = []
+    for row in payload.get("nodes", []):
+        symbol = clean_text(row.get("symbol"))
+        if not symbol:
+            continue
+        normalized = dict(row)
+        normalized["symbol"] = symbol
+        normalized["name"] = clean_text(row.get("name") or symbol)
+        normalized["company_name"] = clean_text(row.get("company_name") or row.get("name") or symbol)
+        normalized["market"] = clean_text(row.get("market") or "KR")
+        normalized["region"] = clean_text(row.get("region") or "Korea")
+        normalized["exchange"] = clean_text(row.get("exchange") or ("KOSDAQ" if symbol.endswith(".KQ") else "KOSPI"))
+        normalized["raw_industry"] = clean_text(row.get("raw_industry") or row.get("sector") or "")
+        normalized["source"] = "kr_market_universe_seed"
+        normalized["source_url"] = str(path)
+        rows.append(normalized)
+    return dedupe_symbols(rows)
+
+
 def dedupe_symbols(rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
     seen: dict[str, dict[str, Any]] = {}
     for row in rows:
@@ -322,6 +353,9 @@ def source_rows(markets: set[str]) -> tuple[list[dict[str, Any]], list[str]]:
     if "TWO" in markets or "TPEX" in markets:
         rows.extend(fetch_tpex_universe())
         sources.append(TPEX_COMPANY_URL)
+    if "KR" in markets or "KOSPI" in markets or "KOSDAQ" in markets:
+        rows.extend(fetch_kr_seed_universe())
+        sources.append(str(KR_MARKET_UNIVERSE_SEED))
     return dedupe_symbols(rows), sources
 
 
@@ -344,6 +378,13 @@ def score_match(
         if value
     )
     concept_hits: dict[str, dict[str, Any]] = {}
+
+    for concept_id in stock.get("concept_hints", []) or []:
+        if concept_id not in known_concepts:
+            continue
+        concept_hits.setdefault(concept_id, {"score": 0, "keywords": [], "sources": [], "rules": []})
+        concept_hits[concept_id]["score"] += 28
+        concept_hits[concept_id]["sources"].append("curated_market_universe_seed")
 
     for concept_id in TW_INDUSTRY_CONCEPTS.get(clean_text(stock.get("raw_industry")), []):
         if concept_id not in known_concepts:
@@ -455,7 +496,13 @@ def score_match(
         "discovery_sources": sorted({source for hit in concept_hits.values() for source in hit.get("sources", [])}),
         "match_reasons": reason_parts,
         "concept_scores": {concept_id: min(100, round(hit["score"], 2)) for concept_id, hit in concept_hits.items()},
-        "match_authority": "agentic_concept_judge" if agent_decision.get("matched_concepts") else "rule_fallback",
+        "match_authority": (
+            "agentic_concept_judge"
+            if agent_decision.get("matched_concepts")
+            else "curated_market_universe_seed"
+            if any("curated_market_universe_seed" in hit.get("sources", []) for hit in concept_hits.values())
+            else "rule_fallback"
+        ),
         "agent_summary": agent_decision.get("summary"),
         "agent_rejected_concepts": agent_decision.get("rejected_concepts", []),
         "agent_evidence_gaps": agent_decision.get("evidence_gaps", []),
@@ -528,6 +575,7 @@ def run_discovery(args: argparse.Namespace) -> tuple[dict[str, Any], str]:
         "nasdaqtrader_otherlisted": OTHER_LISTED_URL,
         "twse_t187ap03_L": TWSE_COMPANY_URL,
         "tpex_mopsfin_t187ap03_O": TPEX_COMPANY_URL,
+        "kr_market_universe_seed": str(KR_MARKET_UNIVERSE_SEED),
     }
     discovered: list[dict[str, Any]] = []
     unclassified = 0
@@ -741,7 +789,7 @@ def main() -> int:
     parser = argparse.ArgumentParser(description="Scan broad exchange universes and map stocks to ThemeMiner concepts")
     parser.add_argument("--taxonomy", default="thememiner/data/fine_theme_taxonomy_seed.json")
     parser.add_argument("--rules", default="thememiner/data/product_supply_chain_rules.json")
-    parser.add_argument("--markets", default="US,TW,TWO", help="Comma-separated markets: US,TW,TWO/TPEX")
+    parser.add_argument("--markets", default="US,TW,TWO,KR", help="Comma-separated markets: US,TW,TWO/TPEX,KR/KOSPI/KOSDAQ")
     parser.add_argument("--output", default="thememiner/data/discovered_universe.json")
     parser.add_argument("--report", default="thememiner/output/universe_scan_report.md")
     parser.add_argument("--max-symbols", type=int, default=0, help="0 means keep every mapped symbol")

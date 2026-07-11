@@ -66,7 +66,7 @@ def run_parallel(commands: list[tuple[list[str], str]], *, env: dict[str, str]) 
 def main() -> int:
     parser = argparse.ArgumentParser(description="Full ThemeMiner/Lagradar refresh using local Codex agents")
     parser.add_argument("--workers", type=int, default=3, help="parallel codex/source workers")
-    parser.add_argument("--markets", default="US,TW,TWO")
+    parser.add_argument("--markets", default="US,TW,TWO,KR")
     parser.add_argument("--discovery-batch-size", type=int, default=16)
     parser.add_argument("--thesis-batch-size", type=int, default=12)
     parser.add_argument("--source-limit", type=int, default=0, help="source queue rows per shard; 0 means all")

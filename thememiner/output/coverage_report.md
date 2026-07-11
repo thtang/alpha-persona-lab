@@ -1,81 +1,81 @@
 # ThemeMiner Coverage Audit
 
-Generated at: 2026-06-16T13:56:32.725097+00:00
+Generated at: 2026-07-11T06:11:40.503299+00:00
 
 ## Summary
 
-- Stocks: 2403
-- Concept-stock edges: 6687
-- Price-correlation edges: 5194
-- Product nodes: 609
-- Supply-layer nodes: 56
-- Concept supply-chain edges: 279
-- Product-stock edges: 15837
-- Layer-stock edges: 2496
-- Same-product peer edges: 9718
-- Same-layer peer edges: 1999
-- Profile status: {'profiled': 85, 'auto_yahoo_search': 27, 'official_sec_profile': 350, 'market_metadata_profile': 94, 'official_tw_exchange_profile': 1846, 'discovered_exchange_rules': 1}
-- Profile quality: {'curated': 85, 'auto_yahoo_search': 27, 'official_sec_profile': 350, 'market_metadata_profile': 94, 'official_tw_exchange_profile': 1846, 'discovered_exchange_rules': 1}
-- Usable business profiles with source refs: 2403 / 2403
-- Markets: {'US': 429, 'JP': 37, 'KR': 6, 'TW': 1872, 'CN': 44, 'HK': 15}
+- Stocks: 2468
+- Concept-stock edges: 6912
+- Price-correlation edges: 5353
+- Product nodes: 714
+- Supply-layer nodes: 58
+- Concept supply-chain edges: 293
+- Product-stock edges: 16613
+- Layer-stock edges: 2637
+- Same-product peer edges: 12262
+- Same-layer peer edges: 2466
+- Profile status: {'profiled': 101, 'official_sec_profile': 368, 'market_metadata_profile': 110, 'official_tw_exchange_profile': 1856, 'auto_yahoo_search': 1, 'discovered_exchange_rules': 32}
+- Profile quality: {'curated': 101, 'official_sec_profile': 368, 'market_metadata_profile': 110, 'official_tw_exchange_profile': 1856, 'auto_yahoo_search': 1, 'discovered_exchange_rules': 32}
+- Usable business profiles with source refs: 2468 / 2468
+- Markets: {'US': 440, 'DE': 1, 'JP': 38, 'KR': 50, 'TW': 1880, 'CN': 44, 'HK': 15}
 
 ## Node Types
 
-stock=2403, product=609, concept=156, supply_layer=56, category=8
+stock=2468, product=714, concept=140, supply_layer=58, category=8
 
 ## Edge Types
 
-same_concept_cross_market=36334, product_stock=15837, same_product_peer=9718, concept_stock=6687, stock_downstream_concept=6191, price_correlation=5194, upstream_concept_stock=4136, layer_stock=2496, same_supply_layer_peer=1999, concept_supply_chain=279, product_concept=223, category_concept=156, layer_concept=56
+same_concept_cross_market=46916, product_stock=16613, same_product_peer=12262, concept_stock=6912, stock_downstream_concept=6534, price_correlation=5353, upstream_concept_stock=4371, layer_stock=2637, same_supply_layer_peer=2466, concept_supply_chain=293, product_concept=232, category_concept=140, layer_concept=58
 
 ## Top Theme Coverage
 
 | Theme | Score | Stocks | Curated/Profiled | Usable Business Profiles | Products | Layers | Up | Down | Corr Edges |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 晶片電阻 `chip_resistor` | 80.4 | 5 | 3 (60%) | 5 (100%) | 4 | 1 | 2 | 3 | 2 |
-| 高壓MLCC `high_voltage_mlcc` | 76.6 | 12 | 7 (58%) | 12 (100%) | 3 | 1 | 3 | 4 | 30 |
-| HDD冷資料/長期記憶 `hdd_cold_storage` | 75.1 | 3 | 2 (67%) | 3 (100%) | 4 | 1 | 1 | 4 | 1 |
-| KV Cache/RAG記憶體 `kv_cache_memory` | 71.8 | 4 | 3 (75%) | 4 (100%) | 4 | 1 | 6 | 2 | 3 |
-| 外延/MOCVD設備 `epitaxy_equipment` | 71.1 | 1 | 1 (100%) | 1 (100%) | 0 | 0 | 0 | 1 | 0 |
-| 企業級SSD/eSSD `enterprise_ssd` | 68.5 | 6 | 4 (67%) | 6 (100%) | 4 | 1 | 3 | 5 | 3 |
-| 鉭電容 `tantalum_capacitor` | 68.5 | 2 | 2 (100%) | 2 (100%) | 0 | 0 | 0 | 0 | 0 |
-| IC-DRAM製造 `dram_manufacturing` | 67.1 | 9 | 1 (11%) | 9 (100%) | 3 | 1 | 2 | 6 | 23 |
-| Agentic AI系統級基建 `agentic_ai_infrastructure` | 63.0 | 2 | 1 (50%) | 2 (100%) | 3 | 1 | 4 | 5 | 0 |
-| 精密感測/量測 `precision_sensing` | 62.6 | 1 | 1 (100%) | 1 (100%) | 0 | 0 | 0 | 2 | 0 |
-| 固態鋁電容/SP-Cap `aluminum_polymer_cap` | 61.0 | 10 | 8 (80%) | 10 (100%) | 4 | 1 | 2 | 4 | 11 |
-| HBM `hbm` | 56.5 | 12 | 4 (33%) | 12 (100%) | 2 | 1 | 6 | 2 | 25 |
-| 薄膜電容 `film_capacitor` | 56.4 | 3 | 1 (33%) | 3 (100%) | 3 | 1 | 3 | 4 | 0 |
-| 電感/扼流圈 `inductor_choke` | 54.5 | 8 | 6 (75%) | 8 (100%) | 4 | 1 | 2 | 3 | 9 |
-| IC-製造 `ic_manufacturing` | 53.5 | 1 | 1 (100%) | 1 (100%) | 0 | 0 | 0 | 0 | 0 |
-| 手機製造 `smartphone_manufacturing` | 53.5 | 1 | 0 (0%) | 1 (100%) | 0 | 0 | 0 | 0 | 0 |
-| SOI晶圓 `soi_wafer` | 52.8 | 2 | 2 (100%) | 2 (100%) | 0 | 0 | 0 | 1 | 1 |
-| Host DRAM/上下文記憶 `host_dram` | 51.1 | 2 | 1 (50%) | 2 (100%) | 4 | 1 | 5 | 4 | 0 |
-| 記憶體IC設計 `memory_ic_design` | 50.5 | 8 | 2 (25%) | 8 (100%) | 0 | 0 | 0 | 2 | 11 |
-| 矽光子/SiPh `silicon_photonics` | 50.2 | 7 | 7 (100%) | 7 (100%) | 3 | 1 | 3 | 3 | 4 |
-| CPU Socket/測試座/插槽 `cpu_socket` | 49.7 | 5 | 3 (60%) | 5 (100%) | 4 | 1 | 3 | 2 | 1 |
-| AI PC `ai_pc` | 49.3 | 5 | 2 (40%) | 5 (100%) | 0 | 0 | 2 | 0 | 1 |
-| AI測試/Probe Card/Interface `ai_test_probe_interface` | 48.9 | 10 | 4 (40%) | 10 (100%) | 5 | 1 | 2 | 4 | 4 |
-| PCB-材料設備 `pcb_material_equipment` | 48.4 | 9 | 0 (0%) | 9 (100%) | 4 | 1 | 4 | 5 | 7 |
-| 銀行 `banks` | 47.3 | 186 | 0 (0%) | 186 (100%) | 3 | 1 | 2 | 4 | 90 |
-| Legacy記憶體 `legacy_memory` | 45.9 | 3 | 0 (0%) | 3 (100%) | 0 | 0 | 0 | 0 | 1 |
-| IP/ASIC `ip_asic` | 45.0 | 10 | 5 (50%) | 10 (100%) | 0 | 0 | 1 | 3 | 7 |
-| 無人機 `drone` | 44.5 | 10 | 0 (0%) | 10 (100%) | 0 | 0 | 1 | 0 | 5 |
-| 保險 `insurance` | 44.4 | 71 | 0 (0%) | 71 (100%) | 3 | 1 | 2 | 1 | 90 |
-| HVDC功率半導體 `hvdc_power_semiconductor` | 43.9 | 7 | 6 (86%) | 7 (100%) | 5 | 1 | 6 | 5 | 7 |
-| 金控 `financial_holding` | 43.8 | 46 | 0 (0%) | 46 (100%) | 0 | 0 | 3 | 0 | 90 |
-| InP磷化銦光子 `inp_photonics` | 43.1 | 9 | 8 (89%) | 9 (100%) | 4 | 1 | 2 | 3 | 11 |
-| 二次電池 `battery_secondary` | 42.5 | 3 | 3 (100%) | 3 (100%) | 0 | 0 | 0 | 0 | 2 |
-| ABF `abf_substrate` | 42.3 | 7 | 0 (0%) | 7 (100%) | 3 | 1 | 3 | 4 | 7 |
-| CoWoS `cowos` | 41.7 | 5 | 2 (40%) | 5 (100%) | 0 | 0 | 0 | 0 | 3 |
-| 被動元件 `passive_components` | 40.9 | 230 | 16 (7%) | 230 (100%) | 4 | 1 | 3 | 6 | 90 |
-| 玻璃陶瓷 `glass_ceramics` | 40.6 | 9 | 1 (11%) | 9 (100%) | 0 | 0 | 0 | 2 | 3 |
-| GPU加速器 `gpu_accelerator` | 39.7 | 7 | 4 (57%) | 7 (100%) | 0 | 0 | 3 | 0 | 5 |
-| 銅/銅箔 `copper` | 39.7 | 32 | 0 (0%) | 32 (100%) | 3 | 1 | 1 | 9 | 90 |
-| 電源管理IC/PMIC `power_management_ic` | 39.1 | 4 | 0 (0%) | 4 (100%) | 5 | 1 | 2 | 6 | 5 |
-| 紙業 `paper` | 39.0 | 7 | 0 (0%) | 7 (100%) | 0 | 0 | 0 | 0 | 9 |
-| 金屬製品 `metal_parts` | 38.6 | 57 | 0 (0%) | 57 (100%) | 0 | 0 | 0 | 9 | 90 |
-| 軍工/國防 `defense` | 38.4 | 29 | 2 (7%) | 29 (100%) | 4 | 1 | 2 | 1 | 32 |
-| CPO/光通訊 `cpo_optical` | 38.0 | 18 | 18 (100%) | 18 (100%) | 4 | 1 | 6 | 4 | 42 |
-| CPU-Memory Interface/CXL `memory_interface` | 37.6 | 1 | 0 (0%) | 1 (100%) | 4 | 1 | 4 | 3 | 0 |
+| HDD冷資料/長期記憶 `hdd_cold_storage` | 41.0 | 3 | 2 (67%) | 3 (100%) | 4 | 1 | 1 | 4 | 1 |
+| SOI晶圓 `soi_wafer` | 40.3 | 2 | 2 (100%) | 2 (100%) | 0 | 0 | 0 | 1 | 1 |
+| HVDC功率半導體 `hvdc_power_semiconductor` | 40.2 | 10 | 9 (90%) | 10 (100%) | 5 | 1 | 6 | 5 | 13 |
+| AI PC `ai_pc` | 38.2 | 5 | 2 (40%) | 5 (100%) | 0 | 0 | 2 | 0 | 1 |
+| AI資料中心BBU `data_center_bbu` | 37.3 | 15 | 10 (67%) | 15 (100%) | 5 | 1 | 6 | 5 | 25 |
+| 企業級SSD/eSSD `enterprise_ssd` | 36.6 | 6 | 4 (67%) | 6 (100%) | 4 | 1 | 3 | 5 | 3 |
+| GB300 `gb300` | 35.7 | 6 | 2 (33%) | 6 (100%) | 0 | 0 | 1 | 0 | 3 |
+| AI算力Capex `ai_capex` | 34.4 | 13 | 9 (69%) | 13 (100%) | 0 | 0 | 17 | 1 | 17 |
+| 功率分立元件/MOSFET `power_discrete_semiconductor` | 33.8 | 10 | 6 (60%) | 10 (100%) | 6 | 1 | 3 | 7 | 14 |
+| CoWoS `cowos` | 33.4 | 5 | 2 (40%) | 5 (100%) | 0 | 0 | 0 | 0 | 3 |
+| 雲端/AI軟體 `cloud_ai` | 32.6 | 103 | 10 (10%) | 103 (100%) | 0 | 0 | 8 | 10 | 90 |
+| 保險 `insurance` | 32.3 | 75 | 0 (0%) | 75 (100%) | 3 | 1 | 2 | 1 | 90 |
+| 金控 `financial_holding` | 32.2 | 49 | 0 (0%) | 49 (100%) | 0 | 0 | 3 | 0 | 90 |
+| GPU加速器 `gpu_accelerator` | 31.9 | 7 | 4 (57%) | 7 (100%) | 0 | 0 | 3 | 0 | 5 |
+| 雲端資安/SASE/CNAPP `cloud_security_sase` | 31.5 | 8 | 4 (50%) | 8 (100%) | 5 | 1 | 4 | 2 | 8 |
+| KV Cache/RAG記憶體 `kv_cache_memory` | 30.9 | 5 | 3 (60%) | 5 (100%) | 4 | 1 | 6 | 2 | 5 |
+| GLP-1/減重藥 `glp1_obesity` | 30.6 | 11 | 0 (0%) | 11 (100%) | 3 | 1 | 3 | 1 | 2 |
+| CPO/光通訊 `cpo_optical` | 30.4 | 18 | 18 (100%) | 18 (100%) | 4 | 1 | 6 | 4 | 33 |
+| GB200 `gb200` | 30.3 | 10 | 2 (20%) | 10 (100%) | 0 | 0 | 1 | 0 | 8 |
+| CDMO/CRO `cdmo_cro` | 30.2 | 167 | 1 (1%) | 167 (100%) | 4 | 1 | 1 | 3 | 90 |
+| 新藥 `new_drug` | 29.8 | 172 | 2 (1%) | 172 (100%) | 0 | 0 | 1 | 2 | 90 |
+| 銀行 `banks` | 29.6 | 193 | 3 (2%) | 193 (100%) | 3 | 1 | 2 | 4 | 90 |
+| AI應用軟體/創作工具 `ai_application_software` | 29.4 | 19 | 0 (0%) | 19 (100%) | 5 | 1 | 2 | 3 | 17 |
+| 電商 `ecommerce` | 28.5 | 10 | 1 (10%) | 10 (100%) | 0 | 0 | 2 | 0 | 5 |
+| 高功率圓柱電池 `high_power_cylindrical_battery` | 28.4 | 6 | 5 (83%) | 6 (100%) | 5 | 1 | 2 | 4 | 3 |
+| 無人機 `drone` | 27.9 | 10 | 0 (0%) | 10 (100%) | 0 | 0 | 1 | 0 | 5 |
+| 物流 `logistics` | 27.5 | 40 | 0 (0%) | 40 (100%) | 0 | 0 | 1 | 0 | 90 |
+| 證券 `securities` | 27.5 | 44 | 0 (0%) | 44 (100%) | 0 | 0 | 0 | 0 | 90 |
+| 記憶體IC設計 `memory_ic_design` | 27.5 | 8 | 2 (25%) | 8 (100%) | 0 | 0 | 0 | 2 | 11 |
+| 油氣/LNG `oil_lng` | 27.4 | 181 | 0 (0%) | 181 (100%) | 4 | 1 | 1 | 4 | 90 |
+| IP/ASIC `ip_asic` | 27.3 | 10 | 5 (50%) | 10 (100%) | 0 | 0 | 1 | 3 | 9 |
+| 航運 `shipping` | 27.1 | 54 | 1 (2%) | 54 (100%) | 3 | 1 | 2 | 1 | 90 |
+| 化學工業 `chemicals` | 25.7 | 58 | 1 (2%) | 58 (100%) | 0 | 0 | 1 | 12 | 77 |
+| 遊戲 `gaming` | 25.5 | 9 | 2 (22%) | 9 (100%) | 0 | 0 | 1 | 0 | 11 |
+| AI資料平台/湖倉 `ai_data_platform` | 25.5 | 12 | 8 (67%) | 12 (100%) | 6 | 1 | 3 | 7 | 23 |
+| 系統整合 `system_integration` | 25.2 | 91 | 0 (0%) | 91 (100%) | 0 | 0 | 4 | 0 | 90 |
+| HBM `hbm` | 25.1 | 17 | 9 (53%) | 17 (100%) | 2 | 1 | 6 | 2 | 52 |
+| AI先進製程/產能瓶頸 `ai_foundry_capacity` | 25.0 | 5 | 2 (40%) | 5 (100%) | 0 | 0 | 2 | 0 | 3 |
+| InP磷化銦光子 `inp_photonics` | 24.6 | 9 | 8 (89%) | 9 (100%) | 4 | 1 | 2 | 3 | 9 |
+| 資安 `cybersecurity` | 24.4 | 58 | 6 (10%) | 58 (100%) | 0 | 0 | 5 | 1 | 90 |
+| 身份安全/IAM `identity_security` | 24.3 | 2 | 1 (50%) | 2 (100%) | 5 | 1 | 1 | 5 | 1 |
+| AI測試/Probe Card/Interface `ai_test_probe_interface` | 24.2 | 10 | 4 (40%) | 10 (100%) | 5 | 1 | 2 | 4 | 6 |
+| 半導體元件 `semiconductor_components` | 24.0 | 218 | 16 (7%) | 218 (100%) | 5 | 1 | 3 | 7 | 90 |
+| Observability/DevOps `observability_devops` | 23.9 | 5 | 2 (40%) | 5 (100%) | 6 | 1 | 3 | 2 | 6 |
+| 金融科技/支付軟體 `fintech_payments_software` | 23.9 | 13 | 1 (8%) | 13 (100%) | 4 | 1 | 2 | 3 | 5 |
 
 ## Missing Business/Profile Refs
 

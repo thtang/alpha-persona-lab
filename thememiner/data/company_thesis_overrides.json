@@ -1,7 +1,7 @@
 {
   "schema_version": "company_thesis_overrides_v1",
   "description": "Curated thesis cards for high-priority names whose raw exchange/profile mapping is too broad for trade reasoning. These overrides are merged on top of generated ThemeMiner company thesis cards.",
-  "updated_at": "2026-06-16",
+  "updated_at": "2026-06-21",
   "overrides": {
     "2313.TW": {
       "name": "華通",
@@ -209,6 +209,62 @@
       ],
       "source_quality": "curated_needs_financial_verification"
     },
+    "STM": {
+      "thesis_label": "European power semiconductor IDM / 800V HVDC AI data-center power / SiC-GaN-MCU",
+      "primary_business": "STMicroelectronics 是歐洲大型 IDM，產品橫跨 MCU、power discrete、SiC/GaN/MOSFET、PMIC、MEMS/sensors、analog/RF 與 automotive/industrial semiconductors。它不是純 AI 股，但在 800V HVDC AI data-center power conversion 以及 EV/industrial power chain 裡有真產品與官方合作證據。",
+      "business_segments": [
+        "800 VDC AI data-center power conversion",
+        "SiC power devices",
+        "GaN power devices",
+        "MOSFET / IGBT / diodes",
+        "power management IC",
+        "STM32 microcontrollers",
+        "MEMS and sensors",
+        "automotive and industrial semiconductors"
+      ],
+      "ai_chain_position": "AI 機櫃從傳統低壓配電走向 800V HVDC 後，需要更高效率的 SiC/GaN、隔離、PMIC、功率控制與板端電源轉換。ST 已有與 NVIDIA 相關的 800 VDC AI datacenter power conversion portfolio，是歐洲 power semiconductor leader/architecture signal。",
+      "non_ai_chain_position": "汽車、工業、個人電子、通訊與 MCU/sensor 仍是主要基本盤；EV 庫存、歐洲半導體景氣與工業週期會直接影響估值與 earnings。",
+      "catalysts": [
+        "NVIDIA 800 VDC AI data-center power-conversion collaboration",
+        "SiC/GaN/MOSFET content growth in AI racks and EV platforms",
+        "Q1 2026 demand recovery / normalized distribution inventory",
+        "data-center revenue expectation rising from design wins",
+        "European power semiconductor basket repricing"
+      ],
+      "leader_indicators": [
+        "TXN Texas Instruments",
+        "ON onsemi",
+        "IFX.DE Infineon",
+        "VSH Vishay Intertechnology",
+        "NVDA Nvidia",
+        "VRT Vertiv",
+        "6435.TWO 大中",
+        "3707.TWO 漢磊"
+      ],
+      "peer_symbols": [
+        "TXN",
+        "ON",
+        "VSH",
+        "NVDA",
+        "IFX.DE",
+        "NXPI",
+        "MCHP",
+        "WOLF",
+        "NVTS",
+        "ROHCY",
+        "6435.TWO",
+        "3707.TWO",
+        "8261.TW"
+      ],
+      "risks": [
+        "not a pure AI stock; auto/industrial cycle can dominate the P&L",
+        "convertible-bond issuance can create short-term overhang after a large rally",
+        "data-center revenue needs quarterly proof, not only architecture headlines",
+        "competition from Infineon, TI, ON, Rohm, Navitas and Wolfspeed",
+        "European ADR liquidity and EUR/USD factor can add noise"
+      ],
+      "source_quality": "curated_official_sources"
+    },
     "VSH": {
       "thesis_label": "passive components / resistors / capacitors / diodes",
       "primary_business": "Vishay Intertechnology 是全球被動元件與分立半導體供應商，產品包含電阻、電容、電感、二極體、MOSFET 與光電元件。它是美股被動元件/分立元件擴散的重要指標，不該漏出被動元件圖譜。",
@@ -262,6 +318,223 @@
       "risks": [
         "precision sensor cycle can diverge from passive component cycle",
         "small-cap liquidity and sharp post-earnings moves"
+      ],
+      "source_quality": "curated_needs_financial_verification"
+    },
+    "ON": {
+      "name": "ON Semiconductor",
+      "thesis_label": "power semiconductor / SiC-MOSFET / AI rack power follower",
+      "primary_business": "onsemi supplies intelligent power and sensing semiconductors, including MOSFETs, SiC devices, power modules, image sensors, analog and power-management products. In the ThemeMiner graph it should be treated as a real power-semiconductor node, not a generic semiconductor fallback.",
+      "business_segments": [
+        "power MOSFET",
+        "SiC power devices",
+        "power modules",
+        "analog and power management",
+        "industrial power",
+        "automotive electrification",
+        "data-center power conversion"
+      ],
+      "ai_chain_position": "AI rack power density and 800V/HVDC architecture can increase demand for efficient power conversion semiconductors. ON is a diversified power-semiconductor follower: useful for confirming US power-semi breadth, but less pure than a dedicated AI rack power architecture winner.",
+      "non_ai_chain_position": "Auto and industrial cycles remain the main earnings driver; EV/industrial inventory, SiC pricing and customer capex can dominate AI read-through.",
+      "catalysts": [
+        "AI rack power conversion semiconductor content growth",
+        "800V/HVDC data-center architecture validation",
+        "SiC/MOSFET cycle stabilization",
+        "US power semiconductor basket strength"
+      ],
+      "leader_indicators": [
+        "STM STMicroelectronics",
+        "TXN Texas Instruments",
+        "IFX.DE Infineon",
+        "VSH Vishay Intertechnology",
+        "VRT Vertiv",
+        "6435.TWO 大中",
+        "3707.TWO 漢磊"
+      ],
+      "peer_symbols": [
+        "STM",
+        "TXN",
+        "IFX.DE",
+        "VSH",
+        "NVTS",
+        "WOLF",
+        "6435.TWO",
+        "3707.TWO",
+        "8261.TW"
+      ],
+      "risks": [
+        "auto/industrial cycle can dominate the stock",
+        "SiC pricing and EV demand may offset AI power narrative",
+        "not a pure AI data-center power name",
+        "needs revenue or guidance proof before treating the AI thesis as core"
+      ],
+      "source_quality": "curated_needs_financial_verification"
+    },
+    "TXN": {
+      "name": "Texas Instruments",
+      "thesis_label": "analog power / 800V AI data-center power architecture signal",
+      "primary_business": "Texas Instruments is a diversified analog and embedded-processing semiconductor supplier with large power-management, signal-chain, isolation, MCU and embedded exposure. In this graph it is a power-architecture signal because of its 800V data-center power work with NVIDIA, not a pure AI accelerator stock.",
+      "business_segments": [
+        "analog IC",
+        "power management",
+        "isolation and gate drivers",
+        "embedded processing",
+        "800V data-center power architecture",
+        "industrial and automotive semiconductors"
+      ],
+      "ai_chain_position": "TI validates the 800V/HVDC AI rack power architecture layer. It should lead or confirm the power-semiconductor basket, but its revenue is diversified and the architecture signal can lead monetization by several quarters.",
+      "non_ai_chain_position": "Broad industrial/auto analog cycles, capacity utilization and pricing are more important to near-term earnings than AI alone.",
+      "catalysts": [
+        "NVIDIA-related 800V AI data-center power architecture",
+        "power-management content growth in AI racks",
+        "analog cycle stabilization",
+        "US power semiconductor breadth"
+      ],
+      "leader_indicators": [
+        "STM STMicroelectronics",
+        "ON onsemi",
+        "IFX.DE Infineon",
+        "VRT Vertiv",
+        "NVDA Nvidia"
+      ],
+      "peer_symbols": [
+        "STM",
+        "ON",
+        "IFX.DE",
+        "ADI",
+        "MCHP",
+        "VSH"
+      ],
+      "risks": [
+        "large diversified analog base dilutes AI purity",
+        "architecture signal may precede revenue by quarters",
+        "industrial inventory cycle can dominate price action"
+      ],
+      "source_quality": "curated_official_sources"
+    },
+    "COHR": {
+      "name": "Coherent",
+      "thesis_label": "InP lasers / optical components / AI datacenter photonics leader",
+      "primary_business": "Coherent supplies optical materials, lasers, transceivers, components and compound-semiconductor products. For AI infrastructure it is a visible leader in optical components, InP/laser capacity and datacenter photonics.",
+      "business_segments": [
+        "InP lasers",
+        "EML/CW laser sources",
+        "optical transceivers",
+        "compound semiconductor materials",
+        "800G/1.6T optical components",
+        "datacenter photonics"
+      ],
+      "ai_chain_position": "AI scale-out networking raises optical bandwidth needs. Coherent is a leader signal for laser-source, InP photonics and CPO/pluggable optics constraints; it is less of a laggard and more of a benchmark for downstream optical diffusion.",
+      "non_ai_chain_position": "Industrial lasers, telecom inventory and non-AI optical cycles can still move the stock.",
+      "catalysts": [
+        "800G/1.6T optical demand",
+        "laser-source allocation and InP photonics constraints",
+        "CPO architecture validation",
+        "hyperscaler optical capex"
+      ],
+      "leader_indicators": [
+        "LITE Lumentum",
+        "AAOI Applied Optoelectronics",
+        "AXTI AXT",
+        "MRVL Marvell",
+        "ANET Arista"
+      ],
+      "peer_symbols": [
+        "LITE",
+        "AAOI",
+        "AXTI",
+        "MRVL",
+        "ANET",
+        "4979.TWO",
+        "3450.TW"
+      ],
+      "risks": [
+        "already a visible optical leader, so late entries can be crowded",
+        "telecom/datacom inventory cycles can obscure AI demand",
+        "CPO transition may reshuffle winners"
+      ],
+      "source_quality": "curated_needs_financial_verification"
+    },
+    "LITE": {
+      "name": "Lumentum",
+      "thesis_label": "datacom laser / EML-CW light source / AI optical leader",
+      "primary_business": "Lumentum supplies optical and photonic components including datacom/telecom lasers and high-speed optical components. It is a laser/light-source leader signal for AI datacenter optical upgrades.",
+      "business_segments": [
+        "EML lasers",
+        "CW light sources",
+        "datacom optical components",
+        "telecom optical components",
+        "800G/1.6T optical",
+        "CPO light-source migration"
+      ],
+      "ai_chain_position": "AI clusters need more optical links. Lumentum is tied to the light-source layer, where laser availability can become a bottleneck for 800G/1.6T and future CPO ramps.",
+      "non_ai_chain_position": "Telecom/datacom inventory, customer program timing and optical pricing cycles remain important.",
+      "catalysts": [
+        "laser-source demand from 800G/1.6T",
+        "CPO light-source architecture progress",
+        "optical leader basket strength",
+        "hyperscaler AI network capex"
+      ],
+      "leader_indicators": [
+        "COHR Coherent",
+        "AAOI Applied Optoelectronics",
+        "AXTI AXT",
+        "MRVL Marvell"
+      ],
+      "peer_symbols": [
+        "COHR",
+        "AAOI",
+        "AXTI",
+        "MRVL",
+        "4979.TWO",
+        "3450.TW"
+      ],
+      "risks": [
+        "large optical beta can overheat quickly",
+        "transition from pluggable optics to CPO can change supplier economics",
+        "customer program timing is lumpy"
+      ],
+      "source_quality": "curated_needs_financial_verification"
+    },
+    "TER": {
+      "name": "Teradyne",
+      "thesis_label": "semiconductor ATE / AI accelerator and advanced-package test",
+      "primary_business": "Teradyne supplies automated test equipment for semiconductors, system test and robotics. In AI infrastructure it belongs to the test bottleneck layer: expensive accelerators, chiplets, HBM and advanced packages require more test coverage and longer test time.",
+      "business_segments": [
+        "semiconductor ATE",
+        "system test",
+        "wireless test",
+        "advanced package test",
+        "AI accelerator test",
+        "robotics"
+      ],
+      "ai_chain_position": "As AI chips become larger, more expensive and more complex, test intensity rises. TER is a visible ATE leader and peer/leader signal for probe-card and interface names such as FORM, 旺矽 and 穎崴.",
+      "non_ai_chain_position": "Broad semicap capex, smartphone/auto test and robotics cycles can dilute AI-specific read-through.",
+      "catalysts": [
+        "AI accelerator and custom ASIC test demand",
+        "advanced packaging and HBM test complexity",
+        "semicap/test equipment cycle recovery",
+        "FORM/旺矽/穎崴 probe-interface diffusion"
+      ],
+      "leader_indicators": [
+        "FORM FormFactor",
+        "NVDA Nvidia",
+        "AVGO Broadcom",
+        "6223.TWO 旺矽",
+        "6515.TW 穎崴"
+      ],
+      "peer_symbols": [
+        "FORM",
+        "AMAT",
+        "KLAC",
+        "6223.TWO",
+        "6515.TW",
+        "6257.TW"
+      ],
+      "risks": [
+        "less hidden than smaller probe-card names",
+        "test equipment orders can be lumpy",
+        "robotics and non-AI segments can distract from test thesis"
       ],
       "source_quality": "curated_needs_financial_verification"
     },

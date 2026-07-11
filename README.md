@@ -22,7 +22,7 @@
 <br>
 
 <p>
-  目前包含 <code>gooaye</code> 股癌 Podcast、<code>yutinghao</code> 游庭皓的財經皓角、<code>zhezhe</code> 郭哲榮分析師 / 摩爾證券投顧、<code>thememiner</code> 即時細粒度跨市場題材挖掘，以及 <code>lagradar</code> 美日台中跨市場題材傳導雷達。<br>
+  目前包含 <code>gooaye</code> 股癌 Podcast、<code>yutinghao</code> 游庭皓的財經皓角、<code>zhezhe</code> 郭哲榮分析師 / 摩爾證券投顧、<code>thememiner</code> 即時細粒度跨市場題材挖掘、<code>lagradar</code> 美日台中跨市場題材傳導雷達，以及 <code>serenity</code> AI 供應鏈瓶頸研究 Skill。<br>
   股癌 659 集逐字稿；財經皓角 82 篇逐字稿、61 篇筆記、459 篇官方公開文章；哲哲 565 篇 ASR 逐字稿、SoundOn metadata、20 篇 UDN 公開文章。<br>
   不是復讀語錄，是把創作者的判斷方式接上 market context、結構化資料和可更新 scripts。
 </p>
@@ -107,19 +107,31 @@ yutinghao ❯ 很多人一開始買股票，只有下跌才虧錢。
 
 ```bash
 python3 thememiner/scripts/update_theme_graph.py --refresh-prices --refresh-news
+python3 thememiner/scripts/discover_market_universe.py --markets US,TW,TWO,KR --agent-mode auto
+python3 thememiner/scripts/build_company_thesis_cards.py --agent-mode auto
+python3 thememiner/scripts/build_semantic_relation_index.py --backend auto
 python3 thememiner/scripts/query_theme_graph.py --top 20
 python3 thememiner/scripts/query_theme_graph.py --concept hbm
 python3 thememiner/scripts/build_theme_graph_html.py
 open thememiner/output/theme_graph.html
 ```
 
-輸出會落在 [`thememiner/output`](thememiner/output)，核心資料包含 [`thememiner/data/fine_theme_taxonomy_seed.json`](thememiner/data/fine_theme_taxonomy_seed.json)、[`thememiner/data/cross_market_watchlist_seed.json`](thememiner/data/cross_market_watchlist_seed.json) 和 [`thememiner/data/company_profiles_seed.json`](thememiner/data/company_profiles_seed.json)。`company_profiles_seed.json` 會記錄公司主業、專業項目、平台/客戶路徑、約束、風險與 source，讓 graph edge 能說清楚「為什麼這家公司屬於這個題材」。AI 光子鏈另外有 `bottleneck_profile`：缺貨層級、稀缺度、替代難度、發現狀態與 bottleneck score，用來找 InP、矽光子、SOI、外延設備、特殊玻纖、CPO 這種第二/第三層瓶頸。
+可選的本機 MLX 語義向量接入：
+
+```bash
+.venv/bin/python -m pip install -r requirements-mlx.txt
+.venv/bin/python thememiner/scripts/build_semantic_relation_index.py --backend mlx-local --embedding-model mlx-community/Qwen3-Embedding-0.6B-4bit-DWQ
+```
+
+`--backend auto` 仍預設不下載模型、走 lexical fallback；若要讓 auto 使用本機模型，設定 `THEMEMINER_EMBEDDING_BACKEND=mlx-local`。如果你另外跑了 OpenAI-compatible `/v1/embeddings` adapter，也可以用 `--backend mlx-http --embedding-endpoint http://127.0.0.1:8080/v1/embeddings`。兩種模型後端都會寫入同一份 `relation_judgments.json`，並保留 `lexical_similarity` 作為可解釋 fallback。
+
+輸出會落在 [`thememiner/output`](thememiner/output)，核心資料包含 [`thememiner/data/fine_theme_taxonomy_seed.json`](thememiner/data/fine_theme_taxonomy_seed.json)、[`thememiner/data/cross_market_watchlist_seed.json`](thememiner/data/cross_market_watchlist_seed.json) 和 [`thememiner/data/company_profiles_seed.json`](thememiner/data/company_profiles_seed.json)。`company_profiles_seed.json` 會記錄公司主業、專業項目、平台/客戶路徑、約束、風險與 source，讓 graph edge 能說清楚「為什麼這家公司屬於這個題材」。`company_thesis_cards.json` 會把 profile 轉成交易 thesis，`relation_judgments.json` 則把每條股票-題材邊標上 `relation_quality_score`、`relation_authority` 和 semantic similarity，避免只靠詞表硬配。AI 光子鏈另外有 `bottleneck_profile`：缺貨層級、稀缺度、替代難度、發現狀態與 bottleneck score，用來找 InP、矽光子、SOI、外延設備、特殊玻纖、CPO 這種第二/第三層瓶頸。
 
 ## 跨市場 Laggard Radar
 
 `lagradar` 是一個新的交易研究 persona，用來捕捉美、日、台、中/港、韓之間的中期題材擴散。它不是只看電子業；seed graph 也涵蓋銅與工業金屬、能源、航運、軍工航太、醫藥/CDMO、金融利率等非電子題材。核心是找 `improving laggard`：leader shock 已驗證、關係圖說得通、候選股仍有 lag gap，且 3/5/10 日、量價、突破、籌碼或資金流開始確認，同時避開過熱高潮。
 
-候選股會讀取 ThemeMiner 的公司 profile，因此輸出除了價格/量能，也會附上 business、specialization、relation path 和 bottleneck layer；缺少 profile 的股票只能視為低信心概念連結。
+候選股會讀取 ThemeMiner 的公司 profile、thesis card 和 relation judgment，因此輸出除了價格/量能，也會附上 business、specialization、relation path、relation quality、relation authority 和 bottleneck layer；缺少 profile 或只有 fallback relation 的股票只能視為低信心概念連結。
 
 ```bash
 python3 lagradar/scripts/scan_laggards.py
@@ -128,6 +140,34 @@ python3 lagradar/scripts/query_laggards.py --theme pcb
 ```
 
 輸出會落在 [`lagradar/output`](lagradar/output)，設計細節見 [`lagradar/README.md`](lagradar/README.md)，完整方法論見 [`lagradar/references/methodology.md`](lagradar/references/methodology.md)。
+
+## 主動題材挖掘資料源
+
+要讓 ThemeMiner 主動挖出潛在爆發題材，不能只堆新聞；需要把「社群 lead、產業卡點、官方公司資料、價格/量能、籌碼/flow、宏觀流動性」分層管理。資料源總控表在 [`thememiner/data/data_source_registry_seed.json`](thememiner/data/data_source_registry_seed.json)，方法論在 [`thememiner/references/data_source_strategy.md`](thememiner/references/data_source_strategy.md)。
+
+```bash
+python3 thememiner/scripts/audit_data_source_registry.py
+```
+
+registry 會把每個來源標上 `evidence_tier`、`signal_family`、`cadence`、`lead_time`、`access`、`parser_strategy`、`current_status` 和 `next_action`。原則是：X/Threads/PTT/雪球只當 weak lead；The Elec、Nikkei、DigiTimes、TrendForce 這類 trade source 當 medium early signal；SEC、MOPS/TWSE、TDnet/EDINET、OpenDART、HKEXnews、CNINFO、FRED、交易所/籌碼/價格資料才是 strong proof。
+
+## Serenity 供應鏈瓶頸 Skill
+
+`serenity` 參考 [muxuuu/serenity-skill](https://github.com/muxuuu/serenity-skill) 與 @aleabitoreddit 的公開方法論，將「AI 需求 → 架構變化 → 物理卡點 → 公司映射 → 證據分級 → 失效條件」做成本地 Skill。每次觸發會先抓取最新公開線索，落到 [`serenity/data/source/latest_digest.md`](serenity/data/source/latest_digest.md)，並累積到 [`serenity/data/posts/serenity_posts.jsonl`](serenity/data/posts/serenity_posts.jsonl)、[`serenity/data/transcripts/`](serenity/data/transcripts/) 與 [`serenity/data/graph_inputs/`](serenity/data/graph_inputs/)，再搭配 ThemeMiner/Lagradar 圖譜分析。
+
+```bash
+python3 serenity/scripts/update_serenity_knowledge.py
+```
+
+要把 Serenity 的新貼文/語料當成 ThemeMiner 早期題材 evidence：
+
+```bash
+python3 thememiner/scripts/update_theme_graph.py --external-evidence serenity/data/graph_inputs/theme_evidence.jsonl
+```
+
+`serenity/data/graph_inputs/theme_evidence.jsonl` 和 `company_mentions.jsonl` 都標記為 `serenity_recall_hint`，用途是補 recall / discovery，不是 final proof；正式排序仍要回到公司公告、filings、trade media、價格量能、籌碼/flow 與 ThemeMiner profile/relation judgment。
+
+這輪已把 BBU / 高功率圓柱電池拆成細題材：`data_center_bbu`、`high_power_cylindrical_battery`。圖譜新增 Samsung SDI、LG Energy Solution、新普、旭隼、致茂、Infineon、Rohm 等節點，並把 Panasonic、台達、Vertiv、Eaton、ON、STM、TXN、VSH 接回 direct / second-order / power-stage 關係。社交來源只當 lead，強結論仍以公司公告、filings、可信媒體與 trade media 驗證。
 
 ## 底層抓取 Runtime
 
@@ -183,6 +223,7 @@ python3 thememiner/scripts/build_theme_graph_html.py
 請從 https://github.com/thtang/alpha-persona-lab 安裝 zhezhe skill
 請從 https://github.com/thtang/alpha-persona-lab 安裝 thememiner skill
 請從 https://github.com/thtang/alpha-persona-lab 安裝 lagradar skill
+請從 https://github.com/thtang/alpha-persona-lab 安裝 serenity skill
 ```
 
 安裝後重開 Codex session，或重新載入 skills。之後可用：
@@ -193,6 +234,7 @@ $yutinghao ...
 $zhezhe ...
 $thememiner ...
 $lagradar ...
+$serenity ...
 ```
 
 如果自然語言安裝沒有正確抓到子資料夾，改用下面的手動 symlink。
@@ -207,6 +249,7 @@ Claude Desktop App 也可以直接用自然語言要求下載安裝：
 請從 https://github.com/thtang/alpha-persona-lab 安裝 zhezhe skill
 請從 https://github.com/thtang/alpha-persona-lab 安裝 thememiner skill
 請從 https://github.com/thtang/alpha-persona-lab 安裝 lagradar skill
+請從 https://github.com/thtang/alpha-persona-lab 安裝 serenity skill
 ```
 
 安裝後重開 Claude Desktop，或重新載入 skills。之後可用：
@@ -217,6 +260,7 @@ $yutinghao ...
 $zhezhe ...
 $thememiner ...
 $lagradar ...
+$serenity ...
 ```
 
 如果 App 安裝器沒有正確處理 multi-skill repo 的子資料夾，改用下面的手動 symlink。
@@ -269,7 +313,7 @@ bash scripts/install-skills.sh --codex
 bash scripts/install-skills.sh --all-targets
 ```
 
-installer 會把五個 skill 以 symlink 掛到本機 skills folder。之後只要在 repo 內 `git pull`，下次開新 session 就會讀到新版 skill 與資料。
+installer 會把六個 skill 以 symlink 掛到本機 skills folder。之後只要在 repo 內 `git pull`，下次開新 session 就會讀到新版 skill 與資料。
 
 #### Codex
 
@@ -282,6 +326,7 @@ ln -sfn "$PWD/yutinghao" ~/.codex/skills/yutinghao
 ln -sfn "$PWD/zhezhe" ~/.codex/skills/zhezhe
 ln -sfn "$PWD/thememiner" ~/.codex/skills/thememiner
 ln -sfn "$PWD/lagradar" ~/.codex/skills/lagradar
+ln -sfn "$PWD/serenity" ~/.codex/skills/serenity
 ```
 
 重開 Codex session，或重新載入 skills。
@@ -295,6 +340,7 @@ ln -sfn "$PWD/yutinghao" ~/.claude/skills/yutinghao
 ln -sfn "$PWD/zhezhe" ~/.claude/skills/zhezhe
 ln -sfn "$PWD/thememiner" ~/.claude/skills/thememiner
 ln -sfn "$PWD/lagradar" ~/.claude/skills/lagradar
+ln -sfn "$PWD/serenity" ~/.claude/skills/serenity
 ```
 
 重開 Claude Desktop / Claude Code，或重新載入 skills。
@@ -308,11 +354,13 @@ cp -R yutinghao ~/.claude/skills/yutinghao
 cp -R zhezhe ~/.claude/skills/zhezhe
 cp -R thememiner ~/.claude/skills/thememiner
 cp -R lagradar ~/.claude/skills/lagradar
+cp -R serenity ~/.claude/skills/serenity
 cp -R gooaye ~/.codex/skills/gooaye
 cp -R yutinghao ~/.codex/skills/yutinghao
 cp -R zhezhe ~/.codex/skills/zhezhe
 cp -R thememiner ~/.codex/skills/thememiner
 cp -R lagradar ~/.codex/skills/lagradar
+cp -R serenity ~/.codex/skills/serenity
 ```
 
 複製安裝的缺點是之後 repo 更新時要重新複製一次。
@@ -532,15 +580,44 @@ python3 zhezhe/scripts/sync_daily_sources.py --force-check
 ```bash
 python3 thememiner/scripts/update_theme_graph.py --refresh-prices --refresh-news --max-discovered 0
 python3 thememiner/scripts/build_company_thesis_cards.py --agent-mode auto --agent-workers 2
+python3 thememiner/scripts/build_semantic_relation_index.py --backend auto
 python3 thememiner/scripts/build_theme_graph_html.py
 python3 lagradar/scripts/scan_laggards.py --refresh-history
 python3 lagradar/scripts/build_lagradar_html.py
+```
+
+### Serenity
+
+`serenity` 每次觸發時會先抓取最新公開線索；X/mirror 被擋時會把失敗寫入 manifest，並繼續使用可取得的 GitHub、第三方方法論文章、trade media 與公司來源。
+
+手動更新：
+
+```bash
+python3 serenity/scripts/update_serenity_knowledge.py
+```
+
+更新後會同步維護：
+
+- `serenity/data/posts/serenity_posts.jsonl`: 累積貼文/片段庫。
+- `serenity/data/transcripts/*.md`: transcript-like 原始語料。
+- `serenity/data/graph_inputs/theme_evidence.jsonl`: ThemeMiner 可讀的外部 evidence stream。
+
+把 Serenity lead 補進圖譜：
+
+```bash
+python3 thememiner/scripts/update_theme_graph.py --external-evidence serenity/data/graph_inputs/theme_evidence.jsonl
 ```
 
 或直接用 repo 級 bootstrap：
 
 ```bash
 bash scripts/bootstrap-theme-stack.sh --fresh
+```
+
+若要在 bootstrap 時啟用本機 MLX semantic relation scoring：
+
+```bash
+bash scripts/bootstrap-theme-stack.sh --fresh --semantic-backend mlx-local --embedding-model mlx-community/Qwen3-Embedding-0.6B-4bit-DWQ
 ```
 
 ## Market Context
@@ -599,6 +676,11 @@ alpha-persona-lab/
     output/
     references/
     scripts/
+  serenity/
+    SKILL.md
+    data/source/
+    references/research/
+    scripts/
   scripts/
     install-skills.sh
     bootstrap-theme-stack.sh
@@ -631,6 +713,11 @@ python3 thememiner/scripts/audit_graph_coverage.py
 # Lagradar
 python3 lagradar/scripts/query_laggards.py --top 15
 python3 lagradar/scripts/select_trade_candidates.py --top 10
+
+# Serenity
+python3 serenity/scripts/update_serenity_knowledge.py
+sed -n '1,160p' serenity/data/source/latest_digest.md
+python3 thememiner/scripts/update_theme_graph.py --external-evidence serenity/data/graph_inputs/theme_evidence.jsonl
 ```
 
 ## Notes

@@ -114,6 +114,38 @@ def load_company_thesis_cards(path: Path | None) -> dict[str, dict[str, Any]]:
     return {card["symbol"]: card for card in cards if card.get("symbol")}
 
 
+def load_relation_judgments(path: Path | None) -> dict[tuple[str, str], dict[str, Any]]:
+    if not path or not path.exists():
+        return {}
+    data = read_json(path)
+    rows = data.get("judgments", data if isinstance(data, list) else [])
+    by_key: dict[tuple[str, str], dict[str, Any]] = {}
+    for row in rows:
+        symbol = row.get("symbol")
+        concept_id = row.get("concept_id")
+        if not symbol or not concept_id:
+            continue
+        key = (symbol, concept_id)
+        existing = by_key.get(key)
+        if existing is None or float(row.get("relation_quality_score") or 0.0) > float(existing.get("relation_quality_score") or 0.0):
+            by_key[key] = row
+    return by_key
+
+
+def best_relation_judgment(
+    relation_judgments: dict[tuple[str, str], dict[str, Any]] | None,
+    symbol: str,
+    theme_id: str,
+) -> dict[str, Any]:
+    if not relation_judgments:
+        return {}
+    concept_ids = [theme_id, *sorted(theme_concepts(theme_id))]
+    matches = [relation_judgments[(symbol, concept_id)] for concept_id in concept_ids if (symbol, concept_id) in relation_judgments]
+    if not matches:
+        return {}
+    return max(matches, key=lambda row: float(row.get("relation_quality_score") or 0.0))
+
+
 def load_thememiner_bundle(output_dir: Path | None) -> dict[str, Any]:
     """Load the latest ThemeMiner output files used as Lagradar's upstream graph."""
 
@@ -460,6 +492,17 @@ def company_metrics(node: dict[str, Any], cache_dir: Path, refresh: bool) -> dic
         "agent_status": node.get("agent_status"),
         "agent_reasoning_summary": node.get("agent_reasoning_summary"),
         "evidence_gaps": node.get("evidence_gaps", []),
+        "relation_authority": node.get("relation_authority"),
+        "relation_quality_score": node.get("relation_quality_score"),
+        "semantic_similarity": node.get("semantic_similarity"),
+        "lexical_similarity": node.get("lexical_similarity"),
+        "embedding_similarity": node.get("embedding_similarity"),
+        "embedding_similarity_raw": node.get("embedding_similarity_raw"),
+        "semantic_backend": node.get("semantic_backend"),
+        "backend_status": node.get("backend_status"),
+        "matched_terms": node.get("matched_terms", []),
+        "semantic_warnings": node.get("warnings", []),
+        "membership_source": node.get("membership_source"),
     }
     try:
         rows = yahoo_history(symbol, cache_dir, refresh=refresh)
@@ -614,12 +657,88 @@ def classify_candidate(metric: dict[str, Any], leader_20: float, gap_20: float, 
     return "neutral"
 
 
+def relation_quality_score(row: dict[str, Any]) -> float:
+    """Convert relation authority into a 0-1 score used by ranking."""
+
+    explicit = row.get("relation_quality_score")
+    if explicit is not None:
+        try:
+            return round(clamp(float(explicit), 0.0, 1.0), 4)
+        except (TypeError, ValueError):
+            pass
+
+    confidence = str(row.get("relation_confidence") or "")
+    source_quality = str(row.get("source_quality") or "")
+    agent_status = str(row.get("agent_status") or "")
+    authority = str(row.get("relation_authority") or "")
+    score = 0.48
+    if confidence == "high_manual_curated":
+        score = 0.94
+    elif confidence == "high_profiled":
+        score = 0.78
+    elif confidence == "medium_needs_segment_verification":
+        score = 0.56
+    elif confidence == "low_auto_mapping_backlog":
+        score = 0.28
+
+    if row.get("manual_thesis_override") or authority == "manual_override":
+        score += 0.08
+    if agent_status == "agent_applied" or authority == "agent_verified":
+        score += 0.06
+    if authority == "profile_supported":
+        score += 0.03
+    if authority == "fallback_recall_only":
+        score -= 0.10
+    if "fallback" in source_quality or source_quality == "unknown":
+        score -= 0.06
+    if row.get("role") == "concept_only":
+        score -= 0.06
+    if not row.get("thesis_label"):
+        score -= 0.06
+    if agent_status.startswith("agent_unavailable") or "codex_agent_unavailable" in agent_status:
+        score -= 0.06
+    return round(clamp(score, 0.0, 1.0), 4)
+
+
+def relation_quality_adjustment(row: dict[str, Any], quality: float | None = None) -> float:
+    quality = relation_quality_score(row) if quality is None else quality
+    adjustment = (quality - 0.5) * 30.0
+    authority = str(row.get("relation_authority") or "")
+    if authority == "manual_override":
+        adjustment += 3.0
+    elif authority == "agent_verified":
+        adjustment += 2.0
+    elif authority == "fallback_recall_only":
+        adjustment -= 8.0
+    if quality < 0.32:
+        adjustment -= 8.0
+    return round(adjustment, 3)
+
+
+def inferred_relation_authority(row: dict[str, Any]) -> str | None:
+    if row.get("relation_authority"):
+        return str(row["relation_authority"])
+    if row.get("manual_thesis_override") or row.get("agent_status") == "manual_override":
+        return "manual_override"
+    if row.get("agent_status") == "agent_applied":
+        return "agent_verified"
+    confidence = str(row.get("relation_confidence") or "")
+    if confidence == "high_profiled":
+        return "profile_supported"
+    if confidence == "medium_needs_segment_verification":
+        return "needs_review"
+    if confidence == "low_auto_mapping_backlog":
+        return "fallback_recall_only"
+    return None
+
+
 def build_scan(
     seed: dict[str, Any],
     output_dir: Path,
     refresh_history: bool,
     company_profiles: dict[str, dict[str, Any]] | None = None,
     thesis_cards: dict[str, dict[str, Any]] | None = None,
+    relation_judgments: dict[tuple[str, str], dict[str, Any]] | None = None,
     sync_info: dict[str, Any] | None = None,
 ) -> dict[str, Any]:
     cache_dir = output_dir / "cache" / "yahoo"
@@ -657,6 +776,25 @@ def build_scan(
                     "evidence_gaps": thesis_card.get("evidence_gaps", []),
                 }
                 for key, value in thesis_fields.items():
+                    if value not in (None, "", []):
+                        merged[key] = value
+            judgment = best_relation_judgment(relation_judgments, node["symbol"], theme["theme_id"])
+            if judgment:
+                merged["relation_judgment"] = judgment
+                for key in (
+                    "relation_authority",
+                    "relation_quality_score",
+                    "semantic_similarity",
+                    "lexical_similarity",
+                    "embedding_similarity",
+                    "embedding_similarity_raw",
+                    "semantic_backend",
+                    "backend_status",
+                    "matched_terms",
+                    "membership_source",
+                    "warnings",
+                ):
+                    value = judgment.get(key)
                     if value not in (None, "", []):
                         merged[key] = value
             theme_nodes.append(merged)
@@ -732,6 +870,8 @@ def build_scan(
             heat_penalty = overheat_score(row)
             status = classify_candidate(row, leader_max_20, gap_20, turn)
             exposure = float(row.get("exposure") or 0.5)
+            rel_quality = relation_quality_score(row)
+            rel_adjustment = relation_quality_adjustment(row, rel_quality)
             score = (
                 theme_heat * 0.25
                 + diffusion["diffusion_score"] * 0.12
@@ -740,6 +880,7 @@ def build_scan(
                 + turn * 8.0
                 + exposure * 10.0
                 - heat_penalty * 5.0
+                + rel_adjustment
             )
             if status == "weak_not_laggard":
                 score -= 18.0
@@ -778,6 +919,17 @@ def build_scan(
                 "lag_gap_60d": round(gap_60, 2),
                 "turning_score": turn,
                 "overheat_score": heat_penalty,
+                "relation_quality_score": rel_quality,
+                "relation_quality_adjustment": rel_adjustment,
+                "relation_authority": inferred_relation_authority(row),
+                "semantic_similarity": row.get("semantic_similarity"),
+                "lexical_similarity": row.get("lexical_similarity"),
+                "embedding_similarity": row.get("embedding_similarity"),
+                "embedding_similarity_raw": row.get("embedding_similarity_raw"),
+                "semantic_backend": row.get("semantic_backend"),
+                "semantic_warnings": row.get("semantic_warnings", []),
+                "matched_terms": row.get("matched_terms", []),
+                "membership_source": row.get("membership_source"),
                 "volume_ratio_20d": row.get("volume_ratio_20d"),
                 "near_20d_high": row.get("near_20d_high"),
                 "breakout_20d": row.get("breakout_20d"),
@@ -866,14 +1018,14 @@ def write_report(path: Path, themes: list[dict[str, Any]], candidates: list[dict
             "",
             "## Top Laggard Candidates",
             "",
-            "| Rank | Candidate | Theme | Status | Score | 20d Gap | r5 | r20 | Turn | Heat | Volume |",
-            "|---:|---|---|---|---:|---:|---:|---:|---:|---:|---:|",
+            "| Rank | Candidate | Theme | Status | Score | RelQ | 20d Gap | r5 | r20 | Turn | Heat | Volume |",
+            "|---:|---|---|---|---:|---:|---:|---:|---:|---:|---:|---:|",
         ]
     )
     for idx, row in enumerate(candidates[:30], start=1):
         lines.append(
             f"| {idx} | {row['name']} `{row['symbol']}` | {row['theme_label']} | {row['status']} | "
-            f"{fmt(row['candidate_score'])} | {fmt(row['lag_gap_20d'])}% | {fmt(row['r5'])}% | "
+            f"{fmt(row['candidate_score'])} | {fmt(row.get('relation_quality_score'), 2)} | {fmt(row['lag_gap_20d'])}% | {fmt(row['r5'])}% | "
             f"{fmt(row['r20'])}% | {fmt(row['turning_score'], 2)} | {fmt(row['overheat_score'], 2)} | {fmt(row['volume_ratio_20d'], 2)}x |"
         )
     path.parent.mkdir(parents=True, exist_ok=True)
@@ -886,6 +1038,7 @@ def main() -> int:
     parser.add_argument("--output-dir", default="lagradar/output")
     parser.add_argument("--company-profiles", default="thememiner/output/company_profiles.json")
     parser.add_argument("--company-thesis-cards", default="thememiner/output/company_thesis_cards.json")
+    parser.add_argument("--relation-judgments", default="thememiner/output/relation_judgments.json")
     parser.add_argument("--thememiner-output", default="thememiner/output")
     parser.add_argument("--no-sync-thememiner", action="store_true", help="Disable automatic ThemeMiner concept/profile sync")
     parser.add_argument("--thememiner-min-score", type=float, default=0.0)
@@ -909,7 +1062,16 @@ def main() -> int:
     )
     company_profiles = {**(thememiner_bundle.get("company_profiles") or {}), **load_company_profiles(Path(args.company_profiles))}
     thesis_cards = load_company_thesis_cards(Path(args.company_thesis_cards))
-    result = build_scan(seed, Path(args.output_dir), args.refresh_history, company_profiles, thesis_cards, sync_info)
+    relation_judgments = load_relation_judgments(Path(args.relation_judgments))
+    result = build_scan(
+        seed,
+        Path(args.output_dir),
+        args.refresh_history,
+        company_profiles,
+        thesis_cards,
+        relation_judgments,
+        sync_info,
+    )
     print(f"Wrote {len(result['theme_scores'])} theme scores and {len(result['candidates'])} candidates to {args.output_dir}")
     if sync_info.get("enabled"):
         print(
@@ -920,6 +1082,8 @@ def main() -> int:
         )
     if thesis_cards:
         print(f"Merged {len(thesis_cards)} company thesis cards from {args.company_thesis_cards}")
+    if relation_judgments:
+        print(f"Merged {len(relation_judgments)} stock-theme relation judgments from {args.relation_judgments}")
     return 0
 
 

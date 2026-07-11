@@ -2,7 +2,7 @@
 set -euo pipefail
 
 ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
-DEFAULT_SKILLS=(gooaye yutinghao zhezhe thememiner lagradar)
+DEFAULT_SKILLS=(gooaye yutinghao zhezhe thememiner lagradar serenity)
 SELECTED_SKILLS=()
 TARGETS=()
 

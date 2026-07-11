@@ -67,6 +67,21 @@ def quality_bonus(row: dict[str, Any]) -> float:
     confidence = str(row.get("relation_confidence") or "")
     source_quality = str(row.get("source_quality") or "")
     bonus = 0.0
+    relation_quality = row.get("relation_quality_score")
+    if relation_quality is not None:
+        try:
+            bonus += (float(relation_quality) - 0.5) * 22.0
+        except (TypeError, ValueError):
+            pass
+    authority = str(row.get("relation_authority") or "")
+    if authority == "manual_override":
+        bonus += 4.0
+    elif authority == "agent_verified":
+        bonus += 3.0
+    elif authority == "profile_supported":
+        bonus += 1.5
+    elif authority == "fallback_recall_only":
+        bonus -= 8.0
     if "high_manual" in confidence:
         bonus += 11.0
     elif "high_profiled" in confidence:
@@ -280,6 +295,13 @@ def why_against(target: dict[str, Any], row: dict[str, Any]) -> str:
         reasons.append("weaker turn")
     if row.get("relation_confidence") != target.get("relation_confidence"):
         reasons.append(str(row.get("relation_confidence") or "no thesis"))
+    row_relq = row.get("relation_quality_score")
+    target_relq = target.get("relation_quality_score")
+    if isinstance(row_relq, (int, float)) and isinstance(target_relq, (int, float)):
+        if row_relq > target_relq + 0.18:
+            reasons.append("stronger relation")
+        elif row_relq + 0.18 < target_relq:
+            reasons.append("weaker relation")
     if not reasons:
         reasons.append("similar peer")
     return ", ".join(reasons[:4])
@@ -321,14 +343,15 @@ def render_candidate_block(target: dict[str, Any], peers: list[dict[str, Any]]) 
     lines.extend(
         [
             "",
-            "| Challenger | Market | Score | Status | r5 | r20 | Gap20 | Turn | Heat | Thesis | Why vs focus |",
-            "|---|---|---:|---|---:|---:|---:|---:|---:|---|---|",
+            "| Challenger | Market | Score | RelQ | Authority | Status | r5 | r20 | Gap20 | Turn | Heat | Thesis | Why vs focus |",
+            "|---|---|---:|---:|---|---|---:|---:|---:|---:|---:|---|---|",
         ]
     )
     for row in peers:
         lines.append(
             "| "
             f"`{row.get('symbol')}` {row.get('name')} | {row.get('market') or '-'} | {fmt(row.get('_selection_score'))} | "
+            f"{fmt(row.get('relation_quality_score'), 2)} | {row.get('relation_authority') or '-'} | "
             f"{row.get('status')} | {pct(row.get('r5'))} | {pct(row.get('r20'))} | {pct(row.get('lag_gap_20d'))} | "
             f"{fmt(row.get('turning_score'), 2)} | {fmt(row.get('overheat_score'), 2)} | "
             f"{row.get('thesis_label') or row.get('theme_label') or '-'} | {why_against(target, row)} |"
@@ -390,12 +413,13 @@ def main() -> int:
         "",
         "## Shortlist",
         "",
-        "| Rank | Symbol | Market | Pick Score | Status | r5 | r20 | Turn | Heat | Thesis | Trigger |",
-        "|---:|---|---|---:|---|---:|---:|---:|---:|---|---|",
+        "| Rank | Symbol | Market | Pick Score | RelQ | Authority | Status | r5 | r20 | Turn | Heat | Thesis | Trigger |",
+        "|---:|---|---|---:|---:|---|---|---:|---:|---:|---:|---|---|",
     ]
     for idx, row in enumerate(selected, start=1):
         lines.append(
             f"| {idx} | `{row.get('symbol')}` {row.get('name')} | {row.get('market') or '-'} | {fmt(row.get('_selection_score'))} | "
+            f"{fmt(row.get('relation_quality_score'), 2)} | {row.get('relation_authority') or '-'} | "
             f"{row.get('status')} | {pct(row.get('r5'))} | {pct(row.get('r20'))} | {fmt(row.get('turning_score'), 2)} | "
             f"{fmt(row.get('overheat_score'), 2)} | {row.get('thesis_label') or row.get('theme_label') or '-'} | {trigger_for(row)} |"
         )

@@ -12,6 +12,9 @@ AGENT_MODE="auto"
 AGENT_PROVIDER="auto"
 AGENT_WORKERS=2
 AGENT_BATCH_SIZE=24
+SEMANTIC_BACKEND="auto"
+EMBEDDING_ENDPOINT=""
+EMBEDDING_MODEL=""
 DISCOVER_MAX_SYMBOLS=0
 MAX_DISCOVERED=800
 PRICE_SYMBOL_LIMIT=""
@@ -35,6 +38,9 @@ Options:
   --agent-provider PROVIDER  auto, openai, or codex. Default: auto
   --agent-workers N          Parallel semantic judges. Default: 2
   --agent-batch-size N       Companies/stocks per agent call. Default: 24
+  --semantic-backend MODE    auto, lexical, mlx, mlx-local, or mlx-http. Default: auto
+  --embedding-endpoint URL   OpenAI-compatible /v1/embeddings endpoint
+  --embedding-model MODEL    Embedding model name sent to the endpoint
   --backtest                 Fetch/build 20-year lead-lag backtest outputs
   --help                     Show this help text
 
@@ -93,6 +99,18 @@ while [[ $# -gt 0 ]]; do
       ;;
     --agent-batch-size)
       AGENT_BATCH_SIZE="$2"
+      shift 2
+      ;;
+    --semantic-backend)
+      SEMANTIC_BACKEND="$2"
+      shift 2
+      ;;
+    --embedding-endpoint)
+      EMBEDDING_ENDPOINT="$2"
+      shift 2
+      ;;
+    --embedding-model)
+      EMBEDDING_MODEL="$2"
       shift 2
       ;;
     --backtest)
@@ -162,6 +180,15 @@ if [[ "$REBUILD_GRAPH" == true || ! -f thememiner/output/cross_market_stock_grap
 else
   echo "Using committed ThemeMiner graph snapshot. Add --rebuild-graph to recompute."
 fi
+
+SEMANTIC_ARGS=("$PYTHON" thememiner/scripts/build_semantic_relation_index.py --backend "$SEMANTIC_BACKEND")
+if [[ -n "$EMBEDDING_ENDPOINT" ]]; then
+  SEMANTIC_ARGS+=(--embedding-endpoint "$EMBEDDING_ENDPOINT")
+fi
+if [[ -n "$EMBEDDING_MODEL" ]]; then
+  SEMANTIC_ARGS+=(--embedding-model "$EMBEDDING_MODEL")
+fi
+run "${SEMANTIC_ARGS[@]}"
 
 run "$PYTHON" thememiner/scripts/build_theme_graph_html.py
 

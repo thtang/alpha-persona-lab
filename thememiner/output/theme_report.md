@@ -1,47 +1,47 @@
 # ThemeMiner Report
 
-Generated at: 2026-06-18T08:11:23.912862+00:00
+Generated at: 2026-07-11T06:10:38.256658+00:00
 
 ## Top Active Themes
 
 | Rank | Theme | Category | Stage | Score | Markets | Stocks | r5 | r20 | News |
 |---:|---|---|---|---:|---|---:|---:|---:|---:|
-| 1 | 固態鋁電容/SP-Cap `aluminum_polymer_cap` | 電子上游 | active_cross_market | 81.5 | CN,JP,TW | 10 | 27.88 | 58.21 | 4 |
-| 2 | 高壓MLCC `high_voltage_mlcc` | 電子上游 | active_cross_market | 78.9 | CN,JP,TW,US | 12 | 34.37 | 110.9 | 4 |
-| 3 | IC-DRAM製造 `dram_manufacturing` | 電子上游 | active_cross_market | 78.0 | CN,KR,TW,US | 9 | 26.06 | 53.06 | 4 |
-| 4 | 晶片電阻 `chip_resistor` | 電子上游 | active_cross_market | 75.3 | CN,TW,US | 5 | 31.83 | 101.72 | 4 |
-| 5 | Vera Rubin `vera_rubin` | 全球概念 | active_cross_market | 70.2 | TW,US | 6 | 13.05 | 46.78 | 4 |
-| 6 | 被動元件 `passive_components` | 電子上游 | active_cross_market | 68.2 | CN,JP,TW,US | 230 | 13.05 | 33.24 | 4 |
-| 7 | 企業級SSD/eSSD `enterprise_ssd` | 全球概念 | active_cross_market | 68.2 | CN,TW,US | 6 | 16.97 | 49.3 | 4 |
-| 8 | 記憶體IC設計 `memory_ic_design` | 電子上游 | active_cross_market | 65.8 | CN,TW,US | 8 | 16.97 | 49.3 | 4 |
-| 9 | Host DRAM/上下文記憶 `host_dram` | 全球概念 | active_cross_market | 65.8 | CN,US | 2 | 16.97 | 49.3 | 4 |
-| 10 | KV Cache/RAG記憶體 `kv_cache_memory` | 全球概念 | active_cross_market | 65.8 | CN,US | 4 | 16.97 | 49.3 | 4 |
-| 11 | HBM `hbm` | 全球概念 | active_cross_market | 61.2 | CN,KR,TW,US | 12 | 26.06 | 53.06 | 0 |
-| 12 | 玻璃陶瓷 `glass_ceramics` | 傳產 | active_cross_market | 53.2 | CN,JP,TW,US | 9 | 20.24 | 9.52 | 4 |
-| 13 | LED及光元件 `led_opto` | 電子上游 | active_cross_market | 51.2 | TW,US | 120 | 15.61 | 12.0 | 4 |
-| 14 | 光學鏡片 `optical_lens` | 電子中游 | active_cross_market | 51.2 | TW,US | 118 | 15.61 | 12.0 | 4 |
-| 15 | AI測試/Probe Card/Interface `ai_test_probe_interface` | 全球概念 | active_cross_market | 50.6 | CN,TW,US | 10 | 16.53 | 11.04 | 4 |
-| 16 | 電源管理IC/PMIC `power_management_ic` | 電子上游 | price_active | 50.3 | TW | 4 | 16.92 | 11.9 | 4 |
-| 17 | IC-代工 `foundry` | 電子上游 | active_cross_market | 49.5 | CN,KR,TW,US | 199 | 11.78 | 9.07 | 4 |
-| 18 | LCD-TFT面板 `lcd_tft` | 電子中游 | price_active | 48.8 | TW | 117 | 15.61 | 12.0 | 4 |
-| 19 | 半導體元件 `semiconductor_components` | 電子上游 | active_cross_market | 48.2 | JP,TW,US | 207 | 12.49 | 9.19 | 4 |
-| 20 | 晶圓材料 `wafer_materials` | 電子上游 | active_cross_market | 47.8 | JP,TW,US | 194 | 12.43 | 8.55 | 4 |
-| 21 | IC-半導體設備 `semicap_equipment` | 電子上游 | active_cross_market | 47.1 | CN,TW,US | 198 | 12.56 | 9.32 | 4 |
-| 22 | 塑膠 `plastics` | 傳產 | price_active | 46.8 | TW | 25 | 11.39 | 9.5 | 4 |
-| 23 | LCD-零組件 `lcd_components` | 電子中游 | price_active | 46.4 | TW | 117 | 15.61 | 12.0 | 4 |
-| 24 | IC-設計 `ic_design` | 電子上游 | active_cross_market | 46.3 | TW,US | 197 | 12.62 | 9.32 | 4 |
-| 25 | PCB-製造 `pcb_manufacturing` | 電子上游 | active_cross_market | 45.8 | CN,TW,US | 210 | 8.3 | 17.42 | 4 |
-| 26 | 連接元件 `connectors` | 電子上游 | active_cross_market | 45.1 | JP,TW,US | 208 | 7.75 | 17.42 | 4 |
-| 27 | 手機製造 `smartphone_manufacturing` | 電子下游 | price_active | 44.9 | TW | 1 | 7.47 | 23.66 | 4 |
-| 28 | 功率分立元件/MOSFET `power_discrete_semiconductor` | 電子上游 | price_active | 44.1 | TW | 6 | 14.67 | 7.95 | 4 |
-| 29 | IC-封測 `ic_packaging_testing` | 電子上游 | price_active | 42.9 | TW | 190 | 12.17 | 8.81 | 4 |
-| 30 | 營建 `construction` | 傳產 | price_active | 42.4 | TW | 87 | 4.27 | 20.13 | 4 |
+| 1 | HDD冷資料/長期記憶 `hdd_cold_storage` | 全球概念 | price_active | 41.0 | CN,US | 3 | 8.09 | 14.14 | 4 |
+| 2 | SOI晶圓 `soi_wafer` | 全球概念 | price_active | 40.3 | JP | 2 | 4.07 | 22.69 | 4 |
+| 3 | HVDC功率半導體 `hvdc_power_semiconductor` | 電子上游 | news_active | 40.2 | DE,JP,TW,US | 10 | -0.13 | 6.35 | 7 |
+| 4 | AI PC `ai_pc` | 全球概念 | news_active | 38.2 | HK,TW,US | 5 | 7.74 | 5.26 | 4 |
+| 5 | AI資料中心BBU `data_center_bbu` | 電子中游 | news_active | 37.3 | DE,JP,KR,TW,US | 15 | -2.72 | 1.02 | 16 |
+| 6 | 企業級SSD/eSSD `enterprise_ssd` | 全球概念 | news_active | 36.6 | CN,TW,US | 6 | 4.24 | 12.85 | 4 |
+| 7 | GB300 `gb300` | 全球概念 | news_active | 35.7 | HK,TW,US | 6 | 7.19 | 5.85 | 4 |
+| 8 | AI算力Capex `ai_capex` | 全球概念 | news_active | 34.4 | CN,TW,US | 13 | 3.25 | 6.73 | 5 |
+| 9 | 功率分立元件/MOSFET `power_discrete_semiconductor` | 電子上游 | news_active | 33.8 | DE,JP,TW,US | 10 | -0.71 | 15.48 | 4 |
+| 10 | CoWoS `cowos` | 全球概念 | news_active | 33.4 | CN,TW,US | 5 | -0.01 | 6.73 | 4 |
+| 11 | 雲端/AI軟體 `cloud_ai` | 軟體/網路 | news_active | 32.6 | CN,HK,JP,KR,TW,US | 103 | -0.68 | -1.79 | 6 |
+| 12 | 保險 `insurance` | 金融 | news_active | 32.3 | CN,HK,JP,KR,TW,US | 75 | 0.34 | 6.2 | 4 |
+| 13 | 金控 `financial_holding` | 金融 | news_active | 32.2 | CN,JP,KR,TW,US | 49 | 1.19 | 3.84 | 4 |
+| 14 | GPU加速器 `gpu_accelerator` | 全球概念 | news_active | 31.9 | CN,TW,US | 7 | 3.64 | 6.73 | 4 |
+| 15 | 雲端資安/SASE/CNAPP `cloud_security_sase` | 軟體/網路 | news_active | 31.5 | CN,TW,US | 8 | 0.13 | 13.46 | 4 |
+| 16 | KV Cache/RAG記憶體 `kv_cache_memory` | 全球概念 | news_active | 30.9 | CN,KR,US | 5 | 0.38 | 11.56 | 4 |
+| 17 | GLP-1/減重藥 `glp1_obesity` | 生技醫療 | news_active | 30.6 | CN,JP,KR,TW,US | 11 | -0.66 | 5.45 | 4 |
+| 18 | CPO/光通訊 `cpo_optical` | 全球概念 | news_active | 30.4 | CN,JP,TW,US | 18 | -2.32 | -4.34 | 7 |
+| 19 | GB200 `gb200` | 全球概念 | news_active | 30.3 | CN,HK,TW,US | 10 | 3.2 | 0.5 | 4 |
+| 20 | CDMO/CRO `cdmo_cro` | 生技醫療 | news_active | 30.2 | CN,HK,JP,KR,TW,US | 167 | -0.22 | 2.6 | 4 |
+| 21 | 新藥 `new_drug` | 生技醫療 | news_active | 29.8 | CN,HK,JP,KR,TW,US | 172 | -0.22 | 2.63 | 4 |
+| 22 | 銀行 `banks` | 金融 | news_active | 29.6 | CN,HK,JP,KR,TW,US | 193 | -0.44 | 3.95 | 4 |
+| 23 | AI應用軟體/創作工具 `ai_application_software` | 軟體/網路 | news_active | 29.4 | CN,HK,JP,KR,TW,US | 19 | 2.14 | 0.46 | 4 |
+| 24 | 電商 `ecommerce` | 軟體/網路 | news_active | 28.5 | HK,JP,KR,TW,US | 10 | 1.03 | -0.38 | 4 |
+| 25 | 高功率圓柱電池 `high_power_cylindrical_battery` | 電子中游 | news_active | 28.4 | JP,KR,TW,US | 6 | -5.9 | -4.24 | 12 |
+| 26 | 無人機 `drone` | 全球概念 | news_active | 27.9 | CN,JP,KR,TW,US | 10 | -2.22 | 4.97 | 4 |
+| 27 | 物流 `logistics` | 全球概念 | news_active | 27.5 | CN,JP,KR,TW,US | 40 | -0.69 | -0.29 | 4 |
+| 28 | 記憶體IC設計 `memory_ic_design` | 電子上游 | news_active | 27.5 | CN,TW,US | 8 | -1.82 | 11.29 | 4 |
+| 29 | 證券 `securities` | 金融 | news_active | 27.5 | KR,TW | 44 | 1.08 | 3.52 | 4 |
+| 30 | 油氣/LNG `oil_lng` | 全球概念 | news_active | 27.4 | CN,HK,JP,KR,TW,US | 181 | 1.22 | -2.78 | 4 |
 
 ## Graph Stats
 
-- Nodes: 3212
-- Edges: 85501
+- Nodes: 3388
+- Edges: 104787
 
 ## Discovered Terms
 
-股市(79), 風險評估(31), 股票波動性(31), 財務風險與投資風(31), 險分析(31), 投資網誌(20), 富途牛牛(15), 豐雲學堂(13), 股市爆料同學會(13), 產業即時新聞(13), 股感(12), 香港(11), 股市報價(11), 財經新聞(11), 科技新報(11), 自由時報(10), 作者(9), 是什麼(9), 今日漲停跌停股(8), 財經(8), 概念股有哪些(8), 輝達(8), 億美元(7), 討論區(7), 股票評論(7), 股吧交流社區(7), 今日股價與討論(6), AASTOCKS(6), 年成長預測(6), 關鍵驅動因素揭曉(6)
+股市(111), 投資網誌(31), 財經新聞(29), 香港(28), 股市報價(28), 富途牛牛(25), 作者(23), 自由時報(22), 豐雲學堂(21), SDI(18), 產業即時新聞(16), 股市話題(16), 股市爆料同學會(13), 科技新報(13), 即時新聞(12), 是什麼(12), 股感(12), 商周(11), 經濟日報(10), 預測(10), 的目標價(10), 今日漲停跌停股(9), UPS(9), 焦點股(8), 自學網(8), 概念股有哪些(8), CPO(8), BBU(8), MLCC(7), 目標價(6)

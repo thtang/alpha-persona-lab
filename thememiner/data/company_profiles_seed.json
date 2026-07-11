@@ -69,6 +69,33 @@
       ]
     },
     {
+      "symbol": "STM",
+      "name": "STMicroelectronics",
+      "market": "US",
+      "region": "Europe/US ADR",
+      "sector": "European IDM / power semiconductors / MCU and sensors",
+      "primary_business": "Integrated device manufacturer supplying semiconductors across automotive, industrial, personal electronics, communications, computer peripherals, and AI data-center power conversion. Core products include STM32 microcontrollers, power discrete, SiC/GaN/MOSFET devices, power-management ICs, MEMS sensors, analog, RF, and secure connectivity chips.",
+      "specializations": ["800 VDC AI data-center power conversion", "SiC and GaN power devices", "MOSFETs and IGBTs", "STM32 microcontrollers", "power management ICs", "MEMS and sensors", "automotive electrification"],
+      "platforms": ["NVIDIA 800 VDC AI data-center power architecture", "Smart Mobility", "Power & Energy Management", "IoT and connected devices", "EV and industrial power"],
+      "constraints": ["automotive and industrial inventory cycle", "EV adoption timing", "AI data-center revenue visibility", "convertible-bond overhang", "competition from Infineon/TI/ON/Navitas/Wolfspeed/Rohm"],
+      "risk_flags": ["not a pure AI data-center name; automotive and industrial cycles can dominate earnings", "recent convertible financing can pressure short-term sentiment", "AI/HVDC thesis requires confirmation that data-center revenue scales beyond design-win headlines"],
+      "bottleneck_profile": {"layer": "Layer 7 - AI rack power-conversion semiconductors", "scarcity": "medium-high", "substitutability": "medium", "discovery_state": "european_power_leader_repricing", "score": 3.4, "reason": "ST is a real high-voltage power semiconductor and power-management supplier with official NVIDIA 800 VDC collaboration, but the stock also carries broad auto/industrial IDM cyclicality."},
+      "concept_exposures": [
+        {"concept_id": "hvdc_power_semiconductor", "role": "global_architecture_signal", "weight": 0.84, "path": "NVIDIA 800 VDC AI data-center architecture -> ST 12V/6V power-conversion portfolio -> SiC/GaN/power-management content"},
+        {"concept_id": "power_discrete_semiconductor", "role": "global_power_idm", "weight": 0.78, "path": "higher-voltage power electronics -> SiC/GaN/MOSFET/IGBT/discrete semiconductor demand"},
+        {"concept_id": "power_management_ic", "role": "power_management_supplier", "weight": 0.72, "path": "AI racks, EVs, and industrial systems -> power-management IC and controller demand"},
+        {"concept_id": "semiconductor_components", "role": "european_idm_leader", "weight": 0.68, "path": "broad semiconductor cycle recovery -> European IDM component and analog/sensor exposure"},
+        {"concept_id": "ev", "role": "automotive_electrification_supplier", "weight": 0.58, "path": "EV and hybrid platforms -> SiC, power modules, MCU, and sensor content"},
+        {"concept_id": "industrial_pc", "role": "industrial_semiconductor_supplier", "weight": 0.42, "path": "industrial automation and edge devices -> MCU, sensors, power and connectivity chips"}
+      ],
+      "source_refs": [
+        {"title": "STMicroelectronics product portfolio", "url": "https://www.st.com/content/st_com/en/browse/product-portfolio.html"},
+        {"title": "STMicroelectronics expands 800 VDC AI datacenter power conversion portfolio with NVIDIA", "url": "https://newsroom.st.com/media-center/press-item.html/t4766.html"},
+        {"title": "STMicroelectronics Q1 2026 financial results", "url": "https://newsroom.st.com/media-center/press-item.html/c3392.html"},
+        {"title": "STMicroelectronics US$1.5B convertible bond offering", "url": "https://newsroom.st.com/media-center/press-item.html/3398.html"}
+      ]
+    },
+    {
       "symbol": "VRT",
       "name": "Vertiv",
       "market": "US",
@@ -544,18 +571,21 @@
       "market": "JP",
       "region": "Japan",
       "sector": "Electronics / batteries / components",
-      "primary_business": "Electronics conglomerate whose SP-Cap conductive polymer aluminum capacitors act as a benchmark product in high-load AI server and networking applications.",
-      "specializations": ["SP-Cap", "conductive polymer aluminum electrolytic capacitors", "high-load AI server capacitors"],
-      "platforms": ["AI servers", "switches", "routers", "base stations"],
-      "constraints": ["capacity allocation", "raw material cost", "large conglomerate dilution of component signal"],
-      "risk_flags": ["stock is not a pure passive-component play", "price hikes may be small relative to group revenue"],
+      "primary_business": "Electronics conglomerate with SP-Cap conductive polymer aluminum capacitors and high-power cylindrical battery-cell exposure. In this graph Panasonic is both a passive-component benchmark and a reported BBU cell shortage peer.",
+      "specializations": ["SP-Cap", "conductive polymer aluminum electrolytic capacitors", "high-load AI server capacitors", "high-power cylindrical BBU cells", "data-center battery cells"],
+      "platforms": ["AI servers", "switches", "routers", "base stations", "data-center BBUs"],
+      "constraints": ["capacity allocation", "raw material cost", "BBU cell shortage", "large conglomerate dilution of component signal"],
+      "risk_flags": ["stock is not a pure passive-component or BBU-cell play", "price hikes may be small relative to group revenue", "BBU signal needs segment-level confirmation"],
       "concept_exposures": [
+        {"concept_id": "data_center_bbu", "role": "japan_cell_leader", "weight": 0.82, "path": "AI data-center rack backup demand -> BBU cylindrical cell shortage -> Panasonic peer signal"},
+        {"concept_id": "high_power_cylindrical_battery", "role": "japan_cell_leader", "weight": 0.84, "path": "compact high-current BBU requirements -> high-power cylindrical battery-cell demand"},
         {"concept_id": "aluminum_polymer_cap", "role": "global_product_benchmark", "weight": 0.95, "path": "SP-Cap price/availability -> global polymer aluminum capacitor bottleneck signal"},
         {"concept_id": "passive_components", "role": "global_leader", "weight": 0.6, "path": "high-end passive product pricing -> broader passive-component sentiment"}
       ],
       "source_refs": [
         {"title": "Panasonic SP-Cap lineup", "url": "https://industrial.panasonic.com/tw/products/pt/sp-cap/lineup"},
-        {"title": "UDN passive component price hike article", "url": "https://money.udn.com/money/story/5607/9515424?from=edn_related_storybottom"}
+        {"title": "UDN passive component price hike article", "url": "https://money.udn.com/money/story/5607/9515424?from=edn_related_storybottom"},
+        {"title": "The Elec BBU cell shortage note", "url": "https://www.thelec.net/news/articleView.html?idxno=11952"}
       ]
     },
     {
@@ -2076,6 +2106,505 @@
       ],
       "source_refs": [
         {"title": "eCloudvalley official site", "url": "https://www.ecloudvalley.com/"}
+      ]
+    },
+    {
+      "symbol": "006400.KS",
+      "name": "Samsung SDI",
+      "market": "KR",
+      "region": "Korea",
+      "sector": "Battery cells / energy storage / data-center BBU",
+      "primary_business": "Samsung SDI supplies rechargeable battery cells and energy-storage systems; the BBU thesis is specifically high-power cylindrical cells for rack-level AI data-center battery backup, distinct from general EV batteries.",
+      "specializations": ["21700 high-power cylindrical cells", "40V3 tabless BBU cells", "NCA cylindrical chemistry", "UPS batteries", "Samsung Battery Box ESS"],
+      "platforms": ["AI data-center BBU", "rack-level backup power", "data-center UPS", "non-China battery supply chain"],
+      "constraints": ["cylindrical cell capacity", "NCA/high-power qualification", "Malaysia/Korea production ramp", "hyperscaler customer concentration"],
+      "risk_flags": ["large EV/ESS business can dilute the BBU signal", "customer names may remain unconfirmed", "BBU shortage needs revenue and margin validation"],
+      "bottleneck_profile": {"layer": "Layer 6.5 - Rack-level BBU high-power cells", "scarcity": "high", "substitutability": "medium-low", "discovery_state": "korea_visible_leader", "score": 4.2, "reason": "High-power cylindrical cells sit upstream of rack-level BBUs; The Elec reports rising Samsung SDI shipments into Simplo and supply shortages for BBU cells."},
+      "concept_exposures": [
+        {"concept_id": "data_center_bbu", "role": "cell_leader", "weight": 0.92, "path": "AI server rack voltage stability and outage protection -> BBU adoption -> Samsung SDI cylindrical cell demand"},
+        {"concept_id": "high_power_cylindrical_battery", "role": "core_cell_supplier", "weight": 0.96, "path": "rack-level BBU needs compact high-current cells -> 21700 NCA/tabless cylindrical cell capacity"},
+        {"concept_id": "battery_secondary", "role": "global_battery_leader", "weight": 0.65, "path": "data-center and ESS battery demand -> rechargeable battery platform utilization"}
+      ],
+      "source_refs": [
+        {"title": "The Elec: Samsung SDI supplies AI data-center cells to Simplo", "url": "https://www.thelec.net/news/articleView.html?idxno=11952"},
+        {"title": "The Elec: Samsung SDI to mass-produce 21700 40V3 BBU cells in Malaysia", "url": "https://www.thelec.net/news/articleView.html?idxno=6792"},
+        {"title": "Samsung SDI official site", "url": "https://www.samsungsdi.com/"}
+      ]
+    },
+    {
+      "symbol": "373220.KS",
+      "name": "LG Energy Solution",
+      "market": "KR",
+      "region": "Korea",
+      "sector": "Battery cells / ESS / data-center BBU",
+      "primary_business": "LG Energy Solution is a major rechargeable battery cell supplier; in the BBU graph it is an alternative Korea cell supplier using cylindrical cells for BBU and pouch/prismatic routes for other energy-storage use cases.",
+      "specializations": ["cylindrical battery cells", "data-center BBU cells", "ESS batteries", "automotive batteries"],
+      "platforms": ["AI data-center BBU", "ESS", "non-China battery supply chain"],
+      "constraints": ["cell form-factor allocation", "customer qualification", "EV cycle competing for management attention"],
+      "risk_flags": ["less directly tied to the Simplo report than Samsung SDI", "large EV battery cycle can dominate stock behavior"],
+      "bottleneck_profile": {"layer": "Layer 6.5 - Data-center BBU cell alternative", "scarcity": "medium-high", "substitutability": "medium", "discovery_state": "korea_alternative_supplier", "score": 3.5, "reason": "Useful peer signal if hyperscalers broaden BBU cell sourcing beyond Samsung SDI/Panasonic, but direct order evidence is thinner."},
+      "concept_exposures": [
+        {"concept_id": "data_center_bbu", "role": "alternative_cell_supplier", "weight": 0.66, "path": "data-center BBU demand -> Korea cylindrical cell alternatives"},
+        {"concept_id": "high_power_cylindrical_battery", "role": "alternative_cell_supplier", "weight": 0.7, "path": "high-current cylindrical cell shortage -> potential LGES sourcing interest"},
+        {"concept_id": "battery_secondary", "role": "global_battery_leader", "weight": 0.7, "path": "battery supply-chain tightness -> LGES battery platform read-through"}
+      ],
+      "source_refs": [
+        {"title": "The Elec: Samsung SDI BBU production note mentions LGES BBU/UPS form factors", "url": "https://www.thelec.net/news/articleView.html?idxno=6792"},
+        {"title": "LG Energy Solution official site", "url": "https://www.lgensol.com/"}
+      ]
+    },
+    {
+      "symbol": "6121.TWO",
+      "name": "新普",
+      "market": "TW",
+      "region": "Taiwan",
+      "sector": "Battery pack / BBU module assembly",
+      "primary_business": "新普 is a Taiwan battery-pack specialist. The BBU thesis is its Trend Power/data-center pack route: receiving high-power cells, assembling BBU modules/packs, and shipping into North American cloud/data-center customers.",
+      "specializations": ["battery packs", "BBU module/pack assembly", "notebook and smart-device packs", "ESS/data-center battery systems"],
+      "platforms": ["AI data-center BBU", "rack-level backup power", "consumer electronics battery packs", "ESS"],
+      "constraints": ["cell allocation from Samsung SDI/Panasonic/LGES", "hyperscaler qualification", "pack safety/reliability", "customer concentration"],
+      "risk_flags": ["BBU revenue mix must be verified in filings/monthly revenue", "The Elec report is strong media evidence but customer names still need company confirmation"],
+      "bottleneck_profile": {"layer": "Layer 7 - BBU pack/module integration", "scarcity": "high", "substitutability": "medium", "discovery_state": "taiwan_direct_bbu_node", "score": 4.1, "reason": "Simplo is the Taiwan direct node named in the Samsung SDI BBU cell supply report; pack qualification and cell allocation make it more direct than broad UPS/power equipment proxies."},
+      "concept_exposures": [
+        {"concept_id": "data_center_bbu", "role": "taiwan_pack_integrator", "weight": 0.96, "path": "Samsung SDI/Panasonic cells -> Simplo/Trend Power BBU packs -> Amazon/Meta-class data-center customers"},
+        {"concept_id": "high_power_cylindrical_battery", "role": "cell_allocation_beneficiary", "weight": 0.82, "path": "tight high-power cylindrical cell supply -> qualified pack assembler allocation leverage"},
+        {"concept_id": "battery_secondary", "role": "battery_pack_specialist", "weight": 0.72, "path": "battery cell supply -> pack design/manufacturing and safety qualification"}
+      ],
+      "source_refs": [
+        {"title": "The Elec: Samsung SDI supplies AI data-center cells to Simplo", "url": "https://www.thelec.net/news/articleView.html?idxno=11952"},
+        {"title": "Simplo official site", "url": "https://www.simplo.com.tw/"}
+      ]
+    },
+    {
+      "symbol": "2308.TW",
+      "name": "台達電",
+      "market": "TW",
+      "region": "Taiwan",
+      "sector": "Power supply / thermal / data-center infrastructure",
+      "primary_business": "台達電 provides power supplies, thermal management, automation, EV power and data-center infrastructure. In the BBU graph it is a second-order power-infrastructure node, not a cylindrical battery-cell supplier.",
+      "specializations": ["server power supplies", "data-center power systems", "thermal management", "UPS/power electronics", "automation"],
+      "platforms": ["AI data centers", "rack/server power", "critical power infrastructure", "thermal management"],
+      "constraints": ["AI server power project timing", "margin mix", "competition with Vertiv/Eaton/Schneider", "battery-cell shortage is indirect"],
+      "risk_flags": ["do not treat as direct BBU cell shortage beneficiary", "large-cap premium can reduce laggard edge"],
+      "bottleneck_profile": {"layer": "Layer 6 - Data-center power infrastructure", "scarcity": "medium-high", "substitutability": "medium", "discovery_state": "taiwan_visible_power_leader", "score": 3.6, "reason": "台達 is a core Taiwan data-center power/thermal infrastructure proxy; BBU cell shortage confirms power-density stress but does not make 台達 a direct cell play."},
+      "concept_exposures": [
+        {"concept_id": "power_supply", "role": "taiwan_power_leader", "weight": 0.9, "path": "AI rack/server power density -> power supply and power system demand -> 台達電"},
+        {"concept_id": "thermal_components", "role": "power_thermal_leader", "weight": 0.75, "path": "AI rack density -> thermal management and power-thermal integration"},
+        {"concept_id": "data_center_bbu", "role": "second_order_power_infra", "weight": 0.46, "path": "rack-level BBU adoption -> broader data-center critical power infrastructure demand"}
+      ],
+      "source_refs": [
+        {"title": "Delta Electronics official site", "url": "https://www.deltaww.com/"},
+        {"title": "The Elec BBU cell shortage context", "url": "https://www.thelec.net/news/articleView.html?idxno=11952"}
+      ]
+    },
+    {
+      "symbol": "6409.TW",
+      "name": "旭隼",
+      "market": "TW",
+      "region": "Taiwan",
+      "sector": "UPS / power backup systems",
+      "primary_business": "旭隼 designs and manufactures UPS and power backup products. It is a data-center power backup peer, but the BBU cell shortage should be treated as adjacent unless confirmed by rack-level BBU product exposure.",
+      "specializations": ["UPS", "power backup systems", "inverters", "power electronics"],
+      "platforms": ["data-center UPS", "critical power", "industrial/commercial backup power"],
+      "constraints": ["UPS demand cycle", "battery-cell supply", "customer/project timing", "product mix"],
+      "risk_flags": ["BBU and centralized UPS are different architectures", "need filings/product confirmation before calling it direct BBU beneficiary"],
+      "bottleneck_profile": {"layer": "Layer 6 - UPS/backup power equipment", "scarcity": "medium", "substitutability": "medium", "discovery_state": "taiwan_ups_peer", "score": 3.0, "reason": "Useful Taiwan backup-power peer if data-center power reliability theme spreads, but less direct than Simplo for rack-level BBU packs."},
+      "concept_exposures": [
+        {"concept_id": "transformer_ups", "role": "taiwan_ups_supplier", "weight": 0.78, "path": "data-center power reliability -> UPS and backup power equipment demand -> 旭隼"},
+        {"concept_id": "power_supply", "role": "backup_power_follower", "weight": 0.55, "path": "critical power demand -> backup power system sales"},
+        {"concept_id": "data_center_bbu", "role": "adjacent_backup_power", "weight": 0.38, "path": "BBU attention -> backup-power/UPS peer screening, subject to product validation"}
+      ],
+      "source_refs": [
+        {"title": "Voltronic Power official site", "url": "https://www.voltronicpower.com/"}
+      ]
+    },
+    {
+      "symbol": "2360.TW",
+      "name": "致茂",
+      "market": "TW",
+      "region": "Taiwan",
+      "sector": "Test and measurement / power and battery test equipment",
+      "primary_business": "致茂 provides precision test and measurement systems for power electronics, batteries, EV, semiconductors and automation. In the BBU graph it is a second-order equipment/test node for battery modules and power systems.",
+      "specializations": ["battery test systems", "power electronics test", "automated test equipment", "precision measurement"],
+      "platforms": ["battery manufacturing", "power electronics", "EV/ESS", "data-center power validation"],
+      "constraints": ["capex timing", "test-equipment order lumpiness", "exposure to BBU must be validated by order/product mix"],
+      "risk_flags": ["not a cell or pack supplier", "equipment revenue may lag the shortage signal"],
+      "bottleneck_profile": {"layer": "Layer 8 - Battery/power test equipment", "scarcity": "medium", "substitutability": "medium", "discovery_state": "taiwan_test_equipment_follower", "score": 3.0, "reason": "If BBU cell/pack capacity expands, battery and power-electronics validation equipment demand can follow, but this is one step removed from direct shortages."},
+      "concept_exposures": [
+        {"concept_id": "precision_sensing", "role": "test_equipment_supplier", "weight": 0.75, "path": "battery/power system ramp -> precision test and measurement demand -> 致茂"},
+        {"concept_id": "data_center_bbu", "role": "test_equipment_follower", "weight": 0.48, "path": "BBU pack/cell qualification -> battery/power test equipment demand"},
+        {"concept_id": "battery_secondary", "role": "battery_test_supplier", "weight": 0.58, "path": "battery capacity expansion -> battery test systems"}
+      ],
+      "source_refs": [
+        {"title": "Chroma official site", "url": "https://www.chromaate.com/"}
+      ]
+    },
+    {
+      "symbol": "ETN",
+      "name": "Eaton",
+      "market": "US",
+      "region": "US",
+      "sector": "Electrical equipment / data-center power infrastructure",
+      "primary_business": "Eaton supplies electrical equipment, power distribution, backup power, switchgear and data-center power infrastructure. In the BBU graph it is a second-order infrastructure leader rather than a cell supplier.",
+      "specializations": ["UPS", "switchgear", "power distribution", "data-center electrical infrastructure", "critical power"],
+      "platforms": ["AI data centers", "grid and power distribution", "critical power systems"],
+      "constraints": ["data-center project timing", "electrical equipment backlog", "competition with Vertiv/Schneider/Delta"],
+      "risk_flags": ["already a visible AI power winner", "BBU cell shortage is indirect evidence for power-density stress"],
+      "bottleneck_profile": {"layer": "Layer 6 - Data-center electrical infrastructure", "scarcity": "medium-high", "substitutability": "medium", "discovery_state": "visible_power_leader", "score": 3.5, "reason": "Eaton benefits from data-center critical power buildout; BBU shortages validate power-reliability stress but do not make Eaton a direct battery-cell play."},
+      "concept_exposures": [
+        {"concept_id": "transformer_ups", "role": "global_power_infra_leader", "weight": 0.82, "path": "AI campus load growth -> UPS/switchgear/power distribution -> Eaton"},
+        {"concept_id": "power_supply", "role": "critical_power_leader", "weight": 0.68, "path": "data-center uptime requirements -> critical power systems"},
+        {"concept_id": "data_center_bbu", "role": "second_order_power_infra", "weight": 0.42, "path": "rack-level BBU adoption -> broader backup-power infrastructure validation"}
+      ],
+      "source_refs": [
+        {"title": "Eaton data center solutions", "url": "https://www.eaton.com/"}
+      ]
+    },
+    {
+      "symbol": "IFX.DE",
+      "name": "Infineon Technologies",
+      "market": "DE",
+      "region": "Europe",
+      "sector": "Power semiconductors / analog / security IC",
+      "primary_business": "Infineon is a global power semiconductor leader across SiC, GaN, MOSFETs, power ICs and industrial/automotive power electronics. In the BBU graph it is a power-stage peer for data-center power conversion, not a battery cell supplier.",
+      "specializations": ["SiC", "GaN", "MOSFET", "power IC", "industrial power", "automotive power"],
+      "platforms": ["AI data-center power conversion", "800V/HVDC power", "industrial power", "EV"],
+      "constraints": ["auto/industrial cycle", "SiC/GaN pricing", "direct BBU content proof"],
+      "risk_flags": ["BBU linkage is indirect through power conversion", "large diversified IDM can lag pure theme stocks"],
+      "bottleneck_profile": {"layer": "Layer 7 - Power-conversion semiconductors", "scarcity": "medium-high", "substitutability": "medium", "discovery_state": "europe_power_leader", "score": 3.4, "reason": "Rack-level BBU and HVDC architectures raise the importance of efficient power stages; Infineon is a leader signal for the power-semiconductor leg."},
+      "concept_exposures": [
+        {"concept_id": "hvdc_power_semiconductor", "role": "global_power_leader", "weight": 0.85, "path": "AI rack power density -> high-voltage power semiconductor demand -> Infineon"},
+        {"concept_id": "power_discrete_semiconductor", "role": "global_power_leader", "weight": 0.8, "path": "power conversion -> SiC/GaN/MOSFET content"},
+        {"concept_id": "data_center_bbu", "role": "power_stage_peer", "weight": 0.38, "path": "rack-level BBU/power backup -> power conversion and protection component demand"}
+      ],
+      "source_refs": [
+        {"title": "Infineon official products", "url": "https://www.infineon.com/"}
+      ]
+    },
+    {
+      "symbol": "6963.T",
+      "name": "Rohm",
+      "market": "JP",
+      "region": "Japan",
+      "sector": "Power semiconductors / discrete and analog IC",
+      "primary_business": "Rohm is a Japan power semiconductor and analog/discrete supplier. It is useful as a Japan peer signal for SiC/MOSFET/power IC diffusion into AI data-center power themes.",
+      "specializations": ["SiC power devices", "MOSFET", "diodes", "power management IC", "analog IC"],
+      "platforms": ["AI data-center power conversion", "industrial power", "EV"],
+      "constraints": ["SiC cycle", "industrial/auto demand", "AI data-center content proof"],
+      "risk_flags": ["BBU connection is indirect", "Japan power semiconductor names can move on EV/FX rather than AI"],
+      "bottleneck_profile": {"layer": "Layer 7 - Japan power-semiconductor peer", "scarcity": "medium", "substitutability": "medium", "discovery_state": "japan_power_peer", "score": 3.1, "reason": "Rohm is a Japan power-semiconductor confirmation node if AI rack/BBU/HVDC power conversion becomes the next diffusion leg."},
+      "concept_exposures": [
+        {"concept_id": "hvdc_power_semiconductor", "role": "japan_power_peer", "weight": 0.76, "path": "AI rack power-density theme -> Japan power semiconductor peer confirmation"},
+        {"concept_id": "power_discrete_semiconductor", "role": "power_device_supplier", "weight": 0.78, "path": "power conversion -> MOSFET/diode/SiC demand"},
+        {"concept_id": "data_center_bbu", "role": "power_stage_peer", "weight": 0.35, "path": "BBU/power backup adoption -> power conversion component read-through"}
+      ],
+      "source_refs": [
+        {"title": "Rohm product information", "url": "https://www.rohm.com/"}
+      ]
+    },
+    {
+      "symbol": "005930.KS",
+      "name": "Samsung Electronics",
+      "market": "KR",
+      "region": "Korea",
+      "sector": "Memory / foundry / consumer electronics",
+      "primary_business": "Samsung Electronics is a Korea mega-cap memory, foundry, smartphone, display and consumer-electronics company. In this graph it is a Korea AI-memory and semiconductor-cycle leader whose post-earnings reaction can transmit quickly into Taiwan, US and Japan AI hardware baskets.",
+      "specializations": ["HBM", "DRAM", "NAND", "foundry", "smartphones", "OLED/display components"],
+      "platforms": ["AI memory", "HBM/DRAM cycle", "Korea semiconductor index", "global electronics demand"],
+      "constraints": ["HBM qualification timing", "memory price elasticity", "Chinese DRAM/NAND competition", "foundry customer share", "large consumer-electronics dilution"],
+      "risk_flags": ["sell-the-news reactions can pressure the whole AI-memory trade", "mixed business lines can blur pure HBM read-through"],
+      "concept_exposures": [
+        {"concept_id": "hbm", "role": "korea_memory_leader", "weight": 0.9, "path": "AI accelerator demand -> HBM supply and qualification -> Samsung as Korea leader signal"},
+        {"concept_id": "dram_manufacturing", "role": "regional_leader", "weight": 0.92, "path": "DRAM/NAND pricing cycle -> Korea memory leader -> MU/SK Hynix/Nanya/Winbond read-through"},
+        {"concept_id": "foundry", "role": "regional_foundry_peer", "weight": 0.55, "path": "foundry cycle and advanced packaging demand -> Samsung foundry peer signal"},
+        {"concept_id": "smartphone_manufacturing", "role": "global_device_leader", "weight": 0.52, "path": "smartphone cycle -> component demand for panels, modules, memory and passive components"}
+      ],
+      "source_refs": [
+        {"title": "Samsung Electronics investor relations", "url": "https://www.samsung.com/global/ir/"}
+      ]
+    },
+    {
+      "symbol": "000660.KS",
+      "name": "SK Hynix",
+      "market": "KR",
+      "region": "Korea",
+      "sector": "HBM / DRAM / NAND memory",
+      "primary_business": "SK Hynix is a leading Korea memory semiconductor company and the cleanest public HBM/AI-memory leader in the Korea basket. It is a direct leader node for memory diffusion into Micron, Taiwan DRAM/legacy memory, probe/test, and AI server supply-chain laggards.",
+      "specializations": ["HBM", "AI memory", "DRAM", "NAND", "server memory"],
+      "platforms": ["AI accelerator memory", "HBM supply chain", "server DRAM"],
+      "constraints": ["HBM capacity allocation", "customer qualification", "memory-price peak risk", "capex/supply response"],
+      "risk_flags": ["highly visible leader often prices in memory upside first", "leader rollover can invalidate memory laggards"],
+      "concept_exposures": [
+        {"concept_id": "hbm", "role": "global_leader", "weight": 0.98, "path": "AI GPU/ASIC demand -> HBM supply constraint -> SK Hynix leader move"},
+        {"concept_id": "dram_manufacturing", "role": "global_leader", "weight": 0.95, "path": "server/AI DRAM pricing -> Korea memory leader -> Taiwan/US memory diffusion"},
+        {"concept_id": "host_dram", "role": "server_memory_leader", "weight": 0.82, "path": "agentic AI memory footprint -> server DRAM/RDIMM demand"}
+      ],
+      "source_refs": [
+        {"title": "SK Hynix official site", "url": "https://www.skhynix.com/"}
+      ]
+    },
+    {
+      "symbol": "009150.KS",
+      "name": "Samsung Electro-Mechanics",
+      "market": "KR",
+      "region": "Korea",
+      "sector": "MLCC / substrates / camera modules",
+      "primary_business": "Samsung Electro-Mechanics supplies MLCCs, package substrates and camera modules. It is a Korea passive-component and advanced-substrate confirmation node for AI server MLCC/PCB/substrate diffusion into Japan, Taiwan and China peers.",
+      "specializations": ["MLCC", "high-reliability ceramic capacitors", "package substrate", "camera modules"],
+      "platforms": ["AI server passive components", "advanced package substrates", "smartphone/auto modules"],
+      "constraints": ["consumer MLCC mix", "AI high-voltage MLCC purity", "substrate cycle"],
+      "risk_flags": ["passive-component theme can rotate quickly after vertical price spikes"],
+      "concept_exposures": [
+        {"concept_id": "high_voltage_mlcc", "role": "korea_passive_leader", "weight": 0.88, "path": "AI rack power/board density -> high-reliability MLCC demand -> Samsung Electro-Mechanics"},
+        {"concept_id": "passive_components", "role": "regional_leader", "weight": 0.86, "path": "global passive-component shortage/pricing -> Korea/Japan/Taiwan peer confirmation"},
+        {"concept_id": "abf_substrate", "role": "substrate_peer", "weight": 0.55, "path": "advanced package substrate cycle -> Korea package substrate peer signal"}
+      ],
+      "source_refs": [
+        {"title": "Samsung Electro-Mechanics official site", "url": "https://www.samsungsem.com/"}
+      ]
+    },
+    {
+      "symbol": "042700.KS",
+      "name": "Hanmi Semiconductor",
+      "market": "KR",
+      "region": "Korea",
+      "sector": "HBM packaging equipment / semiconductor equipment",
+      "primary_business": "Hanmi Semiconductor supplies semiconductor packaging equipment and is a Korea bellwether for HBM advanced-packaging equipment, especially TC bonder-related demand.",
+      "specializations": ["HBM TC bonder", "semiconductor packaging equipment", "micro saw", "advanced packaging tools"],
+      "platforms": ["HBM packaging capacity", "advanced packaging capex", "Korea semiconductor equipment"],
+      "constraints": ["order timing", "HBM customer capex cycle", "equipment valuation already reflects strong demand"],
+      "risk_flags": ["high-beta Korea HBM equipment leader can sell off before downstream laggards"],
+      "concept_exposures": [
+        {"concept_id": "hbm", "role": "equipment_leader", "weight": 0.82, "path": "HBM capacity expansion -> TC bonder/packaging equipment demand"},
+        {"concept_id": "semicap_equipment", "role": "regional_leader", "weight": 0.9, "path": "Korea memory capex -> semiconductor equipment leader"},
+        {"concept_id": "ic_packaging_testing", "role": "advanced_packaging_equipment", "weight": 0.72, "path": "HBM stack packaging -> advanced packaging equipment read-through"}
+      ],
+      "source_refs": [
+        {"title": "Hanmi Semiconductor official site", "url": "https://www.hanmisemi.com/"}
+      ]
+    },
+    {
+      "symbol": "267260.KS",
+      "name": "HD Hyundai Electric",
+      "market": "KR",
+      "region": "Korea",
+      "sector": "Transformers / grid equipment",
+      "primary_business": "HD Hyundai Electric supplies transformers, switchgear and power-distribution equipment. It is a Korea power-grid leader signal for AI data-center electricity demand, transformer shortages and grid capex.",
+      "specializations": ["transformers", "switchgear", "power distribution", "substation equipment"],
+      "platforms": ["AI data-center grid demand", "power-grid capex", "industrial electrification"],
+      "constraints": ["transformer backlog timing", "commodity input costs", "export cycle"],
+      "risk_flags": ["visible leader can already price in transformer scarcity"],
+      "concept_exposures": [
+        {"concept_id": "transformer_ups", "role": "korea_power_grid_leader", "weight": 0.9, "path": "AI/data-center electricity demand -> transformer shortage -> Korea grid-equipment leader"},
+        {"concept_id": "smart_grid", "role": "regional_leader", "weight": 0.82, "path": "grid upgrade capex -> switchgear/substation demand"}
+      ],
+      "source_refs": [
+        {"title": "HD Hyundai Electric official site", "url": "https://www.hd-hyundaielectric.com/"}
+      ]
+    },
+    {
+      "symbol": "010120.KS",
+      "name": "LS Electric",
+      "market": "KR",
+      "region": "Korea",
+      "sector": "Power equipment / automation / smart grid",
+      "primary_business": "LS Electric supplies switchgear, automation, power distribution and smart-grid equipment. It is a Korea second leader for grid/electrification diffusion and AI data-center power themes.",
+      "specializations": ["switchgear", "smart grid", "power automation", "power conversion"],
+      "platforms": ["AI data-center power", "industrial electrification", "smart grid"],
+      "constraints": ["project capex timing", "competition in electrical equipment", "valuation after leader move"],
+      "risk_flags": ["can move with Korea industrial momentum rather than pure AI power demand"],
+      "concept_exposures": [
+        {"concept_id": "smart_grid", "role": "korea_grid_leader", "weight": 0.82, "path": "grid capex and data-center loads -> smart grid/switchgear demand"},
+        {"concept_id": "transformer_ups", "role": "power_equipment_peer", "weight": 0.72, "path": "power distribution bottlenecks -> transformer/switchgear peer signal"}
+      ],
+      "source_refs": [
+        {"title": "LS Electric official site", "url": "https://www.lselectric.co.kr/"}
+      ]
+    },
+    {
+      "symbol": "012450.KS",
+      "name": "Hanwha Aerospace",
+      "market": "KR",
+      "region": "Korea",
+      "sector": "Defense / aerospace",
+      "primary_business": "Hanwha Aerospace is a Korea aerospace and defense leader. It provides a Korea leader signal for global defense-budget diffusion into Japan, Taiwan, US and European peers.",
+      "specializations": ["aerospace engines", "artillery", "defense systems", "military platforms"],
+      "platforms": ["Korea defense exports", "global rearmament", "aerospace supply chain"],
+      "constraints": ["defense export timing", "government procurement cycles", "geopolitical headline risk"],
+      "risk_flags": ["defense leaders can gap on contracts and then mean-revert"],
+      "concept_exposures": [
+        {"concept_id": "defense", "role": "korea_defense_leader", "weight": 0.9, "path": "Korea defense exports and global rearmament -> regional defense leader signal"}
+      ],
+      "source_refs": [
+        {"title": "Hanwha Aerospace official site", "url": "https://www.hanwhaaerospace.com/"}
+      ]
+    },
+    {
+      "symbol": "207940.KS",
+      "name": "Samsung Biologics",
+      "market": "KR",
+      "region": "Korea",
+      "sector": "Biologics CDMO",
+      "primary_business": "Samsung Biologics is a large biologics CDMO. It anchors the Korea healthcare/CDMO side of cross-market diffusion into global CDMO, new-drug and healthcare-services themes.",
+      "specializations": ["biologics CDMO", "contract development", "contract manufacturing", "large-scale bioreactors"],
+      "platforms": ["global pharma outsourcing", "biologics capacity", "Korea healthcare leader"],
+      "constraints": ["capacity utilization", "client concentration", "biotech funding cycle"],
+      "risk_flags": ["CDMO demand is less tied to AI hardware risk appetite"],
+      "concept_exposures": [
+        {"concept_id": "cdmo_cro", "role": "korea_cdmo_leader", "weight": 0.9, "path": "global biologics outsourcing -> Korea CDMO leader -> healthcare/CDMO diffusion"},
+        {"concept_id": "new_drug", "role": "healthcare_leader", "weight": 0.52, "path": "biologics ecosystem sentiment -> healthcare risk appetite"}
+      ],
+      "source_refs": [
+        {"title": "Samsung Biologics official site", "url": "https://samsungbiologics.com/"}
+      ]
+    },
+    {
+      "symbol": "035420.KS",
+      "name": "NAVER",
+      "market": "KR",
+      "region": "Korea",
+      "sector": "Internet platform / cloud / AI software",
+      "primary_business": "NAVER is a Korea internet, search, cloud and commerce platform. It is useful as a Korea software/platform leader or laggard node when AI/software risk appetite rotates away from hardware.",
+      "specializations": ["search", "cloud AI", "commerce", "fintech", "AI data services"],
+      "platforms": ["Korea internet platform", "AI software", "cloud/data services"],
+      "constraints": ["advertising cycle", "Korea platform regulation", "AI monetization proof"],
+      "risk_flags": ["software rotation signal differs from hardware supply-chain bottlenecks"],
+      "concept_exposures": [
+        {"concept_id": "cloud_ai", "role": "korea_platform_leader", "weight": 0.72, "path": "AI/software risk appetite -> Korea cloud/platform leader"},
+        {"concept_id": "ai_data_platform", "role": "data_platform_peer", "weight": 0.62, "path": "search/data services -> AI data platform peer signal"},
+        {"concept_id": "ecommerce", "role": "platform_leader", "weight": 0.58, "path": "commerce/platform cycle -> Korea internet peer"}
+      ],
+      "source_refs": [
+        {"title": "NAVER official site", "url": "https://www.navercorp.com/"}
+      ]
+    },
+    {
+      "symbol": "^KS11",
+      "name": "KOSPI Composite",
+      "market": "KR",
+      "region": "Korea",
+      "sector": "Korea large-cap market index",
+      "primary_business": "KOSPI Composite is the Korea large-cap market proxy used as a broad Korea leader/follower control. It is dominated by memory, electronics, batteries, auto, financials, defense, shipping and industrial bellwethers rather than a single-company business.",
+      "specializations": ["Korea large-cap equity beta", "memory/HBM index signal", "battery and industrial cycle", "financials and export beta"],
+      "platforms": ["Korea equity market", "cross-market risk appetite", "Korea-to-Taiwan/Japan/US diffusion"],
+      "constraints": ["index composition changes", "large-cap concentration", "FX sensitivity via USD/KRW", "macro risk can dominate sector signal"],
+      "risk_flags": ["market proxy, not a company thesis", "use as benchmark/leader indicator, not as single-stock evidence"],
+      "concept_exposures": [
+        {"concept_id": "hbm", "role": "korea_market_proxy", "weight": 0.5, "path": "KOSPI mega-cap memory leaders -> Korea AI-memory market beta"},
+        {"concept_id": "dram_manufacturing", "role": "korea_market_proxy", "weight": 0.5, "path": "Samsung/SK Hynix weight -> DRAM cycle benchmark"},
+        {"concept_id": "semiconductor_components", "role": "korea_market_proxy", "weight": 0.42, "path": "large-cap semiconductor/electronics exposure -> regional hardware benchmark"},
+        {"concept_id": "battery_secondary", "role": "korea_market_proxy", "weight": 0.38, "path": "Korea battery cell/material leaders -> battery cycle benchmark"},
+        {"concept_id": "banks", "role": "korea_macro_proxy", "weight": 0.32, "path": "Korea financials -> domestic liquidity/rates benchmark"},
+        {"concept_id": "defense", "role": "korea_macro_proxy", "weight": 0.28, "path": "Korea defense leaders -> defense export sentiment benchmark"}
+      ],
+      "source_refs": [
+        {"title": "Yahoo Finance KOSPI Composite", "url": "https://finance.yahoo.com/quote/%5EKS11/"}
+      ]
+    },
+    {
+      "symbol": "^KQ11",
+      "name": "KOSDAQ Composite",
+      "market": "KR",
+      "region": "Korea",
+      "sector": "Korea growth market index",
+      "primary_business": "KOSDAQ Composite is the Korea growth-board proxy used for biotech, gaming, battery-materials, semiconductor-equipment and small-cap technology diffusion.",
+      "specializations": ["Korea growth equity beta", "biotech risk appetite", "gaming/platform risk appetite", "semicap and battery-materials beta"],
+      "platforms": ["Korea KOSDAQ growth market", "cross-market small-cap growth diffusion"],
+      "constraints": ["growth-stock valuation sensitivity", "retail flow", "biotech funding cycle", "Korean won risk"],
+      "risk_flags": ["market proxy, not a company thesis", "can move on broad growth liquidity rather than one theme"],
+      "concept_exposures": [
+        {"concept_id": "new_drug", "role": "korea_growth_proxy", "weight": 0.42, "path": "KOSDAQ biotech/growth exposure -> new-drug risk appetite benchmark"},
+        {"concept_id": "cdmo_cro", "role": "korea_growth_proxy", "weight": 0.3, "path": "healthcare outsourcing ecosystem -> Korea growth-board peer signal"},
+        {"concept_id": "gaming", "role": "korea_growth_proxy", "weight": 0.34, "path": "Korea game/platform names -> gaming sentiment benchmark"},
+        {"concept_id": "battery_secondary", "role": "korea_growth_proxy", "weight": 0.35, "path": "battery materials names -> Korea battery-cycle beta"},
+        {"concept_id": "semicap_equipment", "role": "korea_growth_proxy", "weight": 0.38, "path": "KOSDAQ semicap equipment names -> HBM/semicap follower benchmark"}
+      ],
+      "source_refs": [
+        {"title": "Yahoo Finance KOSDAQ Composite", "url": "https://finance.yahoo.com/quote/%5EKQ11/"}
+      ]
+    },
+    {
+      "symbol": "EWY",
+      "name": "iShares MSCI South Korea ETF",
+      "market": "US",
+      "region": "Korea ETF",
+      "sector": "Korea country ETF",
+      "primary_business": "EWY is a US-listed Korea country ETF used as a US-hours proxy for Korea equity beta when KOSPI/KOSDAQ cash markets are closed.",
+      "specializations": ["Korea country ETF", "US-hours Korea proxy", "Samsung/SK Hynix large-cap beta"],
+      "platforms": ["US market hours", "Korea cross-market risk appetite"],
+      "constraints": ["ETF premium/discount", "US-hours futures/ADR sentiment", "currency exposure"],
+      "risk_flags": ["ETF proxy, not a company thesis", "use as timing benchmark for Korean-market diffusion"],
+      "concept_exposures": [
+        {"concept_id": "hbm", "role": "us_hours_korea_proxy", "weight": 0.46, "path": "US-hours EWY move -> Korea memory/AI hardware read-through"},
+        {"concept_id": "dram_manufacturing", "role": "us_hours_korea_proxy", "weight": 0.46, "path": "Samsung/SK Hynix ETF weight -> memory-cycle benchmark"},
+        {"concept_id": "battery_secondary", "role": "us_hours_korea_proxy", "weight": 0.32, "path": "Korea battery leaders inside ETF -> battery-cycle benchmark"},
+        {"concept_id": "banks", "role": "us_hours_korea_macro_proxy", "weight": 0.25, "path": "Korea country ETF -> financial/liquidity sentiment"}
+      ],
+      "source_refs": [
+        {"title": "iShares MSCI South Korea ETF", "url": "https://www.ishares.com/us/products/239681/ishares-msci-south-korea-capped-etf"}
+      ]
+    },
+    {
+      "symbol": "102110.KS",
+      "name": "KODEX 200",
+      "market": "KR",
+      "region": "Korea",
+      "sector": "Korea large-cap ETF",
+      "primary_business": "KODEX 200 is a Korea-listed large-cap ETF proxy for KOSPI 200 exposure. Use it as a tradable Korea large-cap benchmark in the graph.",
+      "specializations": ["KOSPI 200 ETF", "Korea large-cap beta", "memory and battery benchmark"],
+      "platforms": ["Korea cash market", "large-cap index tracking"],
+      "constraints": ["index concentration", "ETF tracking error", "FX and macro sensitivity"],
+      "risk_flags": ["ETF proxy, not a company thesis"],
+      "concept_exposures": [
+        {"concept_id": "hbm", "role": "korea_largecap_etf_proxy", "weight": 0.42, "path": "KOSPI 200 memory leaders -> HBM/DRAM benchmark"},
+        {"concept_id": "dram_manufacturing", "role": "korea_largecap_etf_proxy", "weight": 0.42, "path": "KOSPI 200 memory weight -> DRAM benchmark"},
+        {"concept_id": "battery_secondary", "role": "korea_largecap_etf_proxy", "weight": 0.34, "path": "Korea battery leaders -> battery-cycle benchmark"},
+        {"concept_id": "banks", "role": "korea_largecap_macro_proxy", "weight": 0.26, "path": "Korea large-cap financials -> domestic liquidity/rates benchmark"}
+      ],
+      "source_refs": [
+        {"title": "Yahoo Finance KODEX 200", "url": "https://finance.yahoo.com/quote/102110.KS/"}
+      ]
+    },
+    {
+      "symbol": "229200.KS",
+      "name": "KODEX KOSDAQ 150",
+      "market": "KR",
+      "region": "Korea",
+      "sector": "Korea growth ETF",
+      "primary_business": "KODEX KOSDAQ 150 is a Korea-listed ETF proxy for KOSDAQ growth and small/mid-cap risk appetite.",
+      "specializations": ["KOSDAQ 150 ETF", "Korea growth beta", "biotech/gaming/battery-materials sentiment"],
+      "platforms": ["Korea cash market", "growth index tracking"],
+      "constraints": ["growth liquidity", "retail flow", "ETF tracking error"],
+      "risk_flags": ["ETF proxy, not a company thesis"],
+      "concept_exposures": [
+        {"concept_id": "new_drug", "role": "korea_growth_etf_proxy", "weight": 0.36, "path": "KOSDAQ 150 healthcare/growth exposure -> new-drug sentiment benchmark"},
+        {"concept_id": "gaming", "role": "korea_growth_etf_proxy", "weight": 0.32, "path": "KOSDAQ 150 platform/game names -> gaming sentiment benchmark"},
+        {"concept_id": "battery_secondary", "role": "korea_growth_etf_proxy", "weight": 0.32, "path": "battery-material growth names -> Korea battery-risk benchmark"},
+        {"concept_id": "semicap_equipment", "role": "korea_growth_etf_proxy", "weight": 0.3, "path": "Korea equipment growth names -> semicap follower benchmark"}
+      ],
+      "source_refs": [
+        {"title": "Yahoo Finance KODEX KOSDAQ 150", "url": "https://finance.yahoo.com/quote/229200.KS/"}
+      ]
+    },
+    {
+      "symbol": "091160.KS",
+      "name": "KODEX Semiconductor",
+      "market": "KR",
+      "region": "Korea",
+      "sector": "Korea semiconductor ETF",
+      "primary_business": "KODEX Semiconductor is a Korea-listed semiconductor ETF proxy for memory, semicap equipment, packaging, and semiconductor-component breadth.",
+      "specializations": ["Korea semiconductor ETF", "memory breadth", "semicap equipment breadth", "HBM supply-chain breadth"],
+      "platforms": ["Korea semiconductor sector", "memory and semicap diffusion"],
+      "constraints": ["sector ETF composition", "memory-cycle concentration", "ETF tracking error"],
+      "risk_flags": ["ETF proxy, not a company thesis", "use to validate sector breadth before assuming single-stock diffusion"],
+      "concept_exposures": [
+        {"concept_id": "hbm", "role": "korea_semiconductor_etf_proxy", "weight": 0.58, "path": "Korea semiconductor ETF breadth -> HBM/memory-cycle confirmation"},
+        {"concept_id": "dram_manufacturing", "role": "korea_semiconductor_etf_proxy", "weight": 0.56, "path": "memory-heavy sector ETF -> DRAM-cycle confirmation"},
+        {"concept_id": "semicap_equipment", "role": "korea_semiconductor_etf_proxy", "weight": 0.42, "path": "semicap equipment constituents -> equipment-cycle breadth"},
+        {"concept_id": "semiconductor_components", "role": "korea_semiconductor_etf_proxy", "weight": 0.38, "path": "Korea semiconductor sector breadth -> component/IDM confirmation"}
+      ],
+      "source_refs": [
+        {"title": "Yahoo Finance KODEX Semiconductor", "url": "https://finance.yahoo.com/quote/091160.KS/"}
       ]
     }
   ]

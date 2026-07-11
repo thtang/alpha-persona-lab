@@ -29,6 +29,7 @@ DEFAULT_BASE_URL = "https://api.openai.com/v1"
 DEFAULT_MODEL = "gpt-5-mini"
 DEFAULT_CODEX_MODEL = ""
 DEFAULT_CODEX_COMMAND = "codex"
+DEFAULT_PROMPT_MAX_CHARS = 80000
 
 
 def stable_hash(payload: Any) -> str:
@@ -85,6 +86,7 @@ class AgentConfig:
     cache_dir: Path = Path("thememiner/output/cache/agentic_judge")
     refresh: bool = False
     timeout: int = 90
+    prompt_max_chars: int = DEFAULT_PROMPT_MAX_CHARS
     temperature: float = 0.1
     max_retries: int = 2
 
@@ -120,6 +122,10 @@ class AgentConfig:
             timeout = int(os.getenv("THEMEMINER_AGENT_TIMEOUT", "90"))
         except ValueError:
             timeout = 90
+        try:
+            prompt_max_chars = int(os.getenv("THEMEMINER_AGENT_PROMPT_MAX_CHARS", str(DEFAULT_PROMPT_MAX_CHARS)))
+        except ValueError:
+            prompt_max_chars = DEFAULT_PROMPT_MAX_CHARS
         return cls(
             enabled=provider_enabled,
             api_key=api_key,
@@ -131,6 +137,7 @@ class AgentConfig:
             cache_dir=Path(cache_dir),
             refresh=refresh,
             timeout=timeout,
+            prompt_max_chars=prompt_max_chars,
         )
 
     @property
@@ -151,7 +158,13 @@ class AgenticJudge:
         self.config = config
 
     def chat_json(self, *, system: str, user: dict[str, Any], cache_namespace: str) -> dict[str, Any] | None:
-        payload_for_hash = {"provider": self.config.provider, "model": self.config.model, "system": system, "user": user}
+        payload_for_hash = {
+            "provider": self.config.provider,
+            "model": self.config.model,
+            "prompt_max_chars": self.config.prompt_max_chars,
+            "system": system,
+            "user": user,
+        }
         cache_path = self.config.cache_dir / cache_namespace / f"{stable_hash(payload_for_hash)}.json"
         if cache_path.exists() and not self.config.refresh:
             cached = read_json(cache_path, {})
@@ -168,7 +181,7 @@ class AgenticJudge:
             "model": self.config.model,
             "messages": [
                 {"role": "system", "content": system},
-                {"role": "user", "content": compact(user)},
+                {"role": "user", "content": compact(user, max_chars=self.config.prompt_max_chars)},
             ],
             "temperature": self.config.temperature,
             "response_format": {"type": "json_object"},
@@ -205,7 +218,7 @@ class AgenticJudge:
             "System task:\n"
             f"{system}\n\n"
             "Evidence JSON:\n"
-            f"{compact(user)}\n\n"
+            f"{compact(user, max_chars=self.config.prompt_max_chars)}\n\n"
             "Return exactly one valid JSON object that follows the requested fields."
         )
         last_error = ""
@@ -268,6 +281,7 @@ class AgenticJudge:
         system = (
             "You are ThemeMiner's supply-chain research agent. Judge semantic exposure without keyword matching. "
             "You will receive a batch of company evidence objects. Return strict JSON only with a top-level `cards` array. "
+            "Return exactly one card for every input item, preserve the input order, and copy the input symbol string exactly. "
             "Each card must include symbol and these fields: thesis_label string, primary_business string, "
             "business_segments array of strings, ai_chain_position string, non_ai_chain_position string, catalysts array, "
             "leader_indicators array, peer_symbols array, risks array, relation_confidence one of high_agent, medium_agent, low_agent, "
@@ -321,6 +335,8 @@ def normalize_agent_card(data: dict[str, Any] | None) -> dict[str, Any]:
     if confidence not in {"high_agent", "medium_agent", "low_agent"}:
         confidence = "low_agent"
     return {
+        "symbol": str(data.get("symbol") or "").strip(),
+        "name": str(data.get("name") or data.get("company_name") or "").strip(),
         "thesis_label": str(data.get("thesis_label") or "").strip(),
         "primary_business": str(data.get("primary_business") or "").strip(),
         "business_segments": list_field("business_segments"),

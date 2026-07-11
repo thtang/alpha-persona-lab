@@ -61,6 +61,36 @@ def uniq(items: list[Any], *, max_items: int | None = None) -> list[Any]:
     return output
 
 
+def canonical_symbol(value: Any) -> str:
+    return str(value or "").strip().upper().replace(" ", "")
+
+
+def agent_card_symbol_keys(item: dict[str, Any]) -> list[str]:
+    keys = [
+        item.get("symbol"),
+        item.get("ticker"),
+        item.get("input_symbol"),
+        item.get("requested_symbol"),
+    ]
+    output = [canonical_symbol(key) for key in keys if canonical_symbol(key)]
+    return uniq(output)
+
+
+def extract_agent_card_items(raw: Any) -> list[dict[str, Any]]:
+    if not isinstance(raw, dict):
+        return []
+    candidates: list[Any] = []
+    if isinstance(raw.get("cards"), list):
+        candidates = raw["cards"]
+    elif isinstance(raw.get("data"), dict) and isinstance(raw["data"].get("cards"), list):
+        candidates = raw["data"]["cards"]
+    elif isinstance(raw.get("results"), list):
+        candidates = raw["results"]
+    elif isinstance(raw.get("card"), dict):
+        candidates = [raw["card"]]
+    return [item for item in candidates if isinstance(item, dict)]
+
+
 def load_profiles(path: Path) -> list[dict[str, Any]]:
     if not path.exists():
         return []
@@ -334,6 +364,8 @@ def apply_agent_card(card: dict[str, Any], agent_card: dict[str, Any], config: A
     for field in list_fields:
         if agent_card.get(field):
             merged[field] = uniq(agent_card[field] + as_list(merged.get(field)), max_items=30)
+    if merged.get("risks"):
+        merged["thesis_risks"] = merged["risks"]
     merged["agent_status"] = "agent_applied"
     merged["agent_provider"] = config.provider
     merged["agent_model"] = config.model
@@ -409,6 +441,11 @@ def main() -> int:
     parser.add_argument("--agent-model", default=None)
     parser.add_argument("--agent-cache-dir", default="thememiner/output/cache/agentic_judge")
     parser.add_argument("--agent-refresh", action="store_true")
+    parser.add_argument(
+        "--agent-cache-only",
+        action="store_true",
+        help="Replay successful cached agent judgments without making new agent calls.",
+    )
     parser.add_argument("--agent-limit", type=int, default=0, help="debug limit for agent calls; 0 means no cap")
     parser.add_argument("--agent-workers", type=int, default=1, help="parallel semantic agents; use 2-6 for local codex exec")
     parser.add_argument("--agent-batch-size", type=int, default=12, help="companies per semantic agent call; batching is most important for codex exec")
@@ -428,7 +465,10 @@ def main() -> int:
     )
     if args.agent_mode == "off":
         agent_config.enabled = False
-    if args.agent_mode == "on" and not agent_config.enabled:
+    if args.agent_cache_only:
+        agent_config.enabled = False
+        agent_config.refresh = False
+    if args.agent_mode == "on" and not agent_config.enabled and not args.agent_cache_only:
         raise RuntimeError("agent-mode=on requires an available agent provider: OpenAI-compatible API key or local codex CLI")
     agent = AgenticJudge(agent_config)
     agent_calls = 0
@@ -456,10 +496,10 @@ def main() -> int:
             override,
             None,
         )
-        if use_agent and not agent_config.enabled:
+        if use_agent and not agent_config.enabled and not args.agent_cache_only:
             card = apply_agent_card(card, {}, agent_config)
         cards.append(card)
-        if use_agent and agent_config.enabled:
+        if use_agent and (agent_config.enabled or args.agent_cache_only):
             agent_payload_jobs.append((len(cards) - 1, agent_evidence_payload(profile, concepts, memberships, relation_paths)))
             agent_calls += 1
 
@@ -472,14 +512,20 @@ def main() -> int:
             return [(idx, normalize_agent_card(agent.company_thesis(payload)))]
         raw = agent.company_thesis_batch([payload for _, payload in batch])
         by_symbol: dict[str, dict[str, Any]] = {}
-        if isinstance(raw, dict) and isinstance(raw.get("cards"), list):
-            for item in raw["cards"]:
-                if isinstance(item, dict) and item.get("symbol"):
-                    by_symbol[str(item["symbol"])] = normalize_agent_card(item)
+        raw_items = extract_agent_card_items(raw)
+        normalized_items = [normalize_agent_card(item) for item in raw_items]
+        for item, normalized in zip(raw_items, normalized_items):
+            for key in agent_card_symbol_keys(item):
+                by_symbol[key] = normalized
         results: list[tuple[int, dict[str, Any]]] = []
-        for idx, payload in batch:
-            symbol = str(payload.get("symbol") or "")
-            results.append((idx, by_symbol.get(symbol, {})))
+        for offset, (idx, payload) in enumerate(batch):
+            symbol = canonical_symbol(payload.get("symbol"))
+            agent_card = by_symbol.get(symbol, {})
+            if not useful_agent_card(agent_card) and offset < len(normalized_items):
+                # Codex batch agents normally preserve order even when they omit or alter a symbol.
+                # Use the order fallback only after symbol matching fails.
+                agent_card = normalized_items[offset]
+            results.append((idx, agent_card))
         return results
 
     agent_batches_attempted = 0
