@@ -289,7 +289,17 @@ $serenity ...
 
 ### 手動安裝: fallback
 
-先 clone repo：
+大型圖譜、逐字稿索引與 RSS snapshot 使用 Git LFS。先安裝並初始化 Git LFS，再 clone repo：
+
+```bash
+# macOS (Homebrew)
+brew install git-lfs
+
+# Ubuntu / Debian
+sudo apt-get install git-lfs
+
+git lfs install
+```
 
 ```bash
 git clone git@github.com:thtang/alpha-persona-lab.git
@@ -370,11 +380,15 @@ cp -R serenity ~/.codex/skills/serenity
 這個 repo 是 multi-skill bundle。別的帳號 clone 後，最小復現流程如下：
 
 ```bash
+git lfs install
 git clone https://github.com/thtang/alpha-persona-lab.git
 cd alpha-persona-lab
+git lfs pull
 bash scripts/install-skills.sh --codex
 bash scripts/bootstrap-theme-stack.sh
 ```
+
+如果 repo 是在安裝 Git LFS 前 clone 的，於 repo 根目錄執行 `git lfs pull` 即可補回完整大型資料；未下載時檔案內容只會是 LFS pointer。
 
 `bootstrap-theme-stack.sh` 會用 repo 內已提交的 seed/profile/output snapshot 重建 ThemeMiner 與 Lagradar：
 
